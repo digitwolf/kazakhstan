@@ -25,26 +25,25 @@ A light second day here lets the family enjoy the mountain without long riding �
 
 ## Where to stay
 
-| Property | Type | Parking | Price / night (¥) | ≈ USD | Notes |
+| Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
 | Hoshinoya Fuji | Luxury glamping | Free on-site parking | ¥80,000–250,000 | $535–1,665 | Cabins facing the lake and Fuji — a standout splurge. |
 | Fufu Kawaguchiko | Boutique onsen | Free on-site parking | ¥28,000–60,000 | $185–400 | Small luxury ryokan with private baths. |
 | Mizno Hotel / lakeside hotels | Family-friendly | On-site garage or valet | ¥18,000–35,000 | $120–235 | Fuji-view rooms with parking on the Kawaguchiko shore. |
 
-_Prices indicative per room/night for two adults (≈ ¥150 = $1). Confirm rates, secure motorcycle parking and passenger/child rules before booking._
+_Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 
 ## Links
 - [Fujisan / Yamanashi tourism](https://www.yamanashi-kankou.jp/english/)
 - [Wikipedia — Fuji Five Lakes](https://en.wikipedia.org/wiki/Fuji_Five_Lakes)
 
-## Photos (10)
+## Photos (9)
 - ![Mt. Fuji over Lake Kawaguchiko](https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Lake_Kawaguchiko_Sakura_Mount_Fuji_3.JPG/960px-Lake_Kawaguchiko_Sakura_Mount_Fuji_3.JPG) — Mt. Fuji over Lake Kawaguchiko
+- ![Kawaguchiko Station](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/20100728_Kawaguchiko_Station_6622.jpg/960px-20100728_Kawaguchiko_Station_6622.jpg) — Kawaguchiko Station
+- ![View](https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/12-Chureito-pagoda-and-Mount-Fuji-Japan_%2829677439878%29.jpg/960px-12-Chureito-pagoda-and-Mount-Fuji-Japan_%2829677439878%29.jpg) — View
+- ![Kawaguchiko Sta. & Mt. Fuji](https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Kawaguchiko_Sta._%26_Mt._Fuji_20061112.jpg/960px-Kawaguchiko_Sta._%26_Mt._Fuji_20061112.jpg) — Kawaguchiko Sta. & Mt. Fuji
+- ![Chureito Pagoda and Mount Fuji](https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Chureito_Pagoda_and_Mount_Fuji_low_crop_Wikivoyage_banner.jpg/960px-Chureito_Pagoda_and_Mount_Fuji_low_crop_Wikivoyage_banner.jpg) — Chureito Pagoda and Mount Fuji
+- ![Lake Kawaguchiko Sakura Mount Fuji](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Lake_Kawaguchiko_Sakura_Mount_Fuji_4.JPG/960px-Lake_Kawaguchiko_Sakura_Mount_Fuji_4.JPG) — Lake Kawaguchiko Sakura Mount Fuji
+- ![Mount Fuji and Kawaguchiko Lake and Bridge on a manhole cover,…](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Mount_Fuji_and_Kawaguchiko_Lake_and_Bridge_on_a_manhole_cover%2C_Fujikawaguchiko%2C_2016.jpg/960px-Mount_Fuji_and_Kawaguchiko_Lake_and_Bridge_on_a_manhole_cover%2C_Fujikawaguchiko%2C_2016.jpg) — Mount Fuji and Kawaguchiko Lake and Bridge on a manhole cover,…
+- ![Mount Fuji at night, Kawaguchiko](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mount_Fuji_at_night%2C_Kawaguchiko.jpg/960px-Mount_Fuji_at_night%2C_Kawaguchiko.jpg) — Mount Fuji at night, Kawaguchiko
 - ![Fuji reflected in the lake](https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Mount_Fuji_%40_Lake_Kawaguchiko_%2810862985754%29.jpg/960px-Mount_Fuji_%40_Lake_Kawaguchiko_%2810862985754%29.jpg) — Fuji reflected in the lake
-- ![Cherry blossom and Fuji](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Lake_Kawaguchiko_Sakura_Mount_Fuji_4.JPG/960px-Lake_Kawaguchiko_Sakura_Mount_Fuji_4.JPG) — Cherry blossom and Fuji
-- ![Lake Kawaguchiko Sakura Mount Fuji](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Lake_Kawaguchiko_Sakura_Mount_Fuji_1.JPG/960px-Lake_Kawaguchiko_Sakura_Mount_Fuji_1.JPG) — Lake Kawaguchiko Sakura Mount Fuji
-- ![Lake Kawaguchiko Sakura Mount Fuji](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Lake_Kawaguchiko_Sakura_Mount_Fuji_2.JPG/960px-Lake_Kawaguchiko_Sakura_Mount_Fuji_2.JPG) — Lake Kawaguchiko Sakura Mount Fuji
-- ![Mount Fuji @ Lake Kawaguchiko](https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Mount_Fuji_%40_Lake_Kawaguchiko_%2810862894455%29.jpg/960px-Mount_Fuji_%40_Lake_Kawaguchiko_%2810862894455%29.jpg) — Mount Fuji @ Lake Kawaguchiko
-- ![Mount Fuji @ Lake Kawaguchiko](https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Mount_Fuji_%40_Lake_Kawaguchiko_%2810862962515%29.jpg/960px-Mount_Fuji_%40_Lake_Kawaguchiko_%2810862962515%29.jpg) — Mount Fuji @ Lake Kawaguchiko
-- ![Mount Fuji @ Lake Kawaguchiko](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mount_Fuji_%40_Lake_Kawaguchiko_%2810862992324%29.jpg/960px-Mount_Fuji_%40_Lake_Kawaguchiko_%2810862992324%29.jpg) — Mount Fuji @ Lake Kawaguchiko
-- ![Mount Fuji @ Lake Kawaguchiko](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mount_Fuji_%40_Lake_Kawaguchiko_%2810862997934%29.jpg/960px-Mount_Fuji_%40_Lake_Kawaguchiko_%2810862997934%29.jpg) — Mount Fuji @ Lake Kawaguchiko
-- ![Mount Fuji @ Lake Kawaguchiko](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Mount_Fuji_%40_Lake_Kawaguchiko_%2810863000084%29.jpg/960px-Mount_Fuji_%40_Lake_Kawaguchiko_%2810863000084%29.jpg) — Mount Fuji @ Lake Kawaguchiko

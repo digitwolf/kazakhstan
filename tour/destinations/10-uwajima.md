@@ -25,24 +25,23 @@ These are easy, rewarding half-day stops — history and old streets without cro
 
 ## Where to stay
 
-| Property | Type | Parking | Price / night (¥) | ≈ USD | Notes |
+| Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
 | _Usually passed through_ | — | — | — | — | Most riders push on to Matsuyama/Dogo to sleep (next stop). |
 | Kibako / Uchiko guesthouses | Boutique stay | On-site garage or valet | ¥20,000–40,000 | $135–265 | If overnighting, small restored-house inns in Uchiko are lovely. |
 
-_Prices indicative per room/night for two adults (≈ ¥150 = $1). Confirm rates, secure motorcycle parking and passenger/child rules before booking._
+_Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 
 ## Links
 - [Ehime tourism (official)](https://www.iyokannet.jp/en/)
 - [Wikipedia — Uwajima Castle](https://en.wikipedia.org/wiki/Uwajima_Castle)
 
-## Photos (10)
+## Photos (9)
 - ![Uwajima Castle](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Uwajima-jo.JPG/960px-Uwajima-jo.JPG) — Uwajima Castle
-- ![The original keep](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Uwajima_Castle%2C_honmaru-1.jpg/960px-Uwajima_Castle%2C_honmaru-1.jpg) — The original keep
-- ![Castle stone walls](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Uwajima_Castle%2C_honmaru_ishigaki-1.jpg/960px-Uwajima_Castle%2C_honmaru_ishigaki-1.jpg) — Castle stone walls
-- ![Kashima Island, Uwajima Ehime Aerial photograph.2019](https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kashima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg/960px-Kashima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg) — Kashima Island, Uwajima Ehime Aerial photograph.2019
-- ![Kushima Island, Uwajima Ehime Aerial photograph.2019](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kushima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg/960px-Kushima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg) — Kushima Island, Uwajima Ehime Aerial photograph.2019
-- ![Okinoshima Island, Uwajima Ehime Aerial photograph.2019](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Okinoshima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg/960px-Okinoshima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg) — Okinoshima Island, Uwajima Ehime Aerial photograph.2019
+- ![Uchiko-za](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Uchiko-za_%286454001047%29.jpg/960px-Uchiko-za_%286454001047%29.jpg) — Uchiko-za
+- ![Uchiko Theatre](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Uchiko_Theatre.jpg/960px-Uchiko_Theatre.jpg) — Uchiko Theatre
+- ![Ehime Bank Uwajima Branch Uwajima-Shimmachi Sub-branch](https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Ehime_Bank_Uwajima_Branch_Uwajima-Shimmachi_Sub-branch.jpg/960px-Ehime_Bank_Uwajima_Branch_Uwajima-Shimmachi_Sub-branch.jpg) — Ehime Bank Uwajima Branch Uwajima-Shimmachi Sub-branch
+- ![Kashima Island, Uwajima Ehime Aerial](https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kashima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg/960px-Kashima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg) — Kashima Island, Uwajima Ehime Aerial
 - ![Uwajima Bay](https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Uwajima_Bay.JPG/960px-Uwajima_Bay.JPG) — Uwajima Bay
 - ![Uwajima Port Joint Government Building](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Uwajima_Port_Joint_Government_Building.jpg/960px-Uwajima_Port_Joint_Government_Building.jpg) — Uwajima Port Joint Government Building
 - ![Uwajima Station, platform](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Uwajima_Station%2C_platform.jpg/960px-Uwajima_Station%2C_platform.jpg) — Uwajima Station, platform

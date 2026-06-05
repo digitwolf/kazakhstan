@@ -25,25 +25,24 @@ It is gentle, scenic and unforgettable riding — sweeping bridge spans, blue se
 
 ## Where to stay
 
-| Property | Type | Parking | Price / night (¥) | ≈ USD | Notes |
+| Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
 | _Ride day — sleep in Setoda/Onomichi_ | — | — | — | — | Most cross the Kaido and overnight at the next 2-night base. |
 | WAKKA (Omishima) | Boutique | On-site garage or valet | ¥20,000–40,000 | $135–265 | If splitting the ride, a stylish cyclist-friendly stay mid-route. |
 
-_Prices indicative per room/night for two adults (≈ ¥150 = $1). Confirm rates, secure motorcycle parking and passenger/child rules before booking._
+_Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 
 ## Links
 - [Shimanami Kaido (official)](https://shimanami-cycle.or.jp/global/)
 - [Wikipedia — Nishiseto Expressway](https://en.wikipedia.org/wiki/Nishiseto_Expressway)
 
-## Photos (10)
+## Photos (9)
 - ![Kurushima-Kaikyo Bridge](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Kurushima-Kaikyo_Bridge%2C_Seto_Inland_Sea%2C_Japan.jpg/960px-Kurushima-Kaikyo_Bridge%2C_Seto_Inland_Sea%2C_Japan.jpg) — Kurushima-Kaikyo Bridge
+- ![Stele of Tatara Bridge in Roadside Station 'Imabari City Tatara…](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Stele_of_Tatara_Bridge_in_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22.jpg/960px-Stele_of_Tatara_Bridge_in_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22.jpg) — Stele of Tatara Bridge in Roadside Station 'Imabari City Tatara…
+- ![Onomichi Station Pier of Mukaishima Ferry](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Onomichi_Station_Pier_of_Mukaishima_Ferry_2.jpg/960px-Onomichi_Station_Pier_of_Mukaishima_Ferry_2.jpg) — Onomichi Station Pier of Mukaishima Ferry
+- ![Shimanami Kaido Bikeway](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Shimanami_Kaido_Bikeway_%2814089291941%29.jpg/960px-Shimanami_Kaido_Bikeway_%2814089291941%29.jpg) — Shimanami Kaido Bikeway
+- ![View](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Tatara-gridge201310.JPG/960px-Tatara-gridge201310.JPG) — View
+- ![Kurushima-Kaikyō](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kurushima-Kaiky%C5%8D_Bridge_2012-04-07.JPG/960px-Kurushima-Kaiky%C5%8D_Bridge_2012-04-07.JPG) — Kurushima-Kaikyō
 - ![The great spans over the sea](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Kurushima-Kaikyo_Bridge_310040.jpg/960px-Kurushima-Kaikyo_Bridge_310040.jpg) — The great spans over the sea
 - ![Island-hopping route](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kurushima-Kaikyo_Bridge_310054.jpg/960px-Kurushima-Kaikyo_Bridge_310054.jpg) — Island-hopping route
 - ![Kurushima-Kaikyo-Bridge](https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Kurushima-Kaikyo-Bridge.jpg/960px-Kurushima-Kaikyo-Bridge.jpg) — Kurushima-Kaikyo-Bridge
-- ![Kurushima-Kaikyō Bridge-04-07](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kurushima-Kaiky%C5%8D_Bridge_2012-04-07.JPG/960px-Kurushima-Kaiky%C5%8D_Bridge_2012-04-07.JPG) — Kurushima-Kaikyō Bridge-04-07
-- ![Kurushima-kaikyōBridgeRoadway](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Kurushima-kaiky%C5%8DBridgeRoadway.jpg/960px-Kurushima-kaiky%C5%8DBridgeRoadway.jpg) — Kurushima-kaikyōBridgeRoadway
-- ![Kurushima Kaikyo Bridge-1](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Kurushima_Kaikyo_Bridge-1.jpg/960px-Kurushima_Kaikyo_Bridge-1.jpg) — Kurushima Kaikyo Bridge-1
-- ![Kurushima Kaikyo Bridge-2](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Kurushima_Kaikyo_Bridge-2.jpg/960px-Kurushima_Kaikyo_Bridge-2.jpg) — Kurushima Kaikyo Bridge-2
-- ![Kurushima Kaikyo Bridge-2edit](https://upload.wikimedia.org/wikipedia/commons/4/44/Kurushima_Kaikyo_Bridge-2edit.jpg) — Kurushima Kaikyo Bridge-2edit
-- ![Kurushima Kaikyo Bridge-3](https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kurushima_Kaikyo_Bridge-3.jpg/960px-Kurushima_Kaikyo_Bridge-3.jpg) — Kurushima Kaikyo Bridge-3

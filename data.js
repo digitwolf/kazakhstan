@@ -69,16 +69,25 @@ window.DESTINATIONS = [
     "Minato Mirai 21 waterfront and the Cosmo Clock ferris wheel",
     "Cup Noodles Museum — a genuine hit with kids",
     "Sankeien Garden for a calm first evening",
-    "Akarenga (Red Brick) Warehouse for dinner by the bay"
+    "Akarenga (Red Brick) Warehouse for dinner by the bay",
+    "teamLab Planets TOKYO (Toyosu) — immersive digital art, pure magic for a 6-year-old ⭐",
+    "Nintendo Tokyo at Shibuya Parco — flagship store and a kid highlight ⭐",
+    "Sensō-ji temple & Nakamise shopping street, Asakusa",
+    "Meiji Jingu shrine and the famous Shibuya Crossing",
+    "Daikanyama T-Site — a relaxed books-and-coffee browse"
   ],
   food: [
     { n: "Yokohama Chinatown", d: "Japan's largest Chinatown — steamed buns and family-friendly dim sum." },
     { n: "Iekei ramen", d: "Yokohama's rich soy-and-pork-bone ramen style, born here." },
-    { n: "Sanma-men", d: "Local stir-fried-vegetable noodle dish unique to the city." }
+    { n: "Sanma-men", d: "Local stir-fried-vegetable noodle dish unique to the city." },
+    { n: "Asakusa Monja (Kanoya Hanare)", d: "Cook-your-own monjayaki on a Tokyo table griddle — fun for kids." },
+    { n: "WABISABI yakiniku", d: "Grill-at-your-table wagyu in Tokyo — a family-friendly splurge." },
+    { n: "Sushi Take Uehara", d: "A top Tokyo omakase highlight (¥10,000+, reserve well ahead)." }
   ],
   hotels: [
     { n: "InterContinental Yokohama Grand", t: "Nice hotel", d: "Bay views, valet/garage parking — confirm motorcycle space.", price: "¥18,000–35,000" },
     { n: "Navios Yokohama", t: "Family-friendly", d: "Simple harbourside hotel, walkable to attractions.", price: "¥18,000–35,000" },
+    { n: "Royal Park Hotel Iconic Tokyo Shiodome", t: "Nice hotel", d: "Central Tokyo (Shiodome) — handy for a family city day before or after the ride.", price: "¥25,000–45,000" },
     { n: "Toyoko Inn / APA (Shin-Yokohama)", t: "Practical", d: "Reliable budget chains near the rental areas; ask about bike parking.", price: "¥9,000–16,000" }
   ],
   links: [
@@ -87,15 +96,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/JP-Yokohama-_Minato-Mirai-Area-Over-View.jpg/960px-JP-Yokohama-_Minato-Mirai-Area-Over-View.jpg", cap: "Minato Mirai 21 waterfront" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Minato_Mirai_-_Yokohama_Skyline_March_2025.jpg/960px-Minato_Mirai_-_Yokohama_Skyline_March_2025.jpg", cap: "Yokohama skyline" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Minato_Mirai_21_202403.jpg/960px-Minato_Mirai_21_202403.jpg", cap: "The harbour at dusk" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/070203_MM21%26FUJI.jpg/960px-070203_MM21%26FUJI.jpg", cap: "MM21&FUJI" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/070203_MM21%26FUJI.jpg/960px-070203_MM21%26FUJI.jpg", cap: "View" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Yokohama_Chinatown_3.jpg/960px-Yokohama_Chinatown_3.jpg", cap: "Yokohama Chinatown" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Sankei-en_-_Kanagawa_-_Sept_5_2021_various_00_03_17_467000.jpeg/960px-Sankei-en_-_Kanagawa_-_Sept_5_2021_various_00_03_17_467000.jpeg", cap: "Sankei-en - Kanagawa - Sept 5 various" },
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/20250101_Minato_Mirai_21_%28Landmark_Tower%2C_Queen%27s_Square_Yokohama%2C_Pacifico_Yokohama%2C_InterContinental_Yokohama_Grand%29_122135.jpg/960px-20250101_Minato_Mirai_21_%28Landmark_Tower%2C_Queen%27s_Square_Yokohama%2C_Pacifico_Yokohama%2C_InterContinental_Yokohama_Grand%29_122135.jpg", cap: "Minato Mirai 21 (Landmark Tower, Queen's Square Yokohama, Pacif…" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/20250105_Minato_Mirai_21_%28Landmark_Tower%2C_Queen%27s_Square_Yokohama%2C_Cosmo_Clock_21%29_080219.jpg/960px-20250105_Minato_Mirai_21_%28Landmark_Tower%2C_Queen%27s_Square_Yokohama%2C_Cosmo_Clock_21%29_080219.jpg", cap: "Minato Mirai 21 (Landmark Tower, Queen's Square Yokohama, Cosmo…" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Japan-_Yokohama_Minato_Mirai_21_2010.jpg/960px-Japan-_Yokohama_Minato_Mirai_21_2010.jpg", cap: "Japan- Yokohama Minato Mirai" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Minato_Mirai_21_%40_Yokohama_%289054466278%29.jpg/960px-Minato_Mirai_21_%40_Yokohama_%289054466278%29.jpg", cap: "Minato Mirai 21 @ Yokohama" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Minato_Mirai_21_at_dusk_IMG_4649.jpg/960px-Minato_Mirai_21_at_dusk_IMG_4649.jpg", cap: "Minato Mirai 21 at dusk IMG" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Minato_Mirai_21_views_from_Osanbashi_Pier.jpg", cap: "Minato Mirai 21 views from Osanbashi Pier" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Sankei-en_20221127-1.jpg/960px-Sankei-en_20221127-1.jpg", cap: "View" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Minato_Mirai_-_Yokohama_Skyline_March_2025.jpg/960px-Minato_Mirai_-_Yokohama_Skyline_March_2025.jpg", cap: "Minato Mirai - Yokohama Skyline March" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Sankei-en_Gardens%2C_Yokohama_%28%E6%A8%AA%E6%B5%9C_%E4%B8%89%E6%BA%AA%E5%9C%92%29_circa_1962_by_Robert_Huffstutter.jpg", cap: "Sankei-en Gardens, Yokohama (横浜 三溪園) circa by Robert Huffstutter" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Minato_Mirai_21_views_from_around.jpg/960px-Minato_Mirai_21_views_from_around.jpg", cap: "Minato Mirai 21 views from around" }
   ]
 },
 {
@@ -134,15 +142,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/A_view_of_Lake_Ashi_with_Peace_Torii_gate%2C_Hakone%2C_Japan1.jpg/960px-A_view_of_Lake_Ashi_with_Peace_Torii_gate%2C_Hakone%2C_Japan1.jpg", cap: "Peace Torii on Lake Ashi" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/A_view_of_Owakudani_and_ropeway%2C_Hakone%2C_Japan.jpg/960px-A_view_of_Owakudani_and_ropeway%2C_Hakone%2C_Japan.jpg", cap: "A view of Owakudani and ropeway, Hakone, Japan" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Hakone_Open-air_Museum_20211202-10.jpg/960px-Hakone_Open-air_Museum_20211202-10.jpg", cap: "Hakone Open-air" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/LakeAshi_and_MtFuji_Hakone.JPG/960px-LakeAshi_and_MtFuji_Hakone.JPG", cap: "LakeAshi and MtFuji Hakone" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Lake_Ashi_in_Hakone_-_April_2014.jpg/960px-Lake_Ashi_in_Hakone_-_April_2014.jpg", cap: "Lake Ashi in Hakone - April" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Lake_Ashi_%26_Mt_Fuji_%26_Hakone_Shrine.jpg/960px-Lake_Ashi_%26_Mt_Fuji_%26_Hakone_Shrine.jpg", cap: "Lake Ashi & Mt Fuji & Hakone Shrine" },
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Hakone_Ashi_Lake_Torii.jpg/960px-Hakone_Ashi_Lake_Torii.jpg", cap: "The lakeside torii gate" },
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/A_view_of_Lake_Ashi_with_Peace_Torii_gate%2C_Hakone%2C_Japan2.jpg/960px-A_view_of_Lake_Ashi_with_Peace_Torii_gate%2C_Hakone%2C_Japan2.jpg", cap: "Lake Ashi from the water" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/A_view_of_Lake_Ashi%2C_Hakone%2C_Japan.jpg/960px-A_view_of_Lake_Ashi%2C_Hakone%2C_Japan.jpg", cap: "A view of Lake Ashi, Hakone, Japan" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/A_view_of_Lake_Ashi%2C_Hakone%2C_Japan1.jpg/960px-A_view_of_Lake_Ashi%2C_Hakone%2C_Japan1.jpg", cap: "A view of Lake Ashi, Hakone, Japan1" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/JAP_Hakone_Lake_Ashi_2.jpg/960px-JAP_Hakone_Lake_Ashi_2.jpg", cap: "JAP Hakone Lake Ashi" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/LakeAshi_and_MtFuji_Hakone.JPG/960px-LakeAshi_and_MtFuji_Hakone.JPG", cap: "LakeAshi and MtFuji Hakone" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Lake_Ashi_%26_Mt_Fuji_%26_Hakone_Shrine.jpg/960px-Lake_Ashi_%26_Mt_Fuji_%26_Hakone_Shrine.jpg", cap: "Lake Ashi & Mt Fuji & Hakone Shrine" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Lake_Ashi_%40_Hakone_%2813776582903%29.jpg/960px-Lake_Ashi_%40_Hakone_%2813776582903%29.jpg", cap: "Lake Ashi @ Hakone" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Lake_Ashi_%40_Hakone_%2813776906184%29.jpg/960px-Lake_Ashi_%40_Hakone_%2813776906184%29.jpg", cap: "Lake Ashi @ Hakone" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/A_view_of_Lake_Ashi%2C_Hakone%2C_Japan.jpg/960px-A_view_of_Lake_Ashi%2C_Hakone%2C_Japan.jpg", cap: "A view of Lake Ashi, Hakone, Japan" }
   ]
 },
 {
@@ -180,15 +187,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Izu_Jogasaki_-_%E4%BC%8A%E8%B1%86%E5%9F%8E%E3%82%B1%E5%B4%8E%E6%B5%B7%E5%B2%B8_m-8_-_panoramio.jpg/960px-Izu_Jogasaki_-_%E4%BC%8A%E8%B1%86%E5%9F%8E%E3%82%B1%E5%B4%8E%E6%B5%B7%E5%B2%B8_m-8_-_panoramio.jpg", cap: "Jogasaki coast, Izu" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various.jpeg", cap: "Izu Geopark coastline" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_32_09_711000.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_32_09_711000.jpeg", cap: "Volcanic shores of the peninsula" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Columnar_joints_at_Nakagi%2C_Minami-Izu%2C_Shizuoka%2C_Japan.jpg/960px-Columnar_joints_at_Nakagi%2C_Minami-Izu%2C_Shizuoka%2C_Japan.jpg", cap: "Columnar joints at Nakagi, Minami-Izu, Shizuoka, Japan" },
     { src: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Izu-oshima.jpg", cap: "Izu-oshima" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_30_12_234000.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_30_12_234000.jpeg", cap: "Izu peninsula UNESCO geopark Sept 12 various 18 30" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_30_38_698000.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_30_38_698000.jpeg", cap: "Izu peninsula UNESCO geopark Sept 12 various 18 30" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_31_19_076000.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_31_19_076000.jpeg", cap: "Izu peninsula UNESCO geopark Sept 12 various 18 31" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_31_31_187000.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_31_31_187000.jpeg", cap: "Izu peninsula UNESCO geopark Sept 12 various 18 31" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_31_53_907000.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_31_53_907000.jpeg", cap: "Izu peninsula UNESCO geopark Sept 12 various 18 31" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Beach_in_Shimoda.jpg/960px-Beach_in_Shimoda.jpg", cap: "Beach in Shimoda" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Kawazu_Seven_Waterfalls_Snake_Waterfall_%28202950357%29.jpeg/960px-Kawazu_Seven_Waterfalls_Snake_Waterfall_%28202950357%29.jpeg", cap: "Kawazu Seven Waterfalls Snake Waterfall" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/IZU_Shirahama_-_panoramio.jpg/960px-IZU_Shirahama_-_panoramio.jpg", cap: "IZU Shirahama" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Sarutafuchi_Fall_in_Kawazu_Town.jpg/960px-Sarutafuchi_Fall_in_Kawazu_Town.jpg", cap: "Sarutafuchi Fall in Kawazu Town" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various.jpeg", cap: "Izu peninsula UNESCO geopark Sept 12 various" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Izu_Shimoda_Tatado_hama.jpg/960px-Izu_Shimoda_Tatado_hama.jpg", cap: "Izu Shimoda Tatado hama" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/J%C5%8Dgasaki_Coast_01.jpg/960px-J%C5%8Dgasaki_Coast_01.jpg", cap: "Jōgasaki Coast" }
   ]
 },
 {
@@ -227,15 +233,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Lake_Kawaguchiko_Sakura_Mount_Fuji_3.JPG/960px-Lake_Kawaguchiko_Sakura_Mount_Fuji_3.JPG", cap: "Mt. Fuji over Lake Kawaguchiko" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Mount_Fuji_%40_Lake_Kawaguchiko_%2810862985754%29.jpg/960px-Mount_Fuji_%40_Lake_Kawaguchiko_%2810862985754%29.jpg", cap: "Fuji reflected in the lake" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Lake_Kawaguchiko_Sakura_Mount_Fuji_4.JPG/960px-Lake_Kawaguchiko_Sakura_Mount_Fuji_4.JPG", cap: "Cherry blossom and Fuji" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Lake_Kawaguchiko_Sakura_Mount_Fuji_1.JPG/960px-Lake_Kawaguchiko_Sakura_Mount_Fuji_1.JPG", cap: "Lake Kawaguchiko Sakura Mount Fuji" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Lake_Kawaguchiko_Sakura_Mount_Fuji_2.JPG/960px-Lake_Kawaguchiko_Sakura_Mount_Fuji_2.JPG", cap: "Lake Kawaguchiko Sakura Mount Fuji" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Mount_Fuji_%40_Lake_Kawaguchiko_%2810862894455%29.jpg/960px-Mount_Fuji_%40_Lake_Kawaguchiko_%2810862894455%29.jpg", cap: "Mount Fuji @ Lake Kawaguchiko" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Mount_Fuji_%40_Lake_Kawaguchiko_%2810862962515%29.jpg/960px-Mount_Fuji_%40_Lake_Kawaguchiko_%2810862962515%29.jpg", cap: "Mount Fuji @ Lake Kawaguchiko" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Mount_Fuji_%40_Lake_Kawaguchiko_%2810862992324%29.jpg/960px-Mount_Fuji_%40_Lake_Kawaguchiko_%2810862992324%29.jpg", cap: "Mount Fuji @ Lake Kawaguchiko" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Mount_Fuji_%40_Lake_Kawaguchiko_%2810862997934%29.jpg/960px-Mount_Fuji_%40_Lake_Kawaguchiko_%2810862997934%29.jpg", cap: "Mount Fuji @ Lake Kawaguchiko" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Mount_Fuji_%40_Lake_Kawaguchiko_%2810863000084%29.jpg/960px-Mount_Fuji_%40_Lake_Kawaguchiko_%2810863000084%29.jpg", cap: "Mount Fuji @ Lake Kawaguchiko" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/20100728_Kawaguchiko_Station_6622.jpg/960px-20100728_Kawaguchiko_Station_6622.jpg", cap: "Kawaguchiko Station" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/12-Chureito-pagoda-and-Mount-Fuji-Japan_%2829677439878%29.jpg/960px-12-Chureito-pagoda-and-Mount-Fuji-Japan_%2829677439878%29.jpg", cap: "View" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Kawaguchiko_Sta._%26_Mt._Fuji_20061112.jpg/960px-Kawaguchiko_Sta._%26_Mt._Fuji_20061112.jpg", cap: "Kawaguchiko Sta. & Mt. Fuji" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Chureito_Pagoda_and_Mount_Fuji_low_crop_Wikivoyage_banner.jpg/960px-Chureito_Pagoda_and_Mount_Fuji_low_crop_Wikivoyage_banner.jpg", cap: "Chureito Pagoda and Mount Fuji" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Lake_Kawaguchiko_Sakura_Mount_Fuji_4.JPG/960px-Lake_Kawaguchiko_Sakura_Mount_Fuji_4.JPG", cap: "Lake Kawaguchiko Sakura Mount Fuji" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Mount_Fuji_and_Kawaguchiko_Lake_and_Bridge_on_a_manhole_cover%2C_Fujikawaguchiko%2C_2016.jpg/960px-Mount_Fuji_and_Kawaguchiko_Lake_and_Bridge_on_a_manhole_cover%2C_Fujikawaguchiko%2C_2016.jpg", cap: "Mount Fuji and Kawaguchiko Lake and Bridge on a manhole cover,…" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mount_Fuji_at_night%2C_Kawaguchiko.jpg/960px-Mount_Fuji_at_night%2C_Kawaguchiko.jpg", cap: "Mount Fuji at night, Kawaguchiko" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Mount_Fuji_%40_Lake_Kawaguchiko_%2810862985754%29.jpg/960px-Mount_Fuji_%40_Lake_Kawaguchiko_%2810862985754%29.jpg", cap: "Fuji reflected in the lake" }
   ]
 },
 {
@@ -274,15 +279,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Nagoya_Castle%28Edit2%29.jpg/960px-Nagoya_Castle%28Edit2%29.jpg", cap: "Nagoya Castle" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Nagoya_Castle_%2856938%29.jpg/960px-Nagoya_Castle_%2856938%29.jpg", cap: "Keep and golden shachihoko" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Nagoya_Castle_%2867295%29.jpg/960px-Nagoya_Castle_%2867295%29.jpg", cap: "Castle grounds" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Nagoya_Castle%28Larger%29.jpg/960px-Nagoya_Castle%28Larger%29.jpg", cap: "Nagoya Castle(Larger)" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Nagoya_Castle_%2819636%29.jpg/960px-Nagoya_Castle_%2819636%29.jpg", cap: "Nagoya Castle" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Nagoya_Castle_%2823700%29.jpg/960px-Nagoya_Castle_%2823700%29.jpg", cap: "Nagoya Castle" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Nagoya_Castle_%2829603%29.jpg/960px-Nagoya_Castle_%2829603%29.jpg", cap: "Nagoya Castle" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Nagoya_Castle_%2833489%29.jpg/960px-Nagoya_Castle_%2833489%29.jpg", cap: "Nagoya Castle" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Nagoya_Castle_%2875241%29.jpg/960px-Nagoya_Castle_%2875241%29.jpg", cap: "Nagoya Castle" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nagoya_Castle_%2877130%29.jpg/960px-Nagoya_Castle_%2877130%29.jpg", cap: "Nagoya Castle" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Atsuta-jing%C5%AB_%28Atsuta-ku%2C_Nagoya%29_VLux5_hdsr_at08.jpg/960px-Atsuta-jing%C5%AB_%28Atsuta-ku%2C_Nagoya%29_VLux5_hdsr_at08.jpg", cap: "Atsuta-jingū (Atsuta-ku, Nagoya)" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Japan-_Nagoya-_Osu_Kannon_Temple_2.jpg/960px-Japan-_Nagoya-_Osu_Kannon_Temple_2.jpg", cap: "Japan- Nagoya- Osu Kannon Temple" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Atsuta_Shrine%2C_Nagoya%3B_Febuary_2012.jpg/960px-Atsuta_Shrine%2C_Nagoya%3B_Febuary_2012.jpg", cap: "Atsuta Shrine, Nagoya; Febuary" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Nagoya-subway-T08-Osu-kannon-station-entrance-2-20100315.jpg/960px-Nagoya-subway-T08-Osu-kannon-station-entrance-2-20100315.jpg", cap: "View" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Nagoya_Castle_aerial_panorama.jpg/960px-Nagoya_Castle_aerial_panorama.jpg", cap: "Nagoya Castle aerial panorama" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Atsuta_Shrine.jpg/960px-Atsuta_Shrine.jpg", cap: "Atsuta Shrine" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/%C5%8Csu_Kannon_%28Naka-ku%2C_Nagoya%29_VLux5_hdsr_102.jpg/960px-%C5%8Csu_Kannon_%28Naka-ku%2C_Nagoya%29_VLux5_hdsr_102.jpg", cap: "Ōsu Kannon (Naka-ku, Nagoya)" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Nagoya_Castle_%2856938%29.jpg/960px-Nagoya_Castle_%2856938%29.jpg", cap: "Keep and golden shachihoko" }
   ]
 },
 {
@@ -320,15 +324,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Observing_Naruto_whirlpools.jpg/960px-Observing_Naruto_whirlpools.jpg", cap: "Watching the Naruto whirlpools" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Whirlpools_and_Awaji_Island_from_Uzunomichi_Promenade_1.jpg/960px-Whirlpools_and_Awaji_Island_from_Uzunomichi_Promenade_1.jpg", cap: "Whirlpools off the island" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/View_from_Uzunomichi_Promenade_5.JPG/960px-View_from_Uzunomichi_Promenade_5.JPG", cap: "Uzunomichi sea walkway" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Awaji%2C_Japan.jpg/960px-Awaji%2C_Japan.jpg", cap: "Awaji, Japan" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Awaji_Island_Nori.JPG/960px-Awaji_Island_Nori.JPG", cap: "Awaji Island Nori" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Awaji_Island_earthquake_in_Shijimi_station_Shintetsu_Ao_line_Kobe_railway.jpg/960px-Awaji_Island_earthquake_in_Shijimi_station_Shintetsu_Ao_line_Kobe_railway.jpg", cap: "Awaji Island earthquake in Shijimi station Shintetsu Ao line Ko…" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Awaji_Island_milk.JPG/960px-Awaji_Island_milk.JPG", cap: "Awaji Island milk" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Awaji_Onion.JPG/960px-Awaji_Onion.JPG", cap: "Awaji Onion" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Awaji_chicken_Bajiru_Sand.jpg/960px-Awaji_chicken_Bajiru_Sand.jpg", cap: "Awaji chicken Bajiru Sand" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/1/14/Awaji_island.jpg", cap: "Awaji island" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Awa%2C_Naruto_Whirlpools%2C_ca_1855.jpg/960px-Awa%2C_Naruto_Whirlpools%2C_ca_1855.jpg", cap: "Awa, Naruto Whirlpools, ca" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/5/56/Akashi-Kaikyo_Bridge%2C_Japan_%28ASTER%29.jpg", cap: "Akashi-Kaikyo Bridge, Japan (ASTER)" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Awaji_Balcony_flower_in_2013_04.JPG/960px-Awaji_Balcony_flower_in_2013_04.JPG", cap: "Awaji Balcony flower in" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Naruto_Whirlpools_taken_4-21-2008.jpg/960px-Naruto_Whirlpools_taken_4-21-2008.jpg", cap: "Naruto Whirlpools taken" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Akashi_Bridge.JPG/960px-Akashi_Bridge.JPG", cap: "Akashi Bridge" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/%E5%85%AD%E5%8D%81%E4%BD%99%E5%B7%9E%E5%90%8D%E6%89%80%E5%9B%B3%E4%BC%9A_%E9%98%BF%E6%B3%A2_%E9%B3%B4%E9%96%80%E3%81%AE%E9%A2%A8%E6%B3%A2-Naruto_Whirlpool%2C_Awa_Province%2C_from_the_series_Views_of_Famous_Places_in_the_Sixty-Odd_Provinces_MET_DP122165.jpg/960px-thumbnail.jpg", cap: "六十余州名所図会 阿波 鳴門の風波-Naruto Whirlpool, Awa Province, from the seri…" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/DSC01488_Akashi-Kaikyo_Bridge_interfior.jpg/960px-DSC01488_Akashi-Kaikyo_Bridge_interfior.jpg", cap: "DSC01488 Akashi-Kaikyo Bridge interfior" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Naruto_whirlpools_20170609-1.jpg/960px-Naruto_whirlpools_20170609-1.jpg", cap: "Naruto" }
   ]
 },
 {
@@ -367,15 +370,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Iya_Kazurabashi-4.jpg/960px-Iya_Kazurabashi-4.jpg", cap: "Kazurabashi vine bridge" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Iya_Valley_a.jpeg/960px-Iya_Valley_a.jpeg", cap: "The Iya gorge" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Iya_vine_bridge_%286551507515%29.jpg/960px-Iya_vine_bridge_%286551507515%29.jpg", cap: "Crossing the vine bridge" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/150503_Biwa_Falls_Iya_Valley_Miyoshi_Tokushima_pref_Japan01s3.jpg/960px-150503_Biwa_Falls_Iya_Valley_Miyoshi_Tokushima_pref_Japan01s3.jpg", cap: "Biwa Falls Iya Valley Miyoshi Tokushima pref Japan01s3" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bridge_over_Yoshino-gawa_%286453471533%29.jpg/960px-Bridge_over_Yoshino-gawa_%286453471533%29.jpg", cap: "Bridge over Yoshino-gawa" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Iya_Valley_a.jpeg/960px-Iya_Valley_a.jpeg", cap: "Iya Valley a" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Oboke_and_Yoshino-gawa_river_%286453466931%29.jpg/960px-Oboke_and_Yoshino-gawa_river_%286453466931%29.jpg", cap: "Oboke and Yoshino-gawa river" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Iya_vine_bridge_%286551507515%29.jpg/960px-Iya_vine_bridge_%286551507515%29.jpg", cap: "Iya vine bridge" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Tokushima_Miyoshi_Oboke_Gorge_Of_Yoshino_River_2.JPG/960px-Tokushima_Miyoshi_Oboke_Gorge_Of_Yoshino_River_2.JPG", cap: "Tokushima Miyoshi Oboke Gorge Of Yoshino River" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/150503_Biwa_Falls_Iya_Valley_Miyoshi_Tokushima_pref_Japan01s3.jpg/960px-150503_Biwa_Falls_Iya_Valley_Miyoshi_Tokushima_pref_Japan01s3.jpg", cap: "150503 Biwa Falls Iya Valley Miyoshi Tokushima pref" },
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Crab_crawling_around_in_the_hills_of_Iya_Valley_%286453587885%29.jpg/960px-Crab_crawling_around_in_the_hills_of_Iya_Valley_%286453587885%29.jpg", cap: "Crab crawling around in the hills of Iya Valley" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Iya-Onsen_Hotel%2CTokushima%281%29_-_panoramio.jpg/960px-Iya-Onsen_Hotel%2CTokushima%281%29_-_panoramio.jpg", cap: "Iya-Onsen Hotel,Tokushima - panoramio" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Iya-Onsen_Hotel%2CTokushima%282%29_-_panoramio.jpg/960px-Iya-Onsen_Hotel%2CTokushima%282%29_-_panoramio.jpg", cap: "Iya-Onsen Hotel,Tokushima - panoramio" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Iya_Soba.jpg/960px-Iya_Soba.jpg", cap: "Iya Soba" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iya_Valley_01.jpg/960px-Iya_Valley_01.jpg", cap: "Iya Valley" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Iya_Valley_02.jpg/960px-Iya_Valley_02.jpg", cap: "Iya Valley" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Iya-Onsen_Hotel%2CTokushima%281%29_-_panoramio.jpg/960px-Iya-Onsen_Hotel%2CTokushima%281%29_-_panoramio.jpg", cap: "Iya-Onsen Hotel,Tokushima" }
   ]
 },
 {
@@ -414,15 +416,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Kochi_Castle08s3872.jpg/960px-Kochi_Castle08s3872.jpg", cap: "Kochi Castle" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Kochi_Castle_03.JPG/960px-Kochi_Castle_03.JPG", cap: "The original keep" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Kochi_Castle_08.jpg/960px-Kochi_Castle_08.jpg", cap: "Castle grounds" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Kochi_Castle_Keep_Tower_20170122-1.jpg/960px-Kochi_Castle_Keep_Tower_20170122-1.jpg", cap: "Kochi Castle Keep Tower-1" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Kochi_Castle_Keep_Tower_20170122-3.jpg/960px-Kochi_Castle_Keep_Tower_20170122-3.jpg", cap: "Kochi Castle Keep Tower-3" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Kochi_Castle_Keep_Tower_20170122-4.jpg/960px-Kochi_Castle_Keep_Tower_20170122-4.jpg", cap: "Kochi Castle Keep Tower-4" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Kochi_Castle_air.jpg/960px-Kochi_Castle_air.jpg", cap: "Kochi Castle air" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Kochi_Kochi-Castle_Donjon_From_Sannomaru_1.JPG/960px-Kochi_Kochi-Castle_Donjon_From_Sannomaru_1.JPG", cap: "Kochi Kochi-Castle Donjon From Sannomaru" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Kochi_Kochi-Castle_Otte-Gate_1.JPG/960px-Kochi_Kochi-Castle_Otte-Gate_1.JPG", cap: "Kochi Kochi-Castle Otte-Gate" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Kochi_Kochi-Castle_Sannomaru_Stone_Wall_1.JPG/960px-Kochi_Kochi-Castle_Sannomaru_Stone_Wall_1.JPG", cap: "Kochi Kochi-Castle Sannomaru Stone Wall" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Itagaki_Taisuke_dozo_seiso.jpg/960px-Itagaki_Taisuke_dozo_seiso.jpg", cap: "Itagaki Taisuke dozo seiso" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Katsurahama%2C_2005.jpg", cap: "Katsurahama" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Harimaya-bashi_%286453595247%29.jpg/960px-Harimaya-bashi_%286453595247%29.jpg", cap: "Harimaya-bashi" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/0/02/Katsurahama_Beach.jpg", cap: "Katsurahama Beach" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Harimayabashi-1.jpg", cap: "View" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Katsurahama_ryugu_bridge.jpg/960px-Katsurahama_ryugu_bridge.jpg", cap: "Katsurahama ryugu bridge" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Kochi_Harimaya-bashi_Bridge.jpeg/960px-Kochi_Harimaya-bashi_Bridge.jpeg", cap: "Kochi Harimaya-bashi Bridge" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Katsurahama_wadatsumi_shrine.jpg/960px-Katsurahama_wadatsumi_shrine.jpg", cap: "Katsurahama wadatsumi shrine" }
   ]
 },
 {
@@ -461,15 +462,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Shimanto_River_%285279082249%29.jpg/960px-Shimanto_River_%285279082249%29.jpg", cap: "The Shimanto River" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Shimanto_River_And_Iwama_Bridge_1.jpg/960px-Shimanto_River_And_Iwama_Bridge_1.jpg", cap: "A chinkabashi 'sinking bridge'" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Shimanto_River_And_Shimanto_River_Bridge_1.JPG/960px-Shimanto_River_And_Shimanto_River_Bridge_1.JPG", cap: "Clear waters of the Shimanto" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Nishitosa_Shimanto_river.jpg", cap: "Nishitosa Shimanto river" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Shimanto_River_And_Iwama_Bridge_1.jpg/960px-Shimanto_River_And_Iwama_Bridge_1.jpg", cap: "Shimanto River And Iwama Bridge" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Yodo_Line_and_Shimanto_river.JPG/960px-Yodo_Line_and_Shimanto_river.JPG", cap: "Yodo Line and Shimanto river" },
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Sagawa-bridge%2CShimanto-cho%2CJapan.JPG/960px-Sagawa-bridge%2CShimanto-cho%2CJapan.JPG", cap: "Sagawa-bridge,Shimanto-cho,Japan" },
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Shimanto-iwama.jpg/960px-Shimanto-iwama.jpg", cap: "Shimanto-iwama" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Shimanto-river_%E5%9B%9B%E4%B8%87%E5%8D%81%E5%B7%9D%E8%8B%A5%E4%BA%95%E6%B2%88%E4%B8%8B%E6%A9%8B1010070.JPG/960px-Shimanto-river_%E5%9B%9B%E4%B8%87%E5%8D%81%E5%B7%9D%E8%8B%A5%E4%BA%95%E6%B2%88%E4%B8%8B%E6%A9%8B1010070.JPG", cap: "Shimanto-river 四万十川若井沈下橋1010070" },
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/ShimantoRiverFromNakabaRestarea.JPG/960px-ShimantoRiverFromNakabaRestarea.JPG", cap: "ShimantoRiverFromNakabaRestarea" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/1/18/Shimanto_River_-_panoramio.jpg", cap: "Shimanto River - panoramio" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Shimanto_River_Bridge%2826676794871%29.jpg/960px-Shimanto_River_Bridge%2826676794871%29.jpg", cap: "Shimanto River Bridge" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Shimanto_River_And_Shimanto_River_Bridge_1.JPG/960px-Shimanto_River_And_Shimanto_River_Bridge_1.JPG", cap: "Clear waters of the Shimanto" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/f/f0/Nishitosa_Shimanto_river.jpg", cap: "Nishitosa Shimanto river" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Shimanto-river_%E5%9B%9B%E4%B8%87%E5%8D%81%E5%B7%9D%E8%8B%A5%E4%BA%95%E6%B2%88%E4%B8%8B%E6%A9%8B1010070.JPG/960px-Shimanto-river_%E5%9B%9B%E4%B8%87%E5%8D%81%E5%B7%9D%E8%8B%A5%E4%BA%95%E6%B2%88%E4%B8%8B%E6%A9%8B1010070.JPG", cap: "Shimanto-river" }
   ]
 },
 {
@@ -507,11 +507,10 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Uwajima-jo.JPG/960px-Uwajima-jo.JPG", cap: "Uwajima Castle" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Uwajima_Castle%2C_honmaru-1.jpg/960px-Uwajima_Castle%2C_honmaru-1.jpg", cap: "The original keep" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Uwajima_Castle%2C_honmaru_ishigaki-1.jpg/960px-Uwajima_Castle%2C_honmaru_ishigaki-1.jpg", cap: "Castle stone walls" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kashima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg/960px-Kashima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg", cap: "Kashima Island, Uwajima Ehime Aerial photograph.2019" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kushima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg/960px-Kushima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg", cap: "Kushima Island, Uwajima Ehime Aerial photograph.2019" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Okinoshima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg/960px-Okinoshima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg", cap: "Okinoshima Island, Uwajima Ehime Aerial photograph.2019" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Uchiko-za_%286454001047%29.jpg/960px-Uchiko-za_%286454001047%29.jpg", cap: "Uchiko-za" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Uchiko_Theatre.jpg/960px-Uchiko_Theatre.jpg", cap: "Uchiko Theatre" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Ehime_Bank_Uwajima_Branch_Uwajima-Shimmachi_Sub-branch.jpg/960px-Ehime_Bank_Uwajima_Branch_Uwajima-Shimmachi_Sub-branch.jpg", cap: "Ehime Bank Uwajima Branch Uwajima-Shimmachi Sub-branch" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kashima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg/960px-Kashima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg", cap: "Kashima Island, Uwajima Ehime Aerial" },
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Uwajima_Bay.JPG/960px-Uwajima_Bay.JPG", cap: "Uwajima Bay" },
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Uwajima_Port_Joint_Government_Building.jpg/960px-Uwajima_Port_Joint_Government_Building.jpg", cap: "Uwajima Port Joint Government Building" },
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Uwajima_Station%2C_platform.jpg/960px-Uwajima_Station%2C_platform.jpg", cap: "Uwajima Station, platform" },
@@ -554,15 +553,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Dogo_Onsen_Honkan_%28Main_building%29%2C_%E9%81%93%E5%BE%8C%E6%B8%A9%E6%B3%89_%E6%9C%AC%E9%A4%A8_-_panoramio.jpg/960px-Dogo_Onsen_Honkan_%28Main_building%29%2C_%E9%81%93%E5%BE%8C%E6%B8%A9%E6%B3%89_%E6%9C%AC%E9%A4%A8_-_panoramio.jpg", cap: "Dogo Onsen Honkan bathhouse" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Dogo_Onsen_Honkan_%28Main_building%29%2C_%E9%81%93%E5%BE%8C%E6%B8%A9%E6%B3%89_%E6%9C%AC%E9%A4%A8_-_panoramio_%281%29.jpg/960px-Dogo_Onsen_Honkan_%28Main_building%29%2C_%E9%81%93%E5%BE%8C%E6%B8%A9%E6%B3%89_%E6%9C%AC%E9%A4%A8_-_panoramio_%281%29.jpg", cap: "The historic hot-spring building" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Dogo%2C_Matsuyama_20170123.jpg/960px-Dogo%2C_Matsuyama_20170123.jpg", cap: "Dogo, Matsuyama" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Dogo-onsen_Honkan.jpg/960px-Dogo-onsen_Honkan.jpg", cap: "Dogo-onsen Honkan" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Dogo_Onsen_01.jpg/960px-Dogo_Onsen_01.jpg", cap: "Dogo Onsen" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Dogo_Onsen_03.jpg/960px-Dogo_Onsen_03.jpg", cap: "Dogo Onsen" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Dogo_Onsen_04.jpg/960px-Dogo_Onsen_04.jpg", cap: "Dogo Onsen" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Dogo_Onsen_1894.jpg/960px-Dogo_Onsen_1894.jpg", cap: "Dogo Onsen" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Dogo_Onsen_Honkan_%28Main_building%29%2C_%E9%81%93%E5%BE%8C%E6%B8%A9%E6%B3%89_%E6%9C%AC%E9%A4%A8_-_panoramio_%285%29.jpg/960px-Dogo_Onsen_Honkan_%28Main_building%29%2C_%E9%81%93%E5%BE%8C%E6%B8%A9%E6%B3%89_%E6%9C%AC%E9%A4%A8_-_panoramio_%285%29.jpg", cap: "Dogo Onsen Honkan (Main building), 道後温泉 本館 - panoramio" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Dogo_Onsen_Honkan_%28Main_building%29%2C_%E9%81%93%E5%BE%8C%E6%B8%A9%E6%B3%89_%E6%9C%AC%E9%A4%A8_-_panoramio_%287%29.jpg/960px-Dogo_Onsen_Honkan_%28Main_building%29%2C_%E9%81%93%E5%BE%8C%E6%B8%A9%E6%B3%89_%E6%9C%AC%E9%A4%A8_-_panoramio_%287%29.jpg", cap: "Dogo Onsen Honkan (Main building), 道後温泉 本館 - panoramio" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/MEIN%26SMALL_CASTLE_TOWER_%2CMATSUYAMA_CASTLE%28IYO%29.JPG/960px-MEIN%26SMALL_CASTLE_TOWER_%2CMATSUYAMA_CASTLE%28IYO%29.JPG", cap: "MEIN&SMALL CASTLE TOWER ,MATSUYAMA CASTLE(IYO)" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Botchan-ressha.jpg/960px-Botchan-ressha.jpg", cap: "Botchan-ressha" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Dogo_onsen_honkan_long_exposure.jpg/960px-Dogo_onsen_honkan_long_exposure.jpg", cap: "Dogo onsen honkan long exposure" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Marunouchi%2C_Matsuyama%2C_Ehime_Prefecture_790-0008%2C_Japan_-_panoramio_%2893%29.jpg/960px-Marunouchi%2C_Matsuyama%2C_Ehime_Prefecture_790-0008%2C_Japan_-_panoramio_%2893%29.jpg", cap: "Marunouchi, Matsuyama, Ehime Prefecture 790-0008, Japan - panor…" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Botchan-train%28Matsuyama_City%29.JPG/960px-Botchan-train%28Matsuyama_City%29.JPG", cap: "Botchan-train(Matsuyama City)" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Matsuyama_Castle_1906.jpg/960px-Matsuyama_Castle_1906.jpg", cap: "Matsuyama Castle" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Botchan_Train_at_Dogo_Onsen_Station.jpg/960px-Botchan_Train_at_Dogo_Onsen_Station.jpg", cap: "Botchan Train at Dogo Onsen Station" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Stone_sign%2C_Matsuyama_Castle%2C_Matsuyama%2C_Ehime_-_Sep_23%2C_2011.jpg/960px-Stone_sign%2C_Matsuyama_Castle%2C_Matsuyama%2C_Ehime_-_Sep_23%2C_2011.jpg", cap: "Stone sign, Matsuyama Castle, Matsuyama, Ehime - Sep" }
   ]
 },
 {
@@ -600,15 +598,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Kurushima-Kaikyo_Bridge%2C_Seto_Inland_Sea%2C_Japan.jpg/960px-Kurushima-Kaikyo_Bridge%2C_Seto_Inland_Sea%2C_Japan.jpg", cap: "Kurushima-Kaikyo Bridge" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Stele_of_Tatara_Bridge_in_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22.jpg/960px-Stele_of_Tatara_Bridge_in_Roadside_Station_%22Imabari_City_Tatara_Shimanami_Park%22.jpg", cap: "Stele of Tatara Bridge in Roadside Station 'Imabari City Tatara…" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Onomichi_Station_Pier_of_Mukaishima_Ferry_2.jpg/960px-Onomichi_Station_Pier_of_Mukaishima_Ferry_2.jpg", cap: "Onomichi Station Pier of Mukaishima Ferry" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Shimanami_Kaido_Bikeway_%2814089291941%29.jpg/960px-Shimanami_Kaido_Bikeway_%2814089291941%29.jpg", cap: "Shimanami Kaido Bikeway" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Tatara-gridge201310.JPG/960px-Tatara-gridge201310.JPG", cap: "View" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kurushima-Kaiky%C5%8D_Bridge_2012-04-07.JPG/960px-Kurushima-Kaiky%C5%8D_Bridge_2012-04-07.JPG", cap: "Kurushima-Kaikyō" },
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Kurushima-Kaikyo_Bridge_310040.jpg/960px-Kurushima-Kaikyo_Bridge_310040.jpg", cap: "The great spans over the sea" },
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Kurushima-Kaikyo_Bridge_310054.jpg/960px-Kurushima-Kaikyo_Bridge_310054.jpg", cap: "Island-hopping route" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Kurushima-Kaikyo-Bridge.jpg/960px-Kurushima-Kaikyo-Bridge.jpg", cap: "Kurushima-Kaikyo-Bridge" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Kurushima-Kaiky%C5%8D_Bridge_2012-04-07.JPG/960px-Kurushima-Kaiky%C5%8D_Bridge_2012-04-07.JPG", cap: "Kurushima-Kaikyō Bridge-04-07" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Kurushima-kaiky%C5%8DBridgeRoadway.jpg/960px-Kurushima-kaiky%C5%8DBridgeRoadway.jpg", cap: "Kurushima-kaikyōBridgeRoadway" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Kurushima_Kaikyo_Bridge-1.jpg/960px-Kurushima_Kaikyo_Bridge-1.jpg", cap: "Kurushima Kaikyo Bridge-1" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Kurushima_Kaikyo_Bridge-2.jpg/960px-Kurushima_Kaikyo_Bridge-2.jpg", cap: "Kurushima Kaikyo Bridge-2" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/4/44/Kurushima_Kaikyo_Bridge-2edit.jpg", cap: "Kurushima Kaikyo Bridge-2edit" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Kurushima_Kaikyo_Bridge-3.jpg/960px-Kurushima_Kaikyo_Bridge-3.jpg", cap: "Kurushima Kaikyo Bridge-3" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Kurushima-Kaikyo-Bridge.jpg/960px-Kurushima-Kaikyo-Bridge.jpg", cap: "Kurushima-Kaikyo-Bridge" }
   ]
 },
 {
@@ -647,15 +644,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Onomichi_%2851806057842%29.jpg/960px-Onomichi_%2851806057842%29.jpg", cap: "Onomichi hillside town" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Onomichi_%2851807128293%29.jpg/960px-Onomichi_%2851807128293%29.jpg", cap: "Views over the channel" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Higashigoshocho%2C_Onomichi%2C_Hiroshima_Prefecture_722-0036%2C_Japan_-_panoramio.jpg/960px-Higashigoshocho%2C_Onomichi%2C_Hiroshima_Prefecture_722-0036%2C_Japan_-_panoramio.jpg", cap: "Higashigoshocho, Onomichi, Hiroshima Prefecture 722-0036, Japan…" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Onomichi_104.jpg/960px-Onomichi_104.jpg", cap: "Onomichi" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Onomichi_105.jpg/960px-Onomichi_105.jpg", cap: "Onomichi" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Onomichi_106.jpg/960px-Onomichi_106.jpg", cap: "Onomichi" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Onomichi_107.jpg/960px-Onomichi_107.jpg", cap: "Onomichi" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Onomichi_108.jpg/960px-Onomichi_108.jpg", cap: "Onomichi" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Onomichi_110.jpg/960px-Onomichi_110.jpg", cap: "Onomichi" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Onomichi_111.jpg/960px-Onomichi_111.jpg", cap: "Onomichi" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Onomichi_Bridge_and_Onomichi_Channel_from_Main_Hall_of_Senkoji_Temple_2.jpg/960px-Onomichi_Bridge_and_Onomichi_Channel_from_Main_Hall_of_Senkoji_Temple_2.jpg", cap: "Onomichi Bridge and Onomichi Channel from Main Hall of Senkoji…" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/From_the_sky_%2C_%E4%BD%90%E6%9C%A8%E5%B3%B6%E4%B8%8A%E7%A9%BA%E3%81%8B%E3%82%89_-_panoramio.jpg/960px-From_the_sky_%2C_%E4%BD%90%E6%9C%A8%E5%B3%B6%E4%B8%8A%E7%A9%BA%E3%81%8B%E3%82%89_-_panoramio.jpg", cap: "From the sky , 佐木島上空から" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Onomichi_Bridge_and_Shin-Onomichi_Bridge_from_Senkoji_Temple_2.jpg/960px-Onomichi_Bridge_and_Shin-Onomichi_Bridge_from_Senkoji_Temple_2.jpg", cap: "Onomichi Bridge and Shin-Onomichi Bridge from Senkoji Temple" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Higashitsuchidocho%2C_Onomichi%2C_Hiroshima_Prefecture_722-0033%2C_Japan_-_panoramio_%284%29.jpg/960px-Higashitsuchidocho%2C_Onomichi%2C_Hiroshima_Prefecture_722-0033%2C_Japan_-_panoramio_%284%29.jpg", cap: "Higashitsuchidocho, Onomichi, Hiroshima Prefecture 722-0033, Ja…" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Stele_of_Senkoji_Temple_in_Senkoji_Park.jpg/960px-Stele_of_Senkoji_Temple_in_Senkoji_Park.jpg", cap: "Stele of Senkoji Temple in Senkoji Park" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/%E5%B0%BE%E9%81%93_Onomachi_-_panoramio.jpg/960px-%E5%B0%BE%E9%81%93_Onomachi_-_panoramio.jpg", cap: "尾道 Onomachi" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/View_of_Onomichi_Channel_and_Mukaishima_Island_near_Senkoji_Temple_3.jpg/960px-View_of_Onomichi_Channel_and_Mukaishima_Island_near_Senkoji_Temple_3.jpg", cap: "View of Onomichi Channel and Mukaishima Island near Senkoji Temple" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/View_of_Onomichi_Bridge_and_Shin-Onomichi_Bridge_near_Bell_Tower_of_Senkoji_Temple_2.jpg/960px-View_of_Onomichi_Bridge_and_Shin-Onomichi_Bridge_near_Bell_Tower_of_Senkoji_Temple_2.jpg", cap: "View of Onomichi Bridge and Shin-Onomichi Bridge near Bell Towe…" }
   ]
 },
 {
@@ -694,15 +690,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Kurashiki_Bikan_-02.jpg/960px-Kurashiki_Bikan_-02.jpg", cap: "Kurashiki Bikan canal quarter" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Kurashiki_Bikan_historical_quarter_1.jpg/960px-Kurashiki_Bikan_historical_quarter_1.jpg", cap: "Willow-lined canal" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Kurashiki_Bikan_-05.jpg/960px-Kurashiki_Bikan_-05.jpg", cap: "White-walled storehouses" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/161015_At_Kurashiki_Bikan_historical_quarter_Kurashiki_Okayama_pref_Japan01s3.jpg/960px-161015_At_Kurashiki_Bikan_historical_quarter_Kurashiki_Okayama_pref_Japan01s3.jpg", cap: "At Kurashiki Bikan historical quarter Kurashiki Okayama pref Ja…" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Fire_lookout_tower%2C_Kurashiki_Bikan_historical_quarter_-_Aug_11%2C_2014.jpg/960px-Fire_lookout_tower%2C_Kurashiki_Bikan_historical_quarter_-_Aug_11%2C_2014.jpg", cap: "Fire lookout tower, Kurashiki Bikan historical quarter - Aug 11" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Kurashiki_Bikan_-04.jpg/960px-Kurashiki_Bikan_-04.jpg", cap: "Kurashiki Bikan -04" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Kurashiki_Bikan_historical_quarter_2.jpg/960px-Kurashiki_Bikan_historical_quarter_2.jpg", cap: "Kurashiki Bikan historical quarter" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kurashiki_Bikan_historical_quarter_20190324-2.jpg/960px-Kurashiki_Bikan_historical_quarter_20190324-2.jpg", cap: "Kurashiki Bikan historical quarter-2" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Kurashiki_Bikan_historical_quarter_20190324-3.jpg/960px-Kurashiki_Bikan_historical_quarter_20190324-3.jpg", cap: "Kurashiki Bikan historical quarter-3" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Kurashiki_Bikan_historical_quarter_20190324.jpg/960px-Kurashiki_Bikan_historical_quarter_20190324.jpg", cap: "Kurashiki Bikan historical quarter" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Kurashiki_Canal_Area.jpg/960px-Kurashiki_Canal_Area.jpg", cap: "Kurashiki Canal Area" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/080727_Ohara_Museum_of_Art_Kurashiki_Okayama_pref_Japan01s3.jpg/960px-080727_Ohara_Museum_of_Art_Kurashiki_Okayama_pref_Japan01s3.jpg", cap: "Ohara Museum of Art Kurashiki Okayama pref" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/211203_Kurashiki_Ivy_Square_Kurashiki_Okayama_pref_Japan01s3.jpg/960px-211203_Kurashiki_Ivy_Square_Kurashiki_Okayama_pref_Japan01s3.jpg", cap: "Kurashiki Ivy Square Kurashiki Okayama pref" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Edvard_Munch_-_Madonna_-_Google_Art_Project_%28495100%29.jpg/960px-Edvard_Munch_-_Madonna_-_Google_Art_Project_%28495100%29.jpg", cap: "Edvard Munch - Madonna - Google Art Project" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Okayama_prfectural_Kurashiki_Seiryo_high_school.jpg/960px-Okayama_prfectural_Kurashiki_Seiryo_high_school.jpg", cap: "Okayama prfectural Kurashiki Seiryo high school" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/%E5%80%89%E6%95%B7%E5%B7%9D_Kurashike_Canal_-_panoramio.jpg/960px-%E5%80%89%E6%95%B7%E5%B7%9D_Kurashike_Canal_-_panoramio.jpg", cap: "倉敷川 Kurashike Canal" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/161015_At_Kurashiki_Bikan_historical_quarter_Kurashiki_Okayama_pref_Japan01s3.jpg/960px-161015_At_Kurashiki_Bikan_historical_quarter_Kurashiki_Okayama_pref_Japan01s3.jpg", cap: "161015 At Kurashiki Bikan historical quarter Kurashiki Okayama pref…" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Fire_lookout_tower%2C_Kurashiki_Bikan_historical_quarter_-_Aug_11%2C_2014.jpg/960px-Fire_lookout_tower%2C_Kurashiki_Bikan_historical_quarter_-_Aug_11%2C_2014.jpg", cap: "Fire lookout tower, Kurashiki Bikan historical quarter - Aug" }
   ]
 },
 {
@@ -741,15 +736,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Himeji_Castle%2C_November_2016_-02.jpg/960px-Himeji_Castle%2C_November_2016_-02.jpg", cap: "Himeji Castle, the White Heron" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Family_picnic%2C_Himeji_Castle_grounds%2C_Himeji%2C_2016.jpg/960px-Family_picnic%2C_Himeji_Castle_grounds%2C_Himeji%2C_2016.jpg", cap: "Family day on the castle grounds" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ch%C3%A2teau_de_Himeji02.jpg/960px-Ch%C3%A2teau_de_Himeji02.jpg", cap: "The soaring main keep" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Himeji_Castle%2C_Japan%2C_20240819_1038_4728.jpg/960px-Himeji_Castle%2C_Japan%2C_20240819_1038_4728.jpg", cap: "Himeji Castle, Japan" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Himeji_Castle_01s2048.jpg/960px-Himeji_Castle_01s2048.jpg", cap: "Himeji Castle" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Himeji_Castle_0804_1.jpg/960px-Himeji_Castle_0804_1.jpg", cap: "Himeji Castle" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Himeji_Castle_Aerial_photograph_2010.jpg/960px-Himeji_Castle_Aerial_photograph_2010.jpg", cap: "Himeji Castle Aerial photograph" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Himeji_Castle_Cherry_Blossoms.jpg/960px-Himeji_Castle_Cherry_Blossoms.jpg", cap: "Himeji Castle Cherry Blossoms" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Himeji_Castle_Japan.jpg/960px-Himeji_Castle_Japan.jpg", cap: "Himeji Castle Japan" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Himeji_Castle_The_Keep_Towers.jpg/960px-Himeji_Castle_The_Keep_Towers.jpg", cap: "Himeji Castle The Keep Towers" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ch%C3%A2teau_de_Himeji02.jpg/960px-Ch%C3%A2teau_de_Himeji02.jpg", cap: "Château de" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Chrysanthemum_japonense_-_Koko-en_01.jpg/960px-Chrysanthemum_japonense_-_Koko-en_01.jpg", cap: "Chrysanthemum japonense - Koko-en" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Family_picnic%2C_Himeji_Castle_grounds%2C_Himeji%2C_2016.jpg/960px-Family_picnic%2C_Himeji_Castle_grounds%2C_Himeji%2C_2016.jpg", cap: "Family picnic, Himeji Castle grounds, Himeji" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Himeji_Koko-en_Garden_NIK_0898.jpg/960px-Himeji_Koko-en_Garden_NIK_0898.jpg", cap: "Himeji Koko-en Garden NIK" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Sakura_at_Himeji_Castle_in_2013_No%2C01.JPG/960px-Sakura_at_Himeji_Castle_in_2013_No%2C01.JPG", cap: "Sakura at Himeji Castle in" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Himeji_Castle_The_Keep_Towers.jpg/960px-Himeji_Castle_The_Keep_Towers.jpg", cap: "Himeji Castle The Keep Towers" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Himeji_Koukoen32n4592.jpg/960px-Himeji_Koukoen32n4592.jpg", cap: "Himeji" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Throngs_of_people_walking_towards_Himeji_Castle%2C_Himeji%2C_2016.jpg/960px-Throngs_of_people_walking_towards_Himeji_Castle%2C_Himeji%2C_2016.jpg", cap: "Throngs of people walking towards Himeji Castle, Himeji" }
   ]
 },
 {
@@ -770,15 +764,18 @@ window.DESTINATIONS = [
     "Osaka Castle and its broad moats and park",
     "Dotonbori neon, street food and the Glico sign",
     "Osaka Aquarium Kaiyukan, a top kids' day",
+    "Shinsekai & Tsutenkaku tower — retro kushikatsu district",
     "Day-trip option: Kyoto's Fushimi Inari and temples"
   ],
   food: [
     { n: "Takoyaki", d: "Octopus dumplings — the icon of Osaka street food." },
     { n: "Okonomiyaki", d: "Savoury griddle pancakes, cooked at your table." },
-    { n: "Kushikatsu", d: "Crisp deep-fried skewers, a Shinsekai specialty." }
+    { n: "Kushikatsu", d: "Crisp deep-fried skewers, a Shinsekai specialty." },
+    { n: "GLITCH Coffee Osaka", d: "Specialty pour-over coffee — a parents' pick for a calm city break." }
   ],
   hotels: [
     { n: "The Ritz-Carlton Osaka", t: "Luxury", d: "A grand finish; valet parking — confirm motorcycle handling.", price: "¥80,000–250,000" },
+    { n: "Mitsui Garden Hotel Osaka Premier", t: "Nice hotel", d: "Riverside 4-star with family rooms and city views; parking nearby.", price: "¥18,000–35,000" },
     { n: "Swissotel Nankai Osaka", t: "Nice hotel", d: "Above Namba station, central for the airport run.", price: "¥18,000–35,000" },
     { n: "Hotel near rental return", t: "Practical", d: "Stay close to the drop-off point for an easy final morning.", price: "¥9,000–16,000" }
   ],
@@ -788,15 +785,14 @@ window.DESTINATIONS = [
   ],
   photos: [
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/960px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg", cap: "Osaka Castle keep" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Osaka_Castle_02bs3200.jpg/960px-Osaka_Castle_02bs3200.jpg", cap: "The castle and its gold trim" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Osaka_Castle_Outer_Moat_and_Osaka_Business_Park%2C_November_2016.jpg/960px-Osaka_Castle_Outer_Moat_and_Osaka_Business_Park%2C_November_2016.jpg", cap: "Castle moat and skyline" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg/960px-Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg", cap: "Dotonbori, Osaka, at night, November" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/OSAKA_Tsutenkaku_%2820190810%29.jpg/960px-OSAKA_Tsutenkaku_%2820190810%29.jpg", cap: "OSAKA Tsutenkaku" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Dotonbori_Neon_Sign%2C_Osaka_20190415_1.jpg/960px-Dotonbori_Neon_Sign%2C_Osaka_20190415_1.jpg", cap: "Dotonbori Neon Sign, Osaka" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Shinsekai_and_Tsutenkaku_Tower.jpg/960px-Shinsekai_and_Tsutenkaku_Tower.jpg", cap: "Shinsekai and Tsutenkaku Tower" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Osaka_Castle_Outer_Moat_and_Osaka_Business_Park%2C_November_2016.jpg/960px-Osaka_Castle_Outer_Moat_and_Osaka_Business_Park%2C_November_2016.jpg", cap: "Osaka Castle Outer Moat and Osaka Business Park, November" },
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Dotonbori_Osaka_1910.jpg/960px-Dotonbori_Osaka_1910.jpg", cap: "Dotonbori Osaka" },
     { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Osaka_Castle_August_2024.jpg/960px-Osaka_Castle_August_2024.jpg", cap: "Osaka Castle August" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Osaka_Castle_and_Gokuraku-bashi_Bridge.jpg/960px-Osaka_Castle_and_Gokuraku-bashi_Bridge.jpg", cap: "Osaka Castle and Gokuraku-bashi Bridge" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Osaka_castle_10.jpg/960px-Osaka_castle_10.jpg", cap: "Osaka castle" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Osaka_castle_11.jpg/960px-Osaka_castle_11.jpg", cap: "Osaka castle" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Osaka_castle_2.jpg/960px-Osaka_castle_2.jpg", cap: "Osaka castle" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Osaka_castle_3.jpg/960px-Osaka_castle_3.jpg", cap: "Osaka castle" },
-    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Osaka_castle_4.jpg/960px-Osaka_castle_4.jpg", cap: "Osaka castle" }
+    { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Osaka_Castle_and_Gokuraku-bashi_Bridge.jpg/960px-Osaka_Castle_and_Gokuraku-bashi_Bridge.jpg", cap: "Osaka Castle and Gokuraku-bashi Bridge" }
   ]
 }
 ];

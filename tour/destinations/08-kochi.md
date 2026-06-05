@@ -25,26 +25,25 @@ Coming down from the Iya mountains, the valleys open out to the sea — a satisf
 
 ## Where to stay
 
-| Property | Type | Parking | Price / night (¥) | ≈ USD | Notes |
+| Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
 | Joseikan | Onsen ryokan | Free on-site parking | ¥28,000–60,000 | $185–400 | Historic riverside inn, hosted royalty; central. |
 | Richmond Hotel Kochi | Nice hotel | On-site garage or valet | ¥18,000–35,000 | $120–235 | Comfortable, central, reliable; ask about parking. |
 | The Crown Palais New Hankyu Kochi | Family-friendly | On-site garage or valet | ¥18,000–35,000 | $120–235 | Large rooms near the station with parking. |
 
-_Prices indicative per room/night for two adults (≈ ¥150 = $1). Confirm rates, secure motorcycle parking and passenger/child rules before booking._
+_Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 
 ## Links
 - [Visit Kochi Japan (official)](https://visitkochijapan.com/en)
 - [Wikipedia — Kochi](https://en.wikipedia.org/wiki/Kochi,_Kochi)
 
-## Photos (10)
+## Photos (9)
 - ![Kochi Castle](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Kochi_Castle08s3872.jpg/960px-Kochi_Castle08s3872.jpg) — Kochi Castle
-- ![The original keep](https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Kochi_Castle_03.JPG/960px-Kochi_Castle_03.JPG) — The original keep
-- ![Castle grounds](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Kochi_Castle_08.jpg/960px-Kochi_Castle_08.jpg) — Castle grounds
-- ![Kochi Castle Keep Tower-1](https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Kochi_Castle_Keep_Tower_20170122-1.jpg/960px-Kochi_Castle_Keep_Tower_20170122-1.jpg) — Kochi Castle Keep Tower-1
-- ![Kochi Castle Keep Tower-3](https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Kochi_Castle_Keep_Tower_20170122-3.jpg/960px-Kochi_Castle_Keep_Tower_20170122-3.jpg) — Kochi Castle Keep Tower-3
-- ![Kochi Castle Keep Tower-4](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Kochi_Castle_Keep_Tower_20170122-4.jpg/960px-Kochi_Castle_Keep_Tower_20170122-4.jpg) — Kochi Castle Keep Tower-4
-- ![Kochi Castle air](https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Kochi_Castle_air.jpg/960px-Kochi_Castle_air.jpg) — Kochi Castle air
-- ![Kochi Kochi-Castle Donjon From Sannomaru](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Kochi_Kochi-Castle_Donjon_From_Sannomaru_1.JPG/960px-Kochi_Kochi-Castle_Donjon_From_Sannomaru_1.JPG) — Kochi Kochi-Castle Donjon From Sannomaru
-- ![Kochi Kochi-Castle Otte-Gate](https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Kochi_Kochi-Castle_Otte-Gate_1.JPG/960px-Kochi_Kochi-Castle_Otte-Gate_1.JPG) — Kochi Kochi-Castle Otte-Gate
-- ![Kochi Kochi-Castle Sannomaru Stone Wall](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Kochi_Kochi-Castle_Sannomaru_Stone_Wall_1.JPG/960px-Kochi_Kochi-Castle_Sannomaru_Stone_Wall_1.JPG) — Kochi Kochi-Castle Sannomaru Stone Wall
+- ![Itagaki Taisuke dozo seiso](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Itagaki_Taisuke_dozo_seiso.jpg/960px-Itagaki_Taisuke_dozo_seiso.jpg) — Itagaki Taisuke dozo seiso
+- ![Katsurahama](https://upload.wikimedia.org/wikipedia/commons/b/b2/Katsurahama%2C_2005.jpg) — Katsurahama
+- ![Harimaya-bashi](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Harimaya-bashi_%286453595247%29.jpg/960px-Harimaya-bashi_%286453595247%29.jpg) — Harimaya-bashi
+- ![Katsurahama Beach](https://upload.wikimedia.org/wikipedia/commons/0/02/Katsurahama_Beach.jpg) — Katsurahama Beach
+- ![View](https://upload.wikimedia.org/wikipedia/commons/d/d0/Harimayabashi-1.jpg) — View
+- ![Katsurahama ryugu bridge](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Katsurahama_ryugu_bridge.jpg/960px-Katsurahama_ryugu_bridge.jpg) — Katsurahama ryugu bridge
+- ![Kochi Harimaya-bashi Bridge](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Kochi_Harimaya-bashi_Bridge.jpeg/960px-Kochi_Harimaya-bashi_Bridge.jpeg) — Kochi Harimaya-bashi Bridge
+- ![Katsurahama wadatsumi shrine](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Katsurahama_wadatsumi_shrine.jpg/960px-Katsurahama_wadatsumi_shrine.jpg) — Katsurahama wadatsumi shrine

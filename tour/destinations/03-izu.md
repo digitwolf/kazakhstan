@@ -25,25 +25,24 @@ The east-coast road and the Jogasaki cliffs make for a memorable, low-stress rid
 
 ## Where to stay
 
-| Property | Type | Parking | Price / night (¥) | ≈ USD | Notes |
+| Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
 | Shimoda Tokyu Hotel | Nice hotel | On-site garage or valet | ¥18,000–35,000 | $120–235 | Ocean-view rooms above the bay, ample parking. |
 | Imaihama / Shirahama onsen ryokan | Onsen ryokan | Free on-site parking | ¥28,000–60,000 | $185–400 | Beachside hot-spring inns with included seafood dinners. |
 
-_Prices indicative per room/night for two adults (≈ ¥150 = $1). Confirm rates, secure motorcycle parking and passenger/child rules before booking._
+_Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 
 ## Links
 - [Izu Geopark (official)](https://izugeopark.org/en/)
 - [Wikipedia — Izu Peninsula](https://en.wikipedia.org/wiki/Iz%C5%AB_Peninsula)
 
-## Photos (10)
+## Photos (9)
 - ![Jogasaki coast, Izu](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Izu_Jogasaki_-_%E4%BC%8A%E8%B1%86%E5%9F%8E%E3%82%B1%E5%B4%8E%E6%B5%B7%E5%B2%B8_m-8_-_panoramio.jpg/960px-Izu_Jogasaki_-_%E4%BC%8A%E8%B1%86%E5%9F%8E%E3%82%B1%E5%B4%8E%E6%B5%B7%E5%B2%B8_m-8_-_panoramio.jpg) — Jogasaki coast, Izu
-- ![Izu Geopark coastline](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various.jpeg) — Izu Geopark coastline
-- ![Volcanic shores of the peninsula](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_32_09_711000.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_32_09_711000.jpeg) — Volcanic shores of the peninsula
-- ![Columnar joints at Nakagi, Minami-Izu, Shizuoka, Japan](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Columnar_joints_at_Nakagi%2C_Minami-Izu%2C_Shizuoka%2C_Japan.jpg/960px-Columnar_joints_at_Nakagi%2C_Minami-Izu%2C_Shizuoka%2C_Japan.jpg) — Columnar joints at Nakagi, Minami-Izu, Shizuoka, Japan
 - ![Izu-oshima](https://upload.wikimedia.org/wikipedia/commons/b/b8/Izu-oshima.jpg) — Izu-oshima
-- ![Izu peninsula UNESCO geopark Sept 12 various 18 30](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_30_12_234000.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_30_12_234000.jpeg) — Izu peninsula UNESCO geopark Sept 12 various 18 30
-- ![Izu peninsula UNESCO geopark Sept 12 various 18 30](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_30_38_698000.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_30_38_698000.jpeg) — Izu peninsula UNESCO geopark Sept 12 various 18 30
-- ![Izu peninsula UNESCO geopark Sept 12 various 18 31](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_31_19_076000.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_31_19_076000.jpeg) — Izu peninsula UNESCO geopark Sept 12 various 18 31
-- ![Izu peninsula UNESCO geopark Sept 12 various 18 31](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_31_31_187000.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_31_31_187000.jpeg) — Izu peninsula UNESCO geopark Sept 12 various 18 31
-- ![Izu peninsula UNESCO geopark Sept 12 various 18 31](https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_31_53_907000.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various_18_31_53_907000.jpeg) — Izu peninsula UNESCO geopark Sept 12 various 18 31
+- ![Beach in Shimoda](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Beach_in_Shimoda.jpg/960px-Beach_in_Shimoda.jpg) — Beach in Shimoda
+- ![Kawazu Seven Waterfalls Snake Waterfall](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Kawazu_Seven_Waterfalls_Snake_Waterfall_%28202950357%29.jpeg/960px-Kawazu_Seven_Waterfalls_Snake_Waterfall_%28202950357%29.jpeg) — Kawazu Seven Waterfalls Snake Waterfall
+- ![IZU Shirahama](https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/IZU_Shirahama_-_panoramio.jpg/960px-IZU_Shirahama_-_panoramio.jpg) — IZU Shirahama
+- ![Sarutafuchi Fall in Kawazu Town](https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Sarutafuchi_Fall_in_Kawazu_Town.jpg/960px-Sarutafuchi_Fall_in_Kawazu_Town.jpg) — Sarutafuchi Fall in Kawazu Town
+- ![Izu peninsula UNESCO geopark Sept 12 various](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Izu_peninsula_UNESCO_geopark_2022_Sept_12_various.jpeg/960px-Izu_peninsula_UNESCO_geopark_2022_Sept_12_various.jpeg) — Izu peninsula UNESCO geopark Sept 12 various
+- ![Izu Shimoda Tatado hama](https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Izu_Shimoda_Tatado_hama.jpg/960px-Izu_Shimoda_Tatado_hama.jpg) — Izu Shimoda Tatado hama
+- ![Jōgasaki Coast](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/J%C5%8Dgasaki_Coast_01.jpg/960px-J%C5%8Dgasaki_Coast_01.jpg) — Jōgasaki Coast

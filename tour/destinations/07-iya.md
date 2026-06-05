@@ -25,26 +25,25 @@ Two nights at a valley onsen ryokan gives a true rural-Japan rest: the famous vi
 
 ## Where to stay
 
-| Property | Type | Parking | Price / night (¥) | ≈ USD | Notes |
+| Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
 | Iya Onsen Hotel | Onsen ryokan | Free on-site parking | ¥28,000–60,000 | $185–400 | Private cable-car to riverside open-air baths in the gorge. |
 | Hotel Kazurabashi | Onsen ryokan | Free on-site parking | ¥28,000–60,000 | $185–400 | Mountain hot-spring inn near the vine bridge, dinner included. |
 | Tougenkyo-Iya / Chiiori farmhouses | Boutique stay | On-site garage or valet | ¥20,000–40,000 | $135–265 | Restored thatched farmhouses for a unique rural night. |
 
-_Prices indicative per room/night for two adults (≈ ¥150 = $1). Confirm rates, secure motorcycle parking and passenger/child rules before booking._
+_Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 
 ## Links
 - [Tokushima / Iya tourism](https://discovertokushima.net/en/)
 - [Wikipedia — Iya Valley](https://en.wikipedia.org/wiki/Iya_Valley)
 
-## Photos (10)
+## Photos (9)
 - ![Kazurabashi vine bridge](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Iya_Kazurabashi-4.jpg/960px-Iya_Kazurabashi-4.jpg) — Kazurabashi vine bridge
-- ![The Iya gorge](https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Iya_Valley_a.jpeg/960px-Iya_Valley_a.jpeg) — The Iya gorge
-- ![Crossing the vine bridge](https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Iya_vine_bridge_%286551507515%29.jpg/960px-Iya_vine_bridge_%286551507515%29.jpg) — Crossing the vine bridge
-- ![Biwa Falls Iya Valley Miyoshi Tokushima pref Japan01s3](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/150503_Biwa_Falls_Iya_Valley_Miyoshi_Tokushima_pref_Japan01s3.jpg/960px-150503_Biwa_Falls_Iya_Valley_Miyoshi_Tokushima_pref_Japan01s3.jpg) — Biwa Falls Iya Valley Miyoshi Tokushima pref Japan01s3
+- ![Bridge over Yoshino-gawa](https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bridge_over_Yoshino-gawa_%286453471533%29.jpg/960px-Bridge_over_Yoshino-gawa_%286453471533%29.jpg) — Bridge over Yoshino-gawa
+- ![Iya Valley a](https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Iya_Valley_a.jpeg/960px-Iya_Valley_a.jpeg) — Iya Valley a
+- ![Oboke and Yoshino-gawa river](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Oboke_and_Yoshino-gawa_river_%286453466931%29.jpg/960px-Oboke_and_Yoshino-gawa_river_%286453466931%29.jpg) — Oboke and Yoshino-gawa river
+- ![Iya vine bridge](https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Iya_vine_bridge_%286551507515%29.jpg/960px-Iya_vine_bridge_%286551507515%29.jpg) — Iya vine bridge
+- ![Tokushima Miyoshi Oboke Gorge Of Yoshino River](https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Tokushima_Miyoshi_Oboke_Gorge_Of_Yoshino_River_2.JPG/960px-Tokushima_Miyoshi_Oboke_Gorge_Of_Yoshino_River_2.JPG) — Tokushima Miyoshi Oboke Gorge Of Yoshino River
+- ![150503 Biwa Falls Iya Valley Miyoshi Tokushima pref](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/150503_Biwa_Falls_Iya_Valley_Miyoshi_Tokushima_pref_Japan01s3.jpg/960px-150503_Biwa_Falls_Iya_Valley_Miyoshi_Tokushima_pref_Japan01s3.jpg) — 150503 Biwa Falls Iya Valley Miyoshi Tokushima pref
 - ![Crab crawling around in the hills of Iya Valley](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Crab_crawling_around_in_the_hills_of_Iya_Valley_%286453587885%29.jpg/960px-Crab_crawling_around_in_the_hills_of_Iya_Valley_%286453587885%29.jpg) — Crab crawling around in the hills of Iya Valley
-- ![Iya-Onsen Hotel,Tokushima - panoramio](https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Iya-Onsen_Hotel%2CTokushima%281%29_-_panoramio.jpg/960px-Iya-Onsen_Hotel%2CTokushima%281%29_-_panoramio.jpg) — Iya-Onsen Hotel,Tokushima - panoramio
-- ![Iya-Onsen Hotel,Tokushima - panoramio](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Iya-Onsen_Hotel%2CTokushima%282%29_-_panoramio.jpg/960px-Iya-Onsen_Hotel%2CTokushima%282%29_-_panoramio.jpg) — Iya-Onsen Hotel,Tokushima - panoramio
-- ![Iya Soba](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Iya_Soba.jpg/960px-Iya_Soba.jpg) — Iya Soba
-- ![Iya Valley](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Iya_Valley_01.jpg/960px-Iya_Valley_01.jpg) — Iya Valley
-- ![Iya Valley](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Iya_Valley_02.jpg/960px-Iya_Valley_02.jpg) — Iya Valley
+- ![Iya-Onsen Hotel,Tokushima](https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Iya-Onsen_Hotel%2CTokushima%281%29_-_panoramio.jpg/960px-Iya-Onsen_Hotel%2CTokushima%281%29_-_panoramio.jpg) — Iya-Onsen Hotel,Tokushima
