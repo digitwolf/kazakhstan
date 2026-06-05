@@ -156,6 +156,7 @@
   .day-card .daynum .lbl { font-size: 10px; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
   .day-card .daynum .num { font-size: 30px; font-weight: 800; color: #fff; line-height: 1; }
   .day-card .daynum .mi { margin-top: 8px; font-size: 13px; color: var(--teal); font-weight: 600; }
+  .day-card .daynum .dt { margin-top: 3px; font-size: 11px; color: var(--muted); font-weight: 600; }
   .day-card .daynum .mi b { font-size: 16px; color: #fff; font-weight: 800; }
   .day-card .daynum .mi.rest { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; }
   .day-card .day-go { position: relative; z-index: 2; display: inline-block; font-size: 12.5px; font-weight: 700; color: var(--accent-2); transition: transform .12s; }
@@ -313,9 +314,9 @@
 
     <div class="stats">
       <div class="stat"><div class="n">21</div><div class="l">Days on the road</div></div>
+      <div class="stat"><div class="n" id="statMiles">—</div><div class="l">Total distance</div></div>
+      <div class="stat"><div class="n" id="statAvg">—</div><div class="l">Avg riding / day</div></div>
       <div class="stat"><div class="n">5</div><div class="l">Two-night rest bases</div></div>
-      <div class="stat"><div class="n">4–6h</div><div class="l">Max daily ride time</div></div>
-      <div class="stat"><div class="n">3</div><div class="l">Riders &amp; one young explorer</div></div>
     </div>
   </div>
 </header>
@@ -394,9 +395,10 @@
     <div class="sec-head">
       <span class="tag">Day by Day</span>
       <h2>21-Day Itinerary</h2>
-      <p>A suggested daily breakdown derived from the route and the preferred rest stops. Daily rides stay within
-        4–6 hours with stops every 60–90 minutes for the young passenger.
-        <b style="color:var(--text)">≈ 1,623 miles (2,612 km) total</b> over 21 days. Tap any day to open its destination.</p>
+      <p>A suggested daily breakdown derived from the route and the preferred rest stops. Driving times are
+        <b style="color:var(--text)">real Google-routed figures</b> — averaging <b style="color:var(--text)" id="itinAvg">~3h30m</b> per riding day
+        (longest ~5h on the two big transfers), with breaks every 60–90 minutes for the young passenger.
+        <b style="color:var(--text)">≈ 1,623 miles (2,612 km) total</b> over 21 days. Tap any day for its full schedule.</p>
     </div>
     <div class="filter-bar" id="filters">
       <span class="chip active" data-filter="all">All days</span>
@@ -511,6 +513,18 @@ const STOPS = window.DESTINATIONS.map(d => ({
 
 const DAYS = window.DAYS;  // defined in data.js
 
+/* Live hero/itinerary stats from the real data */
+(function () {
+  const total = DAYS.reduce((a, d) => a + (d.miles || 0), 0);
+  const dmins = DAYS.filter(d => d.dmin).map(d => d.dmin);
+  const avg = dmins.reduce((a, b) => a + b, 0) / dmins.length;
+  const fmt = m => Math.floor(m / 60) + 'h' + String(Math.round(m % 60)).padStart(2, '0') + 'm';
+  const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
+  set('statMiles', '≈' + total.toLocaleString() + ' mi');
+  set('statAvg', fmt(avg));
+  set('itinAvg', '~' + fmt(avg));
+})();
+
 /* ---------- Build flights ('Getting There') ---------- */
 const F = window.FLIGHTS;
 document.getElementById('flIntro').textContent = F.intro;
@@ -600,6 +614,7 @@ function renderDays(filter) {
     const miles = day.miles > 0
       ? `<span class="mi"><b>${day.miles}</b> mi</span>`
       : `<span class="mi rest">no ride</span>`;
+    const dt = day.dmin ? `<span class="dt">≈ ${Math.floor(day.dmin/60)}h${String(day.dmin%60).padStart(2,'0')}m</span>` : '';
     const gmaps = window.gmapDirLink(day.gfrom, day.gto, (day.poi || []).map(p => p.q).slice(0, 9));
     const fromShort = day.gfrom.split(',')[0];
     const toShort = day.gto.split(',')[0];
@@ -609,6 +624,7 @@ function renderDays(filter) {
         <span class="lbl">Day</span>
         <span class="num">${day.d}</span>
         ${miles}
+        ${dt}
       </div>
       <div class="body">
         <div class="pill-region">${day.region}</div>

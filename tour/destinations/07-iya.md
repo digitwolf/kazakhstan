@@ -12,6 +12,8 @@ The Iya Valley is a remote, mist-wrapped gorge in the heart of Shikoku — histo
 
 Two nights at a valley onsen ryokan gives a true rural-Japan rest: the famous vine bridge, a gorge boat ride and slow mountain evenings far from any city.
 
+> **Day 9 — Naruto whirlpools tide check.** The ride in from Awaji passes the Naruto Strait. The whirlpools only put on a real show near the **spring-tide peaks (full/new moon)** and the daily high/low slack swings — at neap tides they can be faint. Look up the day's whirlpool forecast and aim your stop at the best window; if the timing is poor, skip it and ride straight on to Oboke rather than waiting.
+
 ## Things to see & do
 - Kazurabashi vine suspension bridge
 - Oboke Gorge sightseeing boat on the Yoshino River

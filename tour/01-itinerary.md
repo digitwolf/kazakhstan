@@ -1,22 +1,22 @@
 # 21-Day Itinerary & Daily Schedule
 
-**Total ≈ 1,623 miles (2,612 km) over 21 days.** Distances and driving times are from the **Google Directions API** (real road routing through each day's stops).
+**Total ≈ 1,434 miles (2,308 km) over 21 days.** Distances and driving times are from the **Google Directions API** (real road routing through each day's stops).
 
-Average riding time on the 13 transfer days is **3h34m** (2h02m–5h12m). Rest days stay light.
+Average riding time on the 13 transfer days is **3h11m** (0h51m–4h34m). Rest days stay light, and no two transfer days run back-to-back near the comfort cap.
 
 | Day | Title | Route | Miles | Drive | Stops |
 |----|-------|-------|------:|:-----:|-------|
-| 1 | Arrival & Bike Pickup | Tokyo / Yokohama | — | rest | Minato Mirai 21, Cup Noodles Museum, Yokohama Chinatown |
+| 1 | Arrival & Bike Pickup | Tokyo / Yokohama | — | no riding | Minato Mirai 21, Cup Noodles Museum, Yokohama Chinatown |
 | 2 | Into the Mountains | Yokohama → Hakone | 65 | 2h34m | Odawara Castle, Hakone-Yumoto, Lake Ashi & Hakone Shrine, Owakudani |
 | 3 | Hakone Rest Day | Hakone (no transfer) | — | rest | Hakone Open-Air Museum, Owakudani Ropeway, Hakone Shrine |
 | 4 | Izu Coastal Run | Hakone → Izu (Shimoda) | 66 | 2h40m | Manazuru Cape, Jogasaki Coast, Kawazu, Shirahama Beach |
 | 5 | To the Five Lakes | Izu → Fuji Five Lakes | 103 | 3h29m | Izu Skyline, Mishima Skywalk, Oshino Hakkai, Lake Kawaguchiko |
 | 6 | Fuji Exploration | Fuji Five Lakes (light riding) | 25 | rest | Oishi Park, Chureito Pagoda, Mt Fuji Panoramic Ropeway |
-| 7 | Westward Transfer | Fuji → Nagoya / Gifu | 202 | 4h59m | Lake Suwa, Magome-juku, Ena Gorge |
-| 8 | Bridge to the Sea | Nagoya → Awaji Island | 228 | 5h12m | Akashi Kaikyo Bridge, Awaji Service Area, Awaji onion lunch, Awaji Hanasajiki |
-| 9 | Into Iya Valley | Awaji → Iya / Oboke | 139 | 4h20m | Naruto Whirlpools, Tokushima, Oboke Gorge, Iya Valley viewpoint |
+| 7 | Into the Kiso Valley | Fuji → Kiso Valley (Tsumago) | 132 | 3h39m | Lake Suwa, Narai-juku, Tsumago & Magome post towns |
+| 8 | Bridge to the Sea | Kiso Valley → Awaji Island | 203 | 4h16m | Magome morning walk, Akashi Kaikyo Bridge, Awaji onion lunch, Nijigen no Mori |
+| 9 | Into Iya Valley | Awaji → Iya / Oboke | 139 | 4h20m | Naruto Whirlpools (tide check), Tokushima, Oboke Gorge, Iya Valley viewpoint |
 | 10 | Iya Rest Day | Iya Valley (no transfer) | 25 | rest | Kazurabashi vine bridge, Oboke Gorge boat, Peeing Boy statue, Nagoro Scarecrow Village |
-| 11 | Down to the Coast | Iya → Kochi | 72 | 2h02m | Otoyo michi-no-eki, Ryugado Cave, Kochi Castle & Hirome Market, Katsurahama |
+| 11 | Down to the Coast | Iya → Kochi | 72 | 2h02m | Otoyo michi-no-eki, Anpanman Museum, Kochi Castle & Hirome Market, Katsurahama |
 | 12 | The Clear River | Kochi → Shimanto River | 128 | 4h34m | Niyodo Blue river, Susaki, Tatsukushi coast, Sada Chinkabashi |
 | 13 | Shimanto Rest Day | Shimanto River (no transfer) | 20 | rest | Shimanto River canoe, Sinking-bridge cycling, Cape Ashizuri |
 | 14 | Castles & Old Towns | Shimanto → Uwajima / Uchiko → Dogo Onsen | 117 | 3h32m | Uwajima Castle, Uwajima taimeshi, Uchiko old town, Garyu Sanso, Ozu |

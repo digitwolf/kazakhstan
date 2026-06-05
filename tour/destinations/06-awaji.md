@@ -5,18 +5,21 @@
 - **Region:** Seto Inland Sea
 - **Itinerary:** Day 8
 - **Stop type:** stop
-- **Ride to here (direct):** 163 mi
+- **Ride to here (direct):** 202 mi
 
 ## About
 Awaji Island bridges Honshu and Shikoku across the Seto Inland Sea. The great Akashi Kaikyo Bridge brings you on from the Kobe side, and the Naruto whirlpools churn off its southern tip.
 
-It's a scenic, low-traffic island with coastal roads, flower parks and excellent seafood — an easy and beautiful approach to Shikoku.
+It's a scenic, low-traffic island with coastal roads, flower parks and excellent seafood — an easy and beautiful end to the long Day 8 transfer down from the Kiso Valley, and a gentle approach to Shikoku.
 
 ## Things to see & do
-- Naruto whirlpools, seen from the Uzunomichi walkway
+- **Nijigen no Mori** anime park (Naruto/Godzilla/Crayon Shin-chan zones) — a big kid magnet for a Day-8 evening or early Day-9 stop
+- Naruto whirlpools, seen from the Uzunomichi walkway — **time your visit to high or low spring tide** (see note below)
 - Akashi Kaikyo Bridge, the world's longest-span suspension bridge for years
 - Awaji Hanasajiki flower hills
 - Izanagi Shrine, one of Japan's oldest
+
+> **Naruto whirlpools — check the tide schedule.** The whirlpools are strongest around the **spring-tide peaks (full and new moon)** and at the daily high/low slack-water swings — at neaps they can be barely visible. Check the published whirlpool forecast and plan your Uzunomichi walkway (or sightseeing-boat) slot around the day's best window before committing the detour.
 
 ## What to eat
 - **Awaji beef** — Premium local wagyu, the source herd for famed Kobe/Matsusaka lines.
@@ -34,6 +37,7 @@ _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secur
 
 ## Links
 - [Awaji Island tourism](https://www.awajishima-kanko.jp/en/)
+- [Nijigen no Mori anime park (official)](https://nijigennomori.com/)
 - [Wikipedia — Awaji Island](https://en.wikipedia.org/wiki/Awaji_Island)
 
 ## Photos (9)

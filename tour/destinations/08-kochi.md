@@ -14,6 +14,7 @@ Coming down from the Iya mountains, the valleys open out to the sea — a satisf
 
 ## Things to see & do
 - Kochi Castle, original Edo-period keep you can climb
+- **Anpanman Museum** (Yanase Takashi Memorial Hall, Kami) — birthplace shrine of Japan's most beloved kids' character; a sure-fire hit for a 6-year-old, ~40 min east of the city
 - Katsurahama beach and the Sakamoto Ryoma statue
 - Sunday market (Nichiyoichi), 300+ years old
 - Hirome Market food hall for a buzzing dinner
@@ -35,10 +36,12 @@ _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secur
 
 ## Links
 - [Visit Kochi Japan (official)](https://visitkochijapan.com/en)
+- [Anpanman Museum / Yanase Takashi Memorial Hall (official)](https://anpanman-museum.net/)
 - [Wikipedia — Kochi](https://en.wikipedia.org/wiki/Kochi,_Kochi)
 
-## Photos (9)
+## Photos (10)
 - ![Kochi Castle](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Kochi_Castle08s3872.jpg/960px-Kochi_Castle08s3872.jpg) — Kochi Castle
+- ![Anpanman Museum (Yanase Takashi Memorial Hall)](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Kami_Kochi_Yanase_Takashi_Memorial_Hall.jpg/960px-Kami_Kochi_Yanase_Takashi_Memorial_Hall.jpg) — Anpanman Museum (Yanase Takashi Memorial Hall), Kami
 - ![Itagaki Taisuke dozo seiso](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Itagaki_Taisuke_dozo_seiso.jpg/960px-Itagaki_Taisuke_dozo_seiso.jpg) — Itagaki Taisuke dozo seiso
 - ![Katsurahama](https://upload.wikimedia.org/wikipedia/commons/b/b2/Katsurahama%2C_2005.jpg) — Katsurahama
 - ![Harimaya-bashi](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Harimaya-bashi_%286453595247%29.jpg/960px-Harimaya-bashi_%286453595247%29.jpg) — Harimaya-bashi

@@ -1,22 +1,23 @@
-# Kurashiki / Takamatsu  倉敷
+# Kurashiki  倉敷
 
-> A willow-lined canal quarter — or a ferry to the art islands.
+> A willow-lined canal quarter of white-walled storehouses.
 
-- **Region:** Okayama / Kagawa
+- **Region:** Okayama
 - **Itinerary:** Day 18
 - **Stop type:** stop
 - **Ride to here (direct):** 44 mi
 
 ## About
-Kurashiki's Bikan historical quarter preserves white-walled Edo storehouses along a willow-fringed canal, now galleries, cafes and the celebrated Ohara Museum of Art.
+The plan settles on **Kurashiki**. Its Bikan historical quarter preserves white-walled Edo storehouses along a willow-fringed canal — now galleries, cafes, boat rides and the celebrated **Ohara Museum of Art**, Japan's first Western-art museum. It's compact, walkable and easy with a child, and the day's ride in calls at **Tomonoura**, the harbour that inspired *Ponyo*.
 
-Alternatively, base near Takamatsu for a ferry to Naoshima, the famous 'art island' of museums and outdoor sculpture — pick the canal town or the art islands to suit the family's mood.
+**Naoshima as an optional add-a-day:** if the family wants the contemporary-art islands, add a night near Takamatsu/Uno and take the ferry to Naoshima (Benesse House, the Chichu Museum, Yayoi Kusama's pumpkin). It's a wonderful detour but a full extra day with ferry timing — treat it as an add-on, not a same-day swap.
 
 ## Things to see & do
-- Kurashiki Bikan canal quarter and boat rides
+- Kurashiki Bikan canal quarter and willow-lined boat rides
 - Ohara Museum of Art, Japan's first Western-art museum
-- Naoshima art island (via Takamatsu/Uno ferry)
-- Ritsurin Garden in Takamatsu, a strolling masterpiece
+- **Tomonoura** — the *Ponyo* harbour town (on the Day 18 ride in): stone jetty, lighthouse, and the hillside where Miyazaki stayed
+- Ivy Square, a red-brick former mill turned courtyard
+- _Optional add-a-day:_ Naoshima art island (via Takamatsu/Uno ferry); Ritsurin Garden in Takamatsu
 
 ## What to eat
 - **Sanuki udon** — Kagawa's firm, springy udon — Japan's udon capital.
@@ -35,10 +36,14 @@ _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secur
 
 ## Links
 - [Kurashiki tourism (official)](https://www.kurashiki-tabi.jp/en/)
+- [Tomonoura / Fukuyama tourism (official)](https://www.fukuyama-kanko.com/en/)
 - [Wikipedia — Kurashiki](https://en.wikipedia.org/wiki/Kurashiki)
+- [Wikipedia — Tomonoura](https://en.wikipedia.org/wiki/Tomonoura)
 
-## Photos (9)
+## Photos (11)
 - ![Kurashiki Bikan canal quarter](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Kurashiki_Bikan_-02.jpg/960px-Kurashiki_Bikan_-02.jpg) — Kurashiki Bikan canal quarter
+- ![Tomonoura harbour](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tomonoura_Gangi.jpg/960px-Tomonoura_Gangi.jpg) — Tomonoura's historic stone jetty (the *Ponyo* harbour)
+- ![Tomonoura from Taishiden](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Tomonoura_viewed_from_Taishiden.jpg/960px-Tomonoura_viewed_from_Taishiden.jpg) — Tomonoura bay viewed from the hillside
 - ![Kurashiki Canal Area](https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Kurashiki_Canal_Area.jpg/960px-Kurashiki_Canal_Area.jpg) — Kurashiki Canal Area
 - ![Ohara Museum of Art Kurashiki Okayama pref](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/080727_Ohara_Museum_of_Art_Kurashiki_Okayama_pref_Japan01s3.jpg/960px-080727_Ohara_Museum_of_Art_Kurashiki_Okayama_pref_Japan01s3.jpg) — Ohara Museum of Art Kurashiki Okayama pref
 - ![Kurashiki Ivy Square Kurashiki Okayama pref](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/211203_Kurashiki_Ivy_Square_Kurashiki_Okayama_pref_Japan01s3.jpg/960px-211203_Kurashiki_Ivy_Square_Kurashiki_Okayama_pref_Japan01s3.jpg) — Kurashiki Ivy Square Kurashiki Okayama pref
