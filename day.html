@@ -52,7 +52,9 @@
   .ev .c .k{font-weight:700;font-size:15px;}
   .ev .c .k .kind{color:var(--accent-2);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-left:8px;}
   .ev .c .d{color:#c7d1db;font-size:13.5px;}
-  .ev .c .maplink{font-size:12.5px;font-weight:600;}
+  .ev .c .maplink{font-size:12.5px;font-weight:600;display:flex;flex-wrap:wrap;gap:12px;margin-top:3px;}
+  .poic .poic-links{display:flex;flex-wrap:wrap;gap:12px;}
+  .poic .poic-links a{font-size:12.5px;font-weight:600;}
 
   /* poi cards */
   .pois{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
@@ -178,6 +180,8 @@
   const r5 = m => Math.round(m/5)*5;
   const ev = [];
   const poiMap = q => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
+  const routeTo = (a, b) => `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(a)}&destination=${encodeURIComponent(b)}&travelmode=driving`;
+  const prevQ = i => i === 0 ? day.gfrom : day.poi[i - 1].q;   // leg starts at origin, then each prior stop
 
   if (!day.rest) {
     ev.push(['07:00','⏰','Wake up','',false,'Same start every riding day — keeps the family rhythm.']);
@@ -190,7 +194,7 @@
     day.poi.forEach((q, i) => {
       const t = r5(start + span * ((i + 0.5) / n));
       const k = KIND[q.slot] || KIND.stop;
-      ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q]);
+      ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q, routeTo(prevQ(i), q.q), short(prevQ(i))]);
     });
     ev.push([hhmm(arrive),'🏁',`Arrive ${toS}`,'',false,'Check in and park the bikes securely.']);
     if (day.tags.includes('onsen') || dest.type === 'stay')
@@ -206,7 +210,7 @@
       let t = slots[Math.min(si, slots.length-1)];
       if (!lunchDone && (q.slot === 'lunch' || t >= 750)) { /* keep order */ }
       const k = KIND[q.slot] || KIND.activity;
-      ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q]);
+      ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q, routeTo(prevQ(i), q.q), short(prevQ(i))]);
       si++;
       if (i === 0) { ev.push(['12:30','🍜','Lunch','',false,'A relaxed local lunch.']); lunchDone = true; }
     });
@@ -215,21 +219,27 @@
   }
 
   document.getElementById('sched').innerHTML = ev.map(e => {
-    const [t, ic, k, kind, isPoi, d, q] = e;
+    const [t, ic, k, kind, isPoi, d, q, rt, fromName] = e;
     const kindHtml = kind ? `<span class="kind">${kind}</span>` : '';
-    const map = q ? `<div class="maplink"><a href="${poiMap(q)}" target="_blank" rel="noopener">📍 Map</a></div>` : '';
+    const links = q ? `<div class="maplink">
+        <a href="${poiMap(q)}" target="_blank" rel="noopener">📍 Map</a>
+        <a href="${rt}" target="_blank" rel="noopener">🗺️ Route from ${fromName}</a>
+      </div>` : '';
     return `<div class="ev ${isPoi?'poi':''}">
       <div class="t">${t}</div>
       <div class="rail"><div class="ic">${ic}</div></div>
-      <div class="c"><div class="k">${k}${kindHtml}</div>${d?`<div class="d">${d}</div>`:''}${map}</div>
+      <div class="c"><div class="k">${k}${kindHtml}</div>${d?`<div class="d">${d}</div>`:''}${links}</div>
     </div>`;
   }).join('');
 
   // ---- poi cards ----
-  document.getElementById('pois').innerHTML = day.poi.map(q => {
+  document.getElementById('pois').innerHTML = day.poi.map((q, i) => {
     const k = KIND[q.slot] || KIND.stop;
     return `<div class="poic"><div class="nm">${k[0]} ${q.name}</div><div class="wh">${q.what}</div>
-      <a href="${poiMap(q.q)}" target="_blank" rel="noopener">📍 Open in Google Maps</a></div>`;
+      <div class="poic-links">
+        <a href="${poiMap(q.q)}" target="_blank" rel="noopener">📍 Map</a>
+        <a href="${routeTo(prevQ(i), q.q)}" target="_blank" rel="noopener">🗺️ Route from ${short(prevQ(i))}</a>
+      </div></div>`;
   }).join('');
 
   // ---- photos ----
