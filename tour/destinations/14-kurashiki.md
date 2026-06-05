@@ -36,7 +36,7 @@ _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secur
 
 ## Links
 - [Kurashiki tourism (official)](https://www.kurashiki-tabi.jp/en/)
-- [Tomonoura / Fukuyama tourism (official)](https://www.fukuyama-kanko.com/en/)
+- [Tomonoura / Fukuyama tourism (official)](https://www.fukuyama-kanko.com/)
 - [Wikipedia — Kurashiki](https://en.wikipedia.org/wiki/Kurashiki)
 - [Wikipedia — Tomonoura](https://en.wikipedia.org/wiki/Tomonoura)
 

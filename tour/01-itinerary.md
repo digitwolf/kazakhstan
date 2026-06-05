@@ -1,13 +1,13 @@
 # 21-Day Itinerary & Daily Schedule
 
-**Total ≈ 1,434 miles (2,308 km) over 21 days.** Distances and driving times are from the **Google Directions API** (real road routing through each day's stops).
+**Total ≈ 1,439 miles (2,316 km) over 21 days.** Distances and driving times are from the **Google Directions API** (real road routing through each day's stops).
 
-Average riding time on the 13 transfer days is **3h11m** (0h51m–4h34m). Rest days stay light, and no two transfer days run back-to-back near the comfort cap.
+Average riding time on the 13 transfer days is **3h13m** (0h51m–4h34m). Rest days stay light, and no two transfer days run back-to-back near the comfort cap.
 
 | Day | Title | Route | Miles | Drive | Stops |
 |----|-------|-------|------:|:-----:|-------|
 | 1 | Arrival & Bike Pickup | Tokyo / Yokohama | — | no riding | Minato Mirai 21, Cup Noodles Museum, Yokohama Chinatown |
-| 2 | Into the Mountains | Yokohama → Hakone | 65 | 2h34m | Odawara Castle, Hakone-Yumoto, Lake Ashi & Hakone Shrine, Owakudani |
+| 2 | Into the Mountains | Yokohama → Hakone | 70 | 3h05m | Shonan coast & Enoshima, Odawara Castle, Hakone-Yumoto, Lake Ashi & Hakone Shrine, Owakudani |
 | 3 | Hakone Rest Day | Hakone (no transfer) | — | rest | Hakone Open-Air Museum, Owakudani Ropeway, Hakone Shrine |
 | 4 | Izu Coastal Run | Hakone → Izu (Shimoda) | 66 | 2h40m | Manazuru Cape, Jogasaki Coast, Kawazu, Shirahama Beach |
 | 5 | To the Five Lakes | Izu → Fuji Five Lakes | 103 | 3h29m | Izu Skyline, Mishima Skywalk, Oshino Hakkai, Lake Kawaguchiko |
@@ -23,19 +23,21 @@ Average riding time on the 13 transfer days is **3h11m** (0h51m–4h34m). Rest d
 | 15 | Dogo Onsen Rest Day | Matsuyama (no transfer) | 10 | rest | Matsuyama Castle, Dogo Onsen Honkan, Botchan Ressha, Ishite-ji |
 | 16 | Shimanami Kaido | Matsuyama → Shimanami → Onomichi / Setoda | 86 | 3h14m | Imabari Castle, Kirosan Observatory, Oyamazumi Shrine, Omishima, Setoda, Ikuchijima |
 | 17 | Island Rest Day | Setoda / Onomichi (light riding) | 25 | rest | Senkoji Ropeway, Temple Walk & cat alley, Kosanji & Hill of Hope |
-| 18 | Canal Town or Art Island | Onomichi → Kurashiki / Takamatsu | 90 | 3h15m | Fukuyama Castle, Tomonoura, Washuzan Viewpoint, Kurashiki Bikan |
-| 19 | The Great Castle | Kurashiki → Himeji / Kobe | 146 | 4h22m | Okayama Korakuen, Okayama, Himeji Castle & Koko-en, Kobe Harborland |
-| 20 | Finish in Kansai | Kobe → Osaka / Kansai | 76 | 2h12m | Akashi Kaikyo Bridge, Kobe Harborland, Dotonbori, Osaka |
+| 18 | Canal Town | Onomichi → Kurashiki | 90 | 3h15m | Fukuyama Castle, Tomonoura (Ponyo harbour), Washuzan Viewpoint, Kurashiki Bikan |
+| 19 | The Great Castle | Kurashiki → Himeji / Kobe | 104 | 2h53m | Himeji Castle & Koko-en, Kobe Harborland |
+| 20 | Finish in Kansai | Kobe → Osaka / Kansai | 24 | 0h51m | Kobe Harborland, Dotonbori, Osaka |
 | 21 | Buffer & Departure | Osaka / Kyoto | — | rest | Fushimi Inari, Kyoto, Osaka Castle, Kaiyukan / Dotonbori |
 
 ## Day notes
 
 ### Day 1 — Arrival & Bike Pickup
-*Tokyo / Yokohama · 0 mi · rest day · Kanto*
+*Tokyo / Yokohama · 0 mi · no riding · Kanto*
 
-Collect the Africa Twin and CB400X, fit the child's gear, check intercoms and do a gentle shakedown ride. Early night.
+**Strictly no riding today.** After a long-haul flight, the day is for the rental handover only: paperwork and insurance, a full walk-around of the Africa Twin and CB400X, fitting and adjusting the child's gear, pairing the intercoms, loading luggage, and a slow **on-foot shakedown** around the lot to learn the controls — not a ride. The first real ride is **Day 2 morning, fresh and rested.** Explore Yokohama on foot, eat well, and have an early night.
 
-**Stops along the way:**
+See [child-pillion safety](00-overview.md#child-pillion-safety-africa-twin) in the overview before Day 2 — fit and test the footpeg reach, backrest/grab bar and tandem belt while the bike is parked today.
+
+**Stops along the way (all on foot / local):**
 - 🎯 **Minato Mirai 21** — Harbour skyline & the Cosmo Clock wheel
 - 🎯 **Cup Noodles Museum** — Make-your-own-noodles fun for kids
 - 🍜 **Yokohama Chinatown** — Welcome dinner — buns & dim sum
@@ -43,17 +45,22 @@ Collect the Africa Twin and CB400X, fit the child's gear, check intercoms and do
 [🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Haneda%20Airport,%20Tokyo&destination=Yokohama,%20Japan&waypoints=Minato%20Mirai%2021%20Yokohama|Cup%20Noodles%20Museum%20Yokohama|Yokohama%20Chinatown&travelmode=driving)
 
 ### Day 2 — Into the Mountains
-*Yokohama → Hakone · 65 mi · 2h34m riding · Hakone*
+*Yokohama → Hakone · 70 mi · 3h05m riding · Hakone*
 
-Easy first leg up to Hakone. Lake Ashi pirate boat and the Hakone Ropeway over the volcanic valley.
+The first real ride. **Skirt central Yokohama** — instead of fighting downtown traffic, head straight for the coast and run the gentle **Shonan shoreline (Route 134) past Enoshima** before turning inland to Odawara and up to Hakone. Flat, sea-side and easy: the ideal warm-up before any mountain road.
+
+**For the newer rider:** spend the first **30 minutes riding very gently on the left**, getting used to opposite-side traffic, the bike, and the group spacing before the pace picks up at all — there's no rush, and Rider 2 sets it. Keep the mountain section above Hakone-Yumoto relaxed; pull over at the first sign of fatigue.
+
+**Child pillion:** this is the child's first day on the bike — re-check footpeg reach, the backrest/grab bar and the tandem belt at the first stop (see [child-pillion safety](00-overview.md#child-pillion-safety-africa-twin)), and keep to the 60–90 min stop rhythm.
 
 **Stops along the way:**
+- ☕ **Shonan coast & Enoshima** — Gentle seaside warm-up, coffee with a sea view
 - 📸 **Odawara Castle** — Hilltop castle en route
 - ☕ **Hakone-Yumoto** — Onsen-town coffee break
 - 🍜 **Lake Ashi & Hakone Shrine** — Lakeside torii & pirate boat, soba lunch
 - 📷 **Owakudani** — Volcanic valley & black eggs
 
-[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Yokohama,%20Japan&destination=Hakone,%20Japan&waypoints=Odawara%20Castle|Hakone-Yumoto%20Station|Hakone%20Shrine%20Lake%20Ashi|Owakudani&travelmode=driving)
+[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Yokohama,%20Japan&destination=Hakone,%20Japan&waypoints=Enoshima|Odawara%20Castle|Hakone-Yumoto%20Station|Hakone%20Shrine%20Lake%20Ashi|Owakudani&travelmode=driving)
 
 ### Day 3 — Hakone Rest Day
 *Hakone (no transfer) · 0 mi · rest day · Hakone*
@@ -105,38 +112,38 @@ Lake loop, Oishi Park, cable car viewpoint, and a relaxed afternoon. Optional ge
 
 [🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Lake%20Kawaguchiko,%20Japan&destination=Oishi%20Park,%20Yamanashi,%20Japan&waypoints=Oishi%20Park%20Kawaguchiko|Chureito%20Pagoda|Mt%20Fuji%20Panoramic%20Ropeway&travelmode=driving)
 
-### Day 7 — Westward Transfer
-*Fuji → Nagoya / Gifu · 202 mi · 4h59m riding · Chubu*
+### Day 7 — Into the Kiso Valley
+*Fuji → Kiso Valley (Tsumago) · 132 mi · 3h39m riding · Chubu*
 
-The longest practical transfer of the trip, kept on wider national roads. Comfortable city hotel.
+A **meaningfully shorter day than the old Nagoya slog** — scenic valley and ridge roads down through the Japan Alps to the old Nakasendo post towns. Overnight at a traditional inn in car-free **Tsumago or Magome** instead of a city hotel: a calm, rural reset before the longer Day 8.
 
 **Stops along the way:**
 - ☕ **Lake Suwa** — Lakeside leg-stretch & coffee
-- 🍜 **Magome-juku** — Kiso Valley post-town walk & lunch
-- 📷 **Ena Gorge** — River-gorge photo stop
+- 📷 **Narai-juku** — Walk the longest of the Nakasendo post towns
+- 🍜 **Tsumago & Magome** — Arrive at the preserved post towns; evening stroll & gohei-mochi
 
-[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Lake%20Kawaguchiko,%20Japan&destination=Nagoya,%20Japan&waypoints=Lake%20Suwa|Magome-juku|Ena%20Gorge&travelmode=driving)
+[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Lake%20Kawaguchiko,%20Japan&destination=Tsumago-juku,%20Nagiso,%20Nagano,%20Japan&waypoints=Lake%20Suwa|Narai-juku|Magome-juku&travelmode=driving)
 
 ### Day 8 — Bridge to the Sea
-*Nagoya → Awaji Island · 228 mi · 5h12m riding · Setouchi*
+*Kiso Valley → Awaji Island · 203 mi · 4h16m riding · Setouchi*
 
-Cross toward the Seto Inland Sea via Awaji. Coastal scenery and onion-famous local food.
+The trip's one genuinely long transfer — but **calmer than before (4h16m, not 5h12m), and no longer back-to-back** with a second 5-hour day. Start with a quiet morning walk through Magome, then make good time on expressway past Nagoya before crossing the **Akashi Kaikyo Bridge** onto Awaji. Use the expressway here deliberately to keep the long day inside the comfort cap. A kid-pleasing **Nijigen no Mori** stop or the **Naruto whirlpools** can wait for the relaxed Day-9 morning if the family is tired on arrival.
 
 **Stops along the way:**
-- 📸 **Akashi Kaikyo Bridge** — World-famous suspension span
-- ☕ **Awaji Service Area** — Bridge-view coffee break
+- ☕ **Magome morning walk** — Stone-slope post town before setting off
+- 📸 **Akashi Kaikyo Bridge** — World-famous suspension span onto Awaji
 - 🍜 **Awaji onion lunch** — Awaji beef & sweet onions
-- 📷 **Awaji Hanasajiki** — Flower hills over the sea
+- 🎯 **Nijigen no Mori** — Anime park (Naruto/Godzilla/Crayon Shin-chan) — fun evening kid stop
 
-[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Nagoya,%20Japan&destination=Awaji%20Island,%20Japan&waypoints=Akashi%20Kaikyo%20Bridge|Awaji%20Service%20Area|Awaji%20Island|Awaji%20Hanasajiki&travelmode=driving)
+[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Tsumago-juku,%20Nagiso,%20Nagano,%20Japan&destination=Awaji%20Island,%20Japan&waypoints=Magome-juku|Akashi%20Kaikyo%20Bridge|Nijigen%20no%20Mori&travelmode=driving)
 
 ### Day 9 — Into Iya Valley
 *Awaji → Iya / Oboke · 139 mi · 4h20m riding · Shikoku*
 
-Enter Shikoku's dramatic gorge country. Gentle paved valley roads to a remote onsen ryokan.
+Enter Shikoku's dramatic gorge country. Gentle paved valley roads to a remote onsen ryokan. **Check the Naruto whirlpool tide schedule first** — the whirlpools are dramatic only near the spring-tide peaks (full/new moon) and the daily high/low slack swings; at neap tides they can be faint, so aim your stop at the day's best window or skip it and ride on.
 
 **Stops along the way:**
-- 📸 **Naruto Whirlpools** — Uzunomichi glass-floor walkway
+- 📸 **Naruto Whirlpools** — Uzunomichi glass-floor walkway (time it to the tide)
 - ☕ **Tokushima** — Riverside coffee break
 - 🍜 **Oboke Gorge** — Gorge-side lunch
 - 📷 **Iya Valley viewpoint** — Vine bridge & gorge scenery
@@ -159,15 +166,15 @@ Kazurabashi vine bridge, the peeing-boy statue viewpoint, and an Oboke Gorge sig
 ### Day 11 — Down to the Coast
 *Iya → Kochi · 72 mi · 2h02m riding · Shikoku*
 
-River valleys open out to the Pacific. Kochi Castle and Katsurahama beach in the evening.
+River valleys open out to the Pacific. A kid-favourite Anpanman stop, then Kochi Castle and Katsurahama beach in the evening.
 
 **Stops along the way:**
 - ☕ **Otoyo michi-no-eki** — Roadside coffee break
-- 📸 **Ryugado Cave** — Dramatic limestone cave
+- 🎯 **Anpanman Museum** — Yanase Takashi Memorial Hall in Kami — a sure hit for a 6-year-old (near Ryugado Cave if you'd rather see the cave instead)
 - 🍜 **Kochi Castle & Hirome Market** — Original keep, market lunch
 - 📷 **Katsurahama** — Pacific beach & Ryoma statue
 
-[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Oboke,%20Tokushima,%20Japan&destination=Kochi,%20Japan&waypoints=Michi-no-Eki%20Otoyo|Ryugado%20Cave%20Kochi|Kochi%20Castle|Katsurahama&travelmode=driving)
+[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Oboke,%20Tokushima,%20Japan&destination=Kochi,%20Japan&waypoints=Michi-no-Eki%20Otoyo|Anpanman%20Museum%20Kami%20Kochi|Kochi%20Castle|Katsurahama&travelmode=driving)
 
 ### Day 12 — The Clear River
 *Kochi → Shimanto River · 128 mi · 4h34m riding · Shikoku*
@@ -245,43 +252,40 @@ Setoda temple, lemon groves and gelato, Onomichi's hillside lanes and cat alley.
 
 [🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Onomichi,%20Hiroshima,%20Japan&destination=Setoda,%20Ikuchijima,%20Japan&waypoints=Senkoji%20Temple%20Onomichi|Onomichi%20Temple%20Walk|Kosanji%20Temple&travelmode=driving)
 
-### Day 18 — Canal Town or Art Island
-*Onomichi → Kurashiki / Takamatsu · 90 mi · 3h15m riding · Setouchi*
+### Day 18 — Canal Town
+*Onomichi → Kurashiki · 90 mi · 3h15m riding · Setouchi*
 
-Kurashiki's willow-lined canal quarter, or a ferry to Naoshima's art islands.
+The plan commits to **Kurashiki** — its willow-lined Bikan canal quarter and the Ohara Museum of Art, compact and easy with a child. The ride in calls at **Tomonoura**, the seaside town that inspired Studio Ghibli's *Ponyo*. _Optional add-a-day:_ if you want the Naoshima art islands, add a night near Takamatsu/Uno for the ferry rather than trying to fit it into this day.
 
 **Stops along the way:**
 - 📸 **Fukuyama Castle** — Station-side castle
-- ☕ **Tomonoura** — Historic port town coffee
+- 🎯 **Tomonoura (Ponyo harbour)** — Stone jetty, lighthouse and the *Ponyo* hillside — a lovely, kid-friendly port stop
 - 🍜 **Washuzan Viewpoint** — Seto Ohashi bridge panorama, lunch
 - 📷 **Kurashiki Bikan** — Willow-lined canal quarter
 
 [🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Onomichi,%20Hiroshima,%20Japan&destination=Kurashiki,%20Okayama,%20Japan&waypoints=Fukuyama%20Castle|Tomonoura|Washuzan|Kurashiki%20Bikan&travelmode=driving)
 
 ### Day 19 — The Great Castle
-*Kurashiki → Himeji / Kobe · 146 mi · 4h22m riding · Kansai*
+*Kurashiki → Himeji / Kobe · 104 mi · 2h53m riding · Kansai*
 
-Himeji Castle, Japan's most magnificent, then into Kobe for the night.
+**Korakuen is dropped** so Himeji Castle isn't rushed: a shorter ride (104 mi / 2h53m, down from 146 / 4h22m) leaves a proper half-day for Japan's most magnificent castle and its Koko-en garden, then an easy run into Kobe for the night. _Garden lovers can still detour to Okayama Korakuen — budget the extra ~40 mi / 1h30m and an earlier start if so._
 
 **Stops along the way:**
-- 📸 **Okayama Korakuen** — One of Japan's three great gardens
-- ☕ **Okayama** — Coffee break
-- 🍜 **Himeji Castle & Koko-en** — White Heron castle + garden, lunch
+- 🍜 **Himeji Castle & Koko-en** — White Heron castle + garden, unhurried, with lunch
 - 📷 **Kobe Harborland** — Harbour evening & Kobe beef
 
-[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Kurashiki,%20Okayama,%20Japan&destination=Himeji,%20Hyogo,%20Japan&waypoints=Korakuen%20Okayama|Okayama%20Station|Himeji%20Castle|Kobe%20Harborland&travelmode=driving)
+[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Kurashiki,%20Okayama,%20Japan&destination=Kobe,%20Japan&waypoints=Himeji%20Castle|Kobe%20Harborland&travelmode=driving)
 
 ### Day 20 — Finish in Kansai
-*Kobe → Osaka / Kansai · 76 mi · 2h12m riding · Kansai*
+*Kobe → Osaka / Kansai · 24 mi · 0h51m riding · Kansai*
 
-Short final leg into the city. Return the motorcycles and celebrate the journey.
+A genuinely short, relaxed final leg into the city — return the motorcycles and celebrate the journey. **The Akashi Kaikyo Bridge "farewell" stop is dropped:** it sits west of Kobe (the wrong way for Osaka) and you already crossed it on Day 8, so doubling back would add ~52 mi / 1h20m of backtracking for a bridge you've seen. _If you do want one last bridge view, treat it as an intentional scenic detour and budget that ~52 mi / 1h20m._
 
 **Stops along the way:**
-- 📸 **Akashi Kaikyo Bridge** — Farewell bridge photo
 - 🍜 **Kobe Harborland** — Kobe beef lunch & port
 - 📷 **Dotonbori, Osaka** — Bike return, then neon & dinner
 
-[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Himeji,%20Hyogo,%20Japan&destination=Osaka,%20Japan&waypoints=Akashi%20Kaikyo%20Bridge|Kobe%20Harborland|Dotonbori%20Osaka&travelmode=driving)
+[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Kobe,%20Japan&destination=Osaka,%20Japan&waypoints=Kobe%20Harborland|Dotonbori%20Osaka&travelmode=driving)
 
 ### Day 21 — Buffer & Departure
 *Osaka / Kyoto · 0 mi · rest day · Kansai*

@@ -10,6 +10,7 @@ You're starting from Seattle, and the motorcycles are a one-way rental (pick up 
 - **Stops:** Nonstop  ·  **Flight time:** ≈ 10h 30m  ·  **From:** $440 one-way (indicative)
 - **Airlines:** ANA, Delta, Japan Airlines, Alaska
 - Haneda (HND) is far closer to Yokohama than Narita — better for Day-1 bike pickup. Narita (NRT) nonstops on JAL/Alaska are an easy alternative.
+- **Day-1 timing:** Day 1 is **strictly no riding** — rental handover, paperwork, gear-fit and an on-foot shakedown only, with the first real ride on Day 2 morning. So an afternoon arrival is fine; just land with enough of the business day left to **complete the bike pickup during rental opening hours** (confirm the branch's hours and that same-day collection works after your flight). Don't plan to ride the day you land.
 
 ## Return: Osaka · Kansai (KIX) → Seattle · SEA
 
