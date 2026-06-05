@@ -179,20 +179,21 @@
   const fromS = short(day.gfrom), toS = short(day.gto);
   const stripTags = s => s.replace(/<[^>]+>/g, '');
 
-  // hero — region-matched ukiyo-e print (traditional Japanese art) if available,
-  // else the SVG day poster, else the destination lead photo.
+  // hero — priority: generated PNG (assets/day-N.png, e.g. from Codex) → region-matched
+  // ukiyo-e print (window.DAYART) → SVG day poster → destination lead photo.
   const bg = document.getElementById('bg');
   const art = (window.DAYART && window.DAYART[day.d]) || '';
+  const png = `assets/day-${day.d}.png`;
   const poster = `assets/day-${day.d}.svg`;
+  const set = src => { bg.classList.add('art'); bg.style.backgroundImage = `url("${src}")`; };
   bg.style.backgroundImage = `url("${dest.photos[0].src}")`;   // immediate fallback
-  if (art) {
-    bg.classList.add('art');
-    bg.style.backgroundImage = `url("${art}")`;
-  } else {
-    const probe = new Image();
-    probe.onload = () => { bg.style.backgroundImage = `url("${poster}")`; };
-    probe.src = poster;
-  }
+  const tryPng = new Image();
+  tryPng.onload = () => set(png);
+  tryPng.onerror = () => {
+    if (art) { set(art); return; }
+    const p = new Image(); p.onload = () => set(poster); p.src = poster;
+  };
+  tryPng.src = png;
   document.getElementById('daytag').textContent = `Day ${day.d}` + (day.rest ? ' · Rest day' : '');
   document.getElementById('title').textContent = day.title;
   document.getElementById('route').innerHTML = stripTags(day.route);
