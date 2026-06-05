@@ -5,7 +5,7 @@
 - **Region:** Shikoku south coast
 - **Itinerary:** Day 11
 - **Stop type:** stop
-- **Ride to here (direct):** 42 mi
+- **Ride to here (direct):** 41 mi
 
 ## About
 Kochi faces the open Pacific on Shikoku's south coast. Its castle is one of only twelve in Japan with an original keep, and the city has a famously warm, easygoing character.

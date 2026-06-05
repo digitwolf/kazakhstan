@@ -5,7 +5,7 @@
 - **Region:** Shikoku west
 - **Itinerary:** Days 12–14 · 2 nights
 - **Stop type:** stay
-- **Ride to here (direct):** 58 mi
+- **Ride to here (direct):** 56 mi
 
 ## About
 The Shimanto is celebrated as Japan's last free-flowing major river without large dams — broad, clear and lined with rice paddies, cedar and the distinctive chinkabashi 'sinking bridges' built to duck under floods.

@@ -32,7 +32,7 @@ grep -oE 'src: \"https://[^\"]+\"' data.js | sed 's/src: \"//;s/\"$//' \
 # serve locally and smoke-test routes
 python3 -m http.server 8000 --bind 127.0.0.1   # then curl index.html, place.html?id=hakone
 ```
-Counts: 16 destinations, 9 photos each (144 images), 21 days, mileage total ≈1,546. Every URL must be `200`.
+Counts: 16 destinations, 9 photos each (144 images), 21 days, mileage total ≈1,606. Every URL must be `200`.
 
 ## Invariants to preserve
 Map markers and day cards both deep-link to `place.html?id=…`. Day cards use a stretched-link pattern so the Google-Maps "Day route" button is a real link without nesting `<a>` in `<a>`. Hotel cards show a motorcycle-parking badge and ¥+USD pricing. Keep these when you change the templates.

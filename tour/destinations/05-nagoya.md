@@ -5,7 +5,7 @@
 - **Region:** Chubu
 - **Itinerary:** Day 7
 - **Stop type:** stop
-- **Ride to here (direct):** 165 mi
+- **Ride to here (direct):** 177 mi
 
 ## About
 Nagoya is the practical midpoint between the Fuji area and the Seto Inland Sea — the one longer transfer day on the trip, kept on wider, comfortable national roads and expressways.

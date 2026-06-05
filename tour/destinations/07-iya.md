@@ -5,7 +5,7 @@
 - **Region:** Shikoku mountains
 - **Itinerary:** Days 9–11 · 2 nights
 - **Stop type:** stay
-- **Ride to here (direct):** 100 mi
+- **Ride to here (direct):** 101 mi
 
 ## About
 The Iya Valley is a remote, mist-wrapped gorge in the heart of Shikoku — historically a refuge of the defeated Heike clan, reached by gentle paved mountain roads above the emerald Yoshino River.

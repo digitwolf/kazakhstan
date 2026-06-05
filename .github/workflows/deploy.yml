@@ -1,0 +1,36 @@
+name: Deploy to GitHub Pages
+
+# Builds the static site and injects the Google Maps key from a repo secret
+# (GMAPS_KEY) into an untracked gmaps-key.js at deploy time — so the key is
+# present on the live site without ever being committed to the repository.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inject Google Maps key
+        run: printf 'window.GMAPS_KEY = "%s";\n' "${{ secrets.GMAPS_KEY }}" > gmaps-key.js
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4

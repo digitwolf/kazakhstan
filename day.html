@@ -75,7 +75,8 @@
 
   aside .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px;margin-bottom:18px;}
   aside .card h3{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);}
-  #dmap{height:230px;border-radius:10px;border:1px solid var(--line);margin-top:4px;z-index:1;}
+  #dmap{height:260px;width:100%;border:0;border-radius:10px;margin-top:4px;z-index:1;background:var(--bg-soft);}
+  iframe#dmap{border:1px solid var(--line);}
   .btn-route{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;padding:11px 14px;border-radius:9px;background:var(--accent);color:#fff;font-weight:700;font-size:14px;}
   .btn-route:hover{text-decoration:none;background:#f0594b;}
   .btn-dest{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:9px;padding:10px 14px;border-radius:9px;background:var(--panel-2);border:1px solid var(--line);color:var(--text);font-weight:600;font-size:14px;}
@@ -147,6 +148,7 @@
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="gmaps-key.js" onerror="window.GMAPS_KEY=window.GMAPS_KEY||''"></script>
 <script src="data.js"></script>
 <script>
   const DAYS = window.DAYS, DEST = window.DESTINATIONS;
@@ -271,12 +273,20 @@
     day.poi.map(q => `<span class="ar">›</span><span class="n">${q.name.split(',')[0]}</span>`).join('') +
     `<span class="ar">›</span><span class="n key">${toS}</span>`;
 
-  // ---- map ----
-  const map = L.map('dmap', { scrollWheelZoom:false }).setView([dest.lat, dest.lng], day.miles>40?9:12);
-  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
-    { attribution:'&copy; OSM &copy; CARTO', subdomains:'abcd', maxZoom:19 }).addTo(map);
-  L.circleMarker([dest.lat, dest.lng], { radius:9, color:'#fff', weight:2, fillColor:'#e3493b', fillOpacity:1 })
-    .addTo(map).bindPopup(`<b>${toS}</b> — day's end`);
+  // ---- map: Google embed directions (start hotel -> all stops -> end hotel); Leaflet fallback ----
+  if (window.GMAPS_KEY) {
+    const ifr = document.createElement('iframe');
+    ifr.id = 'dmap'; ifr.loading = 'lazy'; ifr.allowFullscreen = true;
+    ifr.referrerPolicy = 'no-referrer-when-downgrade';
+    ifr.src = window.gmapEmbedDir(day.gfrom, day.gto, day.poi.map(p => p.q));
+    document.getElementById('dmap').replaceWith(ifr);
+  } else {
+    const map = L.map('dmap', { scrollWheelZoom:false }).setView([dest.lat, dest.lng], day.miles>40?9:12);
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+      { attribution:'&copy; OSM &copy; CARTO', subdomains:'abcd', maxZoom:19 }).addTo(map);
+    L.circleMarker([dest.lat, dest.lng], { radius:9, color:'#fff', weight:2, fillColor:'#e3493b', fillOpacity:1 })
+      .addTo(map).bindPopup(`<b>${toS}</b> — day's end`);
+  }
 
   // ---- prev/next ----
   const prev = DAYS[(dn-2+DAYS.length)%DAYS.length], next = DAYS[dn%DAYS.length];

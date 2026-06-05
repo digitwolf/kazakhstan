@@ -5,7 +5,7 @@
 - **Region:** Hiroshima coast
 - **Itinerary:** Days 16–18 · 2 nights
 - **Stop type:** stay
-- **Ride to here (direct):** 30 mi
+- **Ride to here (direct):** 32 mi
 
 ## About
 Onomichi is a nostalgic port town of steep lanes, hillside temples and cats, draped over slopes above the Seto Inland Sea at the Honshu end of the Shimanami Kaido.

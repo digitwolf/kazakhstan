@@ -7,6 +7,24 @@
    ============================================================ */
 const U = "https://upload.wikimedia.org/wikipedia/commons/thumb/";
 
+/* Google Maps Embed API key — NEVER hardcoded here / committed.
+   Provided at runtime by the untracked gmaps-key.js (generated from ~/google_maps.key
+   locally, injected from a CI secret in deploy). Maps gracefully fall back to Leaflet
+   when no key is present. Restrict the key by HTTP referrer + API in Cloud Console. */
+window.GMAPS_KEY = window.GMAPS_KEY || "";
+/* Build a Google Maps Embed directions URL (start → stops → end). */
+window.gmapEmbedDir = function (origin, dest, waypoints) {
+  let u = "https://www.google.com/maps/embed/v1/directions?key=" + window.GMAPS_KEY +
+    "&origin=" + encodeURIComponent(origin) + "&destination=" + encodeURIComponent(dest) + "&mode=driving";
+  if (waypoints && waypoints.length) u += "&waypoints=" + encodeURIComponent(waypoints.join("|"));
+  return u;
+};
+/* Build a Google Maps Embed place URL. */
+window.gmapEmbedPlace = function (q, zoom) {
+  return "https://www.google.com/maps/embed/v1/place?key=" + window.GMAPS_KEY +
+    "&q=" + encodeURIComponent(q) + (zoom ? "&zoom=" + zoom : "");
+};
+
 /* Approx. exchange rate for showing USD alongside JPY hotel prices (update as needed). */
 window.JPY_PER_USD = 150;
 /* Convert a JPY range string like "¥28,000–60,000" to "≈ $185–400". */
@@ -159,7 +177,7 @@ window.DESTINATIONS = [
   region: "Shizuoka coast",
   type: "stop",
   days: "Day 4",
-  legMiles: 54,
+  legMiles: 55,
   lat: 34.7036, lng: 138.9525, zoom: 11,
   tagline: "Volcanic coastline, sea cliffs and warm-water beaches.",
   intro: [
@@ -250,7 +268,7 @@ window.DESTINATIONS = [
   region: "Chubu",
   type: "stop",
   days: "Day 7",
-  legMiles: 165,
+  legMiles: 177,
   lat: 35.1850, lng: 136.8998, zoom: 13,
   tagline: "A comfortable city break on the long westward transfer.",
   intro: [
@@ -296,7 +314,7 @@ window.DESTINATIONS = [
   region: "Seto Inland Sea",
   type: "stop",
   days: "Day 8",
-  legMiles: 170,
+  legMiles: 163,
   lat: 34.4200, lng: 134.8890, zoom: 11,
   tagline: "The stepping-stone island into the Seto Inland Sea.",
   intro: [
@@ -341,7 +359,7 @@ window.DESTINATIONS = [
   region: "Shikoku mountains",
   type: "stay",
   days: "Days 9–11 · 2 nights",
-  legMiles: 100,
+  legMiles: 101,
   lat: 33.8890, lng: 133.8120, zoom: 12,
   tagline: "Vine bridges, deep gorges and one of Japan's hidden valleys.",
   intro: [
@@ -387,7 +405,7 @@ window.DESTINATIONS = [
   region: "Shikoku south coast",
   type: "stop",
   days: "Day 11",
-  legMiles: 42,
+  legMiles: 41,
   lat: 33.5597, lng: 133.5311, zoom: 13,
   tagline: "Pacific shores, a perfectly preserved castle and big southern flavour.",
   intro: [
@@ -433,7 +451,7 @@ window.DESTINATIONS = [
   region: "Shikoku west",
   type: "stay",
   days: "Days 12–14 · 2 nights",
-  legMiles: 58,
+  legMiles: 56,
   lat: 33.2100, lng: 132.9900, zoom: 11,
   tagline: "Japan's 'last clear stream' and its low submersible bridges.",
   intro: [
@@ -524,7 +542,7 @@ window.DESTINATIONS = [
   region: "Ehime · Matsuyama",
   type: "stay",
   days: "Days 14–16 · 2 nights",
-  legMiles: 58,
+  legMiles: 56,
   lat: 33.8519, lng: 132.7866, zoom: 14,
   tagline: "One of Japan's oldest hot springs beneath a hilltop castle.",
   intro: [
@@ -615,7 +633,7 @@ window.DESTINATIONS = [
   region: "Hiroshima coast",
   type: "stay",
   days: "Days 16–18 · 2 nights",
-  legMiles: 30,
+  legMiles: 32,
   lat: 34.4090, lng: 133.2050, zoom: 14,
   tagline: "A hillside temple town and lemon-scented islands.",
   intro: [
@@ -707,7 +725,7 @@ window.DESTINATIONS = [
   region: "Hyogo",
   type: "stop",
   days: "Day 19",
-  legMiles: 65,
+  legMiles: 67,
   lat: 34.8394, lng: 134.6939, zoom: 14,
   tagline: "Japan's most magnificent castle, then into cosmopolitan Kobe.",
   intro: [
@@ -858,28 +876,28 @@ window.DAYS = [
   { d:1, id:"yokohama", miles:0, rest:true, region:"Kanto", title:"Arrival & Bike Pickup", route:"Tokyo / Yokohama",
     desc:"Collect the Africa Twin and CB400X, fit the child's gear, check intercoms and do a gentle shakedown ride. Early night.", tags:["ride"], gfrom:"Haneda Airport, Tokyo", gto:"Yokohama, Japan", gvia:"",
     poi:[{ name: "Minato Mirai 21", what: "Harbour skyline & the Cosmo Clock wheel", q: "Minato Mirai 21 Yokohama", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/070203_MM21%26FUJI.jpg/960px-070203_MM21%26FUJI.jpg" }, { name: "Cup Noodles Museum", what: "Make-your-own-noodles fun for kids", q: "Cup Noodles Museum Yokohama", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Cup_Noodle_Museum_Yokohama.jpg/960px-Cup_Noodle_Museum_Yokohama.jpg" }, { name: "Yokohama Chinatown", what: "Welcome dinner — buns & dim sum", q: "Yokohama Chinatown", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/JP-Yokohama-_Minato-Mirai-Area-Over-View.jpg/960px-JP-Yokohama-_Minato-Mirai-Area-Over-View.jpg" }] },
-  { d:2, id:"hakone", miles:57, dmin:122, rest:false, region:"Hakone", title:"Into the Mountains", route:"Yokohama → Hakone",
+  { d:2, id:"hakone", miles:65, dmin:154, rest:false, region:"Hakone", title:"Into the Mountains", route:"Yokohama → Hakone",
     desc:"Easy first leg up to Hakone. Lake Ashi pirate boat and the Hakone Ropeway over the volcanic valley.", tags:["ride", "kid", "onsen"], gfrom:"Yokohama, Japan", gto:"Hakone, Japan", gvia:"Odawara Castle, Japan",
     poi:[{ name: "Odawara Castle", what: "Hilltop castle en route", q: "Odawara Castle", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Map-of-Odawara-Castle-cropped.jpg/960px-Map-of-Odawara-Castle-cropped.jpg", frac:0.3 }, { name: "Hakone-Yumoto", what: "Onsen-town coffee break", q: "Hakone-Yumoto Station", slot: "coffee", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Hakone-Yumoto-Station-Front-entrance.jpg/960px-Hakone-Yumoto-Station-Front-entrance.jpg", frac:0.55 }, { name: "Lake Ashi & Hakone Shrine", what: "Lakeside torii & pirate boat, soba lunch", q: "Hakone Shrine Lake Ashi", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Hakone_Shrine_from_Lake_Ashi%2C_May_2017.jpg/960px-Hakone_Shrine_from_Lake_Ashi%2C_May_2017.jpg", frac:0.8 }, { name: "Owakudani", what: "Volcanic valley & black eggs", q: "Owakudani", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Mount_Myojingatake_and_Owakudani_Station_from_Owakudani_Valley.JPG/960px-Mount_Myojingatake_and_Owakudani_Station_from_Owakudani_Valley.JPG", frac:0.92 }] },
   { d:3, id:"hakone", miles:0, rest:true, region:"Hakone", title:"Hakone Rest Day", route:"Hakone (no transfer)",
     desc:"Open-Air Museum, Owakudani black eggs, and a long onsen soak. No packing, no riding pressure.", tags:["rest", "onsen", "kid", "stay2"], gfrom:"Hakone, Japan", gto:"Owakudani, Hakone, Japan", gvia:"",
     poi:[{ name: "Hakone Open-Air Museum", what: "Sculpture park with kids' play zones", q: "Hakone Open-Air Museum", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Hakone_Open-air_Museum_20211202-5.jpg/960px-Hakone_Open-air_Museum_20211202-5.jpg" }, { name: "Owakudani Ropeway", what: "Steam vents & black eggs", q: "Owakudani", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Mount_Myojingatake_and_Owakudani_Station_from_Owakudani_Valley.JPG/960px-Mount_Myojingatake_and_Owakudani_Station_from_Owakudani_Valley.JPG" }, { name: "Hakone Shrine", what: "Lakeside red torii photo", q: "Hakone Shrine", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Hakone_Shrine_2025.jpg/960px-Hakone_Shrine_2025.jpg" }] },
-  { d:4, id:"izu", miles:65, dmin:169, rest:false, region:"Izu", title:"Izu Coastal Run", route:"Hakone → Izu (Shimoda)",
+  { d:4, id:"izu", miles:66, dmin:160, rest:false, region:"Izu", title:"Izu Coastal Run", route:"Hakone → Izu (Shimoda)",
     desc:"Scenic coastal roads down the Izu Peninsula. Beaches, capes and fresh seafood lunches.", tags:["ride", "kid"], gfrom:"Hakone, Japan", gto:"Shimoda, Shizuoka, Japan", gvia:"Jogasaki Coast, Japan",
     poi:[{ name: "Manazuru Cape", what: "Coastal viewpoint", q: "Manazuru Cape", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Cape_Manazuru_%2813099158195%29.jpg/960px-Cape_Manazuru_%2813099158195%29.jpg", frac:0.2 }, { name: "Jogasaki Coast", what: "Lava cliffs & suspension bridge", q: "Jogasaki Coast", slot: "coffee", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Jogasaki_Coast_2009-07-26_%283778041816%29.jpg/960px-Jogasaki_Coast_2009-07-26_%283778041816%29.jpg", frac:0.55 }, { name: "Kawazu", what: "Kinmedai seafood lunch", q: "Kawazu Shizuoka", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Midaka%2C_Kawazu_2011-10-16.jpg/960px-Midaka%2C_Kawazu_2011-10-16.jpg", frac:0.8 }, { name: "Shirahama Beach", what: "Beach & old port town", q: "Shirahama Beach Shimoda", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/IZU_Shirahama_-_panoramio.jpg/960px-IZU_Shirahama_-_panoramio.jpg", frac:0.95 }] },
-  { d:5, id:"fuji", miles:89, dmin:194, rest:false, region:"Fuji", title:"To the Five Lakes", route:"Izu → Fuji Five Lakes",
+  { d:5, id:"fuji", miles:86, dmin:188, rest:false, region:"Fuji", title:"To the Five Lakes", route:"Izu → Fuji Five Lakes",
     desc:"North toward Kawaguchiko with Mt. Fuji filling the windscreen. Lakeside hotel for the night.", tags:["ride", "kid"], gfrom:"Shimoda, Shizuoka, Japan", gto:"Lake Kawaguchiko, Japan", gvia:"Mishima Skywalk, Japan",
     poi:[{ name: "Mishima Skywalk", what: "Japan's longest suspension footbridge, Fuji view", q: "Mishima Skywalk", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Mishima_Skywalk_North_Facade2023.jpg/960px-Mishima_Skywalk_North_Facade2023.jpg", frac:0.28 }, { name: "Mishima", what: "Coffee break", q: "Mishima Station", slot: "coffee", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/250720_Platform_of_Shinkansen_Mishima_Station_03.jpg/960px-250720_Platform_of_Shinkansen_Mishima_Station_03.jpg", frac:0.33 }, { name: "Oshino Hakkai", what: "Spring-water village, soba lunch", q: "Oshino Hakkai", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/231028_Waku-ike_Oshino_Hakkai_springs_Oshino_Yamanashi_pref_Japan01s3.jpg/960px-231028_Waku-ike_Oshino_Hakkai_springs_Oshino_Yamanashi_pref_Japan01s3.jpg", frac:0.8 }, { name: "Lake Kawaguchiko", what: "Lakeside arrival & Fuji views", q: "Lake Kawaguchiko", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Lake_Kawaguchiko_20140310-14.JPG/960px-Lake_Kawaguchiko_20140310-14.JPG", frac:0.97 }] },
   { d:6, id:"fuji", miles:25, rest:true, region:"Fuji", title:"Fuji Exploration", route:"Fuji Five Lakes (light riding)",
     desc:"Lake loop, Oishi Park, cable car viewpoint, and a relaxed afternoon. Optional gentle ride only.", tags:["rest", "kid"], gfrom:"Lake Kawaguchiko, Japan", gto:"Oishi Park, Yamanashi, Japan", gvia:"",
     poi:[{ name: "Oishi Park", what: "Flower beds with Fuji behind", q: "Oishi Park Kawaguchiko", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Lake_Kawaguchiko_Sakura_Mount_Fuji_3.JPG/960px-Lake_Kawaguchiko_Sakura_Mount_Fuji_3.JPG" }, { name: "Chureito Pagoda", what: "Iconic pagoda-and-Fuji view", q: "Chureito Pagoda", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Arakurayama_Sengen_Park_09.jpg/960px-Arakurayama_Sengen_Park_09.jpg" }, { name: "Mt Fuji Panoramic Ropeway", what: "Kachi-Kachi cable car viewpoint", q: "Mt Fuji Panoramic Ropeway", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Kachi_Kachi_Ropeway_%2816217350765%29.jpg/960px-Kachi_Kachi_Ropeway_%2816217350765%29.jpg" }] },
-  { d:7, id:"nagoya", miles:197, dmin:295, rest:false, region:"Chubu", title:"Westward Transfer", route:"Fuji → Nagoya / Gifu",
+  { d:7, id:"nagoya", miles:202, dmin:299, rest:false, region:"Chubu", title:"Westward Transfer", route:"Fuji → Nagoya / Gifu",
     desc:"The longest practical transfer of the trip, kept on wider national roads. Comfortable city hotel.", tags:["ride"], gfrom:"Lake Kawaguchiko, Japan", gto:"Nagoya, Japan", gvia:"Magome-juku, Japan",
     poi:[{ name: "Lake Suwa", what: "Lakeside leg-stretch & coffee", q: "Lake Suwa", slot: "coffee", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Lake_Suwa%2C_Nagano_Prefecture%3B_May_2019_%2804%29.jpg/960px-Lake_Suwa%2C_Nagano_Prefecture%3B_May_2019_%2804%29.jpg", frac:0.45 }, { name: "Magome-juku", what: "Kiso Valley post-town walk & lunch", q: "Magome-juku", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Magome-Juku_StoneSlope.jpg/960px-Magome-Juku_StoneSlope.jpg", frac:0.7 }, { name: "Ena Gorge", what: "River-gorge photo stop", q: "Ena Gorge", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Ena_Ravine.JPG/960px-Ena_Ravine.JPG", frac:0.88 }] },
-  { d:8, id:"awaji", miles:212, dmin:289, rest:false, region:"Setouchi", title:"Bridge to the Sea", route:"Nagoya → Awaji Island",
+  { d:8, id:"awaji", miles:228, dmin:312, rest:false, region:"Setouchi", title:"Bridge to the Sea", route:"Nagoya → Awaji Island",
     desc:"Cross toward the Seto Inland Sea via Awaji. Coastal scenery and onion-famous local food.", tags:["ride", "kid"], gfrom:"Nagoya, Japan", gto:"Awaji Island, Japan", gvia:"Akashi Kaikyo Bridge, Japan",
     poi:[{ name: "Akashi Kaikyo Bridge", what: "World-famous suspension span", q: "Akashi Kaikyo Bridge", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Akashi-Kaikyo_Bridge%2C_Japan_%28ASTER%29.jpg", frac:0.86 }, { name: "Awaji Service Area", what: "Bridge-view coffee break", q: "Awaji Service Area", slot: "coffee", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Awaji-SA-R.jpg/960px-Awaji-SA-R.jpg", frac:0.9 }, { name: "Awaji onion lunch", what: "Awaji beef & sweet onions", q: "Awaji Island", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Awaji_Island_milk.JPG/960px-Awaji_Island_milk.JPG", frac:0.96 }, { name: "Awaji Hanasajiki", what: "Flower hills over the sea", q: "Awaji Hanasajiki", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/2023-04-15_Awaji_Hanasajiki%2C%E6%B7%A1%E8%B7%AF%E8%8A%B1%E6%A1%9F%E6%95%B7_DSCF0921%E2%98%86%E5%BD%A1.jpg/960px-2023-04-15_Awaji_Hanasajiki%2C%E6%B7%A1%E8%B7%AF%E8%8A%B1%E6%A1%9F%E6%95%B7_DSCF0921%E2%98%86%E5%BD%A1.jpg", frac:0.99 }] },
-  { d:9, id:"iya", miles:117, dmin:186, rest:false, region:"Shikoku", title:"Into Iya Valley", route:"Awaji → Iya / Oboke",
+  { d:9, id:"iya", miles:139, dmin:260, rest:false, region:"Shikoku", title:"Into Iya Valley", route:"Awaji → Iya / Oboke",
     desc:"Enter Shikoku's dramatic gorge country. Gentle paved valley roads to a remote onsen ryokan.", tags:["ride", "onsen"], gfrom:"Awaji Island, Japan", gto:"Oboke, Tokushima, Japan", gvia:"Uzunomichi, Naruto, Japan",
     poi:[{ name: "Naruto Whirlpools", what: "Uzunomichi glass-floor walkway", q: "Uzunomichi Naruto", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Naruto_Strait_from_Uzunomichi_Promenade.jpg/960px-Naruto_Strait_from_Uzunomichi_Promenade.jpg", frac:0.15 }, { name: "Tokushima", what: "Riverside coffee break", q: "Tokushima Station", slot: "coffee", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Tokushima_JR_Sta_2020%2C9.jpg/960px-Tokushima_JR_Sta_2020%2C9.jpg", frac:0.33 }, { name: "Oboke Gorge", what: "Gorge-side lunch", q: "Oboke Gorge", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Oboke_Gorge_%E5%A4%A7%E6%AD%A5%E5%8D%B1%E5%B3%BD_-_panoramio.jpg/960px-Oboke_Gorge_%E5%A4%A7%E6%AD%A5%E5%8D%B1%E5%B3%BD_-_panoramio.jpg", frac:0.85 }, { name: "Iya Valley viewpoint", what: "Vine bridge & gorge scenery", q: "Iya Valley", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Iya_Valley_03.jpg/960px-Iya_Valley_03.jpg", frac:0.95 }] },
   { d:10, id:"iya", miles:25, rest:true, region:"Shikoku", title:"Iya Rest Day", route:"Iya Valley (no transfer)",
@@ -888,31 +906,31 @@ window.DAYS = [
   { d:11, id:"kochi", miles:72, dmin:122, rest:false, region:"Shikoku", title:"Down to the Coast", route:"Iya → Kochi",
     desc:"River valleys open out to the Pacific. Kochi Castle and Katsurahama beach in the evening.", tags:["ride", "kid"], gfrom:"Oboke, Tokushima, Japan", gto:"Kochi, Japan", gvia:"Ryugado Cave, Japan",
     poi:[{ name: "Otoyo michi-no-eki", what: "Roadside coffee break", q: "Michi-no-Eki Otoyo", slot: "coffee", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Kochi_Castle08s3872.jpg/960px-Kochi_Castle08s3872.jpg", frac:0.22 }, { name: "Ryugado Cave", what: "Dramatic limestone cave", q: "Ryugado Cave Kochi", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Kami_Kochi_Ryugado_East_Entrance_1.jpg/960px-Kami_Kochi_Ryugado_East_Entrance_1.jpg", frac:0.52 }, { name: "Kochi Castle & Hirome Market", what: "Original keep, market lunch", q: "Kochi Castle", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Kochi_Castle08s3872.jpg/960px-Kochi_Castle08s3872.jpg", frac:0.82 }, { name: "Katsurahama", what: "Pacific beach & Ryoma statue", q: "Katsurahama", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Katsurahama_Aquarium_01.jpg/960px-Katsurahama_Aquarium_01.jpg", frac:0.95 }] },
-  { d:12, id:"shimanto", miles:120, dmin:166, rest:false, region:"Shikoku", title:"The Clear River", route:"Kochi → Shimanto River",
+  { d:12, id:"shimanto", miles:128, dmin:274, rest:false, region:"Shikoku", title:"The Clear River", route:"Kochi → Shimanto River",
     desc:"Follow the Shimanto, Japan's last free-flowing clear river, past its low submersible bridges.", tags:["ride", "kid"], gfrom:"Kochi, Japan", gto:"Shimanto, Kochi, Japan", gvia:"Niyodo River, Japan",
     poi:[{ name: "Niyodo Blue river", what: "Famous translucent-blue river", q: "Niyodo River", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/d/d2/Niyodo_River_04.jpg", frac:0.22 }, { name: "Susaki", what: "Nabeyaki-ramen coffee stop", q: "Susaki Kochi", slot: "coffee", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Susaki_city_view.jpg/960px-Susaki_city_view.jpg", frac:0.35 }, { name: "Tatsukushi coast", what: "Seaside lunch", q: "Tatsukushi", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Tatsukushi_05.JPG/960px-Tatsukushi_05.JPG", frac:0.85 }, { name: "Sada Chinkabashi", what: "Shimanto 'sinking bridge' photo", q: "Sada Chinkabashi Shimanto", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Shimanto_sada_chinkabashi.jpg/960px-Shimanto_sada_chinkabashi.jpg", frac:0.95 }] },
   { d:13, id:"shimanto", miles:20, rest:true, region:"Shikoku", title:"Shimanto Rest Day", route:"Shimanto River (no transfer)",
     desc:"River canoeing or a sightseeing boat, riverside cycling, and slow rural time by the water.", tags:["rest", "kid", "stay2"], gfrom:"Shimanto, Kochi, Japan", gto:"Shimanto River, Japan", gvia:"",
     poi:[{ name: "Shimanto River canoe", what: "Canoe or SUP on clear water", q: "Shimanto River canoe", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Shimanto_River_%285279082249%29.jpg/960px-Shimanto_River_%285279082249%29.jpg" }, { name: "Sinking-bridge cycling", what: "Easy riverside cycle", q: "Shimanto River cycling", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Shimanto_River_%285279082249%29.jpg/960px-Shimanto_River_%285279082249%29.jpg" }, { name: "Cape Ashizuri", what: "Dramatic cape & lighthouse", q: "Cape Ashizuri", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Ashizuri_Cape_01.JPG/960px-Ashizuri_Cape_01.JPG" }] },
-  { d:14, id:"dogo", miles:98, dmin:124, rest:false, region:"Shikoku", title:"Castles & Old Towns", route:"Shimanto → Uwajima / Uchiko → Dogo Onsen",
+  { d:14, id:"dogo", miles:117, dmin:212, rest:false, region:"Shikoku", title:"Castles & Old Towns", route:"Shimanto → Uwajima / Uchiko → Dogo Onsen",
     desc:"Uwajima Castle and Uchiko's preserved merchant streets en route to Matsuyama.", tags:["ride", "kid", "onsen"], gfrom:"Shimanto, Kochi, Japan", gto:"Matsuyama, Ehime, Japan", gvia:"Uwajima, Ehime, Japan",
     poi:[{ name: "Uwajima Castle", what: "Original hilltop keep", q: "Uwajima Castle", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Uwajima-jo.JPG/960px-Uwajima-jo.JPG", frac:0.3 }, { name: "Uwajima taimeshi", what: "Sea-bream-over-rice lunch", q: "Uwajima", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Okinoshima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg/960px-Okinoshima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg", frac:0.34 }, { name: "Uchiko old town", what: "Merchant street & kabuki theatre", q: "Uchiko Yokaichi", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Yokaichi_Gokoku_Machinami_Preservation_Center.jpg/960px-Yokaichi_Gokoku_Machinami_Preservation_Center.jpg", frac:0.7 }, { name: "Garyu Sanso, Ozu", what: "Riverside villa & garden", q: "Garyu Sanso Ozu", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/20150914_ozu_garyusansou.jpg/960px-20150914_ozu_garyusansou.jpg", frac:0.82 }] },
   { d:15, id:"dogo", miles:10, rest:true, region:"Shikoku", title:"Dogo Onsen Rest Day", route:"Matsuyama (no transfer)",
     desc:"Matsuyama Castle by ropeway, then the historic Dogo Onsen bathhouse. Classic onsen evening.", tags:["rest", "onsen", "kid", "stay2"], gfrom:"Matsuyama, Ehime, Japan", gto:"Dogo Onsen, Matsuyama, Japan", gvia:"",
     poi:[{ name: "Matsuyama Castle", what: "Ropeway to a hilltop original castle", q: "Matsuyama Castle Ehime", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/MEIN%26SMALL_CASTLE_TOWER_%2CMATSUYAMA_CASTLE%28IYO%29.JPG/960px-MEIN%26SMALL_CASTLE_TOWER_%2CMATSUYAMA_CASTLE%28IYO%29.JPG" }, { name: "Dogo Onsen Honkan", what: "Soak in the historic bathhouse", q: "Dogo Onsen Honkan", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Dogo_Onsen_Honkan_%28Main_building%29%2C_%E9%81%93%E5%BE%8C%E6%B8%A9%E6%B3%89_%E6%9C%AC%E9%A4%A8_-_panoramio.jpg/960px-Dogo_Onsen_Honkan_%28Main_building%29%2C_%E9%81%93%E5%BE%8C%E6%B8%A9%E6%B3%89_%E6%9C%AC%E9%A4%A8_-_panoramio.jpg" }, { name: "Botchan Ressha", what: "Retro steam-style tram", q: "Botchan Ressha Matsuyama", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Bocchan-ressha%28Matsuyama-Ekimae%29.jpg/960px-Bocchan-ressha%28Matsuyama-Ekimae%29.jpg" }, { name: "Ishite-ji", what: "Atmospheric pilgrimage temple", q: "Ishiteji Temple Matsuyama", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/1/15/800px-51_ishiteji_3juutou.JPG" }] },
-  { d:16, id:"shimanami", miles:100, dmin:200, rest:false, region:"Setouchi", title:"Shimanami Kaido", route:"Matsuyama → Shimanami → Onomichi / Setoda",
+  { d:16, id:"shimanami", miles:86, dmin:194, rest:false, region:"Setouchi", title:"Shimanami Kaido", route:"Matsuyama → Shimanami → Onomichi / Setoda",
     desc:"The famous island-hopping bridge route across the Seto Inland Sea — gentle, scenic, unforgettable.", tags:["ride", "kid"], gfrom:"Matsuyama, Ehime, Japan", gto:"Onomichi, Hiroshima, Japan", gvia:"Imabari, Ehime, Japan",
     poi:[{ name: "Imabari Castle", what: "Sea-water-moat castle", q: "Imabari Castle", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Imabari_Castle_01.JPG/960px-Imabari_Castle_01.JPG", frac:0.3 }, { name: "Kirosan Observatory", what: "Bridge panorama coffee", q: "Kirosan Observatory Park", slot: "coffee", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Kurushima-Kaikyo_Bridge%2C_Seto_Inland_Sea%2C_Japan.jpg/960px-Kurushima-Kaikyo_Bridge%2C_Seto_Inland_Sea%2C_Japan.jpg", frac:0.48 }, { name: "Oyamazumi Shrine, Omishima", what: "Samurai-armour shrine, lunch", q: "Oyamazumi Shrine", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Okumiya%2C_Oyamazumi_Shrine%2C_Fukushima%2C_Japan.jpg/960px-Okumiya%2C_Oyamazumi_Shrine%2C_Fukushima%2C_Japan.jpg", frac:0.66 }, { name: "Setoda, Ikuchijima", what: "Lemon gelato & Kosanji temple", q: "Setoda", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Setoda.jpg/960px-Setoda.jpg", frac:0.86 }] },
   { d:17, id:"onomichi", miles:25, rest:true, region:"Setouchi", title:"Island Rest Day", route:"Setoda / Onomichi (light riding)",
     desc:"Setoda temple, lemon groves and gelato, Onomichi's hillside lanes and cat alley. Easy pace.", tags:["rest", "kid", "stay2"], gfrom:"Onomichi, Hiroshima, Japan", gto:"Setoda, Ikuchijima, Japan", gvia:"",
     poi:[{ name: "Senkoji Ropeway", what: "Hilltop view over the town & sea", q: "Senkoji Temple Onomichi", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Onomichi_Bridge_and_Onomichi_Channel_from_Main_Hall_of_Senkoji_Temple_2.jpg/960px-Onomichi_Bridge_and_Onomichi_Channel_from_Main_Hall_of_Senkoji_Temple_2.jpg" }, { name: "Temple Walk & cat alley", what: "Lanes, cafes & cats", q: "Onomichi Temple Walk", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/7/7f/Onomichi_TempleWalk_OldHouse.JPG" }, { name: "Kosanji & Hill of Hope", what: "Ornate temple & marble hilltop", q: "Kosanji Temple", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/K%C5%8Dsan-ji%2C_Ground_of_Temple_001.jpg/960px-K%C5%8Dsan-ji%2C_Ground_of_Temple_001.jpg" }] },
-  { d:18, id:"kurashiki", miles:90, dmin:165, rest:false, region:"Setouchi", title:"Canal Town or Art Island", route:"Onomichi → Kurashiki / Takamatsu",
+  { d:18, id:"kurashiki", miles:90, dmin:195, rest:false, region:"Setouchi", title:"Canal Town or Art Island", route:"Onomichi → Kurashiki / Takamatsu",
     desc:"Kurashiki's willow-lined canal quarter, or a ferry to Naoshima's art islands.", tags:["ride", "kid"], gfrom:"Onomichi, Hiroshima, Japan", gto:"Kurashiki, Okayama, Japan", gvia:"Tomonoura, Japan",
     poi:[{ name: "Fukuyama Castle", what: "Station-side castle", q: "Fukuyama Castle", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Fukuyama_Castle_at_Sunset.jpg/960px-Fukuyama_Castle_at_Sunset.jpg", frac:0.3 }, { name: "Tomonoura", what: "Historic port town coffee", q: "Tomonoura", slot: "coffee", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Fukuyama_municipal_ferry_station.jpg/960px-Fukuyama_municipal_ferry_station.jpg", frac:0.42 }, { name: "Washuzan Viewpoint", what: "Seto Ohashi bridge panorama, lunch", q: "Washuzan", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Washuzan_Station-01.jpg/960px-Washuzan_Station-01.jpg", frac:0.78 }, { name: "Kurashiki Bikan", what: "Willow-lined canal quarter", q: "Kurashiki Bikan", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Kurashiki_Bikan_historical_quarter_2.jpg/960px-Kurashiki_Bikan_historical_quarter_2.jpg", frac:0.97 }] },
-  { d:19, id:"himeji", miles:147, dmin:277, rest:false, region:"Kansai", title:"The Great Castle", route:"Kurashiki → Himeji / Kobe",
+  { d:19, id:"himeji", miles:146, dmin:262, rest:false, region:"Kansai", title:"The Great Castle", route:"Kurashiki → Himeji / Kobe",
     desc:"Himeji Castle, Japan's most magnificent, then into Kobe for the night.", tags:["ride", "kid"], gfrom:"Kurashiki, Okayama, Japan", gto:"Himeji, Hyogo, Japan", gvia:"Korakuen, Okayama, Japan",
     poi:[{ name: "Okayama Korakuen", what: "One of Japan's three great gardens", q: "Korakuen Okayama", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Korakuen_%28japanese_garden%29_and_Okayama_castle.jpg/960px-Korakuen_%28japanese_garden%29_and_Okayama_castle.jpg", frac:0.25 }, { name: "Okayama", what: "Coffee break", q: "Okayama Station", slot: "coffee", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/JRW-Higashi-okayamaStation.jpg/960px-JRW-Higashi-okayamaStation.jpg", frac:0.29 }, { name: "Himeji Castle & Koko-en", what: "White Heron castle + garden, lunch", q: "Himeji Castle", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Ch%C3%A2teau_de_Himeji02.jpg/960px-Ch%C3%A2teau_de_Himeji02.jpg", frac:0.8 }, { name: "Kobe Harborland", what: "Harbour evening & Kobe beef", q: "Kobe Harborland", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Harborland_Kobe_Japan01-r.jpg/960px-Harborland_Kobe_Japan01-r.jpg", frac:0.98 }] },
-  { d:20, id:"osaka", miles:77, dmin:149, rest:false, region:"Kansai", title:"Finish in Kansai", route:"Kobe → Osaka / Kansai",
+  { d:20, id:"osaka", miles:76, dmin:132, rest:false, region:"Kansai", title:"Finish in Kansai", route:"Kobe → Osaka / Kansai",
     desc:"Short final leg into the city. Return the motorcycles and celebrate the journey.", tags:["ride", "end"], gfrom:"Himeji, Hyogo, Japan", gto:"Osaka, Japan", gvia:"Kobe Harborland, Japan",
     poi:[{ name: "Akashi Kaikyo Bridge", what: "Farewell bridge photo", q: "Akashi Kaikyo Bridge", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/5/56/Akashi-Kaikyo_Bridge%2C_Japan_%28ASTER%29.jpg", frac:0.35 }, { name: "Kobe Harborland", what: "Kobe beef lunch & port", q: "Kobe Harborland", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Harborland_Kobe_Japan01-r.jpg/960px-Harborland_Kobe_Japan01-r.jpg", frac:0.58 }, { name: "Dotonbori, Osaka", what: "Bike return, then neon & dinner", q: "Dotonbori Osaka", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg/960px-Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg", frac:0.95 }] },
   { d:21, id:"osaka", miles:0, rest:true, region:"Kansai", title:"Buffer & Departure", route:"Osaka / Kyoto",

@@ -5,7 +5,7 @@
 - **Region:** Seto Inland Sea
 - **Itinerary:** Day 8
 - **Stop type:** stop
-- **Ride to here (direct):** 170 mi
+- **Ride to here (direct):** 163 mi
 
 ## About
 Awaji Island bridges Honshu and Shikoku across the Seto Inland Sea. The great Akashi Kaikyo Bridge brings you on from the Kobe side, and the Naruto whirlpools churn off its southern tip.
