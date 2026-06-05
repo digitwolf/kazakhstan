@@ -292,7 +292,7 @@
     const ifr = document.createElement('iframe');
     ifr.id = 'pmap'; ifr.loading = 'lazy'; ifr.allowFullscreen = true;
     ifr.referrerPolicy = 'no-referrer-when-downgrade';
-    ifr.src = window.gmapEmbedPlace(d.name.split('/')[0].trim() + ', Japan', d.zoom || 12);
+    ifr.src = window.gmapEmbedPlace(d.lat + ',' + d.lng, d.zoom || 12);
     document.getElementById('pmap').replaceWith(ifr);
   } else {
     const map = L.map('pmap', { scrollWheelZoom:false, zoomControl:true }).setView([d.lat, d.lng], d.zoom || 12);

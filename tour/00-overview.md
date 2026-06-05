@@ -9,7 +9,7 @@ A scenic, family-friendly **3-week motorcycle tour of Japan** for a family of th
 
 ## Shape of the trip
 - **21 days**, picking up bikes near **Tokyo/Yokohama** and dropping near **Osaka/Kansai** (one-way rental). Home base is **Seattle** — see [flights](02-flights.md).
-- **≈ 1,280 miles (2,060 km)** total; daily rides usually **4–6 hours max**.
+- **≈ 1,623 miles (2,612 km)** total; daily rides usually **4–6 hours max**.
 - **Five 2-night rest bases:** Hakone, Iya/Oboke, Shimanto River, Dogo Onsen/Matsuyama, Onomichi/Setoda.
 - **Best season:** October–early November, or late April–May after Golden Week.
 

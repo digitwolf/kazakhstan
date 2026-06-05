@@ -1,8 +1,8 @@
 # 21-Day Itinerary & Daily Schedule
 
-**Total ≈ 1,606 miles (2,584 km) over 21 days.** Distances and driving times are from the **Google Directions API** (real road routing through each day's stops).
+**Total ≈ 1,623 miles (2,612 km) over 21 days.** Distances and driving times are from the **Google Directions API** (real road routing through each day's stops).
 
-Average riding time on the 13 transfer days is **3h33m** (2h02m–5h12m). Rest days stay light.
+Average riding time on the 13 transfer days is **3h34m** (2h02m–5h12m). Rest days stay light.
 
 | Day | Title | Route | Miles | Drive | Stops |
 |----|-------|-------|------:|:-----:|-------|
@@ -10,7 +10,7 @@ Average riding time on the 13 transfer days is **3h33m** (2h02m–5h12m). Rest d
 | 2 | Into the Mountains | Yokohama → Hakone | 65 | 2h34m | Odawara Castle, Hakone-Yumoto, Lake Ashi & Hakone Shrine, Owakudani |
 | 3 | Hakone Rest Day | Hakone (no transfer) | — | rest | Hakone Open-Air Museum, Owakudani Ropeway, Hakone Shrine |
 | 4 | Izu Coastal Run | Hakone → Izu (Shimoda) | 66 | 2h40m | Manazuru Cape, Jogasaki Coast, Kawazu, Shirahama Beach |
-| 5 | To the Five Lakes | Izu → Fuji Five Lakes | 86 | 3h08m | Mishima Skywalk, Mishima, Oshino Hakkai, Lake Kawaguchiko |
+| 5 | To the Five Lakes | Izu → Fuji Five Lakes | 103 | 3h29m | Izu Skyline, Mishima Skywalk, Oshino Hakkai, Lake Kawaguchiko |
 | 6 | Fuji Exploration | Fuji Five Lakes (light riding) | 25 | rest | Oishi Park, Chureito Pagoda, Mt Fuji Panoramic Ropeway |
 | 7 | Westward Transfer | Fuji → Nagoya / Gifu | 202 | 4h59m | Lake Suwa, Magome-juku, Ena Gorge |
 | 8 | Bridge to the Sea | Nagoya → Awaji Island | 228 | 5h12m | Akashi Kaikyo Bridge, Awaji Service Area, Awaji onion lunch, Awaji Hanasajiki |
@@ -81,17 +81,17 @@ Scenic coastal roads down the Izu Peninsula. Beaches, capes and fresh seafood lu
 [🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Hakone,%20Japan&destination=Shimoda,%20Shizuoka,%20Japan&waypoints=Manazuru%20Cape|Jogasaki%20Coast|Kawazu%20Shizuoka|Shirahama%20Beach%20Shimoda&travelmode=driving)
 
 ### Day 5 — To the Five Lakes
-*Izu → Fuji Five Lakes · 86 mi · 3h08m riding · Fuji*
+*Izu → Fuji Five Lakes · 103 mi · 3h29m riding · Fuji*
 
-North toward Kawaguchiko with Mt. Fuji filling the windscreen. Lakeside hotel for the night.
+Up the **Izu Skyline** ridge road — sweeping Fuji and Sagami Bay views, a classic paved touring road — then north to Kawaguchiko with Mt. Fuji filling the windscreen. Lakeside hotel for the night.
 
 **Stops along the way:**
-- 📸 **Mishima Skywalk** — Japan's longest suspension footbridge, Fuji view
-- ☕ **Mishima** — Coffee break
+- 📸 **Izu Skyline** — Ridge-top skyline road, Fuji & sea views
+- ☕ **Mishima Skywalk** — Japan's longest suspension footbridge, Fuji view
 - 🍜 **Oshino Hakkai** — Spring-water village, soba lunch
 - 📷 **Lake Kawaguchiko** — Lakeside arrival & Fuji views
 
-[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Shimoda,%20Shizuoka,%20Japan&destination=Lake%20Kawaguchiko,%20Japan&waypoints=Mishima%20Skywalk|Mishima%20Station|Oshino%20Hakkai|Lake%20Kawaguchiko&travelmode=driving)
+[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Shimoda,%20Shizuoka,%20Japan&destination=Lake%20Kawaguchiko,%20Japan&waypoints=Izu%20Skyline|Mishima%20Skywalk|Oshino%20Hakkai|Lake%20Kawaguchiko&travelmode=driving)
 
 ### Day 6 — Fuji Exploration
 *Fuji Five Lakes (light riding) · 25 mi · rest day · Fuji*

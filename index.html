@@ -396,7 +396,7 @@
       <h2>21-Day Itinerary</h2>
       <p>A suggested daily breakdown derived from the route and the preferred rest stops. Daily rides stay within
         4–6 hours with stops every 60–90 minutes for the young passenger.
-        <b style="color:var(--text)">≈ 1,606 miles (2,580 km) total</b> over 21 days. Tap any day to open its destination.</p>
+        <b style="color:var(--text)">≈ 1,623 miles (2,612 km) total</b> over 21 days. Tap any day to open its destination.</p>
     </div>
     <div class="filter-bar" id="filters">
       <span class="chip active" data-filter="all">All days</span>
@@ -600,11 +600,7 @@ function renderDays(filter) {
     const miles = day.miles > 0
       ? `<span class="mi"><b>${day.miles}</b> mi</span>`
       : `<span class="mi rest">no ride</span>`;
-    const gmaps = 'https://www.google.com/maps/dir/?api=1'
-      + '&origin=' + encodeURIComponent(day.gfrom)
-      + '&destination=' + encodeURIComponent(day.gto)
-      + (day.gvia ? '&waypoints=' + encodeURIComponent(day.gvia) : '')
-      + '&travelmode=driving';
+    const gmaps = window.gmapDirLink(day.gfrom, day.gto, (day.poi || []).map(p => p.q).slice(0, 9));
     const fromShort = day.gfrom.split(',')[0];
     const toShort = day.gto.split(',')[0];
     card.innerHTML = `

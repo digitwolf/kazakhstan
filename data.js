@@ -12,17 +12,29 @@ const U = "https://upload.wikimedia.org/wikipedia/commons/thumb/";
    locally, injected from a CI secret in deploy). Maps gracefully fall back to Leaflet
    when no key is present. Restrict the key by HTTP referrer + API in Cloud Console. */
 window.GMAPS_KEY = window.GMAPS_KEY || "";
-/* Build a Google Maps Embed directions URL (start → stops → end). */
+/* Resolve a routing point to "lat,lng" via window.GEO (appended below) so Google
+   always finds it — falls back to the raw text if not geocoded. */
+window.geoResolve = function (s) { return (window.GEO && window.GEO[s]) || s; };
+/* Build a Google Maps Embed directions URL (start → stops → end), by coordinates. */
 window.gmapEmbedDir = function (origin, dest, waypoints) {
+  const R = window.geoResolve;
   let u = "https://www.google.com/maps/embed/v1/directions?key=" + window.GMAPS_KEY +
-    "&origin=" + encodeURIComponent(origin) + "&destination=" + encodeURIComponent(dest) + "&mode=driving";
-  if (waypoints && waypoints.length) u += "&waypoints=" + encodeURIComponent(waypoints.join("|"));
+    "&origin=" + encodeURIComponent(R(origin)) + "&destination=" + encodeURIComponent(R(dest)) + "&mode=driving";
+  if (waypoints && waypoints.length) u += "&waypoints=" + encodeURIComponent(waypoints.map(R).join("|"));
   return u;
 };
-/* Build a Google Maps Embed place URL. */
+/* Build a clickable Google Maps directions link (maps/dir), by coordinates. */
+window.gmapDirLink = function (origin, dest, waypoints) {
+  const R = window.geoResolve;
+  let u = "https://www.google.com/maps/dir/?api=1&origin=" + encodeURIComponent(R(origin)) +
+    "&destination=" + encodeURIComponent(R(dest)) + "&travelmode=driving";
+  if (waypoints && waypoints.length) u += "&waypoints=" + encodeURIComponent(waypoints.map(R).join("|"));
+  return u;
+};
+/* Build a Google Maps Embed place URL (by coordinates when known). */
 window.gmapEmbedPlace = function (q, zoom) {
   return "https://www.google.com/maps/embed/v1/place?key=" + window.GMAPS_KEY +
-    "&q=" + encodeURIComponent(q) + (zoom ? "&zoom=" + zoom : "");
+    "&q=" + encodeURIComponent(window.geoResolve(q)) + (zoom ? "&zoom=" + zoom : "");
 };
 
 /* Approx. exchange rate for showing USD alongside JPY hotel prices (update as needed). */
@@ -885,9 +897,9 @@ window.DAYS = [
   { d:4, id:"izu", miles:66, dmin:160, rest:false, region:"Izu", title:"Izu Coastal Run", route:"Hakone → Izu (Shimoda)",
     desc:"Scenic coastal roads down the Izu Peninsula. Beaches, capes and fresh seafood lunches.", tags:["ride", "kid"], gfrom:"Hakone, Japan", gto:"Shimoda, Shizuoka, Japan", gvia:"Jogasaki Coast, Japan",
     poi:[{ name: "Manazuru Cape", what: "Coastal viewpoint", q: "Manazuru Cape", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Cape_Manazuru_%2813099158195%29.jpg/960px-Cape_Manazuru_%2813099158195%29.jpg", frac:0.2 }, { name: "Jogasaki Coast", what: "Lava cliffs & suspension bridge", q: "Jogasaki Coast", slot: "coffee", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Jogasaki_Coast_2009-07-26_%283778041816%29.jpg/960px-Jogasaki_Coast_2009-07-26_%283778041816%29.jpg", frac:0.55 }, { name: "Kawazu", what: "Kinmedai seafood lunch", q: "Kawazu Shizuoka", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Midaka%2C_Kawazu_2011-10-16.jpg/960px-Midaka%2C_Kawazu_2011-10-16.jpg", frac:0.8 }, { name: "Shirahama Beach", what: "Beach & old port town", q: "Shirahama Beach Shimoda", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/IZU_Shirahama_-_panoramio.jpg/960px-IZU_Shirahama_-_panoramio.jpg", frac:0.95 }] },
-  { d:5, id:"fuji", miles:86, dmin:188, rest:false, region:"Fuji", title:"To the Five Lakes", route:"Izu → Fuji Five Lakes",
-    desc:"North toward Kawaguchiko with Mt. Fuji filling the windscreen. Lakeside hotel for the night.", tags:["ride", "kid"], gfrom:"Shimoda, Shizuoka, Japan", gto:"Lake Kawaguchiko, Japan", gvia:"Mishima Skywalk, Japan",
-    poi:[{ name: "Mishima Skywalk", what: "Japan's longest suspension footbridge, Fuji view", q: "Mishima Skywalk", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Mishima_Skywalk_North_Facade2023.jpg/960px-Mishima_Skywalk_North_Facade2023.jpg", frac:0.28 }, { name: "Mishima", what: "Coffee break", q: "Mishima Station", slot: "coffee", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/250720_Platform_of_Shinkansen_Mishima_Station_03.jpg/960px-250720_Platform_of_Shinkansen_Mishima_Station_03.jpg", frac:0.33 }, { name: "Oshino Hakkai", what: "Spring-water village, soba lunch", q: "Oshino Hakkai", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/231028_Waku-ike_Oshino_Hakkai_springs_Oshino_Yamanashi_pref_Japan01s3.jpg/960px-231028_Waku-ike_Oshino_Hakkai_springs_Oshino_Yamanashi_pref_Japan01s3.jpg", frac:0.8 }, { name: "Lake Kawaguchiko", what: "Lakeside arrival & Fuji views", q: "Lake Kawaguchiko", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Lake_Kawaguchiko_20140310-14.JPG/960px-Lake_Kawaguchiko_20140310-14.JPG", frac:0.97 }] },
+  { d:5, id:"fuji", miles:103, dmin:209, rest:false, region:"Fuji", title:"To the Five Lakes", route:"Izu → Fuji Five Lakes",
+    desc:"Up the Izu Skyline ridge road — sweeping Fuji and sea views — then north to Kawaguchiko with Mt. Fuji filling the windscreen. Lakeside hotel for the night.", tags:["ride", "kid"], gfrom:"Shimoda, Shizuoka, Japan", gto:"Lake Kawaguchiko, Japan", gvia:"Izu Skyline",
+    poi:[{ name: "Izu Skyline", what: "Ridge-top skyline road, Fuji & sea views", q: "Izu Skyline", slot: "stop", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Izu_Skyline_and_Fuji.jpg/960px-Izu_Skyline_and_Fuji.jpg", frac:0.4 }, { name: "Mishima Skywalk", what: "Japan's longest suspension footbridge, Fuji view", q: "Mishima Skywalk", slot: "coffee", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Mishima_Skywalk_North_Facade2023.jpg/960px-Mishima_Skywalk_North_Facade2023.jpg", frac:0.58 }, { name: "Oshino Hakkai", what: "Spring-water village, soba lunch", q: "Oshino Hakkai", slot: "lunch", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/231028_Waku-ike_Oshino_Hakkai_springs_Oshino_Yamanashi_pref_Japan01s3.jpg/960px-231028_Waku-ike_Oshino_Hakkai_springs_Oshino_Yamanashi_pref_Japan01s3.jpg", frac:0.82 }, { name: "Lake Kawaguchiko", what: "Lakeside arrival & Fuji views", q: "Lake Kawaguchiko", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Lake_Kawaguchiko_20140310-14.JPG/960px-Lake_Kawaguchiko_20140310-14.JPG", frac:0.97 }] },
   { d:6, id:"fuji", miles:25, rest:true, region:"Fuji", title:"Fuji Exploration", route:"Fuji Five Lakes (light riding)",
     desc:"Lake loop, Oishi Park, cable car viewpoint, and a relaxed afternoon. Optional gentle ride only.", tags:["rest", "kid"], gfrom:"Lake Kawaguchiko, Japan", gto:"Oishi Park, Yamanashi, Japan", gvia:"",
     poi:[{ name: "Oishi Park", what: "Flower beds with Fuji behind", q: "Oishi Park Kawaguchiko", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Lake_Kawaguchiko_Sakura_Mount_Fuji_3.JPG/960px-Lake_Kawaguchiko_Sakura_Mount_Fuji_3.JPG" }, { name: "Chureito Pagoda", what: "Iconic pagoda-and-Fuji view", q: "Chureito Pagoda", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Arakurayama_Sengen_Park_09.jpg/960px-Arakurayama_Sengen_Park_09.jpg" }, { name: "Mt Fuji Panoramic Ropeway", what: "Kachi-Kachi cable car viewpoint", q: "Mt Fuji Panoramic Ropeway", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Kachi_Kachi_Ropeway_%2816217350765%29.jpg/960px-Kachi_Kachi_Ropeway_%2816217350765%29.jpg" }] },
@@ -1015,3 +1027,102 @@ window.CHECKLIST = [
     "Share the itinerary with family/contacts back home"
   ]}
 ];
+
+/* Geocoded routing points (lat,lng) so Google Maps always resolves them.
+   Regenerate with the Geocoding API when stops change (see tour-expert agent). */
+window.GEO = {
+  "Akashi Kaikyo Bridge": "34.62294,135.02682",
+  "Awaji Hanasajiki": "34.55355,134.97803",
+  "Awaji Island": "34.32571,134.81311",
+  "Awaji Island, Japan": "34.32571,134.81311",
+  "Awaji Service Area": "34.58562,135.01255",
+  "Botchan Ressha Matsuyama": "33.85058,132.78497",
+  "Cape Ashizuri": "32.72384,133.02032",
+  "Chureito Pagoda": "35.50126,138.80139",
+  "Cup Noodles Museum Yokohama": "35.45548,139.63887",
+  "Dogo Onsen Honkan": "33.85207,132.78641",
+  "Dogo Onsen, Matsuyama, Japan": "33.85207,132.78641",
+  "Dotonbori Osaka": "34.66865,135.50310",
+  "Ena Gorge": "35.48083,137.40676",
+  "Fukuyama Castle": "34.49114,133.36108",
+  "Fushimi Inari Taisha": "34.96769,135.77919",
+  "Garyu Sanso Ozu": "33.50631,132.55008",
+  "Hakone Open-Air Museum": "35.24516,139.05073",
+  "Hakone Shrine": "35.20483,139.02538",
+  "Hakone Shrine Lake Ashi": "35.20483,139.02538",
+  "Hakone, Japan": "35.23377,139.10885",
+  "Hakone-Yumoto Station": "35.23338,139.10392",
+  "Haneda Airport, Tokyo": "35.54830,139.77800",
+  "Himeji Castle": "34.83945,134.69390",
+  "Himeji, Hyogo, Japan": "34.81542,134.68555",
+  "Imabari Castle": "34.06339,133.00675",
+  "Ishiteji Temple Matsuyama": "33.84790,132.79647",
+  "Iya Kazurabashi": "33.87513,133.83540",
+  "Iya Kazurabashi, Japan": "33.87513,133.83540",
+  "Iya Valley": "33.90472,133.92436",
+  "Iya no Shobenkozo": "33.71204,135.61488",
+  "Izu Skyline": "35.00978,139.04332",
+  "Jogasaki Coast": "34.89105,139.13992",
+  "Katsurahama": "33.49818,133.57443",
+  "Kawazu Shizuoka": "34.75700,138.98761",
+  "Kirosan Observatory Park": "34.11993,133.03346",
+  "Kobe Harborland": "34.68007,135.18351",
+  "Kochi Castle": "33.56081,133.53148",
+  "Kochi, Japan": "33.55888,133.53124",
+  "Korakuen Okayama": "34.66777,133.93593",
+  "Kosanji Temple": "35.06026,135.67854",
+  "Kurashiki Bikan": "34.59574,133.77177",
+  "Kurashiki, Okayama, Japan": "34.58498,133.77198",
+  "Kyoto, Japan": "35.01156,135.76815",
+  "Lake Kawaguchiko": "35.51709,138.75178",
+  "Lake Kawaguchiko, Japan": "35.51709,138.75178",
+  "Lake Suwa": "36.04926,138.08531",
+  "Magome-juku": "35.53152,137.57175",
+  "Manazuru Cape": "35.15844,139.13713",
+  "Matsuyama Castle Ehime": "33.84558,132.76553",
+  "Matsuyama, Ehime, Japan": "33.83551,132.76399",
+  "Michi-no-Eki Otoyo": "33.76429,133.66433",
+  "Minato Mirai 21 Yokohama": "35.46008,139.63246",
+  "Mishima Skywalk": "35.15030,138.98085",
+  "Mt Fuji Panoramic Ropeway": "35.50380,138.77438",
+  "Nagoro Scarecrow Village": "33.85654,134.01941",
+  "Nagoya, Japan": "35.18145,136.90656",
+  "Niyodo River": "33.53277,133.27345",
+  "Oboke Gorge": "33.89327,133.75698",
+  "Oboke, Tokushima, Japan": "33.87669,133.76722",
+  "Odawara Castle": "35.25095,139.15351",
+  "Oishi Park Kawaguchiko": "35.52290,138.74575",
+  "Oishi Park, Yamanashi, Japan": "35.52290,138.74575",
+  "Okayama Station": "34.66612,133.91773",
+  "Onomichi Temple Walk": "34.40890,133.20491",
+  "Onomichi, Hiroshima, Japan": "34.40890,133.20491",
+  "Osaka Aquarium Kaiyukan": "34.65452,135.42896",
+  "Osaka Castle": "34.68726,135.52585",
+  "Osaka, Japan": "34.69372,135.50225",
+  "Oshino Hakkai": "35.46007,138.83247",
+  "Owakudani": "35.24345,139.01935",
+  "Owakudani, Hakone, Japan": "35.24345,139.01935",
+  "Oyamazumi Shrine": "34.24792,133.00573",
+  "Ryugado Cave Kochi": "33.60339,133.74517",
+  "Sada Chinkabashi Shimanto": "33.01729,132.88750",
+  "Senkoji Temple Onomichi": "34.41045,133.19871",
+  "Setoda": "34.30521,133.08625",
+  "Setoda, Ikuchijima, Japan": "34.30521,133.08625",
+  "Shimanto River canoe": "33.19173,132.98024",
+  "Shimanto River cycling": "33.19173,132.98024",
+  "Shimanto River, Japan": "33.19173,132.98024",
+  "Shimanto, Kochi, Japan": "32.99139,132.93379",
+  "Shimoda, Shizuoka, Japan": "34.67962,138.94515",
+  "Shirahama Beach Shimoda": "34.68947,138.97284",
+  "Susaki Kochi": "33.40084,133.28294",
+  "Tatsukushi": "32.78848,132.86744",
+  "Tokushima Station": "34.07423,134.55116",
+  "Tomonoura": "34.38287,133.38120",
+  "Uchiko Yokaichi": "33.53257,132.65981",
+  "Uwajima": "33.22357,132.56038",
+  "Uwajima Castle": "33.21945,132.56528",
+  "Uzunomichi Naruto": "34.23617,134.64198",
+  "Washuzan": "34.43555,133.81244",
+  "Yokohama Chinatown": "35.44309,139.64410",
+  "Yokohama, Japan": "35.44367,139.63796"
+};

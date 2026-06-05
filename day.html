@@ -178,20 +178,14 @@
   const fromS = short(day.gfrom), toS = short(day.gto);
   const stripTags = s => s.replace(/<[^>]+>/g, '');
 
-  // hero — photo collage of the day (destination lead + each stop's photo)
-  const collage = [dest.photos[0] && dest.photos[0].src]
-    .concat(day.poi.map(p => p.img))
-    .filter((v, i, a) => v && a.indexOf(v) === i)
-    .slice(0, 6);
+  // hero — illustrated day poster if available (assets/day-N.svg), else the lead photo
   const bg = document.getElementById('bg');
-  if (collage.length >= 3) {
-    const cols = collage.length >= 5 ? 3 : collage.length === 4 ? 2 : collage.length;
-    bg.classList.add('collage');
-    bg.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
-    bg.innerHTML = collage.map(src => `<span style="background-image:url('${src}')"></span>`).join('');
-  } else {
-    bg.style.backgroundImage = `url("${(collage[0] || dest.photos[0].src)}")`;
-  }
+  const poster = `assets/day-${day.d}.svg`;
+  const probe = new Image();
+  probe.onload = () => { bg.style.backgroundImage = `url("${poster}")`; bg.style.backgroundSize = 'cover'; };
+  probe.onerror = () => { bg.style.backgroundImage = `url("${dest.photos[0].src}")`; };
+  probe.src = poster;
+  bg.style.backgroundImage = `url("${dest.photos[0].src}")`;
   document.getElementById('daytag').textContent = `Day ${day.d}` + (day.rest ? ' · Rest day' : '');
   document.getElementById('title').textContent = day.title;
   document.getElementById('route').innerHTML = stripTags(day.route);
@@ -229,7 +223,7 @@
   const r5 = m => Math.round(m/5)*5;
   const ev = [];
   const poiMap = q => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
-  const routeTo = (a, b) => `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(a)}&destination=${encodeURIComponent(b)}&travelmode=driving`;
+  const routeTo = (a, b) => window.gmapDirLink(a, b);
   const prevQ = i => i === 0 ? day.gfrom : day.poi[i - 1].q;   // leg starts at origin, then each prior stop
 
   const DWELL = { coffee:30, lunch:60, stop:40, scenic:25, activity:45 };  // minutes at each stop
@@ -301,12 +295,9 @@
   document.getElementById('strip').innerHTML = dest.photos.slice(0,6).map(ph =>
     `<a href="place.html?id=${dest.id}" title="${ph.cap}"><img loading="lazy" src="${ph.src}" alt="${ph.cap}"></a>`).join('');
 
-  // ---- route button (origin -> poi waypoints -> destination) ----
-  const wpts = day.poi.map(q => q.q).slice(0, 9).join('|');
+  // ---- route button (origin -> poi waypoints -> destination), by coordinates ----
   document.getElementById('routeBtn').href =
-    'https://www.google.com/maps/dir/?api=1&origin=' + encodeURIComponent(day.gfrom) +
-    '&destination=' + encodeURIComponent(day.gto) +
-    (wpts ? '&waypoints=' + encodeURIComponent(wpts) : '') + '&travelmode=driving';
+    window.gmapDirLink(day.gfrom, day.gto, day.poi.map(q => q.q).slice(0, 9));
   document.getElementById('destBtn').href = `place.html?id=${dest.id}`;
 
   // ---- mini ribbon ----
