@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Destination · Japan Family Motorcycle Tour</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Shippori+Mincho:wght@600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg:#0e1116; --bg-soft:#161b22; --panel:#1c222b; --panel-2:#232b36;
+    --line:#2c3540; --text:#e8edf3; --muted:#9aa7b5;
+    --accent:#e3493b; --accent-2:#f0a830; --teal:#3fb8af; --green:#5fb35f;
+    --radius:14px; --maxw:1080px;
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; font-family:'Inter',system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.65; -webkit-font-smoothing:antialiased; }
+  h1,h2,h3 { line-height:1.2; margin:0 0 .4em; }
+  .mincho { font-family:'Shippori Mincho',serif; }
+  a { color:var(--teal); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  .wrap { max-width:var(--maxw); margin:0 auto; padding:0 22px; }
+
+  nav.top { position:sticky; top:0; z-index:50; background:rgba(14,17,22,.82); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+  nav.top .wrap { display:flex; align-items:center; justify-content:space-between; height:56px; }
+  nav.top .brand { font-weight:800; font-size:15px; }
+  nav.top .brand span { color:var(--accent); }
+  nav.top a.back { color:var(--muted); font-size:14px; font-weight:600; }
+  nav.top a.back:hover { color:var(--text); text-decoration:none; }
+
+  /* hero */
+  .phero { position:relative; min-height:380px; display:flex; align-items:flex-end; border-bottom:1px solid var(--line); overflow:hidden; }
+  .phero .bg { position:absolute; inset:0; background-size:cover; background-position:center; transform:scale(1.05); }
+  .phero .scrim { position:absolute; inset:0; background:linear-gradient(180deg, rgba(14,17,22,.25) 0%, rgba(14,17,22,.55) 55%, rgba(14,17,22,.96) 100%); }
+  .miles-tag {
+    position:absolute; top:74px; right:22px; z-index:3;
+    display:flex; align-items:center; gap:8px;
+    background:rgba(14,17,22,.72); backdrop-filter:blur(6px);
+    border:1px solid rgba(227,73,59,.55); border-radius:999px;
+    padding:9px 16px; font-weight:700; font-size:15px; color:#fff;
+    box-shadow:0 4px 18px rgba(0,0,0,.35);
+  }
+  .miles-tag .ic { font-size:17px; }
+  .miles-tag b { color:var(--accent-2); font-size:18px; }
+  .miles-tag .u { color:var(--muted); font-weight:600; font-size:12px; }
+  @media (max-width:620px) { .miles-tag { top:auto; bottom:18px; right:16px; padding:7px 13px; font-size:13px; } }
+  .phero .inner { position:relative; padding:48px 0 30px; width:100%; }
+  .phero .region { color:var(--accent-2); font-weight:700; font-size:13px; letter-spacing:.14em; text-transform:uppercase; }
+  .phero h1 { font-size:clamp(30px,6vw,52px); font-weight:800; letter-spacing:-.02em; margin-top:8px; }
+  .phero h1 .jp { font-size:.5em; color:var(--muted); margin-left:14px; font-weight:700; }
+  .phero .tagline { font-size:clamp(15px,2.4vw,20px); color:#d4dde6; max-width:680px; }
+  .phero .meta { margin-top:14px; display:flex; flex-wrap:wrap; gap:10px; }
+  .pill { font-size:12.5px; font-weight:700; padding:5px 12px; border-radius:999px; border:1px solid var(--line); background:rgba(0,0,0,.35); }
+  .pill.stay { color:#f08070; border-color:rgba(227,73,59,.4); }
+  .pill.days { color:var(--teal); }
+
+  main { padding:42px 0 70px; }
+  .layout { display:grid; grid-template-columns:1fr 360px; gap:34px; align-items:start; }
+  .prose p { color:#cdd6df; font-size:16px; margin:0 0 16px; }
+
+  .block { margin-top:34px; }
+  .block > h2 { font-size:22px; font-weight:800; display:flex; align-items:center; gap:10px; margin-bottom:16px; }
+  .block > h2 .ico { font-size:22px; }
+
+  /* gallery */
+  .gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  .gallery figure { margin:0; border-radius:12px; overflow:hidden; border:1px solid var(--line); background:var(--bg-soft); cursor:zoom-in; }
+  .gallery img { width:100%; height:170px; object-fit:cover; display:block; transition:transform .3s; }
+  .gallery figure:hover img { transform:scale(1.06); }
+  .gallery figcaption { font-size:12px; color:var(--muted); padding:7px 10px; }
+
+  /* hotels */
+  ul.hotels { list-style:none; margin:0; padding:0; display:grid; gap:14px; }
+  .hotel { display:grid; grid-template-columns:128px 1fr; gap:0; background:var(--panel); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  .hotel.note { grid-template-columns:1fr; border-style:dashed; }
+  .hthumb { position:relative; background:var(--bg-soft); }
+  .hthumb img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .hbody { padding:14px 16px; }
+  .hhead { display:flex; align-items:center; gap:9px; flex-wrap:wrap; }
+  .hhead b { color:#fff; font-size:15.5px; font-weight:700; }
+  .hpark { font-size:11px; font-weight:700; color:#87d287; border:1px solid rgba(95,179,95,.35); background:rgba(95,179,95,.12); border-radius:6px; padding:2px 8px; white-space:nowrap; }
+  .hotel .sub { display:block; color:var(--muted); font-size:13.5px; margin-top:5px; }
+  .hmeta { display:flex; align-items:center; justify-content:space-between; gap:12px; margin-top:11px; flex-wrap:wrap; }
+  .price { font-weight:800; color:var(--accent-2); font-size:16px; }
+  .price .usd { font-weight:700; color:var(--teal); font-size:13px; margin-left:7px; }
+  .price .pnote { font-weight:500; color:var(--muted); font-size:12px; display:block; margin-top:1px; }
+  .hbook { font-weight:600; font-size:13.5px; color:var(--teal); white-space:nowrap; }
+  .hbook:hover { color:#fff; text-decoration:none; }
+  @media (max-width:480px) { .hotel { grid-template-columns:96px 1fr; } }
+
+  ul.clean { list-style:none; margin:0; padding:0; }
+  ul.clean li { padding:11px 0; border-bottom:1px solid var(--line); color:#cdd6df; font-size:15px; }
+  ul.clean li:last-child { border-bottom:none; }
+  ul.clean li b { color:#fff; font-weight:600; }
+  ul.clean li .sub { color:var(--muted); font-size:13.5px; display:block; }
+  .tag-inline { font-size:11px; font-weight:700; color:var(--accent-2); border:1px solid var(--line); border-radius:6px; padding:2px 7px; margin-left:8px; text-transform:uppercase; letter-spacing:.04em; }
+
+  /* sidebar */
+  aside .card { background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:18px; margin-bottom:18px; }
+  aside .card h3 { font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); }
+  #pmap { height:240px; border-radius:10px; border:1px solid var(--line); margin-top:4px; z-index:1; }
+  .linklist a { display:flex; align-items:center; gap:8px; padding:9px 0; border-bottom:1px solid var(--line); font-weight:600; font-size:14.5px; }
+  .linklist a:last-child { border-bottom:none; }
+  .linklist a:hover { text-decoration:none; color:#fff; }
+  .btn-map { display:inline-flex; align-items:center; gap:8px; margin-top:12px; padding:10px 14px; border-radius:9px; background:var(--accent); color:#fff; font-weight:600; font-size:14px; width:100%; justify-content:center; }
+  .btn-map:hover { text-decoration:none; background:#f0594b; }
+
+  /* prev/next */
+  .pn { display:flex; justify-content:space-between; gap:14px; margin-top:46px; }
+  .pn a { flex:1; background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:16px 18px; transition:border-color .15s, transform .12s; }
+  .pn a:hover { border-color:#3c4756; transform:translateY(-2px); text-decoration:none; }
+  .pn .dir { font-size:12px; color:var(--muted); text-transform:uppercase; letter-spacing:.08em; }
+  .pn .nm { font-size:17px; font-weight:700; color:#fff; }
+  .pn a.next { text-align:right; }
+
+  .leaflet-popup-content-wrapper { background:var(--panel); color:var(--text); border-radius:10px; }
+  .leaflet-popup-tip { background:var(--panel); }
+
+  /* lightbox */
+  #lb { position:fixed; inset:0; background:rgba(0,0,0,.92); display:none; align-items:center; justify-content:center; z-index:200; cursor:zoom-out; }
+  #lb img { max-width:92vw; max-height:88vh; border-radius:8px; }
+  #lb .cap { position:absolute; bottom:24px; color:#ccc; font-size:14px; width:100%; text-align:center; }
+
+  footer { padding:30px 0 50px; color:var(--muted); font-size:14px; border-top:1px solid var(--line); }
+
+  @media (max-width:820px) {
+    .layout { grid-template-columns:1fr; }
+    .gallery { grid-template-columns:repeat(2,1fr); }
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <div class="brand mincho">日本 <span>·</span> Japan Family Tour</div>
+    <a class="back" href="index.html#destinations">← All destinations</a>
+  </div>
+</nav>
+
+<header class="phero" id="phero">
+  <div class="bg" id="pheroBg"></div>
+  <div class="scrim"></div>
+  <div class="miles-tag" id="pMilesTag"></div>
+  <div class="inner">
+    <div class="wrap">
+      <div class="region" id="pRegion"></div>
+      <h1 id="pTitle"></h1>
+      <div class="tagline" id="pTagline"></div>
+      <div class="meta" id="pMeta"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <div class="layout">
+      <div class="content">
+        <div class="prose" id="pIntro"></div>
+
+        <div class="block">
+          <h2><span class="ico">📷</span> Photos</h2>
+          <div class="gallery" id="pGallery"></div>
+        </div>
+
+        <div class="block">
+          <h2><span class="ico">⭐</span> Things to See &amp; Do</h2>
+          <ul class="clean" id="pHighlights"></ul>
+        </div>
+
+        <div class="block">
+          <h2><span class="ico">🍜</span> What to Eat</h2>
+          <ul class="clean" id="pFood"></ul>
+        </div>
+
+        <div class="block">
+          <h2><span class="ico">🏨</span> Where to Stay</h2>
+          <ul class="hotels" id="pHotels"></ul>
+          <p style="color:var(--muted); font-size:13px; margin-top:12px;">Photos are <b>representative of the style of stay</b>, not the exact property. Prices are <b>indicative per room / night</b> for two adults (USD converted at ≈ ¥150 = $1) — confirm exact rates, secure motorcycle parking, and that passenger / child-passenger riding is allowed before booking.</p>
+        </div>
+
+        <div class="pn" id="pPN"></div>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3>Location</h3>
+          <div id="pmap"></div>
+          <a class="btn-map" id="pGmaps" target="_blank" rel="noopener">🗺️ Open in Google Maps</a>
+        </div>
+        <div class="card">
+          <h3>Links</h3>
+          <div class="linklist" id="pLinks"></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<div id="lb"><img id="lbImg" alt="" /><div class="cap" id="lbCap"></div></div>
+
+<footer><div class="wrap">Part of the 21-day Japan Family Motorcycle Tour · <a href="index.html">Back to the full itinerary →</a></div></footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="data.js"></script>
+<script>
+  const params = new URLSearchParams(location.search);
+  const id = params.get('id') || 'yokohama';
+  const list = window.DESTINATIONS;
+  const idx = Math.max(0, list.findIndex(d => d.id === id));
+  const d = list[idx];
+
+  document.title = d.name + " · Japan Family Motorcycle Tour";
+
+  // hero
+  document.getElementById('pheroBg').style.backgroundImage = `url("${d.photos[0].src}")`;
+  document.getElementById('pRegion').textContent = d.region;
+  document.getElementById('pTitle').innerHTML = `${d.name}<span class="jp mincho">${d.jp}</span>`;
+  document.getElementById('pTagline').textContent = d.tagline;
+  const typeLabel = { start:'Start · bike pickup', stay:'2-night rest base', stop:'Overnight stop', end:'Finish · bike return' };
+  document.getElementById('pMeta').innerHTML =
+    `<span class="pill days">${d.days}</span>` +
+    `<span class="pill ${d.type==='stay'?'stay':''}">${typeLabel[d.type]}</span>`;
+
+  // miles overlay on hero photo
+  const milesTag = document.getElementById('pMilesTag');
+  if (d.legMiles > 0) {
+    milesTag.innerHTML = `<span class="ic">🏍️</span><b>${d.legMiles}</b> mi <span class="u">ride to here</span>`;
+  } else {
+    milesTag.innerHTML = `<span class="ic">🏍️</span>Start <span class="u">· bike pickup</span>`;
+  }
+
+  // intro
+  document.getElementById('pIntro').innerHTML = d.intro.map(p => `<p>${p}</p>`).join('');
+
+  // gallery
+  document.getElementById('pGallery').innerHTML = d.photos.map(p =>
+    `<figure data-full="${p.src}" data-cap="${p.cap}"><img loading="lazy" src="${p.src}" alt="${p.cap}"><figcaption>${p.cap}</figcaption></figure>`
+  ).join('');
+
+  // highlights
+  document.getElementById('pHighlights').innerHTML = d.highlights.map(h => `<li>${h}</li>`).join('');
+
+  // food
+  document.getElementById('pFood').innerHTML = d.food.map(f =>
+    `<li><b>${f.n}</b><span class="sub">${f.d}</span></li>`).join('');
+
+  // hotels
+  document.getElementById('pHotels').innerHTML = d.hotels.map(h => {
+    if ((h.t || '').toLowerCase().includes('note')) {
+      return `<li class="hotel note"><div class="hbody"><div class="hhead"><b>${h.n}</b><span class="tag-inline">Note</span></div><span class="sub">${h.d}</span></div></li>`;
+    }
+    const img = window.hotelImage(h.t);
+    const link = window.hotelLink(h.n, d.name);
+    return `<li class="hotel">
+      <div class="hthumb"><img loading="lazy" src="${img}" alt="${h.t} — representative"></div>
+      <div class="hbody">
+        <div class="hhead"><b>${h.n}</b><span class="tag-inline">${h.t}</span><span class="hpark" title="Confirm a secure spot for a large ADV when booking">🏍️ ${window.hotelParking(h.t)}</span></div>
+        <span class="sub">${h.d}</span>
+        <div class="hmeta">
+          <span class="price">${h.price || '—'}<span class="usd">${window.priceUSD(h.price)}</span><span class="pnote"> / night approx.</span></span>
+          <a class="hbook" href="${link}" target="_blank" rel="noopener">Find &amp; book →</a>
+        </div>
+      </div>
+    </li>`;
+  }).join('');
+
+  // links
+  document.getElementById('pLinks').innerHTML = d.links.map(l =>
+    `<a href="${l.u}" target="_blank" rel="noopener">🔗 ${l.l}</a>`).join('');
+
+  // google maps
+  document.getElementById('pGmaps').href =
+    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(d.name + ' Japan')}`;
+
+  // prev / next
+  const prev = list[(idx - 1 + list.length) % list.length];
+  const next = list[(idx + 1) % list.length];
+  document.getElementById('pPN').innerHTML =
+    `<a class="prev" href="place.html?id=${prev.id}"><div class="dir">← Previous</div><div class="nm">${prev.name}</div></a>` +
+    `<a class="next" href="place.html?id=${next.id}"><div class="dir">Next →</div><div class="nm">${next.name}</div></a>`;
+
+  // map
+  const map = L.map('pmap', { scrollWheelZoom:false, zoomControl:true }).setView([d.lat, d.lng], d.zoom || 12);
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution:'&copy; OSM &copy; CARTO', subdomains:'abcd', maxZoom:19
+  }).addTo(map);
+  L.circleMarker([d.lat, d.lng], { radius:10, color:'#fff', weight:2, fillColor:'#e3493b', fillOpacity:1 })
+    .addTo(map).bindPopup(`<b>${d.name}</b>`);
+
+  // lightbox
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  document.getElementById('pGallery').addEventListener('click', e => {
+    const fig = e.target.closest('figure'); if (!fig) return;
+    lbImg.src = fig.dataset.full; lbCap.textContent = fig.dataset.cap; lb.style.display = 'flex';
+  });
+  lb.addEventListener('click', () => lb.style.display = 'none');
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.style.display = 'none'; });
+</script>
+</body>
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Japan Family Motorcycle Tour · 21 Days</title>
+<meta name="description" content="A scenic, family-friendly 3-week motorcycle tour of Japan — Hakone, Fuji, Shikoku, Shimanami Kaido and the Seto Inland Sea." />
+<link rel="preconnect" href="https://unpkg.com" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Shippori+Mincho:wght@600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0e1116;
+    --bg-soft: #161b22;
+    --panel: #1c222b;
+    --panel-2: #232b36;
+    --line: #2c3540;
+    --text: #e8edf3;
+    --muted: #9aa7b5;
+    --accent: #e3493b;      /* torii red */
+    --accent-2: #f0a830;    /* warm amber */
+    --teal: #3fb8af;        /* seto sea */
+    --green: #5fb35f;
+    --radius: 14px;
+    --maxw: 1180px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3 { line-height: 1.2; margin: 0 0 .4em; }
+  .mincho { font-family: 'Shippori Mincho', serif; }
+  a { color: var(--teal); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
+
+  /* ---------- Header / Hero ---------- */
+  header.hero {
+    position: relative;
+    padding: 84px 0 64px;
+    background:
+      radial-gradient(1200px 500px at 80% -10%, rgba(227,73,59,.22), transparent 60%),
+      radial-gradient(900px 500px at 10% 0%, rgba(63,184,175,.16), transparent 55%),
+      linear-gradient(180deg, #11151c, #0e1116);
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+  }
+  .hero .kicker {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; letter-spacing: .14em; text-transform: uppercase;
+    color: var(--accent-2); font-weight: 600;
+    border: 1px solid var(--line); border-radius: 999px;
+    padding: 6px 14px; background: rgba(0,0,0,.2); margin-bottom: 22px;
+  }
+  .hero h1 { font-size: clamp(34px, 6vw, 60px); font-weight: 800; letter-spacing: -.02em; }
+  .hero h1 .jp { display:block; font-size: .42em; color: var(--muted); letter-spacing:.2em; font-weight:600; margin-top:10px; }
+  .hero p.lead { font-size: clamp(16px, 2.2vw, 20px); color: var(--muted); max-width: 720px; margin: 18px 0 30px; }
+  .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 20px; border-radius: 10px; font-weight: 600; font-size: 15px;
+    border: 1px solid var(--line); color: var(--text); background: var(--panel);
+    transition: transform .12s ease, border-color .12s ease, background .12s;
+  }
+  .btn:hover { text-decoration: none; transform: translateY(-2px); border-color: #3c4756; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .btn.primary:hover { background: #f0594b; }
+
+  /* ---------- Stat strip ---------- */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 44px; }
+  .stat {
+    background: rgba(255,255,255,.03); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 18px 20px;
+  }
+  .stat .n { font-size: 28px; font-weight: 800; color: #fff; }
+  .stat .l { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+
+  /* ---------- Sections ---------- */
+  section { padding: 64px 0; border-bottom: 1px solid var(--line); }
+  .sec-head { margin-bottom: 30px; }
+  .sec-head .tag { color: var(--accent-2); font-weight: 600; font-size: 13px; letter-spacing:.14em; text-transform: uppercase; }
+  .sec-head h2 { font-size: clamp(26px, 4vw, 38px); font-weight: 800; letter-spacing: -.01em; margin-top: 8px; }
+  .sec-head p { color: var(--muted); max-width: 760px; }
+
+  /* ---------- Map ---------- */
+  #map {
+    height: 560px; width: 100%;
+    border-radius: var(--radius); border: 1px solid var(--line);
+    background: var(--bg-soft); z-index: 1;
+  }
+  .map-legend { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 16px; color: var(--muted); font-size: 14px; }
+  .map-legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .dot { width: 13px; height: 13px; border-radius: 50%; display: inline-block; border: 2px solid #fff; }
+  .dot.stay { background: var(--accent); }
+  .dot.stop { background: var(--teal); }
+  .dot.start { background: var(--green); }
+  .dot.end { background: var(--accent-2); }
+  .leaflet-popup-content-wrapper { background: var(--panel); color: var(--text); border-radius: 10px; }
+  .leaflet-popup-tip { background: var(--panel); }
+  .leaflet-popup-content { margin: 12px 14px; }
+  .leaflet-popup-content b { color: #fff; }
+  .leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
+
+  /* ---------- Route ribbon ---------- */
+  .ribbon { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .ribbon .node {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 999px;
+    padding: 7px 14px; font-size: 14px; font-weight: 500; white-space: nowrap;
+  }
+  .ribbon .node.key { border-color: var(--accent); color: #fff; }
+  .ribbon .arrow { color: var(--muted); font-size: 14px; }
+
+  /* ---------- Itinerary ---------- */
+  .filter-bar { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 26px; }
+  .chip {
+    cursor: pointer; user-select: none; font-size: 13.5px; font-weight: 600;
+    padding: 8px 15px; border-radius: 999px; border: 1px solid var(--line);
+    background: var(--panel); color: var(--muted); transition: all .12s;
+  }
+  .chip:hover { color: var(--text); }
+  .chip.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+  .timeline { display: grid; gap: 16px; }
+  .day-card {
+    position: relative;
+    display: grid; grid-template-columns: 100px 1fr; gap: 0;
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: var(--radius); overflow: hidden;
+    transition: border-color .15s, transform .12s;
+    color: inherit; text-decoration: none;
+  }
+  .day-card:hover { border-color: var(--accent); transform: translateY(-2px); text-decoration: none; }
+  .day-card .card-link { position: absolute; inset: 0; z-index: 1; }
+  .day-card .body { position: relative; }
+  .day-actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 12px; }
+  .day-route {
+    position: relative; z-index: 2; font-size: 12.5px; font-weight: 600;
+    color: var(--teal); border: 1px solid var(--line); background: var(--bg-soft);
+    padding: 6px 11px; border-radius: 8px; white-space: nowrap;
+  }
+  .day-route:hover { text-decoration: none; color: #fff; border-color: var(--teal); }
+  .day-card .daynum {
+    background: linear-gradient(160deg, var(--panel-2), var(--bg-soft));
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 18px 8px; border-right: 1px solid var(--line); text-align: center;
+  }
+  .day-card .daynum .lbl { font-size: 10px; letter-spacing: .14em; color: var(--muted); text-transform: uppercase; }
+  .day-card .daynum .num { font-size: 30px; font-weight: 800; color: #fff; line-height: 1; }
+  .day-card .daynum .mi { margin-top: 8px; font-size: 13px; color: var(--teal); font-weight: 600; }
+  .day-card .daynum .mi b { font-size: 16px; color: #fff; font-weight: 800; }
+  .day-card .daynum .mi.rest { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; }
+  .day-card .day-go { display: inline-block; font-size: 12.5px; font-weight: 700; color: var(--accent-2); opacity: .8; transition: opacity .12s, transform .12s; }
+  .day-card:hover .day-go { opacity: 1; transform: translateX(3px); }
+  .day-card .body { padding: 16px 20px; }
+  .day-card .body h3 { font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .day-card .route { color: var(--muted); font-size: 14px; margin: 2px 0 10px; }
+  .day-card .route b { color: var(--text); font-weight: 600; }
+  .day-card .desc { font-size: 14.5px; color: #c7d1db; }
+  .badges { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 12px; }
+  .badge { font-size: 11.5px; font-weight: 600; padding: 4px 10px; border-radius: 6px; letter-spacing: .02em; }
+  .badge.ride { background: rgba(63,184,175,.14); color: #6fd6cd; border: 1px solid rgba(63,184,175,.3); }
+  .badge.rest { background: rgba(95,179,95,.14); color: #87d287; border: 1px solid rgba(95,179,95,.3); }
+  .badge.stay2 { background: rgba(227,73,59,.16); color: #f08070; border: 1px solid rgba(227,73,59,.32); }
+  .badge.kid  { background: rgba(240,168,48,.14); color: #f4c06a; border: 1px solid rgba(240,168,48,.3); }
+  .badge.onsen{ background: rgba(160,120,220,.14); color: #c2a4ee; border: 1px solid rgba(160,120,220,.3); }
+  .pill-region { font-size: 11px; font-weight: 700; color: var(--accent-2); text-transform: uppercase; letter-spacing: .08em; }
+
+  /* ---------- Info grid ---------- */
+  .grid { display: grid; gap: 18px; }
+  .grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+  .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+  .card {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 22px;
+  }
+  .card h3 { font-size: 17px; display: flex; align-items: center; gap: 10px; }
+  .card .ico { font-size: 22px; }
+  .card ul { margin: 10px 0 0; padding-left: 18px; color: #c7d1db; font-size: 14.5px; }
+  .card ul li { margin-bottom: 6px; }
+  .card.warn { border-color: rgba(227,73,59,.35); }
+  .card.warn h3 { color: #f08070; }
+
+  table.params { width: 100%; border-collapse: collapse; font-size: 14.5px; }
+  table.params td { padding: 11px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  table.params tr td:first-child { color: var(--muted); width: 38%; font-weight: 500; }
+  table.params tr:last-child td { border-bottom: none; }
+
+  /* ---------- Footer ---------- */
+  footer { padding: 40px 0 60px; color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+
+  /* ---------- Flights ---------- */
+  .flight-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .flight { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
+  .flight .dir { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-2); }
+  .flight .route { display: flex; align-items: center; gap: 12px; margin: 10px 0 4px; flex-wrap: wrap; }
+  .flight .route .ap { font-size: 19px; font-weight: 800; color: #fff; }
+  .flight .route .pl { color: var(--teal); font-size: 18px; }
+  .flight .sample { font-size: 13px; color: var(--muted); }
+  .flight .specs { display: flex; gap: 18px; margin: 14px 0; flex-wrap: wrap; }
+  .flight .specs .s .v { font-size: 15px; font-weight: 700; color: #fff; }
+  .flight .specs .s .k { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+  .flight .air { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+  .flight .air span { font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 6px; background: rgba(63,184,175,.13); color: #6fd6cd; border: 1px solid rgba(63,184,175,.28); }
+  .flight .fnote { font-size: 13.5px; color: #c7d1db; margin: 0 0 14px; }
+  .flight .fare { font-size: 13px; color: var(--muted); }
+  .flight .fare b { color: var(--accent-2); font-size: 17px; }
+  .flight .bk { display: inline-flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
+  .flight .bk a { font-size: 13.5px; font-weight: 600; padding: 9px 14px; border-radius: 8px; background: var(--accent); color: #fff; }
+  .flight .bk a.alt { background: var(--panel-2); border: 1px solid var(--line); color: var(--text); }
+  .flight .bk a:hover { text-decoration: none; transform: translateY(-1px); }
+  .flight-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
+  .flight-notes ul { margin: 10px 0 0; padding-left: 18px; color: #c7d1db; font-size: 14px; }
+  .flight-notes ul li { margin-bottom: 7px; }
+  .linkrow { display: flex; flex-direction: column; gap: 9px; }
+  .linkrow a { font-weight: 600; font-size: 14px; }
+  @media (max-width: 820px) { .flight-grid, .flight-notes { grid-template-columns: 1fr; } }
+
+  /* ---------- Destination gallery ---------- */
+  .dest-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .dest {
+    position: relative; display: block; border-radius: var(--radius); overflow: hidden;
+    border: 1px solid var(--line); background: var(--bg-soft);
+    aspect-ratio: 4 / 5; transition: transform .14s, border-color .14s;
+  }
+  .dest:hover { transform: translateY(-3px); border-color: #46525f; text-decoration: none; }
+  .dest img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+  .dest:hover img { transform: scale(1.07); }
+  .dest .grad { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14,17,22,.05) 30%, rgba(14,17,22,.55) 60%, rgba(14,17,22,.95) 100%); }
+  .dest .cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 14px 13px; }
+  .dest .cap .reg { font-size: 11px; font-weight: 700; color: var(--accent-2); text-transform: uppercase; letter-spacing: .07em; }
+  .dest .cap .nm { font-size: 16px; font-weight: 700; color: #fff; line-height: 1.2; margin-top: 2px; }
+  .dest .cap .dy { font-size: 12px; color: var(--muted); margin-top: 3px; }
+  .dest .corner { position: absolute; top: 10px; right: 10px; width: 12px; height: 12px; border-radius: 50%; border: 2px solid #fff; }
+  .dest .corner.stay { background: var(--accent); }
+  .dest .corner.stop { background: var(--teal); }
+  .dest .corner.start { background: var(--green); }
+  .dest .corner.end { background: var(--accent-2); }
+  @media (max-width: 980px) { .dest-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 680px) { .dest-grid { grid-template-columns: repeat(2, 1fr); } }
+
+  /* sticky nav */
+  nav.top {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(14,17,22,.82); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  nav.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; }
+  nav.top .brand { font-weight: 800; font-size: 15px; letter-spacing: -.01em; }
+  nav.top .brand span { color: var(--accent); }
+  nav.top .links { display: flex; gap: 22px; }
+  nav.top .links a { color: var(--muted); font-size: 14px; font-weight: 500; }
+  nav.top .links a:hover { color: var(--text); text-decoration: none; }
+
+  @media (max-width: 860px) {
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .grid.cols-3, .grid.cols-2 { grid-template-columns: 1fr; }
+    nav.top .links { display: none; }
+    #map { height: 420px; }
+  }
+  @media (max-width: 480px) {
+    .day-card { grid-template-columns: 64px 1fr; }
+    .day-card .daynum .num { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap">
+    <div class="brand mincho">日本 <span>·</span> Japan Family Tour</div>
+    <div class="links">
+      <a href="#getting-there">Flights</a>
+      <a href="#map-sec">Map</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#itinerary">Itinerary</a>
+      <a href="#safety">Safety</a>
+      <a href="#params">Details</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">21-Day Scenic Motorcycle Journey</span>
+    <h1 class="mincho">A Family Ride Through Japan
+      <span class="jp">家族のオートバイ旅 · Tokyo → Shikoku → Kansai</span>
+    </h1>
+    <p class="lead">
+      A relaxed, safety-first three-week tour combining famous highlights with quiet rural Japan —
+      mountain villages, onsen evenings, coastal roads, river valleys and the islands of the Seto Inland Sea.
+      Built around a newer rider's confidence and a 6-year-old passenger's comfort.
+      Round-trip from <b>Seattle</b> — flying open-jaw into Tokyo and home out of Osaka.
+    </p>
+    <div class="hero-cta">
+      <a class="btn primary" href="#itinerary">View the 21-Day Plan →</a>
+      <a class="btn" href="#map-sec">Open the Map</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><div class="n">21</div><div class="l">Days on the road</div></div>
+      <div class="stat"><div class="n">5</div><div class="l">Two-night rest bases</div></div>
+      <div class="stat"><div class="n">4–6h</div><div class="l">Max daily ride time</div></div>
+      <div class="stat"><div class="n">3</div><div class="l">Riders &amp; one young explorer</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ GETTING THERE ============ -->
+<section id="getting-there">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">From Home · Seattle</span>
+      <h2>Getting There &amp; Back</h2>
+      <p id="flIntro"></p>
+    </div>
+    <div class="flight-grid" id="flLegs"></div>
+    <div class="flight-notes">
+      <div class="card">
+        <h3><span class="ico">💡</span> Booking Tips</h3>
+        <ul id="flTips"></ul>
+      </div>
+      <div class="card">
+        <h3><span class="ico">💴</span> Budget &amp; Links</h3>
+        <p id="flEstimate" style="color:#c7d1db; font-size:14.5px; margin:0 0 14px;"></p>
+        <div class="linkrow" id="flLinks"></div>
+        <p id="flSeason" style="color:var(--muted); font-size:13px; margin-top:14px;"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAP ============ -->
+<section id="map-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">The Journey</span>
+      <h2>Interactive Route Map</h2>
+      <p>From the bike pickup near Tokyo/Yokohama, down through Hakone, Fuji and Izu, across to Shikoku's
+        remote valleys, along the Shimanami Kaido island bridges, and finishing in Kansai. Click any marker for details.</p>
+    </div>
+    <div id="map"></div>
+    <div class="map-legend">
+      <span><i class="dot start"></i> Start · bike pickup</span>
+      <span><i class="dot stay"></i> 2-night rest base</span>
+      <span><i class="dot stop"></i> Overnight stop</span>
+      <span><i class="dot end"></i> Finish · bike return</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROUTE RIBBON ============ -->
+<section id="route">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Overview</span>
+      <h2>The High-Level Route</h2>
+      <p>Highlighted nodes are the planned two-night stays where the pace slows down for rest, exploration and kid-friendly days.</p>
+    </div>
+    <div class="ribbon" id="ribbon"></div>
+  </div>
+</section>
+
+<!-- ============ DESTINATIONS ============ -->
+<section id="destinations">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Explore Each Place</span>
+      <h2>Destinations</h2>
+      <p>Tap any place for a full page — photos, a map, things to do, regional food and suggested family-friendly,
+        bike-parking-aware places to stay.</p>
+    </div>
+    <div class="dest-grid" id="destGrid"></div>
+  </div>
+</section>
+
+<!-- ============ ITINERARY ============ -->
+<section id="itinerary">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Day by Day</span>
+      <h2>21-Day Itinerary</h2>
+      <p>A suggested daily breakdown derived from the route and the preferred rest stops. Daily rides stay within
+        4–6 hours with stops every 60–90 minutes for the young passenger.
+        <b style="color:var(--text)">≈ 1,280 miles (2,060 km) total</b> over 21 days. Tap any day to open its destination.</p>
+    </div>
+    <div class="filter-bar" id="filters">
+      <span class="chip active" data-filter="all">All days</span>
+      <span class="chip" data-filter="rest">Rest / 2-night</span>
+      <span class="chip" data-filter="ride">Riding days</span>
+      <span class="chip" data-filter="kid">Kid highlights</span>
+      <span class="chip" data-filter="onsen">Onsen</span>
+    </div>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<!-- ============ SAFETY ============ -->
+<section id="safety">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Riding Safely Together</span>
+      <h2>Safety &amp; Comfort First</h2>
+      <p>The whole plan is shaped around the newer rider's confidence and the child passenger's wellbeing — not mileage.</p>
+    </div>
+    <div class="grid cols-3">
+      <div class="card">
+        <h3><span class="ico">🛣️</span> Newer Rider</h3>
+        <ul>
+          <li>Rides near the front so her pace controls the group</li>
+          <li>Paved rural, prefectural &amp; coastal roads</li>
+          <li>Avoid dense cities, wet twisties &amp; weekend rider roads</li>
+          <li>No back-to-back long transfer days</li>
+          <li>No narrow mountain roads after dark</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="ico">🧒</span> Child Passenger</h3>
+        <ul>
+          <li>Properly fitting helmet, jacket, gloves, pants &amp; boots</li>
+          <li>Top case / back pad and intercom preferred</li>
+          <li>Must reach pegs and sit securely</li>
+          <li>Stop every 60–90 minutes</li>
+          <li>Snacks, rain layers &amp; spare gloves carried by lead rider</li>
+        </ul>
+      </div>
+      <div class="card warn">
+        <h3><span class="ico">⚠️</span> Before You Go</h3>
+        <ul>
+          <li>Valid licence + 1949 Geneva IDP for each rider</li>
+          <li>Insurance that covers motorcycle riding</li>
+          <li>Confirm passenger &amp; child passenger allowed on rental</li>
+          <li>Confirm large-bike &amp; one-way rental availability</li>
+          <li>Avoid rainy season, August heat &amp; winter mountains</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARAMS ============ -->
+<section id="params">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">The Fine Print</span>
+      <h2>Trip Details</h2>
+    </div>
+    <div class="grid cols-2">
+      <div class="card">
+        <h3><span class="ico">📋</span> Parameters</h3>
+        <table class="params">
+          <tr><td>Trip length</td><td>21 days / 3 weeks</td></tr>
+          <tr><td>Group</td><td>Husband, wife, 6-year-old son</td></tr>
+          <tr><td>Rider 1 bike</td><td>Large ADV — ideally Honda Africa Twin</td></tr>
+          <tr><td>Rider 2 bike</td><td>Under 500 cc — ideally Honda CB400X / NX400</td></tr>
+          <tr><td>Riding style</td><td>Scenic touring, mostly paved, no planned off-road</td></tr>
+          <tr><td>Daily ride time</td><td>Usually 4–6 hours maximum</td></tr>
+          <tr><td>Best season</td><td>Oct–early Nov, or late Apr–May after Golden Week</td></tr>
+          <tr><td>Logistics</td><td>Pick up near Tokyo/Yokohama, return near Osaka/Kansai</td></tr>
+        </table>
+      </div>
+      <div class="card">
+        <h3><span class="ico">🏨</span> Where We Stay</h3>
+        <ul>
+          <li>Secure or easy motorcycle parking</li>
+          <li>Family-friendly rooms, private/family bath where possible</li>
+          <li>Onsen ryokan in scenic areas; nice hotels in cities</li>
+          <li>Western beds where available (ryokan when desired)</li>
+          <li>Laundry access every 3–4 days</li>
+          <li>Dinner included in remote areas</li>
+        </ul>
+        <h3 style="margin-top:20px;"><span class="ico">🍜</span> What We Eat</h3>
+        <ul>
+          <li>Local regional food &amp; roadside stations (michi-no-eki)</li>
+          <li>Seafood, ramen, udon, ryokan kaiseki dinners</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>Built from <code>summary.md</code> · A premium family ADV-style paved touring trip — not a mileage challenge.</div>
+    <div class="mincho">良い旅を — Have a wonderful journey 🏍️</div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="data.js"></script>
+<script>
+/* ---------- Route stops sourced from data.js (single source of truth) ---------- */
+const STOPS = window.DESTINATIONS.map(d => ({
+  id: d.id, name: d.name, lat: d.lat, lng: d.lng, type: d.type, note: d.tagline
+}));
+
+const DAYS = [
+  { d:1, id:"yokohama", miles:0, gfrom:"Haneda Airport, Tokyo", gto:"Yokohama, Japan", gvia:"",  region:"Kanto",   title:"Arrival & Bike Pickup", route:"Tokyo / Yokohama", desc:"Collect the Africa Twin and CB400X, fit the child's gear, check intercoms and do a gentle shakedown ride. Early night.", tags:["ride"] },
+  { d:2, id:"hakone", miles:60, gfrom:"Yokohama, Japan", gto:"Hakone, Japan", gvia:"",  region:"Hakone",  title:"Into the Mountains", route:"Yokohama → <b>Hakone</b>", desc:"Easy first leg up to Hakone. Lake Ashi pirate boat and the Hakone Ropeway over the volcanic valley.", tags:["ride","kid","onsen"] },
+  { d:3, id:"hakone", miles:0, gfrom:"Hakone, Japan", gto:"Owakudani, Hakone, Japan", gvia:"",  region:"Hakone",  title:"Hakone Rest Day", route:"Hakone (no transfer)", desc:"Open-Air Museum, Owakudani black eggs, and a long onsen soak. No packing, no riding pressure.", tags:["rest","onsen","kid","stay2"] },
+  { d:4, id:"izu", miles:55, gfrom:"Hakone, Japan", gto:"Shimoda, Shizuoka, Japan", gvia:"",  region:"Izu",     title:"Izu Coastal Run", route:"Hakone → <b>Izu (Shimoda)</b>", desc:"Scenic coastal roads down the Izu Peninsula. Beaches, capes and fresh seafood lunches.", tags:["ride","kid"] },
+  { d:5, id:"fuji", miles:80, gfrom:"Shimoda, Shizuoka, Japan", gto:"Lake Kawaguchiko, Japan", gvia:"",  region:"Fuji",    title:"To the Five Lakes", route:"Izu → <b>Fuji Five Lakes</b>", desc:"North toward Kawaguchiko with Mt. Fuji filling the windscreen. Lakeside hotel for the night.", tags:["ride","kid"] },
+  { d:6, id:"fuji", miles:25, gfrom:"Lake Kawaguchiko, Japan", gto:"Oishi Park, Yamanashi, Japan", gvia:"",  region:"Fuji",    title:"Fuji Exploration", route:"Fuji Five Lakes (light riding)", desc:"Lake loop, Oishi Park, cable car viewpoint, and a relaxed afternoon. Optional gentle ride only.", tags:["rest","kid"] },
+  { d:7, id:"nagoya", miles:165, gfrom:"Lake Kawaguchiko, Japan", gto:"Nagoya, Japan", gvia:"",  region:"Chubu",   title:"Westward Transfer", route:"Fuji → <b>Nagoya / Gifu</b>", desc:"The longest practical transfer of the trip, kept on wider national roads. Comfortable city hotel.", tags:["ride"] },
+  { d:8, id:"awaji", miles:145, gfrom:"Nagoya, Japan", gto:"Awaji Island, Japan", gvia:"",  region:"Setouchi",title:"Bridge to the Sea", route:"Nagoya → <b>Awaji Island</b>", desc:"Cross toward the Seto Inland Sea via Awaji. Coastal scenery and onion-famous local food.", tags:["ride","kid"] },
+  { d:9, id:"iya", miles:90, gfrom:"Awaji Island, Japan", gto:"Oboke, Tokushima, Japan", gvia:"",  region:"Shikoku", title:"Into Iya Valley", route:"Awaji → <b>Iya / Oboke</b>", desc:"Enter Shikoku's dramatic gorge country. Gentle paved valley roads to a remote onsen ryokan.", tags:["ride","onsen"] },
+  { d:10, id:"iya", miles:25, gfrom:"Oboke, Tokushima, Japan", gto:"Iya Kazurabashi, Japan", gvia:"", region:"Shikoku", title:"Iya Rest Day", route:"Iya Valley (no transfer)", desc:"Kazurabashi vine bridge, the peeing-boy statue viewpoint, and an Oboke Gorge sightseeing boat.", tags:["rest","kid","onsen","stay2"] },
+  { d:11, id:"kochi", miles:70, gfrom:"Oboke, Tokushima, Japan", gto:"Kochi, Japan", gvia:"", region:"Shikoku", title:"Down to the Coast", route:"Iya → <b>Kochi</b>", desc:"River valleys open out to the Pacific. Kochi Castle and Katsurahama beach in the evening.", tags:["ride","kid"] },
+  { d:12, id:"shimanto", miles:85, gfrom:"Kochi, Japan", gto:"Shimanto, Kochi, Japan", gvia:"", region:"Shikoku", title:"The Clear River", route:"Kochi → <b>Shimanto River</b>", desc:"Follow the Shimanto, Japan's last free-flowing clear river, past its low submersible bridges.", tags:["ride","kid"] },
+  { d:13, id:"shimanto", miles:20, gfrom:"Shimanto, Kochi, Japan", gto:"Shimanto River, Japan", gvia:"", region:"Shikoku", title:"Shimanto Rest Day", route:"Shimanto River (no transfer)", desc:"River canoeing or a sightseeing boat, riverside cycling, and slow rural time by the water.", tags:["rest","kid","stay2"] },
+  { d:14, id:"dogo", miles:110, gfrom:"Shimanto, Kochi, Japan", gto:"Matsuyama, Ehime, Japan", gvia:"Uwajima, Ehime, Japan", region:"Shikoku", title:"Castles & Old Towns", route:"Shimanto → Uwajima / Uchiko → <b>Dogo Onsen</b>", desc:"Uwajima Castle and Uchiko's preserved merchant streets en route to Matsuyama.", tags:["ride","kid","onsen"] },
+  { d:15, id:"dogo", miles:10, gfrom:"Matsuyama, Ehime, Japan", gto:"Dogo Onsen, Matsuyama, Japan", gvia:"", region:"Shikoku", title:"Dogo Onsen Rest Day", route:"Matsuyama (no transfer)", desc:"Matsuyama Castle by ropeway, then the historic Dogo Onsen bathhouse. Classic onsen evening.", tags:["rest","onsen","kid","stay2"] },
+  { d:16, id:"shimanami", miles:95, gfrom:"Matsuyama, Ehime, Japan", gto:"Onomichi, Hiroshima, Japan", gvia:"Imabari, Ehime, Japan", region:"Setouchi",title:"Shimanami Kaido", route:"Matsuyama → Shimanami → <b>Onomichi / Setoda</b>", desc:"The famous island-hopping bridge route across the Seto Inland Sea — gentle, scenic, unforgettable.", tags:["ride","kid"] },
+  { d:17, id:"onomichi", miles:25, gfrom:"Onomichi, Hiroshima, Japan", gto:"Setoda, Ikuchijima, Japan", gvia:"", region:"Setouchi",title:"Island Rest Day", route:"Setoda / Onomichi (light riding)", desc:"Setoda temple, lemon groves and gelato, Onomichi's hillside lanes and cat alley. Easy pace.", tags:["rest","kid","stay2"] },
+  { d:18, id:"kurashiki", miles:90, gfrom:"Onomichi, Hiroshima, Japan", gto:"Kurashiki, Okayama, Japan", gvia:"", region:"Setouchi",title:"Canal Town or Art Island", route:"Onomichi → <b>Kurashiki / Takamatsu</b>", desc:"Kurashiki's willow-lined canal quarter, or a ferry to Naoshima's art islands.", tags:["ride","kid"] },
+  { d:19, id:"himeji", miles:70, gfrom:"Kurashiki, Okayama, Japan", gto:"Himeji, Hyogo, Japan", gvia:"", region:"Kansai",  title:"The Great Castle", route:"Kurashiki → <b>Himeji / Kobe</b>", desc:"Himeji Castle, Japan's most magnificent, then into Kobe for the night.", tags:["ride","kid"] },
+  { d:20, id:"osaka", miles:60, gfrom:"Himeji, Hyogo, Japan", gto:"Osaka, Japan", gvia:"", region:"Kansai",  title:"Finish in Kansai", route:"Kobe → <b>Osaka / Kansai</b>", desc:"Short final leg into the city. Return the motorcycles and celebrate the journey.", tags:["ride","end"] },
+  { d:21, id:"osaka", miles:0, gfrom:"Osaka, Japan", gto:"Kyoto, Japan", gvia:"", region:"Kansai",  title:"Buffer & Departure", route:"Osaka / Kyoto", desc:"Flexible buffer day — Kyoto temples or Osaka food and aquarium before flying home.", tags:["rest","kid"] }
+];
+
+/* ---------- Build flights ('Getting There') ---------- */
+const F = window.FLIGHTS;
+document.getElementById('flIntro').textContent = F.intro;
+document.getElementById('flEstimate').textContent = F.estimate;
+document.getElementById('flSeason').textContent = F.season;
+document.getElementById('flTips').innerHTML = F.tips.map(t => `<li>${t}</li>`).join('');
+document.getElementById('flLinks').innerHTML = F.links.map(l =>
+  `<a href="${l.u}" target="_blank" rel="noopener">🔗 ${l.l}</a>`).join('');
+document.getElementById('flLegs').innerHTML = F.legs.map(g => `
+  <div class="flight">
+    <div class="dir">${g.dir}</div>
+    <div class="route"><span class="ap">${g.from}</span><span class="pl">✈</span><span class="ap">${g.to}</span></div>
+    <div class="sample">${g.sample}</div>
+    <div class="specs">
+      <div class="s"><div class="v">${g.type}</div><div class="k">Stops</div></div>
+      <div class="s"><div class="v">${g.duration}</div><div class="k">Flight time</div></div>
+      <div class="s"><div class="v">from ${g.fareFrom}</div><div class="k">One-way, indicative</div></div>
+    </div>
+    <div class="air">${g.airlines.map(a => `<span>${a}</span>`).join('')}</div>
+    <p class="fnote">${g.note}</p>
+    <div class="bk">
+      <a href="${g.expedia}" target="_blank" rel="noopener">Search on Expedia →</a>
+      ${g.expediaAlt ? `<a class="alt" href="${g.expediaAlt}" target="_blank" rel="noopener">via Narita</a>` : ''}
+    </div>
+  </div>`).join('');
+
+/* ---------- Build route ribbon ---------- */
+const ribbon = document.getElementById('ribbon');
+const homeNode = document.createElement('span');
+homeNode.className = 'node key';
+homeNode.textContent = '✈ Seattle';
+ribbon.appendChild(homeNode);
+const homeArrow = document.createElement('span');
+homeArrow.className = 'arrow'; homeArrow.textContent = '→';
+ribbon.appendChild(homeArrow);
+STOPS.forEach((s, i) => {
+  const node = document.createElement('span');
+  node.className = 'node' + (s.type === 'stay' ? ' key' : '');
+  node.textContent = s.name;
+  ribbon.appendChild(node);
+  const a = document.createElement('span');
+  a.className = 'arrow'; a.textContent = '→';
+  ribbon.appendChild(a);
+});
+const homeEnd = document.createElement('span');
+homeEnd.className = 'node key';
+homeEnd.textContent = '✈ Seattle';
+ribbon.appendChild(homeEnd);
+
+/* ---------- Build destination gallery ---------- */
+const destGrid = document.getElementById('destGrid');
+window.DESTINATIONS.forEach(d => {
+  const a = document.createElement('a');
+  a.className = 'dest';
+  a.href = `place.html?id=${d.id}`;
+  a.innerHTML = `
+    <img loading="lazy" src="${d.photos[0].src}" alt="${d.name}">
+    <span class="grad"></span>
+    <span class="corner ${d.type}"></span>
+    <span class="cap">
+      <span class="reg">${d.region}</span>
+      <span class="nm">${d.name}</span>
+      <span class="dy">${d.days}</span>
+    </span>`;
+  destGrid.appendChild(a);
+});
+
+/* ---------- Build timeline ---------- */
+const BADGE_LABELS = {
+  rest:  ['rest','Rest day'],
+  ride:  ['ride','Riding day'],
+  stay2: ['stay2','2-night stay'],
+  kid:   ['kid','Kid highlight'],
+  onsen: ['onsen','Onsen']
+};
+const timeline = document.getElementById('timeline');
+function renderDays(filter) {
+  timeline.innerHTML = '';
+  DAYS.forEach(day => {
+    if (filter !== 'all' && !day.tags.includes(filter)) return;
+    const card = document.createElement('div');
+    card.className = 'day-card';
+    const badges = day.tags
+      .filter(t => BADGE_LABELS[t])
+      .map(t => `<span class="badge ${BADGE_LABELS[t][0]}">${BADGE_LABELS[t][1]}</span>`)
+      .join('');
+    const miles = day.miles > 0
+      ? `<span class="mi"><b>${day.miles}</b> mi</span>`
+      : `<span class="mi rest">no ride</span>`;
+    const gmaps = 'https://www.google.com/maps/dir/?api=1'
+      + '&origin=' + encodeURIComponent(day.gfrom)
+      + '&destination=' + encodeURIComponent(day.gto)
+      + (day.gvia ? '&waypoints=' + encodeURIComponent(day.gvia) : '')
+      + '&travelmode=driving';
+    const fromShort = day.gfrom.split(',')[0];
+    const toShort = day.gto.split(',')[0];
+    card.innerHTML = `
+      <a class="card-link" href="place.html?id=${day.id}" aria-label="${day.title} — destination details"></a>
+      <div class="daynum">
+        <span class="lbl">Day</span>
+        <span class="num">${day.d}</span>
+        ${miles}
+      </div>
+      <div class="body">
+        <div class="pill-region">${day.region}</div>
+        <h3>${day.title}</h3>
+        <div class="route">${day.route}</div>
+        <div class="desc">${day.desc}</div>
+        <div class="badges">${badges}</div>
+        <div class="day-actions">
+          <span class="day-go">Explore destination →</span>
+          <a class="day-route" href="${gmaps}" target="_blank" rel="noopener">🗺️ Day route · ${fromShort} → ${toShort}</a>
+        </div>
+      </div>`;
+    timeline.appendChild(card);
+  });
+}
+renderDays('all');
+
+document.querySelectorAll('#filters .chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    document.querySelectorAll('#filters .chip').forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+    renderDays(chip.dataset.filter);
+  });
+});
+
+/* ---------- Leaflet map ---------- */
+const map = L.map('map', { scrollWheelZoom: false }).setView([34.6, 135.2], 6);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; OpenStreetMap &copy; CARTO',
+  subdomains: 'abcd', maxZoom: 19
+}).addTo(map);
+
+const COLORS = { start:'#5fb35f', stay:'#e3493b', stop:'#3fb8af', end:'#f0a830' };
+const latlngs = [];
+STOPS.forEach((s, i) => {
+  latlngs.push([s.lat, s.lng]);
+  const r = s.type === 'stay' ? 11 : 8;
+  L.circleMarker([s.lat, s.lng], {
+    radius: r, color: '#fff', weight: 2,
+    fillColor: COLORS[s.type], fillOpacity: 1
+  }).addTo(map)
+    .bindPopup(`<b>${i+1}. ${s.name}</b><br>${s.note}<br><a href="place.html?id=${s.id}">View details →</a>`);
+});
+
+L.polyline(latlngs, {
+  color: '#e3493b', weight: 3, opacity: .75, dashArray: '6 8'
+}).addTo(map);
+
+map.fitBounds(L.latLngBounds(latlngs).pad(0.12));
+</script>
+</body>
+</html>
