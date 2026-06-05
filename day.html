@@ -24,9 +24,12 @@
 
   .phero{position:relative;min-height:330px;display:flex;align-items:flex-end;border-bottom:1px solid var(--line);overflow:hidden;}
   .phero .bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.05);}
-  .phero .bg.collage{display:grid;gap:2px;transform:none;}
-  .phero .bg.collage span{background-size:cover;background-position:center;}
-  .phero .bg.art{transform:none;background-size:cover;background-position:center 28%;}
+  .phero .bg.slideshow{transform:none;}
+  .phero .bg .slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1s ease;}
+  .phero .bg .slide.on{opacity:1;}
+  .phero .dots{position:absolute;bottom:14px;right:18px;z-index:4;display:flex;gap:7px;}
+  .phero .dots b{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.45);cursor:pointer;transition:background .15s, transform .15s;}
+  .phero .dots b.on{background:#fff;transform:scale(1.25);}
   .phero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,17,22,.3),rgba(14,17,22,.55) 55%,rgba(14,17,22,.97));}
   .phero .inner{position:relative;padding:42px 0 26px;width:100%;}
   .phero .daytag{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--accent);padding:5px 13px;border-radius:999px;}
@@ -179,21 +182,36 @@
   const fromS = short(day.gfrom), toS = short(day.gto);
   const stripTags = s => s.replace(/<[^>]+>/g, '');
 
-  // hero — priority: generated PNG (assets/day-N.png, e.g. from Codex) → region-matched
-  // ukiyo-e print (window.DAYART) → SVG day poster → destination lead photo.
+  // hero — crossfading slideshow of the day's public images:
+  // the region-matched ukiyo-e print, then each stop's photo, then the destination photos.
   const bg = document.getElementById('bg');
-  const art = (window.DAYART && window.DAYART[day.d]) || '';
-  const png = `assets/day-${day.d}.png`;
-  const poster = `assets/day-${day.d}.svg`;
-  const set = src => { bg.classList.add('art'); bg.style.backgroundImage = `url("${src}")`; };
-  bg.style.backgroundImage = `url("${dest.photos[0].src}")`;   // immediate fallback
-  const tryPng = new Image();
-  tryPng.onload = () => set(png);
-  tryPng.onerror = () => {
-    if (art) { set(art); return; }
-    const p = new Image(); p.onload = () => set(poster); p.src = poster;
-  };
-  tryPng.src = png;
+  const slides = [];
+  if (window.DAYART && window.DAYART[day.d]) slides.push(window.DAYART[day.d]);
+  day.poi.forEach(p => { if (p.img) slides.push(p.img); });
+  dest.photos.forEach(ph => slides.push(ph.src));
+  const imgs = [...new Set(slides)];
+  bg.classList.add('slideshow');
+  bg.innerHTML = imgs.map((src, i) =>
+    `<div class="slide${i === 0 ? ' on' : ''}" style="background-image:url('${src}')"></div>`).join('');
+  if (imgs.length > 1) {
+    const dots = document.createElement('div');
+    dots.className = 'dots';
+    dots.innerHTML = imgs.map((_, i) => `<b class="${i === 0 ? 'on' : ''}" data-i="${i}"></b>`).join('');
+    document.getElementById('phero').appendChild(dots);
+    const els = [...bg.querySelectorAll('.slide')], dotsEls = [...dots.querySelectorAll('b')];
+    let cur = 0, timer;
+    const show = n => {
+      els[cur].classList.remove('on'); dotsEls[cur].classList.remove('on');
+      cur = (n + imgs.length) % imgs.length;
+      els[cur].classList.add('on'); dotsEls[cur].classList.add('on');
+    };
+    const start = () => timer = setInterval(() => show(cur + 1), 4500);
+    dots.addEventListener('click', e => {
+      const b = e.target.closest('b'); if (!b) return;
+      clearInterval(timer); show(+b.dataset.i); start();
+    });
+    start();
+  }
   document.getElementById('daytag').textContent = `Day ${day.d}` + (day.rest ? ' · Rest day' : '');
   document.getElementById('title').textContent = day.title;
   document.getElementById('route').innerHTML = stripTags(day.route);
