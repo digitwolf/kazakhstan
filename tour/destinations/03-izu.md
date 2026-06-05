@@ -5,7 +5,7 @@
 - **Region:** Shizuoka coast
 - **Itinerary:** Day 4
 - **Stop type:** stop
-- **Ride to here:** 90 mi
+- **Ride to here (direct):** 54 mi
 
 ## About
 The Izu Peninsula is a UNESCO Global Geopark of dramatic volcanic coastline, hidden coves and easy coastal touring roads — a relaxed scenic detour south of Hakone.

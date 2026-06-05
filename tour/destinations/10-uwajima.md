@@ -5,7 +5,7 @@
 - **Region:** Ehime south
 - **Itinerary:** Day 14
 - **Stop type:** stop
-- **Ride to here:** 55 mi
+- **Ride to here (direct):** 38 mi
 
 ## About
 Heading up Shikoku's west coast toward Matsuyama, two worthwhile stops break the ride: Uwajima, with another of Japan's twelve original castle keeps, and Uchiko, a beautifully preserved wax-merchant town.

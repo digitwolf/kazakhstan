@@ -166,7 +166,8 @@
   document.getElementById('daytag').textContent = `Day ${day.d}` + (day.rest ? ' · Rest day' : '');
   document.getElementById('title').textContent = day.title;
   document.getElementById('route').innerHTML = stripTags(day.route);
-  const rideH = day.miles > 0 ? Math.max(1, Math.round(day.miles / 30 * 2) / 2) : 0;
+  const driveMinReal = day.dmin != null ? day.dmin : day.miles / 30 * 60;   // real OSRM road time when available
+  const rideH = day.miles > 0 ? Math.max(0.5, Math.round(driveMinReal / 60 * 2) / 2) : 0;
   document.getElementById('stats').innerHTML =
     `<span class="pill region">${day.region}</span>` +
     (day.miles > 0 ? `<span class="pill mi">🏍️ ${day.miles} mi</span><span class="pill time">≈ ${rideH}h riding</span>`
@@ -194,7 +195,7 @@
     ev.push(['07:30','☕','Coffee','',false,'']);
     ev.push(['08:00','🍳','Breakfast','',false,'At the hotel or ryokan.']);
     ev.push(['09:00','🏍️','Depart hotel','',false,`Gear on, bikes loaded — ${day.miles} mi, ≈${rideH}h riding to ${toS}.`]);
-    const depart = 540, driveMin = day.miles / AVG * 60;
+    const depart = 540, driveMin = driveMinReal;   // real routed driving time
     let dwellBefore = 0;
     day.poi.forEach((q, i) => {
       const frac = (q.frac != null) ? q.frac : (i + 0.5) / day.poi.length;   // position along the route

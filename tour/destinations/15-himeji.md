@@ -5,7 +5,7 @@
 - **Region:** Hyogo
 - **Itinerary:** Day 19
 - **Stop type:** stop
-- **Ride to here:** 95 mi
+- **Ride to here (direct):** 65 mi
 
 ## About
 Himeji Castle — the 'White Heron' — is Japan's finest surviving feudal castle, a UNESCO World Heritage masterpiece of brilliant white walls and soaring keeps, and a genuine wow moment for all ages.

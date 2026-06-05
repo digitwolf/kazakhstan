@@ -5,7 +5,7 @@
 - **Region:** Seto Inland Sea
 - **Itinerary:** Day 16
 - **Stop type:** stop
-- **Ride to here:** 60 mi
+- **Ride to here (direct):** 36 mi
 
 ## About
 The Shimanami Kaido links Shikoku (Imabari) to Honshu (Onomichi) over six islands and a series of spectacular suspension and cable-stayed bridges spanning the island-dotted Seto Inland Sea.

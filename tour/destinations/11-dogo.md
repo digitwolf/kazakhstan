@@ -5,7 +5,7 @@
 - **Region:** Ehime · Matsuyama
 - **Itinerary:** Days 14–16 · 2 nights
 - **Stop type:** stay
-- **Ride to here:** 55 mi
+- **Ride to here (direct):** 58 mi
 
 ## About
 Matsuyama is Shikoku's largest city, crowned by a magnificent original castle, with the ancient Dogo Onsen at its edge — a hot spring used for over a thousand years and an inspiration for the bathhouse in 'Spirited Away'.

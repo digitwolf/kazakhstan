@@ -22,6 +22,17 @@ Experienced rider on a big ADV bike carrying a 6-year-old; a **newer rider** wif
 ## Each destination file must contain
 Title + Japanese name; region; itinerary days; "ride to here" mileage (the arrival leg); an **About** section; **Things to see & do**; **What to eat** (regional specialties); a **Where to stay** table (property, type, motorcycle parking, ¥ price/night, ≈USD, notes); **Links** (official tourism + Wikipedia); and a **Photos** list of image URLs with captions.
 
+## Distances & ride times — use REAL routing, never a flat speed
+Hard-won lesson: a flat "miles ÷ 30 mph" estimate is wrong — it made 100 mi read as 3+ hours when the real drive is often 1.5–2.5 h, and the mileage figures were guesses too. Always compute from the real road network:
+
+- **Distance & time** come from real routing through each day's actual stops. **Google Directions API needs a paid key** (and Google blocks scraping), so use **OSRM** — free, no key, real OSM road network:
+  `http://router.project-osrm.org/route/v1/driving/{lng,lat};{lng,lat};…?overview=false` → `routes[0].distance` (m), `routes[0].duration` (s), and per-`legs[]` durations.
+- **Geocode** stop names with **Nominatim** (`https://nominatim.openstreetmap.org/search?format=json&q=…`), max ~1 req/sec, real User-Agent, append ", Japan" to disambiguate.
+- **Sanity-check every routed day.** A bad geocode sends OSRM on a wild detour — e.g. a Shimanami day came back **1,103 mi / 50 h** and another at **18 mph**. Flag any day whose implied speed is <22 mph or whose distance is >2.5× the direct city-to-city leg, and fix the offending waypoint (or hand-correct that day, noting it).
+- Store per riding day: `miles` (real, incl. detours) and `dmin` (real drive minutes). `day.html` spreads `dmin` across the route + dwell to time the schedule. Per-destination `legMiles` is the **direct** city-to-city OSRM distance.
+- **Regional reality:** inter-city legs in Kanto→Shikoku→Kansai are mostly short (1–2.5 h even with stops); the long ones are Fuji→Nagoya and Nagoya→Awaji (~5 h). To raise a day's *riding time* toward a target, **add scenic detours/waypoints** — do not inflate the number. Keep every day within the 4–6 h comfort cap.
+- After any distance change, recompute the trip total and the average riding time, and update `01-itinerary.md`, the destination legs, the homepage total and the docs together.
+
 ## House rules
 - **Hotels must accommodate motorcycle parking.** Every suggested property is chosen against the "secure/easy motorcycle parking" priority; state the expected parking and always add the caveat to confirm secure parking + passenger/child rules before booking.
 - **Prices** are indicative per room/night for two adults; show ¥ and ≈USD (≈ ¥150 = $1). Flights are USD.

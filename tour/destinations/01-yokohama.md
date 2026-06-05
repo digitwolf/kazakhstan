@@ -5,7 +5,7 @@
 - **Region:** Kanto
 - **Itinerary:** Day 1
 - **Stop type:** start
-- **Ride to here:** Start (bike pickup)
+- **Ride to here (direct):** Start (bike pickup)
 
 ## About
 Most one-way motorcycle rentals begin in the Tokyo/Yokohama area. Yokohama is a relaxed, open city to start in — wide roads, an easy waterfront, and far less stressful than central Tokyo for the first ride.

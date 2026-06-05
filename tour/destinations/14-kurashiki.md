@@ -5,7 +5,7 @@
 - **Region:** Okayama / Kagawa
 - **Itinerary:** Day 18
 - **Stop type:** stop
-- **Ride to here:** 95 mi
+- **Ride to here (direct):** 44 mi
 
 ## About
 Kurashiki's Bikan historical quarter preserves white-walled Edo storehouses along a willow-fringed canal, now galleries, cafes and the celebrated Ohara Museum of Art.

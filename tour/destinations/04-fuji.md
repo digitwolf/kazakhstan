@@ -5,7 +5,7 @@
 - **Region:** Yamanashi
 - **Itinerary:** Days 5–6
 - **Stop type:** stop
-- **Ride to here:** 95 mi
+- **Ride to here (direct):** 74 mi
 
 ## About
 The Fuji Five Lakes (Fujigoko) sit at the northern foot of Mt. Fuji. Lake Kawaguchiko is the most accessible, lined with hotels, viewpoints and easy lakeside roads.

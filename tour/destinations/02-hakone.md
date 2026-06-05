@@ -5,7 +5,7 @@
 - **Region:** Fuji–Hakone
 - **Itinerary:** Days 2–4 · 2 nights
 - **Stop type:** stay
-- **Ride to here:** 90 mi
+- **Ride to here (direct):** 44 mi
 
 ## About
 Hakone is the classic first rest base: a hot-spring resort town in the mountains southwest of Tokyo, wrapped around the caldera of Lake Ashi with Mt. Fuji on the horizon.
