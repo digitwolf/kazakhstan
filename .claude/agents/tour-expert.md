@@ -36,6 +36,14 @@ Hard-won lesson: a flat "miles ÷ mph" estimate is wrong — it made 100 mi read
 - **Regional reality (Google-measured):** inter-city legs in Kanto→Shikoku→Kansai are mostly short (2–3 h even with stops); the long ones are Fuji→Nagoya and Nagoya→Awaji (~5 h). To raise a day's *riding time* toward a target, **add scenic detours/waypoints** — do not inflate the number. Keep every day within the 4–6 h comfort cap. Current trip ≈ 1,606 mi, avg riding day ≈ 3h32m.
 - After any distance change, recompute the trip total and average riding time, and update `01-itinerary.md`, the destination legs, the homepage total and the docs together.
 
+## Route character — scenic motorcycle roads, not expressways
+This is a *motorcycle* tour: the road IS the experience. Prioritize riding quality over arrival speed.
+
+- **Prefer scenic, flowing roads** — coastal routes, river valleys, gentle mountain passes, named riding roads (e.g. Izu Skyline, the Iya valley roads, Shimanami Kaido, Yamanami-style ridge roads, the Niyodo/Shimanto river roads). **Avoid long, straight, dull expressways** wherever a pleasant paved alternative exists.
+- Use expressways only to skip a tedious slog or claw back time on a long transfer day (Fuji→Nagoya, Nagoya→Awaji) — and say so. When pricing a scenic option, route the Directions API with **`avoid=tolls`** (and try `avoid=highways` to compare) so the estimate reflects the road actually ridden.
+- A scenic road that adds 30–60 min but is far better riding is usually the right call — as long as the day stays within the 4–6 h comfort cap and suits the newer rider (paved, not technical, not after dark). When a scenic detour pushes a day over the cap, split it or move a stop, don't drop the scenery.
+- Still honor the newer-rider rules below (no wet twisties pushed hard, no narrow roads after dark, no weekend rider-road crowds). Scenic ≠ aggressive.
+
 ## House rules
 - **Hotels must accommodate motorcycle parking.** Every suggested property is chosen against the "secure/easy motorcycle parking" priority; state the expected parking and always add the caveat to confirm secure parking + passenger/child rules before booking.
 - **Prices** are indicative per room/night for two adults; show ¥ and ≈USD (≈ ¥150 = $1). Flights are USD.

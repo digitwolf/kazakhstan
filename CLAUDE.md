@@ -15,7 +15,7 @@ The project is organized as **content → site**: trip facts live as markdown in
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Deploy = push to GitHub and enable Pages (Settings → Pages → Build from branch → `main` / root). No CI.
+Deploy = push to `main`. **GitHub Pages builds via GitHub Actions** (`.github/workflows/deploy.yml`), which injects the Google Maps key from the `GMAPS_KEY` repo secret into `gmaps-key.js` at deploy time, then publishes. Pages source = "GitHub Actions" (not branch).
 
 ## Layout
 
@@ -24,7 +24,9 @@ tour/                  human-readable source of record (tour-expert owns)
   README.md  00-overview.md  01-itinerary.md  02-flights.md
   destinations/NN-id.md   one per stop, route order
 data.js                machine-readable build artifact (website-builder owns)
-index.html  place.html  day.html   the rendered site (root, for GitHub Pages)
+index.html  place.html  day.html  checklist.html   the rendered site (root)
+gmaps-key.js           UNTRACKED — window.GMAPS_KEY; from ~/google_maps.key locally, CI secret in deploy
+.github/workflows/deploy.yml   Pages deploy + key injection
 docs/GENERATION.md     how it was built + the agent workflow
 summary.md             the original brief
 .claude/agents/        tour-expert.md, website-builder.md
@@ -38,13 +40,19 @@ Three web source files plus the trip brief:
 - **`index.html`** — the landing page. Self-contained (inline CSS + JS) except it loads `data.js`. Builds the route ribbon, the destination gallery, the Seattle flights block, the Leaflet overview map, and the 21-day itinerary timeline — all **from `window.DESTINATIONS` / `window.DAYS`**; do not hardcode trip data here. Day cards deep-link to `day.html?d=<n>`; map markers and the "Destination ↗" link go to `place.html?id=<id>`.
 - **`window.DAYS`** (in `data.js`) — the 21-day itinerary: each day has `d`, `id` (its destination), `miles`, `rest`, `region`, `title`, `route`, `desc`, `tags`, Google-Maps endpoints `gfrom`/`gto`/`gvia`, and a `poi[]` list of along-the-way stops (`name`, `what`, `q` map-query, `slot`). Days don't map 1:1 to destinations (some destinations span multiple days), so this is a separate array from `DESTINATIONS`.
 - **`place.html`** — one reusable template for every destination detail page. Reads `?id=`, renders hero/gallery/food/hotels/links/map/prev-next from `window.DESTINATIONS`. Linked as `place.html?id=<id>`.
-- **`day.html`** — one reusable template for every day. Reads `?d=<n>`, and from `window.DAYS[n-1]` builds a timed daily routine (consistent wake/coffee/breakfast/departure + POI stops slotted by time), a Google-Maps day route through the POI waypoints, the destination's photos, and prev/next-day nav. Linked as `day.html?d=<n>`.
-- **`summary.md`** — the original trip brief (goals, rider/safety constraints, route, lodging rules). The itinerary and destination content are derived from this; treat it as the requirements doc.
+- **`day.html`** — one reusable template for every day. Reads `?d=<n>`, and from `window.DAYS[n-1]` builds: a **photo-collage hero** (montage of the day's stop images), a **summary section** ("The Plan for the Day"), a **timed routine** (wake/coffee/breakfast/departure + POI stops timed from the real per-day drive time `dmin` spread across the route + dwell), per-stop "Route from <prev>" links, the **Google Maps embedded day route** (start hotel → all stops → end hotel), photos, and prev/next-day nav. Each riding day carries real `miles` + `dmin` (Google Directions). Linked as `day.html?d=<n>`.
+- **`checklist.html`** — interactive pre-trip checklist rendered from `window.CHECKLIST` (sections of items: bikes, hotels, flights, IDP/licence, insurance, gear, packing…). Ticks persist in `localStorage`; has a progress bar and print/PDF.
+- **`summary.md`** — the original trip brief (goals, rider/safety constraints, route, lodging rules). Treat it as the requirements doc.
 
-`type` is one of `start | stay | stop | end` and controls marker/dot color everywhere (`stay` = 2-night rest base). Maps use Leaflet + CARTO dark tiles, loaded from CDN in both HTML files.
+`type` is one of `start | stay | stop | end` and controls marker/dot color (`stay` = 2-night rest base).
+
+**Maps:** `place.html` and `day.html` use the **Google Maps Embed API** (`window.gmapEmbedPlace` / `gmapEmbedDir` helpers in `data.js`) when `window.GMAPS_KEY` is set, and **fall back to Leaflet** when it isn't. `index.html` overview uses Leaflet (no key needed). The key is never committed (see Layout).
+
+**Distances/times** are real **Google Directions API** figures baked into `window.DAYS` (`miles` + `dmin`) and `legMiles` (direct, from coordinates) — never a flat-speed estimate. To recompute, read the key from `~/google_maps.key` and call the Directions API (see the tour-expert agent for the exact method + sanity checks).
 
 ## Conventions
 
-- **Verify every image URL before committing it.** All `photos[].src` are Wikimedia Commons thumbnails; a broken URL renders as a broken page on Pages. Confirm HTTP 200 (following redirects) before adding — e.g. `curl -s -o /dev/null -w "%{http_code}" -I "<url>"`. The Commons search API rate-limits aggressively; space out batch requests.
-- Hotel suggestions are intentionally framed as "confirm before booking" (motorcycle parking, passenger/child rules) — keep that caveat when editing `hotels[]`.
-- To change route content (stops, photos, food, hotels, links, coordinates), edit **`data.js` only**; both HTML files pick it up. Editing `DAYS` in `index.html` only changes the itinerary timeline.
+- **Verify every image URL before committing it.** All `photos[].src` (and POI `img`) are Wikimedia Commons thumbnails; a broken URL renders broken on Pages. Confirm HTTP 200 before adding. The Commons search API rate-limits aggressively; space out batch requests.
+- **Never commit the Google Maps key.** It lives in `~/google_maps.key` (untracked) → `gmaps-key.js` (gitignored) locally, and the `GMAPS_KEY` Actions secret in deploy. `data.js` must stay key-free.
+- Hotel suggestions are framed "confirm before booking" (motorcycle parking, passenger/child rules) — keep that caveat in `hotels[]`.
+- Source-of-record is `tour/*.md`; `data.js` mirrors it; the HTML renders `data.js`. When trip facts change, the regen scripts re-derive `tour/01-itinerary.md`, the destination files and the totals — keep the homepage total, itinerary, legs and docs in sync.

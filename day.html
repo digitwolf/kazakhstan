@@ -24,6 +24,8 @@
 
   .phero{position:relative;min-height:330px;display:flex;align-items:flex-end;border-bottom:1px solid var(--line);overflow:hidden;}
   .phero .bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.05);}
+  .phero .bg.collage{display:grid;gap:2px;transform:none;}
+  .phero .bg.collage span{background-size:cover;background-position:center;}
   .phero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,17,22,.3),rgba(14,17,22,.55) 55%,rgba(14,17,22,.97));}
   .phero .inner{position:relative;padding:42px 0 26px;width:100%;}
   .phero .daytag{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--accent);padding:5px 13px;border-radius:999px;}
@@ -38,6 +40,13 @@
   .block{margin-bottom:30px;}
   .block>h2{font-size:20px;font-weight:800;display:flex;align-items:center;gap:9px;margin-bottom:14px;}
   .note{color:var(--muted);font-size:13px;margin:-6px 0 14px;}
+  .summary-lead{font-size:16.5px;color:#dbe3ea;margin:0 0 14px;}
+  .summary-body{font-size:14.5px;color:#c7d1db;margin:14px 0 0;}
+  .summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+  .summary-grid .s{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 13px;}
+  .summary-grid .s .v{font-size:18px;font-weight:800;color:#fff;}
+  .summary-grid .s .k{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;}
+  @media (max-width:520px){.summary-grid{grid-template-columns:repeat(2,1fr);}}
 
   /* schedule */
   .sched{position:relative;margin-left:6px;}
@@ -115,6 +124,12 @@
 <main><div class="wrap"><div class="layout">
   <div class="content">
     <div class="block">
+      <h2><span>📋</span> The Plan for the Day</h2>
+      <p class="summary-lead" id="sumLead"></p>
+      <div class="summary-grid" id="sumGrid"></div>
+      <p class="summary-body" id="sumBody"></p>
+    </div>
+    <div class="block">
       <h2><span>🕘</span> The Day, Hour by Hour</h2>
       <p class="note">A consistent routine keeps the group in rhythm — same wake-up, coffee, breakfast and departure each riding day. Times are a sample template; adjust to the season and how the day flows.</p>
       <div class="sched" id="sched"></div>
@@ -163,8 +178,20 @@
   const fromS = short(day.gfrom), toS = short(day.gto);
   const stripTags = s => s.replace(/<[^>]+>/g, '');
 
-  // hero
-  document.getElementById('bg').style.backgroundImage = `url("${dest.photos[0].src}")`;
+  // hero — photo collage of the day (destination lead + each stop's photo)
+  const collage = [dest.photos[0] && dest.photos[0].src]
+    .concat(day.poi.map(p => p.img))
+    .filter((v, i, a) => v && a.indexOf(v) === i)
+    .slice(0, 6);
+  const bg = document.getElementById('bg');
+  if (collage.length >= 3) {
+    const cols = collage.length >= 5 ? 3 : collage.length === 4 ? 2 : collage.length;
+    bg.classList.add('collage');
+    bg.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+    bg.innerHTML = collage.map(src => `<span style="background-image:url('${src}')"></span>`).join('');
+  } else {
+    bg.style.backgroundImage = `url("${(collage[0] || dest.photos[0].src)}")`;
+  }
   document.getElementById('daytag').textContent = `Day ${day.d}` + (day.rest ? ' · Rest day' : '');
   document.getElementById('title').textContent = day.title;
   document.getElementById('route').innerHTML = stripTags(day.route);
@@ -174,6 +201,21 @@
     `<span class="pill region">${day.region}</span>` +
     (day.miles > 0 ? `<span class="pill mi">🏍️ ${day.miles} mi</span><span class="pill time">≈ ${rideH}h riding</span>`
                    : `<span class="pill time">No transfer — explore day</span>`);
+
+  // ---- summary section ----
+  document.getElementById('sumLead').textContent = day.desc;
+  document.getElementById('sumGrid').innerHTML = [
+    day.rest ? ['Rest', 'Riding'] : [`${day.miles} mi`, 'Distance'],
+    day.rest ? ['Local', 'Pace'] : [`${rideH}h`, 'Riding time'],
+    [day.poi.length, 'Stops'],
+    [day.region, 'Region']
+  ].map(([v, k]) => `<div class="s"><div class="v">${v}</div><div class="k">${k}</div></div>`).join('');
+  const stopList = day.poi.map(p => p.name).join(', ').replace(/,([^,]*)$/, ' and$1');
+  const evening = day.tags.includes('onsen') || dest.type === 'stay'
+    ? 'an onsen soak and dinner once you arrive' : 'dinner in town once you arrive';
+  document.getElementById('sumBody').innerHTML = day.rest
+    ? `A relaxed base day around <b>${toS}</b> — no packing or transfer. Today's stops: ${stopList}. Plenty of downtime for ${evening.replace('once you arrive','')}.`
+    : `Today rides from <b>${fromS}</b> to <b>${toS}</b> (${day.miles} mi, ≈ ${rideH}h in the saddle), stopping at ${stopList}. Plan for ${evening}.`;
 
   // ---- build schedule ----
   const KIND = {

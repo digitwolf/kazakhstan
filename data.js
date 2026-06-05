@@ -937,3 +937,81 @@ window.DAYS = [
     desc:"Flexible buffer day — Kyoto temples or Osaka food and aquarium before flying home.", tags:["rest", "kid"], gfrom:"Osaka, Japan", gto:"Kyoto, Japan", gvia:"",
     poi:[{ name: "Fushimi Inari, Kyoto", what: "Thousand vermilion torii gates", q: "Fushimi Inari Taisha", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Fushimi_Inari-taisha%2C_Kyoto%2C_20240818_1343_4411.jpg/960px-Fushimi_Inari-taisha%2C_Kyoto%2C_20240818_1343_4411.jpg" }, { name: "Osaka Castle", what: "Castle & park", q: "Osaka Castle", slot: "activity", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/960px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg" }, { name: "Kaiyukan / Dotonbori", what: "Aquarium or final food street", q: "Osaka Aquarium Kaiyukan", slot: "scenic", img: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg/960px-Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg" }] },
 ];
+
+/* ============================================================
+   Pre-trip preparation checklist (rendered by checklist.html).
+   ============================================================ */
+window.CHECKLIST = [
+  { sec: "Documents & licences", icon: "📄", items: [
+    "Passport valid 6+ months beyond return",
+    "Home-country motorcycle licence (each rider)",
+    "1949 Geneva International Driving Permit (IDP) for each rider — in the US, AAA issues it; get it before you fly (valid 1 year)",
+    "Travel insurance documents that explicitly cover motorcycle riding",
+    "Motorcycle rental reservation confirmations",
+    "Credit card (no foreign-transaction fee ideally) + some backup",
+    "Digital + paper copies of all documents"
+  ]},
+  { sec: "Motorcycle rental", icon: "🏍️", items: [
+    "Reserve large ADV bike (Honda Africa Twin or similar)",
+    "Reserve sub-500cc bike (Honda CB400X / NX400)",
+    "Confirm one-way rental: pick up near Tokyo/Yokohama, drop near Osaka/Kansai",
+    "Confirm passenger riding is allowed on the rented bike",
+    "Confirm CHILD passenger is allowed",
+    "Confirm large-bike availability for your dates",
+    "Arrange helmets & gear (rent or bring), top case/panniers, intercoms"
+  ]},
+  { sec: "Flights & transport", icon: "✈️", items: [
+    "Book open-jaw flights: Seattle → Tokyo (Haneda), Osaka (Kansai) → Seattle",
+    "Airport → Yokohama transfer for arrival day",
+    "IC card (Suica/ICOCA) for trains on non-riding days",
+    "Any ferry tickets (e.g. Naoshima) if planned"
+  ]},
+  { sec: "Lodging", icon: "🏨", items: [
+    "Book all hotels/ryokan — the five 2-night bases (Hakone, Iya, Shimanto, Dogo, Onomichi) first",
+    "Confirm secure motorcycle parking at every property",
+    "Family room / beds; private or family bath where wanted",
+    "Dinner included at remote/rural inns",
+    "Laundry access every 3–4 days"
+  ]},
+  { sec: "Insurance & health", icon: "🛡️", items: [
+    "Travel + medical insurance covering motorcycling and the child",
+    "Roadside-assistance cover or rental add-on",
+    "Personal medications + small first-aid kit",
+    "Note nearest hospitals along the route"
+  ]},
+  { sec: "Child passenger gear", icon: "🧒", items: [
+    "Properly fitting motorcycle helmet",
+    "Protective jacket, gloves, pants and boots that fit",
+    "Can sit securely and reach the passenger pegs",
+    "Back pad / top-case backrest",
+    "Intercom for the child",
+    "Snacks, water, sun hat and a comfort item"
+  ]},
+  { sec: "Rider gear & packing", icon: "🧥", items: [
+    "Armoured jacket & pants, gloves, riding boots (each rider)",
+    "Rain layers and warm base layers (mountains get cold)",
+    "Sun protection, earplugs, neck tube",
+    "Pack light — soft luggage / dry bags; laundry mid-trip",
+    "Comfortable off-bike shoes & evening clothes"
+  ]},
+  { sec: "Bike kit (carried by lead rider)", icon: "🔧", items: [
+    "Basic tools + tyre repair/inflator",
+    "First-aid kit",
+    "Spare gloves / layers",
+    "Phone mount + chargers / power bank",
+    "Zip ties, tape, bungees"
+  ]},
+  { sec: "Money & connectivity", icon: "📱", items: [
+    "Cash — Japan is cash-heavy at rural inns and roadside stations",
+    "eSIM or pocket Wi-Fi",
+    "Offline Google Maps for the route regions",
+    "Translation app (the family speaks English)"
+  ]},
+  { sec: "Final week / day before", icon: "✅", items: [
+    "Check the forecast — avoid typhoons/heavy rain windows",
+    "Reconfirm bikes, hotels and flights",
+    "Charge intercoms, phones, cameras, power banks",
+    "Gear check + gentle shakedown ride on Day 1",
+    "Share the itinerary with family/contacts back home"
+  ]}
+];

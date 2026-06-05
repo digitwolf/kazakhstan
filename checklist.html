@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Preparation Checklist · Japan Family Motorcycle Tour</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Shippori+Mincho:wght@600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--bg:#0e1116;--bg-soft:#161b22;--panel:#1c222b;--panel-2:#232b36;--line:#2c3540;
+    --text:#e8edf3;--muted:#9aa7b5;--accent:#e3493b;--accent-2:#f0a830;--teal:#3fb8af;--green:#5fb35f;--radius:14px;--maxw:900px;}
+  *{box-sizing:border-box;} body{margin:0;font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2{line-height:1.2;margin:0;} .mincho{font-family:'Shippori Mincho',serif;}
+  a{color:var(--teal);text-decoration:none;} a:hover{text-decoration:underline;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px;}
+  nav.top{position:sticky;top:0;z-index:50;background:rgba(14,17,22,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:56px;}
+  nav.top .brand{font-weight:800;font-size:15px;} nav.top .brand span{color:var(--accent);}
+  nav.top a.back{color:var(--muted);font-size:14px;font-weight:600;} nav.top a.back:hover{color:var(--text);text-decoration:none;}
+
+  header.h{padding:52px 0 26px;background:radial-gradient(900px 400px at 80% -10%,rgba(227,73,59,.2),transparent 60%),linear-gradient(180deg,#11151c,#0e1116);border-bottom:1px solid var(--line);}
+  header.h .tag{color:var(--accent-2);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;}
+  header.h h1{font-size:clamp(30px,5vw,46px);font-weight:800;margin-top:8px;}
+  header.h p{color:var(--muted);max-width:640px;margin:12px 0 0;}
+  .progwrap{margin-top:22px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+  .bar{flex:1;min-width:200px;height:12px;background:var(--panel);border:1px solid var(--line);border-radius:999px;overflow:hidden;}
+  .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent),var(--accent-2));transition:width .3s;}
+  .progtxt{font-weight:800;font-size:15px;color:#fff;white-space:nowrap;}
+  .reset{font-size:12.5px;font-weight:600;color:var(--muted);border:1px solid var(--line);background:var(--panel);border-radius:8px;padding:7px 12px;cursor:pointer;}
+  .reset:hover{color:#fff;border-color:#46525f;}
+
+  main{padding:34px 0 70px;}
+  .sec{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin-bottom:16px;}
+  .sec h2{font-size:18px;font-weight:800;display:flex;align-items:center;gap:10px;}
+  .sec h2 .c{margin-left:auto;font-size:12.5px;font-weight:700;color:var(--muted);}
+  ul{list-style:none;margin:14px 0 0;padding:0;}
+  li{display:flex;gap:12px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--line);cursor:pointer;}
+  li:hover{background:rgba(255,255,255,.02);}
+  li .box{flex:none;width:21px;height:21px;border-radius:6px;border:2px solid var(--line);margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:13px;color:#fff;transition:all .12s;}
+  li.done .box{background:var(--green);border-color:var(--green);}
+  li.done .t{color:var(--muted);text-decoration:line-through;}
+  li .t{font-size:14.5px;color:#dbe3ea;}
+  .printbtn{display:inline-flex;gap:8px;align-items:center;margin-top:6px;font-weight:600;font-size:14px;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:9px;padding:10px 15px;cursor:pointer;}
+  .printbtn:hover{border-color:#46525f;}
+  footer{padding:30px 0 50px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);}
+  @media print{nav.top,.progwrap,.reset,.printbtn,footer{display:none;}body{background:#fff;color:#000;}.sec{border-color:#ccc;break-inside:avoid;}li .box{border-color:#000;}}
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap">
+  <div class="brand mincho">日本 <span>·</span> Japan Family Tour</div>
+  <a class="back" href="index.html">← Home</a>
+</div></nav>
+
+<header class="h"><div class="wrap">
+  <div class="tag">Before You Go</div>
+  <h1>Preparation Checklist</h1>
+  <p>Everything to sort before the trip — bikes, hotels, flights, licences, insurance, gear and packing. Your ticks are saved in this browser.</p>
+  <div class="progwrap">
+    <div class="bar"><i id="barFill"></i></div>
+    <span class="progtxt" id="progTxt">0 / 0</span>
+    <button class="reset" id="resetBtn">Reset</button>
+  </div>
+</div></header>
+
+<main><div class="wrap">
+  <div id="list"></div>
+  <button class="printbtn" onclick="window.print()">🖨️ Print / save as PDF</button>
+</div></main>
+
+<footer><div class="wrap">Part of the 21-day Japan Family Motorcycle Tour · <a href="index.html">Back to the itinerary →</a> · <a href="tour/00-overview.md">Trip overview</a></div></footer>
+
+<script src="data.js"></script>
+<script>
+  const KEY = 'jtour-checklist-v1';
+  const state = JSON.parse(localStorage.getItem(KEY) || '{}');
+  const list = document.getElementById('list');
+  let total = 0;
+
+  window.CHECKLIST.forEach((sec, si) => {
+    const wrap = document.createElement('div');
+    wrap.className = 'sec';
+    const ul = sec.items.map((it, ii) => {
+      const id = `${si}-${ii}`; total++;
+      const done = state[id] ? 'done' : '';
+      return `<li class="${done}" data-id="${id}"><span class="box">${state[id]?'✓':''}</span><span class="t">${it}</span></li>`;
+    }).join('');
+    wrap.innerHTML = `<h2><span>${sec.icon}</span> ${sec.sec} <span class="c" id="c-${si}"></span></h2><ul>${ul}</ul>`;
+    list.appendChild(wrap);
+  });
+
+  function refresh() {
+    let done = 0;
+    window.CHECKLIST.forEach((sec, si) => {
+      let dc = 0;
+      sec.items.forEach((_, ii) => { if (state[`${si}-${ii}`]) { dc++; done++; } });
+      document.getElementById('c-'+si).textContent = `${dc}/${sec.items.length}`;
+    });
+    document.getElementById('progTxt').textContent = `${done} / ${total}`;
+    document.getElementById('barFill').style.width = total ? (done/total*100)+'%' : '0';
+  }
+  refresh();
+
+  list.addEventListener('click', e => {
+    const li = e.target.closest('li'); if (!li) return;
+    const id = li.dataset.id;
+    if (state[id]) { delete state[id]; li.classList.remove('done'); li.querySelector('.box').textContent=''; }
+    else { state[id] = 1; li.classList.add('done'); li.querySelector('.box').textContent='✓'; }
+    localStorage.setItem(KEY, JSON.stringify(state));
+    refresh();
+  });
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    if (!confirm('Clear all ticks?')) return;
+    for (const k in state) delete state[k];
+    localStorage.removeItem(KEY);
+    document.querySelectorAll('li.done').forEach(li => { li.classList.remove('done'); li.querySelector('.box').textContent=''; });
+    refresh();
+  });
+</script>
+</body>
+</html>
