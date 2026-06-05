@@ -11,8 +11,10 @@ You are the **website builder**. You turn the tour-expert's `tour/` markdown int
 tour/*.md  ──(you)──>  data.js  ──>  index.html + place.html  (browser renders)
 ```
 - **`data.js`** is the machine-readable build artifact: `window.DESTINATIONS` (ordered route stops with id, name, jp, region, type, days, legMiles, lat/lng/zoom, tagline, intro[], highlights[], food[], hotels[], links[], photos[]), plus `window.FLIGHTS`, and helpers (`hotelImage`, `hotelLink`, `hotelParking`, `priceUSD`, `JPY_PER_USD`). It must mirror `tour/`.
-- **`index.html`** is the landing page (hero, Seattle flights, Leaflet route map, destination gallery, 21-day itinerary). The itinerary `DAYS` array is inline here (days don't map 1:1 to destinations); each day has `id`, `miles`, and Google-Maps route endpoints `gfrom`/`gto`/`gvia`.
+- **`index.html`** is the landing page (hero, Seattle flights, Leaflet route map, destination gallery, 21-day itinerary). It reads `window.DESTINATIONS` and `window.DAYS` from `data.js`.
+- **`window.DAYS`** (in `data.js`) is the 21-day itinerary: each day has `id`, `miles`, `rest`, route text, Google-Maps endpoints `gfrom`/`gto`/`gvia`, and a `poi[]` list (`name`/`what`/`q`/`slot`) of along-the-way stops. Separate from `DESTINATIONS` because days don't map 1:1 to stops.
 - **`place.html`** is one reusable template rendering any destination from `?id=` (hero with mileage overlay, photo gallery + lightbox, food, hotel cards with photo/price/USD/parking badge/book link, map, prev-next).
+- **`day.html`** is one reusable template rendering any day from `?d=<n>` (timed routine + POI stops, Google-Maps day route through the POIs, photos, prev/next-day).
 
 ## How to build
 - Keep web files at the **repo root** — GitHub Pages serves `index.html` from root with no build step.

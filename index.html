@@ -158,7 +158,10 @@
   .day-card .daynum .mi { margin-top: 8px; font-size: 13px; color: var(--teal); font-weight: 600; }
   .day-card .daynum .mi b { font-size: 16px; color: #fff; font-weight: 800; }
   .day-card .daynum .mi.rest { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .06em; }
-  .day-card .day-go { display: inline-block; font-size: 12.5px; font-weight: 700; color: var(--accent-2); opacity: .8; transition: opacity .12s, transform .12s; }
+  .day-card .day-go { position: relative; z-index: 2; display: inline-block; font-size: 12.5px; font-weight: 700; color: var(--accent-2); transition: transform .12s; }
+  .day-card .day-go:hover { text-decoration: none; transform: translateX(3px); }
+  .day-route2 { position: relative; z-index: 2; font-size: 12.5px; font-weight: 600; color: var(--muted); border: 1px solid var(--line); background: var(--bg-soft); padding: 6px 11px; border-radius: 8px; white-space: nowrap; }
+  .day-route2:hover { text-decoration: none; color: #fff; border-color: #46525f; }
   .day-card:hover .day-go { opacity: 1; transform: translateX(3px); }
   .day-card .body { padding: 16px 20px; }
   .day-card .body h3 { font-size: 18px; font-weight: 700; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
@@ -504,29 +507,7 @@ const STOPS = window.DESTINATIONS.map(d => ({
   id: d.id, name: d.name, lat: d.lat, lng: d.lng, type: d.type, note: d.tagline
 }));
 
-const DAYS = [
-  { d:1, id:"yokohama", miles:0, gfrom:"Haneda Airport, Tokyo", gto:"Yokohama, Japan", gvia:"",  region:"Kanto",   title:"Arrival & Bike Pickup", route:"Tokyo / Yokohama", desc:"Collect the Africa Twin and CB400X, fit the child's gear, check intercoms and do a gentle shakedown ride. Early night.", tags:["ride"] },
-  { d:2, id:"hakone", miles:60, gfrom:"Yokohama, Japan", gto:"Hakone, Japan", gvia:"",  region:"Hakone",  title:"Into the Mountains", route:"Yokohama → <b>Hakone</b>", desc:"Easy first leg up to Hakone. Lake Ashi pirate boat and the Hakone Ropeway over the volcanic valley.", tags:["ride","kid","onsen"] },
-  { d:3, id:"hakone", miles:0, gfrom:"Hakone, Japan", gto:"Owakudani, Hakone, Japan", gvia:"",  region:"Hakone",  title:"Hakone Rest Day", route:"Hakone (no transfer)", desc:"Open-Air Museum, Owakudani black eggs, and a long onsen soak. No packing, no riding pressure.", tags:["rest","onsen","kid","stay2"] },
-  { d:4, id:"izu", miles:55, gfrom:"Hakone, Japan", gto:"Shimoda, Shizuoka, Japan", gvia:"",  region:"Izu",     title:"Izu Coastal Run", route:"Hakone → <b>Izu (Shimoda)</b>", desc:"Scenic coastal roads down the Izu Peninsula. Beaches, capes and fresh seafood lunches.", tags:["ride","kid"] },
-  { d:5, id:"fuji", miles:80, gfrom:"Shimoda, Shizuoka, Japan", gto:"Lake Kawaguchiko, Japan", gvia:"",  region:"Fuji",    title:"To the Five Lakes", route:"Izu → <b>Fuji Five Lakes</b>", desc:"North toward Kawaguchiko with Mt. Fuji filling the windscreen. Lakeside hotel for the night.", tags:["ride","kid"] },
-  { d:6, id:"fuji", miles:25, gfrom:"Lake Kawaguchiko, Japan", gto:"Oishi Park, Yamanashi, Japan", gvia:"",  region:"Fuji",    title:"Fuji Exploration", route:"Fuji Five Lakes (light riding)", desc:"Lake loop, Oishi Park, cable car viewpoint, and a relaxed afternoon. Optional gentle ride only.", tags:["rest","kid"] },
-  { d:7, id:"nagoya", miles:165, gfrom:"Lake Kawaguchiko, Japan", gto:"Nagoya, Japan", gvia:"",  region:"Chubu",   title:"Westward Transfer", route:"Fuji → <b>Nagoya / Gifu</b>", desc:"The longest practical transfer of the trip, kept on wider national roads. Comfortable city hotel.", tags:["ride"] },
-  { d:8, id:"awaji", miles:145, gfrom:"Nagoya, Japan", gto:"Awaji Island, Japan", gvia:"",  region:"Setouchi",title:"Bridge to the Sea", route:"Nagoya → <b>Awaji Island</b>", desc:"Cross toward the Seto Inland Sea via Awaji. Coastal scenery and onion-famous local food.", tags:["ride","kid"] },
-  { d:9, id:"iya", miles:90, gfrom:"Awaji Island, Japan", gto:"Oboke, Tokushima, Japan", gvia:"",  region:"Shikoku", title:"Into Iya Valley", route:"Awaji → <b>Iya / Oboke</b>", desc:"Enter Shikoku's dramatic gorge country. Gentle paved valley roads to a remote onsen ryokan.", tags:["ride","onsen"] },
-  { d:10, id:"iya", miles:25, gfrom:"Oboke, Tokushima, Japan", gto:"Iya Kazurabashi, Japan", gvia:"", region:"Shikoku", title:"Iya Rest Day", route:"Iya Valley (no transfer)", desc:"Kazurabashi vine bridge, the peeing-boy statue viewpoint, and an Oboke Gorge sightseeing boat.", tags:["rest","kid","onsen","stay2"] },
-  { d:11, id:"kochi", miles:70, gfrom:"Oboke, Tokushima, Japan", gto:"Kochi, Japan", gvia:"", region:"Shikoku", title:"Down to the Coast", route:"Iya → <b>Kochi</b>", desc:"River valleys open out to the Pacific. Kochi Castle and Katsurahama beach in the evening.", tags:["ride","kid"] },
-  { d:12, id:"shimanto", miles:85, gfrom:"Kochi, Japan", gto:"Shimanto, Kochi, Japan", gvia:"", region:"Shikoku", title:"The Clear River", route:"Kochi → <b>Shimanto River</b>", desc:"Follow the Shimanto, Japan's last free-flowing clear river, past its low submersible bridges.", tags:["ride","kid"] },
-  { d:13, id:"shimanto", miles:20, gfrom:"Shimanto, Kochi, Japan", gto:"Shimanto River, Japan", gvia:"", region:"Shikoku", title:"Shimanto Rest Day", route:"Shimanto River (no transfer)", desc:"River canoeing or a sightseeing boat, riverside cycling, and slow rural time by the water.", tags:["rest","kid","stay2"] },
-  { d:14, id:"dogo", miles:110, gfrom:"Shimanto, Kochi, Japan", gto:"Matsuyama, Ehime, Japan", gvia:"Uwajima, Ehime, Japan", region:"Shikoku", title:"Castles & Old Towns", route:"Shimanto → Uwajima / Uchiko → <b>Dogo Onsen</b>", desc:"Uwajima Castle and Uchiko's preserved merchant streets en route to Matsuyama.", tags:["ride","kid","onsen"] },
-  { d:15, id:"dogo", miles:10, gfrom:"Matsuyama, Ehime, Japan", gto:"Dogo Onsen, Matsuyama, Japan", gvia:"", region:"Shikoku", title:"Dogo Onsen Rest Day", route:"Matsuyama (no transfer)", desc:"Matsuyama Castle by ropeway, then the historic Dogo Onsen bathhouse. Classic onsen evening.", tags:["rest","onsen","kid","stay2"] },
-  { d:16, id:"shimanami", miles:95, gfrom:"Matsuyama, Ehime, Japan", gto:"Onomichi, Hiroshima, Japan", gvia:"Imabari, Ehime, Japan", region:"Setouchi",title:"Shimanami Kaido", route:"Matsuyama → Shimanami → <b>Onomichi / Setoda</b>", desc:"The famous island-hopping bridge route across the Seto Inland Sea — gentle, scenic, unforgettable.", tags:["ride","kid"] },
-  { d:17, id:"onomichi", miles:25, gfrom:"Onomichi, Hiroshima, Japan", gto:"Setoda, Ikuchijima, Japan", gvia:"", region:"Setouchi",title:"Island Rest Day", route:"Setoda / Onomichi (light riding)", desc:"Setoda temple, lemon groves and gelato, Onomichi's hillside lanes and cat alley. Easy pace.", tags:["rest","kid","stay2"] },
-  { d:18, id:"kurashiki", miles:90, gfrom:"Onomichi, Hiroshima, Japan", gto:"Kurashiki, Okayama, Japan", gvia:"", region:"Setouchi",title:"Canal Town or Art Island", route:"Onomichi → <b>Kurashiki / Takamatsu</b>", desc:"Kurashiki's willow-lined canal quarter, or a ferry to Naoshima's art islands.", tags:["ride","kid"] },
-  { d:19, id:"himeji", miles:70, gfrom:"Kurashiki, Okayama, Japan", gto:"Himeji, Hyogo, Japan", gvia:"", region:"Kansai",  title:"The Great Castle", route:"Kurashiki → <b>Himeji / Kobe</b>", desc:"Himeji Castle, Japan's most magnificent, then into Kobe for the night.", tags:["ride","kid"] },
-  { d:20, id:"osaka", miles:60, gfrom:"Himeji, Hyogo, Japan", gto:"Osaka, Japan", gvia:"", region:"Kansai",  title:"Finish in Kansai", route:"Kobe → <b>Osaka / Kansai</b>", desc:"Short final leg into the city. Return the motorcycles and celebrate the journey.", tags:["ride","end"] },
-  { d:21, id:"osaka", miles:0, gfrom:"Osaka, Japan", gto:"Kyoto, Japan", gvia:"", region:"Kansai",  title:"Buffer & Departure", route:"Osaka / Kyoto", desc:"Flexible buffer day — Kyoto temples or Osaka food and aquarium before flying home.", tags:["rest","kid"] }
-];
+const DAYS = window.DAYS;  // defined in data.js
 
 /* ---------- Build flights ('Getting There') ---------- */
 const F = window.FLIGHTS;
@@ -625,7 +606,7 @@ function renderDays(filter) {
     const fromShort = day.gfrom.split(',')[0];
     const toShort = day.gto.split(',')[0];
     card.innerHTML = `
-      <a class="card-link" href="place.html?id=${day.id}" aria-label="${day.title} — destination details"></a>
+      <a class="card-link" href="day.html?d=${day.d}" aria-label="Day ${day.d} — ${day.title} schedule"></a>
       <div class="daynum">
         <span class="lbl">Day</span>
         <span class="num">${day.d}</span>
@@ -638,8 +619,9 @@ function renderDays(filter) {
         <div class="desc">${day.desc}</div>
         <div class="badges">${badges}</div>
         <div class="day-actions">
-          <span class="day-go">Explore destination →</span>
-          <a class="day-route" href="${gmaps}" target="_blank" rel="noopener">🗺️ Day route · ${fromShort} → ${toShort}</a>
+          <a class="day-go" href="day.html?d=${day.d}">🕘 View day schedule →</a>
+          <a class="day-route2" href="place.html?id=${day.id}">Destination ↗</a>
+          <a class="day-route" href="${gmaps}" target="_blank" rel="noopener">🗺️ ${fromShort} → ${toShort}</a>
         </div>
       </div>`;
     timeline.appendChild(card);
