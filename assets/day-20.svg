@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky20" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b3b6b"/>
+      <stop offset="0.5" stop-color="#c75f6e"/>
+      <stop offset="1" stop-color="#f0a830"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky20)"/>
+  <circle cx="930" cy="200" r="70" fill="#f7c766"/>
+  <!-- far dusk shore, lightening toward back -->
+  <path d="M0,330 Q220,302 460,326 L460,330 Z" fill="#7a4f74"/>
+  <path d="M520,330 Q760,302 1000,326 Q1110,316 1200,326 L1200,330 Z" fill="#8c5a7e"/>
+  <!-- Osaka city skyline (right) -->
+  <g fill="#5b3a60">
+    <rect x="980" y="232" width="22" height="98"/>
+    <rect x="1006" y="262" width="30" height="68"/>
+    <rect x="1040" y="208" width="20" height="122"/>
+    <polygon points="1040,208 1050,190 1060,208"/>
+    <rect x="1064" y="250" width="26" height="80"/>
+    <rect x="1094" y="226" width="24" height="104"/>
+    <rect x="1122" y="262" width="34" height="68"/>
+    <rect x="1160" y="240" width="22" height="90"/>
+  </g>
+  <!-- Akashi Kaikyo suspension bridge hero motif -->
+  <g fill="#e8e0d0">
+    <rect x="262" y="150" width="14" height="180"/>
+    <rect x="600" y="150" width="14" height="180"/>
+  </g>
+  <!-- main cables (catenary) -->
+  <path d="M40,300 Q150,330 269,157 Q435,300 607,157 Q760,300 880,300" fill="none" stroke="#f3ece0" stroke-width="4"/>
+  <!-- hangers -->
+  <g stroke="#e8e0d0" stroke-width="2">
+    <line x1="120" y1="306" x2="120" y2="330"/>
+    <line x1="180" y1="232" x2="180" y2="330"/>
+    <line x1="220" y1="188" x2="220" y2="330"/>
+    <line x1="360" y1="216" x2="360" y2="330"/>
+    <line x1="436" y1="298" x2="436" y2="330"/>
+    <line x1="510" y1="216" x2="510" y2="330"/>
+    <line x1="680" y1="232" x2="680" y2="330"/>
+    <line x1="760" y1="296" x2="760" y2="330"/>
+    <line x1="830" y1="312" x2="830" y2="330"/>
+  </g>
+  <!-- bridge deck -->
+  <rect x="0" y="328" width="900" height="8" fill="#f3ece0"/>
+  <!-- sea (calm lower third) -->
+  <rect y="336" width="1200" height="164" fill="#7a4566"/>
+  <rect y="396" width="1200" height="104" fill="#5e3252"/>
+  <path d="M180,366 q40,-7 80,0 t80,0" fill="none" stroke="#9a6588" stroke-width="3" stroke-linecap="round"/>
+  <path d="M640,378 q40,-7 80,0 t80,0" fill="none" stroke="#9a6588" stroke-width="3" stroke-linecap="round"/>
+  <!-- celebratory sun glints -->
+  <circle cx="930" cy="350" r="3" fill="#f7c766"/>
+  <circle cx="900" cy="362" r="2.5" fill="#f7c766"/>
+  <circle cx="958" cy="360" r="2.5" fill="#f7c766"/>
+</svg>

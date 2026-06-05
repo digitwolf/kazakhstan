@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe3e0"/>
+      <stop offset="0.6" stop-color="#eed9bd"/>
+      <stop offset="1" stop-color="#f4d9a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky)"/>
+  <circle cx="930" cy="150" r="56" fill="#f7e2ad"/>
+  <circle cx="930" cy="150" r="78" fill="#f7e2ad" opacity="0.22"/>
+  <!-- far headlands (lightest) -->
+  <path d="M0 322 L160 300 L340 318 L520 304 L700 320 L900 302 L1100 318 L1200 308 L1200 360 L0 360 Z" fill="#7fc6c1"/>
+  <!-- teal sea -->
+  <rect x="0" y="328" width="1200" height="172" fill="#1f6f78"/>
+  <path d="M0 372 Q200 360 400 372 T800 372 T1200 372 L1200 400 L0 400 Z" fill="#3fb8af" opacity="0.45"/>
+  <path d="M0 420 Q260 410 520 420 T1040 420 T1200 420 L1200 448 L0 448 Z" fill="#155a62" opacity="0.5"/>
+  <!-- left lava cliff (hero coastline) -->
+  <path d="M0 360 L0 248 L120 256 L210 300 L240 360 Z" fill="#2c4a52"/>
+  <path d="M240 360 L210 300 L260 312 L300 360 Z" fill="#23414a"/>
+  <!-- right cape cliff -->
+  <path d="M1200 360 L1200 268 L1040 280 L960 318 L930 360 Z" fill="#2c4a52"/>
+  <path d="M930 360 L960 318 L900 330 L872 360 Z" fill="#23414a"/>
+  <!-- suspension footbridge across the chasm -->
+  <g stroke="#1b343b" stroke-width="4" fill="none">
+    <path d="M300 304 Q468 348 636 304"/>
+    <path d="M300 290 L300 314 M636 290 L636 314"/>
+    <path d="M340 314 L340 332 M400 322 L400 340 M468 326 L468 344 M536 322 L536 340 M596 314 L596 332"/>
+  </g>
+  <line x1="300" y1="304" x2="636" y2="304" stroke="#1b343b" stroke-width="3"/>
+</svg>

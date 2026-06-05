@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a3a6b"/>
+      <stop offset="0.55" stop-color="#7a5a82"/>
+      <stop offset="1" stop-color="#e7a06a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky)"/>
+  <circle cx="930" cy="150" r="58" fill="#f4c98a"/>
+  <circle cx="930" cy="150" r="80" fill="#f4c98a" opacity="0.18"/>
+  <!-- far shoreline hills (lightest) -->
+  <path d="M0 322 L180 300 L360 314 L560 296 L760 312 L980 298 L1200 316 L1200 360 L0 360 Z" fill="#46527e"/>
+  <!-- city skyline (mid) -->
+  <g fill="#33406e">
+    <rect x="60" y="278" width="34" height="82"/>
+    <rect x="104" y="300" width="26" height="60"/>
+    <rect x="150" y="262" width="40" height="98"/>
+    <rect x="206" y="290" width="28" height="70"/>
+    <rect x="250" y="248" width="30" height="112"/>
+    <rect x="296" y="284" width="36" height="76"/>
+    <rect x="352" y="304" width="24" height="56"/>
+    <rect x="1010" y="286" width="30" height="74"/>
+    <rect x="1052" y="262" width="38" height="98"/>
+    <rect x="1102" y="296" width="26" height="64"/>
+    <rect x="1144" y="278" width="34" height="82"/>
+  </g>
+  <!-- landmark tower -->
+  <path d="M430 360 L452 188 L474 360 Z" fill="#2c386180"/>
+  <rect x="446" y="170" width="12" height="24" fill="#33406e"/>
+  <!-- ferris wheel hero -->
+  <g stroke="#2c3861" stroke-width="4" fill="none">
+    <circle cx="600" cy="252" r="74"/>
+    <circle cx="600" cy="252" r="40"/>
+    <path d="M600 178 L600 326 M526 252 L674 252 M548 200 L652 304 M652 200 L548 304"/>
+  </g>
+  <rect x="596" y="252" width="8" height="108" fill="#2c3861"/>
+  <path d="M576 360 L600 308 L624 360 Z" fill="#2c3861"/>
+  <!-- bay water (calm lower third) -->
+  <rect x="0" y="360" width="1200" height="140" fill="#1d2a52"/>
+  <rect x="892" y="362" width="76" height="120" fill="#f4c98a" opacity="0.16"/>
+  <path d="M0 392 Q300 380 600 392 T1200 392 L1200 420 L0 420 Z" fill="#24315c" opacity="0.6"/>
+</svg>

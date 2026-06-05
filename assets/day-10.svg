@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky10" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfe0d2"/>
+      <stop offset="0.55" stop-color="#e8dcc4"/>
+      <stop offset="1" stop-color="#f3d4a2"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky10)"/>
+  <!-- low sun disc -->
+  <circle cx="920" cy="166" r="56" fill="#f7d7a2"/>
+  <!-- misty far mountains (lightest) -->
+  <path d="M0,236 L210,196 L430,238 L650,192 L880,238 L1100,198 L1200,232 L1200,300 L0,300 Z" fill="#a7c2a8"/>
+  <!-- mist band -->
+  <rect x="0" y="250" width="1200" height="40" fill="#e8e3d4" opacity="0.55"/>
+  <!-- mid forest range -->
+  <path d="M0,300 L240,256 L470,300 L700,256 L930,300 L1150,262 L1200,288 L1200,360 L0,360 Z" fill="#5f9b67"/>
+  <!-- gorge walls (front, dark) -->
+  <path d="M0,320 L260,300 L360,420 L300,500 L0,500 Z" fill="#2f6f4f"/>
+  <path d="M1200,316 L940,298 L840,420 L900,500 L1200,500 Z" fill="#2a663f"/>
+  <!-- hero: Iya vine bridge spanning the gorge -->
+  <!-- side anchor posts -->
+  <rect x="300" y="300" width="12" height="56" fill="#5b4a32"/>
+  <rect x="888" y="300" width="12" height="56" fill="#5b4a32"/>
+  <!-- handrail cables (gentle sag) -->
+  <path d="M300,310 Q600,372 900,310" fill="none" stroke="#7a6442" stroke-width="4"/>
+  <!-- deck (deeper sag) -->
+  <path d="M306,318 Q600,402 894,318" fill="none" stroke="#6b5638" stroke-width="6"/>
+  <!-- vertical vine hangers -->
+  <g stroke="#7a6442" stroke-width="2.5">
+    <line x1="372" y1="334" x2="372" y2="358"/>
+    <line x1="444" y1="350" x2="444" y2="372"/>
+    <line x1="516" y1="362" x2="516" y2="384"/>
+    <line x1="600" y1="368" x2="600" y2="392"/>
+    <line x1="684" y1="362" x2="684" y2="384"/>
+    <line x1="756" y1="350" x2="756" y2="372"/>
+    <line x1="828" y1="334" x2="828" y2="358"/>
+  </g>
+  <!-- gorge river below -->
+  <path d="M320,460 C420,448 520,470 600,460 C700,448 800,472 880,462 L880,500 L320,500 Z" fill="#9fc3b2"/>
+  <!-- onsen steam strokes -->
+  <g fill="none" stroke="#f3ece0" stroke-width="5" stroke-linecap="round" opacity="0.7">
+    <path d="M180,300 q-14,-26 0,-52 q14,-26 0,-52"/>
+    <path d="M226,310 q-12,-22 0,-44 q12,-22 0,-44"/>
+  </g>
+</svg>

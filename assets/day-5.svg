@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" role="img">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b5aa6"/>
+      <stop offset="0.6" stop-color="#a886a0"/>
+      <stop offset="1" stop-color="#f2c1a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky)"/>
+  <circle cx="975" cy="138" r="54" fill="#f7d3a6"/>
+  <circle cx="975" cy="138" r="76" fill="#f7d3a6" opacity="0.18"/>
+  <!-- big snow-capped Fuji (hero) -->
+  <path d="M300 360 L600 96 L900 360 Z" fill="#52689f"/>
+  <path d="M512 172 L600 96 L688 172 L668 162 L650 176 L630 160 L610 178 L590 160 L570 176 L550 162 L530 174 Z" fill="#f4f1ec"/>
+  <path d="M560 200 L576 188 L588 208 L604 192 L616 212 L632 196 L644 214 L600 360 L556 214 Z" fill="#f4f1ec" opacity="0.55"/>
+  <!-- far ridge (lightest) -->
+  <path d="M0 318 L180 296 L360 314 L540 300 L760 316 L980 298 L1200 314 L1200 360 L0 360 Z" fill="#5067a0"/>
+  <!-- mid ridge -->
+  <path d="M0 360 L220 318 L460 352 L700 320 L940 352 L1200 326 L1200 410 L0 410 Z" fill="#3c4f8a"/>
+  <!-- front skyline ridge (darkest) -->
+  <path d="M0 410 L240 372 L500 402 L760 374 L1020 402 L1200 384 L1200 500 L0 500 Z" fill="#2c3c72"/>
+  <!-- winding ridge road -->
+  <path d="M40 478 C260 452 200 420 420 420 C600 420 560 446 760 440 C980 433 940 414 1180 408" fill="none" stroke="#e9c6a0" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+  <path d="M40 478 C260 452 200 420 420 420 C600 420 560 446 760 440 C980 433 940 414 1180 408" fill="none" stroke="#26345f" stroke-width="2" stroke-dasharray="10 14"/>
+</svg>

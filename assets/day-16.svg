@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky16" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe3e0"/>
+      <stop offset="0.55" stop-color="#dcebda"/>
+      <stop offset="1" stop-color="#f4d9a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky16)"/>
+  <circle cx="250" cy="132" r="66" fill="#f7e3a4"/>
+  <!-- far islands -->
+  <path d="M0,300 C90,262 220,262 300,300 Z" fill="#95c6c1"/>
+  <path d="M380,300 C470,266 600,266 690,300 Z" fill="#95c6c1"/>
+  <path d="M760,300 C860,260 1010,260 1110,300 Z" fill="#95c6c1"/>
+  <!-- sea -->
+  <rect x="0" y="298" width="1200" height="202" fill="#3fa3a8"/>
+  <rect x="0" y="298" width="1200" height="40" fill="#5fb7ba"/>
+  <!-- suspension bridge chain -->
+  <g stroke="#2c4a5e" stroke-width="5" fill="none">
+    <path d="M120,300 L120,150 M150,300 L150,150 M120,196 L150,196 M120,232 L150,232"/>
+    <path d="M540,300 L540,150 M570,300 L570,150 M540,196 L570,196 M540,232 L570,232"/>
+    <path d="M960,300 L960,150 M990,300 L990,150 M960,196 L990,196 M960,232 L990,232"/>
+    <path d="M135,150 Q340,272 555,150 Q762,272 975,150 Q1090,212 1200,176" stroke-width="6"/>
+  </g>
+  <!-- hangers -->
+  <g stroke="#2c4a5e" stroke-width="2">
+    <line x1="220" y1="216" x2="220" y2="300"/>
+    <line x1="300" y1="240" x2="300" y2="300"/>
+    <line x1="380" y1="240" x2="380" y2="300"/>
+    <line x1="460" y1="216" x2="460" y2="300"/>
+    <line x1="640" y1="216" x2="640" y2="300"/>
+    <line x1="720" y1="240" x2="720" y2="300"/>
+    <line x1="800" y1="240" x2="800" y2="300"/>
+    <line x1="880" y1="216" x2="880" y2="300"/>
+    <line x1="1050" y1="200" x2="1050" y2="300"/>
+    <line x1="1130" y1="188" x2="1130" y2="300"/>
+  </g>
+  <!-- deck -->
+  <rect x="0" y="298" width="1200" height="7" fill="#2c4a5e"/>
+  <!-- foreground shore -->
+  <path d="M0,360 C140,318 300,318 420,360 Z" fill="#1f6f78"/>
+  <rect x="0" y="356" width="1200" height="30" fill="#1f6f78"/>
+</svg>

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky19" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6b3b6b"/>
+      <stop offset="0.5" stop-color="#b5567a"/>
+      <stop offset="1" stop-color="#f0a830"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky19)"/>
+  <circle cx="930" cy="190" r="66" fill="#f7d27a"/>
+  <!-- far dusk hills, lightening toward back -->
+  <path d="M0,330 Q200,296 420,322 Q620,300 820,324 L820,330 Z" fill="#7a4f74"/>
+  <path d="M620,330 Q860,300 1060,326 Q1140,314 1200,324 L1200,330 Z" fill="#8c5a7e"/>
+  <!-- garden tree line -->
+  <g fill="#5b3a60">
+    <circle cx="120" cy="320" r="26"/>
+    <circle cx="170" cy="326" r="20"/>
+    <circle cx="1060" cy="324" r="24"/>
+    <circle cx="1110" cy="330" r="18"/>
+  </g>
+  <!-- stone base of the castle -->
+  <path d="M470,330 L730,330 L700,300 L500,300 Z" fill="#5b3a60"/>
+  <!-- white Himeji keep hero motif (tiered) -->
+  <g fill="#f3ece0">
+    <!-- main keep tiers -->
+    <polygon points="540,300 660,300 660,272 600,256 540,272"/>
+    <rect x="548" y="276" width="104" height="24"/>
+    <polygon points="552,256 648,256 648,232 600,218 552,232"/>
+    <rect x="560" y="236" width="80" height="22"/>
+    <polygon points="566,218 634,218 634,196 600,184 566,196"/>
+    <rect x="574" y="200" width="52" height="20"/>
+    <polygon points="578,184 622,184 622,164 600,150 578,164"/>
+    <rect x="586" y="168" width="28" height="18"/>
+    <polygon points="588,150 612,150 600,138"/>
+    <!-- smaller flanking turret -->
+    <polygon points="660,300 716,300 716,282 688,270 660,282"/>
+    <rect x="666" y="286" width="44" height="14"/>
+    <polygon points="670,270 706,270 706,254 688,244 670,254"/>
+    <rect x="676" y="258" width="24" height="12"/>
+  </g>
+  <!-- castle eave shadow lines -->
+  <g stroke="#cdbfa6" stroke-width="2" fill="none">
+    <line x1="540" y1="272" x2="660" y2="272"/>
+    <line x1="552" y1="256" x2="648" y2="256"/>
+    <line x1="566" y1="218" x2="634" y2="218"/>
+  </g>
+  <!-- foreground garden water (calm lower third) -->
+  <rect y="330" width="1200" height="170" fill="#7a4566"/>
+  <rect y="392" width="1200" height="108" fill="#5e3252"/>
+  <path d="M150,360 q40,-7 80,0 t80,0" fill="none" stroke="#9a6588" stroke-width="3" stroke-linecap="round"/>
+  <path d="M740,372 q40,-7 80,0 t80,0" fill="none" stroke="#9a6588" stroke-width="3" stroke-linecap="round"/>
+</svg>

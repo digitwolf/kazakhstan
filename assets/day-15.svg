@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky15" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cdd9e8"/>
+      <stop offset="0.5" stop-color="#ecdcc6"/>
+      <stop offset="1" stop-color="#f3cb9c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky15)"/>
+  <circle cx="930" cy="150" r="72" fill="#f5c98e"/>
+  <!-- castle hill (back) -->
+  <path d="M760,300 C880,170 1060,170 1180,300 Z" fill="#7fa07f"/>
+  <!-- Matsuyama castle on the hill -->
+  <g fill="#46555a">
+    <rect x="940" y="196" width="44" height="30"/>
+    <path d="M932,196 L962,178 L992,196 Z"/>
+    <rect x="930" y="226" width="64" height="26"/>
+    <path d="M922,226 L962,208 L1002,226 Z"/>
+  </g>
+  <!-- mid hills -->
+  <path d="M0,308 L240,250 L500,308 L740,252 L1000,308 L1200,270 L1200,360 L0,360 Z" fill="#5e9c63"/>
+  <!-- steam strokes -->
+  <g fill="none" stroke="#f3efe6" stroke-width="9" stroke-linecap="round" opacity="0.85">
+    <path d="M360,210 C338,182 384,160 360,132 C340,108 380,90 362,66"/>
+    <path d="M470,222 C448,194 494,172 470,144 C450,120 490,102 472,78"/>
+    <path d="M580,214 C558,186 604,164 580,136 C560,112 600,94 582,70"/>
+  </g>
+  <!-- Dogo Onsen bathhouse (hero) -->
+  <g fill="#5a3a30">
+    <rect x="300" y="300" width="380" height="60"/>
+    <rect x="316" y="276" width="348" height="26"/>
+    <path d="M300,276 L340,250 L640,250 L680,276 Z"/>
+    <rect x="392" y="216" width="196" height="36"/>
+    <path d="M380,216 L490,192 L600,216 Z"/>
+    <rect x="456" y="170" width="68" height="46"/>
+    <path d="M444,170 L490,148 L536,170 Z"/>
+    <rect x="486" y="138" width="8" height="14"/>
+    <circle cx="490" cy="132" r="9"/>
+  </g>
+  <!-- glow windows -->
+  <g fill="#f4c66a">
+    <rect x="340" y="320" width="22" height="30"/>
+    <rect x="386" y="320" width="22" height="30"/>
+    <rect x="432" y="320" width="22" height="30"/>
+    <rect x="572" y="320" width="22" height="30"/>
+    <rect x="618" y="320" width="22" height="30"/>
+  </g>
+  <rect x="0" y="356" width="1200" height="20" fill="#3a2a24"/>
+</svg>

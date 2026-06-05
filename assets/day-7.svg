@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3b5aa6"/>
+      <stop offset="0.55" stop-color="#9d8fb0"/>
+      <stop offset="1" stop-color="#f2c1a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky7)"/>
+  <!-- low sun disc -->
+  <circle cx="920" cy="158" r="56" fill="#f7d9b0"/>
+  <!-- distant snow-capped Fuji, far back -->
+  <polygon points="170,250 300,250 235,108" fill="#8fa6c9"/>
+  <polygon points="210,166 260,166 235,108" fill="#f4f6fb"/>
+  <!-- back range (lightest) -->
+  <path d="M0,255 L150,212 L330,250 L520,206 L720,248 L940,210 L1200,246 L1200,500 L0,500 Z" fill="#7d93bf"/>
+  <!-- mid range -->
+  <path d="M0,300 L210,262 L430,300 L640,260 L860,304 L1080,268 L1200,294 L1200,500 L0,500 Z" fill="#5d6f9c"/>
+  <!-- valley walls (front, dark) opening down the middle -->
+  <path d="M0,330 L260,300 L470,372 L560,500 L0,500 Z" fill="#3a4a6e"/>
+  <path d="M1200,322 L940,298 L740,372 L650,500 L1200,500 Z" fill="#34435f"/>
+  <!-- winding valley road ribbon (light) -->
+  <path d="M600,358 C572,400 640,420 608,452 C586,474 612,490 600,500 L640,500 C648,486 628,470 648,452 C684,420 622,400 660,358 Z" fill="#e9d9c4"/>
+  <!-- Magome post-town rooftops along the road -->
+  <polygon points="520,378 560,378 540,360" fill="#202a3e"/>
+  <rect x="524" y="378" width="32" height="20" fill="#26324a"/>
+  <polygon points="676,372 716,372 696,354" fill="#202a3e"/>
+  <rect x="680" y="372" width="32" height="22" fill="#26324a"/>
+  <polygon points="566,398 600,398 583,382" fill="#1a2336"/>
+  <rect x="569" y="398" width="28" height="18" fill="#212c42"/>
+</svg>

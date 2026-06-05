@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky8" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe3e0"/>
+      <stop offset="0.6" stop-color="#e9dcc0"/>
+      <stop offset="1" stop-color="#f4d9a8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky8)"/>
+  <!-- low sun disc -->
+  <circle cx="920" cy="168" r="58" fill="#f6c98a"/>
+  <!-- far coastline hills (lightest) -->
+  <path d="M0,300 L180,278 L360,300 L520,284 L640,300 L1200,300 L1200,330 L0,330 Z" fill="#7fb6b3"/>
+  <!-- sea band -->
+  <rect x="0" y="330" width="1200" height="170" fill="#1f6f78"/>
+  <path d="M0,330 L1200,330 L1200,360 L0,360 Z" fill="#2f8a8f"/>
+  <!-- hero: Akashi Kaikyo suspension bridge -->
+  <!-- deck -->
+  <rect x="0" y="300" width="1200" height="10" fill="#26323d"/>
+  <!-- towers -->
+  <rect x="362" y="118" width="22" height="192" fill="#2c3a47"/>
+  <rect x="816" y="118" width="22" height="192" fill="#2c3a47"/>
+  <polygon points="362,118 384,118 379,150 367,150" fill="#2c3a47"/>
+  <!-- tower cross-bracing -->
+  <rect x="362" y="170" width="22" height="8" fill="#1f2a34"/>
+  <rect x="362" y="232" width="22" height="8" fill="#1f2a34"/>
+  <rect x="816" y="170" width="22" height="8" fill="#1f2a34"/>
+  <rect x="816" y="232" width="22" height="8" fill="#1f2a34"/>
+  <!-- main cables (catenary) -->
+  <path d="M0,180 Q186,300 373,128 Q600,260 827,128 Q1014,300 1200,180" fill="none" stroke="#2c3a47" stroke-width="6"/>
+  <!-- hangers -->
+  <g stroke="#2c3a47" stroke-width="3">
+    <line x1="120" y1="232" x2="120" y2="300"/>
+    <line x1="220" y1="190" x2="220" y2="300"/>
+    <line x1="300" y1="160" x2="300" y2="300"/>
+    <line x1="470" y1="170" x2="470" y2="300"/>
+    <line x1="560" y1="216" x2="560" y2="300"/>
+    <line x1="640" y1="222" x2="640" y2="300"/>
+    <line x1="720" y1="216" x2="720" y2="300"/>
+    <line x1="900" y1="160" x2="900" y2="300"/>
+    <line x1="980" y1="190" x2="980" y2="300"/>
+    <line x1="1080" y1="232" x2="1080" y2="300"/>
+  </g>
+  <!-- sea sparkle / calm strokes -->
+  <g stroke="#3fb8af" stroke-width="4" stroke-linecap="round">
+    <line x1="120" y1="396" x2="180" y2="396"/>
+    <line x1="520" y1="430" x2="600" y2="430"/>
+    <line x1="900" y1="410" x2="970" y2="410"/>
+    <line x1="320" y1="460" x2="400" y2="460"/>
+  </g>
+</svg>
