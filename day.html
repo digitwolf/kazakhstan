@@ -26,6 +26,7 @@
   .phero .bg{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.05);}
   .phero .bg.collage{display:grid;gap:2px;transform:none;}
   .phero .bg.collage span{background-size:cover;background-position:center;}
+  .phero .bg.art{transform:none;background-size:cover;background-position:center 28%;}
   .phero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,17,22,.3),rgba(14,17,22,.55) 55%,rgba(14,17,22,.97));}
   .phero .inner{position:relative;padding:42px 0 26px;width:100%;}
   .phero .daytag{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#fff;background:var(--accent);padding:5px 13px;border-radius:999px;}
@@ -178,14 +179,20 @@
   const fromS = short(day.gfrom), toS = short(day.gto);
   const stripTags = s => s.replace(/<[^>]+>/g, '');
 
-  // hero — illustrated day poster if available (assets/day-N.svg), else the lead photo
+  // hero — region-matched ukiyo-e print (traditional Japanese art) if available,
+  // else the SVG day poster, else the destination lead photo.
   const bg = document.getElementById('bg');
+  const art = (window.DAYART && window.DAYART[day.d]) || '';
   const poster = `assets/day-${day.d}.svg`;
-  const probe = new Image();
-  probe.onload = () => { bg.style.backgroundImage = `url("${poster}")`; bg.style.backgroundSize = 'cover'; };
-  probe.onerror = () => { bg.style.backgroundImage = `url("${dest.photos[0].src}")`; };
-  probe.src = poster;
-  bg.style.backgroundImage = `url("${dest.photos[0].src}")`;
+  bg.style.backgroundImage = `url("${dest.photos[0].src}")`;   // immediate fallback
+  if (art) {
+    bg.classList.add('art');
+    bg.style.backgroundImage = `url("${art}")`;
+  } else {
+    const probe = new Image();
+    probe.onload = () => { bg.style.backgroundImage = `url("${poster}")`; };
+    probe.src = poster;
+  }
   document.getElementById('daytag').textContent = `Day ${day.d}` + (day.rest ? ' · Rest day' : '');
   document.getElementById('title').textContent = day.title;
   document.getElementById('route').innerHTML = stripTags(day.route);

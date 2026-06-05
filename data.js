@@ -1126,3 +1126,29 @@ window.GEO = {
   "Yokohama Chinatown": "35.44309,139.64410",
   "Yokohama, Japan": "35.44367,139.63796"
 };
+
+/* Region-matched public-domain ukiyo-e prints (Hokusai/Hiroshige, Wikimedia)
+   used as each day's hero artwork. Verified reachable. */
+window.DAYART = {
+  "1": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Brooklyn_Museum_-_Nihonbashi_-_Utagawa_Hiroshige_%28Ando%29_-_overall.jpg",
+  "2": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Hakone%2C_10%C3%A8_station_du_Tokaido_%28Mus%C3%A9e_Guimet_MNAAG%2C_Paris%29_%2848551390132%29.jpg/1280px-Hakone%2C_10%C3%A8_station_du_Tokaido_%28Mus%C3%A9e_Guimet_MNAAG%2C_Paris%29_%2848551390132%29.jpg",
+  "3": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/%27South_Wind%2C_Clear_Sky%27_by_Hokusai%2C_Honolulu_Museum_of_Art.jpg/1280px-%27South_Wind%2C_Clear_Sky%27_by_Hokusai%2C_Honolulu_Museum_of_Art.jpg",
+  "4": "https://upload.wikimedia.org/wikipedia/commons/c/ca/%27The_Great_Wave_off_Kanagawa%27_by_Hokusai%2C_Honolulu_Museum_of_Art.jpg",
+  "5": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/%27South_Wind%2C_Clear_Sky%27_by_Hokusai%2C_Honolulu_Museum_of_Art.jpg/1280px-%27South_Wind%2C_Clear_Sky%27_by_Hokusai%2C_Honolulu_Museum_of_Art.jpg",
+  "6": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hokusai42_fuji-lake.jpg/1280px-Hokusai42_fuji-lake.jpg",
+  "7": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Hiroshige%2C_A_family_in_a_misty_landscape.jpg/1280px-Hiroshige%2C_A_family_in_a_misty_landscape.jpg",
+  "8": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Awa%2C_Naruto_Whirlpools%2C_ca_1855.jpg/1280px-Awa%2C_Naruto_Whirlpools%2C_ca_1855.jpg",
+  "9": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Flickr_-_%E2%80%A6trialsanderrors_-_Hiroshige%2C_The_coast_at_Hota_in_Awa_province%2C_1858.jpg/1280px-Flickr_-_%E2%80%A6trialsanderrors_-_Hiroshige%2C_The_coast_at_Hota_in_Awa_province%2C_1858.jpg",
+  "10": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Falls_of_Kirifuri_at_Mt._Kurokami%2C_Shimotsuke_Province_LACMA_M.2011.135.2_%281_of_2%29.jpg",
+  "11": "https://upload.wikimedia.org/wikipedia/commons/7/7e/58_Tosa.jpg",
+  "12": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg/1280px-Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg",
+  "13": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Fireworks_at_Ryogoku_%28Ryogoku_Hanabi%29%2C_No._98_from_One_Hundred_Famous_Views_of_Edo.jpg",
+  "14": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Hiroshige_Iyo_Saij%C5%8D.jpg",
+  "15": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Sanuki_Province%2C_Distant_View_of_Mount_Zozu_%285765892320%29.jpg/1280px-Sanuki_Province%2C_Distant_View_of_Mount_Zozu_%285765892320%29.jpg",
+  "16": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Brooklyn_Museum_-_Itsukushima_in_Aki_Province_-_Utagawa_Hiroshige_%28Ando%29.jpg/1280px-Brooklyn_Museum_-_Itsukushima_in_Aki_Province_-_Utagawa_Hiroshige_%28Ando%29.jpg",
+  "17": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Bingo_Province%2C_Abuto%2C_Kannon_Temple_%285765891938%29.jpg",
+  "18": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Bizen_Province%2C_Tanokuchi_Coast%2C_Yugasan_torii_%285765891374%29.jpg/1280px-Bizen_Province%2C_Tanokuchi_Coast%2C_Yugasan_torii_%285765891374%29.jpg",
+  "19": "https://upload.wikimedia.org/wikipedia/commons/a/ad/45_-_Harima_Province%2C_Maiko_Beach%2C_from_the_series_Famous_Places_in_the_Sixty-odd_Provinces%2C_MFAB_11.26243.jpg",
+  "20": "https://upload.wikimedia.org/wikipedia/commons/c/ce/05_Settsu_n.jpg",
+  "21": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hiroshige-53-Stations-Hoeido-55-Kyoto-MFA-01.jpg/1280px-Hiroshige-53-Stations-Hoeido-55-Kyoto-MFA-01.jpg"
+};
