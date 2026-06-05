@@ -5,7 +5,7 @@
 - **Region:** Kansai
 - **Itinerary:** Days 20–21
 - **Stop type:** end
-- **Ride to here:** 60 mi
+- **Ride to here:** 90 mi
 
 ## About
 The tour finishes in Kansai, returning the motorcycles near Osaka. Osaka is Japan's kitchen — a brash, friendly food city built for celebrating the end of a long journey.

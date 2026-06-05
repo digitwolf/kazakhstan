@@ -52,13 +52,17 @@
   .ev .c .k{font-weight:700;font-size:15px;}
   .ev .c .k .kind{color:var(--accent-2);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;margin-left:8px;}
   .ev .c .d{color:#c7d1db;font-size:13.5px;}
-  .ev .c .maplink{font-size:12.5px;font-weight:600;display:flex;flex-wrap:wrap;gap:12px;margin-top:3px;}
+  .ev .c .maplink{font-size:12.5px;font-weight:600;display:flex;flex-wrap:wrap;gap:12px;margin-top:6px;}
+  .ev .c .evimg{display:block;margin-top:9px;width:100%;max-width:260px;height:140px;object-fit:cover;border-radius:8px;border:1px solid var(--line);}
   .poic .poic-links{display:flex;flex-wrap:wrap;gap:12px;}
   .poic .poic-links a{font-size:12.5px;font-weight:600;}
 
   /* poi cards */
   .pois{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
-  .poic{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 15px;}
+  .poic{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;}
+  .poic-thumb{height:130px;background:var(--bg-soft);}
+  .poic-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
+  .poic-b{padding:13px 15px;}
   .poic .nm{font-weight:700;font-size:15px;color:#fff;}
   .poic .wh{color:var(--muted);font-size:13px;margin:3px 0 9px;}
   .poic a{font-size:12.5px;font-weight:600;}
@@ -162,7 +166,7 @@
   document.getElementById('daytag').textContent = `Day ${day.d}` + (day.rest ? ' · Rest day' : '');
   document.getElementById('title').textContent = day.title;
   document.getElementById('route').innerHTML = stripTags(day.route);
-  const rideH = day.miles > 0 ? Math.max(1, Math.round(day.miles / 35 * 2) / 2) : 0;
+  const rideH = day.miles > 0 ? Math.max(1, Math.round(day.miles / 30 * 2) / 2) : 0;
   document.getElementById('stats').innerHTML =
     `<span class="pill region">${day.region}</span>` +
     (day.miles > 0 ? `<span class="pill mi">🏍️ ${day.miles} mi</span><span class="pill time">≈ ${rideH}h riding</span>`
@@ -183,63 +187,69 @@
   const routeTo = (a, b) => `https://www.google.com/maps/dir/?api=1&origin=${encodeURIComponent(a)}&destination=${encodeURIComponent(b)}&travelmode=driving`;
   const prevQ = i => i === 0 ? day.gfrom : day.poi[i - 1].q;   // leg starts at origin, then each prior stop
 
+  const DWELL = { coffee:30, lunch:60, stop:40, scenic:25, activity:45 };  // minutes at each stop
+  const AVG = 30;  // mph effective touring pace (rural roads, newer rider, breaks)
   if (!day.rest) {
     ev.push(['07:00','⏰','Wake up','',false,'Same start every riding day — keeps the family rhythm.']);
     ev.push(['07:30','☕','Coffee','',false,'']);
     ev.push(['08:00','🍳','Breakfast','',false,'At the hotel or ryokan.']);
-    ev.push(['09:00','🏍️','Depart hotel','',false,`Gear on, bikes loaded — ${day.miles} mi to ${toS}.`]);
-    const n = day.poi.length;
-    const start = 580, arrive = day.miles > 120 ? 1020 : (day.miles < 40 ? 930 : 990);
-    const span = arrive - 45 - start;
+    ev.push(['09:00','🏍️','Depart hotel','',false,`Gear on, bikes loaded — ${day.miles} mi, ≈${rideH}h riding to ${toS}.`]);
+    const depart = 540, driveMin = day.miles / AVG * 60;
+    let dwellBefore = 0;
     day.poi.forEach((q, i) => {
-      const t = r5(start + span * ((i + 0.5) / n));
+      const frac = (q.frac != null) ? q.frac : (i + 0.5) / day.poi.length;   // position along the route
+      const t = r5(depart + frac * driveMin + dwellBefore);                  // cumulative drive + time already spent stopped
       const k = KIND[q.slot] || KIND.stop;
-      ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q, routeTo(prevQ(i), q.q), short(prevQ(i))]);
+      ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q, routeTo(prevQ(i), q.q), short(prevQ(i)), q.img]);
+      dwellBefore += (DWELL[q.slot] || 35);
     });
+    const arrive = r5(depart + driveMin + dwellBefore);
     ev.push([hhmm(arrive),'🏁',`Arrive ${toS}`,'',false,'Check in and park the bikes securely.']);
+    const dinner = Math.max(1140, arrive + 90);
     if (day.tags.includes('onsen') || dest.type === 'stay')
-      ev.push([hhmm(arrive+75),'♨️','Onsen / freshen up','',false,'Soak off the road before dinner.']);
-    ev.push(['19:00','🍽️','Dinner','',false,'Local regional food or a ryokan kaiseki spread.']);
+      ev.push([hhmm(Math.min(dinner-60, arrive+45)),'♨️','Onsen / freshen up','',false,'Soak off the road before dinner.']);
+    ev.push([hhmm(dinner),'🍽️','Dinner','',false,'Local regional food or a ryokan kaiseki spread.']);
   } else {
     ev.push(['07:30','⏰','Wake up','',false,'A lie-in — no transfer today.']);
     ev.push(['08:00','☕','Coffee','',false,'']);
     ev.push(['08:30','🍳','Breakfast','',false,'']);
-    const slots = [600, 870, 990, 1080];   // 10:00, 14:30, 16:30, 18:00 (lunch inserted)
-    let si = 0; let lunchDone = false;
+    const n = day.poi.length, startA = 600, endA = 1020;   // spread activities 10:00–17:00
+    const lunchAt = Math.floor(n/2); let inserted = false;
     day.poi.forEach((q, i) => {
-      let t = slots[Math.min(si, slots.length-1)];
-      if (!lunchDone && (q.slot === 'lunch' || t >= 750)) { /* keep order */ }
+      const t = r5(startA + (endA - startA) * (n>1 ? i/(n-1) : 0));
       const k = KIND[q.slot] || KIND.activity;
-      ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q, routeTo(prevQ(i), q.q), short(prevQ(i))]);
-      si++;
-      if (i === 0) { ev.push(['12:30','🍜','Lunch','',false,'A relaxed local lunch.']); lunchDone = true; }
+      ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q, routeTo(prevQ(i), q.q), short(prevQ(i)), q.img]);
+      if (!inserted && i === lunchAt-1) { ev.push(['12:30','🍜','Lunch','',false,'A relaxed local lunch.']); inserted = true; }
     });
-    ev.push(['16:30','♨️','Free time / onsen','',false,'No clock to watch.']);
+    if (!inserted) ev.push(['12:30','🍜','Lunch','',false,'A relaxed local lunch.']);
+    ev.push(['18:00','♨️','Free time / onsen','',false,'No clock to watch.']);
     ev.push(['19:00','🍽️','Dinner','',false,'Ryokan dinner or a local spot.']);
   }
 
   document.getElementById('sched').innerHTML = ev.map(e => {
-    const [t, ic, k, kind, isPoi, d, q, rt, fromName] = e;
+    const [t, ic, k, kind, isPoi, d, q, rt, fromName, img] = e;
     const kindHtml = kind ? `<span class="kind">${kind}</span>` : '';
     const links = q ? `<div class="maplink">
         <a href="${poiMap(q)}" target="_blank" rel="noopener">📍 Map</a>
         <a href="${rt}" target="_blank" rel="noopener">🗺️ Route from ${fromName}</a>
       </div>` : '';
+    const thumb = img ? `<img class="evimg" loading="lazy" src="${img}" alt="${k}">` : '';
     return `<div class="ev ${isPoi?'poi':''}">
       <div class="t">${t}</div>
       <div class="rail"><div class="ic">${ic}</div></div>
-      <div class="c"><div class="k">${k}${kindHtml}</div>${d?`<div class="d">${d}</div>`:''}${links}</div>
+      <div class="c"><div class="k">${k}${kindHtml}</div>${d?`<div class="d">${d}</div>`:''}${thumb}${links}</div>
     </div>`;
   }).join('');
 
   // ---- poi cards ----
   document.getElementById('pois').innerHTML = day.poi.map((q, i) => {
     const k = KIND[q.slot] || KIND.stop;
-    return `<div class="poic"><div class="nm">${k[0]} ${q.name}</div><div class="wh">${q.what}</div>
+    const thumb = q.img ? `<div class="poic-thumb"><img loading="lazy" src="${q.img}" alt="${q.name}"></div>` : '';
+    return `<div class="poic">${thumb}<div class="poic-b"><div class="nm">${k[0]} ${q.name}</div><div class="wh">${q.what}</div>
       <div class="poic-links">
         <a href="${poiMap(q.q)}" target="_blank" rel="noopener">📍 Map</a>
         <a href="${routeTo(prevQ(i), q.q)}" target="_blank" rel="noopener">🗺️ Route from ${short(prevQ(i))}</a>
-      </div></div>`;
+      </div></div></div>`;
   }).join('');
 
   // ---- photos ----
