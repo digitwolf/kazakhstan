@@ -9,6 +9,7 @@ person likes** should steer destinations, stops, food, lodging and the website's
 - Born in **Ukraine**; in the **Seattle** area ~10 years. Started riding in Seattle ~10 years ago.
 - Owned an **FJR**, now rides a **BMW R 1300 GS**. In Japan he takes the large ADV rental (Honda Africa Twin class) with **Aslan on the back**.
 - **Strong, seasoned rider:** comfortable on big bikes and with long days. Longest trip was a **2-week adventure ride in Morocco with Bret Tkacs**. Can handle technical/long riding.
+- **Loves Japanese motorcycles — Kawasaki, Yamaha and Honda** (a shared family enthusiasm). Weight in moto-brand museums, factory showrooms, dealerships and motorcycle-culture stops.
 - **Planning implication:** Ruslan is *not* the limiting rider — he can absorb long, demanding days. The pace is set by Galiya and Aslan, not him. Lean on him for the riding-quality priorities (scenic, flowing roads; the road as the experience). Likely enjoys the moto-culture stops (Kawasaki Good Times World, Shikoku Automobile Museum).
 
 ## Galiya — 41, Rider 2 (sub-500cc bike; sets the group pace)
@@ -43,6 +44,9 @@ Use this as a scoring lens: a strong day/stop hits several of these for *more th
 - **Toy & souvenir stops** (he loves buying toys) — flag character/toy shops, Nintendo/Pokémon stores, anime/game shops, arcades along the way and in overnight towns.
 - **Gaming & character interests:** Transformers, Mario/Nintendo, Minecraft, *KPop Demon Hunters* — call out anything that connects (Nintendo, Pokémon, anime culture, robot/mecha, hands-on building/making).
 - **Kid magnets already in the plan:** Anpanman Museum, Adventure World (pandas/safari), Naruto whirlpool boat, vine bridge, aquariums — keep this density up; every rest day needs a kid hook.
+
+### Japanese motorcycles (shared — Ruslan leads)
+- We like **Kawasaki, Yamaha and Honda**. Prioritize moto-brand museums and showrooms (Kawasaki Good Times World is already on the loop; Honda Collection Hall/Motegi, Yamaha Communication Plaza/Iwata, Suzuki Plaza are off-loop — see `research/motorcycle-museums.md`), the Shikoku Automobile Museum, dealerships and motorcycle-culture stops along the route.
 
 ### Riding & pace (Ruslan can do more; Galiya + Aslan set the limits)
 - **Scenic, flowing, paved roads** are the point (Ruslan). Coastal routes, river valleys, gentle passes, named riding roads — the road IS the experience.
