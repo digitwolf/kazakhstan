@@ -644,6 +644,8 @@ window.DESTINATIONS = [
     "<b>Senjōjiki</b> — a vast tilted \"1,000-tatami\" rock platform sculpted by the waves, fun to clamber on",
     "<b>Engetsu Island</b> — the \"round-moon\" islet pierced by a natural sea arch; the classic Shirahama sunset shot",
     "<b>Hashigui-iwa</b> (en route at Kushimoto) — a 850 m row of ~40 pillar rocks marching out to sea toward Ōshima island",
+    "*<i>Kushimoto — Turkish Memorial & the </i>Ertuğrul<i> story<b> (en route) — on </b>Ōshima</i><i> island off Japan's southernmost mainland cape, a museum tells how Kushimoto villagers rescued survivors of the wrecked Ottoman frigate </i>Ertuğrul<i> in 1890 — the founding moment of Japan–Turkey friendship, marked by a memorial and (filmed as </i>Ertuğrul 1890*). A genuinely distinctive history stop on a scenery-heavy coast",
+    "<b>Kushimoto Marine Park</b> (en route) — <b>Japan's first marine park (1970)</b>, with an aquarium and an <b>undersea observation tower</b> out over the reef — a good child stop near Hashigui-iwa",
     "<b>Tore-Tore Ichiba</b> — one of western Japan's biggest seafood market halls; watch a tuna-cutting show, then eat"
   ],
   food: [
@@ -688,6 +690,10 @@ window.DESTINATIONS = [
   links: [
     { "l": "Nanki-Shirahama tourism (official)", "u": "https://nanki-shirahama.com/en/" },
     { "l": "Adventure World (official)", "u": "https://www.aws-s.com/" },
+    {
+      "l": "Turkish Memorial Museum, Kushimoto (Visit Wakayama)",
+      "u": "https://visitwakayama.jp/en/attractions/detail_680.html"
+    },
     { "l": "Wikipedia — Shirahama, Wakayama", "u": "https://en.wikipedia.org/wiki/Shirahama,_Wakayama" }
   ],
   photos: [
@@ -749,7 +755,8 @@ window.DESTINATIONS = [
     "<b>Ōnaruto Bridge</b> panoramas from Magosaki Cape / Naruto Park — the strait is one of the world's three great tidal races",
     "<b>Ōtsuka Museum of Art</b> — Japan's largest display space, filled with <b>full-size ceramic reproductions</b> of 1,000+ world masterpieces (the Sistine Chapel ceiling, the Mona Lisa, Monet's water lilies outdoors) that you may photograph and even touch — vast and surprisingly kid-friendly",
     "<b>Ryōzen-ji (Temple #1)</b> — the start of the 88-temple Shikoku pilgrimage, where white-clad <i>henro</i> set out; a gentle cultural stop near the ferry",
-    "<b>Awa Odori</b> — Tokushima's exuberant summer dance; the <b>Awa Odori Kaikan</b> runs live shows year-round and a ropeway up Mt. Bizan behind it"
+    "<b>Awa Odori</b> — Tokushima's exuberant summer dance; the <b>Awa Odori Kaikan</b> runs live shows year-round and a ropeway up Mt. Bizan behind it",
+    "<b>Awa indigo (aizome) & Wakimachi Udatsu</b> — Tokushima is the heart of Japanese natural indigo and one of the only places left still growing and fermenting it into <i>sukumo</i>. On the Day-10 ride up the Yoshino River, the preserved Edo merchant street of <b>Udatsu in Wakimachi (Mima)</b> — an important national preservation district built on the indigo trade — has <b>hands-on aizome workshops</b> where you dye your own scarf, handkerchief or eco-bag in deep \"Japan Blue.\" A memorable craft for the whole family <i>(reserve ahead; confirm hours and child participation)</i>"
   ],
   food: [
     {
@@ -793,6 +800,14 @@ window.DESTINATIONS = [
   links: [
     { "l": "Nankai Ferry (Wakayama–Tokushima, official)", "u": "https://nankai-ferry.co.jp/" },
     { "l": "Tokushima / Naruto tourism (official)", "u": "https://discovertokushima.net/en/" },
+    {
+      "l": "Udatsu Townscape, Wakimachi (Discover Tokushima)",
+      "u": "https://discovertokushima.net/en/spots/udatsu-townscape/"
+    },
+    {
+      "l": "Awa indigo dyeing workshop, Udatsu (Nishi-Awa Tourism)",
+      "u": "https://nishi-awa.jp/english/reserve/2009/"
+    },
     { "l": "Wikipedia — Naruto, Tokushima", "u": "https://en.wikipedia.org/wiki/Naruto,_Tokushima" },
     { "l": "Wikipedia — Whirlpools of Naruto", "u": "https://en.wikipedia.org/wiki/Whirlpools_of_Naruto" }
   ],
@@ -947,6 +962,7 @@ window.DESTINATIONS = [
   highlights: [
     "<b>Kōchi Castle</b> — climb the original 1747 keep for valley views; the surviving palace rooms below show how a feudal lord actually lived",
     "<b>Anpanman Museum</b> (Yanase Takashi Memorial Hall, Kami) — the home town museum of <b>Japan's most beloved toddler superhero</b>, created by Kōchi-born Takashi Yanase; a near-guaranteed delight for a 6-year-old, ~40 min east of the city",
+    "<b>Shikoku Automobile Museum</b> (四国自動車博物館, Kōnan) — a small private museum just east of the city in <b>Kōnan</b>, ~6 km past the Anpanman stop and on the same Day-12 approach into Kōchi: <b>~30 motorcycles and ~30 cars</b> of the 1960s–80s, classics and race machines including Honda and Yamaha bikes and a few rarities. An easy 30–45 min for a moto family. <b>Open Wed–Sun 10:00–16:00; closed Mon AND Tue</b> (open if a national holiday lands on those days); ¥800 adult, ¥300 child, under-6 free",
     "<b>Katsurahama</b> — a crescent Pacific beach (look-don't-swim — strong currents) with the Ryōma statue, a small shrine on the rocks, and the <b>Katsurahama Aquarium</b>",
     "<b>Hirome Market</b> — a raucous covered food hall where you watch <b>katsuo</b> seared over straw flames and eat it minutes later at shared tables",
     "<b>Sunday Market (Nichiyō-ichi)</b> — a 300+ year-old street market running ~1 km along Otesuji, with knives, plants, yuzu and <i>imo-tenpura</i>",
@@ -996,6 +1012,10 @@ window.DESTINATIONS = [
   links: [
     { "l": "Visit Kochi Japan (official)", "u": "https://visitkochijapan.com/en" },
     { "l": "Anpanman Museum / Yanase Takashi Memorial Hall (official)", "u": "https://anpanman-museum.net/" },
+    {
+      "l": "Shikoku Automobile Museum (official, \"Love Mota! Kochi\")",
+      "u": "https://lovemota.vistanet.co.jp/museum/"
+    },
     { "l": "Wikipedia — Kochi", "u": "https://en.wikipedia.org/wiki/Kochi,_Kochi" }
   ],
   photos: [
@@ -1055,6 +1075,7 @@ window.DESTINATIONS = [
     "<b>Riverside cycling</b> — flat, quiet lanes along the water with easy swimming holes in summer; bikes rent at the michi-no-eki",
     "<b>Cape Ashizuri (Ashizuri-misaki)</b> — Shikoku's wild granite southern point, a white lighthouse over Pacific cliffs and the pilgrimage temple <b>Kongōfuku-ji</b> (Temple #38); a fine longer Day-14 ride",
     "<b>Tatsukushi coast</b> (on the Day-13 ride in) — bizarre wave-eroded rock formations and a glass-bottom boat over coral",
+    "<b>Tosa washi paper-making, Ino-cho</b> (on the Day-13 ride in) — the <b>Ino-cho Paper Museum</b> on the clear <b>Niyodo River</b> lets you <b>make your own postcards or a sheet of Tosa washi</b>, one of Japan's three great handmade papers, by the traditional <i>nagashizuki</i> method (¥400, ~30–40 min) — a hands-on craft hit for a child. <i>Closed Mondays (Tue if Mon is a holiday)</i>",
     "<b>Michi-no-eki Tōwa & tea hamlets</b> — roadside stations selling river <i>aonori</i>, tea and <i>ayu</i> — good regroup stops"
   ],
   food: [
@@ -1097,6 +1118,10 @@ window.DESTINATIONS = [
   ],
   links: [
     { "l": "Shimanto City tourism", "u": "https://www.shimanto-kankou.com/" },
+    {
+      "l": "Ino-cho Paper Museum — Tosa washi (official, JapanTravel/Adventure)",
+      "u": "https://www.japan.travel/en/sports/adventure/activities/ino-cho-paper-museum/"
+    },
     { "l": "Wikipedia — Shimanto River", "u": "https://en.wikipedia.org/wiki/Shimanto_River" }
   ],
   photos: [
@@ -1353,6 +1378,7 @@ window.DESTINATIONS = [
   highlights: [
     "<b>Kurushima-Kaikyō Bridge</b> — a <b>4 km triple suspension span</b> (the world's first) over the fast Kurushima strait; the <b>Kirōsan Observatory</b> above it gives the classic aerial-style panorama of the bridges marching across the sea",
     "<b>Imabari Castle</b> — a rare <b>sea-water-moat castle</b> flushed by the tides, with the keep reflected in the saltwater",
+    "<b>Imabari towel craft</b> — Imabari is <b>Japan's towel capital</b> (~120 years, the country's leading producer). See the craft at the free walk-in <b>Imabari Towel LAB</b> by the port (browse and learn) or the larger <b>Towel Museum ICHIHIRO</b> (watch the looms run, a Moomin gallery, and a make-your-own-towel corner) — a soft, hands-on regional craft that suits a small child before the bridges <i>Confirm the towel-museum detour fits the riding window; the LAB is the lighter stop</i>",
     "<b>Ōyamazumi Shrine (Ōmishima)</b> — the head shrine of all Japan's mountain/sea/war gods, under a ~2,600-year-old sacred camphor tree, holding the country's <b>largest collection of historic samurai armour and swords</b> (much of it National Treasure grade)",
     "<b>Tatara Bridge</b> — a graceful 1,480 m cable-stayed span; the roadside station beneath has a \"whispering gallery\" spot at the tower base",
     "<b>Setoda, Ikuchijima</b> — lemon groves, lemon gelato, and the dazzling, slightly outrageous <b>Kōsan-ji</b> temple with its marble \"Hill of Hope\" (covered on the Onomichi/Setoda stop)",
@@ -1397,6 +1423,10 @@ window.DESTINATIONS = [
   ],
   links: [
     { "l": "Shimanami Kaido (official)", "u": "https://shimanami-cycle.or.jp/global/" },
+    {
+      "l": "Towel Museum ICHIHIRO, Imabari (Visit Ehime)",
+      "u": "https://www.visitehimejapan.com/en/things-to-do/spots/0015/"
+    },
     { "l": "Wikipedia — Nishiseto Expressway", "u": "https://en.wikipedia.org/wiki/Nishiseto_Expressway" }
   ],
   photos: [
@@ -1676,6 +1706,7 @@ window.DESTINATIONS = [
     "From Himeji it's a short hop into <b>Kobe</b>, a stylish port city — opened to foreigners in 1868 — famous for its beef, its hillside <b>Kitano</b> district of Western \"ijinkan\" merchant houses, a glittering harbour nightscape and a relaxed international feel. A comfortable night before the final flourish: Day-21's loop across the Akashi Kaikyō Bridge to Awaji and back to Osaka."
   ],
   highlights: [
+    "<b>Bizen-yaki pottery town, Imbe</b> (en route on Route 2) — the kiln village of <b>Imbe in Bizen City</b>, home of <b>Bizen ware</b>, one of Japan's <i>six ancient kilns</i>: rustic, unglazed, wood-fired stoneware made here ~1,000 years. Stroll the brick-chimney streets, see the <b>Bizen / Bizen City Museum of Art</b> (closed Mon), and book a short beginner <b>hand-shaping workshop</b> (10–40 min) for a cup or bowl fired and posted home — a hands-on craft that breaks up a castle day. <i>Reserve a studio ahead; confirm under-6 participation.</i> Sword enthusiasts can instead stop at the nearby <b>Bizen Osafune Sword Museum</b> (live smithing/polishing demos on Sundays; closed Mon)",
     "<b>Himeji Castle</b> — climb the original keep's steep timber stairs to the top floor (mind the head-height for adults), and hunt for the castle's <i>ishigaki</i> stone walls, hidden gun-ports and the \"Okiku's well\" ghost legend",
     "<b>Kōko-en</b> — nine walled Edo-style gardens beside the castle (1992) with carp ponds, a tea house and a maple valley; a calm counterpoint to the keep",
     "<b>Kobe Harborland & Meriken Park</b> — a waterfront of the red Port Tower, a Ferris wheel, the <i>BE KOBE</i> sign and harbour cruises",
@@ -1729,7 +1760,12 @@ window.DESTINATIONS = [
   links: [
     { "l": "Himeji Castle (official)", "u": "https://www.city.himeji.lg.jp/castle/" },
     { "l": "Kawasaki Good Times World (official)", "u": "https://www.khi.co.jp/kawasakiworld/english/" },
-    { "l": "Wikipedia — Himeji Castle", "u": "https://en.wikipedia.org/wiki/Himeji_Castle" }
+    { "l": "Wikipedia — Himeji Castle", "u": "https://en.wikipedia.org/wiki/Himeji_Castle" },
+    {
+      "l": "Bizen pottery & clay-shaping experience, Imbe (Okayama Tourism)",
+      "u": "https://www.okayama-japan.jp/en/18998"
+    },
+    { "l": "Bizen Osafune Sword Museum (Okayama Tourism)", "u": "https://www.okayama-japan.jp/en/spot/10777" }
   ],
   photos: [
     {
