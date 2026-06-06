@@ -5,7 +5,7 @@
 - **Region:** Okayama
 - **Itinerary:** Day 18
 - **Stop type:** stop
-- **Ride to here (direct):** 44 mi
+- **Ride to here (direct):** 41 mi
 
 ## About
 The plan settles on **Kurashiki**. Its Bikan historical quarter preserves white-walled Edo storehouses along a willow-fringed canal — now galleries, cafes, boat rides and the celebrated **Ohara Museum of Art**, Japan's first Western-art museum. It's compact, walkable and easy with a child, and the day's ride in calls at **Tomonoura**, the harbour that inspired *Ponyo*.
@@ -13,24 +13,28 @@ The plan settles on **Kurashiki**. Its Bikan historical quarter preserves white-
 **Naoshima as an optional add-a-day:** if the family wants the contemporary-art islands, add a night near Takamatsu/Uno and take the ferry to Naoshima (Benesse House, the Chichu Museum, Yayoi Kusama's pumpkin). It's a wonderful detour but a full extra day with ferry timing — treat it as an add-on, not a same-day swap.
 
 ## Things to see & do
-- Kurashiki Bikan canal quarter and willow-lined boat rides
-- Ohara Museum of Art, Japan's first Western-art museum
-- **Tomonoura** — the *Ponyo* harbour town (on the Day 18 ride in): stone jetty, lighthouse, and the hillside where Miyazaki stayed
-- Ivy Square, a red-brick former mill turned courtyard
-- _Optional add-a-day:_ Naoshima art island (via Takamatsu/Uno ferry); Ritsurin Garden in Takamatsu
+- **Kurashiki Bikan historical quarter** — white-walled, black-tiled *kura* storehouses mirrored in a willow-lined canal; glide it on a **flat-bottomed boat** poled by a boatman in *happi* coat — a hit with a child **[KID]**
+- **Ōhara Museum of Art** — **Japan's first museum of Western art** (1930), built by a local mill magnate; it holds real El Greco, Monet, Gauguin and Matisse in a little canal town — astonishing and compact **[KID]**
+- **Tomonoura** — the *Ponyo* harbour town (on the Day-18 ride in): the iconic stone *gangi* jetty, the old *jōyatō* lighthouse, and the seaside house where **Miyazaki stayed and sketched** the film **[KID]**
+- **Ivy Square** — a romantic red-brick former cotton mill (1889) now a courtyard of ivy, cafés and craft workshops **[KID]**
+- **Momotarō / Achi-jinja & local legend** — Okayama is the land of the **Momotarō "Peach Boy"** folk tale; kibi-dango sweets and Momotarō imagery are everywhere **[KID]**
+- _Optional add-a-day:_ **Naoshima** art island (via Takamatsu/Uno ferry — Benesse House, the Chichū Museum, Yayoi Kusama's pumpkin); **Ritsurin Garden** in Takamatsu
 
 ## What to eat
-- **Sanuki udon** — Kagawa's firm, springy udon — Japan's udon capital.
-- **Mamakari** — Marinated sardine-like fish, an Okayama specialty.
-- **Okayama fruit** — White peaches and Muscat grapes in season.
+- **Mamakari (sappa)** — a small sardine-like fish marinated in vinegar; the Okayama name jokes that it's so good you'll *borrow rice from a neighbour* to finish it.
+- **Bara-zushi (Okayama-zushi)** — a lavish scattered-sushi bowl heaped with seafood and vegetables, a festive local dish.
+- **Kibi-dango** — soft millet-and-mochi dumplings tied to the Momotarō legend; the classic Okayama souvenir sweet. **[KID]**
+- **Okayama fruit** — the "Land of Sunshine" is famed for **white peaches** and **Muscat of Alexandria grapes**; try them fresh or as parfaits in season. **[KID]**
+- **Sanuki udon** — firm, springy udon if you carry on toward Kagawa (Japan's udon capital). **[KID]**
 
 ## Where to stay
+Kurashiki's whole appeal is sleeping **inside the Bikan quarter in a converted storehouse or machiya ryokan** — exactly the trip's preferred style. The catch is that the canal lanes are **pedestrian and very narrow**: these inns have small back-lane lots that suit a car barely and a big ADV bike with care, so the safe plan is to **drop bags at the inn, then park in a nearby municipal lot** (e.g. **Kurashiki Bikan / Art Garden / Central coin lots, ~¥600–1,000/day, a 2–5 min walk**).
 
 | Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
-| Ryokan Kurashiki | Boutique ryokan | Free on-site parking | ¥28,000–60,000 | $185–400 | Converted storehouses right on the Bikan canal. |
-| Kurashiki Kokusai Hotel | Nice hotel | On-site garage or valet | ¥18,000–35,000 | $120–235 | Classic central hotel with parking by the old quarter. |
-| JR Hotel Clement Takamatsu | Family-friendly | On-site garage or valet | ¥18,000–35,000 | $120–235 | Harbourfront by the Naoshima ferry, big rooms, parking. |
+| Ryori Ryokan Tsurugata | Machiya ryokan (1774) | Tight free back-lane lot — **very narrow approach**; better to use a nearby coin lot | ¥28,000–55,000 | $185–365 | A 1770s merchant house **right on the canal**, tatami rooms, in-room kaiseki; the most authentic Bikan night. |
+| Ryokan Kurashiki | Converted-storehouse ryokan | No easy door parking — nearby municipal coin lot (~150–300 m) | ¥30,000–60,000 | $200–400 | Beautiful *kura* storehouses on the canal; tatami and futons suit a child. Confirm which lot takes a motorcycle. |
+| Kurashiki Kokusai Hotel | Nice hotel (Bikan-edge) | On-site lot — easiest parking | ¥18,000–35,000 | $120–235 | A handsome mid-century hotel by the old quarter with its own parking, if you'd rather an easy-park base with a Western room. |
 
 _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 

@@ -5,31 +5,36 @@
 - **Region:** Hyogo
 - **Itinerary:** Day 19
 - **Stop type:** stop
-- **Ride to here (direct):** 67 mi
+- **Ride to here (direct):** 104 mi
 
 ## About
-Himeji Castle — the 'White Heron' — is Japan's finest surviving feudal castle, a UNESCO World Heritage masterpiece of brilliant white walls and soaring keeps, and a genuine wow moment for all ages.
+**Himeji Castle — the "White Heron" (Shirasagi-jō)** — is Japan's finest surviving feudal castle and one of its first UNESCO World Heritage sites: a brilliant-white hilltop complex of a six-storey main keep, three lesser keeps and a maze of gates, completed in **1609 and never burned or besieged**, so it is original timber and plaster, not a reconstruction. The dazzling white comes from fire-resistant lime plaster over the walls and roof joints; the spiralling approach was designed to confuse attackers, and finding the way up with a child is half the fun. Its 2009–2015 restoration left it gleaming.
 
-From Himeji it's a short hop into Kobe, a stylish port city famous for its beef, harbour nightscape and relaxed international feel — a comfortable penultimate night.
+From Himeji it's a short hop into **Kobe**, a stylish port city — opened to foreigners in 1868 — famous for its beef, its hillside **Kitano** district of Western "ijinkan" merchant houses, a glittering harbour nightscape and a relaxed international feel. A comfortable night before the final flourish: Day-20's loop across the Akashi Kaikyō Bridge to Awaji and back to Osaka.
 
 ## Things to see & do
-- Himeji Castle, original and unrestored since 1609
-- Koko-en garden beside the castle
-- Kobe Harborland and the Meriken Park waterfront
-- Mt. Rokko / Maya night view over Kobe
+- **Himeji Castle** — climb the original keep's steep timber stairs to the top floor (mind the head-height for adults), and hunt for the castle's *ishigaki* stone walls, hidden gun-ports and the "Okiku's well" ghost legend **[KID]**
+- **Kōko-en** — nine walled Edo-style gardens beside the castle (1992) with carp ponds, a tea house and a maple valley; a calm counterpoint to the keep **[KID]**
+- **Kobe Harborland & Meriken Park** — a waterfront of the red Port Tower, a Ferris wheel, the *BE KOBE* sign and harbour cruises **[KID]**
+- **Kitano ijinkan** — the steep lane of preserved Western merchant mansions above Kobe, fun to wander
+- **Mt. Rokkō / Maya "ten-million-dollar" night view** — one of Japan's three great city nightscapes, by ropeway/cable car above Kobe
+- **Nada sake district** (Kobe) — Japan's biggest sake-brewing quarter, with free brewery museums
 
 ## What to eat
-- **Kobe beef** — World-renowned wagyu — teppanyaki is the classic way.
-- **Sobameshi** — Kobe's hearty fried noodle-and-rice comfort dish.
-- **Akashiyaki** — Soft egg-rich octopus dumplings from nearby Akashi.
+- **Kobe beef** — the world-famous, intensely marbled Tajima wagyū; the classic treat is **teppanyaki**, seared at a counter before you (a splurge — lunch sets are gentler on the wallet).
+- **Akashiyaki (tamago-yaki)** — soft, egg-rich octopus dumplings from neighbouring **Akashi**, dipped in warm dashi rather than sauce — the ancestor of takoyaki. **[KID]**
+- **Sobameshi** — a Kobe working-town comfort dish of chopped yakisoba noodles fried together with rice on the griddle. **[KID]**
+- **Anago-meshi** — conger eel over rice, an Inland-Sea/Akashi favourite.
+- **Himeji oden & almond toast** — Himeji eats its oden with ginger-soy dip; Kobe's *kissaten* cafés serve thick almond-butter toast. **[KID]**
 
 ## Where to stay
+Himeji offers a genuine **machiya night in the castle town**, and a centuries-old **onsen ryokan**, both with parking — closer to the trip's preferred style than a Kobe business hotel. If you'd rather sleep in Kobe for the harbour and beef, a Kitano-quarter boutique works too.
 
 | Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
-| Kobe Kitano Hotel | Boutique | On-site garage or valet | ¥20,000–40,000 | $135–265 | Charming hotel in the historic foreign quarter. |
-| ANA Crowne Plaza Kobe | Nice hotel | On-site garage or valet | ¥18,000–35,000 | $120–235 | Harbour and mountain views, parking; near Shin-Kobe. |
-| Hotel Nikko Himeji | Family-friendly | On-site garage or valet | ¥18,000–35,000 | $120–235 | If staying in Himeji, central by the station with parking. |
+| Wabisabi Himeji (Kōminya machiya) | Restored Meiji machiya | Reserved space in a **nearby gravel lot (1 space/room)** | ¥20,000–45,000 (whole house) | $135–300 | A Meiji-era townhouse in Himeji's traditional-buildings preservation district, modernised but full of old-house character — a self-contained family stay near the castle. |
+| Yumoto Ueyama Ryokan (Himeji) | Onsen ryokan | Free private on-site parking | ¥18,000–35,000 | $120–235 | A traditional inn with a **300-year-old natural hot spring**; tatami rooms and futons for a child, easy parking. |
+| Kobe Kitano Hotel | Boutique (Kobe) | On-site garage / valet — confirm bike handling | ¥20,000–40,000 | $135–265 | Charming hotel in Kobe's historic foreign quarter, if you'd rather a harbour-and-beef night in the city. |
 
 _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 

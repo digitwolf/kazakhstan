@@ -5,30 +5,34 @@
 - **Region:** Ehime south
 - **Itinerary:** Day 14
 - **Stop type:** stop
-- **Ride to here (direct):** 38 mi
+- **Ride to here (direct):** 41 mi
 
 ## About
-Heading up Shikoku's west coast toward Matsuyama, two worthwhile stops break the ride: Uwajima, with another of Japan's twelve original castle keeps, and Uchiko, a beautifully preserved wax-merchant town.
+Heading up Shikoku's west coast toward Matsuyama, two worthwhile stops break the Day-14 ride. **Uwajima**, a former castle town of the Date clan, keeps one of Japan's **twelve original castle keeps** — a small, beautifully proportioned 1666 tower on a wooded hill. **Uchiko** is a superbly preserved street of Edo–Meiji merchant houses that grew rich on **vegetable wax (mokurō)**, their façades washed in the distinctive ochre-yellow plaster of the trade.
 
-These are easy, rewarding half-day stops — history and old streets without crowds — on a relaxed transfer day.
+These are easy, rewarding half-day stops — real history and quiet old streets without the crowds of the famous towns — on a relaxed transfer day up to Dōgo Onsen.
 
 ## Things to see & do
-- Uwajima Castle, compact original Edo keep on a hill
-- Uchiko's Yokaichi old street of merchant houses
-- Uchiko-za, a restored 1916 kabuki theatre
-- Date Museum / Tensha-en garden in Uwajima
+- **Uwajima Castle** — climb to the compact, all-original 1666 keep for sea-and-town views; one of only twelve such keeps left in Japan **[KID]**
+- **Uchiko Yōkaichi Old Street** — a 600 m run of ochre-walled wax-merchant houses (the grand **Kami-Haga residence** has a wax-making museum) — atmospheric and stroller-easy **[KID]**
+- **Uchiko-za** — a fully restored **1916 kabuki theatre** with a revolving stage and trap doors you can tour backstage **[KID]**
+- **Garyū Sansō, Ōzu** — an exquisite riverside villa of teahouse craftsmanship above the Hiji River (a fine stop between the two towns)
+- **Tensha-en garden & Date Museum, Uwajima** — a samurai stroll garden and the Date clan's treasures
+- **Note for families:** Uwajima also has the eyebrow-raising **Taga-jinja fertility shrine** — easily skipped with a child
 
 ## What to eat
-- **Taimeshi (Uwajima style)** — Sea bream sashimi over rice with a raw-egg-soy sauce.
-- **Jakoten** — Fried minced-fish cakes, a local snack.
-- **Mikan** — Ehime's famous mandarin oranges and citrus juices.
+- **Taimeshi (Uwajima style)** — fresh **sea-bream sashimi** marinated in a raw-egg, soy and dashi sauce, then poured over hot rice; quite different from Matsuyama's cooked-together version (try both).
+- **Jakoten** — small fried cakes of whole minced "trash" fish (bones and all), a savoury Ehime snack eaten hot off the griddle. **[KID]**
+- **Satsuma-jiru** — a Uwajima miso soup of grilled fish paste over barley rice, poured tableside.
+- **Mikan** — Ehime is Japan's #1 citrus prefecture; roadside stands sell mandarins and fresh juice all along the coast. **[KID]**
 
 ## Where to stay
+This is a **pass-through day** — the family sleeps at **Dōgo Onsen / Matsuyama** (next stop), the trip's onsen rest base. If you'd rather split the day with a traditional night here, **Uchiko's restored-merchant-house inns** are lovely.
 
 | Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
-| _Usually passed through_ | — | — | — | — | Most riders push on to Matsuyama/Dogo to sleep (next stop). |
-| Kibako / Uchiko guesthouses | Boutique stay | On-site garage or valet | ¥20,000–40,000 | $135–265 | If overnighting, small restored-house inns in Uchiko are lovely. |
+| _Usually ridden through → sleep at Dōgo Onsen_ | — | — | — | — | Day 14 ends at Matsuyama/Dōgo, a 2-night onsen base (see next stop). |
+| Uchiko machiya inns (e.g. Kibako, Orinasu) | Restored machiya | On-site / nearby town lot (confirm) | ¥18,000–40,000 | $120–265 | Small restored wax-merchant houses for a quiet traditional night if you split the ride. |
 
 _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 

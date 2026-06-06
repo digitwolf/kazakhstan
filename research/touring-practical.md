@@ -31,6 +31,12 @@ current figures before the trip; prices/policies drift.
 
 ---
 
+## Inter-island ferries (the Osaka-loop Shikoku connector)
+- **Nankai Ferry — Wakayama Port ⇄ Tokushima Port** crosses the Kii Strait in **~2h15m**, with about **8 sailings/day each way** (first departures ~02:00, last ~21:00). It's a **car ferry that takes motorcycles** — ride straight on and off.
+- **No reservations for motorcycles:** boarding is **first-come, first-served**; deck space is limited (~20 bikes). Come to the ticket office **at least 30 minutes before departure** and check the live timetable.
+- Why it matters for this trip: it lets an Osaka loop run **Kii Peninsula → Shikoku without backtracking through Osaka**, replacing a ~4–5h road transfer (around via Kobe/Awaji) with a restful ~2h15m crossing — and a fun boat ride for a child.
+- Sources: <https://nankai-ferry.co.jp/> · timetable <http://nankai-ferry.co.jp.e.afe.hp.transer.com/timetable/> · guide <https://e-stay.jp/en/wakayama/nankai-ferry/>
+
 ## Onsen with tattoos (brief)
 - The picture is **easing in 2026**: roughly **~20%** of onsen welcome tattoos unconditionally and **~30%** allow entry if you **cover** the tattoo with a sticker; tourist-heavy areas (Hakone, Beppu, Nikko) are more relaxed, and the Japan Tourism Agency has encouraged cover-stickers and private baths. Major brands (e.g. Hoshino Resorts) have group-level non-restriction statements.
 - **Practical options:** waterproof **tattoo cover stickers** ("tattoo hidden sheets") from convenience stores/drugstores for small work; **private/family baths (kashikiri-buro)** rented in 40–60 min slots (free with some ryokan stays up to ~¥3,000); ryokan rooms with **en-suite rotenburo**. A private bath also sidesteps the no-kids/crowd issues and is convenient for a family.

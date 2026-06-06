@@ -8,27 +8,33 @@
 - **Ride to here (direct):** 36 mi
 
 ## About
-The Shimanami Kaido links Shikoku (Imabari) to Honshu (Onomichi) over six islands and a series of spectacular suspension and cable-stayed bridges spanning the island-dotted Seto Inland Sea.
+The **Shimanami Kaidō** (the Nishiseto Expressway) links Shikoku (**Imabari**) to Honshu (**Onomichi**) by hopping **six islands** of the Seto Inland Sea on a chain of **seven spectacular bridges** — among them the world's **first triple suspension bridge**. It's world-famous as a cycling route, but on a motorcycle it is just as magical: long, gently graded sweeps high over a sea dotted with green islands, fishing boats and *tai* nets, blue water on both sides.
 
-It is gentle, scenic and unforgettable riding — sweeping bridge spans, blue sea on both sides and easy island roads, arguably the highlight ride of the whole tour.
+It is gentle, scenic and unforgettable riding — well-surfaced, never technical, with frequent island pull-offs — and rightly the **highlight ride of the whole tour** for the family. Each island has its own character: citrus groves on Ōshima, the great shrine on Ōmishima, salt and shipbuilding on Hakatajima, lemons and a gilded temple on Ikuchijima.
 
 ## Things to see & do
-- Kurushima-Kaikyo Bridge, a 4 km triple suspension span
-- Kirosan Observatory for the classic bridge panorama
-- Oyamazumi Shrine on Omishima, full of samurai armour
-- Island citrus stands and sea-view cafes en route
+- **Kurushima-Kaikyō Bridge** — a **4 km triple suspension span** (the world's first) over the fast Kurushima strait; the **Kirōsan Observatory** above it gives the classic aerial-style panorama of the bridges marching across the sea **[KID]**
+- **Imabari Castle** — a rare **sea-water-moat castle** flushed by the tides, with the keep reflected in the saltwater **[KID]**
+- **Ōyamazumi Shrine (Ōmishima)** — the head shrine of all Japan's mountain/sea/war gods, under a ~2,600-year-old sacred camphor tree, holding the country's **largest collection of historic samurai armour and swords** (much of it National Treasure grade) **[KID]**
+- **Tatara Bridge** — a graceful 1,480 m cable-stayed span; the roadside station beneath has a "whispering gallery" spot at the tower base **[KID]**
+- **Setoda, Ikuchijima** — lemon groves, lemon gelato, and the dazzling, slightly outrageous **Kōsan-ji** temple with its marble "Hill of Hope" (covered on the Onomichi/Setoda stop) **[KID]**
+- **Cycling/walking the bridge approaches** — even a short out-and-back on foot over a span is a thrill with a child **[KID]**
 
 ## What to eat
-- **Imabari yakibuta-tamago meshi** — Roast pork and egg over rice, an Imabari specialty.
-- **Hakata salt & citrus** — Famous sea salt from Hakatajima island.
-- **Octopus (tako)** — Firm Inland-Sea octopus, grilled or as rice bowls.
+- **Imabari yakibuta-tamago-meshi** — sweet-savoury roast pork and a fried egg over rice, Imabari's hearty signature bowl. **[KID]**
+- **Hakata-no-shio (sea salt)** — famous salt sun-dried on **Hakatajima**, turned into salt ramen, salt soft-serve and even salt cake. **[KID]**
+- **Setouchi tai (sea bream)** — firm Inland-Sea bream as *tai-meshi* or sashimi; the calm sea is Japan's bream heartland.
+- **Octopus (tako)** — muscular Inland-Sea octopus, grilled or over rice.
+- **Setoda lemons & citrus** — eaten as gelato, cake and fresh juice along the islands. **[KID]**
 
 ## Where to stay
+The Day-16 ride **crosses the Kaidō and overnights at Setoda/Onomichi** (next stop, the 2-night island base). If you'd rather break the ride and sleep mid-route, the islands have stylish, very bike/cycle-friendly stays.
 
 | Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
-| _Ride day — sleep in Setoda/Onomichi_ | — | — | — | — | Most cross the Kaido and overnight at the next 2-night base. |
-| WAKKA (Omishima) | Boutique | On-site garage or valet | ¥20,000–40,000 | $135–265 | If splitting the ride, a stylish cyclist-friendly stay mid-route. |
+| _Ride day → sleep at Onomichi/Setoda_ | — | — | — | — | Most cross the Kaidō and overnight at the next 2-night base. |
+| WAKKA (Ōmishima) | Cyclist-friendly boutique | Free on-site parking | ¥20,000–40,000 | $135–265 | A relaxed seaside stay mid-route with cottages and a café, if splitting the ride. |
+| Azumi Setoda (Ikuchijima) | Restored-machiya luxury ryokan | Free on-site parking | ¥80,000–250,000 | $535–1,665 | A 140-year-old merchant estate reborn as a ryokan on the Setoda waterfront — see the Onomichi/Setoda stop. |
 
 _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 

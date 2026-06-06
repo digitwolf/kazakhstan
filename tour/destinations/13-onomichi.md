@@ -3,33 +3,37 @@
 > A hillside temple town and lemon-scented islands.
 
 - **Region:** Hiroshima coast
-- **Itinerary:** Days 16–18 · 2 nights
+- **Itinerary:** Days 16–17 · 2 nights
 - **Stop type:** stay
 - **Ride to here (direct):** 32 mi
 
 ## About
-Onomichi is a nostalgic port town of steep lanes, hillside temples and cats, draped over slopes above the Seto Inland Sea at the Honshu end of the Shimanami Kaido.
+Onomichi is a nostalgic port town of steep stone lanes, hillside temples and famously photogenic cats, draped over slopes that drop straight to a narrow channel of the Seto Inland Sea at the Honshu end of the Shimanami Kaidō. Loved by novelists and film-makers (Ozu shot *Tokyo Story* partly here), it has a **Path of Literature** of inscribed stones winding up the hill, a chair-and-cable ropeway to a temple-crowned summit, and a **25-temple walk** threaded through cats, cafés and old houses.
 
-Nearby Setoda on Ikuchijima island is famous for lemons, gelato and a dazzling gilded temple. Two nights here is a relaxed coastal pause among islands and old streets.
+Nearby **Setoda** on **Ikuchijima** island is famous for **lemons** (Japan's leading domestic producer), gelato and the dazzling, gilt-and-marble temple of **Kōsan-ji**. Two nights here is a relaxed coastal pause among islands and old streets — and a chance to ride more of the Kaidō at leisure.
 
 ## Things to see & do
-- Onomichi's Temple Walk and the Senkoji ropeway viewpoint
-- The 'Path of Literature' and atmospheric cat alley
-- Setoda's Kosanji Temple and marble 'Hill of Hope'
-- Island lemon groves, gelato and seaside cafes
+- **Senkō-ji & ropeway** — ride the cable-car up for the classic view over the red Onomichi bridges and the channel, then walk down through the temple's vermilion halls and the "rock of literature" boulders **[KID]**
+- **Temple Walk & cat alley** — a way-marked loop past ~25 temples and the **Neko-no-Hosomichi** ("cat lane"), strewn with painted cat stones and real cats sunning on walls **[KID]**
+- **Kōsan-ji (Setoda)** — a riotously ornate temple a priest built for his mother, with a hand-carved gate, a cave "hell-and-heaven" walk-through, and the **Miraishin-no-Oka "Hill of Hope"**, a hilltop of gleaming white Italian marble **[KID]**
+- **Setoda lemon groves & Shimanami sea-view cafés** — citrus stands, gelato and waterfront coffee on Ikuchijima **[KID]**
+- **Kōsoji & the old waterfront streets** — Onomichi's atmospheric shopping arcade and harbour, easy and flat with a child
+- **Day-17 option:** ride out onto the nearer Kaidō islands (Innoshima, Ikuchijima) for more bridge sweeps without committing to the full crossing
 
 ## What to eat
-- **Onomichi ramen** — Soy broth with flat noodles and pork-back fat — a regional classic.
-- **Setoda lemons** — Lemon gelato, cakes and drinks across the islands.
-- **Inland-sea seafood** — Conger eel (anago), oysters and small fish.
+- **Onomichi ramen** — a clear soy-tare chicken-and-seafood broth studded with little nuggets of **pork-back fat (*sengaki*)** and flat noodles; a defining regional bowl. **[KID]**
+- **Setoda lemons** — lemon gelato, lemon cake, *hassaku* and lemon soda everywhere on the islands; the **hassaku-daifuku** (citrus-and-bean mochi) is a local treat. **[KID]**
+- **Anago (conger eel)** — Inland-Sea conger, grilled over rice as *anago-meshi* — lighter and sweeter than unagi.
+- **Setouchi oysters & small fish** — the calm sea is rich in oysters (autumn–winter) and *kohada*-type fish.
 
 ## Where to stay
+The island's standout traditional stay is a **restored merchant machiya estate** at Setoda; on the Onomichi side there are atmospheric **hillside machiya guesthouses** — but note these sit **above flights of steps with no vehicle access**, so for a family with a child and luggage the **waterfront bike-friendly options are the practical traditional-leaning pick**.
 
 | Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
-| Azumi Setoda | Luxury ryokan | Free on-site parking | ¥80,000–250,000 | $535–1,665 | Restored merchant estate on Ikuchijima — a destination in itself. |
-| LOG (Onomichi) | Boutique | On-site garage or valet | ¥20,000–40,000 | $135–265 | Hillside design hotel with sea views over the town. |
-| Onomichi U2 / Hotel Cycle | Family-friendly | On-site garage or valet | ¥18,000–35,000 | $120–235 | Waterfront converted warehouse, very bike-friendly, parking. |
+| Azumi Setoda (Ikuchijima) | Restored-machiya luxury ryokan | Free on-site parking | ¥80,000–250,000 | $535–1,665 | A **140-year-old salt-merchant estate** reborn as a ryokan, with its own across-the-street bathhouse — a destination in itself, and easy bike parking. |
+| Onomichi Guest House Miharashi-tei | Historic machiya guesthouse | **No vehicle access** — park at the **Senkōji-shita / Nagae public lot** (~¥600/day) and climb ~370 steps | ¥7,000–14,000 | $45–95 | A 100-year-old hillside villa with channel views and huge character — but the steep step-climb makes it hard with a 6-year-old and gear; consider only light-packed. |
+| Onomichi U2 / Hotel Cycle | Waterfront design hotel | On-site / adjacent lot — very bike & cycle friendly | ¥18,000–35,000 | $120–235 | A converted harbour warehouse built for two-wheel travellers; the practical, parking-easy base for the family. |
 
 _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 

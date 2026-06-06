@@ -3,33 +3,37 @@
 > Japan's 'last clear stream' and its low submersible bridges.
 
 - **Region:** Shikoku west
-- **Itinerary:** Days 12–14 · 2 nights
+- **Itinerary:** Days 12–13 · 2 nights
 - **Stop type:** stay
-- **Ride to here (direct):** 56 mi
+- **Ride to here (direct):** 66 mi
 
 ## About
-The Shimanto is celebrated as Japan's last free-flowing major river without large dams — broad, clear and lined with rice paddies, cedar and the distinctive chinkabashi 'sinking bridges' built to duck under floods.
+The Shimanto is celebrated as **Japan's last clear stream (*saigo no seiryū*)** — the longest river in Shikoku and the only major one with no large dam on its main stem, so it still runs broad, clean and free past rice paddies, cedar hills and the distinctive **chinkabashi** ("sinking bridges"). These low, deliberately **railless** concrete bridges are designed to let floodwater wash *over* them rather than sweep them away — there are 47 of them along the river, and crossing one is a quiet highlight.
 
-Two nights by the river is the trip's quietest, most rural pause: canoeing, riverside cycling and slow countryside time, ideal for the child and the newer rider alike.
+Two nights by the river is the trip's most rural, slowed-down pause: canoeing on glass-clear water, riverside cycling and birdsong-and-water countryside time that is ideal for the child and the newer rider alike. Day-13 has the option of a longer run down to dramatic **Cape Ashizuri**, the granite southern tip of Shikoku.
 
 ## Things to see & do
-- Chinkabashi 'sinking bridges' — railless, low, photogenic
-- Canoeing or a traditional yakatabune river boat
-- Riverside cycling paths and swimming spots
-- Tea fields and rural michi-no-eki roadside stations
+- **Chinkabashi "sinking bridges"** — the railless low bridges that duck under floods; the long **Sada** and **Sata** bridges are the most photogenic, and you can walk or gently ride across **[KID]**
+- **Canoeing, SUP or a *yakatabune* river boat** — calm, shallow stretches make the Shimanto one of Japan's best beginner paddling rivers; traditional roofed boats glide down past the bridges **[KID]**
+- **Riverside cycling** — flat, quiet lanes along the water with easy swimming holes in summer; bikes rent at the michi-no-eki **[KID]**
+- **Cape Ashizuri (Ashizuri-misaki)** — Shikoku's wild granite southern point, a white lighthouse over Pacific cliffs and the pilgrimage temple **Kongōfuku-ji** (Temple #38); a fine longer Day-13 ride
+- **Tatsukushi coast** (on the Day-12 ride in) — bizarre wave-eroded rock formations and a glass-bottom boat over coral **[KID]**
+- **Michi-no-eki Tōwa & tea hamlets** — roadside stations selling river *aonori*, tea and *ayu* — good regroup stops
 
 ## What to eat
-- **Ayu** — Sweetfish, salt-grilled — the river's signature catch.
-- **Aonori** — Fragrant river seaweed, dried into tempura and snacks.
-- **Unagi & tennen eel** — Wild river eel, a Shimanto delicacy.
+- **Ayu (sweetfish)** — the river's signature catch, threaded on a skewer and **salt-grilled** whole; its faint melon scent is prized. In autumn, *ochiayu* (falling sweetfish) are at their best.
+- **Tennen unagi (wild river eel)** — line-caught wild eel from the Shimanto, richer than farmed; a true delicacy grilled *kabayaki*.
+- **Aonori** — fragrant green river seaweed harvested from the estuary, dried into crisp tempura, sprinkled on rice, or in *tenpura*.
+- **Tsugani (river crab)** — small autumn mitten-crabs simmered into a deeply savoury soup.
 
 ## Where to stay
+The river's traditional offering is a small **riverside onsen ryokan or family minshuku** — quiet, home-cooked and close to the water, all with their own parking out in the countryside. (Shimanto town's hotels are the practical fallback for a family wanting a Western room.)
 
 | Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
-| Shimanto-gawa Hotel Bell-Reef | Family-friendly | On-site garage or valet | ¥18,000–35,000 | $120–235 | Riverside hotel near the estuary with parking. |
-| Hotel Shimanto | Practical | On-site / nearby lot | ¥9,000–16,000 | $60–105 | Comfortable base in Shimanto city for two nights. |
-| Riverside ryokan & guesthouses | Rural inn | Free on-site parking | ¥12,000–25,000 | $80–165 | Small inns with home-style dinners along the valley. |
+| Shimanto-no-Yado | Riverside onsen ryokan | Free on-site parking | ¥18,000–38,000 | $120–255 | A small onsen ryokan in a riverside park; some **rooms with private open-air baths**, a garden and local-catch dinners. The traditional pick. |
+| Riverside minshuku & guesthouses (e.g. Nagaoka, Shimanto-gawano-eki) | Rural family inn | Free on-site parking | ¥12,000–25,000 | $80–165 | Friendly home-style inns along the valley with river views and home cooking; tatami and futons for a child. |
+| Shimanto-gawa Hotel Bell-Reef | Family-friendly hotel | Free on-site parking | ¥18,000–35,000 | $120–235 | Comfortable riverside-near-estuary hotel with parking, if you'd rather a Western room for two nights. |
 
 _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 

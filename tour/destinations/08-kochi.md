@@ -5,32 +5,35 @@
 - **Region:** Shikoku south coast
 - **Itinerary:** Day 11
 - **Stop type:** stop
-- **Ride to here (direct):** 41 mi
+- **Ride to here (direct):** 37 mi
 
 ## About
-Kochi faces the open Pacific on Shikoku's south coast. Its castle is one of only twelve in Japan with an original keep, and the city has a famously warm, easygoing character.
+Kōchi faces the open Pacific on Shikoku's south coast, capital of the old **Tosa** domain and famously warm-hearted, easygoing and fond of a drink. Its castle is one of only **twelve in Japan with an original Edo-period keep** — and the only one where both the keep *and* the lord's palace (the *honmaru goten*) survive together. Tosa was the crucible of the Meiji Restoration: local samurai **Sakamoto Ryōma** brokered the alliance that toppled the shogunate in 1868, and his statue still gazes out to sea at Katsurahama.
 
-Coming down from the Iya mountains, the valleys open out to the sea — a satisfying riding day ending with a castle, a beach and a lively market.
+Coming down from the Iya mountains, the river valleys open out to the sea — a satisfying riding day ending with a castle, a beach, and the buzz of **Hirome Market**, a covered hall of food stalls where strangers share tables over seared bonito and local sake.
 
 ## Things to see & do
-- Kochi Castle, original Edo-period keep you can climb
-- **Anpanman Museum** (Yanase Takashi Memorial Hall, Kami) — birthplace shrine of Japan's most beloved kids' character; a sure-fire hit for a 6-year-old, ~40 min east of the city
-- Katsurahama beach and the Sakamoto Ryoma statue
-- Sunday market (Nichiyoichi), 300+ years old
-- Hirome Market food hall for a buzzing dinner
+- **Kōchi Castle** — climb the original 1747 keep for valley views; the surviving palace rooms below show how a feudal lord actually lived **[KID]**
+- **Anpanman Museum** (Yanase Takashi Memorial Hall, Kami) — the home town museum of **Japan's most beloved toddler superhero**, created by Kōchi-born Takashi Yanase; a near-guaranteed delight for a 6-year-old, ~40 min east of the city **[KID]**
+- **Katsurahama** — a crescent Pacific beach (look-don't-swim — strong currents) with the Ryōma statue, a small shrine on the rocks, and the **Katsurahama Aquarium** **[KID]**
+- **Hirome Market** — a raucous covered food hall where you watch **katsuo** seared over straw flames and eat it minutes later at shared tables **[KID]**
+- **Sunday Market (Nichiyō-ichi)** — a 300+ year-old street market running ~1 km along Otesuji, with knives, plants, yuzu and *imo-tenpura* **[KID]**
+- **Chikurin-ji & Makino Botanical Garden** — a hilltop pilgrimage temple (Temple #31) and the garden of pioneering botanist Tomitaro Makino on Mt. Godai
 
 ## What to eat
-- **Katsuo no tataki** — Seared bonito, the soul dish of Kochi — straw-flame grilled.
-- **Sawachi ryori** — Big communal platters of sashimi and local delicacies.
-- **Yuzu** — Kochi's citrus flavours everything from drinks to ponzu.
+- **Katsuo no tataki** — the soul dish of Kōchi: skipjack tuna seared hard over **burning rice straw** so it's charred outside and rare within, sliced thick and eaten with garlic, salt or ponzu. Watch it flame at Hirome Market.
+- **Sawachi-ryōri** — Tosa's party style: huge communal platters piled with sashimi, sushi and local delicacies, meant to be shared while drinking.
+- **Yuzu** — Kōchi grows most of Japan's yuzu citrus; it flavours ponzu, drinks, sweets and the local *gomadōfu*.
+- **Tosa jiro chicken & nabeyaki-ramen** — a prized free-range chicken, and (near Susaki on the Day-12 ride) a ramen served bubbling in a clay pot with a raw egg.
 
 ## Where to stay
+Kōchi's standout traditional option is a **central onsen ryokan with rooftop hot-spring baths looking straight at the castle** — exactly the trip's preferred style, and with its own parking.
 
 | Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
-| Joseikan | Onsen ryokan | Free on-site parking | ¥28,000–60,000 | $185–400 | Historic riverside inn, hosted royalty; central. |
-| Richmond Hotel Kochi | Nice hotel | On-site garage or valet | ¥18,000–35,000 | $120–235 | Comfortable, central, reliable; ask about parking. |
-| The Crown Palais New Hankyu Kochi | Family-friendly | On-site garage or valet | ¥18,000–35,000 | $120–235 | Large rooms near the station with parking. |
+| Jyoseikan | Historic onsen ryokan | Free private on-site parking | ¥28,000–60,000 | $185–400 | Founded **1874**, has hosted the imperial family; tatami rooms, kaiseki/**sawachi dinners**, and a **rooftop onsen overlooking Kōchi Castle**. The traditional pick. |
+| The Crown Palais New Hankyu Kōchi | Family-friendly hotel | On-site garage / lot — confirm bike handling | ¥18,000–35,000 | $120–235 | Large rooms near the station with parking, if you'd rather a Western room for the family. |
+| Richmond Hotel Kōchi | Practical hotel | Nearby contract lot — confirm | ¥14,000–24,000 | $95–160 | Comfortable, central and reliable; ask which lot takes a motorcycle. |
 
 _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 

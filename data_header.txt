@@ -1,0 +1,82 @@
+/* ============================================================
+   Japan Family Motorcycle Tour — destination data
+   Generated from tour/ markdown by gen_data.py (website-builder).
+   Shared by index.html, place.html and day.html.
+   Photos: Wikimedia Commons (all URLs verified reachable).
+   Hotels are SUGGESTIONS — confirm motorcycle parking,
+   passenger/child rules and availability before booking.
+   ============================================================ */
+const U = "https://upload.wikimedia.org/wikipedia/commons/thumb/";
+
+/* Google Maps Embed API key — NEVER hardcoded here / committed.
+   Provided at runtime by the untracked gmaps-key.js (generated from ~/google_maps.key
+   locally, injected from a CI secret in deploy). Maps gracefully fall back to Leaflet
+   when no key is present. Restrict the key by HTTP referrer + API in Cloud Console. */
+window.GMAPS_KEY = window.GMAPS_KEY || "";
+/* Resolve a routing point to "lat,lng" via window.GEO (appended below) so Google
+   always finds it — falls back to the raw text if not geocoded. */
+window.geoResolve = function (s) { return (window.GEO && window.GEO[s]) || s; };
+/* Build a Google Maps Embed directions URL (start → stops → end), by coordinates. */
+window.gmapEmbedDir = function (origin, dest, waypoints) {
+  const R = window.geoResolve;
+  let u = "https://www.google.com/maps/embed/v1/directions?key=" + window.GMAPS_KEY +
+    "&origin=" + encodeURIComponent(R(origin)) + "&destination=" + encodeURIComponent(R(dest)) + "&mode=driving";
+  if (waypoints && waypoints.length) u += "&waypoints=" + encodeURIComponent(waypoints.map(R).join("|"));
+  return u;
+};
+/* Build a clickable Google Maps directions link (maps/dir), by coordinates. */
+window.gmapDirLink = function (origin, dest, waypoints) {
+  const R = window.geoResolve;
+  let u = "https://www.google.com/maps/dir/?api=1&origin=" + encodeURIComponent(R(origin)) +
+    "&destination=" + encodeURIComponent(R(dest)) + "&travelmode=driving";
+  if (waypoints && waypoints.length) u += "&waypoints=" + encodeURIComponent(waypoints.map(R).join("|"));
+  return u;
+};
+/* Build a Google Maps Embed place URL (by coordinates when known). */
+window.gmapEmbedPlace = function (q, zoom) {
+  return "https://www.google.com/maps/embed/v1/place?key=" + window.GMAPS_KEY +
+    "&q=" + encodeURIComponent(window.geoResolve(q)) + (zoom ? "&zoom=" + zoom : "");
+};
+
+/* Approx. exchange rate for showing USD alongside JPY hotel prices (update as needed). */
+window.JPY_PER_USD = 150;
+/* Convert a JPY range string like "¥28,000–60,000" to "≈ $185–400". */
+window.priceUSD = function (jpy) {
+  if (!jpy) return "";
+  const nums = (jpy.match(/\d[\d,]*/g) || []).map(n => Math.round(parseInt(n.replace(/,/g, ""), 10) / window.JPY_PER_USD / 5) * 5);
+  if (!nums.length) return "";
+  const fmt = n => "$" + n.toLocaleString("en-US");
+  return nums.length > 1 ? `≈ ${fmt(nums[0])}–${nums[nums.length - 1].toLocaleString("en-US")}` : `≈ ${fmt(nums[0])}`;
+};
+
+/* Representative photos by lodging type (verified Wikimedia Commons).
+   These illustrate the STYLE of stay, not the exact property. */
+window.HOTEL_IMG = {
+  onsen:  U+"a/a3/Takanoyu_Onsen_Rotenburo_086.jpg/960px-Takanoyu_Onsen_Rotenburo_086.jpg",
+  ryokan: U+"6/60/Interior_of_a_ryokan_room_%282999708441%29.jpg/960px-Interior_of_a_ryokan_room_%282999708441%29.jpg",
+  design: U+"e/e3/Modern_bedroom_design_in_a_stylish_hotel_room_featuring_geometric_patterns_and_soft_linens.jpg/960px-Modern_bedroom_design_in_a_stylish_hotel_room_featuring_geometric_patterns_and_soft_linens.jpg",
+  hotel:  U+"e/e8/Comfort_Twin_Room_in_Triple_Configuration_%2821917602991%29.jpg/960px-Comfort_Twin_Room_in_Triple_Configuration_%2821917602991%29.jpg"
+};
+/* Pick a representative image from a hotel's `t` (type) label. Returns null for non-bookable "Note" rows. */
+window.hotelImage = function (t) {
+  const s = (t || "").toLowerCase();
+  if (s.includes("note")) return null;
+  if (s.includes("onsen")) return window.HOTEL_IMG.onsen;
+  if (s.includes("ryokan") || s.includes("rural") || s.includes("farmhouse") || s.includes("inn")) return window.HOTEL_IMG.ryokan;
+  if (s.includes("luxury") || s.includes("boutique") || s.includes("design") || s.includes("glamping")) return window.HOTEL_IMG.design;
+  return window.HOTEL_IMG.hotel; // nice hotel, family-friendly, practical
+};
+/* Build a reliable search/booking link for a property name. */
+window.hotelLink = function (name, place) {
+  return "https://www.google.com/search?q=" + encodeURIComponent(name + " " + (place || "") + " hotel Japan");
+};
+/* Expected motorcycle-parking situation by lodging type. Every suggestion is
+   selected to accommodate bikes; the exact spot must still be confirmed on booking. */
+window.hotelParking = function (t) {
+  const s = (t || "").toLowerCase();
+  if (s.includes("note")) return null;
+  if (s.includes("onsen") || s.includes("ryokan") || s.includes("rural") || s.includes("farmhouse") || s.includes("glamping"))
+    return "Free on-site parking";
+  if (s.includes("practical")) return "On-site / nearby lot";
+  return "On-site garage or valet"; // nice hotel, boutique, luxury, family-friendly
+};

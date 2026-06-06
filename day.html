@@ -163,7 +163,7 @@
   </aside>
 </div></div></main>
 
-<footer><div class="wrap">Part of the 21-day Japan Family Motorcycle Tour · <a href="index.html">Back to the full itinerary →</a></div></footer>
+<footer><div class="wrap">Part of the 22-day Osaka-loop Japan Family Motorcycle Tour · <a href="index.html">Back to the full itinerary →</a></div></footer>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -172,9 +172,11 @@
 <script>
   const DAYS = window.DAYS, DEST = window.DESTINATIONS;
   const p = new URLSearchParams(location.search);
-  let dn = parseInt(p.get('d') || '1', 10);
-  if (isNaN(dn) || dn < 1 || dn > DAYS.length) dn = 1;
-  const day = DAYS[dn - 1];
+  let dn = parseInt(p.get('d'), 10);
+  let idx = DAYS.findIndex(x => x.d === dn);
+  if (idx < 0) idx = DAYS.findIndex(x => !x.rail);  // default to the first riding day
+  const day = DAYS[idx];
+  dn = day.d;
   const dest = DEST.find(x => x.id === day.id) || DEST[0];
   document.title = `Day ${day.d}: ${day.title} · Japan Family Tour`;
 
@@ -332,6 +334,21 @@
     day.poi.map(q => `<span class="ar">›</span><span class="n">${q.name.split(',')[0]}</span>`).join('') +
     `<span class="ar">›</span><span class="n key">${toS}</span>`;
 
+  // ---- rail/flight bookend days: no driving route, show a travel note instead ----
+  if (day.rail) {
+    const railNote = {
+      0: 'Fly nonstop <b>Seattle → Tokyo (Haneda)</b> (~10h30m), then the Keikyu Line ~15 min to <b>Shinagawa</b>. No riding today.',
+      1: 'Morning <b>Nozomi Shinkansen</b> Tokyo → Shin-Osaka (~2h30m), then to the Suita base for the bike pickup. Strictly no riding.',
+      22: 'A last Kyoto/Osaka morning, then an afternoon <b>Nozomi Shinkansen</b> Shin-Osaka → Tokyo (~2h30m). Overnight near Haneda.',
+      23: 'Fly <b>nonstop Tokyo → Seattle</b> — re-cross the date line and land the same calendar day. No riding.'
+    }[day.d] || 'A rail/flight transfer day — no motorcycle riding.';
+    const head = document.querySelector('aside .card h3');
+    if (head) head.textContent = 'Getting there';
+    document.getElementById('dmap').outerHTML =
+      '<div style="padding:16px;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;font-size:13.5px;color:#c7d1db;">🚄✈️ ' + railNote + '</div>';
+    const rb = document.getElementById('routeBtn'); if (rb) rb.style.display = 'none';
+    document.getElementById('destBtn').href = `place.html?id=${dest.id}`;
+  } else
   // ---- map: Google embed directions (start hotel -> all stops -> end hotel); Leaflet fallback ----
   if (window.GMAPS_KEY) {
     const ifr = document.createElement('iframe');
@@ -348,7 +365,7 @@
   }
 
   // ---- prev/next ----
-  const prev = DAYS[(dn-2+DAYS.length)%DAYS.length], next = DAYS[dn%DAYS.length];
+  const prev = DAYS[(idx-1+DAYS.length)%DAYS.length], next = DAYS[(idx+1)%DAYS.length];
   document.getElementById('pn').innerHTML =
     `<a href="day.html?d=${prev.d}"><div class="dir">← Day ${prev.d}</div><div class="nm">${prev.title}</div></a>` +
     `<a class="next" href="day.html?d=${next.d}"><div class="dir">Day ${next.d} →</div><div class="nm">${next.title}</div></a>`;
