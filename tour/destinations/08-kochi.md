@@ -15,6 +15,7 @@ Coming down from the Iya mountains, the river valleys open out to the sea — a 
 ## Things to see & do
 - **Kōchi Castle** — climb the original 1747 keep for valley views; the surviving palace rooms below show how a feudal lord actually lived **[KID]**
 - **Anpanman Museum** (Yanase Takashi Memorial Hall, Kami) — the home town museum of **Japan's most beloved toddler superhero**, created by Kōchi-born Takashi Yanase; a near-guaranteed delight for a 6-year-old, ~40 min east of the city **[KID]**
+- **Shikoku Automobile Museum** (四国自動車博物館, Kōnan) — a small private museum just east of the city in **Kōnan**, ~6 km past the Anpanman stop and on the same Day-12 approach into Kōchi: **~30 motorcycles and ~30 cars** of the 1960s–80s, classics and race machines including Honda and Yamaha bikes and a few rarities. An easy 30–45 min for a moto family. **Open Wed–Sun 10:00–16:00; closed Mon AND Tue** (open if a national holiday lands on those days); ¥800 adult, ¥300 child, under-6 free **[KID]**
 - **Katsurahama** — a crescent Pacific beach (look-don't-swim — strong currents) with the Ryōma statue, a small shrine on the rocks, and the **Katsurahama Aquarium** **[KID]**
 - **Hirome Market** — a raucous covered food hall where you watch **katsuo** seared over straw flames and eat it minutes later at shared tables **[KID]**
 - **Sunday Market (Nichiyō-ichi)** — a 300+ year-old street market running ~1 km along Otesuji, with knives, plants, yuzu and *imo-tenpura* **[KID]**
@@ -40,6 +41,7 @@ _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secur
 ## Links
 - [Visit Kochi Japan (official)](https://visitkochijapan.com/en)
 - [Anpanman Museum / Yanase Takashi Memorial Hall (official)](https://anpanman-museum.net/)
+- [Shikoku Automobile Museum (official, "Love Mota! Kochi")](https://lovemota.vistanet.co.jp/museum/)
 - [Wikipedia — Kochi](https://en.wikipedia.org/wiki/Kochi,_Kochi)
 
 ## Photos (10)

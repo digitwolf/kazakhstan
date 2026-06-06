@@ -20,7 +20,7 @@ Average riding time on the **13 transfer days is 2h42m** (1h45m–4h33m). No two
 | 9 | Ferry to Shikoku | Shirahama → Wakayama → ferry → Naruto | 91 | 2h46m + ferry | Wakayama Castle, Nankai ferry (~2h15m), Naruto whirlpools (Uzunomichi) |
 | 10 | Into Iya Valley | Naruto → Iya / Oboke | 75 | 2h05m | Tokushima riverside, Oboke Gorge, Iya Valley viewpoint |
 | 11 | Iya Rest Day | Iya Valley (light riding) | 25 | rest | Kazurabashi vine bridge, Oboke Gorge boat, Peeing Boy, Nagoro Scarecrow Village |
-| 12 | Down to the Coast | Iya → Kochi | 75 | 3h00m | Otoyo michi-no-eki, Anpanman Museum, Kochi Castle & Hirome Market, Katsurahama |
+| 12 | Down to the Coast | Iya → Kochi | 75 | 3h00m | Otoyo michi-no-eki, Anpanman Museum, Shikoku Automobile Museum, Kochi Castle & Hirome Market, Katsurahama |
 | 13 | The Clear River | Kochi → Shimanto River | 128 | 4h33m | Niyodo Blue river, Susaki, Tatsukushi coast, Sada Chinkabashi |
 | 14 | Shimanto Rest Day | Shimanto River (light riding) | 20 | rest | Shimanto canoe, sinking-bridge cycling, Cape Ashizuri |
 | 15 | Castles & Old Towns | Shimanto → Uwajima / Uchiko → Matsuyama | 117 | 3h30m | Uwajima Castle, Uwajima taimeshi, Uchiko old town, Garyū Sansō |
@@ -65,6 +65,8 @@ A full, kid-focused Tokyo day before heading south — three of the city's best 
 
 See [child-pillion safety](00-overview.md#child-pillion-safety-africa-twin) in the overview before Day 3 — fit and test the footpeg reach, backrest/grab bar and tandem belt while the bike is parked today.
 
+> 🧳 **Luggage — start the chain:** the cases forwarded from Tokyo are waiting at the Osaka hotel. **Repack into two parts:** a **chain case** with most of your clothes — **forward it today (or Day-2 morning) from the Osaka front desk to the Shirahama rest base (Days 7–8)**, the first reliable forwarding target, before the late-morning courier cutoff (next-day delivery) — and a heavier **"base-camp" case** of anything you won't need on the road, left in the **Osaka hotel's left-luggage for the whole loop** (collect Day 22). Onto the bikes goes only riding gear + a soft overnight bag. Confirm the front desk will hold the forwarded case under your name for the Day-7 check-in.
+
 **Stops along the way (train / local / on foot):**
 - 🚄 **Nozomi Shinkansen** — ~2h30m glide Tokyo → Shin-Osaka, arriving around midday
 - 🏍️ **Suita rental base** — Bike pickup, paperwork, gear-fit and on-foot shakedown
@@ -108,6 +110,8 @@ A slow day in the sacred interior. Soak in the tiny **Tsuboyu** at Yunomine — 
 
 **Rest-day balance:** a genuine downtime day — the core is onsen soaking, not sightseeing. Keep the **Hosshinmon-ōji → Hongū** Kumano Kodō walk to its short final stretch (the full section is ~7 km / 2–3 h, too much for a 6-year-old); a 30–40 min taster is plenty. **Kawayu's dig-your-own riverbed bath depends on river level** — after the heavy rain this typhoon-exposed corner can bring, the Ōto River runs too high and cold to scoop a bath, so treat it as weather-dependent. **Wet-weather fallback:** the free **Kumano Hongū Heritage Center** by the shrine (Kodō exhibits), the covered ryokan/Honkan indoor hot-spring baths, and boiling eggs at the Yunomine *yuzutsu* spring all work in the rain.
 
+> 🧳 **Luggage:** nothing to send today — you're in the remote Kumano interior (2-day delivery), so the overnight kit stays on the bikes. Your chain case is on its way to the **Shirahama** rest base, waiting there for your **Day-7 arrival**, where you'll have the full suitcase for two nights.
+
 **Stops along the way:**
 - ♨️ **Tsuboyu, Yunomine** — Soak in the only World Heritage bath you can bathe in
 - ♨️ **Kawayu Onsen** — Dig your own bath in the warm riverbed
@@ -138,6 +142,7 @@ A short, scenic coastal day around the peninsula's southern tip. Pause at the ph
 
 **Stops along the way:**
 - 📸 **Hashigui-iwa** — A line of pillar rocks marching out to sea
+- 🇹🇷 **Kushimoto: Ōshima & the Ertuğrul story** — At Japan's southernmost mainland point, the **Turkish Memorial & Museum** on Ōshima tells the moving 1890 tale of the wrecked Ottoman frigate *Ertuğrul* and the villagers who rescued the survivors — the origin of Japan–Turkey friendship, and a piece of history found nowhere else. Pair it with **Kushimoto Marine Park** (Japan's first marine park, 1970, with an undersea observation tower) for the child. **[KID]** *A distinct historical/coastal hook; pick one to keep the short day relaxed.*
 - 📷 **Sandanbeki** — 50 m cliffs with a sea-cave lift to the waves
 - 🍜 **Tore-Tore Ichiba** — Giant seafood market for a tuna lunch
 - 🏖️ **Shirarahama beach** — White-sand beach time on arrival; shallow, gentle swimming (afternoon)
@@ -153,6 +158,8 @@ A short, scenic coastal day around the peninsula's southern tip. Pause at the ph
 The trip's first beach rest base, built around a single big kid day: **Adventure World**, with giant pandas and a drive-through safari. Beach, an open-air sea-edge onsen and an Engetsu Island sunset round it out.
 
 **Rest-day balance — be honest:** **Adventure World is a full, tiring day out, not downtime.** If the family wants the pandas-and-safari day, accept it as the trip's biggest kid day and bank the real rest into the short Days 6–7 and the evening onsen. For a genuinely low-key version, skip the park and do **Shirarahama beach + the Sakino-yu seaside bath + a Tore-Tore Ichiba seafood lunch** at an easy pace. **Wet-weather fallback:** Adventure World runs rain-or-shine (much of the zoo/marine park is covered); the indoor **Kyoto University Shirahama Aquarium** is a well-rated small rainy-day stop for kids; only the beach is weather-dependent.
+
+> 🧳 **Luggage:** the base-camp case stays in Osaka storage; your full chain case is here at Shirahama. **Forward it onward today, Shirahama → Iya/Oboke** — a remote 2-day leg, so sending it now sees it waiting at the Iya ryokan for your Day-10 check-in. Just the overnight bag rides on for the Day-9 ferry/Naruto stop.
 
 **Stops along the way:**
 - 🎯 **Adventure World** — Pandas, safari and a marine park — a full joyful day
@@ -174,6 +181,7 @@ Rather than backtrack through Osaka, the loop crosses the water. Ride up to **Wa
 - 📷 **Wakayama Castle** — Hilltop keep before the port
 - ⛴️ **Nankai Ferry** — ~2h15m crossing to Shikoku, bikes aboard
 - 📸 **Naruto whirlpools** — Uzunomichi glass-floor walkway over the strait
+- ⛩️ **Ryōzen-ji (Temple #1)** — Near the ferry landing, the **start of the 1,200 km Shikoku 88-temple pilgrimage**, where white-clad *henro* set out and buy their staff, bell and book. A gentle, distinctly cultural way to "arrive" on the island, threaded through the whole Shikoku leg. **[KID]**
 
 [🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Shirahama,%20Wakayama,%20Japan&destination=Naruto,%20Tokushima,%20Japan&waypoints=Wakayama%20Castle|Nankai%20Ferry%20Wakayama%20Port|Tokushima%20Port|Uzunomichi%20Naruto&travelmode=driving)
 
@@ -182,12 +190,15 @@ Rather than backtrack through Osaka, the loop crosses the water. Ride up to **Wa
 
 Follow the **Yoshino River** up into Shikoku's dramatic gorge country on easy, well-surfaced two-lane roads — a calm, scenic climb to a remote onsen ryokan. The **Oboke Gorge** is the lunch stop; the Iya valley unfolds above it. Arriving by **early-to-mid afternoon** is by design: it leaves the rest of the day to **settle into the riverside onsen ryokan** — several have a **private cable-car down to open-air baths in the gorge** — so the afternoon is a long soak and slow mountain time, with the vine bridge and gorge boat saved for tomorrow's rest day. Early arrival here is a feature, not dead time.
 
+**Signature new experience:** a **hands-on Awa indigo-dyeing (aizome) workshop** in a Japan-Heritage merchant town — tie-dye your own scarf or handkerchief in the deep "Japan Blue" that made this valley rich.
+
 **Stops along the way:**
 - ☕ **Tokushima riverside** — Coffee and a leg-stretch before the hills
+- 🎨 **Wakimachi Udatsu & Awa indigo workshop** — On the Yoshino River ~45 km west of Tokushima, the preserved Edo merchant street of **Udatsu** (an important national preservation district built on the Awa-indigo trade). Book a short **aizome (indigo-dyeing) workshop** — design and dye your own handkerchief, eco-bag or scarf in natural Awa indigo; Tokushima is essentially the last place in Japan still growing and fermenting indigo into *sukumo*. A ~45–60 min hands-on craft, **[KID]** friendly, right on the Day-10 route. *Reserve ahead; confirm the day's hours and that under-6s can join.*
 - 🍜 **Oboke Gorge** — Gorge-side lunch and a sightseeing boat option
 - 📷 **Iya Valley viewpoint** — Vine bridge and gorge scenery
 
-[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Naruto,%20Tokushima,%20Japan&destination=Oboke,%20Tokushima,%20Japan&waypoints=Tokushima%20Station|Oboke%20Gorge&travelmode=driving)
+[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Naruto,%20Tokushima,%20Japan&destination=Oboke,%20Tokushima,%20Japan&waypoints=Tokushima%20Station|Udatsu%20Wakimachi%20Mima|Oboke%20Gorge&travelmode=driving)
 
 ### Day 11 — Iya Rest Day
 *Iya Valley (light riding) · 25 mi · rest day · Shikoku*
@@ -195,6 +206,8 @@ Follow the **Yoshino River** up into Shikoku's dramatic gorge country on easy, w
 Kazurabashi vine bridge, the peeing-boy statue viewpoint, and an Oboke Gorge sightseeing boat — slow mountain time far from any city.
 
 **Rest-day balance:** a place to do very little — the genuine downtime is the **riverside onsen ryokan** (several have a private cable-car down to open-air baths). Pick **one or two** light outings, not all four: the **Kazurabashi vine bridge** (hold a 6-year-old's hand tightly — the slatted gaps are real and it suits steadier kids) and the **Oboke gorge boat** are the easy pair close to base. **Nagoro Scarecrow Village is a long, winding ~1 h drive deeper up the valley** — make it optional, not a default, on a rest day. **Wet-weather fallback:** the indoor **Lapis Ōboke** rock-and-*yōkai* museum at the gorge, *dekomawashi* skewers by the ryokan hearth, and the onsen itself; the gorge boat may suspend in high water.
+
+> 🧳 **Luggage — the leapfrog node:** **forward the chain case onward today from the Iya ryokan desk, addressed to the Dōgo/Matsuyama hotel held for the Day-15 check-in.** Forwarding *out* of remote Iya is slow (allow 2 days), but Day 11 → Day 15 gives a comfortable margin. The chain **deliberately skips the Shimanto rest base (Days 13–14)** — forwarding into and back out of deep rural west Shikoku would risk missing check-in — so carry the soft overnight bag through the single-night Kōchi stop (Day 12) and both Shimanto nights, then rejoin the full case at Dōgo. The base-camp case remains in Osaka.
 
 **Stops along the way:**
 - 🎯 **Kazurabashi vine bridge** — Cross the swaying vine bridge
@@ -222,13 +235,18 @@ River valleys open out to the Pacific. A kid-favourite Anpanman stop, then Kōch
 
 The longest riding day of the loop — but well inside the comfort cap and bracketed by rest. Follow the **Shimanto**, Japan's last free-flowing clear river, past its low submersible bridges, after a stop at the famously translucent **Niyodo Blue**.
 
+**Signature new experience:** **make your own sheet of Tosa washi** — traditional handmade paper — at the Ino-cho Paper Museum on the famously clear Niyodo River, before following Japan's last free-flowing river to its sinking bridges.
+
+> 🧳 **Luggage:** ride with the overnight bag only. Shimanto is a 2-night base but **deep rural Shikoku (2-day delivery)**, so the chain deliberately **leapfrogs it** — your chain case is already in transit from Iya to Dōgo (arriving Day 15), and you travel light through both Shimanto nights. (Kōchi has same-day Yamato counters, but forwarding from there to remote Shimanto won't reliably beat you — not worth it.)
+
 **Stops along the way:**
+- 🎨 **Tosa washi paper-making, Ino-cho** — At the **Ino-cho Paper Museum** on the **Niyodo River** (right by the Niyodo Blue stop, ~30 min west of Kōchi), try the *nagashizuki/tamesuki* technique and **make your own postcards or a sheet of Tosa washi** — one of Japan's three great handmade papers — for ¥400 in ~30–40 min. A great hands-on craft for a 6-year-old. **[KID]** *Open 09:00–17:00, **closed Mondays** (Tue if Mon is a holiday) — if Day 13 is a Monday, do it on the Day-12 afternoon or skip.*
 - 📸 **Niyodo Blue river** — Famous translucent-blue river
 - ☕ **Susaki** — Nabeyaki-ramen coffee stop
 - 🍜 **Tatsukushi coast** — Seaside lunch
 - 📷 **Sada Chinkabashi** — Shimanto 'sinking bridge' photo
 
-[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Kochi,%20Japan&destination=Shimanto,%20Kochi,%20Japan&waypoints=Niyodo%20River|Susaki%20Kochi|Tatsukushi|Sada%20Chinkabashi%20Shimanto&travelmode=driving)
+[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Kochi,%20Japan&destination=Shimanto,%20Kochi,%20Japan&waypoints=Ino-cho%20Paper%20Museum|Niyodo%20River|Susaki%20Kochi|Tatsukushi|Sada%20Chinkabashi%20Shimanto&travelmode=driving)
 
 ### Day 14 — Shimanto Rest Day
 *Shimanto River (light riding) · 20 mi · rest day · Shikoku*
@@ -249,6 +267,8 @@ River canoeing or a sightseeing boat, riverside cycling, and slow rural time by 
 
 Uwajima Castle and Uchiko's preserved merchant streets en route up the Ehime coast to Matsuyama and Dōgo Onsen.
 
+> 🧳 **Luggage:** roll into the **Dōgo/Matsuyama 2-night base** — a proper city with reliable next-day Yamato service — where your chain case (forwarded from Iya on Day 11) is **waiting at the front desk.** Confirm it's held under your name at check-in and unpack the full suitcase for two nights.
+
 **Stops along the way:**
 - 📸 **Uwajima Castle** — Original hilltop keep
 - 🍜 **Uwajima taimeshi** — Sea-bream-over-rice lunch
@@ -264,6 +284,8 @@ Matsuyama Castle by ropeway, then the historic Dōgo Onsen bathhouse. Classic on
 
 **Rest-day balance:** the most **rain-proof rest day** of the loop and the natural **city-comforts / laundry day**. The castle **ropeway-or-chairlift** (a kid hit), the **Dōgo Onsen Honkan** soak and the **covered Dōgo Haikara-dōri arcade** all work in any weather; keep a 6-year-old's Honkan soak short (it gets hot and busy), or book **Asuka-no-Yu's private family bath** if that's easier with a child. Genuine downtime = the Honkan soak, a *Botchan-dango* in the arcade and the **mikan-juice tap**; Ishite-ji is an optional add, not a must.
 
+> 🧳 **Luggage — next chain node, an easy one:** Matsuyama → Onomichi is a clean **city-to-city next-day leg**. **Forward the chain case from the Dōgo hotel today (Day 16) before the late-morning courier cutoff, addressed to the Onomichi/Setoda hotel held for the Day-17 check-in** (arrives next day). Repack the soft overnight bag for the Shimanami Kaidō ride; the base-camp case remains in Osaka.
+
 **Stops along the way:**
 - 🎯 **Matsuyama Castle** — Ropeway to a hilltop original castle
 - 🎯 **Dōgo Onsen Honkan** — Soak in the historic bathhouse
@@ -277,8 +299,11 @@ Matsuyama Castle by ropeway, then the historic Dōgo Onsen bathhouse. Classic on
 
 The famous island-hopping bridge route across the Seto Inland Sea — gentle, scenic, unforgettable, and a highlight ride for the whole family.
 
+> 🧳 **Luggage:** ride the overnight bag over the bridges into the **Onomichi/Setoda 2-night base** (the last base before Osaka), where your chain case (forwarded from Dōgo on Day 16) is **waiting at the front desk** — confirm it's held under your name at check-in and unpack the full suitcase for two nights.
+
 **Stops along the way:**
 - 📸 **Imabari Castle** — Sea-water-moat castle
+- 🧵 **Imabari towel craft** — Imabari is **Japan's towel capital (~120 yrs, the leading domestic producer)**. Start the day with a quick hands-on stop: the free, walk-in **Imabari Towel LAB** by the port, or the larger **Towel Museum ICHIHIRO** (working looms you can watch, a Moomin gallery, and a make-your-own-towel corner) — a soft, regional craft that suits a 6-year-old before the bridges. **[KID]** *Confirm hours/closing day and that the museum detour fits the riding window; the LAB is the lighter option.*
 - ☕ **Kirosan Observatory** — Bridge panorama coffee
 - 🍜 **Ōyamazumi Shrine, Ōmishima** — Samurai-armour shrine, lunch
 - 📷 **Setoda, Ikuchijima** — Lemon gelato & Kōsanji temple
@@ -291,6 +316,8 @@ The famous island-hopping bridge route across the Seto Inland Sea — gentle, sc
 Setoda temple, lemon groves and gelato, Onomichi's hillside lanes and cat alley. Easy pace.
 
 **Rest-day balance:** easy and flat at sea level, but **Onomichi's temple hill is steep stairs** — do the kid-friendly version: **ride the Senkō-ji ropeway up and stroll down**, rather than walking the full 25-temple climb. Pair one hill outing with flat harbour time — lemon gelato and waterfront cafés at **Setoda / Onomichi U2** — for real downtime. **Wet-weather fallback:** the converted-warehouse **Onomichi U2** cycle complex (shops/cafés), the covered **Onomichi shōtengai arcade**, and **Kōsan-ji's** indoor halls and covered "1000-Buddha" cave; the stone lanes and the Hill of Hope marble get slippery in rain, so save them for a dry spell.
+
+> 🧳 **Luggage — closing the loop:** **forward the chain case from Onomichi straight back to the Osaka end hotel today (Day 18)**, held under your name, so it rejoins the base-camp case there ahead of your Day-22 return; you'll ride the final three single-night days (Kurashiki → Kobe → Awaji) on just the overnight bag. *(Alternatively, since those days all funnel into Osaka anyway, you could carry the case on the bikes — but forwarding keeps the bikes light for the Himeji/Akashi-Kaikyō run.)* The base-camp case is still in Osaka storage.
 
 **Stops along the way:**
 - 🎯 **Senkōji Ropeway** — Hilltop view over the town & sea
@@ -317,7 +344,10 @@ The plan commits to **Kurashiki** — its willow-lined Bikan canal quarter and t
 
 A relaxed run east to Japan's most magnificent castle. The shorter drive leaves a proper half-day for **Himeji Castle** and its Kōko-en garden, then an easy hop into **Kobe** for the night. _Garden lovers can detour to Okayama Kōrakuen early in the day — budget the extra ~40 mi / 1h30m._
 
+**Signature new experience:** **shape your own Bizen-yaki** — one of Japan's six ancient unglazed stoneware traditions — in the kiln town of **Imbe**, right on the Route 2 run east, before reaching the great White Heron castle.
+
 **Stops along the way:**
+- 🎨 **Bizen-yaki pottery town, Imbe** — On **Route 2 east of Okayama (~35 min from Kurashiki)**, the kiln village of **Imbe (Bizen City)** is the home of **Bizen ware**, one of Japan's *six ancient kilns* — rustic, unglazed, wood-fired stoneware made here for ~1,000 years. Wander the brick-chimney streets, see the **Bizen-yaki / Bizen City Museum of Art** (9:00–17:00, **closed Mon**; ¥700 adult, free for under-15s), and book a short **hand-shaping workshop** (10–40 min, beginner-friendly, instructor-led) to make a cup or small bowl that's fired and posted on. A distinct hands-on craft on an otherwise castle-only day. **[KID]** *Reserve a studio ahead; confirm under-6 participation and that Day 20 isn't a Monday.* Sword fans can instead pause ~10 min east at the **Bizen Osafune Sword Museum** (live smith/polisher workshops Sun; closed Mon).
 - 🍜 **Himeji Castle & Kōko-en** — White Heron castle + garden, unhurried, with lunch
 - 📷 **Kobe Harborland** — Harbour evening & Kobe beef
 
@@ -340,6 +370,8 @@ A short, scenic flourish to close the loop: cross the **Akashi Kaikyō Bridge** 
 *Osaka (light riding) · 15 mi · rest day · Kansai*
 
 Return the motorcycles at the Suita base and celebrate the journey. A relaxed Osaka recovery day before tomorrow's big USJ outing — Osaka Castle and park, and the food streets of Dōtonbori.
+
+> 🧳 **Luggage:** the loop is closed and both cases are back in Osaka — the **base-camp case from left-luggage storage** and the **chain case forwarded back from Onomichi on Day 18** — reunite and repack them. Decide the homeward move: either **takkyūbin both cases ahead to the Tokyo departure hotel (or Haneda) on Day 22–23** so the Day-24 Nozomi is light (allow the day in transit — send before the morning cutoff), or carry them on the train. Empty the panniers and consolidate.
 
 **Stops along the way:**
 - 🏯 **Osaka Castle** — Castle & park

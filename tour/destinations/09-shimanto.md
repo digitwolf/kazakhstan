@@ -18,6 +18,7 @@ Two nights by the river is the trip's most rural, slowed-down pause: canoeing on
 - **Riverside cycling** — flat, quiet lanes along the water with easy swimming holes in summer; bikes rent at the michi-no-eki **[KID]**
 - **Cape Ashizuri (Ashizuri-misaki)** — Shikoku's wild granite southern point, a white lighthouse over Pacific cliffs and the pilgrimage temple **Kongōfuku-ji** (Temple #38); a fine longer Day-14 ride
 - **Tatsukushi coast** (on the Day-13 ride in) — bizarre wave-eroded rock formations and a glass-bottom boat over coral **[KID]**
+- **Tosa washi paper-making, Ino-cho** (on the Day-13 ride in) — the **Ino-cho Paper Museum** on the clear **Niyodo River** lets you **make your own postcards or a sheet of Tosa washi**, one of Japan's three great handmade papers, by the traditional *nagashizuki* method (¥400, ~30–40 min) — a hands-on craft hit for a child. **[KID]** *Closed Mondays (Tue if Mon is a holiday)*
 - **Michi-no-eki Tōwa & tea hamlets** — roadside stations selling river *aonori*, tea and *ayu* — good regroup stops
 
 ## What to eat
@@ -39,6 +40,7 @@ _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secur
 
 ## Links
 - [Shimanto City tourism](https://www.shimanto-kankou.com/)
+- [Ino-cho Paper Museum — Tosa washi (official, JapanTravel/Adventure)](https://www.japan.travel/en/sports/adventure/activities/ino-cho-paper-museum/)
 - [Wikipedia — Shimanto River](https://en.wikipedia.org/wiki/Shimanto_River)
 
 ## Photos (9)

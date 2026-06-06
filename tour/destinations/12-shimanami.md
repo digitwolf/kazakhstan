@@ -15,6 +15,7 @@ It is gentle, scenic and unforgettable riding — well-surfaced, never technical
 ## Things to see & do
 - **Kurushima-Kaikyō Bridge** — a **4 km triple suspension span** (the world's first) over the fast Kurushima strait; the **Kirōsan Observatory** above it gives the classic aerial-style panorama of the bridges marching across the sea **[KID]**
 - **Imabari Castle** — a rare **sea-water-moat castle** flushed by the tides, with the keep reflected in the saltwater **[KID]**
+- **Imabari towel craft** — Imabari is **Japan's towel capital** (~120 years, the country's leading producer). See the craft at the free walk-in **Imabari Towel LAB** by the port (browse and learn) or the larger **Towel Museum ICHIHIRO** (watch the looms run, a Moomin gallery, and a make-your-own-towel corner) — a soft, hands-on regional craft that suits a small child before the bridges **[KID]** *Confirm the towel-museum detour fits the riding window; the LAB is the lighter stop*
 - **Ōyamazumi Shrine (Ōmishima)** — the head shrine of all Japan's mountain/sea/war gods, under a ~2,600-year-old sacred camphor tree, holding the country's **largest collection of historic samurai armour and swords** (much of it National Treasure grade) **[KID]**
 - **Tatara Bridge** — a graceful 1,480 m cable-stayed span; the roadside station beneath has a "whispering gallery" spot at the tower base **[KID]**
 - **Setoda, Ikuchijima** — lemon groves, lemon gelato, and the dazzling, slightly outrageous **Kōsan-ji** temple with its marble "Hill of Hope" (covered on the Onomichi/Setoda stop) **[KID]**
@@ -40,6 +41,7 @@ _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secur
 
 ## Links
 - [Shimanami Kaido (official)](https://shimanami-cycle.or.jp/global/)
+- [Towel Museum ICHIHIRO, Imabari (Visit Ehime)](https://www.visitehimejapan.com/en/things-to-do/spots/0015/)
 - [Wikipedia — Nishiseto Expressway](https://en.wikipedia.org/wiki/Nishiseto_Expressway)
 
 ## Photos (9)

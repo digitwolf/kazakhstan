@@ -47,7 +47,7 @@ Note: attractions are scattered and mountain roads slow — plan 2–3 bases, no
 - **Kotohira-gū (Konpira-san) (Kagawa)** — hilltop shrine reached by 1,368 stone steps; panoramic views. (Strenuous climb — palanquin historically; optional with a child.)
 - **Kōchi** — Kōchi Castle (original keep), Katsurahama beach; gateway to Niyodo Blue, Shimanto River and Capes Muroto/Ashizuri. **[KID]** castle + beach.
 - **Takamatsu (Kagawa)** — Ritsurin Garden (one of Japan's finest landscape gardens); Sanuki udon. **[KID]** garden + boat.
-- **Art islands (Naoshima/Teshima)** — Setouchi contemporary-art islands, reachable by ferry from Takamatsu/Uno. **[KID]** outdoor art (Yayoi Kusama pumpkins).
+- **Art islands (Naoshima/Teshima)** — Setouchi contemporary-art islands, reachable by ferry from Takamatsu/Uno. **[KID]** outdoor art (Yayoi Kusama pumpkins). _Fit-to-loop feasibility (zero added days vs +1 night, ferry, half-day budget, Monday closures) is worked out in **[naoshima-feasibility.md](naoshima-feasibility.md)** — documented, not yet in the plan._
 - Sources: https://www.japan.travel/en/my/the-latest-itinerary/shikoku-itinerary-iya-valley-dogo-onsen/ · https://www.lonelyplanet.com/articles/top-things-to-do-in-shikoku
 
 ---
@@ -60,6 +60,7 @@ Note: attractions are scattered and mountain roads slow — plan 2–3 bases, no
 - **Nara** — Nara Park free-roaming (bow-happy) deer, Tōdai-ji Great Buddha. **[KID]** the deer are a classic kid highlight.
 - **Himeji** — **Himeji Castle**, Japan's finest original castle (UNESCO, "White Heron"), ~15 min walk from Himeji Station; adjacent Kōko-en garden. **[KID]**
 - **Kobe** — harbour city, Mt. Rokkō, Nada sake district.
+- **Kawasaki Good Times World (Kobe)** — Kawasaki Heavy Industries' museum inside the Kobe Maritime Museum at **Meriken Park**, a short walk from Kobe Harborland. Sit-on motorcycle gallery, jet-skis, a riding simulator, Shinkansen cab, helicopter and robots. **[KID]** **The one major corporate motorcycle museum that sits on the Osaka-anchored loop** (Honda/Motegi, Yamaha/Iwata, Suzuki/Hamamatsu are all Tōkai/Kantō, off-route). *Closed Mondays (next day if Mon is a holiday) + Dec 29–Jan 3; ~10:00–18:00, last entry 17:30; ¥900 adult / ¥400 school-age / free under 6; paid Meriken Park parking.* Sources: https://www.khi.co.jp/kawasakiworld/english/ · https://www.khi.co.jp/kawasakiworld/english/how/
 - Sources: https://livejapan.com/en/in-kansai/in-pref-osaka/in-usj_nanko-port/article-a2000786/ · https://www.thebackpackadventures.com/2019/07/10-kid-friendly-places-in-kansai-region.html
 
 ### Onsen

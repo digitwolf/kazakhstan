@@ -37,6 +37,63 @@ current figures before the trip; prices/policies drift.
 - Why it matters for this trip: it lets an Osaka loop run **Kii Peninsula → Shikoku without backtracking through Osaka**, replacing a ~4–5h road transfer (around via Kobe/Awaji) with a restful ~2h15m crossing — and a fun boat ride for a child.
 - Sources: <https://nankai-ferry.co.jp/> · timetable <http://nankai-ferry.co.jp.e.afe.hp.transer.com/timetable/> · guide <https://e-stay.jp/en/wakayama/nankai-ferry/>
 
+## Luggage forwarding (takkyūbin / takuhaibin) — the key tool for a moto family
+Motorcycles cannot carry big suitcases, so **door-to-door courier luggage forwarding is essential**, not optional. This is the standard, well-established way to move bags around Japan.
+
+### What it is
+- **Takkyūbin / takuhaibin** = door-to-door parcel/luggage courier. The dominant carrier is **Yamato Transport** (the black-cat "Kuroneko" brand; the service is "TA-Q-BIN"). **Sagawa Express** is the main alternative; smaller carriers exist. Hotels almost always partner with one of them.
+- It is the everyday tool for **hotel-to-hotel (and airport-to-hotel) bag forwarding**, used constantly by Japanese travellers and tourists alike. Cool/frozen variants exist (for food) but are irrelevant to luggage.
+
+### How to book (it's done at the hotel front desk)
+- Ask at the **hotel front/bell desk** — they keep the courier consignment forms (**送り状 / *okurijō*** waybill) and arrange the daily pickup.
+- You fill in the **destination hotel name + address + phone**, **your name** (the guest the bag will be held under), and the **intended check-in / arrival date**. The desk helps with the Japanese address fields.
+- **Pay at the desk, usually cash** (some take card). Keep the tracking slip — the waybill has a tracking number.
+- The front desk hands the bag to the courier at the once-daily pickup. **Confirm the destination hotel will hold luggage under the guest name for the arrival date** — this is standard for hotels/larger ryokan, but **call ahead for small ryokan, minshuku and temple lodging (shukubō)**, which have limited reception hours and storage.
+
+### Where it's left / picked up — the "lobby-to-lobby" reality
+- It is **front-desk to front-desk, by delivery van** — **NOT** coin lockers, **NOT** self-service, and **NOT** instant. Think "hotel reception → courier van → next hotel reception," handled by staff at both ends.
+- **Drop:** leave the bag with the front/bell desk **before the courier's once-daily morning cutoff** (commonly ~10:00–12:00; varies by property and area — confirm the day before). Miss the cutoff and the bag goes the *next* day.
+- **Collect:** it arrives at the next hotel's front desk, who **hold it for your check-in**. So in practice it is effectively "lobby-to-lobby," but **time-shifted by ~1 day**, not a same-trip same-day handoff.
+
+### Timing (critical for routing)
+- **Next-day delivery** to most Honshū/Shikoku cities **if dropped before the morning cutoff** (send today → arrives tomorrow). Same-region can sometimes be same-/next-day.
+- **Allow 2 days to remote / mountain areas:** Kōyasan, the Kumano interior (Yunomine/Hongū), the Iya Valley/Oboke, and deep rural Shikoku. Send-by / arrives logic: drop on Day X → arrives Day X+2.
+- **Consequence:** you generally **cannot forward a bag to a single-night remote stop and have it meet you in time.** Forward bags must **leapfrog single-night and remote stops** to a later **multi-night base**.
+
+### Size / weight & cost (Yamato, re-confirm)
+- **Size cap ~160 cm** total dimensions (L+W+H), **≤25 kg** per piece. (Convenience-store drop-offs can be stricter, ~varies; hotel desks handle full-size suitcases fine.)
+- **Cost ~¥1,500–¥3,200 per medium suitcase per leg** depending on size and distance (a Tokyo↔Osaka-length leg for a standard 60–160 cm case runs roughly ¥1,600–¥3,170); short regional legs are cheaper, long-distance/larger cases more.
+- Sources: <https://www.kuronekoyamato.co.jp/ytc/en/send/services/> · <https://www.japan-guide.com/e/e2278.html> · <https://mailmate.jp/blog/japan-luggage-delivery> · <https://www.japan-experience.com/plan-your-trip/to-know/before-you-travel/takkyubin-ship-your-luggage-between-destinations-in-japan>
+
+### Luggage strategy for THIS Osaka loop (motorcycle-specific)
+The route is an **Osaka loop** (pick up and return the bikes at the Suita base) built around **six 2-night rest bases**, and that rest-base rhythm is what makes the luggage plan work.
+
+#### The plan: forward the big case(s) rest-base → rest-base
+**The recommended pattern is a rest-base-to-rest-base forwarding chain.** The main suitcase(s) **leapfrog by takkyūbin from one 2-night rest base to the next** (and to/from the Osaka start/finish), arriving ahead of the family. Between the rest bases, the family **carries only a small soft overnight bag + riding gear on the bikes** for the single-night stops in between. This gives the comfort of a full suitcase at every rest base — where the family actually unpacks, does laundry and stays two nights — without ever strapping a big case to a motorcycle.
+
+- **The chain (primary plan), in route order:**
+  - **Osaka (start)** → forward the big case(s) to **Shirahama** (Days 7–8). *Why skip the first rest base (Kumano interior, Days 4–5)? It's a 2-day-delivery remote area, so a case sent from Osaka may not arrive in time — and the family is riding through it self-contained anyway. Shirahama is the **first reliable forwarding target**.*
+  - **Shirahama (Days 7–8)** → forward to **Iya/Oboke (Days 10–11)**. *Iya is itself a remote 2-day area, so send it on the **Day-7 arrival** at Shirahama (not on departure) to be sure it's waiting at check-in.*
+  - **Iya/Oboke (Days 10–11)** → forward to **Dōgo/Matsuyama (Days 15–16)**. *This leg skips the Shimanto rest base (Days 13–14); see the timing exception below.*
+  - **Dōgo/Matsuyama (Days 15–16)** → forward to **Onomichi/Setoda (Days 17–18)**.
+  - **Onomichi/Setoda (Days 17–18)** → forward to **Osaka** for the finish.
+- **On the bikes between bases:** the small overnight bag + riding gear, rain layers, tools/first-aid, and 1–2 days of clothes in panniers / top-box / tail bag. Bike Rental Japan offers a **support-truck add-on (~¥10,000/day)** and panniers/top-box on some models if the family wants to move more than fits on two bikes (see `motorcycle-rental.md`).
+
+#### Supporting detail & exceptions
+- **Osaka-loop storage simplifies it further.** Because the loop starts and ends in Osaka, anything the family won't need on the road (spare clothes, souvenirs accumulated, off-bike shoes) can simply **wait in left-luggage at the Osaka start hotel** (or storage at the Suita rental base) from Day 2 to Day 22, rather than riding the chain at all. So in practice the chain moves *one* main forwarded case while a second, heavier "base camp" case stays parked in Osaka — keep each forwarded leg light.
+- **Remote / single-night timing exceptions — never forward into these:**
+  - **Kōyasan (Day 3, single-night shukubō, remote)** — 2-day delivery + limited temple reception; carry the night's kit on the bikes.
+  - **Kumano interior / Yunomine–Hongū (Days 4–5 rest base, but remote 2-day area)** — the one rest base the chain *skips*; ride it self-contained.
+  - **Nachi-Katsuura (Day 6), Naruto (Day 9), Kochi (Day 12), Uchiko/Uwajima (Day 15 en route), Kurashiki (Day 19), Himeji/Kobe (Day 20), Awaji (Day 21)** — single-night stops; the overnight bag rides on the bikes, the forwarded case is already waiting at the next *rest base*.
+  - **Shimanto River (Days 13–14 rest base)** — a genuine 2-night base, but the chain **leapfrogs it** (Iya → Dōgo direct) because forwarding *into* and *out of* deep rural west Shikoku eats two transit days each way and risks missing the Day-13 check-in. Carry the overnight bag through the Shimanto nights; the main case meets you again at Dōgo on Day 15.
+- **Allow the right transit time on every forwarded leg:** next-day to cities, **2 days to remote/mountain areas** (Iya is the one that needs 2 days). Drop the case at the front desk **before the morning courier cutoff** (~10:00–12:00) or it goes the next day — which on a 2-night base means sending it on the **arrival** afternoon, not the departure morning.
+- **Bookends (consistent with `00-overview.md`):**
+  - **Arrival:** on the **Day-1 Tokyo museum day** (or the Day-0 night), forward the big cases by takkyūbin from the Tokyo hotel to the **Osaka start hotel** (arrives next day) so the **Day-2 Shinkansen** is light. On **Day 2** at the Osaka hotel, **repack into the case that rides the rest-base chain vs. the case that stays in Osaka storage**, then send the chain case ahead to Shirahama.
+  - **Departure:** the chain delivers the forwarded case back to Osaka by the finish; reunite it with the stored case there, then either **takkyūbin both to the Tokyo departure hotel / Haneda** (forward on **Day 22–23**, allowing the day in transit) or carry them on the **Day-24 Nozomi**. Airport TA-Q-BIN can also deliver hotel→airport for the flight home.
+  - **Reconfirm before relying:** cutoffs, prices and small-ryokan hold policies drift — verify at each desk the day before, and call remote lodging ahead.
+
+---
+
 ## Onsen with tattoos (brief)
 - The picture is **easing in 2026**: roughly **~20%** of onsen welcome tattoos unconditionally and **~30%** allow entry if you **cover** the tattoo with a sticker; tourist-heavy areas (Hakone, Beppu, Nikko) are more relaxed, and the Japan Tourism Agency has encouraged cover-stickers and private baths. Major brands (e.g. Hoshino Resorts) have group-level non-restriction statements.
 - **Practical options:** waterproof **tattoo cover stickers** ("tattoo hidden sheets") from convenience stores/drugstores for small work; **private/family baths (kashikiri-buro)** rented in 40–60 min slots (free with some ryokan stays up to ~¥3,000); ryokan rooms with **en-suite rotenburo**. A private bath also sidesteps the no-kids/crowd issues and is convenient for a family.
@@ -56,5 +113,6 @@ current figures before the trip; prices/policies drift.
 - Japan-Guide — expressways: https://www.japan-guide.com/e/e2354.html
 - Trip.com — ETC card for foreigners: https://www.trip.com/guide/transport/etc-card-japan.html
 - The Ninja Rider — touring/rental guides: https://theninjarider.com/motorcycle-touring-japan-guide/ , https://theninjarider.com/motorcycle-rental-japan/
+- Takkyūbin / luggage forwarding: https://www.kuronekoyamato.co.jp/ytc/en/send/services/ , https://www.japan-guide.com/e/e2278.html , https://mailmate.jp/blog/japan-luggage-delivery , https://www.japan-experience.com/plan-your-trip/to-know/before-you-travel/takkyubin-ship-your-luggage-between-destinations-in-japan
 - Onsen tattoo guides: https://thejapanode.com/guides/japan-onsen-etiquette-tattoo-guide , https://www.tattoofriendlyonsen.com/guides/can-you-visit-onsen-in-japan-with-tattoos , https://www.japan.travel/en/uk/inspiration/onsen-hot-springs-on-tattoos-and-etiquette/
 - Road rules: https://www.shogunmotorbikeadventures.com/blogs/japanese-road-rules-for-foreign-riders , https://www.japan-experience.com/plan-your-trip/to-know/traveling-japan/riding-a-motorbike-in-japan
