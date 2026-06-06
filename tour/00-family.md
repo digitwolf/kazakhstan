@@ -14,8 +14,8 @@ person likes** should steer destinations, stops, food, lodging and the website's
 ## Galiya — 41, Rider 2 (sub-500cc bike; sets the group pace)
 - Born in **Kazakhstan**; in **Seattle since 2008**.
 - Long experience **as Ruslan's pillion**; her longest tour was **4–5 days Seattle → California and back**, with long riding days — *but as a passenger*. As a **solo rider she is still newer**, on the sub-500cc bike (Honda CB400X class). **Her confidence sets the group's pace and she rides near the front** — keep roads paved, non-technical, no wet twisties pushed hard, no narrow roads after dark, no weekend rider-road crowds.
-- **Big foodie** and loves **Japanese art, Studio Ghibli, and *Ponyo*** specifically. Loves **sushi and ramen**.
-- **Planning implication:** she is the rider the *safety/pace* rules protect, and the traveller whose *interests* (food + art + Ghibli) should be weighted most when choosing stops and where to eat. Prioritize regional cuisine eaten where it's made, notable sushi/ramen, art museums and Ghibli/anime-film tie-ins.
+- **Big foodie** — especially **ramen and noodles** generally (udon, soba, etc.), plus sushi. Loves **Hayao Miyazaki / Studio Ghibli films** (*Ponyo* especially), **Japanese art**, and **traditional Japanese baths (onsen / sentō)**. Also enjoys **Nintendo / Mario and Transformers** (shared with Aslan).
+- **Planning implication:** she is the rider the *safety/pace* rules protect, and the traveller whose *interests* (food + Ghibli/Miyazaki + art + onsen) should be weighted most when choosing stops and where to eat. Prioritize standout **ramen/noodle** spots and regional cuisine eaten where it's made, **Miyazaki/Ghibli tie-ins**, art museums, and proper **traditional onsen/bath** experiences. The Mario/Transformers overlap with Aslan makes Nintendo/character stops a double win.
 
 ## Aslan — 6, Passenger (rides with dad)
 - Born in the **US**; speaks **English and Russian**.
@@ -29,14 +29,15 @@ person likes** should steer destinations, stops, food, lodging and the website's
 Use this as a scoring lens: a strong day/stop hits several of these for *more than one* person.
 
 ### Food & drink (Galiya leads — she's the foodie)
-- **Sushi** and **ramen** — seek out the regional best (e.g. Tokushima/Wakayama ramen, Kōchi katsuo, Setouchi seafood), eaten where it's made.
+- **Ramen and noodles** (her favourites — ramen, udon, soba) and **sushi** — seek out the regional best (e.g. Tokushima/Wakayama ramen, Sanuki udon, Kōchi katsuo, Setouchi seafood), eaten where it's made.
 - Regional specialties and market food halls (Hirome Market, Toretore Ichiba, Nishiki-style markets), sake/local drink where it fits.
 - Good food is a first-order reason to choose a stop or a town to overnight in — not an afterthought.
 
 ### Art & culture (Galiya leads)
 - **Japanese art** and museums — Ōhara (Kurashiki), Ōtsuka (Naruto), and the Naoshima art islands (see `research/naoshima-feasibility.md`).
-- **Studio Ghibli / *Ponyo*** tie-ins — Tomonoura (the *Ponyo* town) is already a stop; the Dōgo Onsen / *Spirited Away* imagery connection; a Ghibli Museum/Park is a Tokyo-bookend option only (off the loop).
-- Hands-on **crafts** (indigo, washi, pottery, towels), traditional ryokan/onsen, temples, shrines, pilgrimage, historic towns.
+- **Miyazaki / Studio Ghibli / *Ponyo*** tie-ins — Tomonoura (the *Ponyo* town) is already a stop; the Dōgo Onsen / *Spirited Away* imagery connection; a Ghibli Museum/Park is a Tokyo-bookend option only (off the loop).
+- **Traditional baths (onsen / sentō)** — she specifically loves these; prioritize proper traditional bathhouses and onsen-ryokan soaks (Yunomine's Tsuboyu, Dōgo Onsen Honkan, the Kumano riverbed baths).
+- Hands-on **crafts** (indigo, washi, pottery, towels), traditional ryokan, temples, shrines, pilgrimage, historic towns.
 
 ### Aslan (6) — keep him engaged
 - **Toy & souvenir stops** (he loves buying toys) — flag character/toy shops, Nintendo/Pokémon stores, anime/game shops, arcades along the way and in overnight towns.
