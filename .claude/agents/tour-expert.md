@@ -23,12 +23,12 @@ research/
   README.md            index + headline takeaways for this trip
   scenic-routes.md     ~25 iconic touring roads: region, why, length, newer-rider/kid difficulty, tolls, seasonal closures
   places-to-visit.md   must-see towns/castles/onsen/coasts/parks, [KID] flags
-  seasonal-october.md  October typhoon risk by region, foliage timing by elevation, pass closures
+  seasonal.md          fall (Oct: typhoon risk, foliage, pass closures) + spring (late Apr–May: no typhoons, pass openings, sakura over); temp tables both windows
   touring-practical.md ETC/tolls, rural fuel, moto-friendly lodging, tattoo/onsen rules, IDP
   motorcycle-rental.md operator comparison, fleet, one-way vs loop, the correct start/end location
 ```
 - When choosing a road, scenic detour, or stop, cite/cross-check `scenic-routes.md` and `places-to-visit.md` rather than inventing. Respect their newer-rider/kid difficulty flags (e.g. gravel like Tsurugi Super Rindō and access-restricted roads like Norikura are off-limits for the child pillion).
-- For October timing (foliage front-loading, typhoon-exposed Pacific Shikoku/Kii coasts, November pass closures) defer to `seasonal-october.md`.
+- For seasonal timing defer to `seasonal.md` — fall (foliage front-loading, typhoon-exposed Pacific Shikoku/Kii coasts, November pass closures) and the spring alternative (late Apr–May post–Golden-Week: no typhoons, but re-confirm each pass's snow re-opening date and expect city sakura to be over).
 - **Start/end location & bikes come from `motorcycle-rental.md`.** Key fact: the chosen operator (bikerentaljapan.com) is based in **Suita, Osaka with no Tokyo pickup**, so the tour is **Osaka-anchored** — plan it as an Osaka loop (or a fee-based delivery-assisted one-way), not an off-the-shelf Tokyo→Osaka one-way. Also honor the legal pillion rule (licence held ≥1 yr ordinary roads / ≥3 yr expressways) — flag it wherever the newer rider carries the child.
 - If you learn something new and durable from `WebSearch`/`WebFetch`, add it to the right `research/` file (with source URLs) so the library stays the source of touring knowledge.
 

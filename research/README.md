@@ -9,7 +9,7 @@ the current plan. Facts are cited inline with source URLs; verify live before co
 ## Files
 - **[scenic-routes.md](scenic-routes.md)** — Catalogue of iconic touring roads/byways (Izu Skyline, Hakone Turnpike, Irohazaka, Venus Line, Shimanami Kaido, UFO Line, Niyodo/Shimanto valleys, Yamanami/Aso, Tōhoku/Hokkaidō highlights). Each: region, why ride it, length, newer-rider/kid difficulty, toll & seasonal-closure notes.
 - **[places-to-visit.md](places-to-visit.md)** — Must-see towns, castles, onsen, coasts and national parks along the Honshu+Shikoku+Kansai loop, with **[KID]** flags for family-friendly stops.
-- **[seasonal-october.md](seasonal-october.md)** — October specifics: typhoon risk by region, autumn-foliage timing by elevation, and which mountain passes close for winter (many in November) — plus a ride-planning checklist.
+- **[seasonal.md](seasonal.md)** — Both recommended windows side by side: **fall** (Oct–early Nov: typhoon risk, autumn-foliage timing by elevation, passes closing) and **spring** (late Apr–May post–Golden-Week: no typhoons, passes re-opening, sakura mostly over). Temperature-by-region tables for each, a spring-vs-fall recommendation, and per-window ride-planning checklists.
 - **[touring-practical.md](touring-practical.md)** — Tolls/ETC, fuel availability in rural areas, motorcycle-friendly lodging, onsen-with-tattoo rules, and quick road-rule reminders.
 - **[motorcycle-museums.md](motorcycle-museums.md)** — Motorcycle/auto museums and which fit the Osaka loop: Kawasaki Good Times World (Kobe, Day 19) and the Shikoku Automobile Museum (Kōchi, Day 11) are on-route; Honda Motegi / Yamaha Iwata / Suzuki Hamamatsu / Iwashita (Kyushu) are off-route. Opening-day caveats and a Tokyo-bookend option.
 
