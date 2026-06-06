@@ -46,6 +46,31 @@
   .note{color:var(--muted);font-size:13px;margin:-6px 0 14px;}
   .summary-lead{font-size:16.5px;color:#dbe3ea;margin:0 0 14px;}
   .summary-body{font-size:14.5px;color:#c7d1db;margin:14px 0 0;}
+  /* luggage (takkyūbin) callout — a distinct, easy-to-spot "what to do with the bags today" note */
+  .luggage{display:flex;gap:13px;align-items:flex-start;margin:16px 0 0;padding:14px 16px;
+    background:linear-gradient(180deg,rgba(240,168,48,.10),rgba(240,168,48,.045));
+    border:1px solid rgba(240,168,48,.42);border-left:4px solid var(--accent-2);border-radius:11px;}
+  .luggage .lg-ic{font-size:22px;line-height:1.2;flex-shrink:0;}
+  .luggage .lg-b{flex:1;}
+  .luggage .lg-k{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-2);margin-bottom:3px;}
+  .luggage .lg-d{font-size:14px;color:#e5ddcb;line-height:1.55;}
+  .place-ctx{font-size:14px;color:#aeb9c4;font-style:italic;margin:0 0 14px;}
+  /* interest badges — tie to the family interests in tour/00-family.md */
+  .badges{display:flex;flex-wrap:wrap;gap:6px;}
+  .badge{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;
+    padding:3px 9px;border-radius:999px;background:var(--panel-2);border:1px solid var(--line);color:#dbe3ea;}
+  .badge .em{font-size:12.5px;line-height:1;}
+  .daybadges{margin:0 0 16px;}
+  /* day highlights — a scannable "don't-miss" list above the hour-by-hour routine */
+  .hl{display:grid;gap:10px;}
+  .hl .row{display:grid;grid-template-columns:34px 1fr;gap:11px;align-items:start;
+    background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--accent);
+    border-radius:11px;padding:11px 14px;}
+  .hl .row .ic{font-size:20px;line-height:1.4;text-align:center;}
+  .hl .row .nm{font-weight:700;font-size:15px;color:#fff;}
+  .hl .row .hook{color:#c7d1db;font-size:13.5px;margin-top:2px;line-height:1.5;}
+  .hl .row .badges{margin-top:8px;}
+  .poic .badges{margin:0 0 10px;}
   .summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
   .summary-grid .s{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 13px;}
   .summary-grid .s .v{font-size:18px;font-weight:800;color:#fff;}
@@ -132,9 +157,17 @@
   <div class="content">
     <div class="block">
       <h2><span>📋</span> The Plan for the Day</h2>
+      <p class="place-ctx" id="placeCtx"></p>
       <p class="summary-lead" id="sumLead"></p>
       <div class="summary-grid" id="sumGrid"></div>
       <p class="summary-body" id="sumBody"></p>
+      <div id="luggage"></div>
+    </div>
+    <div class="block" id="hlBlock">
+      <h2><span>⭐</span> Day Highlights</h2>
+      <p class="note">The day's don't-miss stops at a glance — with badges for what each one is best for. The full timed plan follows below.</p>
+      <div class="daybadges badges" id="dayBadges"></div>
+      <div class="hl" id="hl"></div>
     </div>
     <div class="block">
       <h2><span>🕘</span> The Day, Hour by Hour</h2>
@@ -188,6 +221,18 @@
   const fromS = short(day.gfrom), toS = short(day.gto);
   const stripTags = s => s.replace(/<[^>]+>/g, '');
 
+  // ---- interest badges (tie to the family interests in tour/00-family.md) ----
+  // Key order here is also the day-level badge display order (family-distinct first).
+  const INTEREST = {
+    ghibli:['👻','Ghibli'], nintendo:['🎮','Nintendo'], toys:['🧸','Toys'],
+    moto:['🏍️','Motorcycles'], onsen:['♨️','Onsen'], art:['🎨','Art'],
+    craft:['🎎','Craft'], food:['🍜','Food'], scenic:['🌄','Scenic'],
+    castle:['🏯','History'], kid:['🧒','Kid']
+  };
+  const badgesHtml = keys => (keys || []).filter(k => INTEREST[k])
+    .map(k => `<span class="badge"><span class="em">${INTEREST[k][0]}</span>${INTEREST[k][1]}</span>`).join('');
+  const firstSentence = s => { const m = (s || '').match(/^.*?[.!?](\s|$)/); return (m ? m[0] : (s || '')).trim(); };
+
   // hero — crossfading slideshow of the day's public images:
   // the region-matched ukiyo-e print, then each stop's photo, then the destination photos.
   const bg = document.getElementById('bg');
@@ -228,7 +273,9 @@
     (day.miles > 0 ? `<span class="pill mi">🏍️ ${day.miles} mi</span><span class="pill time">≈ ${rideH}h riding</span>`
                    : `<span class="pill time">No transfer — explore day</span>`);
 
-  // ---- summary section ----
+  // ---- summary section (place context + full day description) ----
+  document.getElementById('placeCtx').textContent =
+    dest.tagline ? `${dest.region} — ${stripTags(dest.tagline)}` : dest.region;
   document.getElementById('sumLead').textContent = day.desc;
   document.getElementById('sumGrid').innerHTML = [
     day.rest ? ['Rest', 'Riding'] : [`${day.miles} mi`, 'Distance'],
@@ -243,11 +290,20 @@
     ? `A relaxed base day around <b>${toS}</b> — no packing or transfer. Today's stops: ${stopList}. Plenty of downtime for ${evening.replace('once you arrive','')}.`
     : `Today rides from <b>${fromS}</b> to <b>${toS}</b> (${day.miles} mi, ≈ ${rideH}h in the saddle), stopping at ${stopList}. Plan for ${evening}.`;
 
+  // ---- luggage (takkyūbin) callout — shown only on days that carry a luggage note ----
+  if (day.luggage) {
+    document.getElementById('luggage').innerHTML =
+      `<div class="luggage"><div class="lg-ic">🧳</div><div class="lg-b">` +
+      `<div class="lg-k">Luggage · takkyūbin</div>` +
+      `<div class="lg-d">${day.luggage}</div></div></div>`;
+  }
+
   // ---- build schedule ----
   const KIND = {
     stop:    ['📸','Sightseeing'],
     coffee:  ['☕','Coffee break'],
     lunch:   ['🍜','Lunch stop'],
+    dinner:  ['🍽️','Dinner stop'],
     scenic:  ['📷','Scenic stop'],
     activity:['🎯','Activity']
   };
@@ -259,7 +315,7 @@
   const routeTo = (a, b) => window.gmapDirLink(a, b);
   const prevQ = i => i === 0 ? day.gfrom : day.poi[i - 1].q;   // leg starts at origin, then each prior stop
 
-  const DWELL = { coffee:30, lunch:60, stop:40, scenic:25, activity:45 };  // minutes at each stop
+  const DWELL = { coffee:30, lunch:60, dinner:60, stop:40, scenic:25, activity:45 };  // minutes at each stop
   const AVG = 30;  // mph effective touring pace (rural roads, newer rider, breaks)
   if (!day.rest) {
     ev.push(['07:00','⏰','Wake up','',false,'Same start every riding day — keeps the family rhythm.']);
@@ -316,13 +372,26 @@
     </div>`;
   }).join('');
 
+  // ---- day highlights (scannable don't-miss list + day-level interest badges) ----
+  const dayInterests = Object.keys(INTEREST).filter(k => day.poi.some(p => (p.it || []).includes(k)));
+  document.getElementById('dayBadges').innerHTML = badgesHtml(dayInterests);
+  document.getElementById('hl').innerHTML = day.poi.map(q => {
+    const k = KIND[q.slot] || KIND.stop;
+    return `<div class="row"><div class="ic">${k[0]}</div><div>
+      <div class="nm">${q.name}</div>
+      <div class="hook">${firstSentence(q.what)}</div>
+      ${q.it && q.it.length ? `<div class="badges">${badgesHtml(q.it)}</div>` : ''}
+    </div></div>`;
+  }).join('');
+
   // ---- poi cards (full per-stop detail: timing, slot, description + Wikipedia) ----
   document.getElementById('pois').innerHTML = day.poi.map((q, i) => {
     const k = KIND[q.slot] || KIND.stop;
     const thumb = q.img ? `<div class="poic-thumb"><img loading="lazy" src="${q.img}" alt="${q.name}"></div>` : '';
     const wiki = window.wikiLink(q.name, q.wiki);
     const meta = `<div class="poic-meta">${poiTimes[i] ? `<span class="poic-time">🕒 ${poiTimes[i]}</span>` : ''}<span class="poic-slot">${k[0]} ${k[1]}</span></div>`;
-    return `<div class="poic">${thumb}<div class="poic-b">${meta}<div class="nm">${q.name}</div><div class="wh">${q.what}</div>
+    const badges = q.it && q.it.length ? `<div class="badges">${badgesHtml(q.it)}</div>` : '';
+    return `<div class="poic">${thumb}<div class="poic-b">${meta}<div class="nm">${q.name}</div><div class="wh">${q.what}</div>${badges}
       <div class="poic-links">
         <a href="${poiMap(q.q)}" target="_blank" rel="noopener">📍 Map</a>
         <a href="${routeTo(prevQ(i), q.q)}" target="_blank" rel="noopener">🗺️ Route from ${short(prevQ(i))}</a>

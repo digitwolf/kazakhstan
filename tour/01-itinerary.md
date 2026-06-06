@@ -173,14 +173,21 @@ The trip's first beach rest base, built around a single big kid day: **Adventure
 
 Rather than backtrack through Osaka, the loop crosses the water. Ride up to **Wakayama Port** (a castle stop on the way) and roll the bikes straight onto the **Nankai Ferry** for the ~2h15m sailing to **Tokushima** — a restful break and a small adventure for the child. Land beside **Naruto**, where huge tidal whirlpools churn under the Ōnaruto Bridge.
 
+**A noodle bookend on the strait:** this is a two-ramen day for a noodle lover. Before the ferry, Wakayama City is the home of **Wakayama chūka-soba** — a thin-noodle soy-and-pork-bone bowl, classically eaten with a side of pressed **haya-zushi** mackerel sushi while you wait — a perfect ramen-and-sushi lunch near the castle/port. On the far shore, **Tokushima ramen** is the local prize: a dark, sweet-savoury soy-tonkotsu broth topped with stewed pork belly and a raw egg, with rice on the side — an easy first dinner by the strait.
+
+**Art-lover's option (Galiya):** Naruto is also home to the **Ōtsuka Museum of Art** — Japan's largest exhibition space, with 1,000+ full-size ceramic reproductions of the world's masterpieces (the Sistine Chapel ceiling recreated whole, the *Mona Lisa*, Monet's water lilies) that you can photograph and even touch, which makes it genuinely fun with a 6-year-old. It is a **2–4 h commitment**, so don't force it onto this already-full ferry day — either do a focused highlights loop on arrival, **save it for a relaxed Day-10 morning before riding into Iya**, or keep it as the rainy-day fallback. **Closed Mondays** — check the weekday.
+
 > **Ferry logistics:** Nankai sails ~8×/day each way and is **first-come, first-served for motorcycles (no reservations)** — be at the ticket office 30+ min early; deck space is limited (~20 bikes). Check the day's timetable.
 >
 > **Whirlpool timing:** they're dramatic only near **spring tides (full/new moon)** and the daily slack swings — aim your Uzunomichi or boat slot at the day's best window.
 
 **Stops along the way:**
 - 📷 **Wakayama Castle** — Hilltop keep before the port
+- 🍜 **Wakayama chūka-soba** — The city's signature thin-noodle soy-tonkotsu ramen, with haya-zushi mackerel sushi on the side — a ramen-and-sushi lunch near the castle/port before the ferry **[KID]**
 - ⛴️ **Nankai Ferry** — ~2h15m crossing to Shikoku, bikes aboard
 - 📸 **Naruto whirlpools** — Uzunomichi glass-floor walkway over the strait
+- 🎨 **Ōtsuka Museum of Art (option)** — 1,000+ touchable full-size ceramic reproductions of the world's masterpieces; a 2–4 h art highlight in Naruto — best as a Day-10 morning or rainy-day option, **closed Mon** **[KID]**
+- 🍜 **Tokushima ramen** — Dark sweet-soy tonkotsu broth with stewed pork belly and a raw egg — the local first-dinner bowl on landing **[KID]**
 - ⛩️ **Ryōzen-ji (Temple #1)** — Near the ferry landing, the **start of the 1,200 km Shikoku 88-temple pilgrimage**, where white-clad *henro* set out and buy their staff, bell and book. A gentle, distinctly cultural way to "arrive" on the island, threaded through the whole Shikoku leg. **[KID]**
 
 [🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Shirahama,%20Wakayama,%20Japan&destination=Naruto,%20Tokushima,%20Japan&waypoints=Wakayama%20Castle|Nankai%20Ferry%20Wakayama%20Port|Tokushima%20Port|Uzunomichi%20Naruto&travelmode=driving)
@@ -191,6 +198,8 @@ Rather than backtrack through Osaka, the loop crosses the water. Ride up to **Wa
 Follow the **Yoshino River** up into Shikoku's dramatic gorge country on easy, well-surfaced two-lane roads — a calm, scenic climb to a remote onsen ryokan. The **Oboke Gorge** is the lunch stop; the Iya valley unfolds above it. Arriving by **early-to-mid afternoon** is by design: it leaves the rest of the day to **settle into the riverside onsen ryokan** — several have a **private cable-car down to open-air baths in the gorge** — so the afternoon is a long soak and slow mountain time, with the vine bridge and gorge boat saved for tomorrow's rest day. Early arrival here is a feature, not dead time.
 
 **Signature new experience:** a **hands-on Awa indigo-dyeing (aizome) workshop** in a Japan-Heritage merchant town — tie-dye your own scarf or handkerchief in the deep "Japan Blue" that made this valley rich.
+
+**Optional slow start (Galiya's art pick):** since the riding is short and the day's design is an early arrival, this is the natural slot to give the **Ōtsuka Museum of Art** in Naruto a proper 2–3 h before turning inland — leaving mid-morning still lands you at the Iya ryokan in good afternoon time. Skip it on a Monday (closed) or if anyone wants the easier roll-out.
 
 **Stops along the way:**
 - ☕ **Tokushima riverside** — Coffee and a leg-stretch before the hills
@@ -225,7 +234,7 @@ River valleys open out to the Pacific. A kid-favourite Anpanman stop, then Kōch
 **Stops along the way:**
 - ☕ **Otoyo michi-no-eki** — Roadside coffee break
 - 🎯 **Anpanman Museum** — Yanase Takashi Memorial Hall in Kami — a sure hit for a 6-year-old
-- 🍜 **Kochi Castle & Hirome Market** — Original keep, market lunch
+- 🍜 **Kochi Castle & Hirome Market** — Original keep, then **katsuo no tataki** (straw-flame-seared bonito, Kōchi's soul dish) at the lively shared-table market hall — a foodie + kid + market hit in one **[KID]**
 - 📷 **Katsurahama** — Pacific beach & Ryōma statue
 
 [🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Oboke,%20Tokushima,%20Japan&destination=Kochi,%20Japan&waypoints=Michi-no-Eki%20Otoyo|Anpanman%20Museum%20Kami%20Kochi|Kochi%20Castle|Katsurahama&travelmode=driving)
@@ -280,7 +289,7 @@ Uwajima Castle and Uchiko's preserved merchant streets en route up the Ehime coa
 ### Day 16 — Dōgo Onsen Rest Day
 *Matsuyama (light riding) · 10 mi · rest day · Shikoku*
 
-Matsuyama Castle by ropeway, then the historic Dōgo Onsen bathhouse. Classic onsen evening.
+Matsuyama Castle by ropeway, then the historic Dōgo Onsen bathhouse. Classic onsen evening. The grand 1894 wooden **Dōgo Onsen Honkan** is widely cited as a visual inspiration/resonance for the bathhouse in *Spirited Away* — so for Galiya the soak doubles as a Ghibli-adjacent moment (frame it honestly as "evokes," not an official Ghibli site).
 
 **Rest-day balance:** the most **rain-proof rest day** of the loop and the natural **city-comforts / laundry day**. The castle **ropeway-or-chairlift** (a kid hit), the **Dōgo Onsen Honkan** soak and the **covered Dōgo Haikara-dōri arcade** all work in any weather; keep a 6-year-old's Honkan soak short (it gets hot and busy), or book **Asuka-no-Yu's private family bath** if that's easier with a child. Genuine downtime = the Honkan soak, a *Botchan-dango* in the arcade and the **mikan-juice tap**; Ishite-ji is an optional add, not a must.
 
@@ -288,7 +297,7 @@ Matsuyama Castle by ropeway, then the historic Dōgo Onsen bathhouse. Classic on
 
 **Stops along the way:**
 - 🎯 **Matsuyama Castle** — Ropeway to a hilltop original castle
-- 🎯 **Dōgo Onsen Honkan** — Soak in the historic bathhouse
+- 🎯 **Dōgo Onsen Honkan** — Soak in the grand 1894 wooden bathhouse with its *Spirited Away* resonance (keep a 6-year-old's soak short; Asuka-no-Yu has a private family bath)
 - 📷 **Botchan Ressha** — Retro steam-style tram
 - 📷 **Ishite-ji** — Atmospheric pilgrimage temple
 
@@ -315,11 +324,14 @@ The famous island-hopping bridge route across the Seto Inland Sea — gentle, sc
 
 Setoda temple, lemon groves and gelato, Onomichi's hillside lanes and cat alley. Easy pace.
 
+**A rest day built for a foodie:** Onomichi is a celebrated **ramen town**, so make a sit-down bowl of **Onomichi ramen** the day's anchor meal — a clear soy-tare chicken-and-small-fish (niboshi) broth studded with little nuggets of pork-back fat and flat noodles, the defining Setouchi bowl. Pair it with Setoda's **lemon gelato** on the island side and fresh **anago (conger eel) over rice** for a low-effort, high-reward eating day with no riding pressure.
+
 **Rest-day balance:** easy and flat at sea level, but **Onomichi's temple hill is steep stairs** — do the kid-friendly version: **ride the Senkō-ji ropeway up and stroll down**, rather than walking the full 25-temple climb. Pair one hill outing with flat harbour time — lemon gelato and waterfront cafés at **Setoda / Onomichi U2** — for real downtime. **Wet-weather fallback:** the converted-warehouse **Onomichi U2** cycle complex (shops/cafés), the covered **Onomichi shōtengai arcade**, and **Kōsan-ji's** indoor halls and covered "1000-Buddha" cave; the stone lanes and the Hill of Hope marble get slippery in rain, so save them for a dry spell.
 
 > 🧳 **Luggage — closing the loop:** **forward the chain case from Onomichi straight back to the Osaka end hotel today (Day 18)**, held under your name, so it rejoins the base-camp case there ahead of your Day-22 return; you'll ride the final three single-night days (Kurashiki → Kobe → Awaji) on just the overnight bag. *(Alternatively, since those days all funnel into Osaka anyway, you could carry the case on the bikes — but forwarding keeps the bikes light for the Himeji/Akashi-Kaikyō run.)* The base-camp case is still in Osaka storage.
 
 **Stops along the way:**
+- 🍜 **Onomichi ramen** — A sit-down bowl of the town's celebrated soy-and-niboshi ramen with pork-back-fat nuggets and flat noodles — the day's anchor meal **[KID]**
 - 🎯 **Senkōji Ropeway** — Hilltop view over the town & sea
 - 🎯 **Temple Walk & cat alley** — Lanes, cafés & cats
 - 📷 **Kōsanji & Hill of Hope** — Ornate temple & marble hilltop
@@ -333,7 +345,7 @@ The plan commits to **Kurashiki** — its willow-lined Bikan canal quarter and t
 
 **Stops along the way:**
 - 📸 **Fukuyama Castle** — Station-side castle
-- 🎯 **Tomonoura (Ponyo harbour)** — Stone jetty, lighthouse and the *Ponyo* hillside — a lovely, kid-friendly port stop
+- 🎯 **Tomonoura (Ponyo harbour)** — The literal *Ponyo* town, where **Miyazaki stayed ~two months and conceived the film**: the stone *gangi* jetty, the old *jōyatō* lighthouse and the cliffside-house hillside that inspired it — Galiya's headline Ghibli stop and a lovely, kid-friendly port walk **[KID]**
 - 🍜 **Washūzan Viewpoint** — Seto Ōhashi bridge panorama, lunch
 - 📷 **Kurashiki Bikan** — Willow-lined canal quarter
 
@@ -371,12 +383,18 @@ A short, scenic flourish to close the loop: cross the **Akashi Kaikyō Bridge** 
 
 Return the motorcycles at the Suita base and celebrate the journey. A relaxed Osaka recovery day before tomorrow's big USJ outing — Osaka Castle and park, and the food streets of Dōtonbori.
 
+**An Osaka "everyone wins" afternoon (the easiest triple-hit of the trip):** with no riding and time to walk, knock out the family's whole wish-list in one compact city loop. At **Daimaru Umeda (13F)**, the official **Nintendo OSAKA** flagship store and the **Pokémon Center Osaka** sit on the *same floor* — walk-in, no ticket, Mario/Zelda/Splatoon and Pokémon plush and exclusives for Aslan (and Galiya). A few minutes away, **Donguri Republic** is the official **Studio Ghibli** shop — Totoro/Ponyo/Kiki goods, closing Galiya's Ghibli thread with a souvenir. Then drop south to **Den Den Town (Nipponbashi)**, Osaka's toy-and-figure mecca: **Super Potato** (retro Mario/Famicom shop with a Mario-statue front), floors of **gachapon** capsule toys, and the figure/second-hand shops (Mandarake, Hobby Station) that are the most likely place on the whole trip to turn up **Transformers / Takara Tomy robot toys** for Aslan. It's a five-minute walk from there to **Kuromon Ichiba** ("Osaka's kitchen") for eat-as-you-walk seafood, wagyu skewers and fruit — so the same outing feeds Aslan (Nintendo/toys/Transformers), Galiya (Ghibli + food market) and a celebratory Dōtonbori dinner to finish. *(If Day 22 runs short, the Umeda/Den Den browse also fits the Day-24 Osaka morning before the train.)*
+
 > 🧳 **Luggage:** the loop is closed and both cases are back in Osaka — the **base-camp case from left-luggage storage** and the **chain case forwarded back from Onomichi on Day 18** — reunite and repack them. Decide the homeward move: either **takkyūbin both cases ahead to the Tokyo departure hotel (or Haneda) on Day 22–23** so the Day-24 Nozomi is light (allow the day in transit — send before the morning cutoff), or carry them on the train. Empty the panniers and consolidate.
 
 **Stops along the way:**
 - 🏯 **Osaka Castle** — Castle & park
-- 🍜 **Dōtonbori** — Neon, street food and a celebration dinner
-- 🐋 **Kaiyukan (option)** — Whale-shark aquarium, if you'd rather save USJ energy for tomorrow
+- 🎮 **Nintendo OSAKA + Pokémon Center (Daimaru Umeda 13F)** — Kansai's flagship Nintendo store and a big Pokémon Center on one walk-in floor — Mario/Pokémon plush and exclusives **[KID]**
+- 🌰 **Donguri Republic (Ghibli shop)** — Official Studio Ghibli store — Totoro/Ponyo/Kiki goods, Galiya's Ghibli souvenir stop
+- 🤖 **Den Den Town & Super Potato** — Osaka's toy/figure mecca: retro Mario shop, gachapon floors and the best shot at **Transformers / robot figures** for Aslan **[KID]**
+- 🐟 **Kuromon Ichiba** — "Osaka's kitchen" — eat-as-you-walk seafood, wagyu skewers and fruit, a 5-min walk from Den Den Town **[KID]**
+- 🍜 **Dōtonbori** — Neon, street food and a celebration dinner **[KID]**
+- 🐋 **Kaiyukan (option)** — Whale-shark aquarium, if you'd rather save USJ energy for tomorrow **[KID]**
 
 [🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Osaka,%20Japan&destination=Osaka%20Aquarium%20Kaiyukan&waypoints=Osaka%20Castle|Dotonbori%20Osaka&travelmode=driving)
 
