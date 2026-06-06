@@ -23,6 +23,7 @@ Landing in Tokushima puts you beside **Naruto**, where colossal tidal whirlpools
 - **Ōtsuka Museum of Art** — Japan's largest display space, filled with **full-size ceramic reproductions** of 1,000+ world masterpieces (the Sistine Chapel ceiling, the Mona Lisa, Monet's water lilies outdoors) that you may photograph and even touch — vast and surprisingly kid-friendly **[KID]**
 - **Ryōzen-ji (Temple #1)** — the start of the 88-temple Shikoku pilgrimage, where white-clad *henro* set out; a gentle cultural stop near the ferry
 - **Awa Odori** — Tokushima's exuberant summer dance; the **Awa Odori Kaikan** runs live shows year-round and a ropeway up Mt. Bizan behind it **[KID]**
+- **Awa indigo (aizome) & Wakimachi Udatsu** — Tokushima is the heart of Japanese natural indigo and one of the only places left still growing and fermenting it into *sukumo*. On the Day-9 ride up the Yoshino River, the preserved Edo merchant street of **Udatsu in Wakimachi (Mima)** — an important national preservation district built on the indigo trade — has **hands-on aizome workshops** where you dye your own scarf, handkerchief or eco-bag in deep "Japan Blue." A memorable craft for the whole family **[KID]** *(reserve ahead; confirm hours and child participation)*
 
 ## What to eat
 - **Naruto-dai (sea bream)** — firm, lean bream muscled by the fierce tidal strait — Naruto's prize fish, superb as sashimi.
@@ -45,6 +46,8 @@ _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secur
 ## Links
 - [Nankai Ferry (Wakayama–Tokushima, official)](https://nankai-ferry.co.jp/)
 - [Tokushima / Naruto tourism (official)](https://discovertokushima.net/en/)
+- [Udatsu Townscape, Wakimachi (Discover Tokushima)](https://discovertokushima.net/en/spots/udatsu-townscape/)
+- [Awa indigo dyeing workshop, Udatsu (Nishi-Awa Tourism)](https://nishi-awa.jp/english/reserve/2009/)
 - [Wikipedia — Naruto, Tokushima](https://en.wikipedia.org/wiki/Naruto,_Tokushima)
 - [Wikipedia — Whirlpools of Naruto](https://en.wikipedia.org/wiki/Whirlpools_of_Naruto)
 

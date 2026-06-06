@@ -13,6 +13,7 @@
 From Himeji it's a short hop into **Kobe**, a stylish port city — opened to foreigners in 1868 — famous for its beef, its hillside **Kitano** district of Western "ijinkan" merchant houses, a glittering harbour nightscape and a relaxed international feel. A comfortable night before the final flourish: Day-21's loop across the Akashi Kaikyō Bridge to Awaji and back to Osaka.
 
 ## Things to see & do
+- **Bizen-yaki pottery town, Imbe** (en route on Route 2) — the kiln village of **Imbe in Bizen City**, home of **Bizen ware**, one of Japan's *six ancient kilns*: rustic, unglazed, wood-fired stoneware made here ~1,000 years. Stroll the brick-chimney streets, see the **Bizen / Bizen City Museum of Art** (closed Mon), and book a short beginner **hand-shaping workshop** (10–40 min) for a cup or bowl fired and posted home — a hands-on craft that breaks up a castle day. **[KID]** *Reserve a studio ahead; confirm under-6 participation.* Sword enthusiasts can instead stop at the nearby **Bizen Osafune Sword Museum** (live smithing/polishing demos on Sundays; closed Mon)
 - **Himeji Castle** — climb the original keep's steep timber stairs to the top floor (mind the head-height for adults), and hunt for the castle's *ishigaki* stone walls, hidden gun-ports and the "Okiku's well" ghost legend **[KID]**
 - **Kōko-en** — nine walled Edo-style gardens beside the castle (1992) with carp ponds, a tea house and a maple valley; a calm counterpoint to the keep **[KID]**
 - **Kobe Harborland & Meriken Park** — a waterfront of the red Port Tower, a Ferris wheel, the *BE KOBE* sign and harbour cruises **[KID]**
@@ -43,6 +44,8 @@ _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secur
 - [Himeji Castle (official)](https://www.city.himeji.lg.jp/castle/)
 - [Kawasaki Good Times World (official)](https://www.khi.co.jp/kawasakiworld/english/)
 - [Wikipedia — Himeji Castle](https://en.wikipedia.org/wiki/Himeji_Castle)
+- [Bizen pottery & clay-shaping experience, Imbe (Okayama Tourism)](https://www.okayama-japan.jp/en/18998)
+- [Bizen Osafune Sword Museum (Okayama Tourism)](https://www.okayama-japan.jp/en/spot/10777)
 
 ## Photos (10)
 - ![Himeji Castle, the White Heron](https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Himeji_Castle%2C_November_2016_-02.jpg/960px-Himeji_Castle%2C_November_2016_-02.jpg) — Himeji Castle, the White Heron

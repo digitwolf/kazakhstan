@@ -138,6 +138,7 @@ A short, scenic coastal day around the peninsula's southern tip. Pause at the ph
 
 **Stops along the way:**
 - 📸 **Hashigui-iwa** — A line of pillar rocks marching out to sea
+- 🇹🇷 **Kushimoto: Ōshima & the Ertuğrul story** — At Japan's southernmost mainland point, the **Turkish Memorial & Museum** on Ōshima tells the moving 1890 tale of the wrecked Ottoman frigate *Ertuğrul* and the villagers who rescued the survivors — the origin of Japan–Turkey friendship, and a piece of history found nowhere else. Pair it with **Kushimoto Marine Park** (Japan's first marine park, 1970, with an undersea observation tower) for the child. **[KID]** *A distinct historical/coastal hook; pick one to keep the short day relaxed.*
 - 📷 **Sandanbeki** — 50 m cliffs with a sea-cave lift to the waves
 - 🍜 **Tore-Tore Ichiba** — Giant seafood market for a tuna lunch
 - 🏖️ **Shirarahama beach** — White-sand beach time on arrival; shallow, gentle swimming (afternoon)
@@ -174,6 +175,7 @@ Rather than backtrack through Osaka, the loop crosses the water. Ride up to **Wa
 - 📷 **Wakayama Castle** — Hilltop keep before the port
 - ⛴️ **Nankai Ferry** — ~2h15m crossing to Shikoku, bikes aboard
 - 📸 **Naruto whirlpools** — Uzunomichi glass-floor walkway over the strait
+- ⛩️ **Ryōzen-ji (Temple #1)** — Near the ferry landing, the **start of the 1,200 km Shikoku 88-temple pilgrimage**, where white-clad *henro* set out and buy their staff, bell and book. A gentle, distinctly cultural way to "arrive" on the island, threaded through the whole Shikoku leg. **[KID]**
 
 [🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Shirahama,%20Wakayama,%20Japan&destination=Naruto,%20Tokushima,%20Japan&waypoints=Wakayama%20Castle|Nankai%20Ferry%20Wakayama%20Port|Tokushima%20Port|Uzunomichi%20Naruto&travelmode=driving)
 
@@ -182,12 +184,15 @@ Rather than backtrack through Osaka, the loop crosses the water. Ride up to **Wa
 
 Follow the **Yoshino River** up into Shikoku's dramatic gorge country on easy, well-surfaced two-lane roads — a calm, scenic climb to a remote onsen ryokan. The **Oboke Gorge** is the lunch stop; the Iya valley unfolds above it. Arriving by **early-to-mid afternoon** is by design: it leaves the rest of the day to **settle into the riverside onsen ryokan** — several have a **private cable-car down to open-air baths in the gorge** — so the afternoon is a long soak and slow mountain time, with the vine bridge and gorge boat saved for tomorrow's rest day. Early arrival here is a feature, not dead time.
 
+**Signature new experience:** a **hands-on Awa indigo-dyeing (aizome) workshop** in a Japan-Heritage merchant town — tie-dye your own scarf or handkerchief in the deep "Japan Blue" that made this valley rich.
+
 **Stops along the way:**
 - ☕ **Tokushima riverside** — Coffee and a leg-stretch before the hills
+- 🎨 **Wakimachi Udatsu & Awa indigo workshop** — On the Yoshino River ~45 km west of Tokushima, the preserved Edo merchant street of **Udatsu** (an important national preservation district built on the Awa-indigo trade). Book a short **aizome (indigo-dyeing) workshop** — design and dye your own handkerchief, eco-bag or scarf in natural Awa indigo; Tokushima is essentially the last place in Japan still growing and fermenting indigo into *sukumo*. A ~45–60 min hands-on craft, **[KID]** friendly, right on the Day-9 route. *Reserve ahead; confirm the day's hours and that under-6s can join.*
 - 🍜 **Oboke Gorge** — Gorge-side lunch and a sightseeing boat option
 - 📷 **Iya Valley viewpoint** — Vine bridge and gorge scenery
 
-[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Naruto,%20Tokushima,%20Japan&destination=Oboke,%20Tokushima,%20Japan&waypoints=Tokushima%20Station|Oboke%20Gorge&travelmode=driving)
+[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Naruto,%20Tokushima,%20Japan&destination=Oboke,%20Tokushima,%20Japan&waypoints=Tokushima%20Station|Udatsu%20Wakimachi%20Mima|Oboke%20Gorge&travelmode=driving)
 
 ### Day 11 — Iya Rest Day
 *Iya Valley (light riding) · 25 mi · rest day · Shikoku*
@@ -222,13 +227,16 @@ River valleys open out to the Pacific. A kid-favourite Anpanman stop, then Kōch
 
 The longest riding day of the loop — but well inside the comfort cap and bracketed by rest. Follow the **Shimanto**, Japan's last free-flowing clear river, past its low submersible bridges, after a stop at the famously translucent **Niyodo Blue**.
 
+**Signature new experience:** **make your own sheet of Tosa washi** — traditional handmade paper — at the Ino-cho Paper Museum on the famously clear Niyodo River, before following Japan's last free-flowing river to its sinking bridges.
+
 **Stops along the way:**
+- 🎨 **Tosa washi paper-making, Ino-cho** — At the **Ino-cho Paper Museum** on the **Niyodo River** (right by the Niyodo Blue stop, ~30 min west of Kōchi), try the *nagashizuki/tamesuki* technique and **make your own postcards or a sheet of Tosa washi** — one of Japan's three great handmade papers — for ¥400 in ~30–40 min. A great hands-on craft for a 6-year-old. **[KID]** *Open 09:00–17:00, **closed Mondays** (Tue if Mon is a holiday) — if Day 12 is a Monday, do it on the Day-11 afternoon or skip.*
 - 📸 **Niyodo Blue river** — Famous translucent-blue river
 - ☕ **Susaki** — Nabeyaki-ramen coffee stop
 - 🍜 **Tatsukushi coast** — Seaside lunch
 - 📷 **Sada Chinkabashi** — Shimanto 'sinking bridge' photo
 
-[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Kochi,%20Japan&destination=Shimanto,%20Kochi,%20Japan&waypoints=Niyodo%20River|Susaki%20Kochi|Tatsukushi|Sada%20Chinkabashi%20Shimanto&travelmode=driving)
+[🗺️ Day route](https://www.google.com/maps/dir/?api=1&origin=Kochi,%20Japan&destination=Shimanto,%20Kochi,%20Japan&waypoints=Ino-cho%20Paper%20Museum|Niyodo%20River|Susaki%20Kochi|Tatsukushi|Sada%20Chinkabashi%20Shimanto&travelmode=driving)
 
 ### Day 14 — Shimanto Rest Day
 *Shimanto River (light riding) · 20 mi · rest day · Shikoku*
@@ -279,6 +287,7 @@ The famous island-hopping bridge route across the Seto Inland Sea — gentle, sc
 
 **Stops along the way:**
 - 📸 **Imabari Castle** — Sea-water-moat castle
+- 🧵 **Imabari towel craft** — Imabari is **Japan's towel capital (~120 yrs, the leading domestic producer)**. Start the day with a quick hands-on stop: the free, walk-in **Imabari Towel LAB** by the port, or the larger **Towel Museum ICHIHIRO** (working looms you can watch, a Moomin gallery, and a make-your-own-towel corner) — a soft, regional craft that suits a 6-year-old before the bridges. **[KID]** *Confirm hours/closing day and that the museum detour fits the riding window; the LAB is the lighter option.*
 - ☕ **Kirosan Observatory** — Bridge panorama coffee
 - 🍜 **Ōyamazumi Shrine, Ōmishima** — Samurai-armour shrine, lunch
 - 📷 **Setoda, Ikuchijima** — Lemon gelato & Kōsanji temple
@@ -317,7 +326,10 @@ The plan commits to **Kurashiki** — its willow-lined Bikan canal quarter and t
 
 A relaxed run east to Japan's most magnificent castle. The shorter drive leaves a proper half-day for **Himeji Castle** and its Kōko-en garden, then an easy hop into **Kobe** for the night. _Garden lovers can detour to Okayama Kōrakuen early in the day — budget the extra ~40 mi / 1h30m._
 
+**Signature new experience:** **shape your own Bizen-yaki** — one of Japan's six ancient unglazed stoneware traditions — in the kiln town of **Imbe**, right on the Route 2 run east, before reaching the great White Heron castle.
+
 **Stops along the way:**
+- 🎨 **Bizen-yaki pottery town, Imbe** — On **Route 2 east of Okayama (~35 min from Kurashiki)**, the kiln village of **Imbe (Bizen City)** is the home of **Bizen ware**, one of Japan's *six ancient kilns* — rustic, unglazed, wood-fired stoneware made here for ~1,000 years. Wander the brick-chimney streets, see the **Bizen-yaki / Bizen City Museum of Art** (9:00–17:00, **closed Mon**; ¥700 adult, free for under-15s), and book a short **hand-shaping workshop** (10–40 min, beginner-friendly, instructor-led) to make a cup or small bowl that's fired and posted on. A distinct hands-on craft on an otherwise castle-only day. **[KID]** *Reserve a studio ahead; confirm under-6 participation and that Day 19 isn't a Monday.* Sword fans can instead pause ~10 min east at the **Bizen Osafune Sword Museum** (live smith/polisher workshops Sun; closed Mon).
 - 🍜 **Himeji Castle & Kōko-en** — White Heron castle + garden, unhurried, with lunch
 - 📷 **Kobe Harborland** — Harbour evening & Kobe beef
 

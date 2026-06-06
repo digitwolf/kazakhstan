@@ -20,6 +20,8 @@ It's the trip's first proper rest base: a beach, open-air onsen perched right ov
 - **Senjōjiki** — a vast tilted "1,000-tatami" rock platform sculpted by the waves, fun to clamber on **[KID]**
 - **Engetsu Island** — the "round-moon" islet pierced by a natural sea arch; the classic Shirahama sunset shot
 - **Hashigui-iwa** (en route at Kushimoto) — a 850 m row of ~40 pillar rocks marching out to sea toward Ōshima island
+- **Kushimoto — Turkish Memorial & the *Ertuğrul* story** (en route) — on **Ōshima** island off Japan's southernmost mainland cape, a museum tells how Kushimoto villagers rescued survivors of the wrecked Ottoman frigate *Ertuğrul* in 1890 — the founding moment of Japan–Turkey friendship, marked by a memorial and (filmed as *Ertuğrul 1890*). A genuinely distinctive history stop on a scenery-heavy coast
+- **Kushimoto Marine Park** (en route) — **Japan's first marine park (1970)**, with an aquarium and an **undersea observation tower** out over the reef — a good child stop near Hashigui-iwa **[KID]**
 - **Tore-Tore Ichiba** — one of western Japan's biggest seafood market halls; watch a tuna-cutting show, then eat **[KID]**
 
 ## What to eat
@@ -43,6 +45,7 @@ _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secur
 ## Links
 - [Nanki-Shirahama tourism (official)](https://nanki-shirahama.com/en/)
 - [Adventure World (official)](https://www.aws-s.com/)
+- [Turkish Memorial Museum, Kushimoto (Visit Wakayama)](https://visitwakayama.jp/en/attractions/detail_680.html)
 - [Wikipedia — Shirahama, Wakayama](https://en.wikipedia.org/wiki/Shirahama,_Wakayama)
 
 ## Photos (9)
