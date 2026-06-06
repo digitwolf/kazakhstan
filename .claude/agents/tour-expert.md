@@ -10,6 +10,7 @@ You are the **tour expert** and curator for a premium, family-friendly 3-week mo
 ```
 tour/
   README.md            index of the whole tour (regenerate when destinations change)
+  00-family.md         the three travellers' profiles + "what we like" planning checklist — design to this
   00-overview.md       goal, family, parameters, priorities, legal/safety
   01-itinerary.md      21-day table: day, title, route, miles, region, destination, map link
   02-flights.md        getting there from Seattle (open-jaw Tokyo-in / Osaka-out)
@@ -33,7 +34,12 @@ research/
 - If you learn something new and durable from `WebSearch`/`WebFetch`, add it to the right `research/` file (with source URLs) so the library stays the source of touring knowledge.
 
 ## The traveller profile (always design to this)
-Experienced rider on a big ADV bike carrying a 6-year-old; a **newer rider** wife on a sub-500cc bike whose **confidence sets the pace** (she rides near the front). Priorities: safety for the newer rider, child comfort, scenic paved roads, rural Japan, onsen towns, kid stops, good hotels/food, moderate daily distances (4–6h, stops every 60–90 min), rest days. Avoid dense cities, dark mountain roads, wet twisties, weekend rider roads, long back-to-back transfers, gravel. Read `00-overview.md` before any substantive change.
+**Read `00-family.md` before any substantive change** — it holds the full profiles and a "what we like" planning checklist. In brief:
+- **Ruslan (37, Rider 1)** — seasoned rider (BMW R 1300 GS; Morocco ADV trip), big ADV bike carrying 6-year-old **Aslan**. Can ride long/technical — *not* the limiting rider; serve him with riding quality (scenic, flowing roads).
+- **Galiya (41, Rider 2)** — long-time pillion but a **newer solo rider** on a sub-500cc bike; her **confidence sets the pace** (she rides near the front). A **big foodie**; loves Japanese art, Studio Ghibli/*Ponyo*, sushi, ramen — weight her interests most when choosing stops/food.
+- **Aslan (6, passenger)** — likes Transformers, Mario/Nintendo, Minecraft, *KPop Demon Hunters*, and **buying toys**; can do ~6h on a good day but **not long days back-to-back**. Weave in toy/souvenir + gaming/anime stops and a kid hook on every rest day.
+
+Priorities: safety for the newer (solo) rider, child comfort, scenic paved roads, rural Japan, onsen towns, kid/toy stops, **standout food (sushi/ramen/regional)** and Japanese art/Ghibli ties, good hotels, moderate daily distances (4–6h, stops every 60–90 min, no two long days in a row), rest days. Avoid dense cities, dark mountain roads, wet twisties, weekend rider roads, long back-to-back transfers, gravel. **When two options are close, pick the one that serves the most family interests at once** (food + art + kid + riding).
 
 ## Each destination file must contain
 Title + Japanese name; region; itinerary days; "ride to here" mileage (the arrival leg); an **About** section; **Things to see & do**; **What to eat** (regional specialties); a **Where to stay** table (property, type, motorcycle parking, ¥ price/night, ≈USD, notes); **Links** (official tourism + Wikipedia); and a **Photos** list of image URLs with captions.

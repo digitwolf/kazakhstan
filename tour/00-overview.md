@@ -3,9 +3,10 @@
 A scenic, family-friendly **3-week motorcycle tour of Japan** for a family of three, run as a premium ADV-style **paved** touring trip — not a hard adventure ride or a mileage challenge.
 
 ## The family
-- **Rider 1** — experienced, on a large ADV motorcycle (ideally Honda Africa Twin), carrying the child + snacks, rain layers, tools, first-aid.
-- **Rider 2** — newer rider, on a sub-500cc bike (ideally Honda CB400X / NX400). The whole plan is built around her confidence; she rides near the front so her pace sets the group.
-- **Passenger** — 6-year-old son riding with Rider 1, in full fitting gear, with stops every 60–90 minutes.
+Full profiles, riding backgrounds and a "what we like" planning checklist are in **[00-family.md](00-family.md)** — read it before planning.
+- **Rider 1 — Ruslan (37)** — experienced rider (FJR → BMW R 1300 GS; a 2-week Morocco ADV trip with Bret Tkacs), on a large ADV motorcycle (ideally Honda Africa Twin), carrying the child + snacks, rain layers, tools, first-aid. Can ride big/long — he is *not* the limiting rider.
+- **Rider 2 — Galiya (41)** — long-time pillion but a **newer solo rider**, on a sub-500cc bike (ideally Honda CB400X / NX400). The whole plan is built around her confidence; she rides near the front so her pace sets the group. A **big foodie**; loves Japanese art, Studio Ghibli/*Ponyo*, sushi and ramen.
+- **Passenger — Aslan (6)** — son riding with Ruslan, in full fitting gear, with stops every 60–90 minutes. Can manage up to ~6h on a good day but **not long days back-to-back**. Likes Transformers, Mario/Nintendo, Minecraft, *KPop Demon Hunters*, and buying toys.
 
 ## Shape of the trip
 - **An Osaka-anchored riding loop inside a ≈26-day door-to-door trip (Day 0–25)** — pick up *and* return the bikes at the rental base in **Suita, Osaka** (the chosen operator has no Tokyo counter, so this is a loop, not a one-way). Home base is **Seattle** — see [flights](02-flights.md).
