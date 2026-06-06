@@ -11,6 +11,7 @@ the current plan. Facts are cited inline with source URLs; verify live before co
 - **[places-to-visit.md](places-to-visit.md)** — Must-see towns, castles, onsen, coasts and national parks along the Honshu+Shikoku+Kansai loop, with **[KID]** flags for family-friendly stops.
 - **[seasonal-october.md](seasonal-october.md)** — October specifics: typhoon risk by region, autumn-foliage timing by elevation, and which mountain passes close for winter (many in November) — plus a ride-planning checklist.
 - **[touring-practical.md](touring-practical.md)** — Tolls/ETC, fuel availability in rural areas, motorcycle-friendly lodging, onsen-with-tattoo rules, and quick road-rule reminders.
+- **[motorcycle-museums.md](motorcycle-museums.md)** — Motorcycle/auto museums and which fit the Osaka loop: Kawasaki Good Times World (Kobe, Day 19) and the Shikoku Automobile Museum (Kōchi, Day 11) are on-route; Honda Motegi / Yamaha Iwata / Suzuki Hamamatsu / Iwashita (Kyushu) are off-route. Opening-day caveats and a Tokyo-bookend option.
 
 ## Headline takeaways for this trip
 - **Best 2-up highlights on the current route:** Izu Skyline / West Izu Skyline + Hakone Turnpike & skylines (start region); **Shimanami Kaido** (the standout Honshu→Shikoku crossing, very family-friendly); Niyodo Blue & Shimanto valley roads + Pacific capes in Shikoku; Kii-peninsula coast, Nachi Falls and Kumano in Kansai.

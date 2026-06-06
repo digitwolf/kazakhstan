@@ -20,7 +20,7 @@ Average riding time on the **13 transfer days is 2h42m** (1h45m–4h33m). No two
 | 9 | Ferry to Shikoku | Shirahama → Wakayama → ferry → Naruto | 91 | 2h46m + ferry | Wakayama Castle, Nankai ferry (~2h15m), Naruto whirlpools (Uzunomichi) |
 | 10 | Into Iya Valley | Naruto → Iya / Oboke | 75 | 2h05m | Tokushima riverside, Oboke Gorge, Iya Valley viewpoint |
 | 11 | Iya Rest Day | Iya Valley (light riding) | 25 | rest | Kazurabashi vine bridge, Oboke Gorge boat, Peeing Boy, Nagoro Scarecrow Village |
-| 12 | Down to the Coast | Iya → Kochi | 75 | 3h00m | Otoyo michi-no-eki, Anpanman Museum, Kochi Castle & Hirome Market, Katsurahama |
+| 12 | Down to the Coast | Iya → Kochi | 75 | 3h00m | Otoyo michi-no-eki, Anpanman Museum, Shikoku Automobile Museum, Kochi Castle & Hirome Market, Katsurahama |
 | 13 | The Clear River | Kochi → Shimanto River | 128 | 4h33m | Niyodo Blue river, Susaki, Tatsukushi coast, Sada Chinkabashi |
 | 14 | Shimanto Rest Day | Shimanto River (light riding) | 20 | rest | Shimanto canoe, sinking-bridge cycling, Cape Ashizuri |
 | 15 | Castles & Old Towns | Shimanto → Uwajima / Uchiko → Matsuyama | 117 | 3h30m | Uwajima Castle, Uwajima taimeshi, Uchiko old town, Garyū Sansō |
