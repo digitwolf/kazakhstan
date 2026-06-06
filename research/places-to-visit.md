@@ -47,7 +47,7 @@ Note: attractions are scattered and mountain roads slow — plan 2–3 bases, no
 - **Kotohira-gū (Konpira-san) (Kagawa)** — hilltop shrine reached by 1,368 stone steps; panoramic views. (Strenuous climb — palanquin historically; optional with a child.)
 - **Kōchi** — Kōchi Castle (original keep), Katsurahama beach; gateway to Niyodo Blue, Shimanto River and Capes Muroto/Ashizuri. **[KID]** castle + beach.
 - **Takamatsu (Kagawa)** — Ritsurin Garden (one of Japan's finest landscape gardens); Sanuki udon. **[KID]** garden + boat.
-- **Art islands (Naoshima/Teshima)** — Setouchi contemporary-art islands, reachable by ferry from Takamatsu/Uno. **[KID]** outdoor art (Yayoi Kusama pumpkins).
+- **Art islands (Naoshima/Teshima)** — Setouchi contemporary-art islands, reachable by ferry from Takamatsu/Uno. **[KID]** outdoor art (Yayoi Kusama pumpkins). _Fit-to-loop feasibility (zero added days vs +1 night, ferry, half-day budget, Monday closures) is worked out in **[naoshima-feasibility.md](naoshima-feasibility.md)** — documented, not yet in the plan._
 - Sources: https://www.japan.travel/en/my/the-latest-itinerary/shikoku-itinerary-iya-valley-dogo-onsen/ · https://www.lonelyplanet.com/articles/top-things-to-do-in-shikoku
 
 ---
