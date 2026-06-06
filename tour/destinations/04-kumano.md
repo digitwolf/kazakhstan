@@ -3,7 +3,7 @@
 > Sacred waterfalls, pilgrim shrines and a wild Pacific shore.
 
 - **Region:** Kumano · Wakayama / Mie
-- **Itinerary:** Day 5
+- **Itinerary:** Day 6
 - **Stop type:** stop
 - **Ride to here (direct):** 30 mi
 

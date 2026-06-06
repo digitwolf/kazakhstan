@@ -3,7 +3,7 @@
 > A hillside temple town and lemon-scented islands.
 
 - **Region:** Hiroshima coast
-- **Itinerary:** Days 16–17 · 2 nights
+- **Itinerary:** Days 17–18 · 2 nights
 - **Stop type:** stay
 - **Ride to here (direct):** 32 mi
 
@@ -18,7 +18,7 @@ Nearby **Setoda** on **Ikuchijima** island is famous for **lemons** (Japan's lea
 - **Kōsan-ji (Setoda)** — a riotously ornate temple a priest built for his mother, with a hand-carved gate, a cave "hell-and-heaven" walk-through, and the **Miraishin-no-Oka "Hill of Hope"**, a hilltop of gleaming white Italian marble **[KID]**
 - **Setoda lemon groves & Shimanami sea-view cafés** — citrus stands, gelato and waterfront coffee on Ikuchijima **[KID]**
 - **Kōsoji & the old waterfront streets** — Onomichi's atmospheric shopping arcade and harbour, easy and flat with a child
-- **Day-17 option:** ride out onto the nearer Kaidō islands (Innoshima, Ikuchijima) for more bridge sweeps without committing to the full crossing
+- **Day-18 option:** ride out onto the nearer Kaidō islands (Innoshima, Ikuchijima) for more bridge sweeps without committing to the full crossing
 
 ## What to eat
 - **Onomichi ramen** — a clear soy-tare chicken-and-seafood broth studded with little nuggets of **pork-back fat (*sengaki*)** and flat noodles; a defining regional bowl. **[KID]**

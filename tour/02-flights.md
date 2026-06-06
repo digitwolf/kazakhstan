@@ -28,26 +28,28 @@ The motorcycles are an **Osaka loop** (pick up and return at the Suita base), bu
 
 ---
 
-## Recommended arrival structure (jet-lag buffer) — adds one Tokyo night
+## Recommended arrival structure (jet-lag buffer + museum day) — two Tokyo nights up front
 
 A nonstop SEA→Haneda flight lands **mid/late afternoon**. You *could* connect straight onto a Nozomi and reach Osaka late evening, but that is a long, tight first day for a jet-lagged 6-year-old after a transpacific flight. **Recommended instead:**
 
 - **Day 0 (arrival night in Tokyo):** land at Haneda, ride the Keikyu Line ~15 min to **Shinagawa**, and **overnight near the station**. Easy dinner, early night, gentle jet-lag reset; optional brief Tokyo look if energy allows.
-- **Day 1 (loop start):** a relaxed **morning Nozomi** Tokyo/Shinagawa → **Shin-Osaka** (~2h30m), arriving around midday — then to the **Suita base** for the **bike pickup, paperwork and gear-fit** (still **strictly no riding** on Day 1). First ride is Day 2, fresh and rested.
+- **Day 1 (full Tokyo museum day):** a real Tokyo day for the family before heading south — **Ghibli Museum (Mitaka)** in the morning, **teamLab Planets TOKYO (Toyosu)** in the afternoon, and **Nintendo TOKYO (Shibuya PARCO)** + the Pokémon Center early evening. **Book tickets ahead:** the **Ghibli Museum is advance, date-specific, Lawson-only and sells out ~a month ahead**, and **teamLab Planets needs a timed online ticket** — reserve both as soon as your dates open. Still **no riding**.
+- **Day 2 (loop start):** a relaxed **late-morning Nozomi** Tokyo/Shinagawa → **Shin-Osaka** (~2h30m), arriving around midday — then the short hop to the **Suita base** for the **bike pickup, paperwork and gear-fit** (still **strictly no riding** on Day 2), capped with an easy Dōtonbori/Namba evening. First ride is Day 3, fresh and rested. **Forward the big luggage** Tokyo→Osaka by takkyūbin the morning you board.
 
-This keeps the **22-day Osaka loop unchanged** and simply brackets it with a Tokyo arrival night.
+This keeps the **Osaka riding loop unchanged** and brackets the front with a Tokyo arrival night plus a full Tokyo museum day.
 
-## Recommended return structure — adds one Tokyo night
+## Recommended return structure — bike return, a USJ day, then reposition
 
-- **Day 21:** bikes returned at the Suita base (as planned); overnight Osaka.
-- **Day 22 (buffer → reposition to Tokyo):** a final Osaka/Kyoto morning (Kyoto's **Fushimi Inari** sits right on the line — you can sightsee and board the Shinkansen at **Kyoto Station**), then an **afternoon Nozomi Shin-Osaka → Tokyo** (~2h30m) and **overnight near Haneda/Shinagawa**. The buffer also absorbs any earlier weather day.
-- **Day 23 (fly home):** **nonstop Tokyo → Seattle** (ANA/Delta from Haneda, JAL from Narita). You re-cross the date line and **land in Seattle the same calendar day**.
+- **Day 22:** bikes returned at the Suita base (as planned); a relaxed Osaka recovery day; overnight Osaka.
+- **Day 23 (Super Nintendo World / USJ):** a full, no-riding family day at **Universal Studios Japan** and **Super Nintendo World** (Mario Kart: Koopa's Challenge, Power-Up Band). **Book ahead:** dated park tickets plus a **(free) Area Timed-Entry ticket or a paid Express Pass** are normally needed to enter the Nintendo land — it's a big, busy day. A USJ-bayfront hotel (e.g. Hotel Universal Port) is handy this night.
+- **Day 24 (buffer → reposition to Tokyo):** a final Osaka/Kyoto morning (Kyoto's **Fushimi Inari** sits right on the line — you can sightsee and board the Shinkansen at **Kyoto Station**), then an **afternoon Nozomi Shin-Osaka/Kyoto → Tokyo** (~2h30m) and **overnight near Haneda/Shinagawa**. The buffer also absorbs any earlier weather day.
+- **Day 25 (fly home):** **nonstop Tokyo → Seattle** (ANA/Delta from Haneda, JAL from Narita). You re-cross the date line and **land in Seattle the same calendar day**.
 
 ### How the total trip length changes
-- **22-day Osaka riding loop** (same bikes, same Suita start/finish).
-- **+ 1 arrival night in Tokyo (Day 0)** before the train down to Osaka.
-- **+ 1 departure night in Tokyo (night of Day 22)** before the homebound flight, with **Day 23** the fly-home day.
-- **Door-to-door span ≈ 24 days** (Day 0 → Day 23). Only the **air + rail bookends** are added; the loop itself is the 22 days.
+- **Osaka riding loop unchanged** (same bikes, same Suita start/finish, ≈1,166 mi).
+- **+ 1 arrival night in Tokyo (Day 0)** and **+ 1 full Tokyo museum day (Day 1)** before the train down to the **Day-2** pickup.
+- **+ 1 Super Nintendo World / USJ day (Day 23)** and **+ 1 reposition-to-Tokyo day (Day 24)** before the **Day-25** homebound flight.
+- **Door-to-door span ≈ 26 days** (Day 0 → Day 25). Only the **city/museum days + air/rail bookends** are added; the riding loop itself is unchanged.
 
 ---
 
@@ -56,7 +58,7 @@ This keeps the **22-day Osaka loop unchanged** and simply brackets it with a Tok
 Don't drag full suitcases onto a packed Nozomi or strap them to the bikes. Use Japan's excellent **takkyūbin (宅急便) luggage forwarding** (Yamato "Ta-Q-Bin", Sagawa) from any hotel front desk or airport counter:
 
 - **On arrival:** forward the big cases **Tokyo (hotel/airport) → your first Osaka hotel / the Suita rental base**, so you ride the Shinkansen with just an overnight bag. Typical **¥2,000–¥2,500 per large case, next-day** delivery.
-- **On the bikes:** keep only what fits the panniers/top-box (the rental's optional support-truck add-on can also move bags — see the [overview](00-overview.md)). Travel cases can be **forwarded ahead to the Day-22 Osaka hotel** and then **Osaka → Tokyo** for the flight home, again arriving before you do.
+- **On the bikes:** keep only what fits the panniers/top-box (the rental's optional support-truck add-on can also move bags — see the [overview](00-overview.md)). Travel cases can be **forwarded ahead to the late-trip Osaka hotel** (the Day-22 bike-return night) and then **Osaka → Tokyo (Day 24)** for the flight home, again arriving before you do.
 - This ties to the practical notes in [`research/touring-practical.md`](../research/touring-practical.md) (moto-friendly lodging, leaving flight-day bags) — confirm with each hotel that they accept and hold forwarded luggage.
 
 ---
@@ -78,7 +80,7 @@ Links: [Shinagawa Prince](https://www.princehotels.com/shinagawa/) · [Hotel Ryu
 ## Budget snapshot (per person, indicative)
 - **Nonstop SEA ⇄ Tokyo, economy, October:** ~**$900–$1,600** round-trip.
 - **Shinkansen Tokyo ⇄ Shin-Osaka:** ~**¥29,000 / ≈$195 round-trip** per adult (≈ half for the child).
-- **Two Tokyo bookend nights:** see table above.
+- **Three Tokyo nights** (Day 0 arrival, Day 1 museum-day night, Day 24 reposition): see table above.
 - **Takkyūbin** luggage forwarding: ~¥2,000–¥2,500 per case per leg.
 
 ## Booking tips

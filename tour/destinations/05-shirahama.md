@@ -3,7 +3,7 @@
 > A white-sand resort coast, panda safaris and seaside hot springs.
 
 - **Region:** Nanki-Shirahama · Wakayama
-- **Itinerary:** Days 6–7 · 2 nights
+- **Itinerary:** Days 7–8 · 2 nights
 - **Stop type:** stay
 - **Ride to here (direct):** 54 mi
 

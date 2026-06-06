@@ -3,7 +3,7 @@
 > A 1,200-year-old monastery town in the clouds — temple lodging, lantern-lit cedar avenues and Japan's most atmospheric cemetery.
 
 - **Region:** Kōya · Wakayama (Kii Peninsula)
-- **Itinerary:** Day 2 · 1 night (shukubō temple stay)
+- **Itinerary:** Day 3 · 1 night (shukubō temple stay)
 - **Stop type:** stop
 - **Ride to here (direct):** 54 mi
 

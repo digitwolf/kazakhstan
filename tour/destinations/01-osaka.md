@@ -1,24 +1,25 @@
 # Osaka / Kansai  大阪
 
-> The start and finish of the loop — bike pickup, big-city food, and a Kyoto buffer day.
+> The start and finish of the loop — a train-in, train-out hub: bike pickup, Super Nintendo World / USJ, big-city food, and a Kyoto buffer day.
 
 - **Region:** Kansai
-- **Itinerary:** Day 1 (start) · Days 21–22 (finish)
+- **Itinerary:** Day 2 (start) · Days 22–24 (finish)
 - **Stop type:** start
 - **Ride to here (direct):** Start / loop hub
 
 ## About
 Osaka is both the **start and the end** of this Osaka-anchored loop, and Japan's great mercantile, comedy and food city — historically *tenka no daidokoro*, "the nation's kitchen," where merchants set the rhythm rather than samurai or court. The motorcycles are picked up and returned at the rental base in **Suita, northern Osaka** ([Bike Rental Japan](https://bikerentaljapan.com/)), so the journey begins and ends in the friendliest place in Japan to eat — no one-way drop, no backtracking. **Osaka Castle**, Toyotomi Hideyoshi's late-16th-century power seat, still anchors the city behind Japan's largest castle moats and a sweeping park; the present concrete keep (1931, with a top-floor observation deck and museum) is an easy, kid-pleasing first or last stroll.
 
-**Day 1 is strictly no riding:** arrive from Tokyo by **Shinkansen** (the family flies nonstop SEA→Tokyo, then rides the ~2h30m Nozomi down to Shin-Osaka — see [flights](../02-flights.md)), collect the bikes, do the paperwork and gear-fit, and learn the controls on foot (see [the overview](../00-overview.md#child-pillion-safety-africa-twin)). The first real ride is Day 2 up to the temple town of Kōyasan. The loop then drops down the **Route 168 pilgrim road** through the sacred Kumano interior, sweeps the Kii coast, ferries to Shikoku, island-hops the Setouchi and returns over the Akashi Kaikyō Bridge — landing back in Osaka on **Day 20**. **Days 21–22** are the easy finish: return the bikes, celebrate, and keep a flexible buffer for Kyoto's temples or an Osaka family day before **taking the Shinkansen back to Tokyo** for the homebound flight.
+**Day 2 is strictly no riding:** after a Tokyo arrival night and a full Tokyo museum day, the family arrives by **Nozomi Shinkansen into Shin-Osaka around midday** (they fly nonstop SEA→Tokyo, then ride the ~2h30m bullet train down — see [flights](../02-flights.md)), transfer the short hop to the **Suita rental base**, collect the bikes, do the paperwork and gear-fit, and learn the controls on foot (see [the overview](../00-overview.md#child-pillion-safety-africa-twin)) — capped with an easy Dōtonbori/Namba evening. The first real ride is **Day 3** up to the temple town of Kōyasan. The loop then drops down the **Route 168 pilgrim road** through the sacred Kumano interior, sweeps the Kii coast, ferries to Shikoku, island-hops the Setouchi and returns over the Akashi Kaikyō Bridge — landing back in Osaka on **Day 21**. **Days 22–24** are the easy finish: **Day 22** returns the bikes and unwinds in the city, **Day 23** is a full **Super Nintendo World / USJ** day, and **Day 24** keeps a flexible Kyoto/Osaka morning (Fushimi Inari) before **taking the Shinkansen back to Tokyo** for the homebound flight. Osaka is a **train-in, train-out hub** — no fly-in/out here; the airport (KIX) is not used.
 
 ## Things to see & do
+- **Super Nintendo World / Universal Studios Japan** — the family kid-centrepiece of the Osaka end (a dedicated **Day 23**, bikes already returned): a life-size, interactive Mushroom Kingdom with **Mario Kart: Koopa's Challenge**, Yoshi's Adventure and the **Power-Up Band**, inside a big theme park (Harry Potter, Minions). **Needs timed-entry / Area Timed-Entry or Express Pass — book ahead; a busy full day** **[KID]**
+- **Osaka Aquarium Kaiyukan** — one of the world's largest aquariums, built around a central whale-shark tank you spiral down past — an indoor, all-weather, sure-fire kids' day at the bayfront, and the calm alternative if USJ is too much **[KID]**
+- **Dōtonbori & Namba** — the canal-side neon canyon with the running **Glico Man** sign, the giant mechanical crab, and the city's loudest concentration of street food — the easy welcome-evening and celebration-dinner district **[KID]**
 - **Osaka Castle & park** — broad moats, turreted stone walls and the reconstructed gold-trimmed keep; the surrounding park is a relaxed first-evening or final-day walk **[KID]**
-- **Dōtonbori** — the canal-side neon canyon with the running **Glico Man** sign, the giant mechanical crab, and the city's loudest concentration of street food **[KID]**
-- **Osaka Aquarium Kaiyukan** — one of the world's largest aquariums, built around a central whale-shark tank you spiral down past — a sure-fire kids' day at the bayfront **[KID]**
 - **Shinsekai & Tsūtenkaku tower** — a gloriously retro Shōwa-era district under a 1950s "tower reaching heaven," and the spiritual home of kushikatsu skewers
 - **Umeda Sky Building "Floating Garden"** — a 173 m open-air rooftop ring with an escalator that crosses mid-air between the twin towers **[KID]**
-- **Day-trip option:** Kyoto's **Fushimi Inari** thousand-torii hike or **Nara Park**'s bowing deer, both an easy hop on the Day-22 buffer **[KID]**
+- **Reposition-day option:** Kyoto's **Fushimi Inari** thousand-torii hike (it sits right on the Tōkaidō line — sightsee, then board the Shinkansen at Kyoto Station) or **Nara Park**'s bowing deer, both an easy hop on the **Day-24** reposition to Tokyo **[KID]**
 
 ## What to eat
 Osaka's catchphrase is *kuidaore* — "eat yourself bankrupt." It is a street-food city above all.
@@ -34,17 +35,21 @@ Central Osaka is the one stop where a traditional inn with parking *at the door*
 | Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
 | Machiya townhouse (e.g. Kuishinbo-style stays, central) | Restored machiya | No on-site parking — use a nearby coin lot (Times/Repark, ~¥1,000–1,600/day, ~100–300 m); **confirm a bike-friendly lot** | ¥18,000–40,000 (whole house) | $120–265 | A traditional tatami townhouse for the Osaka night; many sleep a family on futons. Confirm a flat-surface coin lot that takes motorcycles. |
-| Garage hotel near the Suita base | Practical | On-site garage / lot — **confirm height & motorcycle acceptance** | ¥10,000–18,000 | $65–120 | Stay near the rental counter for an unhurried Day-1 handover and Day-21 return. |
+| Garage hotel near the Suita base | Practical | On-site garage / lot — **confirm height & motorcycle acceptance** | ¥10,000–18,000 | $65–120 | Stay near the rental counter for an unhurried Day-2 handover and Day-22 return. |
 | Mitsui Garden Hotel Osaka Premier | Nice hotel | On-site/contract garage — confirm bike handling | ¥18,000–35,000 | $120–235 | Riverside 4-star with family rooms and city views if you want a polished central base. |
+| Hotel Universal Port (USJ bayfront) | Family / theme-park | On-site/partner parking — **confirm motorcycle acceptance** | ¥24,000–45,000 | $160–300 | Official USJ-partner hotel a short walk from the park gates, with Minion-themed and large family rooms — handy for the **Day-23** Super Nintendo World day (bikes already returned, so a car-park space is fine). Book the dated park tickets and area-entry separately. |
 
 _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 
 ## Links
 - [Osaka Info (official)](https://osaka-info.jp/en/)
+- [Universal Studios Japan (official)](https://www.usj.co.jp/web/en/us)
 - [Wikipedia — Osaka](https://en.wikipedia.org/wiki/Osaka)
+- [Wikipedia — Super Nintendo World](https://en.wikipedia.org/wiki/Super_Nintendo_World)
 
-## Photos (9)
+## Photos (10)
 - ![Osaka Castle keep](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/960px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg) — Osaka Castle keep
+- ![Super Nintendo World Peach's Castle at Universal Studios Japan](https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg/960px-Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg) — Peach's Castle in Super Nintendo World, Universal Studios Japan (Day 23)
 - ![Dotonbori, Osaka, at night, November](https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg/960px-Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg) — Dotonbori, Osaka, at night, November
 - ![OSAKA Tsutenkaku](https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/OSAKA_Tsutenkaku_%2820190810%29.jpg/960px-OSAKA_Tsutenkaku_%2820190810%29.jpg) — OSAKA Tsutenkaku
 - ![Dotonbori Neon Sign, Osaka](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Dotonbori_Neon_Sign%2C_Osaka_20190415_1.jpg/960px-Dotonbori_Neon_Sign%2C_Osaka_20190415_1.jpg) — Dotonbori Neon Sign, Osaka

@@ -3,12 +3,12 @@
 > An original castle and a preserved merchant town en route north.
 
 - **Region:** Ehime south
-- **Itinerary:** Day 14
+- **Itinerary:** Day 15
 - **Stop type:** stop
 - **Ride to here (direct):** 41 mi
 
 ## About
-Heading up Shikoku's west coast toward Matsuyama, two worthwhile stops break the Day-14 ride. **Uwajima**, a former castle town of the Date clan, keeps one of Japan's **twelve original castle keeps** — a small, beautifully proportioned 1666 tower on a wooded hill. **Uchiko** is a superbly preserved street of Edo–Meiji merchant houses that grew rich on **vegetable wax (mokurō)**, their façades washed in the distinctive ochre-yellow plaster of the trade.
+Heading up Shikoku's west coast toward Matsuyama, two worthwhile stops break the Day-15 ride. **Uwajima**, a former castle town of the Date clan, keeps one of Japan's **twelve original castle keeps** — a small, beautifully proportioned 1666 tower on a wooded hill. **Uchiko** is a superbly preserved street of Edo–Meiji merchant houses that grew rich on **vegetable wax (mokurō)**, their façades washed in the distinctive ochre-yellow plaster of the trade.
 
 These are easy, rewarding half-day stops — real history and quiet old streets without the crowds of the famous towns — on a relaxed transfer day up to Dōgo Onsen.
 
@@ -31,7 +31,7 @@ This is a **pass-through day** — the family sleeps at **Dōgo Onsen / Matsuyam
 
 | Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
-| _Usually ridden through → sleep at Dōgo Onsen_ | — | — | — | — | Day 14 ends at Matsuyama/Dōgo, a 2-night onsen base (see next stop). |
+| _Usually ridden through → sleep at Dōgo Onsen_ | — | — | — | — | Day 15 ends at Matsuyama/Dōgo, a 2-night onsen base (see next stop). |
 | Uchiko machiya inns (e.g. Kibako, Orinasu) | Restored machiya | On-site / nearby town lot (confirm) | ¥18,000–40,000 | $120–265 | Small restored wax-merchant houses for a quiet traditional night if you split the ride. |
 
 _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._

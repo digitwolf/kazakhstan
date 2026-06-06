@@ -76,8 +76,11 @@
   .poic-thumb{height:130px;background:var(--bg-soft);}
   .poic-thumb img{width:100%;height:100%;object-fit:cover;display:block;}
   .poic-b{padding:13px 15px;}
+  .poic-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:5px;}
+  .poic-time{font-size:11.5px;font-weight:700;color:var(--teal);}
+  .poic-slot{font-size:10.5px;font-weight:700;color:var(--accent-2);text-transform:uppercase;letter-spacing:.05em;}
   .poic .nm{font-weight:700;font-size:15px;color:#fff;}
-  .poic .wh{color:var(--muted);font-size:13px;margin:3px 0 9px;}
+  .poic .wh{color:#c7d1db;font-size:13px;margin:4px 0 10px;line-height:1.5;}
   .poic a{font-size:12.5px;font-weight:600;}
 
   /* photos */
@@ -155,6 +158,7 @@
       <div id="dmap"></div>
       <a class="btn-route" id="routeBtn" target="_blank" rel="noopener">🗺️ Open day route in Google Maps</a>
       <a class="btn-dest" id="destBtn">🏯 Destination guide ↗</a>
+      <a class="btn-dest" id="destWiki" target="_blank" rel="noopener">📖 Wikipedia ↗</a>
     </div>
     <div class="card">
       <h3>Where it sits</h3>
@@ -163,7 +167,7 @@
   </aside>
 </div></div></main>
 
-<footer><div class="wrap">Part of the 22-day Osaka-loop Japan Family Motorcycle Tour · <a href="index.html">Back to the full itinerary →</a></div></footer>
+<footer><div class="wrap">Part of the ≈26-day (Day 0–25) Osaka-loop Japan Family Motorcycle Tour · <a href="index.html">Back to the full itinerary →</a></div></footer>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -250,6 +254,7 @@
   const hhmm = m => String(Math.floor(m/60)).padStart(2,'0') + ':' + String(m%60).padStart(2,'0');
   const r5 = m => Math.round(m/5)*5;
   const ev = [];
+  const poiTimes = [];   // scheduled clock time per day.poi index (for the stop cards)
   const poiMap = q => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(q)}`;
   const routeTo = (a, b) => window.gmapDirLink(a, b);
   const prevQ = i => i === 0 ? day.gfrom : day.poi[i - 1].q;   // leg starts at origin, then each prior stop
@@ -266,8 +271,9 @@
     day.poi.forEach((q, i) => {
       const frac = (q.frac != null) ? q.frac : (i + 0.5) / day.poi.length;   // position along the route
       const t = r5(depart + frac * driveMin + dwellBefore);                  // cumulative drive + time already spent stopped
+      poiTimes[i] = hhmm(t);
       const k = KIND[q.slot] || KIND.stop;
-      ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q, routeTo(prevQ(i), q.q), short(prevQ(i)), q.img]);
+      ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q, routeTo(prevQ(i), q.q), short(prevQ(i)), q.img, window.wikiLink(q.name, q.wiki)]);
       dwellBefore += (DWELL[q.slot] || 35);
     });
     const arrive = r5(depart + driveMin + dwellBefore);
@@ -284,8 +290,9 @@
     const lunchAt = Math.floor(n/2); let inserted = false;
     day.poi.forEach((q, i) => {
       const t = r5(startA + (endA - startA) * (n>1 ? i/(n-1) : 0));
+      poiTimes[i] = hhmm(t);
       const k = KIND[q.slot] || KIND.activity;
-      ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q, routeTo(prevQ(i), q.q), short(prevQ(i)), q.img]);
+      ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q, routeTo(prevQ(i), q.q), short(prevQ(i)), q.img, window.wikiLink(q.name, q.wiki)]);
       if (!inserted && i === lunchAt-1) { ev.push(['12:30','🍜','Lunch','',false,'A relaxed local lunch.']); inserted = true; }
     });
     if (!inserted) ev.push(['12:30','🍜','Lunch','',false,'A relaxed local lunch.']);
@@ -294,11 +301,12 @@
   }
 
   document.getElementById('sched').innerHTML = ev.map(e => {
-    const [t, ic, k, kind, isPoi, d, q, rt, fromName, img] = e;
+    const [t, ic, k, kind, isPoi, d, q, rt, fromName, img, wiki] = e;
     const kindHtml = kind ? `<span class="kind">${kind}</span>` : '';
     const links = q ? `<div class="maplink">
         <a href="${poiMap(q)}" target="_blank" rel="noopener">📍 Map</a>
         <a href="${rt}" target="_blank" rel="noopener">🗺️ Route from ${fromName}</a>
+        ${wiki ? `<a href="${wiki}" target="_blank" rel="noopener">📖 Wikipedia ↗</a>` : ''}
       </div>` : '';
     const thumb = img ? `<img class="evimg" loading="lazy" src="${img}" alt="${k}">` : '';
     return `<div class="ev ${isPoi?'poi':''}">
@@ -308,14 +316,17 @@
     </div>`;
   }).join('');
 
-  // ---- poi cards ----
+  // ---- poi cards (full per-stop detail: timing, slot, description + Wikipedia) ----
   document.getElementById('pois').innerHTML = day.poi.map((q, i) => {
     const k = KIND[q.slot] || KIND.stop;
     const thumb = q.img ? `<div class="poic-thumb"><img loading="lazy" src="${q.img}" alt="${q.name}"></div>` : '';
-    return `<div class="poic">${thumb}<div class="poic-b"><div class="nm">${k[0]} ${q.name}</div><div class="wh">${q.what}</div>
+    const wiki = window.wikiLink(q.name, q.wiki);
+    const meta = `<div class="poic-meta">${poiTimes[i] ? `<span class="poic-time">🕒 ${poiTimes[i]}</span>` : ''}<span class="poic-slot">${k[0]} ${k[1]}</span></div>`;
+    return `<div class="poic">${thumb}<div class="poic-b">${meta}<div class="nm">${q.name}</div><div class="wh">${q.what}</div>
       <div class="poic-links">
         <a href="${poiMap(q.q)}" target="_blank" rel="noopener">📍 Map</a>
         <a href="${routeTo(prevQ(i), q.q)}" target="_blank" rel="noopener">🗺️ Route from ${short(prevQ(i))}</a>
+        <a href="${wiki}" target="_blank" rel="noopener">📖 Wikipedia ↗</a>
       </div></div></div>`;
   }).join('');
 
@@ -327,6 +338,11 @@
   document.getElementById('routeBtn').href =
     window.gmapDirLink(day.gfrom, day.gto, day.poi.map(q => q.q).slice(0, 9));
   document.getElementById('destBtn').href = `place.html?id=${dest.id}`;
+  // ---- destination Wikipedia link (prefer a real article from the dest's links, else search) ----
+  const destWikiUrl = (dest.links.find(l => /wikipedia\.org\/wiki\//i.test(l.u)) || {}).u
+                      || window.wikiLink(dest.name);
+  const dw = document.getElementById('destWiki');
+  dw.href = destWikiUrl; dw.textContent = `📖 Wikipedia: ${dest.name} ↗`;
 
   // ---- mini ribbon ----
   document.getElementById('ribbon').innerHTML =
@@ -334,18 +350,24 @@
     day.poi.map(q => `<span class="ar">›</span><span class="n">${q.name.split(',')[0]}</span>`).join('') +
     `<span class="ar">›</span><span class="n key">${toS}</span>`;
 
-  // ---- rail/flight bookend days: no driving route, show a travel note instead ----
-  if (day.rail) {
+  // ---- no-riding days (rail/flight bookends AND the Tokyo/USJ city days): no driving
+  //      route map — show a transit/city note + per-stop links instead ----
+  const noDrive = day.rail || day.miles === 0;
+  if (noDrive) {
     const railNote = {
       0: 'Fly nonstop <b>Seattle → Tokyo (Haneda)</b> (~10h30m), then the Keikyu Line ~15 min to <b>Shinagawa</b>. No riding today.',
-      1: 'Morning <b>Nozomi Shinkansen</b> Tokyo → Shin-Osaka (~2h30m), then to the Suita base for the bike pickup. Strictly no riding.',
-      22: 'A last Kyoto/Osaka morning, then an afternoon <b>Nozomi Shinkansen</b> Shin-Osaka → Tokyo (~2h30m). Overnight near Haneda.',
-      23: 'Fly <b>nonstop Tokyo → Seattle</b> — re-cross the date line and land the same calendar day. No riding.'
-    }[day.d] || 'A rail/flight transfer day — no motorcycle riding.';
+      1: 'A full <b>Tokyo museum day</b> on foot &amp; by train — <b>Ghibli Museum</b> (Mitaka), <b>teamLab Planets</b> (Toyosu) and <b>Nintendo TOKYO</b> (Shibuya). No riding; the bikes are still in Osaka.',
+      2: 'Morning <b>Nozomi Shinkansen</b> Tokyo → Shin-Osaka (~2h30m), then to the Suita base for the bike pickup. Strictly no riding.',
+      23: 'A full day at <b>Universal Studios Japan</b> &amp; <b>Super Nintendo World</b> on Osaka Bay — reached by train, bikes already returned. No riding.',
+      24: 'A last Kyoto/Osaka morning, then an afternoon <b>Nozomi Shinkansen</b> Kyoto/Shin-Osaka → Tokyo (~2h30m). Overnight near Haneda.',
+      25: 'Fly <b>nonstop Tokyo → Seattle</b> — re-cross the date line and land the same calendar day. No riding.'
+    }[day.d] || 'A no-riding day.';
+    const cityDay = !day.rail && day.miles === 0;   // Tokyo museum / USJ days (vs rail/flight)
     const head = document.querySelector('aside .card h3');
-    if (head) head.textContent = 'Getting there';
+    if (head) head.textContent = cityDay ? 'On foot & by train' : 'Getting there';
     document.getElementById('dmap').outerHTML =
-      '<div style="padding:16px;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;font-size:13.5px;color:#c7d1db;">🚄✈️ ' + railNote + '</div>';
+      '<div style="padding:16px;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;font-size:13.5px;color:#c7d1db;">' +
+      (cityDay ? '🚇🚶 ' : '🚄✈️ ') + railNote + '</div>';
     const rb = document.getElementById('routeBtn'); if (rb) rb.style.display = 'none';
     document.getElementById('destBtn').href = `place.html?id=${dest.id}`;
   } else

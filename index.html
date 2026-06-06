@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Japan Family Motorcycle Tour · 22-Day Osaka Loop</title>
+<title>Japan Family Motorcycle Tour · 26-Day Trip, Osaka Loop</title>
 <meta name="description" content="A scenic, family-friendly 3-week motorcycle tour of Japan — an Osaka loop through Kōyasan, the Kumano interior, the Kii coast, Shikoku's valleys, the Shimanami Kaidō and the Seto Inland Sea." />
 <link rel="preconnect" href="https://unpkg.com" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -250,6 +250,7 @@
   .dest .corner.stop { background: var(--teal); }
   .dest .corner.start { background: var(--green); }
   .dest .corner.end { background: var(--accent-2); }
+  .dest .corner.bookend { background: var(--muted); }
   @media (max-width: 980px) { .dest-grid { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 680px) { .dest-grid { grid-template-columns: repeat(2, 1fr); } }
 
@@ -306,13 +307,13 @@
       An <b>Osaka-anchored loop</b> from <b>Seattle</b> — fly nonstop to Tokyo, then ride the Shinkansen down to the bikes.
     </p>
     <div class="hero-cta">
-      <a class="btn primary" href="#itinerary">View the 22-Day Loop →</a>
+      <a class="btn primary" href="#itinerary">View the Day-by-Day Trip →</a>
       <a class="btn" href="#map-sec">Open the Map</a>
       <a class="btn" href="checklist.html">📋 Prep Checklist</a>
     </div>
 
     <div class="stats">
-      <div class="stat"><div class="n">22</div><div class="l">Day Osaka loop</div></div>
+      <div class="stat"><div class="n">26</div><div class="l">Days door-to-door (Day 0–25)</div></div>
       <div class="stat"><div class="n" id="statMiles">—</div><div class="l">Total distance</div></div>
       <div class="stat"><div class="n" id="statAvg">—</div><div class="l">Avg riding / day</div></div>
       <div class="stat"><div class="n">6</div><div class="l">Two-night rest bases</div></div>
@@ -394,11 +395,11 @@
   <div class="wrap">
     <div class="sec-head">
       <span class="tag">Day by Day</span>
-      <h2>22-Day Osaka Loop</h2>
-      <p>A day-by-day breakdown of the loop (Day 0 Tokyo arrival → Day 23 fly home; ~24 days door-to-door). Driving times are
+      <h2>The Trip, Day by Day (Day 0–25)</h2>
+      <p>A day-by-day breakdown (Day 0 Tokyo arrival → Day 25 fly home; ≈ 26 days door-to-door). Driving times are
         <b style="color:var(--text)">real Google-routed figures</b> — the 13 transfer days average <b style="color:var(--text)" id="itinAvg">~2h42m</b>
-        (longest ~4h33m on Day 12), with breaks every 60–90 minutes for the young passenger.
-        <b style="color:var(--text)">≈ 1,166 miles (1,877 km) total</b> over the 22-day loop. Tap any day for its full schedule.</p>
+        (longest ~4h33m on Day 13), with breaks every 60–90 minutes for the young passenger.
+        <b style="color:var(--text)">≈ 1,166 miles (1,877 km) total</b> over the Osaka riding loop. Tap any day for its full schedule.</p>
     </div>
     <div class="filter-bar" id="filters">
       <span class="chip active" data-filter="all">All days</span>
@@ -465,7 +466,7 @@
       <div class="card">
         <h3><span class="ico">📋</span> Parameters</h3>
         <table class="params">
-          <tr><td>Trip length</td><td>22-day Osaka loop (~24 days door-to-door)</td></tr>
+          <tr><td>Trip length</td><td>≈ 26 days door-to-door (Day 0–25); Osaka riding loop ≈ 1,166 mi</td></tr>
           <tr><td>Group</td><td>Husband, wife, 6-year-old son</td></tr>
           <tr><td>Rider 1 bike</td><td>Large ADV — ideally Honda Africa Twin</td></tr>
           <tr><td>Rider 2 bike</td><td>Under 500 cc — ideally Honda CB400X / NX400</td></tr>
@@ -506,8 +507,11 @@
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script src="data.js"></script>
 <script>
-/* ---------- Route stops sourced from data.js (single source of truth) ---------- */
-const STOPS = window.DESTINATIONS.map(d => ({
+/* ---------- Route stops sourced from data.js (single source of truth) ----------
+   "bookend" cards (Tokyo — the air gateway) are NOT on the bike loop, so they are
+   excluded from the map markers, the loop polyline and the route ribbon. They still
+   appear in the destination gallery below. */
+const STOPS = window.DESTINATIONS.filter(d => d.type !== 'bookend').map(d => ({
   id: d.id, name: d.name, lat: d.lat, lng: d.lng, type: d.type, note: d.tagline
 }));
 

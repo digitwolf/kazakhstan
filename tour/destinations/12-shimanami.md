@@ -3,7 +3,7 @@
 > Island-hopping across the Seto Inland Sea by a chain of great bridges.
 
 - **Region:** Seto Inland Sea
-- **Itinerary:** Day 16
+- **Itinerary:** Day 17
 - **Stop type:** stop
 - **Ride to here (direct):** 36 mi
 
@@ -28,7 +28,7 @@ It is gentle, scenic and unforgettable riding — well-surfaced, never technical
 - **Setoda lemons & citrus** — eaten as gelato, cake and fresh juice along the islands. **[KID]**
 
 ## Where to stay
-The Day-16 ride **crosses the Kaidō and overnights at Setoda/Onomichi** (next stop, the 2-night island base). If you'd rather break the ride and sleep mid-route, the islands have stylish, very bike/cycle-friendly stays.
+The Day-17 ride **crosses the Kaidō and overnights at Setoda/Onomichi** (next stop, the 2-night island base). If you'd rather break the ride and sleep mid-route, the islands have stylish, very bike/cycle-friendly stays.
 
 | Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|

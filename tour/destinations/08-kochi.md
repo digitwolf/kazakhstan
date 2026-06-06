@@ -3,7 +3,7 @@
 > Pacific shores, a perfectly preserved castle and big southern flavour.
 
 - **Region:** Shikoku south coast
-- **Itinerary:** Day 11
+- **Itinerary:** Day 12
 - **Stop type:** stop
 - **Ride to here (direct):** 37 mi
 
@@ -24,7 +24,7 @@ Coming down from the Iya mountains, the river valleys open out to the sea — a 
 - **Katsuo no tataki** — the soul dish of Kōchi: skipjack tuna seared hard over **burning rice straw** so it's charred outside and rare within, sliced thick and eaten with garlic, salt or ponzu. Watch it flame at Hirome Market.
 - **Sawachi-ryōri** — Tosa's party style: huge communal platters piled with sashimi, sushi and local delicacies, meant to be shared while drinking.
 - **Yuzu** — Kōchi grows most of Japan's yuzu citrus; it flavours ponzu, drinks, sweets and the local *gomadōfu*.
-- **Tosa jiro chicken & nabeyaki-ramen** — a prized free-range chicken, and (near Susaki on the Day-12 ride) a ramen served bubbling in a clay pot with a raw egg.
+- **Tosa jiro chicken & nabeyaki-ramen** — a prized free-range chicken, and (near Susaki on the Day-13 ride) a ramen served bubbling in a clay pot with a raw egg.
 
 ## Where to stay
 Kōchi's standout traditional option is a **central onsen ryokan with rooftop hot-spring baths looking straight at the castle** — exactly the trip's preferred style, and with its own parking.

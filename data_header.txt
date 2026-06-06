@@ -38,6 +38,14 @@ window.gmapEmbedPlace = function (q, zoom) {
     "&q=" + encodeURIComponent(window.geoResolve(q)) + (zoom ? "&zoom=" + zoom : "");
 };
 
+/* Per-stop Wikipedia link. Prefers a verified English-Wikipedia article URL (the
+   optional `wiki` field on a POI / a passed override); otherwise falls back to a
+   Wikipedia search link, which always resolves. Dependency-free. */
+window.wikiLink = function (name, wiki) {
+  if (wiki) return wiki;
+  return "https://en.wikipedia.org/wiki/Special:Search?search=" + encodeURIComponent(name || "");
+};
+
 /* Approx. exchange rate for showing USD alongside JPY hotel prices (update as needed). */
 window.JPY_PER_USD = 150;
 /* Convert a JPY range string like "¥28,000–60,000" to "≈ $185–400". */

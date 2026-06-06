@@ -3,21 +3,21 @@
 > Japan's 'last clear stream' and its low submersible bridges.
 
 - **Region:** Shikoku west
-- **Itinerary:** Days 12–13 · 2 nights
+- **Itinerary:** Days 13–14 · 2 nights
 - **Stop type:** stay
 - **Ride to here (direct):** 66 mi
 
 ## About
 The Shimanto is celebrated as **Japan's last clear stream (*saigo no seiryū*)** — the longest river in Shikoku and the only major one with no large dam on its main stem, so it still runs broad, clean and free past rice paddies, cedar hills and the distinctive **chinkabashi** ("sinking bridges"). These low, deliberately **railless** concrete bridges are designed to let floodwater wash *over* them rather than sweep them away — there are 47 of them along the river, and crossing one is a quiet highlight.
 
-Two nights by the river is the trip's most rural, slowed-down pause: canoeing on glass-clear water, riverside cycling and birdsong-and-water countryside time that is ideal for the child and the newer rider alike. Day-13 has the option of a longer run down to dramatic **Cape Ashizuri**, the granite southern tip of Shikoku.
+Two nights by the river is the trip's most rural, slowed-down pause: canoeing on glass-clear water, riverside cycling and birdsong-and-water countryside time that is ideal for the child and the newer rider alike. Day-14 has the option of a longer run down to dramatic **Cape Ashizuri**, the granite southern tip of Shikoku.
 
 ## Things to see & do
 - **Chinkabashi "sinking bridges"** — the railless low bridges that duck under floods; the long **Sada** and **Sata** bridges are the most photogenic, and you can walk or gently ride across **[KID]**
 - **Canoeing, SUP or a *yakatabune* river boat** — calm, shallow stretches make the Shimanto one of Japan's best beginner paddling rivers; traditional roofed boats glide down past the bridges **[KID]**
 - **Riverside cycling** — flat, quiet lanes along the water with easy swimming holes in summer; bikes rent at the michi-no-eki **[KID]**
-- **Cape Ashizuri (Ashizuri-misaki)** — Shikoku's wild granite southern point, a white lighthouse over Pacific cliffs and the pilgrimage temple **Kongōfuku-ji** (Temple #38); a fine longer Day-13 ride
-- **Tatsukushi coast** (on the Day-12 ride in) — bizarre wave-eroded rock formations and a glass-bottom boat over coral **[KID]**
+- **Cape Ashizuri (Ashizuri-misaki)** — Shikoku's wild granite southern point, a white lighthouse over Pacific cliffs and the pilgrimage temple **Kongōfuku-ji** (Temple #38); a fine longer Day-14 ride
+- **Tatsukushi coast** (on the Day-13 ride in) — bizarre wave-eroded rock formations and a glass-bottom boat over coral **[KID]**
 - **Michi-no-eki Tōwa & tea hamlets** — roadside stations selling river *aonori*, tea and *ayu* — good regroup stops
 
 ## What to eat

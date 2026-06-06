@@ -3,7 +3,7 @@
 > A willow-lined canal quarter of white-walled storehouses.
 
 - **Region:** Okayama
-- **Itinerary:** Day 18
+- **Itinerary:** Day 19
 - **Stop type:** stop
 - **Ride to here (direct):** 41 mi
 
@@ -15,7 +15,7 @@ The plan settles on **Kurashiki**. Its Bikan historical quarter preserves white-
 ## Things to see & do
 - **Kurashiki Bikan historical quarter** — white-walled, black-tiled *kura* storehouses mirrored in a willow-lined canal; glide it on a **flat-bottomed boat** poled by a boatman in *happi* coat — a hit with a child **[KID]**
 - **Ōhara Museum of Art** — **Japan's first museum of Western art** (1930), built by a local mill magnate; it holds real El Greco, Monet, Gauguin and Matisse in a little canal town — astonishing and compact **[KID]**
-- **Tomonoura** — the *Ponyo* harbour town (on the Day-18 ride in): the iconic stone *gangi* jetty, the old *jōyatō* lighthouse, and the seaside house where **Miyazaki stayed and sketched** the film **[KID]**
+- **Tomonoura** — the *Ponyo* harbour town (on the Day-19 ride in): the iconic stone *gangi* jetty, the old *jōyatō* lighthouse, and the seaside house where **Miyazaki stayed and sketched** the film **[KID]**
 - **Ivy Square** — a romantic red-brick former cotton mill (1889) now a courtyard of ivy, cafés and craft workshops **[KID]**
 - **Momotarō / Achi-jinja & local legend** — Okayama is the land of the **Momotarō "Peach Boy"** folk tale; kibi-dango sweets and Momotarō imagery are everywhere **[KID]**
 - _Optional add-a-day:_ **Naoshima** art island (via Takamatsu/Uno ferry — Benesse House, the Chichū Museum, Yayoi Kusama's pumpkin); **Ritsurin Garden** in Takamatsu

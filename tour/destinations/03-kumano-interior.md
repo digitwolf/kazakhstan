@@ -3,7 +3,7 @@
 > The sacred heart of the Kii Peninsula: the grandest Kumano shrine, Japan's largest torii, a riverbed you dig into a hot spring, and a world-heritage bath.
 
 - **Region:** Kumano · Wakayama (Kii interior)
-- **Itinerary:** Days 3–4 · 2 nights
+- **Itinerary:** Days 4–5 · 2 nights
 - **Stop type:** stay
 - **Ride to here (direct):** 53 mi
 
@@ -19,7 +19,7 @@ This is the loop's contemplative rest base — **two nights** at the ancient ons
 - **Ōyunohara great torii** — Japan's largest torii (33.9 m) standing over the old shrine sandbank; a genuine "wow" for a child **[KID]**
 - **Yunomine Onsen & Tsuboyu** — soak in the tiny **Tsuboyu**, the only UNESCO World Heritage bath you can actually bathe in (reserve a 30-min slot), and **boil eggs or vegetables** in the public *yuzutsu* hot spring **[KID]**
 - **Kawayu Onsen** — scoop out your **own riverbed bath** in the warm gravel of the Ōto River, mixing hot spring and cool stream to taste **[KID]**
-- **Doro-kyō gorge jet-boat** — a glass-clear gorge cruise on the Kitayama River through towering cliffs (boards near Shingū; can also be ridden on the Day-5 descent to the coast) **[KID]**
+- **Doro-kyō gorge jet-boat** — a glass-clear gorge cruise on the Kitayama River through towering cliffs (boards near Shingū; can also be ridden on the Day-6 descent to the coast) **[KID]**
 - **Tanise no Tsuribashi** — at 297 m one of Japan's longest pedestrian suspension bridges, swinging high over the Totsukawa (a thrill on the way in) **[KID]**
 - **Kumano Kodō short walk** — the gentle **Hosshinmon-ōji → Hongū** final section of the Nakahechi trail, a manageable family stretch of the pilgrimage
 

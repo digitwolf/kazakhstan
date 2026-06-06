@@ -38,6 +38,14 @@ window.gmapEmbedPlace = function (q, zoom) {
     "&q=" + encodeURIComponent(window.geoResolve(q)) + (zoom ? "&zoom=" + zoom : "");
 };
 
+/* Per-stop Wikipedia link. Prefers a verified English-Wikipedia article URL (the
+   optional `wiki` field on a POI / a passed override); otherwise falls back to a
+   Wikipedia search link, which always resolves. Dependency-free. */
+window.wikiLink = function (name, wiki) {
+  if (wiki) return wiki;
+  return "https://en.wikipedia.org/wiki/Special:Search?search=" + encodeURIComponent(name || "");
+};
+
 /* Approx. exchange rate for showing USD alongside JPY hotel prices (update as needed). */
 window.JPY_PER_USD = 150;
 /* Convert a JPY range string like "¥28,000–60,000" to "≈ $185–400". */
@@ -83,26 +91,137 @@ window.hotelParking = function (t) {
 
 window.DESTINATIONS = [
 {
+  id: "tokyo",
+  name: "Tokyo",
+  jp: "東京",
+  region: "Kantō · Tokyo",
+  type: "bookend",
+  days: "Day 0–1 (arrival) · Days 24–25 (departure)",
+  legMiles: 0,
+  lat: 35.6595, lng: 139.7005, zoom: 11,
+  tagline: "The air gateway either side of the loop — a jet-lag arrival night and a full kid-focused museum day (Ghibli, teamLab, Nintendo) before the Shinkansen south, then the reposition city for the flight home.",
+  intro: [
+    "Tokyo is <b>not part of the Osaka riding loop</b> — it is the <b>air gateway</b> that brackets it. The family flies <b>nonstop SEA ⇄ Tokyo</b> (Haneda on ANA/Delta, Narita on JAL) and rides the <b>Tōkaidō Shinkansen (~2h30m Nozomi) Tokyo ⇄ Shin-Osaka</b> to reach and leave the bikes at the <b>Suita, Osaka</b> base (see [flights](../02-flights.md)). The bikes are never in Tokyo; the city is where the trip begins and ends on foot and by train.",
+    "On the way in, a <b>Day-0 arrival night</b> near <b>Shinagawa</b> absorbs the jet lag, and a <b>full Day-1 museum day</b> gives the family three of Tokyo's best kid experiences — the <b>Ghibli Museum</b> in Mitaka, <b>teamLab Planets</b> in Toyosu, and <b>Nintendo TOKYO</b> in Shibuya — before the <b>Day-2</b> train down to the bike pickup. On the way home, <b>Day 24</b> repositions from Osaka/Kyoto back to Tokyo by Nozomi (Fushimi Inari sits right on the line), an overnight near Haneda/Shinagawa, then the <b>nonstop flight home on Day 25</b>. Forward the big luggage by <b>takkyūbin</b> so the train legs stay light."
+  ],
+  highlights: [
+    "<b>Ghibli Museum (Mitaka)</b> — Hayao Miyazaki's whimsical, hands-on museum on the edge of Inokashira Park: Totoro, the Catbus, a rooftop robot and an exclusive members-only short film. <b>Advance, date-and-time-specific tickets only (Lawson, ~a month ahead) — no door sales; it sells out fast</b>",
+    "<b>teamLab Planets TOKYO (Toyosu)</b> — An immersive, barefoot, wade-through world of digital art — mirrored light rooms, knee-deep water and projected flowers that delight every age. <b>Needs a timed online ticket — reserve ahead</b>",
+    "<b>Nintendo TOKYO (Shibuya PARCO)</b> — The official Nintendo flagship store (Mario, Zelda, Pokémon, Splatoon) with the <b>Pokémon Center Shibuya</b> next door — a gentle early-evening cap near Shibuya Crossing",
+    "<b>Shibuya Crossing</b> — The world's busiest scramble crossing, a short stroll from Nintendo TOKYO — pure big-city Tokyo energy",
+    "<b>Senso-ji & Asakusa</b> — Tokyo's oldest temple, the Kaminarimon lantern gate and the Nakamise market street — an easy traditional add if there's time",
+    "<b>Tokyo Tower / Tokyo Skytree</b> — Classic city-view towers for a skyline overview"
+  ],
+  food: [
+    {
+      "n": "Sushi & kaiten-zushi",
+      "d": "From conveyor-belt counters that thrill a 6-year-old to top-end Edomae sushi; Tokyo Bay is the home of the style."
+    },
+    {
+      "n": "Ramen & tsukemen",
+      "d": "Tokyo's dense ramen scene, from shoyu classics to dipping-noodle shops near every station."
+    },
+    {
+      "n": "Monjayaki",
+      "d": "Tokyo's runny, griddled cousin of okonomiyaki, cooked at your table — a hands-on, playful meal."
+    },
+    {
+      "n": "Depachika bento",
+      "d": "Department-store food halls (Tokyo Station, Shinagawa) for a beautiful packed meal to eat on the Nozomi south."
+    }
+  ],
+  hotels: [
+    {
+      "n": "Shinagawa Prince Hotel",
+      "t": "Family / hotel",
+      "d": "Best all-round pick: ~15 min from Haneda on the Keikyu Line, Nozomi boards downstairs, a big family-friendly complex (aquarium, bowling). Ideal for the Day-0 arrival night.",
+      "park": "On-site paid parking",
+      "price": "¥22,000–30,000"
+    },
+    {
+      "n": "Hotel Ryumeikan Tokyo",
+      "t": "Nice hotel",
+      "d": "Refined small hotel ~3 min from the Tokyo Station Shinkansen gates — great for the Day-24 return night before the flight.",
+      "park": "Limited / valet — confirm",
+      "price": "¥35,000–48,000"
+    },
+    {
+      "n": "Hotel Metropolitan Marunouchi",
+      "t": "Nice hotel",
+      "d": "High-floor city views literally above the Tokyo Station Shinkansen tracks (Nihonbashi exit).",
+      "park": "Confirm access",
+      "price": "¥30,000–45,000"
+    }
+  ],
+  links: [
+    { "l": "Ghibli Museum (official, ticket info)", "u": "https://www.ghibli-museum.jp/en/" },
+    { "l": "teamLab Planets TOKYO (official)", "u": "https://www.teamlab.art/e/planets/" },
+    { "l": "Nintendo TOKYO (official store)", "u": "https://www.nintendo.co.jp/officialstore/en/" },
+    { "l": "Shinagawa Prince Hotel", "u": "https://www.princehotels.com/shinagawa/" },
+    { "l": "Wikipedia — Tokyo", "u": "https://en.wikipedia.org/wiki/Tokyo" },
+    { "l": "Wikipedia — Tōkaidō Shinkansen", "u": "https://en.wikipedia.org/wiki/T%C5%8Dkaid%C5%8D_Shinkansen" }
+  ],
+  photos: [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Tokyo_Tower_and_around_Skyscrapers.jpg/960px-Tokyo_Tower_and_around_Skyscrapers.jpg",
+      "cap": "Tokyo Tower over the skyline"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Ghibli_Museum%2C_Mitaka%2C_Tokyo%2C_20240823_1131_5545.jpg/960px-Ghibli_Museum%2C_Mitaka%2C_Tokyo%2C_20240823_1131_5545.jpg",
+      "cap": "The Ghibli Museum in Mitaka (Day 1)"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Photos_at_teamlab_planets_tokyo.jpg/960px-Photos_at_teamlab_planets_tokyo.jpg",
+      "cap": "teamLab Planets immersive digital art, Toyosu (Day 1)"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/960px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg",
+      "cap": "Shibuya's famous scramble crossing"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Shibuya_PARCO_2.jpg/960px-Shibuya_PARCO_2.jpg",
+      "cap": "Shibuya PARCO, home of Nintendo TOKYO (Day 1)"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Senso-ji_Kaminarimon_201503a.jpg/960px-Senso-ji_Kaminarimon_201503a.jpg",
+      "cap": "The Kaminarimon gate at Senso-ji, Asakusa"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Shinagawa_Station_-01.jpg/960px-Shinagawa_Station_-01.jpg",
+      "cap": "Shinagawa Station — the Day-0 arrival base and Shinkansen stop"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Marunouchi_%26_Tokyo_Station_3.jpg/960px-Marunouchi_%26_Tokyo_Station_3.jpg",
+      "cap": "Marunouchi and Tokyo Station, the Shinkansen gateway"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Teamlab_toyosu.jpg/960px-Teamlab_toyosu.jpg",
+      "cap": "Digital-art immersion at teamLab, Toyosu"
+    }
+  ]
+},
+{
   id: "osaka",
   name: "Osaka / Kansai",
   jp: "大阪",
   region: "Kansai",
   type: "start",
-  days: "Day 1 (start) · Days 21–22 (finish)",
+  days: "Day 2 (start) · Days 22–24 (finish)",
   legMiles: 0,
   lat: 34.6937, lng: 135.5023, zoom: 12,
-  tagline: "The start and finish of the loop — bike pickup, big-city food, and a Kyoto buffer day.",
+  tagline: "The start and finish of the loop — a train-in, train-out hub: bike pickup, Super Nintendo World / USJ, big-city food, and a Kyoto buffer day.",
   intro: [
     "Osaka is both the <b>start and the end</b> of this Osaka-anchored loop, and Japan's great mercantile, comedy and food city — historically <i>tenka no daidokoro</i>, \"the nation's kitchen,\" where merchants set the rhythm rather than samurai or court. The motorcycles are picked up and returned at the rental base in <b>Suita, northern Osaka</b> (<a href=\"https://bikerentaljapan.com/\" target=\"_blank\" rel=\"noopener\">Bike Rental Japan</a>), so the journey begins and ends in the friendliest place in Japan to eat — no one-way drop, no backtracking. <b>Osaka Castle</b>, Toyotomi Hideyoshi's late-16th-century power seat, still anchors the city behind Japan's largest castle moats and a sweeping park; the present concrete keep (1931, with a top-floor observation deck and museum) is an easy, kid-pleasing first or last stroll.",
-    "<b>Day 1 is strictly no riding:</b> arrive from Tokyo by <b>Shinkansen</b> (the family flies nonstop SEA→Tokyo, then rides the ~2h30m Nozomi down to Shin-Osaka — see [flights](../02-flights.md)), collect the bikes, do the paperwork and gear-fit, and learn the controls on foot (see [the overview](../00-overview.md#child-pillion-safety-africa-twin)). The first real ride is Day 2 up to the temple town of Kōyasan. The loop then drops down the <b>Route 168 pilgrim road</b> through the sacred Kumano interior, sweeps the Kii coast, ferries to Shikoku, island-hops the Setouchi and returns over the Akashi Kaikyō Bridge — landing back in Osaka on <b>Day 20</b>. <b>Days 21–22</b> are the easy finish: return the bikes, celebrate, and keep a flexible buffer for Kyoto's temples or an Osaka family day before <b>taking the Shinkansen back to Tokyo</b> for the homebound flight."
+    "<b>Day 2 is strictly no riding:</b> after a Tokyo arrival night and a full Tokyo museum day, the family arrives by <b>Nozomi Shinkansen into Shin-Osaka around midday</b> (they fly nonstop SEA→Tokyo, then ride the ~2h30m bullet train down — see [flights](../02-flights.md)), transfer the short hop to the <b>Suita rental base</b>, collect the bikes, do the paperwork and gear-fit, and learn the controls on foot (see [the overview](../00-overview.md#child-pillion-safety-africa-twin)) — capped with an easy Dōtonbori/Namba evening. The first real ride is <b>Day 3</b> up to the temple town of Kōyasan. The loop then drops down the <b>Route 168 pilgrim road</b> through the sacred Kumano interior, sweeps the Kii coast, ferries to Shikoku, island-hops the Setouchi and returns over the Akashi Kaikyō Bridge — landing back in Osaka on <b>Day 21</b>. <b>Days 22–24</b> are the easy finish: <b>Day 22</b> returns the bikes and unwinds in the city, <b>Day 23</b> is a full <b>Super Nintendo World / USJ</b> day, and <b>Day 24</b> keeps a flexible Kyoto/Osaka morning (Fushimi Inari) before <b>taking the Shinkansen back to Tokyo</b> for the homebound flight. Osaka is a <b>train-in, train-out hub</b> — no fly-in/out here; the airport (KIX) is not used."
   ],
   highlights: [
+    "<b>Super Nintendo World / Universal Studios Japan</b> — the family kid-centrepiece of the Osaka end (a dedicated <b>Day 23</b>, bikes already returned): a life-size, interactive Mushroom Kingdom with <b>Mario Kart: Koopa's Challenge</b>, Yoshi's Adventure and the <b>Power-Up Band</b>, inside a big theme park (Harry Potter, Minions). <b>Needs timed-entry / Area Timed-Entry or Express Pass — book ahead; a busy full day</b>",
+    "<b>Osaka Aquarium Kaiyukan</b> — one of the world's largest aquariums, built around a central whale-shark tank you spiral down past — an indoor, all-weather, sure-fire kids' day at the bayfront, and the calm alternative if USJ is too much",
+    "<b>Dōtonbori & Namba</b> — the canal-side neon canyon with the running <b>Glico Man</b> sign, the giant mechanical crab, and the city's loudest concentration of street food — the easy welcome-evening and celebration-dinner district",
     "<b>Osaka Castle & park</b> — broad moats, turreted stone walls and the reconstructed gold-trimmed keep; the surrounding park is a relaxed first-evening or final-day walk",
-    "<b>Dōtonbori</b> — the canal-side neon canyon with the running <b>Glico Man</b> sign, the giant mechanical crab, and the city's loudest concentration of street food",
-    "<b>Osaka Aquarium Kaiyukan</b> — one of the world's largest aquariums, built around a central whale-shark tank you spiral down past — a sure-fire kids' day at the bayfront",
     "<b>Shinsekai & Tsūtenkaku tower</b> — a gloriously retro Shōwa-era district under a 1950s \"tower reaching heaven,\" and the spiritual home of kushikatsu skewers",
     "<b>Umeda Sky Building \"Floating Garden\"</b> — a 173 m open-air rooftop ring with an escalator that crosses mid-air between the twin towers",
-    "<b>Day-trip option:</b> Kyoto's <b>Fushimi Inari</b> thousand-torii hike or <b>Nara Park</b>'s bowing deer, both an easy hop on the Day-22 buffer"
+    "<b>Reposition-day option:</b> Kyoto's <b>Fushimi Inari</b> thousand-torii hike (it sits right on the Tōkaidō line — sightsee, then board the Shinkansen at Kyoto Station) or <b>Nara Park</b>'s bowing deer, both an easy hop on the <b>Day-24</b> reposition to Tokyo"
   ],
   food: [
     {
@@ -137,7 +256,7 @@ window.DESTINATIONS = [
     {
       "n": "Garage hotel near the Suita base",
       "t": "Practical",
-      "d": "Stay near the rental counter for an unhurried Day-1 handover and Day-21 return.",
+      "d": "Stay near the rental counter for an unhurried Day-2 handover and Day-22 return.",
       "park": "On-site garage / lot — <b>confirm height & motorcycle acceptance</b>",
       "price": "¥10,000–18,000"
     },
@@ -147,16 +266,29 @@ window.DESTINATIONS = [
       "d": "Riverside 4-star with family rooms and city views if you want a polished central base.",
       "park": "On-site/contract garage — confirm bike handling",
       "price": "¥18,000–35,000"
+    },
+    {
+      "n": "Hotel Universal Port (USJ bayfront)",
+      "t": "Family / theme-park",
+      "d": "Official USJ-partner hotel a short walk from the park gates, with Minion-themed and large family rooms — handy for the Day-23 Super Nintendo World day (bikes already returned, so a car-park space is fine). Book the dated park tickets and area-entry separately.",
+      "park": "On-site/partner parking — <b>confirm motorcycle acceptance</b>",
+      "price": "¥24,000–45,000"
     }
   ],
   links: [
     { "l": "Osaka Info (official)", "u": "https://osaka-info.jp/en/" },
-    { "l": "Wikipedia — Osaka", "u": "https://en.wikipedia.org/wiki/Osaka" }
+    { "l": "Universal Studios Japan (official)", "u": "https://www.usj.co.jp/web/en/us" },
+    { "l": "Wikipedia — Osaka", "u": "https://en.wikipedia.org/wiki/Osaka" },
+    { "l": "Wikipedia — Super Nintendo World", "u": "https://en.wikipedia.org/wiki/Super_Nintendo_World" }
   ],
   photos: [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/960px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg",
       "cap": "Osaka Castle keep"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg/960px-Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg",
+      "cap": "Peach's Castle in Super Nintendo World, Universal Studios Japan (Day 23)"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg/960px-Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg",
@@ -198,7 +330,7 @@ window.DESTINATIONS = [
   jp: "高野山",
   region: "Kōya · Wakayama (Kii Peninsula)",
   type: "stop",
-  days: "Day 2 · 1 night (shukubō temple stay)",
+  days: "Day 3 · 1 night (shukubō temple stay)",
   legMiles: 54,
   lat: 34.2131, lng: 135.5844, zoom: 14,
   tagline: "A 1,200-year-old monastery town in the clouds — temple lodging, lantern-lit cedar avenues and Japan's most atmospheric cemetery.",
@@ -302,7 +434,7 @@ window.DESTINATIONS = [
   jp: "熊野本宮・湯の峰",
   region: "Kumano · Wakayama (Kii interior)",
   type: "stay",
-  days: "Days 3–4 · 2 nights",
+  days: "Days 4–5 · 2 nights",
   legMiles: 53,
   lat: 33.8403, lng: 135.7733, zoom: 12,
   tagline: "The sacred heart of the Kii Peninsula: the grandest Kumano shrine, Japan's largest torii, a riverbed you dig into a hot spring, and a world-heritage bath.",
@@ -315,7 +447,7 @@ window.DESTINATIONS = [
     "<b>Ōyunohara great torii</b> — Japan's largest torii (33.9 m) standing over the old shrine sandbank; a genuine \"wow\" for a child",
     "<b>Yunomine Onsen & Tsuboyu</b> — soak in the tiny <b>Tsuboyu</b>, the only UNESCO World Heritage bath you can actually bathe in (reserve a 30-min slot), and <b>boil eggs or vegetables</b> in the public <i>yuzutsu</i> hot spring",
     "<b>Kawayu Onsen</b> — scoop out your <b>own riverbed bath</b> in the warm gravel of the Ōto River, mixing hot spring and cool stream to taste",
-    "<b>Doro-kyō gorge jet-boat</b> — a glass-clear gorge cruise on the Kitayama River through towering cliffs (boards near Shingū; can also be ridden on the Day-5 descent to the coast)",
+    "<b>Doro-kyō gorge jet-boat</b> — a glass-clear gorge cruise on the Kitayama River through towering cliffs (boards near Shingū; can also be ridden on the Day-6 descent to the coast)",
     "<b>Tanise no Tsuribashi</b> — at 297 m one of Japan's longest pedestrian suspension bridges, swinging high over the Totsukawa (a thrill on the way in)",
     "<b>Kumano Kodō short walk</b> — the gentle <b>Hosshinmon-ōji → Hongū</b> final section of the Nakahechi trail, a manageable family stretch of the pilgrimage"
   ],
@@ -399,7 +531,7 @@ window.DESTINATIONS = [
   jp: "熊野・那智勝浦",
   region: "Kumano · Wakayama / Mie",
   type: "stop",
-  days: "Day 5",
+  days: "Day 6",
   legMiles: 30,
   lat: 33.6259, lng: 135.9412, zoom: 13,
   tagline: "Sacred waterfalls, pilgrim shrines and a wild Pacific shore.",
@@ -496,7 +628,7 @@ window.DESTINATIONS = [
   jp: "白浜",
   region: "Nanki-Shirahama · Wakayama",
   type: "stay",
-  days: "Days 6–7 · 2 nights",
+  days: "Days 7–8 · 2 nights",
   legMiles: 54,
   lat: 33.6853, lng: 135.3378, zoom: 13,
   tagline: "A white-sand resort coast, panda safaris and seaside hot springs.",
@@ -603,7 +735,7 @@ window.DESTINATIONS = [
   jp: "徳島・鳴門",
   region: "Tokushima · Shikoku",
   type: "stop",
-  days: "Day 8",
+  days: "Day 9",
   legMiles: 91,
   lat: 34.1722, lng: 134.6093, zoom: 12,
   tagline: "A ferry across the strait, then the great whirlpools of Naruto.",
@@ -701,7 +833,7 @@ window.DESTINATIONS = [
   jp: "祖谷渓",
   region: "Shikoku mountains",
   type: "stay",
-  days: "Days 9–10 · 2 nights",
+  days: "Days 10–11 · 2 nights",
   legMiles: 69,
   lat: 33.889, lng: 133.812, zoom: 12,
   tagline: "Vine bridges, deep gorges and one of Japan's hidden valleys.",
@@ -804,7 +936,7 @@ window.DESTINATIONS = [
   jp: "高知",
   region: "Shikoku south coast",
   type: "stop",
-  days: "Day 11",
+  days: "Day 12",
   legMiles: 37,
   lat: 33.5597, lng: 133.5311, zoom: 13,
   tagline: "Pacific shores, a perfectly preserved castle and big southern flavour.",
@@ -835,7 +967,7 @@ window.DESTINATIONS = [
     },
     {
       "n": "Tosa jiro chicken & nabeyaki-ramen",
-      "d": "a prized free-range chicken, and (near Susaki on the Day-12 ride) a ramen served bubbling in a clay pot with a raw egg."
+      "d": "a prized free-range chicken, and (near Susaki on the Day-13 ride) a ramen served bubbling in a clay pot with a raw egg."
     }
   ],
   hotels: [
@@ -909,20 +1041,20 @@ window.DESTINATIONS = [
   jp: "四万十川",
   region: "Shikoku west",
   type: "stay",
-  days: "Days 12–13 · 2 nights",
+  days: "Days 13–14 · 2 nights",
   legMiles: 66,
   lat: 32.9914, lng: 132.9338, zoom: 12,
   tagline: "Japan's 'last clear stream' and its low submersible bridges.",
   intro: [
     "The Shimanto is celebrated as *<i>Japan's last clear stream (</i>saigo no seiryū<i>)<b> — the longest river in Shikoku and the only major one with no large dam on its main stem, so it still runs broad, clean and free past rice paddies, cedar hills and the distinctive </b>chinkabashi<b> (\"sinking bridges\"). These low, deliberately </b>railless</i><i> concrete bridges are designed to let floodwater wash </i>over* them rather than sweep them away — there are 47 of them along the river, and crossing one is a quiet highlight.",
-    "Two nights by the river is the trip's most rural, slowed-down pause: canoeing on glass-clear water, riverside cycling and birdsong-and-water countryside time that is ideal for the child and the newer rider alike. Day-13 has the option of a longer run down to dramatic <b>Cape Ashizuri</b>, the granite southern tip of Shikoku."
+    "Two nights by the river is the trip's most rural, slowed-down pause: canoeing on glass-clear water, riverside cycling and birdsong-and-water countryside time that is ideal for the child and the newer rider alike. Day-14 has the option of a longer run down to dramatic <b>Cape Ashizuri</b>, the granite southern tip of Shikoku."
   ],
   highlights: [
     "<b>Chinkabashi \"sinking bridges\"</b> — the railless low bridges that duck under floods; the long <b>Sada</b> and <b>Sata</b> bridges are the most photogenic, and you can walk or gently ride across",
     "*<i>Canoeing, SUP or a </i>yakatabune<i> river boat</i>* — calm, shallow stretches make the Shimanto one of Japan's best beginner paddling rivers; traditional roofed boats glide down past the bridges",
     "<b>Riverside cycling</b> — flat, quiet lanes along the water with easy swimming holes in summer; bikes rent at the michi-no-eki",
-    "<b>Cape Ashizuri (Ashizuri-misaki)</b> — Shikoku's wild granite southern point, a white lighthouse over Pacific cliffs and the pilgrimage temple <b>Kongōfuku-ji</b> (Temple #38); a fine longer Day-13 ride",
-    "<b>Tatsukushi coast</b> (on the Day-12 ride in) — bizarre wave-eroded rock formations and a glass-bottom boat over coral",
+    "<b>Cape Ashizuri (Ashizuri-misaki)</b> — Shikoku's wild granite southern point, a white lighthouse over Pacific cliffs and the pilgrimage temple <b>Kongōfuku-ji</b> (Temple #38); a fine longer Day-14 ride",
+    "<b>Tatsukushi coast</b> (on the Day-13 ride in) — bizarre wave-eroded rock formations and a glass-bottom boat over coral",
     "<b>Michi-no-eki Tōwa & tea hamlets</b> — roadside stations selling river <i>aonori</i>, tea and <i>ayu</i> — good regroup stops"
   ],
   food: [
@@ -1012,12 +1144,12 @@ window.DESTINATIONS = [
   jp: "宇和島",
   region: "Ehime south",
   type: "stop",
-  days: "Day 14",
+  days: "Day 15",
   legMiles: 41,
   lat: 33.2233, lng: 132.5606, zoom: 13,
   tagline: "An original castle and a preserved merchant town en route north.",
   intro: [
-    "Heading up Shikoku's west coast toward Matsuyama, two worthwhile stops break the Day-14 ride. <b>Uwajima</b>, a former castle town of the Date clan, keeps one of Japan's <b>twelve original castle keeps</b> — a small, beautifully proportioned 1666 tower on a wooded hill. <b>Uchiko</b> is a superbly preserved street of Edo–Meiji merchant houses that grew rich on <b>vegetable wax (mokurō)</b>, their façades washed in the distinctive ochre-yellow plaster of the trade.",
+    "Heading up Shikoku's west coast toward Matsuyama, two worthwhile stops break the Day-15 ride. <b>Uwajima</b>, a former castle town of the Date clan, keeps one of Japan's <b>twelve original castle keeps</b> — a small, beautifully proportioned 1666 tower on a wooded hill. <b>Uchiko</b> is a superbly preserved street of Edo–Meiji merchant houses that grew rich on <b>vegetable wax (mokurō)</b>, their façades washed in the distinctive ochre-yellow plaster of the trade.",
     "These are easy, rewarding half-day stops — real history and quiet old streets without the crowds of the famous towns — on a relaxed transfer day up to Dōgo Onsen."
   ],
   highlights: [
@@ -1047,7 +1179,7 @@ window.DESTINATIONS = [
     {
       "n": "_Usually ridden through → sleep at Dōgo Onsen_",
       "t": "Note",
-      "d": "Day 14 ends at Matsuyama/Dōgo, a 2-night onsen base (see next stop)."
+      "d": "Day 15 ends at Matsuyama/Dōgo, a 2-night onsen base (see next stop)."
     },
     {
       "n": "Uchiko machiya inns (e.g. Kibako, Orinasu)",
@@ -1106,7 +1238,7 @@ window.DESTINATIONS = [
   jp: "道後温泉",
   region: "Ehime · Matsuyama",
   type: "stay",
-  days: "Days 14–15 · 2 nights",
+  days: "Days 15–16 · 2 nights",
   legMiles: 55,
   lat: 33.8519, lng: 132.7866, zoom: 14,
   tagline: "One of Japan's oldest hot springs beneath a hilltop castle.",
@@ -1210,7 +1342,7 @@ window.DESTINATIONS = [
   jp: "しまなみ海道",
   region: "Seto Inland Sea",
   type: "stop",
-  days: "Day 16",
+  days: "Day 17",
   legMiles: 36,
   lat: 34.11, lng: 133.01, zoom: 11,
   tagline: "Island-hopping across the Seto Inland Sea by a chain of great bridges.",
@@ -1312,7 +1444,7 @@ window.DESTINATIONS = [
   jp: "尾道",
   region: "Hiroshima coast",
   type: "stay",
-  days: "Days 16–17 · 2 nights",
+  days: "Days 17–18 · 2 nights",
   legMiles: 32,
   lat: 34.409, lng: 133.205, zoom: 14,
   tagline: "A hillside temple town and lemon-scented islands.",
@@ -1326,7 +1458,7 @@ window.DESTINATIONS = [
     "<b>Kōsan-ji (Setoda)</b> — a riotously ornate temple a priest built for his mother, with a hand-carved gate, a cave \"hell-and-heaven\" walk-through, and the <b>Miraishin-no-Oka \"Hill of Hope\"</b>, a hilltop of gleaming white Italian marble",
     "<b>Setoda lemon groves & Shimanami sea-view cafés</b> — citrus stands, gelato and waterfront coffee on Ikuchijima",
     "<b>Kōsoji & the old waterfront streets</b> — Onomichi's atmospheric shopping arcade and harbour, easy and flat with a child",
-    "<b>Day-17 option:</b> ride out onto the nearer Kaidō islands (Innoshima, Ikuchijima) for more bridge sweeps without committing to the full crossing"
+    "<b>Day-18 option:</b> ride out onto the nearer Kaidō islands (Innoshima, Ikuchijima) for more bridge sweeps without committing to the full crossing"
   ],
   food: [
     {
@@ -1418,7 +1550,7 @@ window.DESTINATIONS = [
   jp: "倉敷",
   region: "Okayama",
   type: "stop",
-  days: "Day 18",
+  days: "Day 19",
   legMiles: 41,
   lat: 34.5957, lng: 133.7718, zoom: 14,
   tagline: "A willow-lined canal quarter of white-walled storehouses.",
@@ -1429,7 +1561,7 @@ window.DESTINATIONS = [
   highlights: [
     "<b>Kurashiki Bikan historical quarter</b> — white-walled, black-tiled <i>kura</i> storehouses mirrored in a willow-lined canal; glide it on a <b>flat-bottomed boat</b> poled by a boatman in <i>happi</i> coat — a hit with a child",
     "<b>Ōhara Museum of Art</b> — <b>Japan's first museum of Western art</b> (1930), built by a local mill magnate; it holds real El Greco, Monet, Gauguin and Matisse in a little canal town — astonishing and compact",
-    "<b>Tomonoura</b> — the <i>Ponyo</i> harbour town (on the Day-18 ride in): the iconic stone <i>gangi</i> jetty, the old <i>jōyatō</i> lighthouse, and the seaside house where <b>Miyazaki stayed and sketched</b> the film",
+    "<b>Tomonoura</b> — the <i>Ponyo</i> harbour town (on the Day-19 ride in): the iconic stone <i>gangi</i> jetty, the old <i>jōyatō</i> lighthouse, and the seaside house where <b>Miyazaki stayed and sketched</b> the film",
     "<b>Ivy Square</b> — a romantic red-brick former cotton mill (1889) now a courtyard of ivy, cafés and craft workshops",
     "<b>Momotarō / Achi-jinja & local legend</b> — Okayama is the land of the <b>Momotarō \"Peach Boy\"</b> folk tale; kibi-dango sweets and Momotarō imagery are everywhere",
     "_Optional add-a-day:_ <b>Naoshima</b> art island (via Takamatsu/Uno ferry — Benesse House, the Chichū Museum, Yayoi Kusama's pumpkin); <b>Ritsurin Garden</b> in Takamatsu"
@@ -1535,18 +1667,19 @@ window.DESTINATIONS = [
   jp: "姫路",
   region: "Hyogo",
   type: "stop",
-  days: "Day 19",
+  days: "Day 20",
   legMiles: 104,
   lat: 34.8394, lng: 134.6939, zoom: 14,
   tagline: "Japan's most magnificent castle, then into cosmopolitan Kobe.",
   intro: [
     "<b>Himeji Castle — the \"White Heron\" (Shirasagi-jō)</b> — is Japan's finest surviving feudal castle and one of its first UNESCO World Heritage sites: a brilliant-white hilltop complex of a six-storey main keep, three lesser keeps and a maze of gates, completed in <b>1609 and never burned or besieged</b>, so it is original timber and plaster, not a reconstruction. The dazzling white comes from fire-resistant lime plaster over the walls and roof joints; the spiralling approach was designed to confuse attackers, and finding the way up with a child is half the fun. Its 2009–2015 restoration left it gleaming.",
-    "From Himeji it's a short hop into <b>Kobe</b>, a stylish port city — opened to foreigners in 1868 — famous for its beef, its hillside <b>Kitano</b> district of Western \"ijinkan\" merchant houses, a glittering harbour nightscape and a relaxed international feel. A comfortable night before the final flourish: Day-20's loop across the Akashi Kaikyō Bridge to Awaji and back to Osaka."
+    "From Himeji it's a short hop into <b>Kobe</b>, a stylish port city — opened to foreigners in 1868 — famous for its beef, its hillside <b>Kitano</b> district of Western \"ijinkan\" merchant houses, a glittering harbour nightscape and a relaxed international feel. A comfortable night before the final flourish: Day-21's loop across the Akashi Kaikyō Bridge to Awaji and back to Osaka."
   ],
   highlights: [
     "<b>Himeji Castle</b> — climb the original keep's steep timber stairs to the top floor (mind the head-height for adults), and hunt for the castle's <i>ishigaki</i> stone walls, hidden gun-ports and the \"Okiku's well\" ghost legend",
     "<b>Kōko-en</b> — nine walled Edo-style gardens beside the castle (1992) with carp ponds, a tea house and a maple valley; a calm counterpoint to the keep",
     "<b>Kobe Harborland & Meriken Park</b> — a waterfront of the red Port Tower, a Ferris wheel, the <i>BE KOBE</i> sign and harbour cruises",
+    "<b>Kawasaki Good Times World</b> — Kawasaki Heavy Industries' corporate museum at Meriken Park (entered through the Kobe Maritime Museum): sit-on motorcycles and Jet Skis, a Shinkansen 0-series driver's cab, a Bell helicopter, rail and aerospace exhibits and robots — a hands-on, thematically perfect ~1.5–2 h stop for a family on a motorcycle tour. Open Tue–Sun 10:00–17:00 (last entry 16:30), closed Mondays; entry via the Maritime Museum combined ticket (≈¥900 adult / ¥400 child). Easiest as a <b>Day-21 morning</b> visit before riding out to Awaji — park at the Meriken Park paid lot and confirm secure motorcycle parking on arrival",
     "<b>Kitano ijinkan</b> — the steep lane of preserved Western merchant mansions above Kobe, fun to wander",
     "<b>Mt. Rokkō / Maya \"ten-million-dollar\" night view</b> — one of Japan's three great city nightscapes, by ropeway/cable car above Kobe",
     "<b>Nada sake district</b> (Kobe) — Japan's biggest sake-brewing quarter, with free brewery museums"
@@ -1595,6 +1728,7 @@ window.DESTINATIONS = [
   ],
   links: [
     { "l": "Himeji Castle (official)", "u": "https://www.city.himeji.lg.jp/castle/" },
+    { "l": "Kawasaki Good Times World (official)", "u": "https://www.khi.co.jp/kawasakiworld/english/" },
     { "l": "Wikipedia — Himeji Castle", "u": "https://en.wikipedia.org/wiki/Himeji_Castle" }
   ],
   photos: [
@@ -1633,6 +1767,10 @@ window.DESTINATIONS = [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Throngs_of_people_walking_towards_Himeji_Castle%2C_Himeji%2C_2016.jpg/960px-Throngs_of_people_walking_towards_Himeji_Castle%2C_Himeji%2C_2016.jpg",
       "cap": "Throngs of people walking towards Himeji Castle, Himeji"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Kobe_Maritime_Museum_%26_Kawasaki_GoodTimes_World.jpg/960px-Kobe_Maritime_Museum_%26_Kawasaki_GoodTimes_World.jpg",
+      "cap": "Kobe Maritime Museum & Kawasaki Good Times World, Meriken Park"
     }
   ]
 },
@@ -1642,7 +1780,7 @@ window.DESTINATIONS = [
   jp: "淡路島",
   region: "Seto Inland Sea · Hyōgo",
   type: "stop",
-  days: "Day 20",
+  days: "Day 21",
   legMiles: 43,
   lat: 34.45, lng: 134.93, zoom: 11,
   tagline: "A farewell loop across the world's great suspension bridge.",
@@ -1678,7 +1816,7 @@ window.DESTINATIONS = [
     {
       "n": "_Day loop → sleep in Osaka_",
       "t": "Note",
-      "d": "Day 20 ends in Osaka; Awaji is ridden as a loop, not an overnight in the base plan."
+      "d": "Day 21 ends in Osaka; Awaji is ridden as a loop, not an overnight in the base plan."
     },
     {
       "n": "Yumekaiyu Awajishima (Sumoto Onsen)",
@@ -1741,7 +1879,7 @@ window.DESTINATIONS = [
 window.HOME = { city: "Seattle", airport: "SEA" };
 window.FLIGHTS = {
   "intro": "You're starting from Seattle. The motorcycles are an Osaka loop (pick up and return at the Suita base), but the long-haul leg is a simple round-trip nonstop SEA ⇄ Tokyo — then the Tōkaidō Shinkansen (~2h30m) down to Osaka and back. Not an open-jaw / Osaka-airport (KIX) ticket.",
-  "season": "Best window: October–early November 2026 (the trip's preferred season). The 22-day loop is bracketed by a Tokyo arrival night (Day 0) and a Tokyo departure night (fly home Day 23) — door-to-door ≈ 24 days.",
+  "season": "Best window: October–early November 2026 (the trip's preferred season). The Osaka riding loop is bracketed by a Tokyo arrival night (Day 0) + a full Tokyo museum day (Day 1) before the Day-2 pickup, and by a Super Nintendo World / USJ day (Day 23) and a reposition-to-Tokyo day (Day 24) before flying home on Day 25 — door-to-door ≈ 26 days (Day 0–25).",
   "legs": [
     {
       "dir": "Outbound",
@@ -1752,7 +1890,7 @@ window.FLIGHTS = {
       "duration": "≈ 10h 30m–11h",
       "airlines": ["ANA", "Delta", "JAL (Narita)"],
       "fareFrom": "$900",
-      "note": "Nonstop to Haneda on ANA/Delta (787) or to Narita on JAL. Prefer Haneda — the Keikyu Line reaches Shinagawa (a Shinkansen stop) in ~15 min. Then ride the Nozomi to Shin-Osaka for the Day-1 bike pickup.",
+      "note": "Nonstop to Haneda on ANA/Delta (787) or to Narita on JAL. Prefer Haneda — the Keikyu Line reaches Shinagawa (a Shinkansen stop) in ~15 min. A Tokyo arrival night (Day 0) and a full Tokyo museum day (Day 1) precede the Nozomi to Shin-Osaka for the Day-2 bike pickup.",
       "expedia": "https://www.expedia.com/lp/flights/sea/hnd/seattle-to-tokyo",
       "expediaAlt": "https://www.expedia.com/lp/flights/sea/nrt/seattle-to-tokyo"
     },
@@ -1760,12 +1898,12 @@ window.FLIGHTS = {
       "dir": "Return",
       "from": "Tokyo · Haneda (HND)",
       "to": "Seattle · SEA",
-      "sample": "Sample: depart ~Sun 1 Nov 2026 (after the Day-22 reposition to Tokyo)",
+      "sample": "Sample: depart ~Wed 4 Nov 2026 (after the Day-24 reposition to Tokyo)",
       "type": "Nonstop",
       "duration": "≈ 9h 30m–10h",
       "airlines": ["ANA", "Delta", "JAL (Narita)"],
       "fareFrom": "$900",
-      "note": "Nonstop home — you re-cross the date line and land in Seattle the same calendar day. Reposition Osaka→Tokyo by Nozomi on Day 22 (Kyoto sightseeing en route) and overnight near Haneda/Shinagawa.",
+      "note": "Nonstop home — you re-cross the date line and land in Seattle the same calendar day. After the Day-23 USJ day, reposition Osaka→Tokyo by Nozomi on Day 24 (Kyoto sightseeing en route) and overnight near Haneda/Shinagawa for the Day-25 flight.",
       "expedia": "https://www.expedia.com/lp/flights/hnd/sea/tokyo-to-seattle"
     }
   ],
@@ -1791,18 +1929,18 @@ window.FLIGHTS = {
   ]
 };
 
-/* Day-by-day schedule (Day 0–23). day.html builds a timed routine per day. */
+/* Day-by-day schedule (Day 0–25). day.html builds a timed routine per day. */
 window.DAYS = [
 {
     "d": 0,
-    "id": "osaka",
+    "id": "tokyo",
     "miles": 0,
     "rest": true,
     "rail": true,
     "region": "Tokyo",
     "title": "Tokyo Arrival Night",
     "route": "SEA ✈ Tokyo (Haneda) → Shinagawa",
-    "desc": "The nonstop SEA→Tokyo flight crosses the date line and lands mid/late afternoon. From Haneda the Keikyu Line reaches Shinagawa in ~15 min — overnight near the station for a gentle jet-lag reset. Forward the big luggage to Osaka by takkyūbin so tomorrow's train is light.",
+    "desc": "The nonstop SEA→Tokyo flight crosses the date line and lands mid/late afternoon. From Haneda the Keikyu Line reaches Shinagawa in ~15 min — overnight near the station for a gentle jet-lag reset. There's a full Tokyo museum day tomorrow before the train south, so don't forward the luggage yet; an easy dinner and an early night is the plan.",
     "tags": ["rest"],
     "gfrom": "Haneda Airport, Tokyo",
     "gto": "Shinagawa, Tokyo",
@@ -1813,11 +1951,11 @@ window.DAYS = [
         "what": "Easy dinner, early night by the Shinkansen station",
         "q": "Shinagawa Station Tokyo",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Marunouchi_%26_Tokyo_Station_3.jpg/960px-Marunouchi_%26_Tokyo_Station_3.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Shinagawa_Station_-01.jpg/960px-Shinagawa_Station_-01.jpg"
       },
       {
         "name": "Optional brief Tokyo look",
-        "what": "Only if energy allows after the flight",
+        "what": "Only if energy allows after the flight — a gentle evening stroll",
         "q": "Tokyo Station",
         "slot": "scenic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Marunouchi_%26_Tokyo_Station_3.jpg/960px-Marunouchi_%26_Tokyo_Station_3.jpg"
@@ -1826,6 +1964,54 @@ window.DAYS = [
   },
 {
     "d": 1,
+    "id": "tokyo",
+    "miles": 0,
+    "rest": true,
+    "rail": false,
+    "city": true,
+    "region": "Tokyo",
+    "title": "Tokyo Museum Day",
+    "route": "Mitaka · Toyosu · Shibuya (train & on foot)",
+    "desc": "A full, kid-focused Tokyo day before heading south — three of the city's best family experiences, paced so a jet-lagged 6-year-old isn't overstuffed. Morning at the whimsical Ghibli Museum in Mitaka, afternoon wading through the immersive digital art of teamLab Planets in Toyosu, and an early-evening cap at Nintendo TOKYO in Shibuya PARCO (Pokémon Center next door). Book the Ghibli (Lawson, ~a month ahead, sells out fast) and teamLab timed tickets the moment they release. Still no riding.",
+    "tags": ["rest", "kid"],
+    "gfrom": "Tokyo",
+    "gto": "Tokyo",
+    "gvia": "",
+    "poi": [
+      {
+        "name": "Ghibli Museum (Mitaka)",
+        "what": "Miyazaki's magical, hands-on museum — Totoro, the Catbus, a rooftop robot and a members-only short film. Advance date-and-time tickets only (Lawson); no door sales.",
+        "q": "Ghibli Museum Mitaka Tokyo",
+        "slot": "activity",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Ghibli_Museum%2C_Mitaka%2C_Tokyo%2C_20240823_1131_5545.jpg/960px-Ghibli_Museum%2C_Mitaka%2C_Tokyo%2C_20240823_1131_5545.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Ghibli_Museum"
+      },
+      {
+        "name": "teamLab Planets TOKYO",
+        "what": "A barefoot, immersive, wade-through world of digital art — mirrored light rooms, knee-deep water and projected flowers that delight every age. Needs a timed online ticket.",
+        "q": "teamLab Planets TOKYO",
+        "slot": "activity",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Photos_at_teamlab_planets_tokyo.jpg/960px-Photos_at_teamlab_planets_tokyo.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/TeamLab"
+      },
+      {
+        "name": "Nintendo TOKYO (Shibuya PARCO)",
+        "what": "The official Nintendo flagship store (Mario, Zelda, Pokémon, Splatoon) with the Pokémon Center Shibuya next door — a gentle finish near Shibuya Crossing.",
+        "q": "Nintendo TOKYO Shibuya PARCO",
+        "slot": "activity",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Shibuya_PARCO_2.jpg/960px-Shibuya_PARCO_2.jpg"
+      },
+      {
+        "name": "Shibuya Crossing",
+        "what": "The world's busiest scramble crossing, steps from Nintendo TOKYO — pure big-city Tokyo energy before dinner.",
+        "q": "Shibuya Crossing",
+        "slot": "scenic",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/960px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+      }
+    ]
+  },
+{
+    "d": 2,
     "id": "osaka",
     "miles": 0,
     "rest": true,
@@ -1833,37 +2019,39 @@ window.DAYS = [
     "region": "Kansai",
     "title": "Shinkansen to Osaka & Bike Pickup",
     "route": "Tokyo 🚄 Shin-Osaka → Suita base",
-    "desc": "Strictly no riding. A relaxed morning Nozomi (~2h30m) brings you to Shin-Osaka around midday, then to the Suita base for the rental handover: paperwork, a full walk-around, fitting the child's gear, pairing intercoms and a slow on-foot shakedown. Explore Osaka on foot and have an early night — the first real ride is Day 2.",
+    "desc": "Strictly no riding. A relaxed late-morning Nozomi (~2h30m) brings you to Shin-Osaka around midday, then to the Suita base for the rental handover: paperwork and insurance, a full walk-around of the Africa Twin and CB400X, fitting the child's gear, pairing intercoms and a slow on-foot shakedown. Cap it with an easy Dōtonbori/Namba evening — the first real ride is Day 3, fresh and rested.",
     "tags": ["rest", "kid"],
     "gfrom": "Tokyo Station",
     "gto": "Suita, Osaka",
     "gvia": "",
     "poi": [
       {
-        "name": "Osaka Castle",
-        "what": "Moats, park and the keep — an easy first-evening stroll",
-        "q": "Osaka Castle",
+        "name": "Suita rental base",
+        "what": "Bike pickup, paperwork, gear-fit and a slow on-foot shakedown of the controls",
+        "q": "Suita, Osaka",
         "slot": "activity",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/960px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg"
       },
       {
-        "name": "Kaiyukan Aquarium",
-        "what": "Whale sharks and a kid-pleasing arrival day",
-        "q": "Osaka Aquarium Kaiyukan",
+        "name": "Osaka Castle",
+        "what": "Moats, park and the keep — an easy first-evening stroll",
+        "q": "Osaka Castle",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg/960px-Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/960px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Osaka_Castle"
       },
       {
         "name": "Dōtonbori",
         "what": "Welcome dinner under the neon — takoyaki & okonomiyaki",
         "q": "Dotonbori Osaka",
         "slot": "lunch",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg/960px-Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg/960px-Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/D%C5%8Dtonbori"
       }
     ]
   },
 {
-    "d": 2,
+    "d": 3,
     "id": "koyasan",
     "miles": 45,
     "dmin": 139,
@@ -1871,25 +2059,35 @@ window.DAYS = [
     "region": "Kōya, Wakayama",
     "title": "Up to the Sacred Mountain",
     "route": "Osaka → Kōyasan",
-    "desc": "The first real ride is gentle and short — slip south out of the Kansai sprawl and pick up the paved Route 480/370 climb into the forested highlands of Kōyasan. Arrive in time to walk lantern-lit Okunoin, then settle into a shukubō for a shōjin-ryōri dinner and a quiet mountain night.",
+    "desc": "The first real ride is gentle and short — slip south out of the Kansai sprawl and pick up the paved Route 480/370 climb into the forested highlands of Kōyasan. An early-afternoon arrival is deliberate: walk the Danjō Garan and the head temple Kongōbu-ji, save lantern-lit Okunoin for the atmospheric dusk walk, then settle into a shukubō for a shōjin-ryōri dinner and a quiet mountain night.",
     "tags": ["ride", "kid"],
     "gfrom": "Osaka, Japan",
     "gto": "Koyasan, Wakayama, Japan",
     "gvia": "",
     "poi": [
       {
-        "name": "Okunoin",
-        "what": "Lantern-lit cedar avenue to Kōbō Daishi's mausoleum",
-        "q": "Okunoin Cemetery Koyasan",
-        "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Choishi_Path_-_Okunoin_Cemetery_-_Koyasan_-_Japan_-_18_%2847949824357%29.jpg/960px-Choishi_Path_-_Okunoin_Cemetery_-_Koyasan_-_Japan_-_18_%2847949824357%29.jpg"
-      },
-      {
         "name": "Danjo Garan & Konpon Daitō",
-        "what": "The vermilion great pagoda, spiritual heart of the mountain",
+        "what": "The vermilion great pagoda, spiritual heart of the mountain (early-afternoon arrival walk)",
         "q": "Konpon Daito Koyasan",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Konpon_Daito_Pagoda_-_Garan_Complex_-_Koyasan_-_Japan_%2847950047772%29.jpg/960px-Konpon_Daito_Pagoda_-_Garan_Complex_-_Koyasan_-_Japan_%2847950047772%29.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Konpon_Daito_Pagoda_-_Garan_Complex_-_Koyasan_-_Japan_%2847950047772%29.jpg/960px-Konpon_Daito_Pagoda_-_Garan_Complex_-_Koyasan_-_Japan_%2847950047772%29.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Mount_K%C5%8Dya"
+      },
+      {
+        "name": "Kongōbu-ji",
+        "what": "Head temple of Shingon Buddhism: the Banryūtei rock garden (Japan's largest) and painted fusuma halls (afternoon)",
+        "q": "Kongobu-ji Koyasan",
+        "slot": "activity",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Narrow_rock_garden%2C_Kongobuji%2C_Koyasan%2C_2016.jpg/960px-Narrow_rock_garden%2C_Kongobuji%2C_Koyasan%2C_2016.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Kong%C5%8Dbu-ji"
+      },
+      {
+        "name": "Okunoin",
+        "what": "Lantern-lit cedar avenue to Kōbō Daishi's mausoleum (a dusk walk, at its most atmospheric)",
+        "q": "Okunoin Cemetery Koyasan",
+        "slot": "scenic",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Choishi_Path_-_Okunoin_Cemetery_-_Koyasan_-_Japan_-_18_%2847949824357%29.jpg/960px-Choishi_Path_-_Okunoin_Cemetery_-_Koyasan_-_Japan_-_18_%2847949824357%29.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Okunoin"
       },
       {
         "name": "Shukubō shōjin-ryōri",
@@ -1901,7 +2099,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 3,
+    "d": 4,
     "id": "kumano-interior",
     "miles": 52,
     "dmin": 122,
@@ -1934,19 +2132,20 @@ window.DAYS = [
         "what": "Head Kumano shrine and Japan's largest torii",
         "q": "Kumano Hongu Taisha",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Torii_at_Oyunohara_01.jpg/960px-Torii_at_Oyunohara_01.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Torii_at_Oyunohara_01.jpg/960px-Torii_at_Oyunohara_01.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Kumano_Hong%C5%AB_Taisha"
       }
     ]
   },
 {
-    "d": 4,
+    "d": 5,
     "id": "kumano-interior",
     "miles": 20,
     "rest": true,
     "region": "Kumano, Wakayama",
     "title": "Kumano Interior Rest Day",
     "route": "Yunomine / Kawayu (light riding)",
-    "desc": "A slow day in the sacred interior. Soak in the tiny Tsuboyu — the only World Heritage bath you can bathe in — and boil eggs in the spring; at Kawayu, scoop your own riverbed bath in the warm gravel. Walk the gentle Hosshinmon-ōji → Hongū final stretch of the Kumano Kodō and return to Ōyunohara at golden hour.",
+    "desc": "A slow soak-and-stroll day in the sacred interior — the most restful base of the loop. Bathe in the tiny Tsuboyu (the only World Heritage bath you can enter) and boil eggs in the spring; at Kawayu, scoop your own riverbed bath in the warm gravel. Keep the Kumano Kodō to a gentle 30–40 min Hosshinmon-ōji → Hongū taster (easy for a child), and return to the giant Ōyunohara torii at golden hour. Rain plan: the indoor Kumano Hongū Heritage Center and covered ryokan baths.",
     "tags": ["rest", "kid", "onsen", "stay2"],
     "gfrom": "Yunomine Onsen, Wakayama, Japan",
     "gto": "Kumano Hongu Taisha",
@@ -1976,7 +2175,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 5,
+    "d": 6,
     "id": "kumano",
     "miles": 52,
     "dmin": 112,
@@ -1984,7 +2183,7 @@ window.DAYS = [
     "region": "Wakayama",
     "title": "Down to the Sacred Coast",
     "route": "Yunomine → Doro-kyō → Nachi-Katsuura",
-    "desc": "A short, scenic descent from the mountains to the Pacific. Drop along the Kitayama River to Doro-kyō, where a jet-boat threads the glass-clear gorge, then continue to Nachi Falls — Japan's tallest waterfall — beside the vermilion pagoda of Kumano Nachi Taisha, reached up the cobbled Daimon-zaka. Overnight at the tuna port of Katsuura.",
+    "desc": "A short, scenic descent from the mountains to the Pacific. Drop along the Kitayama River to Doro-kyō, where a jet-boat threads the glass-clear gorge, then continue to Nachi Falls — Japan's tallest waterfall — beside the vermilion pagoda of Kumano Nachi Taisha, reached up the cobbled Daimon-zaka. With the riding done by mid-afternoon, bank the rest of the day in the water at the tuna port of Katsuura — the seaside cave onsen and fresh maguro.",
     "tags": ["ride", "kid"],
     "gfrom": "Yunomine Onsen, Wakayama, Japan",
     "gto": "Kii-Katsuura, Wakayama, Japan",
@@ -1992,14 +2191,14 @@ window.DAYS = [
     "poi": [
       {
         "name": "Doro-kyō jet-boat",
-        "what": "Glass-clear gorge cruise between sheer cliffs",
+        "what": "Glass-clear gorge cruise between sheer cliffs (a kid highlight)",
         "q": "Doro-kyo Gorge Kitayama",
         "slot": "stop",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Doro_Gorge_Jet_Boat.jpg/960px-Doro_Gorge_Jet_Boat.jpg"
       },
       {
         "name": "Daimon-zaka",
-        "what": "Short cobbled pilgrim path under giant cedars",
+        "what": "Short cobbled pilgrim path under giant cedars (kid-friendly)",
         "q": "Daimonzaka Nachi",
         "slot": "scenic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Kumano-Nachi_Taisha_%2851928795142%29.jpg/960px-Kumano-Nachi_Taisha_%2851928795142%29.jpg"
@@ -2009,12 +2208,28 @@ window.DAYS = [
         "what": "Waterfall, pagoda and shrine, with lunch",
         "q": "Nachi Falls",
         "slot": "lunch",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Nachikatsuura_Kumano-Nachi-taisha_Hiro-jinja_Nachi_Falls_06.jpg/960px-Nachikatsuura_Kumano-Nachi-taisha_Hiro-jinja_Nachi_Falls_06.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Nachikatsuura_Kumano-Nachi-taisha_Hiro-jinja_Nachi_Falls_06.jpg/960px-Nachikatsuura_Kumano-Nachi-taisha_Hiro-jinja_Nachi_Falls_06.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Nachi_Falls"
+      },
+      {
+        "name": "Kumano Hayatama Taisha (Shingū)",
+        "what": "Optional third Kumano grand shrine and its 1,000-year-old sacred nagi tree, on the way down",
+        "q": "Kumano Hayatama Taisha",
+        "slot": "scenic",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kumano_Nachi_Taisha_201908-2.jpg/960px-Kumano_Nachi_Taisha_201908-2.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Kumano_Hayatama_Taisha"
+      },
+      {
+        "name": "Katsuura cave onsen",
+        "what": "Afternoon soak in Bōki-dō, a natural sea-cave bath over the booming surf",
+        "q": "Hotel Urashima Katsuura",
+        "slot": "activity",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Onsen_in_Nachikatsuura%2C_Japan.jpg/960px-Onsen_in_Nachikatsuura%2C_Japan.jpg"
       }
     ]
   },
 {
-    "d": 6,
+    "d": 7,
     "id": "shirahama",
     "miles": 56,
     "dmin": 111,
@@ -2022,7 +2237,7 @@ window.DAYS = [
     "region": "Wakayama",
     "title": "Capes & White Sand",
     "route": "Katsuura → Shirahama",
-    "desc": "A short, scenic coastal day around the peninsula's southern tip. Pause at the photogenic sea pillars of Hashigui-iwa and the sheer Sandanbeki cliffs before rolling into the white-sand resort of Shirahama by early afternoon — plenty of beach and onsen time on arrival.",
+    "desc": "A short, scenic coastal day around the peninsula's southern tip. Pause at the photogenic sea pillars of Hashigui-iwa and the sheer Sandanbeki cliffs, take a tuna lunch at Tore-Tore Ichiba, and roll into the white-sand resort of Shirahama by early afternoon (~13:30). The early arrival is the whole point — the first beach base, with the afternoon for the resort: white-sand Shirarahama, the tilted Senjōjiki rock platform, a Sakino-yu surf-line soak and a sunset through Engetsu Island's sea arch.",
     "tags": ["ride", "kid"],
     "gfrom": "Kii-Katsuura, Wakayama, Japan",
     "gto": "Shirahama, Wakayama, Japan",
@@ -2048,18 +2263,47 @@ window.DAYS = [
         "q": "Tore-Tore Ichiba Shirahama",
         "slot": "lunch",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/131221_Shirarahama_Beach_Shirahama_Wakayama_pref_Japan05s3.jpg/960px-131221_Shirarahama_Beach_Shirahama_Wakayama_pref_Japan05s3.jpg"
+      },
+      {
+        "name": "Shirarahama beach",
+        "what": "White-sand beach time on arrival; shallow, gentle swimming for the child (afternoon)",
+        "q": "Shirarahama Beach Shirahama",
+        "slot": "activity",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/131221_Shirarahama_Beach_Shirahama_Wakayama_pref_Japan02s5.jpg/960px-131221_Shirarahama_Beach_Shirahama_Wakayama_pref_Japan02s5.jpg"
+      },
+      {
+        "name": "Senjōjiki",
+        "what": "Wave-cut '1,000-tatami' rock terrace, fun to clamber on (afternoon)",
+        "q": "Senjojiki Shirahama",
+        "slot": "scenic",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/131221_Shirarahama_Beach_Shirahama_Wakayama_pref_Japan05s3.jpg/960px-131221_Shirarahama_Beach_Shirahama_Wakayama_pref_Japan05s3.jpg"
+      },
+      {
+        "name": "Sakino-yu onsen",
+        "what": "Rock open-air bath right at the surf line, in use 1,300+ years (afternoon)",
+        "q": "Sakinoyu Onsen Shirahama",
+        "slot": "activity",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Onsen_in_Nachikatsuura%2C_Japan.jpg/960px-Onsen_in_Nachikatsuura%2C_Japan.jpg"
+      },
+      {
+        "name": "Engetsu Island",
+        "what": "Sunset through the 'round-moon' sea arch (early evening)",
+        "q": "Engetsu Island Shirahama",
+        "slot": "scenic",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Shirahama_Engetsu_Island_03.jpg/960px-Shirahama_Engetsu_Island_03.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Engetsu_Island"
       }
     ]
   },
 {
-    "d": 7,
+    "d": 8,
     "id": "shirahama",
     "miles": 15,
     "rest": true,
     "region": "Wakayama",
     "title": "Shirahama Rest Day",
     "route": "Shirahama (light riding)",
-    "desc": "The trip's first beach rest base, built around a single big kid day: Adventure World, with giant pandas and a drive-through safari. Beach, an open-air sea-edge onsen and an Engetsu Island sunset round it out.",
+    "desc": "The trip's first beach base — and really the kids' big day out: Adventure World, with giant pandas and a drive-through safari (a full, busy day, so it's energetic rather than truly lazy). For a genuinely low-key alternative, just do Shirarahama beach, the sea-edge Sakino-yu onsen and an Engetsu Island sunset. Rain plan: Adventure World runs mostly under cover, or the indoor Kyoto University Shirahama Aquarium.",
     "tags": ["rest", "kid", "onsen", "stay2"],
     "gfrom": "Shirahama, Wakayama, Japan",
     "gto": "Adventure World, Shirahama",
@@ -2070,7 +2314,8 @@ window.DAYS = [
         "what": "Pandas, safari and a marine park — a full joyful day",
         "q": "Adventure World Shirahama",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Panda_Adventure_World_Shirahama.JPG/960px-Panda_Adventure_World_Shirahama.JPG"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Panda_Adventure_World_Shirahama.JPG/960px-Panda_Adventure_World_Shirahama.JPG",
+        "wiki": "https://en.wikipedia.org/wiki/Adventure_World_(Japan)"
       },
       {
         "name": "Shirarahama beach",
@@ -2089,7 +2334,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 8,
+    "d": 9,
     "id": "tokushima",
     "miles": 91,
     "dmin": 166,
@@ -2109,7 +2354,8 @@ window.DAYS = [
         "what": "Hilltop keep before the port",
         "q": "Wakayama Castle",
         "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Wakayama_Castle_Keep_Tower_20210724-1.jpg/960px-Wakayama_Castle_Keep_Tower_20210724-1.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Wakayama_Castle_Keep_Tower_20210724-1.jpg/960px-Wakayama_Castle_Keep_Tower_20210724-1.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Wakayama_Castle"
       },
       {
         "name": "Nankai Ferry",
@@ -2123,12 +2369,13 @@ window.DAYS = [
         "what": "Uzunomichi glass-floor walkway over the strait",
         "q": "Uzunomichi Naruto",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Naruto_whirlpools_20170609-1.jpg/960px-Naruto_whirlpools_20170609-1.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Naruto_whirlpools_20170609-1.jpg/960px-Naruto_whirlpools_20170609-1.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Naruto_whirlpools"
       }
     ]
   },
 {
-    "d": 9,
+    "d": 10,
     "id": "iya",
     "miles": 75,
     "dmin": 125,
@@ -2161,19 +2408,20 @@ window.DAYS = [
         "what": "Vine bridge and gorge scenery",
         "q": "Iya Valley",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Iya_Valley_a.jpeg/960px-Iya_Valley_a.jpeg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Iya_Valley_a.jpeg/960px-Iya_Valley_a.jpeg",
+        "wiki": "https://en.wikipedia.org/wiki/Iya_Valley"
       }
     ]
   },
 {
-    "d": 10,
+    "d": 11,
     "id": "iya",
     "miles": 25,
     "rest": true,
     "region": "Shikoku",
     "title": "Iya Rest Day",
     "route": "Iya Valley (light riding)",
-    "desc": "Kazurabashi vine bridge, the peeing-boy statue viewpoint, and an Oboke Gorge sightseeing boat — slow mountain time far from any city.",
+    "desc": "Slow mountain time far from any city: the Kazurabashi vine bridge (hold a small child's hand on the slatted gaps), the peeing-boy statue viewpoint, and an Oboke Gorge sightseeing boat, with the scarecrow village of Nagoro a deeper optional drive. Downtime is the riverside onsen ryokan. Rain plan: the indoor Lapis Ōboke rock-and-yōkai museum and a hearth dekomawashi lunch.",
     "tags": ["rest", "kid", "onsen", "stay2"],
     "gfrom": "Oboke, Tokushima, Japan",
     "gto": "Iya Kazurabashi, Japan",
@@ -2184,7 +2432,8 @@ window.DAYS = [
         "what": "Cross the swaying vine bridge",
         "q": "Iya Kazurabashi",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Iya_Kazurabashi-4.jpg/960px-Iya_Kazurabashi-4.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Iya_Kazurabashi-4.jpg/960px-Iya_Kazurabashi-4.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Iya_Valley"
       },
       {
         "name": "Oboke Gorge boat",
@@ -2210,7 +2459,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 11,
+    "d": 12,
     "id": "kochi",
     "miles": 75,
     "dmin": 180,
@@ -2236,26 +2485,29 @@ window.DAYS = [
         "what": "Yanase Takashi Memorial Hall in Kami — a sure hit for a 6-year-old",
         "q": "Anpanman Museum Kami Kochi",
         "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Kami_Kochi_Yanase_Takashi_Memorial_Hall.jpg/960px-Kami_Kochi_Yanase_Takashi_Memorial_Hall.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Kami_Kochi_Yanase_Takashi_Memorial_Hall.jpg/960px-Kami_Kochi_Yanase_Takashi_Memorial_Hall.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Anpanman"
       },
       {
         "name": "Kochi Castle & Hirome Market",
         "what": "Original keep, market lunch",
         "q": "Kochi Castle",
         "slot": "lunch",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Kochi_Castle08s3872.jpg/960px-Kochi_Castle08s3872.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Kochi_Castle08s3872.jpg/960px-Kochi_Castle08s3872.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/K%C5%8Dchi_Castle"
       },
       {
         "name": "Katsurahama",
         "what": "Pacific beach & Ryōma statue",
         "q": "Katsurahama",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Katsurahama%2C_2005.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Katsurahama%2C_2005.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Katsurahama"
       }
     ]
   },
 {
-    "d": 12,
+    "d": 13,
     "id": "shimanto",
     "miles": 128,
     "dmin": 273,
@@ -2274,7 +2526,8 @@ window.DAYS = [
         "what": "Famous translucent-blue river",
         "q": "Niyodo River",
         "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Shimanto_River_And_Shimanto_River_Bridge_1.JPG/960px-Shimanto_River_And_Shimanto_River_Bridge_1.JPG"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Shimanto_River_And_Shimanto_River_Bridge_1.JPG/960px-Shimanto_River_And_Shimanto_River_Bridge_1.JPG",
+        "wiki": "https://en.wikipedia.org/wiki/Niyodo_River"
       },
       {
         "name": "Susaki",
@@ -2300,23 +2553,23 @@ window.DAYS = [
     ]
   },
 {
-    "d": 13,
+    "d": 14,
     "id": "shimanto",
     "miles": 20,
     "rest": true,
     "region": "Shikoku",
     "title": "Shimanto Rest Day",
     "route": "Shimanto River (light riding)",
-    "desc": "River canoeing or a sightseeing boat, riverside cycling, and slow rural time by the water.",
+    "desc": "The best-placed rest of the trip — right after the two hardest riding days. A covered yakatabune river boat glides past the low railless 'sinking bridges'; add an easy riverside stroll or cycle and slow rural time by the water. (Canoeing/SUP is really a summer thing — too cold in late October.) Kid + rain plan: the indoor Akitsuio dragonfly-and-fish museum at Tonbo Kingdom.",
     "tags": ["rest", "kid", "stay2"],
     "gfrom": "Shimanto, Kochi, Japan",
     "gto": "Shimanto River, Japan",
     "gvia": "",
     "poi": [
       {
-        "name": "Shimanto River canoe",
-        "what": "Canoe or SUP on clear water",
-        "q": "Shimanto River canoe",
+        "name": "Shimanto yakatabune boat",
+        "what": "Covered river cruise past the sinking bridges",
+        "q": "Shimanto River yakatabune",
         "slot": "activity",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Shimanto_River_%285279082249%29.jpg/960px-Shimanto_River_%285279082249%29.jpg"
       },
@@ -2332,12 +2585,13 @@ window.DAYS = [
         "what": "Dramatic cape & lighthouse",
         "q": "Cape Ashizuri",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/ShimantoRiverFromNakabaRestarea.JPG/960px-ShimantoRiverFromNakabaRestarea.JPG"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/ShimantoRiverFromNakabaRestarea.JPG/960px-ShimantoRiverFromNakabaRestarea.JPG",
+        "wiki": "https://en.wikipedia.org/wiki/Cape_Ashizuri"
       }
     ]
   },
 {
-    "d": 14,
+    "d": 15,
     "id": "dogo",
     "miles": 117,
     "dmin": 210,
@@ -2356,7 +2610,8 @@ window.DAYS = [
         "what": "Original hilltop keep",
         "q": "Uwajima Castle",
         "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Uwajima-jo.JPG/960px-Uwajima-jo.JPG"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Uwajima-jo.JPG/960px-Uwajima-jo.JPG",
+        "wiki": "https://en.wikipedia.org/wiki/Uwajima_Castle"
       },
       {
         "name": "Uwajima taimeshi",
@@ -2370,7 +2625,8 @@ window.DAYS = [
         "what": "Merchant street & kabuki theatre",
         "q": "Uchiko Yokaichi",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Uchiko-za_%286454001047%29.jpg/960px-Uchiko-za_%286454001047%29.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Uchiko-za_%286454001047%29.jpg/960px-Uchiko-za_%286454001047%29.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Uchiko,_Ehime"
       },
       {
         "name": "Garyū Sansō, Ozu",
@@ -2382,7 +2638,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 15,
+    "d": 16,
     "id": "dogo",
     "miles": 10,
     "rest": true,
@@ -2400,14 +2656,16 @@ window.DAYS = [
         "what": "Ropeway to a hilltop original castle",
         "q": "Matsuyama Castle Ehime",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/MEIN%26SMALL_CASTLE_TOWER_%2CMATSUYAMA_CASTLE%28IYO%29.JPG/960px-MEIN%26SMALL_CASTLE_TOWER_%2CMATSUYAMA_CASTLE%28IYO%29.JPG"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/MEIN%26SMALL_CASTLE_TOWER_%2CMATSUYAMA_CASTLE%28IYO%29.JPG/960px-MEIN%26SMALL_CASTLE_TOWER_%2CMATSUYAMA_CASTLE%28IYO%29.JPG",
+        "wiki": "https://en.wikipedia.org/wiki/Matsuyama_Castle_(Iyo)"
       },
       {
         "name": "Dōgo Onsen Honkan",
         "what": "Soak in the historic bathhouse",
         "q": "Dogo Onsen Honkan",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Dogo_Onsen_Honkan_%28Main_building%29%2C_%E9%81%93%E5%BE%8C%E6%B8%A9%E6%B3%89_%E6%9C%AC%E9%A4%A8_-_panoramio.jpg/960px-Dogo_Onsen_Honkan_%28Main_building%29%2C_%E9%81%93%E5%BE%8C%E6%B8%A9%E6%B3%89_%E6%9C%AC%E9%A4%A8_-_panoramio.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Dogo_Onsen_Honkan_%28Main_building%29%2C_%E9%81%93%E5%BE%8C%E6%B8%A9%E6%B3%89_%E6%9C%AC%E9%A4%A8_-_panoramio.jpg/960px-Dogo_Onsen_Honkan_%28Main_building%29%2C_%E9%81%93%E5%BE%8C%E6%B8%A9%E6%B3%89_%E6%9C%AC%E9%A4%A8_-_panoramio.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/D%C5%8Dgo_Onsen"
       },
       {
         "name": "Botchan Ressha",
@@ -2421,12 +2679,13 @@ window.DAYS = [
         "what": "Atmospheric pilgrimage temple",
         "q": "Ishiteji Temple Matsuyama",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Stone_sign%2C_Matsuyama_Castle%2C_Matsuyama%2C_Ehime_-_Sep_23%2C_2011.jpg/960px-Stone_sign%2C_Matsuyama_Castle%2C_Matsuyama%2C_Ehime_-_Sep_23%2C_2011.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Stone_sign%2C_Matsuyama_Castle%2C_Matsuyama%2C_Ehime_-_Sep_23%2C_2011.jpg/960px-Stone_sign%2C_Matsuyama_Castle%2C_Matsuyama%2C_Ehime_-_Sep_23%2C_2011.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Ishite-ji"
       }
     ]
   },
 {
-    "d": 16,
+    "d": 17,
     "id": "onomichi",
     "miles": 86,
     "dmin": 193,
@@ -2445,7 +2704,8 @@ window.DAYS = [
         "what": "Sea-water-moat castle",
         "q": "Imabari Castle",
         "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Kurushima-Kaikyo_Bridge%2C_Seto_Inland_Sea%2C_Japan.jpg/960px-Kurushima-Kaikyo_Bridge%2C_Seto_Inland_Sea%2C_Japan.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Kurushima-Kaikyo_Bridge%2C_Seto_Inland_Sea%2C_Japan.jpg/960px-Kurushima-Kaikyo_Bridge%2C_Seto_Inland_Sea%2C_Japan.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Imabari_Castle"
       },
       {
         "name": "Kirosan Observatory",
@@ -2459,7 +2719,8 @@ window.DAYS = [
         "what": "Samurai-armour shrine, lunch",
         "q": "Oyamazumi Shrine",
         "slot": "lunch",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Shimanami_Kaido_Bikeway_%2814089291941%29.jpg/960px-Shimanami_Kaido_Bikeway_%2814089291941%29.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Shimanami_Kaido_Bikeway_%2814089291941%29.jpg/960px-Shimanami_Kaido_Bikeway_%2814089291941%29.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/%C5%8Cyamazumi_Shrine"
       },
       {
         "name": "Setoda, Ikuchijima",
@@ -2471,14 +2732,14 @@ window.DAYS = [
     ]
   },
 {
-    "d": 17,
+    "d": 18,
     "id": "onomichi",
     "miles": 25,
     "rest": true,
     "region": "Setouchi",
     "title": "Island Rest Day",
     "route": "Setoda / Onomichi (light riding)",
-    "desc": "Setoda temple, lemon groves and gelato, Onomichi's hillside lanes and cat alley. Easy pace.",
+    "desc": "Easy pace: Setoda's Kōsanji temple and marble Hill of Hope, lemon groves and gelato, then Onomichi's hillside lanes and cat alley — take the Senkō-ji ropeway up and wander down rather than climbing the full temple stair. Downtime at the waterfront cafés. Rain plan: the covered Onomichi shōtengai arcade and the Onomichi U2 cycle-and-harbour complex.",
     "tags": ["rest", "kid", "stay2"],
     "gfrom": "Onomichi, Hiroshima, Japan",
     "gto": "Setoda, Ikuchijima, Japan",
@@ -2503,12 +2764,13 @@ window.DAYS = [
         "what": "Ornate temple & marble hilltop",
         "q": "Kosanji Temple Setoda",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/%E5%B0%BE%E9%81%93_Onomachi_-_panoramio.jpg/960px-%E5%B0%BE%E9%81%93_Onomachi_-_panoramio.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/%E5%B0%BE%E9%81%93_Onomachi_-_panoramio.jpg/960px-%E5%B0%BE%E9%81%93_Onomachi_-_panoramio.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/K%C5%8Dsan-ji"
       }
     ]
   },
 {
-    "d": 18,
+    "d": 19,
     "id": "kurashiki",
     "miles": 90,
     "dmin": 195,
@@ -2527,14 +2789,16 @@ window.DAYS = [
         "what": "Station-side castle",
         "q": "Fukuyama Castle",
         "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Kurashiki_Canal_Area.jpg/960px-Kurashiki_Canal_Area.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Kurashiki_Canal_Area.jpg/960px-Kurashiki_Canal_Area.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Fukuyama_Castle"
       },
       {
         "name": "Tomonoura (Ponyo harbour)",
         "what": "Stone jetty, lighthouse and the Ponyo hillside",
         "q": "Tomonoura",
         "slot": "coffee",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tomonoura_Gangi.jpg/960px-Tomonoura_Gangi.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Tomonoura_Gangi.jpg/960px-Tomonoura_Gangi.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Tomonoura"
       },
       {
         "name": "Washūzan Viewpoint",
@@ -2553,7 +2817,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 19,
+    "d": 20,
     "id": "himeji",
     "miles": 105,
     "dmin": 169,
@@ -2572,7 +2836,8 @@ window.DAYS = [
         "what": "White Heron castle + garden, unhurried, with lunch",
         "q": "Himeji Castle",
         "slot": "lunch",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Himeji_Castle%2C_November_2016_-02.jpg/960px-Himeji_Castle%2C_November_2016_-02.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Himeji_Castle%2C_November_2016_-02.jpg/960px-Himeji_Castle%2C_November_2016_-02.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Himeji_Castle"
       },
       {
         "name": "Kobe Harborland",
@@ -2584,7 +2849,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 20,
+    "d": 21,
     "id": "awaji",
     "miles": 64,
     "dmin": 105,
@@ -2603,7 +2868,8 @@ window.DAYS = [
         "what": "Ride the ~4 km span; photo stop at the Awaji end",
         "q": "Akashi Kaikyo Bridge",
         "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Akashi-Kaikyo_Bridge_h008.jpg/960px-Akashi-Kaikyo_Bridge_h008.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Akashi-Kaikyo_Bridge_h008.jpg/960px-Akashi-Kaikyo_Bridge_h008.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Akashi_Kaiky%C5%8D_Bridge"
       },
       {
         "name": "Nijigen no Mori",
@@ -2622,14 +2888,14 @@ window.DAYS = [
     ]
   },
 {
-    "d": 21,
+    "d": 22,
     "id": "osaka",
     "miles": 15,
     "rest": true,
     "region": "Kansai",
     "title": "Osaka & Bike Return",
     "route": "Osaka (light riding)",
-    "desc": "Return the motorcycles at the Suita base and celebrate the journey. A relaxed Osaka day — castle, aquarium and the food streets of Dōtonbori.",
+    "desc": "Return the motorcycles at the Suita base and celebrate the journey — a relaxed Osaka recovery day before tomorrow's big USJ outing. Osaka Castle and park, and the food streets of Dōtonbori; the Kaiyukan whale-shark aquarium is the calm option if you'd rather save energy for Super Nintendo World.",
     "tags": ["rest", "kid", "stay2"],
     "gfrom": "Suita, Osaka",
     "gto": "Osaka Aquarium Kaiyukan",
@@ -2640,34 +2906,77 @@ window.DAYS = [
         "what": "Castle & park",
         "q": "Osaka Castle",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/960px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg"
-      },
-      {
-        "name": "Kaiyukan",
-        "what": "Whale-shark aquarium, a top kids' day",
-        "q": "Osaka Aquarium Kaiyukan",
-        "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg/960px-Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/960px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Osaka_Castle"
       },
       {
         "name": "Dōtonbori",
         "what": "Neon, street food and a celebration dinner",
         "q": "Dotonbori Osaka",
+        "slot": "activity",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg/960px-Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/D%C5%8Dtonbori"
+      },
+      {
+        "name": "Kaiyukan (option)",
+        "what": "Whale-shark aquarium, if you'd rather save USJ energy for tomorrow",
+        "q": "Osaka Aquarium Kaiyukan",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg/960px-Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg/960px-Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg"
       }
     ]
   },
 {
-    "d": 22,
+    "d": 23,
     "id": "osaka",
+    "miles": 0,
+    "rest": true,
+    "city": true,
+    "region": "Kansai",
+    "title": "Super Nintendo World / USJ",
+    "route": "Osaka — Universal Studios Japan (no riding)",
+    "desc": "With the motorcycles safely back at the Suita base, the family gives a full day to Universal Studios Japan on Osaka Bay and its headline land, Super Nintendo World — a life-size, interactive Mushroom Kingdom. Ride Mario Kart: Koopa's Challenge and the gentle Yoshi's Adventure, and strap on a Power-Up Band to punch ? blocks across the land. The wider park adds Harry Potter, Minion Park and family shows. Buy dated tickets ahead and reserve the Nintendo area / key rides as early as the system allows — this is the busiest day of the trip.",
+    "tags": ["rest", "kid"],
+    "gfrom": "Universal Studios Japan",
+    "gto": "Universal Studios Japan",
+    "gvia": "",
+    "poi": [
+      {
+        "name": "Super Nintendo World",
+        "what": "Life-size Mushroom Kingdom; Mario Kart: Koopa's Challenge + an interactive Power-Up Band to punch ? blocks and collect coins. Normally needs a (free) Area Timed-Entry ticket or a paid Express Pass to enter the land.",
+        "q": "Super Nintendo World Osaka",
+        "slot": "activity",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg/960px-Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Super_Nintendo_World"
+      },
+      {
+        "name": "Universal Studios Japan",
+        "what": "The wider park — The Wizarding World of Harry Potter, Minion Park and family rides and shows. A full day out; pace it and plan rest breaks for the 6-year-old.",
+        "q": "Universal Studios Japan",
+        "slot": "activity",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Power_up_bands_at_Super_Nintendo_World_%28Universal_Studios_Japan%29.png/960px-Power_up_bands_at_Super_Nintendo_World_%28Universal_Studios_Japan%29.png",
+        "wiki": "https://en.wikipedia.org/wiki/Universal_Studios_Japan"
+      },
+      {
+        "name": "Kaiyukan (calm alternative)",
+        "what": "Whale-shark aquarium across the bay, indoor and all-weather — the low-key option if a full theme-park day is too much.",
+        "q": "Osaka Aquarium Kaiyukan",
+        "slot": "scenic",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg/960px-Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Osaka_Aquarium_Kaiyukan"
+      }
+    ]
+  },
+{
+    "d": 24,
+    "id": "tokyo",
     "miles": 0,
     "rest": true,
     "rail": true,
     "region": "Kansai → Tokyo",
-    "title": "Buffer & Shinkansen to Tokyo",
+    "title": "Reposition to Tokyo",
     "route": "Osaka / Kyoto 🚄 Tokyo",
-    "desc": "Flexible buffer day that also repositions to Tokyo for the flight home. Kyoto sits right on the Tōkaidō line — sightsee in the morning (Fushimi Inari or a last Osaka food stroll), then board an afternoon Nozomi at Kyoto (or Shin-Osaka) → Tokyo (~2h30m) and overnight near Haneda/Shinagawa. The slack here also absorbs any earlier weather day.",
+    "desc": "Flexible buffer day that also repositions to Tokyo for the flight home. Kyoto sits right on the Tōkaidō line — sightsee in the morning (Fushimi Inari's thousand torii or a last Osaka food stroll), then board an afternoon Nozomi at Kyoto (or Shin-Osaka) → Tokyo (~2h30m) and overnight near Haneda/Shinagawa. The slack here also absorbs any earlier weather day. Forward the cases ahead by takkyūbin so the train is light.",
     "tags": ["rest", "kid"],
     "gfrom": "Osaka, Japan",
     "gto": "Tokyo Station",
@@ -2678,14 +2987,16 @@ window.DAYS = [
         "what": "Thousand vermilion torii gates (board the Shinkansen at Kyoto Station after)",
         "q": "Fushimi Inari Taisha",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Fushimi_Inari-taisha%2C_Kyoto%2C_20240818_1343_4411.jpg/960px-Fushimi_Inari-taisha%2C_Kyoto%2C_20240818_1343_4411.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Fushimi_Inari-taisha%2C_Kyoto%2C_20240818_1343_4411.jpg/960px-Fushimi_Inari-taisha%2C_Kyoto%2C_20240818_1343_4411.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Fushimi_Inari-taisha"
       },
       {
         "name": "Osaka Castle",
         "what": "A last castle & park stroll",
         "q": "Osaka Castle",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/960px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg"
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/960px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Osaka_Castle"
       },
       {
         "name": "Shinkansen to Tokyo",
@@ -2697,8 +3008,8 @@ window.DAYS = [
     ]
   },
 {
-    "d": 23,
-    "id": "osaka",
+    "d": 25,
+    "id": "tokyo",
     "miles": 0,
     "rest": true,
     "rail": true,
@@ -2747,13 +3058,13 @@ window.CHECKLIST = [
       "Get the explicit 22-day quote for both bikes + the deposit/hold amount in writing",
       "Confirm passenger riding is allowed — including a CHILD passenger on the Africa Twin",
       "Confirm large-bike + sub-500cc availability for your exact dates",
-      "Confirm ETC card per bike (expressway tolls — Himeji/Kobe Day 19, Akashi Kaikyō bridge Day 20)",
+      "Confirm ETC card per bike (expressway tolls — Himeji/Kobe Day 20, Akashi Kaikyō bridge Day 21)",
       "Panniers/top-box fitted or allowed; ask about the optional support-truck add-on for flight-day bags",
       "Helmets & gear (rent or bring), intercoms paired"
     ]
   },
   {
-    "sec": "Child-pillion setup (test parked on Day 1)",
+    "sec": "Child-pillion setup (test parked on Day 2)",
     "icon": "🧒",
     "items": [
       "Properly fitting child motorcycle helmet (correct shell size, not an adult hand-me-down)",
@@ -2773,7 +3084,9 @@ window.CHECKLIST = [
       "Book round-trip nonstop SEA ⇄ Tokyo (prefer Haneda for the train connection)",
       "Buy point-to-point Nozomi Shinkansen tickets Tokyo ⇄ Shin-Osaka (reserved, via smartEX) — not a JR Pass",
       "Keikyu (Haneda→Shinagawa) / N'EX (Narita) for the airport hops",
-      "Two Tokyo bookend hotel nights near a Shinkansen station (Day 0 arrival, Day 22 departure)",
+      "Three Tokyo hotel nights near a Shinkansen station (Day 0 arrival, Day 1 museum day, Day 24 departure)",
+      "Book the Tokyo museum-day tickets early — Ghibli Museum (Lawson, ~a month ahead, sells out fast) and a timed teamLab Planets slot",
+      "Book the Day-23 USJ dated park tickets + a Super Nintendo World Area Timed-Entry or Express Pass",
       "Arrange takkyūbin luggage forwarding Tokyo→Osaka and Osaka→Tokyo",
       "IC card (Suica/ICOCA) for trains on non-riding days"
     ]
@@ -2785,7 +3098,7 @@ window.CHECKLIST = [
       "Book all hotels/ryokan — the Kōyasan shukubō night and the six 2-night bases first (Kumano interior, Shirahama, Iya, Shimanto, Dōgo, Onomichi)",
       "Keep the Kii-interior nights (Kōyasan / Hongū-Yunomine / Nachi) cancellable — Routes 168/311 can close after heavy rain",
       "Confirm secure motorcycle parking at every property (narrow onsen-hamlet lanes — ask where to leave the bikes)",
-      "Reserve a Tsuboyu bath slot at Yunomine ahead of Day 4",
+      "Reserve a Tsuboyu bath slot at Yunomine ahead of Day 5",
       "Family room / beds; private or family bath where wanted; dinner included at remote inns",
       "Laundry access every 3–4 days"
     ]
@@ -2794,10 +3107,10 @@ window.CHECKLIST = [
     "sec": "Ferry & timed stops",
     "icon": "⛴️",
     "items": [
-      "Nankai Ferry (Day 8, Wakayama→Tokushima) is first-come, first-served for motorcycles — no reservation; arrive 30+ min early (deck ~20 bikes)",
+      "Nankai Ferry (Day 9, Wakayama→Tokushima) is first-come, first-served for motorcycles — no reservation; arrive 30+ min early (deck ~20 bikes)",
       "Check the day's Nankai timetable (~8 sailings each way)",
       "Time the Naruto whirlpools to a spring-tide / slack window (full or new moon)",
-      "Check road & river status daily in the typhoon-exposed Kii interior (Days 2–8)"
+      "Check road & river status daily in the typhoon-exposed Kii interior (Days 3–9)"
     ]
   },
   {
@@ -2849,7 +3162,7 @@ window.CHECKLIST = [
       "Check the forecast — avoid typhoon/heavy-rain windows on the Kii side",
       "Reconfirm bikes, hotels, flights and Shinkansen seats",
       "Charge intercoms, phones, cameras, power banks",
-      "Gear check + parked child-pillion setup test + gentle on-foot shakedown on Day 1",
+      "Gear check + parked child-pillion setup test + gentle on-foot shakedown on Day 2",
       "Share the itinerary with family/contacts back home"
     ]
   }
@@ -2862,7 +3175,14 @@ window.GEO = {
   "Shinagawa, Tokyo": "35.62876,139.73876",
   "Shinagawa Station Tokyo": "35.62876,139.73876",
   "Tokyo Station": "35.68123,139.76712",
+  "Tokyo": "35.67620,139.65030",
+  "Ghibli Museum Mitaka Tokyo": "35.69625,139.57028",
+  "teamLab Planets TOKYO": "35.64944,139.79000",
+  "Nintendo TOKYO Shibuya PARCO": "35.66230,139.69884",
+  "Shibuya Crossing": "35.65950,139.70060",
   "Suita, Osaka": "34.75953,135.51676",
+  "Universal Studios Japan": "34.66556,135.43250",
+  "Super Nintendo World Osaka": "34.66694,135.43000",
   "Osaka, Japan": "34.69372,135.50225",
   "Osaka Castle": "34.68726,135.52585",
   "Osaka Aquarium Kaiyukan": "34.65452,135.42896",
@@ -2870,6 +3190,7 @@ window.GEO = {
   "Koyasan, Wakayama, Japan": "34.21310,135.58440",
   "Okunoin Cemetery Koyasan": "34.21556,135.61089",
   "Konpon Daito Koyasan": "34.21305,135.58066",
+  "Kongobu-ji Koyasan": "34.21290,135.58480",
   "Totsukawa, Nara, Japan": "33.99155,135.79170",
   "Totsukawa village": "33.99155,135.79170",
   "Tanise no Tsuribashi Totsukawa": "34.05540,135.74660",
@@ -2883,6 +3204,8 @@ window.GEO = {
   "Daimonzaka Nachi": "33.66556,135.89167",
   "Nachi Falls": "33.66989,135.89047",
   "Kii-Katsuura, Wakayama, Japan": "33.62587,135.94123",
+  "Kumano Hayatama Taisha": "33.73389,135.99139",
+  "Hotel Urashima Katsuura": "33.62806,135.95306",
   "Kushimoto, Wakayama, Japan": "33.47222,135.78500",
   "Hashigui-iwa Kushimoto": "33.48389,135.79361",
   "Sandanbeki Shirahama": "33.66694,135.34556",
@@ -2891,6 +3214,8 @@ window.GEO = {
   "Adventure World, Shirahama": "33.66250,135.37083",
   "Adventure World Shirahama": "33.66250,135.37083",
   "Shirarahama Beach Shirahama": "33.68722,135.33611",
+  "Senjojiki Shirahama": "33.68389,135.33472",
+  "Engetsu Island Shirahama": "33.68861,135.33806",
   "Sakinoyu Onsen Shirahama": "33.68500,135.33444",
   "Wakayama Port, Japan": "34.21806,135.14528",
   "Wakayama Castle": "34.22750,135.17139",
@@ -2965,27 +3290,29 @@ window.GEO = {
 /* Region-matched public-domain ukiyo-e prints used as each day's hero artwork. */
 window.DAYART = {
   "0": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Brooklyn_Museum_-_Nihonbashi_-_Utagawa_Hiroshige_%28Ando%29_-_overall.jpg",
-  "1": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hokusai42_fuji-lake.jpg/1280px-Hokusai42_fuji-lake.jpg",
-  "2": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Hiroshige%2C_A_family_in_a_misty_landscape.jpg/1280px-Hiroshige%2C_A_family_in_a_misty_landscape.jpg",
+  "1": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Brooklyn_Museum_-_Nihonbashi_-_Utagawa_Hiroshige_%28Ando%29_-_overall.jpg",
+  "2": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hokusai42_fuji-lake.jpg/1280px-Hokusai42_fuji-lake.jpg",
   "3": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Hiroshige%2C_A_family_in_a_misty_landscape.jpg/1280px-Hiroshige%2C_A_family_in_a_misty_landscape.jpg",
-  "4": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Falls_of_Kirifuri_at_Mt._Kurokami%2C_Shimotsuke_Province_LACMA_M.2011.135.2_%281_of_2%29.jpg",
+  "4": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Hiroshige%2C_A_family_in_a_misty_landscape.jpg/1280px-Hiroshige%2C_A_family_in_a_misty_landscape.jpg",
   "5": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Falls_of_Kirifuri_at_Mt._Kurokami%2C_Shimotsuke_Province_LACMA_M.2011.135.2_%281_of_2%29.jpg",
-  "6": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Flickr_-_%E2%80%A6trialsanderrors_-_Hiroshige%2C_The_coast_at_Hota_in_Awa_province%2C_1858.jpg/1280px-Flickr_-_%E2%80%A6trialsanderrors_-_Hiroshige%2C_The_coast_at_Hota_in_Awa_province%2C_1858.jpg",
-  "7": "https://upload.wikimedia.org/wikipedia/commons/c/ca/%27The_Great_Wave_off_Kanagawa%27_by_Hokusai%2C_Honolulu_Museum_of_Art.jpg",
-  "8": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Awa%2C_Naruto_Whirlpools%2C_ca_1855.jpg/1280px-Awa%2C_Naruto_Whirlpools%2C_ca_1855.jpg",
-  "9": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg/1280px-Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg",
-  "10": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Hiroshige%2C_A_family_in_a_misty_landscape.jpg/1280px-Hiroshige%2C_A_family_in_a_misty_landscape.jpg",
-  "11": "https://upload.wikimedia.org/wikipedia/commons/7/7e/58_Tosa.jpg",
-  "12": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg/1280px-Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg",
+  "6": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Falls_of_Kirifuri_at_Mt._Kurokami%2C_Shimotsuke_Province_LACMA_M.2011.135.2_%281_of_2%29.jpg",
+  "7": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Flickr_-_%E2%80%A6trialsanderrors_-_Hiroshige%2C_The_coast_at_Hota_in_Awa_province%2C_1858.jpg/1280px-Flickr_-_%E2%80%A6trialsanderrors_-_Hiroshige%2C_The_coast_at_Hota_in_Awa_province%2C_1858.jpg",
+  "8": "https://upload.wikimedia.org/wikipedia/commons/c/ca/%27The_Great_Wave_off_Kanagawa%27_by_Hokusai%2C_Honolulu_Museum_of_Art.jpg",
+  "9": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Awa%2C_Naruto_Whirlpools%2C_ca_1855.jpg/1280px-Awa%2C_Naruto_Whirlpools%2C_ca_1855.jpg",
+  "10": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg/1280px-Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg",
+  "11": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Hiroshige%2C_A_family_in_a_misty_landscape.jpg/1280px-Hiroshige%2C_A_family_in_a_misty_landscape.jpg",
+  "12": "https://upload.wikimedia.org/wikipedia/commons/7/7e/58_Tosa.jpg",
   "13": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg/1280px-Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg",
-  "14": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Hiroshige_Iyo_Saij%C5%8D.jpg",
+  "14": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg/1280px-Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg",
   "15": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Hiroshige_Iyo_Saij%C5%8D.jpg",
-  "16": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Brooklyn_Museum_-_Itsukushima_in_Aki_Province_-_Utagawa_Hiroshige_%28Ando%29.jpg/1280px-Brooklyn_Museum_-_Itsukushima_in_Aki_Province_-_Utagawa_Hiroshige_%28Ando%29.jpg",
-  "17": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Bingo_Province%2C_Abuto%2C_Kannon_Temple_%285765891938%29.jpg",
-  "18": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Bizen_Province%2C_Tanokuchi_Coast%2C_Yugasan_torii_%285765891374%29.jpg/1280px-Bizen_Province%2C_Tanokuchi_Coast%2C_Yugasan_torii_%285765891374%29.jpg",
-  "19": "https://upload.wikimedia.org/wikipedia/commons/a/ad/45_-_Harima_Province%2C_Maiko_Beach%2C_from_the_series_Famous_Places_in_the_Sixty-odd_Provinces%2C_MFAB_11.26243.jpg",
-  "20": "https://upload.wikimedia.org/wikipedia/commons/c/ce/05_Settsu_n.jpg",
+  "16": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Hiroshige_Iyo_Saij%C5%8D.jpg",
+  "17": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Brooklyn_Museum_-_Itsukushima_in_Aki_Province_-_Utagawa_Hiroshige_%28Ando%29.jpg/1280px-Brooklyn_Museum_-_Itsukushima_in_Aki_Province_-_Utagawa_Hiroshige_%28Ando%29.jpg",
+  "18": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Bingo_Province%2C_Abuto%2C_Kannon_Temple_%285765891938%29.jpg",
+  "19": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Bizen_Province%2C_Tanokuchi_Coast%2C_Yugasan_torii_%285765891374%29.jpg/1280px-Bizen_Province%2C_Tanokuchi_Coast%2C_Yugasan_torii_%285765891374%29.jpg",
+  "20": "https://upload.wikimedia.org/wikipedia/commons/a/ad/45_-_Harima_Province%2C_Maiko_Beach%2C_from_the_series_Famous_Places_in_the_Sixty-odd_Provinces%2C_MFAB_11.26243.jpg",
   "21": "https://upload.wikimedia.org/wikipedia/commons/c/ce/05_Settsu_n.jpg",
-  "22": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hiroshige-53-Stations-Hoeido-55-Kyoto-MFA-01.jpg/1280px-Hiroshige-53-Stations-Hoeido-55-Kyoto-MFA-01.jpg",
-  "23": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Brooklyn_Museum_-_Nihonbashi_-_Utagawa_Hiroshige_%28Ando%29_-_overall.jpg"
+  "22": "https://upload.wikimedia.org/wikipedia/commons/c/ce/05_Settsu_n.jpg",
+  "23": "https://upload.wikimedia.org/wikipedia/commons/c/ce/05_Settsu_n.jpg",
+  "24": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hiroshige-53-Stations-Hoeido-55-Kyoto-MFA-01.jpg/1280px-Hiroshige-53-Stations-Hoeido-55-Kyoto-MFA-01.jpg",
+  "25": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Brooklyn_Museum_-_Nihonbashi_-_Utagawa_Hiroshige_%28Ando%29_-_overall.jpg"
 };
