@@ -38,6 +38,7 @@ def md_inline(s):
     s = s.replace("**[KID]**", "").replace("[KID]", "")
     s = re.sub(r"\[([^\]]+)\]\((https?://[^)]+)\)",
                r'<a href="\2" target="_blank" rel="noopener">\1</a>', s)
+    s = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", s)  # remaining (relative) md links -> plain text
     s = re.sub(r"\*\*([^*]+)\*\*", r"<b>\1</b>", s)
     s = re.sub(r"\*([^*]+)\*", r"<i>\1</i>", s)
     return re.sub(r"\s+", " ", s).strip()
@@ -527,6 +528,150 @@ DAYS = [
   "poi":[poi("Tokyo → Haneda/Narita","To the airport for the nonstop home","Haneda Airport","activity",IMG["tokyo"])]},
 ]
 
+# ============ RAMEN TRAIL (themed foodie thread, sourced from 00-overview.md) ============
+# A structured highlight built from the "The Ramen Trail" table in tour/00-overview.md:
+# four regional ramen cities already on the route, each with its local style, marquee shop +
+# key-free Google Maps link, the alternative shops, and the day it falls on. Rendered as a
+# themed 🍜 section on index.html (deep-linking to day.html?d=N) and as a per-day 🍜 flag on
+# the day pages (Days 9/13/18). Invent nothing — every field comes from the overview table.
+OVERVIEW = os.path.join(os.path.dirname(__file__), "tour", "00-overview.md")
+
+# Verified Wikimedia dish thumbs (reused from the day guides; HTTP 200) keyed by city.
+RAMEN_PHOTO = {
+ "Wakayama City": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Wakayamaramen222.jpg/960px-Wakayamaramen222.jpg",
+ "Tokushima City": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Tokushima_Ramen%2C_Men-Oh_-_May_2%2C_2018.jpg/960px-Tokushima_Ramen%2C_Men-Oh_-_May_2%2C_2018.jpg",
+ "Susaki": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nabeyaki_ramen_01.jpg/960px-Nabeyaki_ramen_01.jpg",
+ "Onomichi": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Onomichi_ramen_and_jiaozi_by_The_Other_View_in_Onomichi.jpg/960px-Onomichi_ramen_and_jiaozi_by_The_Other_View_in_Onomichi.jpg",
+}
+
+def _links(cell):
+    return [{"l": plain(m.group(1)), "u": m.group(2).strip()}
+            for m in re.finditer(r"\[([^\]]+)\]\((https?://[^)]+)\)", cell)]
+
+def parse_ramen_trail(path):
+    text = open(path, encoding="utf-8").read()
+    secs = sections(text)
+    key = next((k for k in secs if k.startswith("The Ramen Trail")), None)
+    if not key:
+        return None
+    intro = note = bookend = ""
+    stops = []
+    for ln in secs[key]:
+        s = ln.strip()
+        if not s:
+            continue
+        if s.startswith("|"):
+            cells = [c.strip() for c in s.strip("|").split("|")]
+            if len(cells) < 6 or cells[0] == "#" or set(cells[0]) <= set("-: "):
+                continue
+            dm = re.search(r"Day\s+(\d+)", cells[1])
+            if not dm:
+                continue
+            slot_m  = re.search(r"\(([^)]+)\)", cells[1])
+            city_m  = re.search(r"\*\*(.+?)\*\*", cells[2])
+            pref_m  = re.search(r"\(([^)]+)\)", cells[2])
+            style_m = re.search(r"\*\*(.+?)\*\*", cells[3])
+            shop_links = _links(cells[4])
+            shop_split = cells[4].split("—", 1)
+            style_split = cells[3].split("—", 1)
+            city = plain(city_m.group(1)) if city_m else plain(cells[2])
+            stops.append({
+                "n": int(cells[0]),
+                "day": int(dm.group(1)),
+                "slot": slot_m.group(1).strip() if slot_m else "",
+                "city": city,
+                "pref": pref_m.group(1).strip() if pref_m else "",
+                "style": plain(style_m.group(1)) if style_m else "",
+                "styleDesc": plain(style_split[1]) if len(style_split) > 1 else "",
+                "shop": shop_links[0]["l"] if shop_links else "",
+                "shopUrl": shop_links[0]["u"] if shop_links else "",
+                "shopNote": plain(shop_split[1]) if len(shop_split) > 1 else "",
+                "alts": _links(cells[5]),
+                "photo": RAMEN_PHOTO.get(city, ""),
+            })
+        elif s.startswith("**Notes"):
+            note = md_inline(s)
+        elif s.startswith("**Bookend"):
+            bookend = md_inline(s)
+        elif not stops and not intro:
+            intro = md_inline(s)
+    return {
+        "title": "The Ramen Trail",
+        "subtitle": plain(key.split(":", 1)[1]) if ":" in key else "",
+        "intro": intro, "note": note, "bookend": bookend, "stops": stops,
+    }
+
+RAMEN_TRAIL = parse_ramen_trail(OVERVIEW)
+
+# Attach a compact ramenTrail marquee list to the matching DAYS (9/13/18) for the day-page
+# 🍜 flag, and collect every trail shop's Google-Maps cid so we can flag matching eats picks.
+RAMEN_BY_DAY, TRAIL_CIDS = {}, set()
+if RAMEN_TRAIL:
+    for st in RAMEN_TRAIL["stops"]:
+        RAMEN_BY_DAY.setdefault(st["day"], []).append(
+            {"style": st["style"], "shop": st["shop"], "shopUrl": st["shopUrl"],
+             "city": st["city"], "slot": st["slot"]})
+        for u in [st["shopUrl"]] + [a["u"] for a in st["alts"]]:
+            m = re.search(r"cid=(\d+)", u or "")
+            if m:
+                TRAIL_CIDS.add(m.group(1))
+for _d in DAYS:
+    if _d["d"] in RAMEN_BY_DAY:
+        _d["ramenTrail"] = RAMEN_BY_DAY[_d["d"]]
+
+# ============ DAILY GUIDES (per-day food + activity research) ============
+# The local-guide agent writes one file per day at tour/daily-guides/day-NN.md, each
+# carrying a fenced ```json block: {d, title, overnight, schedule, todo[], meals[]}.
+# We attach the meals as `eats` (grouped by slot, with the kid pick flagged) and the
+# todo as `localTodo` onto the matching window.DAYS entry (match on `d`). Done generically
+# over the files so it re-runs cleanly when guides change; days with no guide get no `eats`.
+GUIDES = os.path.join(os.path.dirname(__file__), "tour", "daily-guides")
+_PICK_KEYS = ["name", "cuisine", "cuisine_note", "rating", "why", "kid", "map", "photo"]
+
+def parse_guide(path):
+    text = open(path, encoding="utf-8").read()
+    m = re.search(r"```json\s*\n(.*?)\n```", text, re.S)
+    if not m:
+        return None
+    return json.loads(m.group(1))
+
+def clean_pick(p):
+    o = {}
+    for k in _PICK_KEYS:
+        if k in p and p[k] not in (None, ""):
+            o[k] = p[k]
+    return o
+
+GUIDE_BY_D = {}
+for _gpath in sorted(glob.glob(os.path.join(GUIDES, "day-*.md"))):
+    _g = parse_guide(_gpath)
+    if _g is not None and "d" in _g:
+        GUIDE_BY_D[int(_g["d"])] = _g
+
+DAY_BY_D = {d["d"]: d for d in DAYS}
+for _dnum, _g in sorted(GUIDE_BY_D.items()):
+    _day = DAY_BY_D.get(_dnum)
+    if not _day:
+        continue
+    _eats = []
+    for _meal in _g.get("meals", []):
+        _picks = [clean_pick(p) for p in _meal.get("picks", [])]
+        if not _picks:
+            continue
+        for _p in _picks:   # 🍜 flag picks that are a Ramen Trail marquee/alternative shop
+            _cm = re.search(r"cid=(\d+)", _p.get("map", "") or "")
+            if _cm and _cm.group(1) in TRAIL_CIDS:
+                _p["trail"] = True
+        _eats.append({"slot": _meal.get("slot", ""), "area": _meal.get("area", ""), "picks": _picks})
+    if _eats:
+        _day["eats"] = _eats
+    _todo = []
+    for _t in _g.get("todo", []):
+        _todo.append({"time": _t.get("time", ""), "name": _t.get("name", ""),
+                      "what": _t.get("what", ""), "map": _t.get("map", "")})
+    if _todo:
+        _day["localTodo"] = _todo
+
 # ============ FLIGHTS ============
 FLIGHTS = {
  "intro": "You're starting from Seattle. The motorcycles are an Osaka loop (pick up and return at the Suita base), but the long-haul leg is a simple round-trip nonstop SEA ⇄ Tokyo — then the Tōkaidō Shinkansen (~2h30m) down to Osaka and back. Not an open-jaw / Osaka-airport (KIX) ticket.",
@@ -880,6 +1025,10 @@ out.append("window.DAYS = [")
 out.append(",\n".join(js(d, 1) for d in DAYS))
 out.append("];\n")
 
+out.append("/* Themed 'Ramen Trail' foodie thread (sourced from tour/00-overview.md);")
+out.append("   rendered as a section on index.html and a 🍜 flag on day.html days 9/13/18. */")
+out.append("window.RAMEN_TRAIL = " + js(RAMEN_TRAIL, 0) + ";\n")
+
 out.append("/* Pre-trip preparation checklist (rendered by checklist.html). */")
 out.append("window.CHECKLIST = " + js(CHECKLIST, 0) + ";\n")
 
@@ -903,5 +1052,8 @@ for d in DAYS:
     for p in d["poi"]:
         if p.get("img"): urls.add(p["img"])
 for v in DAYART.values(): urls.add(v)
+if RAMEN_TRAIL:
+    for st in RAMEN_TRAIL["stops"]:
+        if st.get("photo"): urls.add(st["photo"])
 urls.add(FLIGHTS and "")
 print("unique image urls:", len([u for u in urls if u]))

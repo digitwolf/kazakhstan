@@ -21,7 +21,7 @@ Nearby **Setoda** on **Ikuchijima** island is famous for **lemons** (Japan's lea
 - **Day-18 option:** ride out onto the nearer Kaidō islands (Innoshima, Ikuchijima) for more bridge sweeps without committing to the full crossing
 
 ## What to eat
-- **Onomichi ramen** — a clear soy-tare chicken-and-seafood broth studded with little nuggets of **pork-back fat (*sengaki*)** and flat noodles; a defining regional bowl. **[KID]**
+- **Onomichi ramen** — a clear soy-tare chicken-and-seafood broth studded with little nuggets of **pork-back fat (*sengaki*)** and flat noodles; a defining regional bowl and the **finale of the trip's [Ramen Trail](../00-overview.md#the-ramen-trail-a-foodie-thread-for-galiya)**. Eat it at the classic old-school **[Tsutafuji (つたふじ)](https://maps.google.com/?cid=9111644244913689319)**; the legendary **Shūkaen (朱華園, est. 1947)** closed in 2019, but its flavour continues at the founder's-family successor **[Shu (朱)](https://maps.google.com/?cid=2246075512842085799)**, and **[Maruboshi (丸ぼし)](https://maps.google.com/?cid=6892398988895765996)** is the town's most-reviewed bowl. **[KID]**
 - **Setoda lemons** — lemon gelato, lemon cake, *hassaku* and lemon soda everywhere on the islands; the **hassaku-daifuku** (citrus-and-bean mochi) is a local treat. **[KID]**
 - **Anago (conger eel)** — Inland-Sea conger, grilled over rice as *anago-meshi* — lighter and sweeter than unagi.
 - **Setouchi oysters & small fish** — the calm sea is rich in oysters (autumn–winter) and *kohada*-type fish.

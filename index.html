@@ -254,6 +254,35 @@
   @media (max-width: 980px) { .dest-grid { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 680px) { .dest-grid { grid-template-columns: repeat(2, 1fr); } }
 
+  /* ---------- Ramen Trail ---------- */
+  .ramen-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .rcard { position: relative; display: flex; flex-direction: column; background: var(--panel);
+    border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+    transition: border-color .14s, transform .12s; }
+  .rcard:hover { border-color: var(--accent); transform: translateY(-3px); }
+  .rcard .rthumb { position: relative; aspect-ratio: 16 / 10; background: var(--bg-soft); }
+  .rcard .rthumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .rcard .rthumb .grad { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14,17,22,.05) 40%, rgba(14,17,22,.55) 100%); }
+  .rcard .rday { position: absolute; top: 10px; left: 10px; z-index: 2; font-size: 11.5px; font-weight: 800;
+    color: #fff; background: var(--accent); padding: 4px 11px; border-radius: 999px; }
+  .rcard .rday:hover { background: #f0594b; text-decoration: none; transform: translateY(-1px); }
+  .rcard .rb { padding: 14px 15px; display: flex; flex-direction: column; flex: 1; }
+  .rcard .rcity { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em; color: var(--accent-2); }
+  .rcard .rstyle { font-size: 16.5px; font-weight: 800; color: #fff; margin: 3px 0 6px; line-height: 1.25; }
+  .rcard .rdesc { font-size: 13px; color: #c7d1db; line-height: 1.5; }
+  .rcard .rshop { margin-top: 12px; font-size: 13.5px; color: #c7d1db; }
+  .rcard .rshop .lbl { font-size: 10.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); display: block; margin-bottom: 2px; }
+  .rcard .rshop a { font-weight: 700; }
+  .rcard .rshop .note { color: var(--muted); }
+  .rcard .ralt { margin-top: 9px; font-size: 12px; color: var(--muted); }
+  .rcard .ralt a { font-weight: 600; }
+  .ramen-notes { margin-top: 22px; display: grid; gap: 10px; }
+  .ramen-notes p { font-size: 13.5px; color: #c7d1db; line-height: 1.6; background: var(--panel);
+    border: 1px solid var(--line); border-left: 3px solid var(--accent-2); border-radius: 10px; padding: 13px 16px; margin: 0; }
+  .ramen-notes p b { color: var(--text); }
+  @media (max-width: 980px) { .ramen-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .ramen-grid { grid-template-columns: 1fr; } }
+
   /* sticky nav */
   nav.top {
     position: sticky; top: 0; z-index: 50;
@@ -288,6 +317,7 @@
       <a href="#getting-there">Flights</a>
       <a href="#map-sec">Map</a>
       <a href="#destinations">Destinations</a>
+      <a href="#ramen">Ramen</a>
       <a href="#itinerary">Itinerary</a>
       <a href="checklist.html">Checklist</a>
       <a href="#safety">Safety</a>
@@ -387,6 +417,19 @@
         bike-parking-aware places to stay.</p>
     </div>
     <div class="dest-grid" id="destGrid"></div>
+  </div>
+</section>
+
+<!-- ============ RAMEN TRAIL ============ -->
+<section id="ramen">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">A Foodie Thread for Galiya</span>
+      <h2>🍜 The Ramen Trail</h2>
+      <p id="ramenIntro"></p>
+    </div>
+    <div class="ramen-grid" id="ramenGrid"></div>
+    <div class="ramen-notes" id="ramenNotes"></div>
   </div>
 </section>
 
@@ -603,6 +646,39 @@ window.DESTINATIONS.forEach(d => {
     </span>`;
   destGrid.appendChild(a);
 });
+
+/* ---------- Build the Ramen Trail (themed foodie thread from data.js) ---------- */
+const RT = window.RAMEN_TRAIL;
+if (RT && RT.stops && RT.stops.length) {
+  document.getElementById('ramenIntro').innerHTML = RT.intro;
+  const cap = s => (s || '').charAt(0).toUpperCase() + (s || '').slice(1);
+  document.getElementById('ramenGrid').innerHTML = RT.stops.map(s => {
+    const alts = (s.alts || []).map(a =>
+      `<a href="${a.u}" target="_blank" rel="noopener">${a.l}</a>`).join(' · ');
+    return `<div class="rcard">
+      <div class="rthumb">
+        <img loading="lazy" src="${s.photo}" alt="${s.style} — ${s.city}">
+        <span class="grad"></span>
+        <a class="rday" href="day.html?d=${s.day}">Day ${s.day} · ${cap(s.slot)}</a>
+      </div>
+      <div class="rb">
+        <span class="rcity">${s.city}${s.pref ? ` · ${s.pref}` : ''}</span>
+        <div class="rstyle">${s.style}</div>
+        <div class="rdesc">${s.styleDesc}</div>
+        <div class="rshop">
+          <span class="lbl">Marquee shop</span>
+          <a href="${s.shopUrl}" target="_blank" rel="noopener">📍 ${s.shop} ↗</a>
+          ${s.shopNote ? ` <span class="note">— ${s.shopNote}</span>` : ''}
+        </div>
+        ${alts ? `<div class="ralt">Also: ${alts}</div>` : ''}
+      </div>
+    </div>`;
+  }).join('');
+  document.getElementById('ramenNotes').innerHTML =
+    [RT.note, RT.bookend].filter(Boolean).map(n => `<p>${n}</p>`).join('');
+} else {
+  const sec = document.getElementById('ramen'); if (sec) sec.style.display = 'none';
+}
 
 /* ---------- Build timeline ---------- */
 const BADGE_LABELS = {

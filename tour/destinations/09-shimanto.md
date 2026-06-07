@@ -26,6 +26,7 @@ Two nights by the river is the trip's most rural, slowed-down pause: canoeing on
 - **Tennen unagi (wild river eel)** — line-caught wild eel from the Shimanto, richer than farmed; a true delicacy grilled *kabayaki*.
 - **Aonori** — fragrant green river seaweed harvested from the estuary, dried into crisp tempura, sprinkled on rice, or in *tenpura*.
 - **Tsugani (river crab)** — small autumn mitten-crabs simmered into a deeply savoury soup.
+- **Susaki nabeyaki ramen** (on the Day-13 ride in) — **stop 3 on the trip's [Ramen Trail](../00-overview.md#the-ramen-trail-a-foodie-thread-for-galiya)**: a thin soy-chicken broth served bubbling in an earthenware *donabe* clay pot with chikuwa, green onion and a raw egg, kept piping hot. The marquee shop in Susaki is **[Hashimoto Shokudō (橋本食堂)](https://maps.google.com/?cid=5613975438265449042)** (alt: **[Mayumi-no-Mise](https://maps.google.com/?cid=602723661575591055)**). **[KID]**
 
 ## Where to stay
 The river's traditional offering is a small **riverside onsen ryokan or family minshuku** — quiet, home-cooked and close to the water, all with their own parking out in the countryside. (Shimanto town's hotels are the practical fallback for a family wanting a Western room.)

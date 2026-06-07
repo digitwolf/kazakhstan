@@ -101,7 +101,7 @@ window.DESTINATIONS = [
   lat: 35.6595, lng: 139.7005, zoom: 11,
   tagline: "The air gateway either side of the loop — a jet-lag arrival night and a full kid-focused museum day (Ghibli, teamLab, Nintendo) before the Shinkansen south, then the reposition city for the flight home.",
   intro: [
-    "Tokyo is <b>not part of the Osaka riding loop</b> — it is the <b>air gateway</b> that brackets it. The family flies <b>nonstop SEA ⇄ Tokyo</b> (Haneda on ANA/Delta, Narita on JAL) and rides the <b>Tōkaidō Shinkansen (~2h30m Nozomi) Tokyo ⇄ Shin-Osaka</b> to reach and leave the bikes at the <b>Suita, Osaka</b> base (see [flights](../02-flights.md)). The bikes are never in Tokyo; the city is where the trip begins and ends on foot and by train.",
+    "Tokyo is <b>not part of the Osaka riding loop</b> — it is the <b>air gateway</b> that brackets it. The family flies <b>nonstop SEA ⇄ Tokyo</b> (Haneda on ANA/Delta, Narita on JAL) and rides the <b>Tōkaidō Shinkansen (~2h30m Nozomi) Tokyo ⇄ Shin-Osaka</b> to reach and leave the bikes at the <b>Suita, Osaka</b> base (see flights). The bikes are never in Tokyo; the city is where the trip begins and ends on foot and by train.",
     "On the way in, a <b>Day-0 arrival night</b> near <b>Shinagawa</b> absorbs the jet lag, and a <b>full Day-1 museum day</b> gives the family three of Tokyo's best kid experiences — the <b>Ghibli Museum</b> in Mitaka, <b>teamLab Planets</b> in Toyosu, and <b>Nintendo TOKYO</b> in Shibuya — before the <b>Day-2</b> train down to the bike pickup. On the way home, <b>Day 24</b> repositions from Osaka/Kyoto back to Tokyo by Nozomi (Fushimi Inari sits right on the line), an overnight near Haneda/Shinagawa, then the <b>nonstop flight home on Day 25</b>. Forward the big luggage by <b>takkyūbin</b> so the train legs stay light."
   ],
   highlights: [
@@ -212,7 +212,7 @@ window.DESTINATIONS = [
   tagline: "The start and finish of the loop — a train-in, train-out hub: bike pickup, Super Nintendo World / USJ, big-city food, and a Kyoto buffer day.",
   intro: [
     "Osaka is both the <b>start and the end</b> of this Osaka-anchored loop, and Japan's great mercantile, comedy and food city — historically <i>tenka no daidokoro</i>, \"the nation's kitchen,\" where merchants set the rhythm rather than samurai or court. The motorcycles are picked up and returned at the rental base in <b>Suita, northern Osaka</b> (<a href=\"https://bikerentaljapan.com/\" target=\"_blank\" rel=\"noopener\">Bike Rental Japan</a>), so the journey begins and ends in the friendliest place in Japan to eat — no one-way drop, no backtracking. <b>Osaka Castle</b>, Toyotomi Hideyoshi's late-16th-century power seat, still anchors the city behind Japan's largest castle moats and a sweeping park; the present concrete keep (1931, with a top-floor observation deck and museum) is an easy, kid-pleasing first or last stroll.",
-    "<b>Day 2 is strictly no riding:</b> after a Tokyo arrival night and a full Tokyo museum day, the family arrives by <b>Nozomi Shinkansen into Shin-Osaka around midday</b> (they fly nonstop SEA→Tokyo, then ride the ~2h30m bullet train down — see [flights](../02-flights.md)), transfer the short hop to the <b>Suita rental base</b>, collect the bikes, do the paperwork and gear-fit, and learn the controls on foot (see [the overview](../00-overview.md#child-pillion-safety-africa-twin)) — capped with an easy Dōtonbori/Namba evening. The first real ride is <b>Day 3</b> up to the temple town of Kōyasan. The loop then drops down the <b>Route 168 pilgrim road</b> through the sacred Kumano interior, sweeps the Kii coast, ferries to Shikoku, island-hops the Setouchi and returns over the Akashi Kaikyō Bridge — landing back in Osaka on <b>Day 21</b>. <b>Days 22–24</b> are the easy finish: <b>Day 22</b> returns the bikes and unwinds in the city, <b>Day 23</b> is a full <b>Super Nintendo World / USJ</b> day, and <b>Day 24</b> keeps a flexible Kyoto/Osaka morning (Fushimi Inari) before <b>taking the Shinkansen back to Tokyo</b> for the homebound flight. Osaka is a <b>train-in, train-out hub</b> — no fly-in/out here; the airport (KIX) is not used."
+    "<b>Day 2 is strictly no riding:</b> after a Tokyo arrival night and a full Tokyo museum day, the family arrives by <b>Nozomi Shinkansen into Shin-Osaka around midday</b> (they fly nonstop SEA→Tokyo, then ride the ~2h30m bullet train down — see flights), transfer the short hop to the <b>Suita rental base</b>, collect the bikes, do the paperwork and gear-fit, and learn the controls on foot (see the overview) — capped with an easy Dōtonbori/Namba evening. The first real ride is <b>Day 3</b> up to the temple town of Kōyasan. The loop then drops down the <b>Route 168 pilgrim road</b> through the sacred Kumano interior, sweeps the Kii coast, ferries to Shikoku, island-hops the Setouchi and returns over the Akashi Kaikyō Bridge — landing back in Osaka on <b>Day 21</b>. <b>Days 22–24</b> are the easy finish: <b>Day 22</b> returns the bikes and unwinds in the city, <b>Day 23</b> is a full <b>Super Nintendo World / USJ</b> day, and <b>Day 24</b> keeps a flexible Kyoto/Osaka morning (Fushimi Inari) before <b>taking the Shinkansen back to Tokyo</b> for the homebound flight. Osaka is a <b>train-in, train-out hub</b> — no fly-in/out here; the airport (KIX) is not used."
   ],
   highlights: [
     "<b>Super Nintendo World / Universal Studios Japan</b> — the family kid-centrepiece of the Osaka end (a dedicated <b>Day 23</b>, bikes already returned): a life-size, interactive Mushroom Kingdom with <b>Mario Kart: Koopa's Challenge</b>, Yoshi's Adventure and the <b>Power-Up Band</b>, inside a big theme park (Harry Potter, Minions). <b>Needs timed-entry / Area Timed-Entry or Express Pass — book ahead; a busy full day</b>",
@@ -769,7 +769,7 @@ window.DESTINATIONS = [
     },
     {
       "n": "Tokushima ramen",
-      "d": "a dark, sweet-savoury pork-bone-and-soy broth, classically topped with sweet stewed pork belly and a raw egg cracked on top; eaten with rice on the side."
+      "d": "a dark, sweet-savoury pork-bone-and-soy broth, classically topped with sweet stewed pork belly and a raw egg cracked on top; eaten with rice on the side. This is stop 2 on the trip's Ramen Trail — the marquee bowl is at Chūka Soba Inotani (中華そば いのたに) in Tokushima City, the shop most credited with the style."
     },
     { "n": "Naruto wakame", "d": "prized seaweed grown in the churning straits, springy and deep green." },
     {
@@ -1095,7 +1095,11 @@ window.DESTINATIONS = [
       "n": "Aonori",
       "d": "fragrant green river seaweed harvested from the estuary, dried into crisp tempura, sprinkled on rice, or in tenpura."
     },
-    { "n": "Tsugani (river crab)", "d": "small autumn mitten-crabs simmered into a deeply savoury soup." }
+    { "n": "Tsugani (river crab)", "d": "small autumn mitten-crabs simmered into a deeply savoury soup." },
+    {
+      "n": "Susaki nabeyaki ramen (on the Day-13 ride in) — stop 3 on the trip's Ramen Trail: a thin soy-chicken broth served bubbling in an earthenware donabe clay pot with chikuwa, green onion and a raw egg, kept piping hot. The marquee shop in Susaki is Hashimoto Shokudō (橋本食堂) (alt: Mayumi-no-Mise).",
+      "d": ""
+    }
   ],
   hotels: [
     {
@@ -1497,7 +1501,7 @@ window.DESTINATIONS = [
   food: [
     {
       "n": "Onomichi ramen",
-      "d": "a clear soy-tare chicken-and-seafood broth studded with little nuggets of *pork-back fat (sengaki)* and flat noodles; a defining regional bowl."
+      "d": "a clear soy-tare chicken-and-seafood broth studded with little nuggets of *pork-back fat (sengaki) and flat noodles; a defining regional bowl and the finale of the trip's Ramen Trail. Eat it at the classic old-school Tsutafuji (つたふじ); the legendary Shūkaen (朱華園, est. 1947) closed in 2019, but its flavour continues at the founder's-family successor Shu (朱), and Maruboshi (丸ぼし)* is the town's most-reviewed bowl."
     },
     {
       "n": "Setoda lemons",
@@ -2001,6 +2005,56 @@ window.DAYS = [
         "slot": "scenic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Marunouchi_%26_Tokyo_Station_3.jpg/960px-Marunouchi_%26_Tokyo_Station_3.jpg"
       }
+    ],
+    "eats": [
+      {
+        "slot": "dinner",
+        "area": "Shinagawa Konan (east) exit — all a short walk from the station and hotels",
+        "picks": [
+          {
+            "name": "Ramen Hayashida Shinagawa Konanguchi (らぁ麺 はやし田 品川港南口店)",
+            "cuisine": "Tokyo shōyu ramen",
+            "cuisine_note": "clear chicken-and-soy bowl",
+            "rating": 4.2,
+            "why": "Galiya — a polished Tokyo soy-ramen bowl steps from the station on a tired arrival night",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=7404246691714038558",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/4/42/Ramen.jpg"
+          },
+          {
+            "name": "Mochimen Udon Shinagawa Konan-guchi (もち麺うどん 品川港南口店)",
+            "cuisine": "udon",
+            "rating": 4.4,
+            "why": "Aslan — plain warm udon he'll actually eat, right by the Konan exit",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=7630050579439740171",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Bowl_of_Kitsune_Udon.jpg/960px-Bowl_of_Kitsune_Udon.jpg"
+          },
+          {
+            "name": "Sushi Toriton Shinagawa (回転寿し トリトン 品川店)",
+            "cuisine": "conveyor-belt sushi (Hokkaido)",
+            "rating": 4.0,
+            "why": "Aslan & Galiya — fun rotating-sushi where the kid can grab plain rice/tamago/egg-roll plates while the foodie eats the good fish",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=9688198796730564921",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Conveyor_belt_sushi_at_Mashiro_Sushi.jpg/960px-Conveyor_belt_sushi_at_Mashiro_Sushi.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~17:30",
+        "name": "Check in near Shinagawa Station",
+        "what": "a Shinkansen-stop hub 15 min from Haneda by the Keikyū Line — settle in, don't forward the luggage yet (museum day tomorrow)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Shinagawa%20Station%20Tokyo"
+      },
+      {
+        "time": "~18:00",
+        "name": "Konan-side stroll (optional)",
+        "what": "a gentle canal-side walk on the Konan (east) exit if energy allows — pedestrian decks and easy restaurants, no train needed",
+        "map": "https://www.google.com/maps/search/?api=1&query=Shinagawa%20Konan%20exit"
+      }
     ]
   },
 {
@@ -2053,6 +2107,100 @@ window.DAYS = [
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg/960px-Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg",
         "it": ["nintendo"]
       }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Kichijōji (by Inokashira Park, walking distance from the Ghibli Museum)",
+        "picks": [
+          {
+            "name": "Ramen Maji",
+            "cuisine": "Tokyo shōyu / tonkotsu ramen",
+            "rating": 4.3,
+            "why": "Galiya — a popular local ramen bowl steps from the Ghibli walk",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=4134068209230090282",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/4/42/Ramen.jpg"
+          },
+          {
+            "name": "Ibuki Udon Kichijoji",
+            "cuisine": "udon (plain kake / kitsune)",
+            "rating": 4.2,
+            "why": "Aslan — plain soft udon he'll actually eat; rice sides too",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=11889922840241589079",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Bowl_of_Kitsune_Udon.jpg/960px-Bowl_of_Kitsune_Udon.jpg"
+          },
+          {
+            "name": "Uchoku",
+            "cuisine": "ramen",
+            "rating": 4.4,
+            "why": "Galiya/Ruslan — well-rated ramen alternative inside Coppice Kichijōji",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=6124190306959042575",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/4/42/Ramen.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Shibuya (by Nintendo TOKYO / Shibuya PARCO)",
+        "picks": [
+          {
+            "name": "ICHIRAN Shibuya",
+            "cuisine": "Hakata tonkotsu ramen",
+            "rating": 4.4,
+            "why": "Galiya — famous solo-booth ramen; rich pork-bone bowl",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=1092125928485198446",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/4/42/Ramen.jpg"
+          },
+          {
+            "name": "Uobei Shibuya Dogenzaka",
+            "cuisine": "conveyor / touch-screen sushi",
+            "rating": 4.3,
+            "why": "Aslan — order plain tamago, cucumber rolls, karaage & fries off a fun tablet; cheap kid heaven",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=5886746596086835007",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kaiten-zushi_002.jpg/960px-Kaiten-zushi_002.jpg"
+          },
+          {
+            "name": "Sushi to Rāmen Uogashiya Shibuya",
+            "cuisine": "sushi & ramen",
+            "rating": 4.6,
+            "why": "the whole family — sushi for Galiya and a ramen/rice bowl in one stop",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=15369335642700573936",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/0/08/SawachiDish_Sushi_and_Tataki01.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~10:00",
+        "name": "Ghibli Museum (Mitaka)",
+        "what": "Miyazaki's whimsical museum — Catbus, rooftop robot, members-only short film (timed Lawson tickets only, book ~1 month ahead)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Ghibli%20Museum%20Mitaka%20Tokyo"
+      },
+      {
+        "time": "~11:30",
+        "name": "Inokashira Park",
+        "what": "green walk between the museum and Kichijōji lunch — swan boats on the pond",
+        "map": "https://www.google.com/maps/search/?api=1&query=Inokashira%20Park%20Tokyo"
+      },
+      {
+        "time": "~14:00",
+        "name": "teamLab Planets TOKYO (Toyosu)",
+        "what": "barefoot, wade-through immersive digital-art world — water, light, projected flowers (timed online ticket)",
+        "map": "https://www.google.com/maps/search/?api=1&query=teamLab%20Planets%20TOKYO%20Toyosu"
+      },
+      {
+        "time": "~17:00",
+        "name": "Nintendo TOKYO + Pokémon Center (Shibuya PARCO)",
+        "what": "official Nintendo flagship — Mario/Zelda/Splatoon — with Pokémon Center next door",
+        "map": "https://www.google.com/maps/search/?api=1&query=Nintendo%20TOKYO%20Shibuya%20PARCO"
+      }
     ]
   },
 {
@@ -2096,6 +2244,100 @@ window.DAYS = [
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg/960px-Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg",
         "wiki": "https://en.wikipedia.org/wiki/D%C5%8Dtonbori",
         "it": ["food"]
+      }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Shin-Osaka (arrival)",
+        "picks": [
+          {
+            "name": "Maru de Sankaku",
+            "cuisine": "Osaka ramen",
+            "rating": 4.4,
+            "why": "Galiya — a top-rated local ramen bowl minutes from Shin-Osaka",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=17941306275953871503",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"
+          },
+          {
+            "name": "Yusuke",
+            "cuisine": "udon / Japanese",
+            "rating": 4.3,
+            "why": "Aslan — plain kake-udon and rice he'll actually eat",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=2573639927540784130",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"
+          },
+          {
+            "name": "Human Beings Everybody Noodles",
+            "cuisine": "ramen",
+            "rating": 4.2,
+            "why": "Galiya & Ruslan — wildly popular noodle shop in Nishinakajima by the station",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=6418836266917594457",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Dōtonbori / Namba",
+        "picks": [
+          {
+            "name": "OKO - Fun Okonomiyaki Bar",
+            "cuisine": "okonomiyaki / teppan",
+            "rating": 4.7,
+            "why": "Galiya — Osaka's signature as-you-like-it pancake cooked at the counter",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=17891229658034342593",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Okonomiyaki_001.jpg/960px-Okonomiyaki_001.jpg"
+          },
+          {
+            "name": "Sushiro Sennichimae",
+            "cuisine": "conveyor-belt sushi",
+            "rating": 4.6,
+            "why": "Aslan — order-screen kaiten sushi with karaage, plain rice, egg and udon he'll happily pick from",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=13944981815152990368",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Conveyor_belt_sushi_at_Mashiro_Sushi.jpg/960px-Conveyor_belt_sushi_at_Mashiro_Sushi.jpg"
+          },
+          {
+            "name": "Takoyaki Wanaka Dotonbori",
+            "cuisine": "takoyaki street food",
+            "rating": 4.2,
+            "why": "everyone — the molten octopus-dumpling icon eaten standing on the strip",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=2130839552230731987",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Takoyaki_by_yomi955.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~14:00",
+        "name": "Suita rental base (Bike Rental Japan)",
+        "what": "Pickup, insurance paperwork, Africa Twin + CB400X walk-around, fit Aslan's child gear and pair intercoms — all on foot, no riding today",
+        "map": "https://www.google.com/maps/search/?api=1&query=Bike%20Rental%20Japan%20Suita%20Osaka"
+      },
+      {
+        "time": "~18:00",
+        "name": "Dōtonbori neon canyon",
+        "what": "The running Glico Man sign, giant mechanical crab and the city's loudest street-food strip — the easy welcome-evening stroll",
+        "map": "https://www.google.com/maps/search/?api=1&query=Dotonbori%20Osaka"
+      },
+      {
+        "time": "~19:00",
+        "name": "Den Den Town & Super Potato",
+        "what": "Aslan's toy fix: retro-game shop with a Mario-statue storefront, floors of gachapon, and the loop's best shot at Transformers / Takara Tomy robots",
+        "map": "https://www.google.com/maps/search/?api=1&query=Super%20Potato%20Nipponbashi%20Osaka"
+      },
+      {
+        "time": "optional",
+        "name": "Osaka Castle park",
+        "what": "Broad moats and the gold-trimmed keep lit at dusk — a relaxed first-evening walk if energy allows",
+        "map": "https://www.google.com/maps/search/?api=1&query=Osaka%20Castle"
       }
     ]
   },
@@ -2149,6 +2391,91 @@ window.DAYS = [
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/View_of_Toro-do_from_Gobyo-bashi%2C_Okunoin%2C_Koyasan%2C_2016.jpg/960px-View_of_Toro-do_from_Gobyo-bashi%2C_Okunoin%2C_Koyasan%2C_2016.jpg",
         "it": ["castle"]
       }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Kōyasan temple village (Senjuinbashi)",
+        "picks": [
+          {
+            "name": "Kōya Soba Kokone (高野蕎麦ここね)",
+            "cuisine": "handmade soba",
+            "rating": 4.1,
+            "why": "Galiya — fresh mountain soba, the noodle she'll want at altitude",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=2864987165657710582",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/5/58/Ten_zaru_soba_by_jetalone_in_Tokyo.jpg"
+          },
+          {
+            "name": "Kotobuki Shokudō",
+            "cuisine": "casual shokudō — udon, rice bowls, katsu",
+            "rating": 4.4,
+            "why": "Aslan — plain udon, rice and katsu he'll actually eat",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=3056959925161555233",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"
+          },
+          {
+            "name": "Bon On Shya Cafe",
+            "cuisine": "cafe set lunch / teishoku",
+            "rating": 4.7,
+            "why": "Ruslan — popular, relaxed set-meal stop after the climb, good coffee",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=11540644926054536259",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Soba_and_tempura_combo_%2826498960080%29.jpg/960px-Soba_and_tempura_combo_%2826498960080%29.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Kōyasan — at the shukubō (temple lodging)",
+        "picks": [
+          {
+            "name": "Fudō-in (shukubō shōjin-ryōri)",
+            "cuisine": "Buddhist vegetarian temple dinner",
+            "rating": 4.7,
+            "why": "Galiya — the signature Kōyasan shōjin-ryōri tray (goma-dofu, vegetable tempura, miso) in a 1,200-year-old temple stay",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=6285515137194093127",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Buddhist_vegetarian_food%2C_Shukubo_of_Kongosanmaiin_-_May_3%2C_2011.jpg/960px-Buddhist_vegetarian_food%2C_Shukubo_of_Kongosanmaiin_-_May_3%2C_2011.jpg"
+          },
+          {
+            "name": "Kōyasan Saizen-in (shukubō)",
+            "cuisine": "shōjin-ryōri — child portion on request",
+            "rating": 4.5,
+            "why": "Aslan — temples will plate a simple kids' tray (plain rice, mild goma-dofu, vegetable tempura); ask when booking",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=13554302819427116538",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fukuchiin_shojin_ryori_appetizer.jpg/960px-Fukuchiin_shojin_ryori_appetizer.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~12:00",
+        "name": "Danjō Garan & Konpon Daitō",
+        "what": "vermilion great pagoda, the spiritual heart of the mountain — an easy first walk on arrival",
+        "map": "https://www.google.com/maps/search/?api=1&query=Danjo%20Garan%20Koyasan"
+      },
+      {
+        "time": "~14:00",
+        "name": "Kongōbu-ji",
+        "what": "head temple of Shingon Buddhism — the Banryūtei rock garden and painted fusuma halls",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kongobuji%20Koyasan"
+      },
+      {
+        "time": "~15:30",
+        "name": "Kadohama Goma-tofu Honpo",
+        "what": "the famous sesame-tofu shop — taste/buy Kōyasan's silky signature goma-dofu (mild, a safe nibble for Aslan)",
+        "map": "https://maps.google.com/?cid=15025927858595747065"
+      },
+      {
+        "time": "~17:00",
+        "name": "Okunoin lantern walk",
+        "what": "cedar avenue of 200,000 tombs to Kōbō Daishi's mausoleum — most atmospheric at dusk",
+        "map": "https://www.google.com/maps/search/?api=1&query=Okunoin%20Cemetery%20Koyasan"
+      }
     ]
   },
 {
@@ -2191,6 +2518,85 @@ window.DAYS = [
         "wiki": "https://en.wikipedia.org/wiki/Kumano_Hong%C5%AB_Taisha",
         "it": ["art", "castle"]
       }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Hongū basin (near Kumano Hongū Taisha)",
+        "picks": [
+          {
+            "name": "山伏そば 拝庵 (Yamabushi Soba Haian)",
+            "cuisine": "handmade soba / mountain noodles",
+            "rating": 4.3,
+            "why": "Galiya — fresh soba right by the Hongū torii path",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=16404798185217074257",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Soba_and_tempura_combo_%2826498960080%29.jpg/960px-Soba_and_tempura_combo_%2826498960080%29.jpg"
+          },
+          {
+            "name": "きっちん (Kitchin)",
+            "cuisine": "casual diner / curry rice & set meals",
+            "rating": 4.3,
+            "why": "Aslan — plain rice, katsu and curry he'll actually eat",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=4351367167838386248",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Katsu-curry_002.jpg/960px-Katsu-curry_002.jpg"
+          },
+          {
+            "name": "宮ずし (Miya-zushi)",
+            "cuisine": "sushi & local mehari-zushi",
+            "rating": 4.6,
+            "why": "Galiya — sushi plus the Kumano pilgrim's mustard-leaf rice rolls",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=15958625622105258960",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Sushi_platter%2C_Nikko%2C_Japan.jpg/960px-Sushi_platter%2C_Nikko%2C_Japan.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Yunomine Onsen (tiny hot-spring hamlet — most ryokan/minshuku serve dinner; these are the walk-in options)",
+        "picks": [
+          {
+            "name": "You-got-it Bar | 湯垢離バー",
+            "cuisine": "izakaya / local small plates & drinks",
+            "rating": 4.7,
+            "why": "Galiya & Ruslan — the village's best-rated spot, local dishes and a craft drink after the soak",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=10401943476802246045",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Meharizushi-Kumano-Mie.JPG/960px-Meharizushi-Kumano-Mie.JPG"
+          },
+          {
+            "name": "Yunomine Onsen Shop / Dining Hall",
+            "cuisine": "simple set meals, curry & onsen eggs",
+            "rating": 3.5,
+            "why": "Aslan — plainest, simplest food in the hamlet (curry/rice) plus boil-your-own onsen eggs by the spring",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=3217771374086901163",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/251128_Onsen_Tamago_at_Kusatsu_Onsen.jpg/960px-251128_Onsen_Tamago_at_Kusatsu_Onsen.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~10:30",
+        "name": "Tanise no Tsuribashi",
+        "what": "walk the 297 m swaying suspension bridge high over the Totsukawa — a thrill for a 6-year-old (hold his hand on the slats)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Tanise%20no%20Tsuribashi%20Totsukawa"
+      },
+      {
+        "time": "~14:30",
+        "name": "Kumano Hongū Taisha & Ōyunohara",
+        "what": "head shrine of the Kumano Sanzan up a cedar-lined stair, then Japan's largest torii (33.9 m) on the river sandbank",
+        "map": "https://maps.google.com/?cid=8104643903319895810"
+      },
+      {
+        "time": "~16:30",
+        "name": "Tsuboyu, Yunomine Onsen",
+        "what": "reserve a 30-min slot in the only UNESCO World Heritage bath you can bathe in; boil eggs/veg in the public yuzutsu spring — fun, hands-on for Aslan and a proper traditional soak for Galiya",
+        "map": "https://www.google.com/maps/search/?api=1&query=Tsuboyu%20Yunomine%20Onsen"
+      }
     ]
   },
 {
@@ -2231,6 +2637,100 @@ window.DAYS = [
         "slot": "scenic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Oyunohara_autumn.jpg/960px-Oyunohara_autumn.jpg",
         "it": ["art", "castle"]
+      }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Hongū (near Kumano Hongū Taisha / Ōyunohara)",
+        "picks": [
+          {
+            "name": "Mitsuashi Noodle shop (みつ葉)",
+            "cuisine": "ramen / noodles",
+            "rating": 4.8,
+            "why": "Galiya — the standout noodle bowl right by the shrine; a plain bowl works for Aslan too",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=14384004974723876992",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"
+          },
+          {
+            "name": "きっちん (Kitchen)",
+            "cuisine": "casual Japanese set meals / katsu & rice",
+            "rating": 4.3,
+            "why": "Aslan — easy katsu, rice and simple plates he'll actually eat, steps from the shrine",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=4351367167838386248",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Tonkatsu.jpg/960px-Tonkatsu.jpg"
+          },
+          {
+            "name": "宮ずし (Miyazushi)",
+            "cuisine": "sushi",
+            "rating": 4.6,
+            "why": "Galiya — neighbourhood sushi counter in the pilgrim town (tamago for Aslan)",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=15958625622105258960",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/960px-Sushi_platter.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Yunomine / Hongū (remote onsen hamlet — book your ryokan dinner if staying half-board; otherwise these are the nearby options)",
+        "picks": [
+          {
+            "name": "ときわや (Tokiwaya), Kawayu",
+            "cuisine": "local Kumano set meals (mehari-zushi, river fish)",
+            "rating": 4.2,
+            "why": "Galiya — regional Kumano cooking eaten where it's made, riverside at Kawayu",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=2791320893729462743",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Meharizushi-Kumano-Mie.JPG/960px-Meharizushi-Kumano-Mie.JPG"
+          },
+          {
+            "name": "Okage-san Izakaya (おかげさん), Wataze",
+            "cuisine": "izakaya — karaage, grills, rice",
+            "rating": 4.8,
+            "why": "Aslan — karaage and plain rice; hearty plates and a drink for Ruslan",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=2574437099364628723",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Karaage.jpg/960px-Karaage.jpg"
+          },
+          {
+            "name": "Yumune Chaya (湯峰茶屋), Yunomine",
+            "cuisine": "onsen-village cafe / mehari-zushi & light meals",
+            "rating": 3.9,
+            "why": "convenient in-hamlet option right by the overnight onsen if you don't want to ride out",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=16222776516153084156",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mehari_zushi_by_m-louis.jpg/960px-Mehari_zushi_by_m-louis.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~09:30",
+        "name": "Tsuboyu, Yunomine",
+        "what": "Reserve a 30-min slot in the only UNESCO World Heritage bath you can bathe in; boil eggs/veg in the public yuzutsu spring by the river",
+        "map": "https://www.google.com/maps/search/?api=1&query=Tsuboyu%20Yunomine%20Onsen"
+      },
+      {
+        "time": "~11:00",
+        "name": "Kawayu Onsen riverbed bath",
+        "what": "Scoop your own hot bath in the warm gravel of the Ōto River (weather/river-level dependent — high water after rain cancels it)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kawayu%20Onsen"
+      },
+      {
+        "time": "~14:00",
+        "name": "Kumano Kodō taster + Kumano Hongū Taisha",
+        "what": "Short 30–40 min Hosshinmon-ōji-style stretch then the cypress-bark head shrine up the cedar stair (rain plan: free Kumano Hongū Heritage Center)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kumano%20Hongu%20Taisha"
+      },
+      {
+        "time": "~16:30",
+        "name": "Ōyunohara Ōtorii",
+        "what": "Japan's largest torii (33.9 m) on the old shrine sandbank — best at golden hour",
+        "map": "https://www.google.com/maps/search/?api=1&query=Oyunohara%20Otorii"
       }
     ]
   },
@@ -2290,6 +2790,97 @@ window.DAYS = [
         "slot": "activity",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Onsen_in_Nachikatsuura%2C_Japan.jpg/960px-Onsen_in_Nachikatsuura%2C_Japan.jpg",
         "it": ["onsen"]
+      }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Nachisan (Nachi Falls)",
+        "picks": [
+          {
+            "name": "Chinchōan Moudemochi",
+            "cuisine": "handmade Kumano soba",
+            "rating": 4.3,
+            "why": "Galiya & Ruslan — fresh soba right at the falls/shrine path",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=530398846035148961",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Soba_and_tempura_combo_%2826498960080%29.jpg/960px-Soba_and_tempura_combo_%2826498960080%29.jpg"
+          },
+          {
+            "name": "Miyamatei",
+            "cuisine": "set-meal teahouse (udon, curry-rice)",
+            "rating": 3.5,
+            "why": "Aslan — the convenient on-site sit-down spot for plain udon & curry-rice (Nachisan is a tiny temple village, so options are limited; conbini onigiri are an easy backup)",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=7320587628942868247",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Kama-age_Udon.jpg/960px-Kama-age_Udon.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Katsuura port",
+        "picks": [
+          {
+            "name": "Tuna Bowl Muromaru (まぐろ丼 むろまる)",
+            "cuisine": "maguro-don / tuna bowls",
+            "rating": 4.5,
+            "why": "Galiya & Ruslan — fresh line-caught Katsuura tuna straight off Japan's #1 tuna port",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=1322154716535247244",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Maguro-don_%28raw_tuna_fish_bowl%29%2C_Chiyoda-ward%2C_Tokyo_%28%E3%81%BE%E3%81%90%E3%82%8D%E4%B8%BC%2C_%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%29_%282011-05-10_13.26.07_by_yuiseki_aoba%29.jpg/960px-Maguro-don_%28raw_tuna_fish_bowl%29%2C_Chiyoda-ward%2C_Tokyo_%28%E3%81%BE%E3%81%90%E3%82%8D%E4%B8%BC%2C_%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%29_%282011-05-10_13.26.07_by_yuiseki_aoba%29.jpg"
+          },
+          {
+            "name": "Maguro no Yamaki",
+            "cuisine": "tuna specialist (maguro-don, seared zuke)",
+            "rating": 4.2,
+            "why": "Galiya — hugely popular local tuna house with seared and sashimi options",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=16729597622358529220",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Maguro-tataki-don_of_Sukiya.jpg/960px-Maguro-tataki-don_of_Sukiya.jpg"
+          },
+          {
+            "name": "Rio Ramen",
+            "cuisine": "ramen & gyoza",
+            "rating": 4.2,
+            "why": "Aslan — plain ramen broth & gyoza he'll actually eat, and Galiya's noodle fix if she's tuna'd out",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=17918930914327022472",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg/960px-Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~10:00",
+        "name": "Doro-kyō jet-boat",
+        "what": "glass-clear gorge cruise between sheer cliffs on the Kitayama River — a kid highlight",
+        "map": "https://www.google.com/maps/search/?api=1&query=Dorokyo%20jet%20boat%20Kitayama"
+      },
+      {
+        "time": "~11:30",
+        "name": "Daimon-zaka",
+        "what": "short cobbled pilgrim path under giant cedars up to the shrine (kid-friendly)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Daimonzaka%20Nachikatsuura"
+      },
+      {
+        "time": "~12:00",
+        "name": "Nachi Falls & Kumano Nachi Taisha",
+        "what": "Japan's tallest single-drop waterfall (133 m) beside the vermilion Seiganto-ji pagoda — the postcard of Japan",
+        "map": "https://www.google.com/maps/search/?api=1&query=Nachi%20Falls%20Kumano%20Nachi%20Taisha"
+      },
+      {
+        "time": "~13:45",
+        "name": "Kumano Hayatama Taisha, Shingū (optional)",
+        "what": "the third Kumano grand shrine and its 1,000-year-old sacred nagi tree, a quick stop on the way down",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kumano%20Hayatama%20Taisha"
+      },
+      {
+        "time": "~15:30",
+        "name": "Katsuura cave onsen (Bōki-dō)",
+        "what": "natural sea-grotto hot-spring bath with the surf booming below, at Hotel Urashima",
+        "map": "https://www.google.com/maps/search/?api=1&query=Hotel%20Urashima%20Bokido%20cave%20onsen%20Katsuura"
       }
     ]
   },
@@ -2364,6 +2955,106 @@ window.DAYS = [
         "wiki": "https://en.wikipedia.org/wiki/Engetsu_Island",
         "it": ["scenic"]
       }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Tore-Tore Ichiba / Katata (en route into Shirahama)",
+        "picks": [
+          {
+            "name": "Shirasen Shokudo (白鮮食堂)",
+            "cuisine": "Kuroshio tuna & seafood teishoku",
+            "rating": 4.6,
+            "why": "Galiya & Ruslan — top-rated fresh maguro/seafood set near the port",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=5130477216008432969",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kaisendon_001.jpg/960px-Kaisendon_001.jpg"
+          },
+          {
+            "name": "TORETORE ICHIBA (とれとれ市場 南紀白浜)",
+            "cuisine": "giant seafood market & food court",
+            "rating": 3.9,
+            "why": "the planned tuna-cutting market stop — huge food court so everyone grazes; plain grilled skewers & rice for Aslan",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=9780413186048099620",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sashimi_of_S%C3%A3o_Paulo.jpg/960px-Sashimi_of_S%C3%A3o_Paulo.jpg"
+          },
+          {
+            "name": "Kaisen Sushi Toretore Ichiba (海鮮寿司とれとれ市場)",
+            "cuisine": "conveyor-belt sushi",
+            "rating": 3.7,
+            "why": "Aslan — pick-what-you-see kaiten sushi (plain rice, egg, cucumber rolls) inside the same market",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=10776434485905267434",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kaiten-zushi_002.jpg/960px-Kaiten-zushi_002.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Shirahama town",
+        "picks": [
+          {
+            "name": "Gyosai Keishoku Kou (魚菜・軽食 幸)",
+            "cuisine": "seafood izakaya / sashimi",
+            "rating": 4.6,
+            "why": "Galiya & Ruslan — fresh local Nanki seafood and sashimi in town",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=1087738113559531192",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sashimi_of_S%C3%A3o_Paulo.jpg/960px-Sashimi_of_S%C3%A3o_Paulo.jpg"
+          },
+          {
+            "name": "Shirahama Key Noodle Dakishimetai",
+            "cuisine": "ramen",
+            "rating": 4.3,
+            "why": "Galiya — a proper bowl of noodles to end the day",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=10240352576288176698",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"
+          },
+          {
+            "name": "Ramen Bakumatsu - Nanki Shirahama",
+            "cuisine": "ramen shop with gyoza, karaage & rice sets",
+            "rating": 4.1,
+            "why": "Aslan — plain ramen plus gyoza/karaage and a rice bowl he'll actually eat",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=8622937101684774092",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Chicken_karaage_003.jpg/960px-Chicken_karaage_003.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~09:45",
+        "name": "Hashigui-iwa",
+        "what": "line of sea pillars marching out to sea — quick photo + coffee stop",
+        "map": "https://www.google.com/maps/search/?api=1&query=Hashigui-iwa%20Kushimoto"
+      },
+      {
+        "time": "~11:15",
+        "name": "Sandanbeki Cliffs",
+        "what": "50 m cliffs with a sea-cave lift down to the waves",
+        "map": "https://www.google.com/maps/search/?api=1&query=Sandanbeki%20Shirahama"
+      },
+      {
+        "time": "~14:30",
+        "name": "Shirarahama Beach & Senjōjiki",
+        "what": "white quartz sand for shallow swimming, then clamber the tilted '1,000-tatami' rock terrace",
+        "map": "https://www.google.com/maps/search/?api=1&query=Shirarahama%20Beach%20Shirahama"
+      },
+      {
+        "time": "~16:00",
+        "name": "Sakino-yu Onsen",
+        "what": "1,300-year-old open-air rock bath right at the surf line (Galiya's onsen pick)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Sakinoyu%20Onsen%20Shirahama"
+      },
+      {
+        "time": "~18:45",
+        "name": "Engetsu Island sunset",
+        "what": "classic sunset shot through the 'round-moon' natural sea arch",
+        "map": "https://www.google.com/maps/search/?api=1&query=Engetsu%20Island%20Shirahama"
+      }
     ]
   },
 {
@@ -2405,6 +3096,100 @@ window.DAYS = [
         "slot": "scenic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/131221_Engetsu_Island_Shirahama_Wakayama_pref_Japan01s3.jpg/960px-131221_Engetsu_Island_Shirahama_Wakayama_pref_Japan01s3.jpg",
         "it": ["onsen"]
+      }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Shirahama beach / Adventure World",
+        "picks": [
+          {
+            "name": "Ramen Bakumatsu - Nanki Shirahama",
+            "cuisine": "ramen",
+            "rating": 4.1,
+            "why": "Galiya — a proper local ramen bowl, with a plain bowl for Aslan too",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=8622937101684774092",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"
+          },
+          {
+            "name": "Shirahama Paradise",
+            "cuisine": "hamburgers / fries",
+            "rating": 4.7,
+            "why": "Aslan — burgers and fries he'll definitely eat after the safari",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=12401708232370838168",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/NCI_Visuals_Food_Hamburger.jpg/960px-NCI_Visuals_Food_Hamburger.jpg"
+          },
+          {
+            "name": "ALOHA shirahama",
+            "cuisine": "Hawaiian café / loco moco",
+            "rating": 4.5,
+            "why": "Ruslan & Galiya — relaxed beach-resort café with rice plates kids manage",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=10747776881131157008",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kaisendon_001.jpg/960px-Kaisendon_001.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Shirahama",
+        "picks": [
+          {
+            "name": "Sushi Kappo Kosushi",
+            "cuisine": "sushi",
+            "rating": 4.3,
+            "why": "Galiya — fresh Nanki sushi at the source, the foodie dinner",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=1900225647196365823",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sushi_mini_set_01.jpg/960px-Sushi_mini_set_01.jpg"
+          },
+          {
+            "name": "Hama Shokudo (浜食堂)",
+            "cuisine": "seafood teishoku / kaisendon",
+            "rating": 4.6,
+            "why": "Galiya & Ruslan — hearty local seafood set meals and bowls",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=14754136528231163036",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sashimi_of_S%C3%A3o_Paulo.jpg/960px-Sashimi_of_S%C3%A3o_Paulo.jpg"
+          },
+          {
+            "name": "Shirahama Key Noodle Dakishimetai",
+            "cuisine": "ramen / gyoza",
+            "rating": 4.3,
+            "why": "Aslan — plain ramen and gyoza he'll happily eat",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=10240352576288176698",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~10:00",
+        "name": "Adventure World",
+        "what": "giant pandas, drive-through safari and a marine park — the trip's biggest kid day (full, busy day out)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Adventure%20World%20Shirahama"
+      },
+      {
+        "time": "~14:30",
+        "name": "Shirarahama Beach",
+        "what": "dazzling white quartz sand, shallow gentle swimming for Aslan",
+        "map": "https://www.google.com/maps/search/?api=1&query=Shirarahama%20Beach%20Shirahama"
+      },
+      {
+        "time": "~16:00",
+        "name": "Sakino-yu Onsen",
+        "what": "1,300-year-old rock open-air bath cut right at the surf line — Galiya's traditional onsen pick",
+        "map": "https://www.google.com/maps/search/?api=1&query=Sakinoyu%20Onsen%20Shirahama"
+      },
+      {
+        "time": "~17:00",
+        "name": "Engetsu Island",
+        "what": "sunset through the natural 'round-moon' sea arch",
+        "map": "https://www.google.com/maps/search/?api=1&query=Engetsu%20Island%20Shirahama"
       }
     ]
   },
@@ -2474,6 +3259,116 @@ window.DAYS = [
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Onaruto-bridge_and_Naruto_Channel%2CNaruto-city%2CJapan.JPG/960px-Onaruto-bridge_and_Naruto_Channel%2CNaruto-city%2CJapan.JPG",
         "it": ["food"]
       }
+    ],
+    "ramenTrail": [
+      {
+        "style": "Chūka-soba",
+        "shop": "Ide Shoten 井出商店",
+        "shopUrl": "https://maps.google.com/?cid=16098671254010911637",
+        "city": "Wakayama City",
+        "slot": "lunch"
+      },
+      {
+        "style": "Tokushima ramen",
+        "shop": "Chūka Soba Inotani 中華そば いのたに",
+        "shopUrl": "https://maps.google.com/?cid=16395492876013054298",
+        "city": "Tokushima City",
+        "slot": "dinner"
+      }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Wakayama City (before the port)",
+        "picks": [
+          {
+            "name": "Ramen Marui (本家アロチ 丸高中華そば系)",
+            "cuisine": "Wakayama chūka-soba ramen",
+            "rating": 4.1,
+            "why": "Galiya — the city's signature thin-noodle soy-tonkotsu bowl, with haya-zushi mackerel sushi on the side",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=5976911720099818815",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Wakayamaramen222.jpg/960px-Wakayamaramen222.jpg"
+          },
+          {
+            "name": "Masayoshi Ramen (正善)",
+            "cuisine": "Wakayama chūka-soba ramen",
+            "rating": 4.0,
+            "why": "Ruslan — hearty local ramen, big and well-loved (1,400+ reviews)",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=3460900872369840909",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Masayoshi_ramen_20240422.jpg/960px-Masayoshi_ramen_20240422.jpg"
+          },
+          {
+            "name": "Udon no Ōtaman (うどんの大田萬)",
+            "cuisine": "udon / plain noodles",
+            "rating": 4.1,
+            "why": "Aslan — simple plain udon and rice he'll actually eat",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=771188512389577753",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Naruto",
+        "picks": [
+          {
+            "name": "Donoura Naruto (どの浦 鳴門店)",
+            "cuisine": "Tokushima ramen",
+            "rating": 4.3,
+            "why": "Galiya — the local dark sweet-soy tonkotsu bowl with stewed pork belly, the first-dinner ramen on landing",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=18023051851105388920",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Tokushima_Ramen%2C_Men-Oh_-_May_2%2C_2018.jpg/960px-Tokushima_Ramen%2C_Men-Oh_-_May_2%2C_2018.jpg"
+          },
+          {
+            "name": "Sushikatsu (すし勝)",
+            "cuisine": "sushi — local Naruto-dai sea bream",
+            "rating": 4.3,
+            "why": "Galiya & Ruslan — Naruto's prize tide-fed sea bream as sashimi/nigiri",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=9481479808904369613",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nigiri_Sushi_%2825966163204%29.jpg/960px-Nigiri_Sushi_%2825966163204%29.jpg"
+          },
+          {
+            "name": "Tamura Udon (田村うどん)",
+            "cuisine": "udon / plain noodles",
+            "rating": 4.1,
+            "why": "Aslan — a clean plain udon bowl, an easy safe dinner",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=8786397789103930994",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~11:15",
+        "name": "Wakayama Castle",
+        "what": "hilltop keep and gardens for a leg-stretch before the port",
+        "map": "https://www.google.com/maps/search/?api=1&query=Wakayama%20Castle"
+      },
+      {
+        "time": "~14:00",
+        "name": "Nankai Ferry (Wakayama Port)",
+        "what": "bikes ride straight on for the ~2h15m crossing — first-come, no reservations, be at the ticket office 30+ min early",
+        "map": "https://www.google.com/maps/search/?api=1&query=Nankai%20Ferry%20Wakayama%20Port"
+      },
+      {
+        "time": "~17:00",
+        "name": "Uzunomichi whirlpool walkway",
+        "what": "glass-floored walk 45 m above the Naruto whirlpools under the Ōnaruto Bridge — a safe thrill for Aslan",
+        "map": "https://www.google.com/maps/search/?api=1&query=Uzunomichi%20Naruto"
+      },
+      {
+        "time": "opt.",
+        "name": "Ōtsuka Museum of Art",
+        "what": "1,000+ touchable full-size ceramic reproductions of world masterpieces — better saved for a relaxed Day-10 morning (closed Mon)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Otsuka%20Museum%20of%20Art%20Naruto"
+      }
     ]
   },
 {
@@ -2514,6 +3409,100 @@ window.DAYS = [
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Iya_Valley_a.jpeg/960px-Iya_Valley_a.jpeg",
         "wiki": "https://en.wikipedia.org/wiki/Iya_Valley",
         "it": ["scenic", "kid"]
+      }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Oboke Gorge",
+        "picks": [
+          {
+            "name": "そば茶屋 (Soba Chaya)",
+            "cuisine": "Iya soba (handmade buckwheat noodles)",
+            "rating": 4.3,
+            "why": "Galiya — the valley's own rustic Iya soba right by the gorge",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=1637649177588569982",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Zaru_soba_by_spinachdip.jpg/960px-Zaru_soba_by_spinachdip.jpg"
+          },
+          {
+            "name": "Cafe & Jibie (道の駅 大歩危 / Michi-no-Eki Ōboke)",
+            "cuisine": "roadside-station cafe — curry rice, udon, plates",
+            "rating": 4.3,
+            "why": "Aslan — casual gorge-view rest stop with simple curry rice & udon he'll eat",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=3489408883758792596",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Beef_curry_rice_003.jpg/960px-Beef_curry_rice_003.jpg"
+          },
+          {
+            "name": "Restaurant Iyabashi",
+            "cuisine": "udon & teishoku set meals",
+            "rating": 4.1,
+            "why": "Ruslan — hearty udon/teishoku near the gorge, plain udon also works for Aslan",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=12655428176554131611",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Iya Valley / Oboke",
+        "picks": [
+          {
+            "name": "清流のそば処 祖谷美人 (Iya Bijin)",
+            "cuisine": "handmade Iya soba & local set meals",
+            "rating": 4.0,
+            "why": "Galiya — celebrated mountain-soba house perched over the gorge near the vine bridge",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=17357317293131209474",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Zaru_soba_by_spinachdip.jpg/960px-Zaru_soba_by_spinachdip.jpg"
+          },
+          {
+            "name": "おのみ家 (Onomiya)",
+            "cuisine": "home-style Japanese teishoku / local fare",
+            "rating": 4.7,
+            "why": "Ruslan & Galiya — warm valley cooking and rice-based set meals in Nishi-Iya",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=17047889143403398966",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Tonjiru_teishoku.jpg"
+          },
+          {
+            "name": "Sanukiya (讃岐屋, Ikeda)",
+            "cuisine": "self-serve Sanuki udon",
+            "rating": 4.2,
+            "why": "Aslan — plain udon & rice, famiresu-style; the kid-safe fallback down in Ikeda since the valley is tiny (most ryokan also serve a child-friendly dinner with plain rice & dekomawashi skewers)",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=13602908240971594126",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Sanuki_udon_by_open-arms.jpg/960px-Sanuki_udon_by_open-arms.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~09:30",
+        "name": "Ōtsuka Museum of Art (optional)",
+        "what": "1,000+ touchable full-size ceramic reproductions of world masterpieces in Naruto — a 2–3 h art highlight before turning inland; closed Mondays, so check the weekday",
+        "map": "https://www.google.com/maps/search/?api=1&query=Otsuka%20Museum%20of%20Art%20Naruto"
+      },
+      {
+        "time": "~12:30",
+        "name": "Oboke Gorge",
+        "what": "jade Yoshino-River gorge — ride the sightseeing boat under sculpted schist cliffs and stop at the Lapis Oboke yokai-folklore museum (kid hit)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Oboke%20Gorge"
+      },
+      {
+        "time": "~15:30",
+        "name": "Iya-no-Kazurabashi viewpoint",
+        "what": "first look at the live-vine bridge and the gorge scenery above the ryokan (the full crossing is saved for tomorrow's rest day)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Iya%20Kazurabashi%20vine%20bridge"
+      },
+      {
+        "time": "~16:00",
+        "name": "Onsen ryokan soak",
+        "what": "settle into the riverside onsen ryokan — several run a private cable-car down to open-air baths in the gorge; the early arrival is for a long, slow soak",
+        "map": "https://www.google.com/maps/search/?api=1&query=Iya%20Onsen%20ryokan"
       }
     ]
   },
@@ -2564,6 +3553,121 @@ window.DAYS = [
         "slot": "scenic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Crab_crawling_around_in_the_hills_of_Iya_Valley_%286453587885%29.jpg/960px-Crab_crawling_around_in_the_hills_of_Iya_Valley_%286453587885%29.jpg",
         "it": ["kid"]
+      }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Iya Valley — near the Kazurabashi vine bridge",
+        "picks": [
+          {
+            "name": "Iya Bijin (清流のそば処 祖谷美人)",
+            "cuisine": "Iya soba (handmade mountain buckwheat)",
+            "rating": 4.0,
+            "why": "Galiya — the valley's signature soba eaten at the source, on a gorge-view terrace",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=17357317293131209474",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Iya_Soba.jpg/960px-Iya_Soba.jpg"
+          },
+          {
+            "name": "Senkichi (祖谷 千吉)",
+            "cuisine": "Iya soba + dekomawashi hearth skewers & rice",
+            "rating": 4.2,
+            "why": "Aslan — mild grilled potato/tofu skewers and plain rice he'll eat; soba for the grown-ups",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=18342506515780846740",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Dengaku_%282384193986%29.jpg/960px-Dengaku_%282384193986%29.jpg"
+          },
+          {
+            "name": "Soba-jaya (そば茶屋)",
+            "cuisine": "Iya soba teahouse",
+            "rating": 4.3,
+            "why": "Ruslan/Galiya — well-rated soba backup on the Yamashiro side toward Ōboke",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=1637649177588569982",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Iya_Soba.jpg/960px-Iya_Soba.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "coffee",
+        "area": "Michi-no-eki Ōboke (gorge roadside station)",
+        "picks": [
+          {
+            "name": "Cafe & Jibie (道の駅 大歩危)",
+            "cuisine": "Cafe — coffee, soft-serve & local game snacks",
+            "rating": 4.3,
+            "why": "Aslan — soft-serve and an easy snack between the boat and the ryokan; coffee for Ruslan",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=3489408883758792596",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Iya / Ōboke (onsen ryokan, or casual nearby)",
+        "picks": [
+          {
+            "name": "Onsen-ryokan half-board kaiseki",
+            "cuisine": "Iya kaiseki — Iya soba, amego river fish, dekomawashi",
+            "rating": 4.5,
+            "why": "Galiya — the genuine rest-day highlight; book the in-house dinner when you reserve the room",
+            "kid": false,
+            "map": "https://www.google.com/maps/search/?api=1&query=Iya%20Onsen%20ryokan%20dinner%20Miyoshi",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Ikaho_dinner_01.jpg/960px-Ikaho_dinner_01.jpg"
+          },
+          {
+            "name": "Isuba (イスバ)",
+            "cuisine": "Wood-fired pizza & pasta",
+            "rating": 4.1,
+            "why": "Aslan — plain Margherita pizza is the sure-thing kid dinner if you eat out",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=12401291956266270519",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Margherita_pizza_on_plate.jpg/960px-Margherita_pizza_on_plate.jpg"
+          },
+          {
+            "name": "Yamaya Cafe, Bar & Guesthouse",
+            "cuisine": "Casual riverside cafe-bar",
+            "rating": 4.8,
+            "why": "Ruslan/Galiya — relaxed Ōboke riverside spot for a drink and easy plates if not dining in",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=5681294211031365048",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~09:30",
+        "name": "Morning onsen soak",
+        "what": "Lazy rest-day start in the riverside ryokan baths (several have a private cable-car down to open-air baths in the gorge)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Iya%20Onsen%20ryokan%20Miyoshi%20Tokushima"
+      },
+      {
+        "time": "~10:30",
+        "name": "Iya-no-Kazurabashi vine bridge",
+        "what": "Cross the 45 m live-vine bridge over the gorge — hold Aslan's hand tightly on the slatted gaps",
+        "map": "https://www.google.com/maps/search/?api=1&query=Iya%20Kazurabashi"
+      },
+      {
+        "time": "~11:30",
+        "name": "Peeing-Boy statue (Shōben-kozō)",
+        "what": "Bronze boy on a cliff edge 200 m above the river — quick photo viewpoint on the gorge road",
+        "map": "https://www.google.com/maps/search/?api=1&query=Iya%20no%20Shobenkozo"
+      },
+      {
+        "time": "~13:30",
+        "name": "Ōboke Gorge sightseeing boat",
+        "what": "Easy 30-min boat through jade Yoshino-river cliffs; pairs with the Lapis Ōboke yōkai museum next door if it rains",
+        "map": "https://www.google.com/maps/search/?api=1&query=Oboke%20Gorge%20sightseeing%20boat"
+      },
+      {
+        "time": "optional",
+        "name": "Nagoro Scarecrow Village",
+        "what": "Quirky kid stop, but a long winding ~1 h drive deeper up the valley — only if everyone's keen",
+        "map": "https://www.google.com/maps/search/?api=1&query=Nagoro%20Scarecrow%20Village"
       }
     ]
   },
@@ -2616,6 +3720,100 @@ window.DAYS = [
         "wiki": "https://en.wikipedia.org/wiki/Katsurahama",
         "it": ["scenic"]
       }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Hirome Market, central Kōchi",
+        "picks": [
+          {
+            "name": "Myojinmaru — Hirome Market Store (明神丸 ひろめ市場店)",
+            "cuisine": "katsuo no tataki (straw-flame-seared bonito)",
+            "rating": 4.2,
+            "why": "Galiya & Ruslan — watch the bonito flame over burning straw and eat it minutes later, Kōchi's soul dish at the source",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=685507622552095731",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Bonito_tataki_at_Hirome_Market_%286453600279%29.jpg/960px-Bonito_tataki_at_Hirome_Market_%286453600279%29.jpg"
+          },
+          {
+            "name": "Hirome Market (ひろめ市場)",
+            "cuisine": "covered food hall — many stalls",
+            "rating": 4.1,
+            "why": "Aslan — shared-table hall with karaage, fries, plain rice and gyoza stalls so the picky eater finds something easy",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=11069022924402658269",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Karaage.jpg/960px-Karaage.jpg"
+          },
+          {
+            "name": "Teuchi Udon Fujiya (手打うどん 藤家)",
+            "cuisine": "handmade udon",
+            "rating": 4.4,
+            "why": "Aslan — calm sit-down alternative with plain udon he'll actually eat, near the castle",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=17212162267710166824",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Bowl_of_Kitsune_Udon.jpg/960px-Bowl_of_Kitsune_Udon.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Central Kōchi (Obiyamachi / Harimayachō)",
+        "picks": [
+          {
+            "name": "Tosaryori Tsukasa (土佐料理 司)",
+            "cuisine": "Tosa cuisine — sawachi platters & katsuo tataki",
+            "rating": 4.1,
+            "why": "Galiya — the full Tosa party-style sawachi spread of sashimi, sushi and seared bonito",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=13999983515317910621",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/0/08/SawachiDish_Sushi_and_Tataki01.jpg"
+          },
+          {
+            "name": "Ramen shop Kuraki (らーめん蔵木)",
+            "cuisine": "ramen & gyoza",
+            "rating": 4.3,
+            "why": "Galiya's noodles plus a plain bowl & gyoza for Aslan",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=14938791122352366488",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/4/42/Ramen.jpg"
+          },
+          {
+            "name": "Genzo Obiyamachi (とんかつ 源蔵 帯屋町)",
+            "cuisine": "tonkatsu",
+            "rating": 4.1,
+            "why": "Aslan — crisp breaded katsu and rice, an easy win for the picky eater",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=8199549859830906235",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Tonkatsu.jpg/960px-Tonkatsu.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~09:45",
+        "name": "Otoyo michi-no-eki",
+        "what": "first roadside coffee/leg-stretch stop coming off the Iya mountains",
+        "map": "https://www.google.com/maps/search/?api=1&query=Michi-no-Eki%20Otoyo%20Kochi"
+      },
+      {
+        "time": "~11:00",
+        "name": "Anpanman Museum (Yanase Takashi Memorial Hall)",
+        "what": "home-town museum of Japan's beloved toddler superhero in Kami — a near-guaranteed hit for Aslan",
+        "map": "https://www.google.com/maps/search/?api=1&query=Anpanman%20Museum%20Kami%20Kochi"
+      },
+      {
+        "time": "~15:00",
+        "name": "Kōchi Castle",
+        "what": "climb the original 1747 keep (one of only 12 surviving) and tour the lord's palace below — kid-friendly",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kochi%20Castle"
+      },
+      {
+        "time": "~16:30",
+        "name": "Katsurahama",
+        "what": "crescent Pacific beach (look-don't-swim), the Sakamoto Ryōma statue and a small aquarium",
+        "map": "https://www.google.com/maps/search/?api=1&query=Katsurahama"
+      }
     ]
   },
 {
@@ -2666,6 +3864,96 @@ window.DAYS = [
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Sagawa-bridge%2CShimanto-cho%2CJapan.JPG/960px-Sagawa-bridge%2CShimanto-cho%2CJapan.JPG",
         "it": ["scenic"]
       }
+    ],
+    "ramenTrail": [
+      {
+        "style": "Nabeyaki ramen",
+        "shop": "Hashimoto Shokudō 橋本食堂",
+        "shopUrl": "https://maps.google.com/?cid=5613975438265449042",
+        "city": "Susaki",
+        "slot": "lunch"
+      }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Susaki",
+        "picks": [
+          {
+            "name": "Mayumi no Mise (まゆみの店)",
+            "cuisine": "Susaki nabeyaki ramen",
+            "rating": 4.1,
+            "why": "Galiya — Susaki's signature hot-pot ramen (chicken broth, thin noodles, egg) at the town's most famous shop",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=602723661575591055",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nabeyaki_ramen_01.jpg/960px-Nabeyaki_ramen_01.jpg",
+            "trail": true
+          },
+          {
+            "name": "Hashimoto Shokudo",
+            "cuisine": "shokudo diner / nabeyaki ramen",
+            "rating": 4.3,
+            "why": "Aslan — a homey diner where the mild chicken-broth nabeyaki ramen plus plain rice/sides suit a picky eater",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=5613975438265449042",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Nabeyaki_ramen_02.jpg/960px-Nabeyaki_ramen_02.jpg",
+            "trail": true
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Shimanto (Nakamura)",
+        "picks": [
+          {
+            "name": "Local Cuisine Hanazen (郷土料理 花ぜん)",
+            "cuisine": "Shimanto river cuisine — wild eel, ayu",
+            "rating": 4.3,
+            "why": "Galiya — Shimanto's line-caught wild eel (unagi) and ayu cooked where they're fished",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=15777740087084303905",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Kabayaki_grilled_eel.jpg/960px-Kabayaki_grilled_eel.jpg"
+          },
+          {
+            "name": "Chika (チカ)",
+            "cuisine": "izakaya",
+            "rating": 4.4,
+            "why": "Aslan — busy local izakaya with karaage, plain rice and fried bites he'll happily eat (broad menu for the whole table)",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=14908376005053640875",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Chicken_karaage_003.jpg/960px-Chicken_karaage_003.jpg"
+          },
+          {
+            "name": "Chubo Wakamatsu (厨房 わかまつ)",
+            "cuisine": "Japanese / katsuo & local fish",
+            "rating": 4.4,
+            "why": "Ruslan & Galiya — well-rated all-rounder for Kochi katsuo and seasonal river fish",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=9013227086709514243",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Katsuo_no_tataki_in_Kochi_01.jpg/960px-Katsuo_no_tataki_in_Kochi_01.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~10:00",
+        "name": "Ino-cho Paper Museum (Tosa washi)",
+        "what": "Make your own postcard/sheet of Tosa washi on the Niyodo River — hands-on craft for Aslan (~¥400, closed Mon)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Ino-cho%20Paper%20Museum%20Kochi"
+      },
+      {
+        "time": "~11:00",
+        "name": "Niyodo Blue river",
+        "what": "Photo stop at the famously translucent blue water",
+        "map": "https://www.google.com/maps/search/?api=1&query=Niyodo%20River%20Niyodo%20Blue"
+      },
+      {
+        "time": "~15:30",
+        "name": "Sada Chinkabashi",
+        "what": "Walk a railless 'sinking bridge' over the clear Shimanto",
+        "map": "https://www.google.com/maps/search/?api=1&query=Sada%20Chinkabashi%20Shimanto"
+      }
     ]
   },
 {
@@ -2706,6 +3994,91 @@ window.DAYS = [
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/ShimantoRiverFromNakabaRestarea.JPG/960px-ShimantoRiverFromNakabaRestarea.JPG",
         "wiki": "https://en.wikipedia.org/wiki/Cape_Ashizuri",
         "it": ["scenic"]
+      }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Shimanto riverside (Yamachi / Sada bend)",
+        "picks": [
+          {
+            "name": "こいちご飯 (Koichi Gohan)",
+            "cuisine": "Shimanto-river eel & ayu teishoku",
+            "rating": 4.2,
+            "why": "Galiya — river eel and sweetfish set meals eaten right by the water",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=16665219646928958643",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Unadon_%2815664670489%29.jpg/960px-Unadon_%2815664670489%29.jpg"
+          },
+          {
+            "name": "Shimantoya",
+            "cuisine": "riverside tourist restaurant — eel/ayu sets + plain rice & udon",
+            "rating": 3.9,
+            "why": "Aslan — big casual riverside spot with simple rice/udon sets he'll eat",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=10746447903860844056",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Ayu_no_Shioyaki.jpg/960px-Ayu_no_Shioyaki.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Nakamura town, Shimanto",
+        "picks": [
+          {
+            "name": "Chubo Wakamatsu (厨房 わかまつ)",
+            "cuisine": "Tosa izakaya — katsuo tataki & local Kochi dishes",
+            "rating": 4.4,
+            "why": "Galiya — seared bonito katsuo tataki, the Kochi specialty, in a lively local izakaya",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=9013227086709514243",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Katsuo_no_tataki_at_Kochi_City.jpg/960px-Katsuo_no_tataki_at_Kochi_City.jpg"
+          },
+          {
+            "name": "Sushi Kazu",
+            "cuisine": "sushi",
+            "rating": 4.2,
+            "why": "Ruslan & Galiya — fresh local nigiri in central Nakamura",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=702334641640917640",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nigiri_Sushi_%2825966163204%29.jpg/960px-Nigiri_Sushi_%2825966163204%29.jpg"
+          },
+          {
+            "name": "さぬきや (Sanukiya Udon)",
+            "cuisine": "udon",
+            "rating": 4.2,
+            "why": "Aslan — plain hot udon, an easy sure-thing near the station",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=7610857881456023209",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Kake_udon_by_Joe_Jones_in_Tokyo.jpg/960px-Kake_udon_by_Joe_Jones_in_Tokyo.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~10:30",
+        "name": "Shimanto yakatabune river boat",
+        "what": "Covered cruise gliding past the railless 'sinking bridges' — calm, no-effort, great for Aslan and the newer rider",
+        "map": "https://www.google.com/maps/search/?api=1&query=Shimanto%20River%20yakatabune%20boat"
+      },
+      {
+        "time": "~14:00",
+        "name": "Sada / Sata chinkabashi cycle & stroll",
+        "what": "Rent a flat bike at the michi-no-eki and ride out across the long sinking bridges over Japan's last clear stream",
+        "map": "https://www.google.com/maps/search/?api=1&query=Sada%20Chinkabashi%20Shimanto"
+      },
+      {
+        "time": "~15:00",
+        "name": "Akitsuio museum, Tonbo Kingdom",
+        "what": "Indoor dragonfly-and-river-fish aquarium — the wet-weather / kid hook for Aslan",
+        "map": "https://www.google.com/maps/search/?api=1&query=Shimantogawa%20Gakuyukan%20Akitsuio%20Tonbo%20Kingdom"
+      },
+      {
+        "time": "optional",
+        "name": "Cape Ashizuri",
+        "what": "Granite cape & white lighthouse — only if everyone's rested; it's a ~1.5–2h ride each way, a half-day, not a rest",
+        "map": "https://www.google.com/maps/search/?api=1&query=Cape%20Ashizuri"
       }
     ]
   },
@@ -2757,6 +4130,100 @@ window.DAYS = [
         "slot": "scenic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kashima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg/960px-Kashima_Island%2C_Uwajima_Ehime_Aerial_photograph.2019.jpg"
       }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Uwajima (Marunouchi, near the castle)",
+        "picks": [
+          {
+            "name": "Wabisuke",
+            "cuisine": "Uwajima taimeshi (sea-bream sashimi over rice in raw-egg dashi)",
+            "rating": 4.1,
+            "why": "Galiya — the local taimeshi specialty eaten at its source",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=13667520984505400433",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Uwajima_Taimeshi.jpg/960px-Uwajima_Taimeshi.jpg"
+          },
+          {
+            "name": "Isshin Japanese Seafood Cuisine",
+            "cuisine": "local seafood set / taimeshi",
+            "rating": 4.2,
+            "why": "Ruslan & Galiya — hearty Uwajima-bay seafood teishoku",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=12704092390793346764",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taimeshi_01.jpg/960px-Taimeshi_01.jpg"
+          },
+          {
+            "name": "Nishikura Sanuki-udon noodle shop",
+            "cuisine": "self-serve Sanuki udon",
+            "rating": 4.1,
+            "why": "Aslan — plain warm udon he'll actually eat (Galiya gets noodles too)",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=4127214049032307413",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Dōgo Onsen / Matsuyama",
+        "picks": [
+          {
+            "name": "Men-ya Niikura (麺や 新倉)",
+            "cuisine": "ramen",
+            "rating": 4.3,
+            "why": "Galiya — top-rated local ramen a short walk from Dōgo",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=113848077267614461",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"
+          },
+          {
+            "name": "Sushiemon Dōgo (すしえもん 道後店)",
+            "cuisine": "conveyor-belt sushi",
+            "rating": 4.4,
+            "why": "Aslan — pick-your-own conveyor plates (egg, salmon, rice); Galiya gets fresh Uwajima-bay sushi",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=5710359260940265591",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Conveyor_belt_sushi_at_Mashiro_Sushi.jpg/960px-Conveyor_belt_sushi_at_Mashiro_Sushi.jpg"
+          },
+          {
+            "name": "Mammam",
+            "cuisine": "Japanese set meals / izakaya",
+            "rating": 4.3,
+            "why": "Ruslan & Galiya — relaxed Dōgo-arcade dinner with rice/teishoku options for everyone",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=14857269819173416862",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Sakura_Teishoku_-_Sakura_Japanese_Restaurant_2025-07-28.jpg/960px-Sakura_Teishoku_-_Sakura_Japanese_Restaurant_2025-07-28.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~10:30",
+        "name": "Uwajima Castle",
+        "what": "climb to the compact, all-original 1666 hilltop keep — one of only twelve left in Japan — for sea-and-town views",
+        "map": "https://www.google.com/maps/search/?api=1&query=Uwajima%20Castle"
+      },
+      {
+        "time": "~14:00",
+        "name": "Uchiko Yōkaichi Old Street & Uchiko-za",
+        "what": "600 m of ochre-walled wax-merchant houses, plus the restored 1916 kabuki theatre (revolving stage, trap doors) — stroller-easy",
+        "map": "https://www.google.com/maps/search/?api=1&query=Uchiko%20Yokaichi%20Old%20Street"
+      },
+      {
+        "time": "~15:30",
+        "name": "Garyū Sansō, Ozu",
+        "what": "exquisite riverside villa and garden above the Hiji River — a short, calm stop before the run into Matsuyama",
+        "map": "https://www.google.com/maps/search/?api=1&query=Garyu%20Sanso%20Ozu"
+      },
+      {
+        "time": "~18:00",
+        "name": "Dōgo Onsen Honkan",
+        "what": "settle into the 2-night base and take an early evening soak in the grand 1894 wooden bathhouse (keep Aslan's soak short; Asuka-no-Yu has a private family bath)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Dogo%20Onsen%20Honkan"
+      }
     ]
   },
 {
@@ -2807,6 +4274,91 @@ window.DAYS = [
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Stone_sign%2C_Matsuyama_Castle%2C_Matsuyama%2C_Ehime_-_Sep_23%2C_2011.jpg/960px-Stone_sign%2C_Matsuyama_Castle%2C_Matsuyama%2C_Ehime_-_Sep_23%2C_2011.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Ishite-ji",
         "it": ["castle"]
+      }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Ōkaidō / city centre (near Matsuyama Castle)",
+        "picks": [
+          {
+            "name": "Taimeshi Motoyama (鯛めし本山)",
+            "cuisine": "Matsuyama taimeshi — sea bream cooked over rice",
+            "rating": 4.6,
+            "why": "Galiya — Matsuyama's signature sea-bream rice at a packed local favourite",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=9133809393906596874",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Taimeshi.jpg/960px-Taimeshi.jpg"
+          },
+          {
+            "name": "Nabeyaki Udon Yuian (鍋焼うどん結庵)",
+            "cuisine": "nabeyaki udon — Matsuyama's sweet soft udon in a clay pot",
+            "rating": 4.5,
+            "why": "Aslan — soft mild noodles in a little pot, the easy local bowl he'll actually eat",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=16769157094995214182",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Nabeyaki_udon.jpg/960px-Nabeyaki_udon.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Dōgo Onsen quarter",
+        "picks": [
+          {
+            "name": "Men-ya Niikura (麺や 新倉)",
+            "cuisine": "ramen",
+            "rating": 4.3,
+            "why": "Galiya — a well-loved bowl a short walk from the Honkan after the soak",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=113848077267614461",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"
+          },
+          {
+            "name": "Sushiemon Dōgo (宇和島グルメ寿司 すしえもん 道後店)",
+            "cuisine": "conveyor-belt sushi",
+            "rating": 4.4,
+            "why": "Aslan — pick-your-own conveyor plates (egg, plain rice, cooked picks); Galiya gets fresh local fish too",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=5710359260940265591",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kaiten_sushi_%282131921293%29.jpg/960px-Kaiten_sushi_%282131921293%29.jpg"
+          },
+          {
+            "name": "Isshinmaru (一心丸)",
+            "cuisine": "izakaya — Ehime seafood & jakoten",
+            "rating": 4.5,
+            "why": "Galiya & Ruslan — local jakoten fish cakes and Setouchi sashimi right in the Dōgo quarter",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=7147719788954986805",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Serving_jakoten_in_Dogo.jpg/960px-Serving_jakoten_in_Dogo.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~10:00",
+        "name": "Matsuyama Castle",
+        "what": "ropeway or single-seat chairlift up Katsuyama hill to a rare hilltop original keep — the lift is a kid hit",
+        "map": "https://www.google.com/maps/search/?api=1&query=Matsuyama%20Castle%20Ehime"
+      },
+      {
+        "time": "~14:00",
+        "name": "Dōgo Haikara-dōri arcade",
+        "what": "covered shopping street of onsen sweets, mikan juice and the Botchan Karakuri clock on the hour — easy, all-weather",
+        "map": "https://www.google.com/maps/search/?api=1&query=Dogo%20Haikara-dori%20Matsuyama"
+      },
+      {
+        "time": "~15:00",
+        "name": "Botchan Ressha",
+        "what": "ride the coal-black steam-style heritage tram between the city centre and Dōgo",
+        "map": "https://www.google.com/maps/search/?api=1&query=Botchan%20Ressha%20Dogo%20Onsen%20Station"
+      },
+      {
+        "time": "~16:30",
+        "name": "Dōgo Onsen Honkan",
+        "what": "soak in the grand 1894 wooden bathhouse with its Spirited Away resonance; keep Aslan's soak short, or book Asuka-no-Yu's private family bath",
+        "map": "https://www.google.com/maps/search/?api=1&query=Dogo%20Onsen%20Honkan"
       }
     ]
   },
@@ -2860,6 +4412,116 @@ window.DAYS = [
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Onomichi_Bridge_and_Onomichi_Channel_from_Main_Hall_of_Senkoji_Temple_2.jpg/960px-Onomichi_Bridge_and_Onomichi_Channel_from_Main_Hall_of_Senkoji_Temple_2.jpg",
         "it": ["food", "castle"]
       }
+    ],
+    "eats": [
+      {
+        "slot": "coffee",
+        "area": "Kirosan Observatory, Ōshima",
+        "picks": [
+          {
+            "name": "Kirosan Observatory Park",
+            "cuisine": "café / bridge-view rest stop",
+            "rating": 4.4,
+            "why": "Ruslan & all — coffee and the best Shimanami panorama mid-morning",
+            "kid": false,
+            "map": "https://www.google.com/maps/search/?api=1&query=Kirosan%20Observatory%20Park",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Beef_curry_rice_003.jpg/960px-Beef_curry_rice_003.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "lunch",
+        "area": "Ōmishima (near Ōyamazumi Shrine)",
+        "picks": [
+          {
+            "name": "Seafood Restaurant Yoshikawa",
+            "cuisine": "Setouchi seafood / sashimi & sea-bream rice bowls",
+            "rating": 4.1,
+            "why": "Galiya — fresh Inland-Sea fish eaten on the island where it's caught",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=6391261138187840589",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/4/47/Kaisendon_001.jpg"
+          },
+          {
+            "name": "Tairyo",
+            "cuisine": "Japanese restaurant / sea-bream (tai) teishoku set meals",
+            "rating": 4.0,
+            "why": "Galiya & Ruslan — popular tai set meals with rice right by the shrine",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=14126754483064723175",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/%E6%B0%97%E6%AF%94%E3%81%AE%E9%AF%9B%E3%82%81%E3%81%97_photo_by_Pcs34560_20160116_1300.jpg/960px-%E6%B0%97%E6%AF%94%E3%81%AE%E9%AF%9B%E3%82%81%E3%81%97_photo_by_Pcs34560_20160116_1300.jpg"
+          },
+          {
+            "name": "Roadside Station Tatara Shimanami Park",
+            "cuisine": "food court / curry rice, noodles, burgers, soft-serve",
+            "rating": 4.1,
+            "why": "Aslan — easy food court (curry rice, noodles, the Mishima sea-bream burger) with bridge views; pick-your-own plate",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=4631298090120556845",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Beef_curry_rice_003.jpg/960px-Beef_curry_rice_003.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Onomichi",
+        "picks": [
+          {
+            "name": "Tsutafuji Maruboshi (Onomichi Ramen)",
+            "cuisine": "Onomichi ramen — clear soy-niboshi broth, pork-back-fat bits, flat noodles",
+            "rating": 4.1,
+            "why": "Galiya — the defining Setouchi bowl at one of Onomichi's most loved shops",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=6892398988895765996",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Onomichi_ramen_by_Ozchin_in_Onomichi.jpg/960px-Onomichi_ramen_by_Ozchin_in_Onomichi.jpg",
+            "trail": true
+          },
+          {
+            "name": "Shōya Hanten",
+            "cuisine": "classic Onomichi ramen (mild soy broth)",
+            "rating": 4.5,
+            "why": "Aslan — gentle soy-broth ramen, basically plain noodles he'll eat; add a side of karaage",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=14662320892713452271",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Onomichi_ramen_and_Karaage.jpg/960px-Onomichi_ramen_and_Karaage.jpg"
+          },
+          {
+            "name": "Miyachi",
+            "cuisine": "Onomichi ramen specialist",
+            "rating": 4.4,
+            "why": "Galiya & Ruslan — well-rated local bowl if the others have a queue",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=17814048139730344579",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Onomichi_ramen_by_Ozchin_in_Onomichi.jpg/960px-Onomichi_ramen_by_Ozchin_in_Onomichi.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~09:30",
+        "name": "Imabari Castle",
+        "what": "sea-water-moat castle at the foot of the bridges; quick photo stop before crossing",
+        "map": "https://www.google.com/maps/search/?api=1&query=Imabari%20Castle"
+      },
+      {
+        "time": "~10:30",
+        "name": "Kirosan Observatory Park",
+        "what": "panorama café over the Kurushima-Kaikyō triple suspension bridge — coffee with the view",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kirosan%20Observatory%20Park"
+      },
+      {
+        "time": "~12:00",
+        "name": "Ōyamazumi Shrine, Ōmishima",
+        "what": "ancient samurai-armour shrine in a giant camphor grove — wander before lunch",
+        "map": "https://www.google.com/maps/search/?api=1&query=Oyamazumi%20Shrine"
+      },
+      {
+        "time": "~14:30",
+        "name": "Setoda, Ikuchijima",
+        "what": "lemon gelato on the waterfront and the gilt-and-marble Kōsan-ji temple with the white-marble Hill of Hope",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kosanji%20Temple%20Setoda"
+      }
     ]
   },
 {
@@ -2909,6 +4571,134 @@ window.DAYS = [
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/%E5%B0%BE%E9%81%93_Onomachi_-_panoramio.jpg/960px-%E5%B0%BE%E9%81%93_Onomachi_-_panoramio.jpg",
         "wiki": "https://en.wikipedia.org/wiki/K%C5%8Dsan-ji",
         "it": ["castle"]
+      }
+    ],
+    "ramenTrail": [
+      {
+        "style": "Onomichi ramen",
+        "shop": "Tsutafuji つたふじ",
+        "shopUrl": "https://maps.google.com/?cid=9111644244913689319",
+        "city": "Onomichi",
+        "slot": "rest-day anchor"
+      }
+    ],
+    "eats": [
+      {
+        "slot": "snack",
+        "area": "Setoda, Ikuchijima",
+        "picks": [
+          {
+            "name": "Dolce Kosanjimae Store",
+            "cuisine": "Setoda lemon gelato",
+            "rating": 4.1,
+            "why": "Aslan — bright Setoda lemon gelato right by Kōsanji, an easy kid win",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=9641240730542412151",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Gelato_al_Limone.jpg/960px-Gelato_al_Limone.jpg"
+          },
+          {
+            "name": "尾道柑橘工房 SETODA",
+            "cuisine": "citrus café / lemon sweets",
+            "rating": 4.9,
+            "why": "Galiya — a local citrus-workshop café for lemon cake, juice and a waterfront coffee",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=13595938065999504966",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Gelato_al_Limone.jpg/960px-Gelato_al_Limone.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "lunch",
+        "area": "Onomichi (town centre / harbour)",
+        "picks": [
+          {
+            "name": "Maruboshi (中華そば 一丁)",
+            "cuisine": "Onomichi ramen (soy-niboshi, pork-fat nuggets, flat noodles)",
+            "rating": 4.1,
+            "why": "Galiya — the iconic, always-queued bowl of the town's defining ramen",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=6892398988895765996",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Onomichi_ramen_and_jiaozi_by_The_Other_View_in_Onomichi.jpg/960px-Onomichi_ramen_and_jiaozi_by_The_Other_View_in_Onomichi.jpg",
+            "trail": true
+          },
+          {
+            "name": "Shoya Hanten (尾道らーめん 壱番館 / 朱華園系)",
+            "cuisine": "Onomichi ramen + gyoza & karaage",
+            "rating": 4.5,
+            "why": "Aslan — the mild soy broth, plain flat noodles, gyoza and karaage are easy for him",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=14662320892713452271",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Onomichi_ramen_and_Karaage.jpg/960px-Onomichi_ramen_and_Karaage.jpg"
+          },
+          {
+            "name": "Komedoko Shokudo",
+            "cuisine": "teishoku set meals (katsu, rice)",
+            "rating": 4.1,
+            "why": "Aslan — a calm shokudo with katsu and plain rice if the ramen queue is long",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=17619095989743617765",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Tonkatsu_003.jpg/960px-Tonkatsu_003.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Onomichi (waterfront / Tsuchidō)",
+        "picks": [
+          {
+            "name": "Onomichi Yokocho",
+            "cuisine": "Setouchi seafood food-alley (multiple stalls)",
+            "rating": 4.7,
+            "why": "Galiya — a lively alley of stalls: fresh Inland-Sea seafood for her, and karaage/rice stalls Aslan can pick from",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=4200612190604226638",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Sashimi_combo_%2830122297838%29.jpg/960px-Sashimi_combo_%2830122297838%29.jpg"
+          },
+          {
+            "name": "Tamaganzo",
+            "cuisine": "seafood izakaya (Onomichi local fish)",
+            "rating": 4.0,
+            "why": "Galiya & Ruslan — Setouchi catch and sake in a friendly harbour izakaya",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=2391970382022306045",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/SASHIMI_or_raw_sliced_fishes_2024-05-06.jpg/960px-SASHIMI_or_raw_sliced_fishes_2024-05-06.jpg"
+          },
+          {
+            "name": "Sushi Kin",
+            "cuisine": "sushi / conveyor-style",
+            "rating": 4.4,
+            "why": "Aslan — pick-your-own sushi, tamago and plain rolls he'll actually eat",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=10638192374241250106",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Kaitenzushi%21_%285253575569%29.jpg/960px-Kaitenzushi%21_%285253575569%29.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~10:30",
+        "name": "Kōsanji Temple & Hill of Hope (Setoda)",
+        "what": "riotously ornate temple with a cave 'hell-and-heaven' walk-through and the gleaming white-marble Miraishin-no-Oka hilltop — a kid-pleasing maze on Ikuchijima",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kosanji%20Temple%20Setoda"
+      },
+      {
+        "time": "~11:30",
+        "name": "Setoda lemon stroll",
+        "what": "lemon gelato and citrus stands along the Setoda waterfront — Japan's leading lemon producer, flat and easy with a child",
+        "map": "https://www.google.com/maps/search/?api=1&query=Setoda%20Shiomachi%20Shopping%20Street"
+      },
+      {
+        "time": "~15:00",
+        "name": "Senkōji Ropeway & Temple Walk",
+        "what": "ride the cable-car up for the classic view over the red Onomichi bridges, then wander down through vermilion halls, cafés and the famous cats — the kid-friendly version of the temple hill",
+        "map": "https://www.google.com/maps/search/?api=1&query=Senkoji%20Ropeway%20Onomichi"
+      },
+      {
+        "time": "~16:30",
+        "name": "Onomichi U2 / harbour arcade",
+        "what": "converted-warehouse cycle-and-harbour complex with shops and cafés, plus the covered shōtengai arcade — a flat, relaxed (and wet-weather) afternoon by the water",
+        "map": "https://www.google.com/maps/search/?api=1&query=Onomichi%20U2"
       }
     ]
   },
@@ -2960,6 +4750,100 @@ window.DAYS = [
         "slot": "scenic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Kurashiki_Bikan_-02.jpg/960px-Kurashiki_Bikan_-02.jpg"
       }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Tomonoura",
+        "picks": [
+          {
+            "name": "Shiokura Seafood Restaurant",
+            "cuisine": "Setouchi seafood / sashimi set",
+            "rating": 4.3,
+            "why": "Galiya — fresh Inland-Sea fish in the Ponyo harbour",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=11425586595266106681",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Sashimi_set.jpg/960px-Sashimi_set.jpg"
+          },
+          {
+            "name": "Tomonoura Ramen Taimaru",
+            "cuisine": "ramen",
+            "rating": 4.1,
+            "why": "Aslan — a plain shōyu ramen bowl he'll eat, plus noodles for Galiya",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=5549553753109472065",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"
+          },
+          {
+            "name": "Cafe & Dining Bar T8 TOMONOURA",
+            "cuisine": "Western cafe / omurice & pasta",
+            "rating": 4.6,
+            "why": "Aslan & family — easy Western plates with a harbour view",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=14111119771642764996",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Omurice_1.jpg/960px-Omurice_1.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Kurashiki Bikan",
+        "picks": [
+          {
+            "name": "Sakura-sō",
+            "cuisine": "Japanese set meals / local Setouchi",
+            "rating": 4.3,
+            "why": "Galiya — a proper Japanese teishoku dinner steps from the canal",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=14482124938972194149",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/%E5%AE%9A%E9%A3%9F_-_traditional_Japanese_set_meal_at_New_Chitose_Airport_%2897%29.jpg/960px-%E5%AE%9A%E9%A3%9F_-_traditional_Japanese_set_meal_at_New_Chitose_Airport_%2897%29.jpg"
+          },
+          {
+            "name": "Furuichi Bukkake-an Udon Restaurant",
+            "cuisine": "bukkake udon",
+            "rating": 4.7,
+            "why": "Aslan & Galiya — plain springy udon for him, the famous local bukkake bowl for her",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=11714000109321652119",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Kizami-bukkake-furuichi.jpg/960px-Kizami-bukkake-furuichi.jpg"
+          },
+          {
+            "name": "Kappa",
+            "cuisine": "tonkatsu",
+            "rating": 4.2,
+            "why": "Aslan — crisp katsu & rice, a long-running Kurashiki favourite",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=8826212601760362483",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Tonkatsu_by_ayustety_in_Tokyo.jpg/960px-Tonkatsu_by_ayustety_in_Tokyo.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~09:40",
+        "name": "Fukuyama Castle",
+        "what": "station-side castle keep, quick photo stop",
+        "map": "https://www.google.com/maps/search/?api=1&query=Fukuyama%20Castle%20Hiroshima"
+      },
+      {
+        "time": "~10:30",
+        "name": "Tomonoura (Ponyo harbour)",
+        "what": "the seaside town that inspired Ghibli's Ponyo — the stone gangi jetty, the old jōyatō lighthouse and the cliffside hillside; Galiya's headline Ghibli stop and an easy kid-friendly port walk",
+        "map": "https://www.google.com/maps/search/?api=1&query=Tomonoura%20Fukuyama"
+      },
+      {
+        "time": "~14:30",
+        "name": "Washūzan Viewpoint",
+        "what": "sweeping panorama of the Seto Ōhashi bridge over the island-dotted Inland Sea",
+        "map": "https://www.google.com/maps/search/?api=1&query=Washuzan%20Viewpoint%20Kurashiki"
+      },
+      {
+        "time": "~16:00",
+        "name": "Kurashiki Bikan + Ōhara Museum of Art",
+        "what": "willow-lined canal of white-walled kura storehouses; a flat-bottomed boat ride for the child, then Japan's first Western-art museum",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kurashiki%20Bikan%20historical%20quarter"
+      }
     ]
   },
 {
@@ -2992,6 +4876,94 @@ window.DAYS = [
         "q": "Kobe Harborland",
         "slot": "scenic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Himeji_Koko-en_Garden_NIK_0898.jpg/960px-Himeji_Koko-en_Garden_NIK_0898.jpg"
+      }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Himeji Castle (Honmachi)",
+        "picks": [
+          {
+            "name": "Menme (めん処 まる味)",
+            "cuisine": "Himeji udon / local noodles",
+            "rating": 4.5,
+            "why": "Galiya — well-loved noodle house steps from the castle",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=12605750817218965755",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Udon_by_udono.jpg/960px-Udon_by_udono.jpg"
+          },
+          {
+            "name": "HIMEJI UDEN (姫路うでん)",
+            "cuisine": "udon specialist",
+            "rating": 4.7,
+            "why": "Aslan — a bowl of plain udon he'll actually eat",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=16675121459691659468",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Udon_by_udono.jpg/960px-Udon_by_udono.jpg"
+          },
+          {
+            "name": "Eel restaurant Hiiragi (柊)",
+            "cuisine": "anago / unagi (grilled eel) sets",
+            "rating": 4.1,
+            "why": "Ruslan & Galiya — Seto-Inland anago, a Himeji specialty",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=11227371164931079938",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Unagi_Don_-_Kura_AUD12.90_regular_%283723645846%29.jpg/960px-Unagi_Don_-_Kura_AUD12.90_regular_%283723645846%29.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Kobe (Sannomiya / Chuo Ward)",
+        "picks": [
+          {
+            "name": "Kobe Beef KOJYU",
+            "cuisine": "Kobe-beef teppanyaki",
+            "rating": 4.9,
+            "why": "Galiya & Ruslan — the trip's Kobe-beef splurge (reserve ahead)",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=1379734323732265440",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/4_Kobe_Beef%2C_Kobe_Japan.jpg/960px-4_Kobe_Beef%2C_Kobe_Japan.jpg"
+          },
+          {
+            "name": "KOBE BEEF EiKiChi",
+            "cuisine": "Kobe-beef teppanyaki / steak",
+            "rating": 4.8,
+            "why": "Ruslan — chef-grilled Kobe beef at the counter",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=12911166532687467298",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/4_Kobe_Beef%2C_Kobe_Japan.jpg/960px-4_Kobe_Beef%2C_Kobe_Japan.jpg"
+          },
+          {
+            "name": "Sushiro Sannomiya Ikuta Road",
+            "cuisine": "conveyor-belt sushi (famiresu chain)",
+            "rating": 3.7,
+            "why": "Aslan — kaiten sushi, tamago/karaage/plain plates and a touchscreen he'll love",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=9260017382291780962",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Plateau_de_Sushis.JPG/960px-Plateau_de_Sushis.JPG"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~09:45",
+        "name": "Bizen-yaki pottery town, Imbe",
+        "what": "brick-chimney kiln village ~35 min east on Route 2; short beginner hand-shaping workshop (reserve ahead; confirm under-6 OK; not a Monday) — a hands-on craft for Aslan",
+        "map": "https://www.google.com/maps/search/?api=1&query=Imbe%20Bizen%20pottery%20Okayama"
+      },
+      {
+        "time": "~12:00",
+        "name": "Himeji Castle & Kōko-en",
+        "what": "the White Heron castle, Japan's finest keep, plus the Kōko-en garden — unhurried, lunch nearby",
+        "map": "https://www.google.com/maps/search/?api=1&query=Himeji%20Castle"
+      },
+      {
+        "time": "~17:30",
+        "name": "Kobe Harborland & Mosaic",
+        "what": "harbour-front boardwalk, Ferris wheel and shops for an easy evening stroll before dinner — kid-friendly",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kobe%20Harborland"
       }
     ]
   },
@@ -3034,6 +5006,100 @@ window.DAYS = [
         "slot": "scenic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Awaji_Balcony_flower_in_2013_04.JPG/960px-Awaji_Balcony_flower_in_2013_04.JPG",
         "it": ["scenic"]
+      }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "North Awaji (Iwaya / Shizuki, near the bridge)",
+        "picks": [
+          {
+            "name": "genpei (魚増鮮魚店 げんぺい)",
+            "cuisine": "Awaji seafood — sashimi & kaisen-don",
+            "rating": 4.6,
+            "why": "Galiya — island-fresh fish right by the Iwaya bridge landing",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=9299380464621384460",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kaisendon_001.jpg/960px-Kaisendon_001.jpg"
+          },
+          {
+            "name": "GOODMEAT AWAJISHIMA",
+            "cuisine": "Awaji wagyu / grilled beef",
+            "rating": 4.3,
+            "why": "Ruslan — local Awaji-beef on the island where it's raised",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=16763712060960368477",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/JP_%E6%97%A5%E6%9C%AC_Japan_%E6%B2%96%E7%B9%A9_OKINAWA_%E9%82%A3%E9%9C%B8_Naha_%E4%B9%85%E8%8C%82%E5%9C%B0_Kumoji_MK_Building_shop_%E5%92%8C%E7%89%9B%E7%87%92%E8%82%89%E5%BA%97_BBQ_Motobu_WAGYU_Yakiniku_Beef_Restaurant_lunch_meal_January_2025_R12S_09.jpg/960px-thumbnail.jpg"
+          },
+          {
+            "name": "Izumoan (いずも庵)",
+            "cuisine": "udon & soba noodles",
+            "rating": 4.1,
+            "why": "Aslan — plain hot udon he'll actually eat (Galiya gets her noodles too)",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=8247348910706101654",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Sanuki_udon_by_open-arms.jpg/960px-Sanuki_udon_by_open-arms.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Osaka — Namba / Dōtonbori",
+        "picks": [
+          {
+            "name": "Namba Okonomiyaki Ajinoya Honten (味乃家)",
+            "cuisine": "Osaka okonomiyaki",
+            "rating": 4.3,
+            "why": "Galiya — the city's signature savoury pancake, a celebratory homecoming dish",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=13558371125293422542",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Okonomiyaki_001.jpg/960px-Okonomiyaki_001.jpg"
+          },
+          {
+            "name": "Hanamaruken Hozenji",
+            "cuisine": "Osaka ramen (braised-pork shoyu)",
+            "rating": 4.3,
+            "why": "Galiya & Ruslan — a hearty famous Osaka ramen bowl",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=12134182644213953393",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/4/42/Ramen.jpg"
+          },
+          {
+            "name": "CHOJIRO Hozenji Flagship (廻る寿司 长次郎)",
+            "cuisine": "conveyor-belt sushi (kaiten-zushi)",
+            "rating": 4.1,
+            "why": "Aslan — touch-panel kaiten with plain egg, cucumber, karaage & rice he can pick himself",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=2946437673775376530",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kaiten-zushi_002.jpg/960px-Kaiten-zushi_002.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~10:00",
+        "name": "Kawasaki Good Times World",
+        "what": "Kawasaki Heavy Industries museum at Meriken Park — sit-on motorcycles & Jet Skis, a Shinkansen cab, helicopter and robots; a perfect moto-family hit for Aslan (~1.5h, opens 10:00, closed Mon)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kawasaki%20Good%20Times%20World%20Kobe"
+      },
+      {
+        "time": "~11:45",
+        "name": "Akashi Kaikyō Bridge",
+        "what": "Ride the ~4 km span — for years the longest suspension bridge on earth; photo stop at the Awaji end",
+        "map": "https://www.google.com/maps/search/?api=1&query=Akashi%20Kaikyo%20Bridge"
+      },
+      {
+        "time": "~14:00",
+        "name": "Nijigen no Mori",
+        "what": "Anime theme park on Awaji (Naruto, Godzilla, Crayon Shin-chan zones) — a kid magnet for Aslan",
+        "map": "https://www.google.com/maps/search/?api=1&query=Nijigen%20no%20Mori%20Awaji"
+      },
+      {
+        "time": "~15:30",
+        "name": "Awaji Hanasajiki",
+        "what": "Hillside flower fields looking over the Inland Sea — an easy, pretty last stretch before recrossing",
+        "map": "https://www.google.com/maps/search/?api=1&query=Awaji%20Hanasajiki"
       }
     ]
   },
@@ -3113,6 +5179,112 @@ window.DAYS = [
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg/960px-Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg",
         "it": ["kid"]
       }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Namba / Den Den Town",
+        "picks": [
+          {
+            "name": "Udon Tamatama",
+            "cuisine": "hand-made udon noodles",
+            "rating": 4.7,
+            "why": "Aslan — plain kake udon he'll happily slurp; Galiya gets top-rated noodles too",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=8637420094679159397",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"
+          },
+          {
+            "name": "Kyoto Wamen Yukichi (Namba Sennichimae)",
+            "cuisine": "ramen",
+            "rating": 5.0,
+            "why": "Galiya — a standout bowl right in the Namba food maze",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=14468422320166151533",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ramen_2.jpg/960px-Ramen_2.jpg"
+          },
+          {
+            "name": "Tsurutontan Soemoncho",
+            "cuisine": "premium udon (big bowls, lots of plain options)",
+            "rating": 4.0,
+            "why": "Galiya & Ruslan — famous Osaka udon house; easy plain bowls work for Aslan too",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=12563860394098208989",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Dōtonbori",
+        "picks": [
+          {
+            "name": "Chibo Dōtonbori",
+            "cuisine": "Osaka okonomiyaki / teppanyaki",
+            "rating": 4.1,
+            "why": "Galiya & Ruslan — the celebratory Osaka griddle classic on the neon canal",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=11230990528616538865",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Okonomiyaki_Osaka_2.JPG/960px-Okonomiyaki_Osaka_2.JPG"
+          },
+          {
+            "name": "Sushiro Dōtonbori",
+            "cuisine": "conveyor-belt sushi",
+            "rating": 4.6,
+            "why": "Aslan — tap-the-screen kaiten sushi with plain rice, tamago, karaage and fries; pure kid win",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=11787458940792052758",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Conveyor_belt_sushi_at_Mashiro_Sushi.jpg/960px-Conveyor_belt_sushi_at_Mashiro_Sushi.jpg"
+          },
+          {
+            "name": "OKO - Fun Okonomiyaki Bar",
+            "cuisine": "okonomiyaki / teppan (English-friendly)",
+            "rating": 4.7,
+            "why": "Galiya — top-rated, lively cook-at-the-counter alternative if Chibo has a queue",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=17891229658034342593",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Okonomiyaki_-a_Japanese_savory_pancake_in_Osaka%2C_Japan.jpg/960px-Okonomiyaki_-a_Japanese_savory_pancake_in_Osaka%2C_Japan.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~09:30",
+        "name": "Bike return — Suita base (Bike Rental Japan)",
+        "what": "hand back the Africa Twin + CB400X, empty panniers, settle paperwork; the riding loop is closed",
+        "map": "https://www.google.com/maps/search/?api=1&query=Bike%20Rental%20Japan%20Suita%20Osaka"
+      },
+      {
+        "time": "~11:00",
+        "name": "Osaka Castle & park",
+        "what": "easy first walk of the no-ride day — moats, stone walls, gold-trimmed keep",
+        "map": "https://www.google.com/maps/search/?api=1&query=Osaka%20Castle"
+      },
+      {
+        "time": "~14:30",
+        "name": "Nintendo OSAKA + Pokémon Center (Daimaru Umeda 13F)",
+        "what": "Kansai flagship Nintendo store + big Pokémon Center on one walk-in floor — Mario/Zelda/Splatoon & Pokémon plush for Aslan and Galiya",
+        "map": "https://www.google.com/maps/search/?api=1&query=Nintendo%20OSAKA%20Daimaru%20Umeda"
+      },
+      {
+        "time": "~15:30",
+        "name": "Donguri Republic (Studio Ghibli shop)",
+        "what": "Totoro/Ponyo/Kiki goods — Galiya's Ghibli souvenir stop",
+        "map": "https://www.google.com/maps/search/?api=1&query=Donguri%20Republic%20Osaka"
+      },
+      {
+        "time": "~16:30",
+        "name": "Den Den Town & Super Potato",
+        "what": "Osaka's toy/figure mecca — retro Mario shop, gachapon floors, and the best shot at Transformers / Takara Tomy robot figures for Aslan",
+        "map": "https://www.google.com/maps/search/?api=1&query=Super%20Potato%20Den%20Den%20Town%20Osaka"
+      },
+      {
+        "time": "~17:30",
+        "name": "Kuromon Ichiba",
+        "what": "\"Osaka's kitchen\" — eat-as-you-walk seafood, wagyu skewers and fruit, a short walk from Den Den Town",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kuromon%20Ichiba"
+      }
     ]
   },
 {
@@ -3155,6 +5327,76 @@ window.DAYS = [
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg/960px-Entrance_of_Osaka_Aquarium_%22Kaiyukan%22.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Osaka_Aquarium_Kaiyukan",
         "it": ["kid"]
+      }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Universal CityWalk Osaka (just outside the park gate)",
+        "picks": [
+          {
+            "name": "Osaka Soba Shinobu AN",
+            "cuisine": "soba & udon noodles",
+            "rating": 4.3,
+            "why": "Galiya — proper hand-cut soba/udon for a quick foodie noodle fix between rides",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=8457458393198602915",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Soba_and_tempura_combo_%2826498960080%29.jpg/960px-Soba_and_tempura_combo_%2826498960080%29.jpg"
+          },
+          {
+            "name": "551 Horai Universal Citywalk Osaka",
+            "cuisine": "butaman pork buns & gyoza",
+            "rating": 4.1,
+            "why": "Aslan — fluffy plain pork buns and gyoza he'll happily eat; Osaka's famous grab-and-go, fast for a park day",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=16138308789551627008",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Nikuman.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Universal CityWalk Osaka / USJ bayfront",
+        "picks": [
+          {
+            "name": "GYUKATSU Kyoto Katsugyu Universal Citywalk Osaka",
+            "cuisine": "gyukatsu (breaded beef cutlet, grill-it-yourself)",
+            "rating": 4.7,
+            "why": "the whole family — crisp breaded beef Aslan loves as plain katsu, and a fun cook-on-a-stone format; the standout near USJ",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=7712802532359384383",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tonkatsu_of_Kimukatsu.jpg/960px-Tonkatsu_of_Kimukatsu.jpg"
+          },
+          {
+            "name": "九九雲 (Kukuun)",
+            "cuisine": "ramen",
+            "rating": 4.5,
+            "why": "Galiya — a well-loved ramen bowl a short hop along the bayfront (Osaka Port, near Kaiyukan) to end the day",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=16379801422414639646",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~08:00",
+        "name": "Super Nintendo World (USJ)",
+        "what": "life-size Mushroom Kingdom — Mario Kart: Koopa's Challenge, Yoshi's Adventure, interactive Power-Up Band. Get the free Area Timed-Entry in the app the moment gates open (or use Express Pass)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Super%20Nintendo%20World%20Osaka"
+      },
+      {
+        "time": "~13:30",
+        "name": "Universal Studios Japan",
+        "what": "Wizarding World of Harry Potter, Minion Park and family shows — pace it and build in shade/rest breaks for Aslan",
+        "map": "https://www.google.com/maps/search/?api=1&query=Universal%20Studios%20Japan"
+      },
+      {
+        "time": "alt",
+        "name": "Osaka Aquarium Kaiyukan",
+        "what": "calm all-weather alternative across the bay — whale-shark tank you spiral down past, if a full theme-park day is too much",
+        "map": "https://www.google.com/maps/search/?api=1&query=Osaka%20Aquarium%20Kaiyukan"
       }
     ]
   },
@@ -3199,6 +5441,100 @@ window.DAYS = [
         "slot": "scenic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Mount_Fuji_and_Shinkansen_N700.jpg/960px-Mount_Fuji_and_Shinkansen_N700.jpg"
       }
+    ],
+    "eats": [
+      {
+        "slot": "lunch",
+        "area": "Fushimi Inari / Kyoto Station",
+        "picks": [
+          {
+            "name": "Teuchi-udon Kendonya",
+            "cuisine": "hand-cut Kyoto udon & soba",
+            "rating": 4.5,
+            "why": "Galiya — fresh hand-cut udon a short walk from the Fushimi Inari gates",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=16984350875559884345",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"
+          },
+          {
+            "name": "Inari Myoudai Dohachi",
+            "cuisine": "kitsune/inari udon (shrine specialty)",
+            "rating": 4.7,
+            "why": "Galiya — the sweet fried-tofu udon that's the dish of the Inari shrine",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=3500343508728031195",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Bowl_of_Kitsune_Udon.jpg/960px-Bowl_of_Kitsune_Udon.jpg"
+          },
+          {
+            "name": "Katsukura - Kyoto Porta",
+            "cuisine": "tonkatsu set meals",
+            "rating": 4.4,
+            "why": "Aslan — crisp breaded pork katsu & plain rice right inside Kyoto Station before the train",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=2658070174394966790",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Tonkatsu.jpg/960px-Tonkatsu.jpg"
+          }
+        ]
+      },
+      {
+        "slot": "dinner",
+        "area": "Shinagawa / Haneda",
+        "picks": [
+          {
+            "name": "Ramen Waka Tokyo",
+            "cuisine": "Tokyo shoyu ramen",
+            "rating": 4.1,
+            "why": "Galiya — a tidy classic Tokyo ramen bowl steps from Shinagawa Station",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=13477905415039930785",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"
+          },
+          {
+            "name": "Maruhachi",
+            "cuisine": "tonkatsu / katsu",
+            "rating": 4.4,
+            "why": "Aslan — crunchy katsu cutlet + plain rice, an easy safe last-night meal",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=188921099918380869",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Tonkatsu.jpg/960px-Tonkatsu.jpg"
+          },
+          {
+            "name": "Sushi Banya Kai Shinagawa",
+            "cuisine": "nigiri sushi",
+            "rating": 4.2,
+            "why": "Galiya & Ruslan — a celebratory last-night Tokyo sushi by the station",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=14932386608607633121",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nigiri_Sushi_%2825966163204%29.jpg/960px-Nigiri_Sushi_%2825966163204%29.jpg"
+          }
+        ]
+      }
+    ],
+    "localTodo": [
+      {
+        "time": "~09:00",
+        "name": "Fushimi Inari Taisha",
+        "what": "walk the thousand vermilion torii gates one last shrine morning; trains from Inari station run straight to Kyoto Station",
+        "map": "https://www.google.com/maps/search/?api=1&query=Fushimi%20Inari%20Taisha"
+      },
+      {
+        "time": "~11:30",
+        "name": "Kyoto Station / Kyoto Porta",
+        "what": "grab lunch + last souvenirs, then board the afternoon Nozomi (cases already forwarded ahead by takkyubin)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kyoto%20Station"
+      },
+      {
+        "time": "~14:00",
+        "name": "Nozomi Shinkansen to Tokyo",
+        "what": "right-side seats (D/E) for the Mt Fuji view around Shizuoka — a kid-and-grown-up favourite",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kyoto%20Station"
+      },
+      {
+        "time": "~17:30",
+        "name": "Settle near Shinagawa/Haneda",
+        "what": "check in, repack for the flight, relaxed last dinner",
+        "map": "https://www.google.com/maps/search/?api=1&query=Shinagawa%20Station"
+      }
     ]
   },
 {
@@ -3227,6 +5563,81 @@ window.DAYS = [
     ]
   }
 ];
+
+/* Themed 'Ramen Trail' foodie thread (sourced from tour/00-overview.md);
+   rendered as a section on index.html and a 🍜 flag on day.html days 9/13/18. */
+window.RAMEN_TRAIL = {
+  "title": "The Ramen Trail",
+  "subtitle": "a foodie thread for Galiya",
+  "intro": "The loop happens to thread <b>four of Japan's famous regional ramen cities</b>, so we make it an explicit, celebrated thread for <b>Galiya</b> (the foodie, who loves ramen/noodles above all — see 00-family.md). Each is a genuinely <i>different</i> local bowl, eaten where it's made, and each falls on a day already on the route — no detours required. All shops below were verified operating (Google Places, June 2026); links are key-free Google Maps.",
+  "note": "<b>Notes & honesty:</b> the famous <b>Shūkaen (朱華園, est. 1947)</b> — for decades <i>the</i> Onomichi-ramen marquee — <b>closed permanently in 2019</b>; its exact flavour is carried on by the founder's wife and daughter at the successor shop <b>Shu (朱)</b>, so we point there and to the classic <b>Tsutafuji</b> instead. For <b>Aslan (6)</b>, every stop has a kid-simple out — a plain bowl (no raw egg / pork belly), a side of rice, or gyoza. The <b>Day-9 lunch + dinner are a single \"two-ramen\" day</b>, so pace appetites accordingly.",
+  "bookend": "<b>Bookend & off-route awareness:</b> the Tokyo bookend (Days 0–1) is a chance to add classic <b>Tokyo shoyu ramen</b> as an optional fifth bowl. Japan's other headline styles — <b>Sapporo miso, Hakata/Fukuoka tonkotsu, Kitakata, Kishimen</b> — are <b>off this Osaka loop</b> (Hokkaidō and Kyūshū aren't on the route), so they're flagged for awareness, not promised.",
+  "stops": [
+    {
+      "n": 1,
+      "day": 9,
+      "slot": "lunch",
+      "city": "Wakayama City",
+      "pref": "Wakayama",
+      "style": "Chūka-soba",
+      "styleDesc": "thin noodles in a soy + pork-bone broth; eaten with pressed haya-zushi mackerel sushi on the side",
+      "shop": "Ide Shoten 井出商店",
+      "shopUrl": "https://maps.google.com/?cid=16098671254010911637",
+      "shopNote": "the \"TV Champion\" original",
+      "alts": [
+        { "l": "Marusan 丸三", "u": "https://maps.google.com/?cid=14907922861654292334" }
+      ],
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Wakayamaramen222.jpg/960px-Wakayamaramen222.jpg"
+    },
+    {
+      "n": 2,
+      "day": 9,
+      "slot": "dinner",
+      "city": "Tokushima City",
+      "pref": "Tokushima",
+      "style": "Tokushima ramen",
+      "styleDesc": "dark sweet-soy tonkotsu, stewed pork belly + raw egg, rice on the side",
+      "shop": "Chūka Soba Inotani 中華そば いのたに",
+      "shopUrl": "https://maps.google.com/?cid=16395492876013054298",
+      "shopNote": "the shop most credited with the style",
+      "alts": [],
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Tokushima_Ramen%2C_Men-Oh_-_May_2%2C_2018.jpg/960px-Tokushima_Ramen%2C_Men-Oh_-_May_2%2C_2018.jpg"
+    },
+    {
+      "n": 3,
+      "day": 13,
+      "slot": "lunch",
+      "city": "Susaki",
+      "pref": "Kōchi",
+      "style": "Nabeyaki ramen",
+      "styleDesc": "clay-pot ramen served bubbling in an earthenware donabe; thin soy-chicken broth, chikuwa, raw egg",
+      "shop": "Hashimoto Shokudō 橋本食堂",
+      "shopUrl": "https://maps.google.com/?cid=5613975438265449042",
+      "shopNote": "",
+      "alts": [
+        { "l": "Mayumi-no-Mise まゆみの店", "u": "https://maps.google.com/?cid=602723661575591055" }
+      ],
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nabeyaki_ramen_01.jpg/960px-Nabeyaki_ramen_01.jpg"
+    },
+    {
+      "n": 4,
+      "day": 18,
+      "slot": "rest-day anchor",
+      "city": "Onomichi",
+      "pref": "Hiroshima",
+      "style": "Onomichi ramen",
+      "styleDesc": "clear soy-tare chicken/niboshi broth with pork-back-fat nuggets and flat noodles",
+      "shop": "Tsutafuji つたふじ",
+      "shopUrl": "https://maps.google.com/?cid=9111644244913689319",
+      "shopNote": "classic old-school shop",
+      "alts": [
+        { "l": "Shu 朱", "u": "https://maps.google.com/?cid=2246075512842085799" },
+        { "l": "Maruboshi 丸ぼし", "u": "https://maps.google.com/?cid=6892398988895765996" }
+      ],
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Onomichi_ramen_and_jiaozi_by_The_Other_View_in_Onomichi.jpg/960px-Onomichi_ramen_and_jiaozi_by_The_Other_View_in_Onomichi.jpg"
+    }
+  ]
+};
 
 /* Pre-trip preparation checklist (rendered by checklist.html). */
 window.CHECKLIST = [

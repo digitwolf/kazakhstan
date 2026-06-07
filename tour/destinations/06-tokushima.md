@@ -27,7 +27,7 @@ Landing in Tokushima puts you beside **Naruto**, where colossal tidal whirlpools
 
 ## What to eat
 - **Naruto-dai (sea bream)** — firm, lean bream muscled by the fierce tidal strait — Naruto's prize fish, superb as sashimi.
-- **Tokushima ramen** — a dark, sweet-savoury pork-bone-and-soy broth, classically topped with **sweet stewed pork belly and a raw egg** cracked on top; eaten with rice on the side.
+- **Tokushima ramen** — a dark, sweet-savoury pork-bone-and-soy broth, classically topped with **sweet stewed pork belly and a raw egg** cracked on top; eaten with rice on the side. This is **stop 2 on the trip's [Ramen Trail](../00-overview.md#the-ramen-trail-a-foodie-thread-for-galiya)** — the marquee bowl is at **[Chūka Soba Inotani (中華そば いのたに)](https://maps.google.com/?cid=16395492876013054298)** in Tokushima City, the shop most credited with the style.
 - **Naruto wakame** — prized seaweed grown in the churning straits, springy and deep green.
 - **Sudachi** — Tokushima's tart green citrus (it grows almost nowhere else), squeezed over fish, noodles and even into drinks.
 - **Imo / Naruto kintoki sweet potato** — the local golden-fleshed sweet potato, roasted or in sweets.
