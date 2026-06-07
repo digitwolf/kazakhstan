@@ -46,7 +46,7 @@ This keeps the **Osaka riding loop unchanged** and brackets the front with a Tok
 - **Day 24 (fly home):** **nonstop Tokyo → Seattle** (ANA/Delta from Haneda, JAL from Narita). You re-cross the date line and **land in Seattle the same calendar day**.
 
 ### How the total trip length changes
-- **Osaka riding loop unchanged** (same bikes, same Suita start/finish, ≈1,171 mi).
+- **Osaka riding loop unchanged** (same bikes, same Suita start/finish, ≈1,195 mi incl. the short Day-2 Minoh warm-up ride).
 - **+ 1 arrival night in Tokyo (Day 0)** and **+ 1 full Tokyo museum day (Day 1)** before the train down to the **Day-2** pickup.
 - **+ 1 Super Nintendo World / USJ day (Day 22)** and **+ 1 reposition-to-Tokyo day (Day 23)** before the **Day-24** homebound flight.
 - **Door-to-door span ≈ 25 days** (Day 0 → Day 24). Only the **city/museum days + air/rail bookends** are added; the riding loop itself is unchanged.

@@ -222,6 +222,7 @@ window.DESTINATIONS = [
     "<b>Donguri Republic</b> — the official <b>Studio Ghibli</b> retail shop (Totoro/Ponyo/Kiki goods), in the central Umeda/Namba malls — the easy way to close Galiya's Ghibli thread with a souvenir; Aslan gets a plush out of it too",
     "<b>Den Den Town (Nipponbashi) & Super Potato</b> — Osaka's electronics/otaku district and the trip's best toy/figure shopping: the <b>Super Potato</b> retro-game shop (Mario-statue storefront, classic Famicom/N64), floors of <b>gachapon</b> capsule toys, and the figure/second-hand shops (Mandarake, Hobby Station) — the most reliable place on the loop to find <b>Transformers / Takara Tomy robot toys</b>. Pairs with Kuromon Ichiba next door",
     "<b>Kuromon Ichiba</b> — \"Osaka's kitchen\": a covered market of fresh seafood, wagyu skewers, fruit and street snacks to eat as you walk — a foodie + kid stop a short walk from Den Den Town",
+    "<b>Minoh Falls / Minoo Park (<a href=\"https://en.wikipedia.org/wiki/Meiji_no_Mori_Mino_Quasi-National_Park\" target=\"_blank\" rel=\"noopener\">Meiji-no-Mori Mino Quasi-National Park</a>)</b> — the <b>Day-2 warm-up ride</b> turnaround, ~30 min north of the Suita rental base: a leafy forest gorge with a 33 m waterfall, wild monkeys and <b>momiji-tempura</b> (deep-fried maple leaves) along an easy ~40-min walk — a gentle, kid-friendly first ride on the rental bikes before the demanding Day 3 (easy/optional, weather-dependent)",
     "<b>Osaka Castle & park</b> — broad moats, turreted stone walls and the reconstructed gold-trimmed keep; the surrounding park is a relaxed first-evening or final-day walk",
     "<b>Shinsekai & Tsūtenkaku tower</b> — a gloriously retro Shōwa-era district under a 1950s \"tower reaching heaven,\" and the spiritual home of kushikatsu skewers",
     "<b>Umeda Sky Building \"Floating Garden\"</b> — a 173 m open-air rooftop ring with an escalator that crosses mid-air between the twin towers",
@@ -2224,41 +2225,44 @@ window.DAYS = [
 {
     "d": 2,
     "id": "osaka",
-    "miles": 0,
-    "rest": true,
-    "rail": true,
+    "miles": 24,
+    "dmin": 67,
+    "warmup": true,
+    "rest": false,
+    "rail": false,
     "region": "Kansai",
-    "title": "Shinkansen to Osaka & Bike Pickup",
-    "route": "Tokyo 🚄 Shin-Osaka → Suita base",
-    "desc": "Strictly no riding. A relaxed late-morning Nozomi (~2h30m) brings you to Shin-Osaka around midday, then to the Suita base for the rental handover: paperwork and insurance, a full walk-around of the Africa Twin and CB400X, fitting the child's gear, pairing intercoms and a slow on-foot shakedown. Cap it with an easy Dōtonbori/Namba evening — the first real ride is Day 3, fresh and rested.",
+    "title": "Shinkansen to Osaka, Bike Pickup & Minoh Warm-Up",
+    "route": "Tokyo 🚄 Shin-Osaka → Suita base → Minoh Falls → Osaka",
+    "desc": "A relaxed late-morning Nozomi (~2h30m) glides into Shin-Osaka around midday, then a short hop out to the Suita base for the rental handover: paperwork and insurance, a full walk-around of the Africa Twin and CB400X, fitting the child's gear, pairing intercoms and a slow on-foot shakedown. Then — the warm-up before the demanding Day 3 — a gentle ~24 mi / ~1h07m shakedown ride: north out of Suita on quiet suburban roads to Minoh Falls, an easy forest-gorge walk to a 33 m waterfall, then a calm city leg back into Dōtonbori. It lets Galiya settle into the rental bike, riding on the left and the child-pillion setup with Aslan aboard, all at an easy daylight pace before the Route 480 climb tomorrow. Cap it with a welcome dinner under the Dōtonbori neon. The warm-up is optional and weather-dependent — if the flight landed late or it's wet, skip it and simply ride the short way to the hotel.",
     "luggage": "Start the chain. The cases forwarded from Tokyo are waiting at the Osaka hotel — repack into a chain case (forward it today from the front desk to the Shirahama rest base, Days 6–7, the first reliable forwarding target) and a heavier base-camp case left in Osaka left-luggage for the whole loop (collect Day 21). Only riding gear and a soft overnight bag goes on the bikes.",
-    "tags": ["rest", "kid"],
-    "gfrom": "Tokyo Station",
-    "gto": "Suita, Osaka",
-    "gvia": "",
+    "tags": ["ride", "kid", "scenic"],
+    "gfrom": "4-10 Senrioka Shimo, Suita, Osaka, Japan",
+    "gto": "Dotonbori, Osaka, Japan",
+    "gvia": "Minoo Park, Minoh, Osaka, Japan",
     "poi": [
       {
         "name": "Suita rental base",
-        "what": "Bike pickup, paperwork, gear-fit and a slow on-foot shakedown of the controls",
+        "what": "Bike pickup, paperwork, gear-fit and a slow on-foot shakedown of the controls — all on foot before the gentle warm-up ride (you arrive on the midday Nozomi, then a short local hop)",
         "q": "Suita, Osaka",
         "slot": "activity",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/960px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg",
         "it": ["moto"]
       },
       {
-        "name": "Osaka Castle",
-        "what": "Moats, park and the keep — an easy first-evening stroll",
-        "q": "Osaka Castle",
-        "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg/960px-Osaka_Castle%2C_Keep_tower%2C_South_view_20190415_1.jpg",
-        "wiki": "https://en.wikipedia.org/wiki/Osaka_Castle",
-        "it": ["castle"]
+        "name": "Minoh Falls / Minoo Park",
+        "what": "The warm-up ride's gentle turnaround, ~30 min north of the Suita base: an easy, mostly-flat ~40-min forest-gorge walk to a 33 m waterfall with wild monkeys and momiji-tempura (deep-fried, sweet-salty maple-leaf) stalls — kid-friendly for Aslan and Galiya's confidence-building first ride on the rental before Day 3.",
+        "q": "Minoo Park, Minoh, Osaka, Japan",
+        "slot": "scenic",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Minoh_Falls_Minoh_Osaka_pref_Japan01s5.jpg/960px-Minoh_Falls_Minoh_Osaka_pref_Japan01s5.jpg",
+        "wiki": "https://en.wikipedia.org/wiki/Meiji_no_Mori_Mino_Quasi-National_Park",
+        "it": ["scenic", "kid"],
+        "kid": true
       },
       {
         "name": "Dōtonbori",
-        "what": "Welcome dinner under the neon — takoyaki & okonomiyaki",
+        "what": "Welcome dinner under the neon — takoyaki, okonomiyaki and the running Glico Man, after riding back from Minoh and parking the bikes",
         "q": "Dotonbori Osaka",
-        "slot": "lunch",
+        "slot": "dinner",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg/960px-Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg",
         "wiki": "https://en.wikipedia.org/wiki/D%C5%8Dtonbori",
         "it": ["food"]
@@ -2314,6 +2318,30 @@ window.DAYS = [
         ]
       },
       {
+        "slot": "snack",
+        "area": "Minoh Falls path",
+        "picks": [
+          {
+            "name": "Hisakunikosendo",
+            "cuisine": "momiji-tempura (maple-leaf tempura)",
+            "rating": 4.4,
+            "why": "Aslan — a fun, sweet-salty deep-fried maple-leaf snack on the easy falls walk; one of Minoh's long-running makers",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=16416516797408264592",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Momiji_no_Tempura.jpg/960px-Momiji_no_Tempura.jpg"
+          },
+          {
+            "name": "Koyo-ryorikan",
+            "cuisine": "momiji-tempura / sweet stall",
+            "rating": 4.6,
+            "why": "everyone — another riverside path stall for crisp maple-leaf tempura by Minoh Falls (any of the path stalls works)",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=2539227206672459667",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Minoh_Falls_Minoh_Osaka_pref_Japan01s5.jpg/960px-Minoh_Falls_Minoh_Osaka_pref_Japan01s5.jpg"
+          }
+        ]
+      },
+      {
         "slot": "dinner",
         "area": "Dōtonbori / Namba",
         "picks": [
@@ -2351,8 +2379,14 @@ window.DAYS = [
       {
         "time": "~14:00",
         "name": "Suita rental base (Bike Rental Japan)",
-        "what": "Pickup, insurance paperwork, Africa Twin + CB400X walk-around, fit Aslan's child gear and pair intercoms — all on foot, no riding today",
+        "what": "Pickup, insurance paperwork, Africa Twin + CB400X walk-around, fit Aslan's child gear and pair intercoms — all on foot before the warm-up ride",
         "map": "https://www.google.com/maps/search/?api=1&query=Bike%20Rental%20Japan%20Suita%20Osaka"
+      },
+      {
+        "time": "~15:30",
+        "name": "Minoh Falls / Minoo Park",
+        "what": "The warm-up ride's gentle turnaround (~30 min north of Suita): an easy, mostly-flat ~40-min forest-gorge walk to a 33 m waterfall with wild monkeys and momiji-tempura stalls — kid-friendly, lets Galiya settle into the rental before Day 3, then a calm city leg back to Dōtonbori (optional / weather-dependent)",
+        "map": "https://www.google.com/maps/search/?api=1&query=Minoo%20Park%2C%20Minoh%2C%20Osaka%2C%20Japan"
       },
       {
         "time": "~18:00",

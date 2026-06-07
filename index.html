@@ -442,7 +442,7 @@
       <p>A day-by-day breakdown (Day 0 Tokyo arrival → Day 24 fly home; ≈ 25 days door-to-door). Driving times are
         <b style="color:var(--text)">real Google-routed figures</b> — the 12 transfer days average <b style="color:var(--text)" id="itinAvg">~2h56m</b>
         (longest ~4h33m on Day 13), with breaks every 60–90 minutes for the young passenger.
-        <b style="color:var(--text)">≈ 1,171 miles (1,884 km) total</b> over the Osaka riding loop. Tap any day for its full schedule.</p>
+        <b style="color:var(--text)">≈ 1,195 miles (1,923 km) total</b> over the Osaka riding loop (incl. the short Day-2 Minoh warm-up ride). Tap any day for its full schedule.</p>
     </div>
     <div class="filter-bar" id="filters">
       <span class="chip active" data-filter="all">All days</span>
@@ -509,7 +509,7 @@
       <div class="card">
         <h3><span class="ico">📋</span> Parameters</h3>
         <table class="params">
-          <tr><td>Trip length</td><td>≈ 25 days door-to-door (Day 0–24); Osaka riding loop ≈ 1,171 mi</td></tr>
+          <tr><td>Trip length</td><td>≈ 25 days door-to-door (Day 0–24); Osaka riding loop ≈ 1,195 mi</td></tr>
           <tr><td>Group</td><td>Husband, wife, 6-year-old son</td></tr>
           <tr><td>Rider 1 bike</td><td>Large ADV — ideally Honda Africa Twin</td></tr>
           <tr><td>Rider 2 bike</td><td>Under 500 cc — ideally Honda CB400X / NX400</td></tr>
@@ -563,7 +563,9 @@ const DAYS = window.DAYS;  // defined in data.js
 /* Live hero/itinerary stats from the real data */
 (function () {
   const total = DAYS.reduce((a, d) => a + (d.miles || 0), 0);
-  const dmins = DAYS.filter(d => d.dmin).map(d => d.dmin);
+  // Average is over the 12 transfer days only; the Day-2 Minoh warm-up (d.warmup) counts
+  // toward total miles but is not a transfer day, so exclude it from the average.
+  const dmins = DAYS.filter(d => d.dmin && !d.warmup).map(d => d.dmin);
   const avg = dmins.reduce((a, b) => a + b, 0) / dmins.length;
   const fmt = m => Math.floor(m / 60) + 'h' + String(Math.round(m % 60)).padStart(2, '0') + 'm';
   const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };

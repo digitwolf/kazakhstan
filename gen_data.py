@@ -223,6 +223,8 @@ IMG = {
     "usj_castle": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg/960px-Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg",
     "usj_bands": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Power_up_bands_at_Super_Nintendo_World_%28Universal_Studios_Japan%29.png/960px-Power_up_bands_at_Super_Nintendo_World_%28Universal_Studios_Japan%29.png",
     "haneda": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Shinagawa_Station_-01.jpg/960px-Shinagawa_Station_-01.jpg",
+    # Day-2 Minoh warm-up ride turnaround (HTTP 200, reused from the day-02 guide momiji-tempura pick)
+    "minoh": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Minoh_Falls_Minoh_Osaka_pref_Japan01s5.jpg/960px-Minoh_Falls_Minoh_Osaka_pref_Japan01s5.jpg",
 }
 
 # Verified English-Wikipedia article URLs (HTTP 200, batch-verified) keyed by POI name.
@@ -263,6 +265,7 @@ WIKI = {
     "Kaiyukan Aquarium": "https://en.wikipedia.org/wiki/Osaka_Aquarium_Kaiyukan",
     "Kaiyukan (calm alternative)": "https://en.wikipedia.org/wiki/Osaka_Aquarium_Kaiyukan",
     "Dōtonbori": "https://en.wikipedia.org/wiki/D%C5%8Dtonbori",
+    "Minoh Falls / Minoo Park": "https://en.wikipedia.org/wiki/Meiji_no_Mori_Mino_Quasi-National_Park",
     "Fushimi Inari, Kyoto": "https://en.wikipedia.org/wiki/Fushimi_Inari-taisha",
     "Ghibli Museum (Mitaka)": "https://en.wikipedia.org/wiki/Ghibli_Museum",
     "teamLab Planets TOKYO": "https://en.wikipedia.org/wiki/TeamLab",
@@ -319,7 +322,7 @@ def infer_interests(name, what, slot, explicit):
 # ============ DAYS (0..23) ============
 # Each: d, id, miles, dmin(optional), rest, rail(optional), region, title, route,
 #       desc, tags, gfrom, gto, gvia, poi[]
-def poi(name, what, q, slot, img, wiki=None, it=None):
+def poi(name, what, q, slot, img, wiki=None, it=None, kid=False):
     p = {"name": name, "what": what, "q": q, "slot": slot, "img": img}
     w = wiki or WIKI.get(name)
     if w:
@@ -327,6 +330,8 @@ def poi(name, what, q, slot, img, wiki=None, it=None):
     interests = infer_interests(name, what, slot, it)
     if interests:
         p["it"] = interests   # interest-theme keys → emoji badges in day.html
+    if kid:
+        p["kid"] = True   # explicit kid-friendly stop (also surfaced via the `kid` interest badge)
     return p
 
 DAYS = [
@@ -345,13 +350,13 @@ DAYS = [
          poi("Nintendo TOKYO (Shibuya PARCO)","The official Nintendo flagship store (Mario, Zelda, Pokémon, Splatoon) with the Pokémon Center Shibuya next door — a gentle finish near Shibuya Crossing.","Nintendo TOKYO Shibuya PARCO","activity",IMG["nintendo"]),
          poi("Shibuya Crossing","The world's busiest scramble crossing, steps from Nintendo TOKYO — pure big-city Tokyo energy before dinner.","Shibuya Crossing","scenic",IMG["shibuya"])]},
 
- {"d":2,"id":"osaka","miles":0,"rest":True,"rail":True,"region":"Kansai","title":"Shinkansen to Osaka & Bike Pickup",
-  "route":"Tokyo 🚄 Shin-Osaka → Suita base","desc":"Strictly no riding. A relaxed late-morning Nozomi (~2h30m) brings you to Shin-Osaka around midday, then to the Suita base for the rental handover: paperwork and insurance, a full walk-around of the Africa Twin and CB400X, fitting the child's gear, pairing intercoms and a slow on-foot shakedown. Cap it with an easy Dōtonbori/Namba evening — the first real ride is Day 3, fresh and rested.",
+ {"d":2,"id":"osaka","miles":24,"dmin":67,"warmup":True,"rest":False,"rail":False,"region":"Kansai","title":"Shinkansen to Osaka, Bike Pickup & Minoh Warm-Up",
+  "route":"Tokyo 🚄 Shin-Osaka → Suita base → Minoh Falls → Osaka","desc":"A relaxed late-morning Nozomi (~2h30m) glides into Shin-Osaka around midday, then a short hop out to the Suita base for the rental handover: paperwork and insurance, a full walk-around of the Africa Twin and CB400X, fitting the child's gear, pairing intercoms and a slow on-foot shakedown. Then — the warm-up before the demanding Day 3 — a gentle ~24 mi / ~1h07m shakedown ride: north out of Suita on quiet suburban roads to Minoh Falls, an easy forest-gorge walk to a 33 m waterfall, then a calm city leg back into Dōtonbori. It lets Galiya settle into the rental bike, riding on the left and the child-pillion setup with Aslan aboard, all at an easy daylight pace before the Route 480 climb tomorrow. Cap it with a welcome dinner under the Dōtonbori neon. The warm-up is optional and weather-dependent — if the flight landed late or it's wet, skip it and simply ride the short way to the hotel.",
   "luggage":"Start the chain. The cases forwarded from Tokyo are waiting at the Osaka hotel — repack into a chain case (forward it today from the front desk to the Shirahama rest base, Days 6–7, the first reliable forwarding target) and a heavier base-camp case left in Osaka left-luggage for the whole loop (collect Day 21). Only riding gear and a soft overnight bag goes on the bikes.",
-  "tags":["rest","kid"],"gfrom":"Tokyo Station","gto":"Suita, Osaka","gvia":"",
-  "poi":[poi("Suita rental base","Bike pickup, paperwork, gear-fit and a slow on-foot shakedown of the controls","Suita, Osaka","activity",P("osaka",0)),
-         poi("Osaka Castle","Moats, park and the keep — an easy first-evening stroll","Osaka Castle","activity",P("osaka",0)),
-         poi("Dōtonbori","Welcome dinner under the neon — takoyaki & okonomiyaki","Dotonbori Osaka","lunch",P("osaka",1))]},
+  "tags":["ride","kid","scenic"],"gfrom":"4-10 Senrioka Shimo, Suita, Osaka, Japan","gto":"Dotonbori, Osaka, Japan","gvia":"Minoo Park, Minoh, Osaka, Japan",
+  "poi":[poi("Suita rental base","Bike pickup, paperwork, gear-fit and a slow on-foot shakedown of the controls — all on foot before the gentle warm-up ride (you arrive on the midday Nozomi, then a short local hop)","Suita, Osaka","activity",P("osaka",0)),
+         poi("Minoh Falls / Minoo Park","The warm-up ride's gentle turnaround, ~30 min north of the Suita base: an easy, mostly-flat ~40-min forest-gorge walk to a 33 m waterfall with wild monkeys and momiji-tempura (deep-fried, sweet-salty maple-leaf) stalls — kid-friendly for Aslan and Galiya's confidence-building first ride on the rental before Day 3.","Minoo Park, Minoh, Osaka, Japan","scenic",IMG["minoh"],it=["scenic","kid"],kid=True),
+         poi("Dōtonbori","Welcome dinner under the neon — takoyaki, okonomiyaki and the running Glico Man, after riding back from Minoh and parking the bikes","Dotonbori Osaka","dinner",P("osaka",1))]},
 
  {"d":3,"id":"kumano-interior","miles":102,"dmin":272,"rest":False,"region":"Kōya → Kumano, Wakayama","title":"Sacred Mountain & the Pilgrim Road",
   "route":"Osaka → Kōyasan → Hongū / Yunomine","desc":"The biggest of the opening days, by design: a quick visit to the sacred mountain, then straight down the great pilgrim road to the onsen hamlets of the Kumano interior. Slip south out of the Kansai sprawl and climb the paved Route 480/370 into the forested highlands of Kōyasan — keep it to a brisk ~1–1.5 hours (the cedar avenue of Okunoin, or the vermilion Danjō Garan and head temple Kongōbu-ji) rather than a temple-stay night. Then drop off the mountain and turn south down Route 168, following the Totsukawa River through deep forested gorges; pause to walk the swaying Tanise suspension bridge, then roll into the Hongū basin for Kumano Hongū Taisha and the giant Ōyunohara torii, overnighting at the ancient onsen hamlet of Yunomine. Start early and let tomorrow's Kumano rest day absorb the long ride.",
