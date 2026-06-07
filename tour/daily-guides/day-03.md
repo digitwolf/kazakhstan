@@ -1,48 +1,55 @@
 ```json
 {
   "d": 3,
-  "title": "Up to the Sacred Mountain",
-  "overnight": "Kōyasan, Wakayama",
-  "schedule": "depart Osaka ~09:00 · climb Route 480/370 (2h19m riding, stop ~10:30) · arrive Kōyasan ~midday · lunch ~12:30 in the temple village · afternoon: Danjō Garan, Kongōbu-ji, goma-tofu snack · dusk Okunoin walk · dinner at the shukubō (shōjin-ryōri)",
+  "title": "Sacred Mountain & the Pilgrim Road",
+  "overnight": "Yunomine Onsen, Tanabe, Wakayama",
+  "schedule": "depart Osaka ~08:30 · coffee + quick Kōyasan stop late morning ~10:30–12:00 · lunch ~12:00 in Kōyasan town · descend Route 168 (Tanise bridge, Hongū / Ōyunohara) · arrive Yunomine late afternoon ~16:30–17:00 · ryokan kaiseki dinner in Yunomine",
   "todo": [
-    {"time":"~12:00","name":"Danjō Garan & Konpon Daitō","what":"vermilion great pagoda, the spiritual heart of the mountain — an easy first walk on arrival","map":"https://www.google.com/maps/search/?api=1&query=Danjo%20Garan%20Koyasan"},
-    {"time":"~14:00","name":"Kongōbu-ji","what":"head temple of Shingon Buddhism — the Banryūtei rock garden and painted fusuma halls","map":"https://www.google.com/maps/search/?api=1&query=Kongobuji%20Koyasan"},
-    {"time":"~15:30","name":"Kadohama Goma-tofu Honpo","what":"the famous sesame-tofu shop — taste/buy Kōyasan's silky signature goma-dofu (mild, a safe nibble for Aslan)","map":"https://maps.google.com/?cid=15025927858595747065"},
-    {"time":"~17:00","name":"Okunoin lantern walk","what":"cedar avenue of 200,000 tombs to Kōbō Daishi's mausoleum — most atmospheric at dusk","map":"https://www.google.com/maps/search/?api=1&query=Okunoin%20Cemetery%20Koyasan"}
+    {"time":"~10:30","name":"Kōyasan quick stop — Okunoin","what":"brisk walk up the lantern-lit cedar avenue to Kōbō Daishi's mausoleum (or the vermilion Danjō Garan pagoda); keep it to ~1–1.5 h, a daytime visit, not a temple stay","map":"https://www.google.com/maps/search/?api=1&query=Okunoin%20Cemetery%20Koyasan"},
+    {"time":"~11:15","name":"Danjō Garan & Kongōbu-ji","what":"the great vermilion Konpon Daitō pagoda complex and the head temple's huge rock garden, a short stroll from the cafes","map":"https://www.google.com/maps/search/?api=1&query=Danjo%20Garan%20Koyasan"},
+    {"time":"~14:30","name":"Tanise no Tsuribashi","what":"297 m swaying pedestrian suspension bridge high over the Totsukawa — a leg-stretch on the descent down Route 168","map":"https://www.google.com/maps/search/?api=1&query=Tanise%20no%20Tsuribashi"},
+    {"time":"~16:00","name":"Kumano Hongū Taisha & Ōyunohara","what":"head shrine of the Kumano Sanzan and the giant 33.9 m Ōyunohara torii on the river sandbank, just before Yunomine","map":"https://www.google.com/maps/search/?api=1&query=Kumano%20Hongu%20Taisha"}
   ],
   "meals": [
-    {"slot":"lunch","area":"Kōyasan temple village (Senjuinbashi)",
-     "picks":[
-       {"name":"Kōya Soba Kokone (高野蕎麦ここね)","cuisine":"handmade soba","rating":4.1,"why":"Galiya — fresh mountain soba, the noodle she'll want at altitude","kid":false,"map":"https://maps.google.com/?cid=2864987165657710582","photo":"https://upload.wikimedia.org/wikipedia/commons/5/58/Ten_zaru_soba_by_jetalone_in_Tokyo.jpg"},
-       {"name":"Kotobuki Shokudō","cuisine":"casual shokudō — udon, rice bowls, katsu","rating":4.4,"why":"Aslan — plain udon, rice and katsu he'll actually eat","kid":true,"map":"https://maps.google.com/?cid=3056959925161555233","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"},
-       {"name":"Bon On Shya Cafe","cuisine":"cafe set lunch / teishoku","rating":4.7,"why":"Ruslan — popular, relaxed set-meal stop after the climb, good coffee","kid":false,"map":"https://maps.google.com/?cid=11540644926054536259","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Soba_and_tempura_combo_%2826498960080%29.jpg/960px-Soba_and_tempura_combo_%2826498960080%29.jpg"}
-     ]},
-    {"slot":"dinner","area":"Kōyasan — at the shukubō (temple lodging)",
-     "picks":[
-       {"name":"Fudō-in (shukubō shōjin-ryōri)","cuisine":"Buddhist vegetarian temple dinner","rating":4.7,"why":"Galiya — the signature Kōyasan shōjin-ryōri tray (goma-dofu, vegetable tempura, miso) in a 1,200-year-old temple stay","kid":false,"map":"https://maps.google.com/?cid=6285515137194093127","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Buddhist_vegetarian_food%2C_Shukubo_of_Kongosanmaiin_-_May_3%2C_2011.jpg/960px-Buddhist_vegetarian_food%2C_Shukubo_of_Kongosanmaiin_-_May_3%2C_2011.jpg"},
-       {"name":"Kōyasan Saizen-in (shukubō)","cuisine":"shōjin-ryōri — child portion on request","rating":4.5,"why":"Aslan — temples will plate a simple kids' tray (plain rice, mild goma-dofu, vegetable tempura); ask when booking","kid":true,"map":"https://maps.google.com/?cid=13554302819427116538","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fukuchiin_shojin_ryori_appetizer.jpg/960px-Fukuchiin_shojin_ryori_appetizer.jpg"}
-     ]}
+    {"slot":"coffee","area":"Kōyasan town","picks":[
+      {"name":"Tempu Terrace","cuisine":"cafe / espresso & light bites","rating":4.6,"why":"Ruslan & Galiya — proper coffee and a warm break at 800 m before the walk","kid":true,"map":"https://maps.google.com/?cid=8414907357130941779","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/330px-A_small_cup_of_coffee.JPG"},
+      {"name":"Komi Coffee","cuisine":"coffee roastery cafe","rating":4.1,"why":"Ruslan — hand-drip specialty coffee on the temple-town street","kid":false,"map":"https://maps.google.com/?cid=9477189132371607285","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/330px-A_small_cup_of_coffee.JPG"}
+    ]},
+    {"slot":"lunch","area":"Kōyasan town","picks":[
+      {"name":"Hanabishi","cuisine":"Kōya shōjin-ryōri / Buddhist vegetarian set","rating":4.2,"why":"Galiya — Kōyasan's temple cuisine (gomadōfu, tempura, soba) eaten at its source","kid":false,"map":"https://maps.google.com/?cid=12392921685726484034","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fukuchiin_shojin_ryori_appetizer.jpg/330px-Fukuchiin_shojin_ryori_appetizer.jpg"},
+      {"name":"Kotobuki Shokudō","cuisine":"casual shokudō — udon, katsu, curry rice","rating":4.4,"why":"Aslan — plain udon, katsu & rice he'll actually eat in a relaxed diner","kid":true,"map":"https://maps.google.com/?cid=3056959925161555233","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/330px-Kake_udon_by_udono.jpg"}
+    ]},
+    {"slot":"dinner","area":"Yunomine Onsen","picks":[
+      {"name":"Ryokan Yunomineso","cuisine":"onsen-ryokan kaiseki dinner","rating":4.5,"why":"whole family — multi-course local kaiseki at the inn; ask for a child's set (plain rice, karaage, tamago) for Aslan","kid":true,"map":"https://maps.google.com/?cid=5061754705104044984","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Jisaku_Kaiseki_Ryori_01.jpg/330px-Jisaku_Kaiseki_Ryori_01.jpg"},
+      {"name":"Ryokan Adumaya","cuisine":"historic onsen-ryokan kaiseki","rating":4.4,"why":"Galiya — refined kaiseki at a centuries-old Yunomine inn with traditional baths","kid":false,"map":"https://maps.google.com/?cid=13210106354841318663","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Jisaku_Kaiseki_Ryori_01.jpg/330px-Jisaku_Kaiseki_Ryori_01.jpg"}
+    ]}
   ]
 }
 ```
 
-## Day 3 — Up to the Sacred Mountain (Osaka → Kōyasan)
+## Day 3 — Sacred Mountain & the Pilgrim Road
 
-**Schedule.** Roll the bikes out of Suita around **09:00**, climbing gently through the Kansai sprawl and up the paved Route 480/370 switchbacks (~2h19m of relaxed riding, with a leg-stretch ~10:30) into the temple town. Arriving around **midday** is by design — Kōyasan rewards an unhurried afternoon. Lunch in the village ~12:30, then the Danjō Garan pagoda and Kongōbu-ji, a goma-tofu snack mid-afternoon, the lantern-lit Okunoin walk at dusk, and a quiet temple-lodging dinner.
+**Overnight:** Yunomine Onsen, Tanabe, Wakayama
+**Schedule:** depart Osaka ~08:30 · coffee + a brisk Kōyasan stop late morning (~10:30–12:00) · lunch ~12:00 in Kōyasan town · descend Route 168 past the Tanise suspension bridge and Hongū / Ōyunohara · arrive Yunomine late afternoon (~16:30–17:00) · ryokan kaiseki dinner in the onsen hamlet.
 
-> **Note on dinner:** Kōyasan is a tiny monastic town and most restaurants close by ~17:00, so the evening meal is genuinely **at your shukubō** — the temple shōjin-ryōri (Buddhist vegetarian) tray. This is a highlight for Galiya; for Aslan, ask the temple in advance for a simple child plate (plain rice, mild goma-dofu, vegetable tempura).
+This is the biggest of the opening days (102 mi / ~4h32m riding), so start early, keep the mountain visit to ~1–1.5 h, and let tomorrow's Kumano rest day absorb it. Tiny Yunomine has no restaurant scene to speak of — **dinner is taken at your ryokan** (kaiseki, included with the stay), which is exactly the point.
 
-### Lunch — temple village (Senjuinbashi)
-- **Kōya Soba Kokone** — handmade mountain soba · 4.1 · Galiya's noodle pick — https://maps.google.com/?cid=2864987165657710582
-- **Kotobuki Shokudō** *(kid)* — casual diner with plain udon, rice bowls and katsu Aslan will eat · 4.4 — https://maps.google.com/?cid=3056959925161555233
-- **Bon On Shya Cafe** — relaxed cafe set lunch + good coffee after the climb · 4.7 — https://maps.google.com/?cid=11540644926054536259
+### Coffee — Kōyasan town (late morning, before the walk)
+- **Tempu Terrace** — cafe / espresso & light bites · 4.6 — proper coffee and a warm break at 800 m; kid-friendly. https://maps.google.com/?cid=8414907357130941779
+- **Komi Coffee** — coffee roastery cafe · 4.1 — hand-drip specialty coffee on the temple-town street. https://maps.google.com/?cid=9477189132371607285
 
-### Dinner — at the shukubō (temple lodging)
-- **Fudō-in** — the classic Kōyasan shōjin-ryōri temple dinner · 4.7 · Galiya's headline · https://maps.google.com/?cid=6285515137194093127
-- **Kōyasan Saizen-in** *(kid)* — shōjin-ryōri with a simple child tray (plain rice, mild goma-dofu, vegetable tempura) on request · 4.5 — https://maps.google.com/?cid=13554302819427116538
+### Lunch — Kōyasan town (~12:00)
+- **Hanabishi** — Kōya shōjin-ryōri / Buddhist vegetarian set · 4.2 — Galiya: the mountain's temple cuisine (gomadōfu, tempura, soba) eaten at its source. https://maps.google.com/?cid=12392921685726484034
+- **Kotobuki Shokudō** — casual shokudō (udon, katsu, curry rice) · 4.4 — Aslan: plain udon, katsu & rice he'll actually eat. https://maps.google.com/?cid=3056959925161555233
+
+### Dinner — Yunomine Onsen (at the ryokan)
+- **Ryokan Yunomineso** — onsen-ryokan kaiseki · 4.5 — whole family; ask for a child's set (plain rice, karaage, tamago) for Aslan. https://maps.google.com/?cid=5061754705104044984
+- **Ryokan Adumaya** — historic onsen-ryokan kaiseki · 4.4 — Galiya: refined kaiseki at a centuries-old Yunomine inn with traditional baths. https://maps.google.com/?cid=13210106354841318663
 
 ### Things to do
-- **Danjō Garan & Konpon Daitō** (~12:00) — the vermilion great pagoda, an easy arrival walk.
-- **Kongōbu-ji** (~14:00) — head temple, the Banryūtei rock garden and gold-leaf fusuma halls.
-- **Kadohama Goma-tofu Honpo** (~15:30) — taste/buy the silky sesame "tofu" that is Kōyasan's signature delicacy; mild enough for a curious 6-year-old.
-- **Okunoin lantern walk** (~17:00) — the cedar avenue of 200,000 tombs to Kōbō Daishi's mausoleum, at its most atmospheric in the dusk light.
+- **~10:30 — Kōyasan quick stop, Okunoin:** brisk walk up the lantern-lit cedar avenue to Kōbō Daishi's mausoleum (or the Danjō Garan); ~1–1.5 h, a daytime visit, not a temple stay. https://www.google.com/maps/search/?api=1&query=Okunoin%20Cemetery%20Koyasan
+- **~11:15 — Danjō Garan & Kongōbu-ji:** the vermilion Konpon Daitō pagoda complex and the head temple's huge rock garden. https://www.google.com/maps/search/?api=1&query=Danjo%20Garan%20Koyasan
+- **~14:30 — Tanise no Tsuribashi:** 297 m swaying pedestrian suspension bridge over the Totsukawa, a leg-stretch on the Route 168 descent. https://www.google.com/maps/search/?api=1&query=Tanise%20no%20Tsuribashi
+- **~16:00 — Kumano Hongū Taisha & Ōyunohara:** head shrine of the Kumano Sanzan and the giant 33.9 m torii on the river sandbank, just before Yunomine. https://www.google.com/maps/search/?api=1&query=Kumano%20Hongu%20Taisha
+
+*Note: the Doro-kyō river-boat gorge cruise is on Day 5, not today. October/typhoon caution — Routes 168/311 can close after heavy rain; check road and river status before setting off.*

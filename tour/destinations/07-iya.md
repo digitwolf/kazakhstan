@@ -3,7 +3,7 @@
 > Vine bridges, deep gorges and one of Japan's hidden valleys.
 
 - **Region:** Shikoku mountains
-- **Itinerary:** Days 10–11 · 2 nights
+- **Itinerary:** Days 9–10 · 2 nights
 - **Stop type:** stay
 - **Ride to here (direct):** 69 mi
 
@@ -12,7 +12,7 @@ The Iya Valley is one of Japan's **"three hidden valleys"** — a remote, mist-w
 
 Two nights at a valley onsen ryokan gives a true rural pause: the famous vine bridge, a gorge boat ride, riverside open-air baths reached by private cable-car, and slow mountain evenings far from any city. It's a place to do very little, which suits the child and the newer rider perfectly.
 
-> **Day 10 — a gentle mountain climb.** The road in from Naruto/Tokushima follows the Yoshino River up into the gorges on easy, well-surfaced two-lane roads — a calm, scenic transfer with the Oboke gorge as the lunch stop. **Fill the tank before climbing in** — fuel is sparse in the valley. (The Naruto whirlpools are covered on Day 9, the ferry-arrival stop.)
+> **Day 9 — a gentle mountain climb.** The road in from Naruto/Tokushima follows the Yoshino River up into the gorges on easy, well-surfaced two-lane roads — a calm, scenic transfer with the Oboke gorge as the lunch stop. **Fill the tank before climbing in** — fuel is sparse in the valley. (The Naruto whirlpools are covered on Day 8, the ferry-arrival stop.)
 
 ## Things to see & do
 - **Iya-no-Kazurabashi vine bridge** — a 45 m bridge woven from live mountain *shirakuchi* vine, rebuilt every three years; legend says the Heike built such bridges so they could cut them down if pursued. You cross slowly over the gorge through gaps in the slats — a genuine thrill (hold a small child's hand) **[KID]**

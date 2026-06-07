@@ -1,49 +1,59 @@
 ```json
 {
   "d": 14,
-  "title": "Shimanto Rest Day",
-  "overnight": "Shimanto (Nakamura), Kochi",
-  "schedule": "slow start ~09:30 · morning yakatabune river boat past the sinking bridges ~10:30 · riverside lunch ~12:30 near the Sada/Yamachi river bend · afternoon sinking-bridge cycle or the Akitsuio dragonfly-&-fish museum (rain/kid fallback) · easy dinner ~18:30 in Nakamura town",
+  "title": "Castles & Old Towns",
+  "overnight": "Matsuyama / Dōgo Onsen, Ehime",
+  "schedule": "depart Shimanto ~09:00 · Uwajima Castle ~10:30 · lunch ~12:00 in Uwajima (taimeshi) · Uchiko old town ~14:00 · Garyū Sansō, Ozu ~15:30 · arrive Matsuyama/Dōgo ~17:30 · dinner near Dōgo Onsen",
   "todo": [
-    {"time":"~10:30","name":"Shimanto yakatabune river boat","what":"Covered cruise gliding past the railless 'sinking bridges' — calm, no-effort, great for Aslan and the newer rider","map":"https://www.google.com/maps/search/?api=1&query=Shimanto%20River%20yakatabune%20boat"},
-    {"time":"~14:00","name":"Sada / Sata chinkabashi cycle & stroll","what":"Rent a flat bike at the michi-no-eki and ride out across the long sinking bridges over Japan's last clear stream","map":"https://www.google.com/maps/search/?api=1&query=Sada%20Chinkabashi%20Shimanto"},
-    {"time":"~15:00","name":"Akitsuio museum, Tonbo Kingdom","what":"Indoor dragonfly-and-river-fish aquarium — the wet-weather / kid hook for Aslan","map":"https://www.google.com/maps/search/?api=1&query=Shimantogawa%20Gakuyukan%20Akitsuio%20Tonbo%20Kingdom"},
-    {"time":"optional","name":"Cape Ashizuri","what":"Granite cape & white lighthouse — only if everyone's rested; it's a ~1.5–2h ride each way, a half-day, not a rest","map":"https://www.google.com/maps/search/?api=1&query=Cape%20Ashizuri"}
+    {"time":"~10:30","name":"Uwajima Castle","what":"climb to the compact, all-original 1666 hilltop keep — one of only twelve left in Japan — for sea-and-town views","map":"https://www.google.com/maps/search/?api=1&query=Uwajima%20Castle"},
+    {"time":"~14:00","name":"Uchiko Yōkaichi Old Street & Uchiko-za","what":"600 m of ochre-walled wax-merchant houses, plus the restored 1916 kabuki theatre (revolving stage, trap doors) — stroller-easy","map":"https://www.google.com/maps/search/?api=1&query=Uchiko%20Yokaichi%20Old%20Street"},
+    {"time":"~15:30","name":"Garyū Sansō, Ozu","what":"exquisite riverside villa and garden above the Hiji River — a short, calm stop before the run into Matsuyama","map":"https://www.google.com/maps/search/?api=1&query=Garyu%20Sanso%20Ozu"},
+    {"time":"~18:00","name":"Dōgo Onsen Honkan","what":"settle into the 2-night base and take an early evening soak in the grand 1894 wooden bathhouse (keep Aslan's soak short; Asuka-no-Yu has a private family bath)","map":"https://www.google.com/maps/search/?api=1&query=Dogo%20Onsen%20Honkan"}
   ],
   "meals": [
-    {"slot":"lunch","area":"Shimanto riverside (Yamachi / Sada bend)",
+    {"slot":"coffee","area":"Central Matsuyama (Nibanchō / Ōkaidō)",
      "picks":[
-       {"name":"こいちご飯 (Koichi Gohan)","cuisine":"Shimanto-river eel & ayu teishoku","rating":4.2,"why":"Galiya — river eel and sweetfish set meals eaten right by the water","kid":false,"map":"https://maps.google.com/?cid=16665219646928958643","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Unadon_%2815664670489%29.jpg/960px-Unadon_%2815664670489%29.jpg"},
-       {"name":"Shimantoya","cuisine":"riverside tourist restaurant — eel/ayu sets + plain rice & udon","rating":3.9,"why":"Aslan — big casual riverside spot with simple rice/udon sets he'll eat","kid":true,"map":"https://maps.google.com/?cid=10746447903860844056","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Ayu_no_Shioyaki.jpg/960px-Ayu_no_Shioyaki.jpg"}
+       {"name":"SPOT COFFEE STAND","cuisine":"specialty coffee","rating":4.9,"why":"Galiya & Ruslan — Matsuyama's standout specialty espresso/pour-over (366 reviews); sweet milk drinks for Aslan too","kid":false,"map":"https://maps.google.com/?cid=5681671833040133501","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
      ]},
-    {"slot":"dinner","area":"Nakamura town, Shimanto",
+    {"slot":"lunch","area":"Uwajima (Marunouchi, near the castle)",
      "picks":[
-       {"name":"Chubo Wakamatsu (厨房 わかまつ)","cuisine":"Tosa izakaya — katsuo tataki & local Kochi dishes","rating":4.4,"why":"Galiya — seared bonito katsuo tataki, the Kochi specialty, in a lively local izakaya","kid":false,"map":"https://maps.google.com/?cid=9013227086709514243","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Katsuo_no_tataki_at_Kochi_City.jpg/960px-Katsuo_no_tataki_at_Kochi_City.jpg"},
-       {"name":"Sushi Kazu","cuisine":"sushi","rating":4.2,"why":"Ruslan & Galiya — fresh local nigiri in central Nakamura","kid":false,"map":"https://maps.google.com/?cid=702334641640917640","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nigiri_Sushi_%2825966163204%29.jpg/960px-Nigiri_Sushi_%2825966163204%29.jpg"},
-       {"name":"さぬきや (Sanukiya Udon)","cuisine":"udon","rating":4.2,"why":"Aslan — plain hot udon, an easy sure-thing near the station","kid":true,"map":"https://maps.google.com/?cid=7610857881456023209","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Kake_udon_by_Joe_Jones_in_Tokyo.jpg/960px-Kake_udon_by_Joe_Jones_in_Tokyo.jpg"}
+       {"name":"Wabisuke","cuisine":"Uwajima taimeshi (sea-bream sashimi over rice in raw-egg dashi)","rating":4.1,"why":"Galiya — the local taimeshi specialty eaten at its source","kid":false,"map":"https://maps.google.com/?cid=13667520984505400433","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Uwajima_Taimeshi.jpg/960px-Uwajima_Taimeshi.jpg"},
+       {"name":"Isshin Japanese Seafood Cuisine","cuisine":"local seafood set / taimeshi","rating":4.2,"why":"Ruslan & Galiya — hearty Uwajima-bay seafood teishoku","kid":false,"map":"https://maps.google.com/?cid=12704092390793346764","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Taimeshi_01.jpg/960px-Taimeshi_01.jpg"},
+       {"name":"Nishikura Sanuki-udon noodle shop","cuisine":"self-serve Sanuki udon","rating":4.1,"why":"Aslan — plain warm udon he'll actually eat (Galiya gets noodles too)","kid":true,"map":"https://maps.google.com/?cid=4127214049032307413","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"}
+     ]},
+    {"slot":"dinner","area":"Dōgo Onsen / Matsuyama",
+     "picks":[
+       {"name":"Men-ya Niikura (麺や 新倉)","cuisine":"ramen","rating":4.3,"why":"Galiya — top-rated local ramen a short walk from Dōgo","kid":false,"map":"https://maps.google.com/?cid=113848077267614461","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"},
+       {"name":"Sushiemon Dōgo (すしえもん 道後店)","cuisine":"conveyor-belt sushi","rating":4.4,"why":"Aslan — pick-your-own conveyor plates (egg, salmon, rice); Galiya gets fresh Uwajima-bay sushi","kid":true,"map":"https://maps.google.com/?cid=5710359260940265591","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Conveyor_belt_sushi_at_Mashiro_Sushi.jpg/960px-Conveyor_belt_sushi_at_Mashiro_Sushi.jpg"},
+       {"name":"Mammam","cuisine":"Japanese set meals / izakaya","rating":4.3,"why":"Ruslan & Galiya — relaxed Dōgo-arcade dinner with rice/teishoku options for everyone","kid":false,"map":"https://maps.google.com/?cid=14857269819173416862","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Sakura_Teishoku_-_Sakura_Japanese_Restaurant_2025-07-28.jpg/960px-Sakura_Teishoku_-_Sakura_Japanese_Restaurant_2025-07-28.jpg"}
      ]}
   ]
 }
 ```
 
-# Day 14 — Shimanto Rest Day (overnight: Shimanto / Nakamura, Kochi)
+## Day 15 — Castles & Old Towns (Shimanto → Uwajima / Uchiko → Matsuyama)
 
-The best-placed rest of the trip, right after the two hardest riding days. No long ride today — slow river time on Japan's "last clear stream."
+**Overnight:** Matsuyama / Dōgo Onsen, Ehime (2-night base — the chain case forwarded from Iya is waiting at the front desk; confirm it's held under your name).
 
-**Schedule:** slow start ~09:30 · morning covered *yakatabune* river boat past the sinking bridges ~10:30 · riverside lunch ~12:30 · afternoon sinking-bridge cycle or the indoor Akitsuio dragonfly-and-fish museum (rain/kid fallback) · easy dinner ~18:30 in Nakamura town. (Canoe/SUP is a summer thing — usually too cold in late October.)
+**Schedule:** depart Shimanto ~09:00 · Uwajima Castle ~10:30 · lunch ~12:00 in Uwajima · Uchiko old town ~14:00 · Garyū Sansō, Ozu ~15:30 · arrive Matsuyama/Dōgo ~17:30 · dinner near Dōgo Onsen. (117 mi / ~3h30m riding, broken by the stops.)
 
-## Eat
-**Lunch — Shimanto riverside (Yamachi / Sada bend):**
-- **こいちご飯 (Koichi Gohan)** — Shimanto-river eel & ayu teishoku, 4.2 — Galiya, regional river fish by the water. https://maps.google.com/?cid=16665219646928958643
-- **Shimantoya** *(kid)* — big casual riverside restaurant with eel/ayu sets plus plain rice & udon for Aslan, 3.9. https://maps.google.com/?cid=10746447903860844056
+### Where to eat
 
-**Dinner — Nakamura town:**
-- **Chubo Wakamatsu (厨房 わかまつ)** — Tosa izakaya, katsuo tataki & Kochi dishes, 4.4 — Galiya. https://maps.google.com/?cid=9013227086709514243
-- **Sushi Kazu** — fresh local sushi, 4.2 — Ruslan & Galiya. https://maps.google.com/?cid=702334641640917640
-- **さぬきや (Sanukiya Udon)** *(kid)* — plain hot udon near the station, 4.2 — the easy win for Aslan. https://maps.google.com/?cid=7610857881456023209
+**Coffee — central Matsuyama (Nibanchō / Ōkaidō):**
+- **SPOT COFFEE STAND** — specialty coffee (4.9, 366 reviews), the city's standout espresso/pour-over stand near the Ōkaidō arcade. A great morning or post-castle stop for Galiya and Ruslan; sweet milk drinks keep Aslan happy. https://maps.google.com/?cid=5681671833040133501
 
-## Do
-- **~10:30 Yakatabune river boat** — covered cruise past the railless sinking bridges, calm and effortless. https://www.google.com/maps/search/?api=1&query=Shimanto%20River%20yakatabune%20boat
-- **~14:00 Sada/Sata chinkabashi cycle & stroll** — flat rental-bike ride out across the famous sinking bridges. https://www.google.com/maps/search/?api=1&query=Sada%20Chinkabashi%20Shimanto
-- **~15:00 Akitsuio museum, Tonbo Kingdom** — indoor dragonfly & river-fish aquarium, the kid/rain hook. https://www.google.com/maps/search/?api=1&query=Shimantogawa%20Gakuyukan%20Akitsuio%20Tonbo%20Kingdom
-- **Optional: Cape Ashizuri** — granite cape & lighthouse, but a ~1.5–2h ride each way (a half-day, not a rest) — only if everyone's keen. https://www.google.com/maps/search/?api=1&query=Cape%20Ashizuri
+**Lunch — Uwajima (near the castle):**
+- **Wabisuke** — Uwajima taimeshi, the sea-bream-over-rice specialty (4.1). Galiya's regional dish at its source. https://maps.google.com/?cid=13667520984505400433
+- **Isshin Japanese Seafood Cuisine** — local seafood set / taimeshi (4.2). Hearty Uwajima-bay teishoku for Ruslan. https://maps.google.com/?cid=12704092390793346764
+- **Nishikura Sanuki-udon noodle shop** (kid) — self-serve plain udon (4.1). The easy bowl Aslan will eat. https://maps.google.com/?cid=4127214049032307413
+
+**Dinner — Dōgo Onsen / Matsuyama:**
+- **Men-ya Niikura (麺や 新倉)** — ramen (4.3, 560+ reviews), a short walk from Dōgo. Galiya's noodle fix. https://maps.google.com/?cid=113848077267614461
+- **Sushiemon Dōgo (すしえもん 道後店)** (kid) — conveyor-belt sushi (4.4). Aslan picks his own plates; Galiya gets fresh local sushi. https://maps.google.com/?cid=5710359260940265591
+- **Mammam** — Japanese set meals / izakaya in the Dōgo arcade (4.3). Relaxed dinner with rice/teishoku for all. https://maps.google.com/?cid=14857269819173416862
+
+### Things to do
+- **~10:30 Uwajima Castle** — compact original 1666 keep, one of only twelve left in Japan.
+- **~14:00 Uchiko Yōkaichi Old Street & Uchiko-za** — ochre-walled wax-merchant houses and a restored 1916 kabuki theatre; stroller-easy.
+- **~15:30 Garyū Sansō, Ozu** — riverside villa and garden above the Hiji River.
+- **~18:00 Dōgo Onsen Honkan** — settle into the 2-night onsen base with an early soak (keep Aslan's short; Asuka-no-Yu has a private family bath). The Honkan's *Spirited Away* resonance is a Ghibli-adjacent treat for Galiya.

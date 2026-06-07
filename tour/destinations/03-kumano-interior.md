@@ -3,14 +3,14 @@
 > The sacred heart of the Kii Peninsula: the grandest Kumano shrine, Japan's largest torii, a riverbed you dig into a hot spring, and a world-heritage bath.
 
 - **Region:** Kumano · Wakayama (Kii interior)
-- **Itinerary:** Days 4–5 · 2 nights
+- **Itinerary:** Days 3–4 · 2 nights
 - **Stop type:** stay
-- **Ride to here (direct):** 53 mi
+- **Ride to here (arrival leg):** 102 mi (Day 3 — Osaka via a quick Kōyasan stop, Route 480 → Route 168)
 
 ## About
-From Kōyasan the trip turns south down **Route 168** — the classic pilgrim road — following the **Totsukawa River** through deep forested gorges and **Totsukawa**, Japan's largest village by area. The valley opens at the **Hongū** basin, spiritual centre of the **Kumano Kodō** pilgrimage and home to **Kumano Hongū Taisha**, the head shrine of the three **Kumano Sanzan** (Hongū, Hayatama, Nachi). A few minutes away, on the river sandbank where the shrine once stood, rises **Ōyunohara** — **Japan's largest torii gate**, a steel colossus 33.9 m high.
+Day 3 is one combined ride: a **quick stop at Kōyasan** (no overnight) and then south down **Route 168** — the classic pilgrim road — following the **Totsukawa River** through deep forested gorges and **Totsukawa**, Japan's largest village by area. The valley opens at the **Hongū** basin, spiritual centre of the **Kumano Kodō** pilgrimage and home to **Kumano Hongū Taisha**, the head shrine of the three **Kumano Sanzan** (Hongū, Hayatama, Nachi). A few minutes away, on the river sandbank where the shrine once stood, rises **Ōyunohara** — **Japan's largest torii gate**, a steel colossus 33.9 m high.
 
-This is the loop's contemplative rest base — **two nights** at the ancient onsen hamlets of **Yunomine** and **Kawayu**, where you can soak in the world-heritage **Tsuboyu** bath, cook eggs in the bubbling spring, or **dig your own bath** in the warm pebbles of the riverbed. For the child there's the **Doro-kyō gorge jet-boat** and the swaying **Tanise suspension bridge**. Route 168 is moderate, paved two-lane riding — winding but not technical, ridden at a relaxed pace.
+This is the loop's contemplative rest base — **two nights** at the ancient onsen hamlets of **Yunomine** and **Kawayu**, where you can soak in the world-heritage **Tsuboyu** bath, cook eggs in the bubbling spring, or **dig your own bath** in the warm pebbles of the riverbed. For the child there's the **Doro-kyō gorge river-boat** and the swaying **Tanise suspension bridge**. Route 168 is moderate, paved two-lane riding — winding but not technical, ridden at a relaxed pace.
 
 > **October / typhoon note:** the Kii interior is the loop's most typhoon-exposed, landslide-prone corner. **Routes 168 and 311 can close after heavy rain**, and the Hongū basin floods historically (the shrine was moved to higher ground after the great 1889 flood). **Keep both interior nights cancellable**, check road and river status daily in early October, and have the coast (Nachi/Shirahama) ready as a fallback if a pass closes.
 
@@ -19,7 +19,7 @@ This is the loop's contemplative rest base — **two nights** at the ancient ons
 - **Ōyunohara great torii** — Japan's largest torii (33.9 m) standing over the old shrine sandbank; a genuine "wow" for a child **[KID]**
 - **Yunomine Onsen & Tsuboyu** — soak in the tiny **Tsuboyu**, the only UNESCO World Heritage bath you can actually bathe in (reserve a 30-min slot), and **boil eggs or vegetables** in the public *yuzutsu* hot spring **[KID]**
 - **Kawayu Onsen** — scoop out your **own riverbed bath** in the warm gravel of the Ōto River, mixing hot spring and cool stream to taste **[KID]**
-- **Doro-kyō gorge jet-boat** — a glass-clear gorge cruise on the Kitayama River through towering cliffs (boards near Shingū; can also be ridden on the Day-6 descent to the coast) **[KID]**
+- **Doro-kyō gorge river-boat** — a ~40-min cruise on the glass-clear Kitayama River through Japan's premier gorge; boards at the Kumano River Riverboat Center (Tamaki-guchi, Shingū). It's a featured **must-do scheduled on Day 5** (the descent to the coast) — but the Hongū basin is close to the boarding point, so it also works as a **Day-4 rest-day outing** if you'd rather ride down to it from Yunomine on the free day. Do it once, on whichever day suits. **[KID]**
 - **Tanise no Tsuribashi** — at 297 m one of Japan's longest pedestrian suspension bridges, swinging high over the Totsukawa (a thrill on the way in) **[KID]**
 - **Kumano Kodō short walk** — the gentle **Hosshinmon-ōji → Hongū** final section of the Nakahechi trail, a manageable family stretch of the pilgrimage
 
@@ -45,7 +45,8 @@ _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secur
 - [Kumano Hongū Taisha (official)](https://www.hongutaisha.jp/)
 - [Wikipedia — Kumano Hongū Taisha](https://en.wikipedia.org/wiki/Kumano_Hong%C5%AB_Taisha)
 - [Wikipedia — Yunomine Onsen](https://en.wikipedia.org/wiki/Yunomine_Onsen)
-- [Wikipedia — Dorokyō](https://en.wikipedia.org/wiki/Doroky%C5%8D)
+- [Dorokyō Gorge (JNTO official)](https://www.japan.travel/en/spot/1990/)
+- [Doro-kyō river-boat cruise — Kumano River Riverboat Center (official)](https://www.shinguu.jp/en/spots/detail/A0083)
 
 ## Photos (8)
 - ![Ōyunohara great torii](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Torii_at_Oyunohara_01.jpg/960px-Torii_at_Oyunohara_01.jpg) — Ōyunohara, Japan's largest torii gate
@@ -53,6 +54,6 @@ _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secur
 - ![Kumano Hongū Taisha](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Tanabe_Kumano_Hongu-Taisha_Honden_1.jpg/960px-Tanabe_Kumano_Hongu-Taisha_Honden_1.jpg) — Cypress-bark halls of Kumano Hongū Taisha
 - ![Yunomine Onsen village](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Kumano_Kodo_pilgrimage_route_Yunomine_Onsen_World_heritage_%E7%86%8A%E9%87%8E%E5%8F%A4%E9%81%93_%E6%B9%AF%E3%81%AE%E5%B3%B0%E6%B8%A9%E6%B3%89116.JPG/960px-Kumano_Kodo_pilgrimage_route_Yunomine_Onsen_World_heritage_%E7%86%8A%E9%87%8E%E5%8F%A4%E9%81%93_%E6%B9%AF%E3%81%AE%E5%B3%B0%E6%B8%A9%E6%B3%89116.JPG) — The hot-spring hamlet of Yunomine Onsen
 - ![Kawayu riverbed onsen](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Kawayu_onsen1.JPG/960px-Kawayu_onsen1.JPG) — Dig-your-own riverbed bathing at Kawayu Onsen
-- ![Doro-kyō jet boat](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Doro_Gorge_Jet_Boat.jpg/960px-Doro_Gorge_Jet_Boat.jpg) — A jet-boat in the Doro-kyō gorge
+- ![Doro-kyō river-boat](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Doro_Gorge_Jet_Boat.jpg/960px-Doro_Gorge_Jet_Boat.jpg) — A traditional river-boat in the Doro-kyō gorge
 - ![Doro-kyō gorge](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Dorokyo_in_2019_August_A.jpg/960px-Dorokyo_in_2019_August_A.jpg) — The cliffs and green water of Doro-kyō
 - ![Tanise suspension bridge](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Suspension_bridge_of_Tanize_2010.07.28_-_Merged-1.jpg/960px-Suspension_bridge_of_Tanize_2010.07.28_-_Merged-1.jpg) — The Tanise suspension bridge over the Totsukawa (Route 168)

@@ -1,52 +1,59 @@
 ```json
 {
   "d": 7,
-  "title": "Capes & White Sand",
+  "title": "Shirahama Rest Day",
   "overnight": "Shirahama, Wakayama",
-  "schedule": "depart Katsuura ~09:00 · coffee/photo stop at Hashigui-iwa ~09:45 · Sandanbeki cliffs ~11:15 · tuna lunch at Tore-Tore Ichiba ~12:15 · arrive Shirahama ~13:30 · afternoon: Shirarahama beach, Senjōjiki, Sakino-yu onsen · Engetsu Island sunset ~18:45 · dinner in Shirahama ~19:30",
+  "schedule": "slow morning at the beach base · Adventure World (pandas + safari) from ~10:00 · lunch ~12:30 near the park/town · Shirarahama beach + Sakino-yu surf-line onsen in the afternoon · Engetsu Island sunset ~17:00 · dinner in Shirahama",
   "todo": [
-    {"time":"~09:45","name":"Hashigui-iwa","what":"line of sea pillars marching out to sea — quick photo + coffee stop","map":"https://www.google.com/maps/search/?api=1&query=Hashigui-iwa%20Kushimoto"},
-    {"time":"~11:15","name":"Sandanbeki Cliffs","what":"50 m cliffs with a sea-cave lift down to the waves","map":"https://www.google.com/maps/search/?api=1&query=Sandanbeki%20Shirahama"},
-    {"time":"~14:30","name":"Shirarahama Beach & Senjōjiki","what":"white quartz sand for shallow swimming, then clamber the tilted '1,000-tatami' rock terrace","map":"https://www.google.com/maps/search/?api=1&query=Shirarahama%20Beach%20Shirahama"},
-    {"time":"~16:00","name":"Sakino-yu Onsen","what":"1,300-year-old open-air rock bath right at the surf line (Galiya's onsen pick)","map":"https://www.google.com/maps/search/?api=1&query=Sakinoyu%20Onsen%20Shirahama"},
-    {"time":"~18:45","name":"Engetsu Island sunset","what":"classic sunset shot through the 'round-moon' natural sea arch","map":"https://www.google.com/maps/search/?api=1&query=Engetsu%20Island%20Shirahama"}
+    {"time":"~10:00","name":"Adventure World","what":"giant pandas, drive-through safari and a marine park — the trip's biggest kid day (full, busy day out)","map":"https://www.google.com/maps/search/?api=1&query=Adventure%20World%20Shirahama"},
+    {"time":"~14:30","name":"Shirarahama Beach","what":"dazzling white quartz sand, shallow gentle swimming for Aslan","map":"https://www.google.com/maps/search/?api=1&query=Shirarahama%20Beach%20Shirahama"},
+    {"time":"~16:00","name":"Sakino-yu Onsen","what":"1,300-year-old rock open-air bath cut right at the surf line — Galiya's traditional onsen pick","map":"https://www.google.com/maps/search/?api=1&query=Sakinoyu%20Onsen%20Shirahama"},
+    {"time":"~17:00","name":"Engetsu Island","what":"sunset through the natural 'round-moon' sea arch","map":"https://www.google.com/maps/search/?api=1&query=Engetsu%20Island%20Shirahama"}
   ],
   "meals": [
-    {"slot":"lunch","area":"Tore-Tore Ichiba / Katata (en route into Shirahama)",
+    {"slot":"coffee","area":"Shirahama town",
      "picks":[
-       {"name":"Shirasen Shokudo (白鮮食堂)","cuisine":"Kuroshio tuna & seafood teishoku","rating":4.6,"why":"Galiya & Ruslan — top-rated fresh maguro/seafood set near the port","kid":false,"map":"https://maps.google.com/?cid=5130477216008432969","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kaisendon_001.jpg/960px-Kaisendon_001.jpg"},
-       {"name":"TORETORE ICHIBA (とれとれ市場 南紀白浜)","cuisine":"giant seafood market & food court","rating":3.9,"why":"the planned tuna-cutting market stop — huge food court so everyone grazes; plain grilled skewers & rice for Aslan","kid":true,"map":"https://maps.google.com/?cid=9780413186048099620","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sashimi_of_S%C3%A3o_Paulo.jpg/960px-Sashimi_of_S%C3%A3o_Paulo.jpg"},
-       {"name":"Kaisen Sushi Toretore Ichiba (海鮮寿司とれとれ市場)","cuisine":"conveyor-belt sushi","rating":3.7,"why":"Aslan — pick-what-you-see kaiten sushi (plain rice, egg, cucumber rolls) inside the same market","kid":true,"map":"https://maps.google.com/?cid=10776434485905267434","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kaiten-zushi_002.jpg/960px-Kaiten-zushi_002.jpg"}
+       {"name":"Kissa Colony","cuisine":"kissaten","rating":5.0,"why":"Ruslan & Galiya — a proper hand-brewed coffee in a cosy old-school kissaten; cake/sweets so Aslan gets a treat too","kid":false,"map":"https://maps.google.com/?cid=14791673768714025255","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
      ]},
-    {"slot":"dinner","area":"Shirahama town",
+    {"slot":"lunch","area":"Shirahama beach / Adventure World",
      "picks":[
-       {"name":"Gyosai Keishoku Kou (魚菜・軽食 幸)","cuisine":"seafood izakaya / sashimi","rating":4.6,"why":"Galiya & Ruslan — fresh local Nanki seafood and sashimi in town","kid":false,"map":"https://maps.google.com/?cid=1087738113559531192","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sashimi_of_S%C3%A3o_Paulo.jpg/960px-Sashimi_of_S%C3%A3o_Paulo.jpg"},
-       {"name":"Shirahama Key Noodle Dakishimetai","cuisine":"ramen","rating":4.3,"why":"Galiya — a proper bowl of noodles to end the day","kid":false,"map":"https://maps.google.com/?cid=10240352576288176698","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"},
-       {"name":"Ramen Bakumatsu - Nanki Shirahama","cuisine":"ramen shop with gyoza, karaage & rice sets","rating":4.1,"why":"Aslan — plain ramen plus gyoza/karaage and a rice bowl he'll actually eat","kid":true,"map":"https://maps.google.com/?cid=8622937101684774092","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Chicken_karaage_003.jpg/960px-Chicken_karaage_003.jpg"}
+       {"name":"Ramen Bakumatsu - Nanki Shirahama","cuisine":"ramen","rating":4.1,"why":"Galiya — a proper local ramen bowl, with a plain bowl for Aslan too","kid":false,"map":"https://maps.google.com/?cid=8622937101684774092","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"},
+       {"name":"Shirahama Paradise","cuisine":"hamburgers / fries","rating":4.7,"why":"Aslan — burgers and fries he'll definitely eat after the safari","kid":true,"map":"https://maps.google.com/?cid=12401708232370838168","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/NCI_Visuals_Food_Hamburger.jpg/960px-NCI_Visuals_Food_Hamburger.jpg"},
+       {"name":"ALOHA shirahama","cuisine":"Hawaiian café / loco moco","rating":4.5,"why":"Ruslan & Galiya — relaxed beach-resort café with rice plates kids manage","kid":false,"map":"https://maps.google.com/?cid=10747776881131157008","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kaisendon_001.jpg/960px-Kaisendon_001.jpg"}
+     ]},
+    {"slot":"dinner","area":"Shirahama",
+     "picks":[
+       {"name":"Sushi Kappo Kosushi","cuisine":"sushi","rating":4.3,"why":"Galiya — fresh Nanki sushi at the source, the foodie dinner","kid":false,"map":"https://maps.google.com/?cid=1900225647196365823","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sushi_mini_set_01.jpg/960px-Sushi_mini_set_01.jpg"},
+       {"name":"Hama Shokudo (浜食堂)","cuisine":"seafood teishoku / kaisendon","rating":4.6,"why":"Galiya & Ruslan — hearty local seafood set meals and bowls","kid":false,"map":"https://maps.google.com/?cid=14754136528231163036","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sashimi_of_S%C3%A3o_Paulo.jpg/960px-Sashimi_of_S%C3%A3o_Paulo.jpg"},
+       {"name":"Shirahama Key Noodle Dakishimetai","cuisine":"ramen / gyoza","rating":4.3,"why":"Aslan — plain ramen and gyoza he'll happily eat","kid":true,"map":"https://maps.google.com/?cid=10240352576288176698","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"}
      ]}
   ]
 }
 ```
 
-## Day 7 — Capes & White Sand (overnight: Shirahama, Wakayama)
+## Day 8 — Shirahama Rest Day (Shirahama, Wakayama)
 
-A short, scenic 56 mi coastal day around the southern tip of the Kii Peninsula, held deliberately short so the afternoon belongs to the beach, not the road. **Depart Katsuura ~09:00**, photo-and-coffee stop at the **Hashigui-iwa** sea pillars (~09:45), drop down the **Sandanbeki** cliffs (~11:15), then a **tuna lunch at Tore-Tore Ichiba** (~12:15) before rolling into **Shirahama by ~13:30**. The whole afternoon is the resort: white-sand swimming at **Shirarahama**, clambering **Senjōjiki**, soaking at **Sakino-yu** onsen, and the **Engetsu Island** sunset through the sea arch (~18:45), then dinner in town.
+**Schedule:** Slow morning at the beach base, then Adventure World (pandas + safari) from ~10:00 — the trip's biggest kid day. Lunch ~12:30 near the park or in town, then a low-key afternoon: Shirarahama's white-sand beach, the surf-line Sakino-yu onsen, and the Engetsu Island sunset around 17:00. Dinner in Shirahama town. No real riding (~15 mi).
 
-### Lunch — Tore-Tore Ichiba / Katata
-- **Shirasen Shokudo** — Kuroshio tuna & seafood teishoku, 4.6 — Galiya & Ruslan; top-rated fresh maguro near the port. https://maps.google.com/?cid=5130477216008432969
-- **TORETORE ICHIBA** (kid) — the famous seafood market & food court, 3.9 — the planned tuna-cutting stop; a sprawling food court so everyone grazes (plain grilled skewers and rice for Aslan). https://maps.google.com/?cid=9780413186048099620
-- **Kaisen Sushi Toretore Ichiba** (kid) — conveyor-belt sushi, 3.7 — pick-what-you-see kaiten sushi (plain rice, egg, cucumber rolls) inside the same market for Aslan. https://maps.google.com/?cid=10776434485905267434
+### Eat
 
-### Dinner — Shirahama town
-- **Gyosai Keishoku Kou** — seafood izakaya / sashimi, 4.6 — Galiya & Ruslan; fresh local Nanki seafood. https://maps.google.com/?cid=1087738113559531192
-- **Shirahama Key Noodle Dakishimetai** — ramen, 4.3 — Galiya's noodle fix to close the day. https://maps.google.com/?cid=10240352576288176698
-- **Ramen Bakumatsu - Nanki Shirahama** (kid) — ramen with gyoza, karaage & rice sets, 4.1 — plain ramen plus fried chicken and rice Aslan will actually eat. https://maps.google.com/?cid=8622937101684774092
+**Coffee — Shirahama town**
+- [Kissa Colony](https://maps.google.com/?cid=14791673768714025255) — kissaten, 5.0. A cosy old-school kissaten with carefully hand-brewed coffee for Ruslan & Galiya; cake and sweets give Aslan a treat. A genuine specialty/kissaten pick rather than a chain.
 
-### Things to do
-- **~09:45 Hashigui-iwa** — line of pillar rocks marching out to sea; quick photo + coffee.
-- **~11:15 Sandanbeki Cliffs** — 50 m cliffs with a sea-cave lift down to the waves.
-- **~14:30 Shirarahama Beach & Senjōjiki** — brilliant white quartz sand for shallow, gentle swimming, then clamber the tilted "1,000-tatami" rock terrace.
-- **~16:00 Sakino-yu Onsen** — Galiya's pick: a 1,300-year-old open-air rock bath cut right at the surf line.
-- **~18:45 Engetsu Island** — the classic Shirahama sunset shot through the "round-moon" sea arch.
+**Lunch — Shirahama beach / Adventure World**
+- [Ramen Bakumatsu - Nanki Shirahama](https://maps.google.com/?cid=8622937101684774092) — ramen, 4.1. Galiya's local noodle bowl; a plain bowl works for Aslan too.
+- [Shirahama Paradise](https://maps.google.com/?cid=12401708232370838168) — hamburgers/fries, 4.7. **Kid pick** — easy burgers and fries after the safari.
+- [ALOHA shirahama](https://maps.google.com/?cid=10747776881131157008) — Hawaiian café / loco moco, 4.5. Relaxed beach-resort rice plates.
 
-*All restaurants are in Shirahama-chō, Nishimuro District, Wakayama Prefecture (verified). Hotel parking & child/passenger rules: confirm before booking.*
+**Dinner — Shirahama**
+- [Sushi Kappo Kosushi](https://maps.google.com/?cid=1900225647196365823) — sushi, 4.3. Galiya's foodie dinner: fresh Nanki sushi.
+- [Hama Shokudo (浜食堂)](https://maps.google.com/?cid=14754136528231163036) — seafood teishoku / kaisendon, 4.6. Hearty local seafood sets and bowls.
+- [Shirahama Key Noodle Dakishimetai](https://maps.google.com/?cid=10240352576288176698) — ramen / gyoza, 4.3. **Kid pick** — plain ramen and gyoza for Aslan.
+
+### Do
+- **~10:00 Adventure World** — giant pandas, drive-through safari and marine park (a full, joyful kid day).
+- **~14:30 Shirarahama Beach** — white quartz sand, shallow gentle swimming.
+- **~16:00 Sakino-yu Onsen** — 1,300-year-old rock bath right at the surf line (Galiya's onsen pick).
+- **~17:00 Engetsu Island** — sunset through the natural sea arch.
+
+All restaurants verified in Shirahama / Nishimuro District, Wakayama via the Google Places API (location-biased on 33.6853, 135.3378); dish photos are HTTP-200-verified Wikimedia Commons thumbnails.

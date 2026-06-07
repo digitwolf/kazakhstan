@@ -3,7 +3,7 @@
 > Sacred waterfalls, pilgrim shrines and a wild Pacific shore.
 
 - **Region:** Kumano · Wakayama / Mie
-- **Itinerary:** Day 6
+- **Itinerary:** Day 5
 - **Stop type:** stop
 - **Ride to here (direct):** 30 mi
 
@@ -15,11 +15,11 @@ Overnight is at **Katsuura**, a working tuna port whose ryokan are famous for cl
 > **October note:** the Kii interior and coast are the most typhoon-exposed part of the loop. Heavy rain can swell rivers and trigger landslide closures on Route 168 and the Kumano coast roads — check the forecast and road status, and keep lodging cancellable.
 
 ## Things to see & do
+- ⭐ **Doro-kyō gorge river-boat — MUST-DO** — the classic Kumano river experience: a ~40-minute boat cruise through **Doro-kyō**, Japan's premier river gorge, gliding over glass-clear emerald water beneath 50 m cliffs and weird water-carved rocks (a Special Place of Scenic Beauty & Natural Monument). A guaranteed thrill for a 6-year-old. The wooden river-boat boards at the **Kumano River Riverboat Center, Tamaki-guchi (Kumanogawa, Shingū)** — Mar–Nov, daily except Mon, ~hourly 09:00–15:00, ¥3,000 adult / ¥1,500 child 4–12 (under-4s not carried); reserve ahead. *The old Kumano Kotsu waterjet boat was discontinued in 2021; this wooden boat (plus a year-round hovercraft option) is the current way to ride the gorge.* [[Dorokyo Gorge River-Boat — official]](https://www.shinguu.jp/en/spots/detail/A0083) **[KID]**
 - **Nachi Falls (Nachi-no-Taki)** — at 133 m Japan's tallest single-drop waterfall, worshipped as a *kami* in its own right; the falls themselves are the sacred object of Hirō-jinja shrine at their foot **[KID]**
 - **Kumano Nachi Taisha & Seiganto-ji pagoda** — the postcard of Japan: the vermilion three-storied pagoda with the white thread of the falls behind it. Seiganto-ji is temple #1 of the Saigoku Kannon pilgrimage
 - **Daimon-zaka** — a short, atmospheric cobbled pilgrim path climbing under 800-year-old cedars; you can rent **Heian-era pilgrim costume** nearby, a fun dress-up for a child **[KID]**
 - **Kumano Hayatama Taisha (Shingū)** — the third of the three grand Kumano Sanzan shrines, by the river mouth; in its grounds stands a **1,000-year-old sacred nagi tree**, Japan's largest
-- **Doro-kyō gorge jet-boat** — a thrilling glass-clear gorge cruise between sheer cliffs, boarded en route down from the interior (a kid highlight) **[KID]**
 - **Katsuura cave & cliff onsen** — soak in seaside grotto baths; **Hotel Urashima's Bōki-dō** is a natural sea cave with the surf booming below
 - **Katsuura morning tuna market** — Japan's #1 port for fresh (line-caught, not frozen) tuna; you can watch the dawn auction from a gallery
 
@@ -41,6 +41,7 @@ Katsuura's draw is its **seaside onsen ryokan** with baths cut into the cliffs a
 _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._
 
 ## Links
+- [Doro-kyō river-boat cruise — Kumano River Riverboat Center (official)](https://www.shinguu.jp/en/spots/detail/A0083)
 - [Nachikatsuura tourism (official)](https://nachikan.jp/en/)
 - [Kumano Kodō / Tanabe-Kumano (official)](https://www.tb-kumano.jp/en/)
 - [Wikipedia — Kumano Nachi Taisha](https://en.wikipedia.org/wiki/Kumano_Nachi_Taisha)

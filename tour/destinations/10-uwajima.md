@@ -3,7 +3,7 @@
 > An original castle and a preserved merchant town en route north.
 
 - **Region:** Ehime south
-- **Itinerary:** Day 15
+- **Itinerary:** Day 14
 - **Stop type:** stop
 - **Ride to here (direct):** 41 mi
 
@@ -31,7 +31,7 @@ This is a **pass-through day** — the family sleeps at **Dōgo Onsen / Matsuyam
 
 | Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
-| _Usually ridden through → sleep at Dōgo Onsen_ | — | — | — | — | Day 15 ends at Matsuyama/Dōgo, a 2-night onsen base (see next stop). |
+| _Usually ridden through → sleep at Dōgo Onsen_ | — | — | — | — | Day 14 ends at Matsuyama/Dōgo, a 2-night onsen base (see next stop). |
 | Uchiko machiya inns (e.g. Kibako, Orinasu) | Restored machiya | On-site / nearby town lot (confirm) | ¥18,000–40,000 | $120–265 | Small restored wax-merchant houses for a quiet traditional night if you split the ride. |
 
 _Indicative per room/night for two adults (≈ ¥150 = $1); confirm rates, secure motorcycle parking & passenger/child rules before booking._

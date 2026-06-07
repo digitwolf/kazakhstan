@@ -3,7 +3,7 @@
 > A farewell loop across the world's great suspension bridge.
 
 - **Region:** Seto Inland Sea · Hyōgo
-- **Itinerary:** Day 21
+- **Itinerary:** Day 20
 - **Stop type:** stop
 - **Ride to here (direct):** 43 mi
 
@@ -32,7 +32,7 @@ Day-21 is ridden as a **loop ending back in Osaka**, so the planned night is in 
 
 | Property | Type | Parking | ¥/night | ≈USD | Notes |
 |---|---|---|---|---|---|
-| _Day loop → sleep in Osaka_ | — | — | — | — | Day 21 ends in Osaka; Awaji is ridden as a loop, not an overnight in the base plan. |
+| _Day loop → sleep in Osaka_ | — | — | — | — | Day 20 ends in Osaka; Awaji is ridden as a loop, not an overnight in the base plan. |
 | Yumekaiyu Awajishima (Sumoto Onsen) | Onsen ryokan | Free on-site parking | ¥22,000–45,000 | $145–300 | A seaside Sumoto Onsen ryokan with hot-spring baths and **Awaji beef & seafood kaiseki**; tatami family rooms, if you split the day. |
 | Grand Nikkō Awaji | Resort hotel | On-site garage / lot | ¥18,000–35,000 | $120–235 | A big sea-view resort near the bridge with easy parking, as a modern alternative. |
 

@@ -3,7 +3,7 @@
 > Japan's 'last clear stream' and its low submersible bridges.
 
 - **Region:** Shikoku west
-- **Itinerary:** Days 13–14 · 2 nights
+- **Itinerary:** Days 12–13 · 2 nights
 - **Stop type:** stay
 - **Ride to here (direct):** 66 mi
 

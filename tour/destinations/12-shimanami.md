@@ -3,7 +3,7 @@
 > Island-hopping across the Seto Inland Sea by a chain of great bridges.
 
 - **Region:** Seto Inland Sea
-- **Itinerary:** Day 17
+- **Itinerary:** Day 16
 - **Stop type:** stop
 - **Ride to here (direct):** 36 mi
 

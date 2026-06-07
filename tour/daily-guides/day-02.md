@@ -11,6 +11,10 @@
     {"time":"optional","name":"Osaka Castle park","what":"Broad moats and the gold-trimmed keep lit at dusk — a relaxed first-evening walk if energy allows","map":"https://www.google.com/maps/search/?api=1&query=Osaka%20Castle"}
   ],
   "meals": [
+    {"slot":"coffee","area":"Nishi-Shinsaibashi (near Namba)",
+     "picks":[
+       {"name":"LiLo Coffee Roasters","cuisine":"specialty coffee","rating":4.8,"why":"Galiya & Ruslan — Osaka's marquee third-wave roaster, huge single-origin lineup minutes from Dōtonbori; iced drinks and pastries keep Aslan happy","kid":false,"map":"https://maps.google.com/?cid=16291659530834990214","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
+     ]},
     {"slot":"lunch","area":"Shin-Osaka (arrival)",
      "picks":[
        {"name":"Maru de Sankaku","cuisine":"Osaka ramen","rating":4.4,"why":"Galiya — a top-rated local ramen bowl minutes from Shin-Osaka","kid":false,"map":"https://maps.google.com/?cid=17941306275953871503","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"},
@@ -32,6 +36,9 @@
 **Overnight:** Osaka (Namba / Dōtonbori) · **No riding today.**
 
 **Schedule:** A late-morning Nozomi from Tokyo/Shinagawa glides into **Shin-Osaka around midday**. Eat **lunch near the station (~12:30)**, then make the short hop out to the **Suita rental base** for the afternoon handover — paperwork, insurance, a full walk-around of the Africa Twin and CB400X, fitting Aslan's child gear, pairing intercoms and an on-foot shakedown (no riding until Day 3). Cap the evening with a **welcome dinner in Dōtonbori / Namba**.
+
+### Coffee — Nishi-Shinsaibashi (near Namba)
+- **LiLo Coffee Roasters** — specialty coffee, ⭐4.8 — Osaka's marquee third-wave roaster with a sprawling single-origin lineup, a few minutes' walk from Dōtonbori; iced drinks and pastries for Aslan. https://maps.google.com/?cid=16291659530834990214
 
 ### Lunch — near Shin-Osaka
 - **Maru de Sankaku** — Osaka ramen, ⭐4.4 — Galiya's noodle fix, top-rated and minutes from the station. https://maps.google.com/?cid=17941306275953871503

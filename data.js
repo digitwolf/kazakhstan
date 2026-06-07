@@ -96,13 +96,13 @@ window.DESTINATIONS = [
   jp: "東京",
   region: "Kantō · Tokyo",
   type: "bookend",
-  days: "Day 0–1 (arrival) · Days 24–25 (departure)",
+  days: "Day 0–1 (arrival) · Days 23–24 (departure)",
   legMiles: 0,
   lat: 35.6595, lng: 139.7005, zoom: 11,
   tagline: "The air gateway either side of the loop — a jet-lag arrival night and a full kid-focused museum day (Ghibli, teamLab, Nintendo) before the Shinkansen south, then the reposition city for the flight home.",
   intro: [
     "Tokyo is <b>not part of the Osaka riding loop</b> — it is the <b>air gateway</b> that brackets it. The family flies <b>nonstop SEA ⇄ Tokyo</b> (Haneda on ANA/Delta, Narita on JAL) and rides the <b>Tōkaidō Shinkansen (~2h30m Nozomi) Tokyo ⇄ Shin-Osaka</b> to reach and leave the bikes at the <b>Suita, Osaka</b> base (see flights). The bikes are never in Tokyo; the city is where the trip begins and ends on foot and by train.",
-    "On the way in, a <b>Day-0 arrival night</b> near <b>Shinagawa</b> absorbs the jet lag, and a <b>full Day-1 museum day</b> gives the family three of Tokyo's best kid experiences — the <b>Ghibli Museum</b> in Mitaka, <b>teamLab Planets</b> in Toyosu, and <b>Nintendo TOKYO</b> in Shibuya — before the <b>Day-2</b> train down to the bike pickup. On the way home, <b>Day 24</b> repositions from Osaka/Kyoto back to Tokyo by Nozomi (Fushimi Inari sits right on the line), an overnight near Haneda/Shinagawa, then the <b>nonstop flight home on Day 25</b>. Forward the big luggage by <b>takkyūbin</b> so the train legs stay light."
+    "On the way in, a <b>Day-0 arrival night</b> near <b>Shinagawa</b> absorbs the jet lag, and a <b>full Day-1 museum day</b> gives the family three of Tokyo's best kid experiences — the <b>Ghibli Museum</b> in Mitaka, <b>teamLab Planets</b> in Toyosu, and <b>Nintendo TOKYO</b> in Shibuya — before the <b>Day-2</b> train down to the bike pickup. On the way home, <b>Day 23</b> repositions from Osaka/Kyoto back to Tokyo by Nozomi (Fushimi Inari sits right on the line), an overnight near Haneda/Shinagawa, then the <b>nonstop flight home on Day 24</b>. Forward the big luggage by <b>takkyūbin</b> so the train legs stay light."
   ],
   highlights: [
     "<b>Ghibli Museum (Mitaka)</b> — Hayao Miyazaki's whimsical, hands-on museum on the edge of Inokashira Park: Totoro, the Catbus, a rooftop robot and an exclusive members-only short film. <b>Advance, date-and-time-specific tickets only (Lawson, ~a month ahead) — no door sales; it sells out fast</b>",
@@ -206,16 +206,16 @@ window.DESTINATIONS = [
   jp: "大阪",
   region: "Kansai",
   type: "start",
-  days: "Day 2 (start) · Days 22–24 (finish)",
+  days: "Day 2 (start) · Days 21–23 (finish)",
   legMiles: 0,
   lat: 34.6937, lng: 135.5023, zoom: 12,
   tagline: "The start and finish of the loop — a train-in, train-out hub: bike pickup, Super Nintendo World / USJ, big-city food, and a Kyoto buffer day.",
   intro: [
     "Osaka is both the <b>start and the end</b> of this Osaka-anchored loop, and Japan's great mercantile, comedy and food city — historically <i>tenka no daidokoro</i>, \"the nation's kitchen,\" where merchants set the rhythm rather than samurai or court. The motorcycles are picked up and returned at the rental base in <b>Suita, northern Osaka</b> (<a href=\"https://bikerentaljapan.com/\" target=\"_blank\" rel=\"noopener\">Bike Rental Japan</a>), so the journey begins and ends in the friendliest place in Japan to eat — no one-way drop, no backtracking. <b>Osaka Castle</b>, Toyotomi Hideyoshi's late-16th-century power seat, still anchors the city behind Japan's largest castle moats and a sweeping park; the present concrete keep (1931, with a top-floor observation deck and museum) is an easy, kid-pleasing first or last stroll.",
-    "<b>Day 2 is strictly no riding:</b> after a Tokyo arrival night and a full Tokyo museum day, the family arrives by <b>Nozomi Shinkansen into Shin-Osaka around midday</b> (they fly nonstop SEA→Tokyo, then ride the ~2h30m bullet train down — see flights), transfer the short hop to the <b>Suita rental base</b>, collect the bikes, do the paperwork and gear-fit, and learn the controls on foot (see the overview) — capped with an easy Dōtonbori/Namba evening. The first real ride is <b>Day 3</b> up to the temple town of Kōyasan. The loop then drops down the <b>Route 168 pilgrim road</b> through the sacred Kumano interior, sweeps the Kii coast, ferries to Shikoku, island-hops the Setouchi and returns over the Akashi Kaikyō Bridge — landing back in Osaka on <b>Day 21</b>. <b>Days 22–24</b> are the easy finish: <b>Day 22</b> returns the bikes and unwinds in the city, <b>Day 23</b> is a full <b>Super Nintendo World / USJ</b> day, and <b>Day 24</b> keeps a flexible Kyoto/Osaka morning (Fushimi Inari) before <b>taking the Shinkansen back to Tokyo</b> for the homebound flight. Osaka is a <b>train-in, train-out hub</b> — no fly-in/out here; the airport (KIX) is not used."
+    "<b>Day 2 is strictly no riding:</b> after a Tokyo arrival night and a full Tokyo museum day, the family arrives by <b>Nozomi Shinkansen into Shin-Osaka around midday</b> (they fly nonstop SEA→Tokyo, then ride the ~2h30m bullet train down — see flights), transfer the short hop to the <b>Suita rental base</b>, collect the bikes, do the paperwork and gear-fit, and learn the controls on foot (see the overview) — capped with an easy Dōtonbori/Namba evening. The first real ride is <b>Day 3</b> up to the temple town of Kōyasan. The loop then drops down the <b>Route 168 pilgrim road</b> through the sacred Kumano interior, sweeps the Kii coast, ferries to Shikoku, island-hops the Setouchi and returns over the Akashi Kaikyō Bridge — landing back in Osaka on <b>Day 20</b>. <b>Days 21–23</b> are the easy finish: <b>Day 21</b> returns the bikes and unwinds in the city, <b>Day 22</b> is a full <b>Super Nintendo World / USJ</b> day, and <b>Day 23</b> keeps a flexible Kyoto/Osaka morning (Fushimi Inari) before <b>taking the Shinkansen back to Tokyo</b> for the homebound flight. Osaka is a <b>train-in, train-out hub</b> — no fly-in/out here; the airport (KIX) is not used."
   ],
   highlights: [
-    "<b>Super Nintendo World / Universal Studios Japan</b> — the family kid-centrepiece of the Osaka end (a dedicated <b>Day 23</b>, bikes already returned): a life-size, interactive Mushroom Kingdom with <b>Mario Kart: Koopa's Challenge</b>, Yoshi's Adventure and the <b>Power-Up Band</b>, inside a big theme park (Harry Potter, Minions). <b>Needs timed-entry / Area Timed-Entry or Express Pass — book ahead; a busy full day</b>",
+    "<b>Super Nintendo World / Universal Studios Japan</b> — the family kid-centrepiece of the Osaka end (a dedicated <b>Day 22</b>, bikes already returned): a life-size, interactive Mushroom Kingdom with <b>Mario Kart: Koopa's Challenge</b>, Yoshi's Adventure and the <b>Power-Up Band</b>, inside a big theme park (Harry Potter, Minions). <b>Needs timed-entry / Area Timed-Entry or Express Pass — book ahead; a busy full day</b>",
     "<b>Osaka Aquarium Kaiyukan</b> — one of the world's largest aquariums, built around a central whale-shark tank you spiral down past — an indoor, all-weather, sure-fire kids' day at the bayfront, and the calm alternative if USJ is too much",
     "<b>Dōtonbori & Namba</b> — the canal-side neon canyon with the running <b>Glico Man</b> sign, the giant mechanical crab, and the city's loudest concentration of street food — the easy welcome-evening and celebration-dinner district",
     "<b>Nintendo OSAKA + Pokémon Center (Daimaru Umeda 13F)</b> — Kansai's flagship Nintendo store and a large Pokémon Center sit on the <b>same floor</b> of Daimaru next to JR Osaka/Umeda — walk-in, no ticket (~10:00–20:00); Mario/Zelda/Splatoon and Pokémon plush, figures and exclusives. A no-fuss double win for Aslan and Galiya on a Day-22 or Day-24 city afternoon",
@@ -292,7 +292,7 @@ window.DESTINATIONS = [
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg/960px-Peach%27sCastle_at_Universal_Studios_Japan_20220814.jpg",
-      "cap": "Peach's Castle in Super Nintendo World, Universal Studios Japan (Day 23)"
+      "cap": "Peach's Castle in Super Nintendo World, Universal Studios Japan (Day 22)"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg/960px-Dotonbori%2C_Osaka%2C_at_night%2C_November_2016.jpg",
@@ -334,30 +334,29 @@ window.DESTINATIONS = [
   jp: "高野山",
   region: "Kōya · Wakayama (Kii Peninsula)",
   type: "stop",
-  days: "Day 3 · 1 night (shukubō temple stay)",
+  days: "Day 3 · quick daytime stop (no overnight)",
   legMiles: 54,
   lat: 34.2131, lng: 135.5844, zoom: 14,
   tagline: "A 1,200-year-old monastery town in the clouds — temple lodging, lantern-lit cedar avenues and Japan's most atmospheric cemetery.",
   intro: [
     "The first real ride leaves the Kansai sprawl and climbs the paved <b>Route 480 / 370</b> approach into the forested highlands of <b>Kōyasan</b> — a UNESCO World Heritage monastic town founded in <b>816</b> by the monk <b>Kūkai (Kōbō Daishi)</b> as the headquarters of <b>Shingon Buddhism</b>. Set in a high basin at ~800 m and ringed by eight peaks, it holds <b>117 temples</b>, a great vermilion pagoda, and <b>Okunoin</b> — Japan's largest cemetery, where more than 200,000 tombs, moss-covered and lantern-lit, line a two-kilometre avenue of giant cedars to Kūkai's mausoleum.",
-    "The night here is the experience: a <b>shukubō</b> (temple lodging) stay with monks, a <b>shōjin-ryōri</b> Buddhist vegetarian dinner, and optional <b>morning prayers</b> or the dawn <i>goma</i> fire ritual. It is a gentle, awe-inspiring, low-mileage opener that eases the family into the trip — short riding, then an early arrival to walk Okunoin before dark."
+    "This trip treats Kōyasan as a <b>quick daytime stop, not an overnight</b> — the family isn't after a deep spiritual temple stay, so plan a brisk <b>~1–1.5 hour visit</b> (walk the cedar avenue of Okunoin, or the vermilion Danjō Garan pagoda complex and Kongōbu-ji, perhaps a temple-village lunch of <i>shōjin-ryōri</i>), then <b>ride straight on down the Route 168 pilgrim road to overnight at Yunomine</b> in the Kumano interior (see Kumano Interior — Hongū & Yunomine). It is a gentle, awe-inspiring waypoint that eases the family into the trip without committing the whole afternoon to the mountain."
   ],
   highlights: [
-    "<b>Okunoin</b> — a two-kilometre lantern-lit avenue of ancient cedars and 200,000+ tombs to Kōbō Daishi's mausoleum; an evening guided walk is unforgettable and surprisingly captivating for a child",
-    "<b>Konpon Daitō & Danjo Garan</b> — the brilliant vermilion Great Stupa and Kūkai's original temple complex, the spiritual heart of the mountain",
+    "<b>Okunoin</b> — a two-kilometre avenue of ancient cedars and 200,000+ tombs to Kōbō Daishi's mausoleum; even a daytime walk of the first stretch is unforgettable and surprisingly captivating for a child",
+    "<b>Konpon Daitō & Danjo Garan</b> — the brilliant vermilion Great Stupa and Kūkai's original temple complex, the spiritual heart of the mountain (the most efficient single stop)",
     "<b>Kongōbu-ji</b> — the head temple of Shingon Buddhism, with painted sliding screens and <b>Banryūtei</b>, Japan's largest rock garden",
-    "<b>Daimon</b> — the towering vermilion Great Gate guarding the western approach, with sweeping valley views",
-    "<b>Shukubō morning service</b> — sit in on sutra chanting or the dawn <i>goma</i> (sacred fire) ritual at your temple",
-    "<b>Reihōkan Museum</b> — Buddhist art and National Treasures of the mountain"
+    "<b>Daimon</b> — the towering vermilion Great Gate guarding the western approach, with sweeping valley views (right on the road out)",
+    "<b>Reihōkan Museum</b> — Buddhist art and National Treasures of the mountain (only if you have extra time)"
   ],
   food: [
     {
       "n": "Shōjin-ryōri",
-      "d": "refined Buddhist vegetarian temple cuisine (no meat, fish, onion or garlic), served lacquer-tray style as your shukubō dinner and breakfast; a quietly memorable meal for the whole family."
+      "d": "refined Buddhist vegetarian temple cuisine (no meat, fish, onion or garlic), served lacquer-tray style; a quietly memorable lunch for the whole family before the ride south."
     },
     {
       "n": "Goma-dōfu",
-      "d": "silky sesame \"tofu,\" ground and set without soy — the signature Kōyasan delicacy, often the highlight of the tray."
+      "d": "silky sesame \"tofu,\" ground and set without soy — the signature Kōyasan delicacy, sold to eat in or take away."
     },
     {
       "n": "Kōya-dōfu",
@@ -367,32 +366,13 @@ window.DESTINATIONS = [
       "n": "Tempura of mountain vegetables (sansai) & fu (wheat gluten) — seasonal hillside greens and chewy fu, staples of the meatless table.",
       "d": ""
     },
-    {
-      "n": "Amazake & local sake",
-      "d": "warming low/non-alcohol rice drinks for a cool mountain evening; the temple shops sell sesame-tofu and pickles to take away."
-    }
+    { "n": "Amazake", "d": "a warming low/non-alcohol rice drink for a cool mountain morning." }
   ],
   hotels: [
     {
-      "n": "Ekō-in",
-      "t": "Shukubō temple lodging",
-      "d": "Popular with foreign guests; morning goma fire ritual and a guided evening Okunoin tour; tatami rooms with futons suit a child well.",
-      "park": "On-site temple lot (confirm space)",
-      "price": "¥16,000–28,000 pp"
-    },
-    {
-      "n": "Fukuchi-in",
-      "t": "Shukubō (with onsen)",
-      "d": "Garden views and a rare hot-spring bath on the mountain; larger tatami rooms work for a family.",
-      "park": "On-site temple lot (confirm space)",
-      "price": "¥15,000–30,000 pp"
-    },
-    {
-      "n": "Sekishō-in / Henjōson-in",
-      "t": "Shukubō temple lodging",
-      "d": "Classic, quieter temple stays with tatami rooms, futons and shōjin-ryōri.",
-      "park": "On-site temple lot (confirm space)",
-      "price": "¥12,000–22,000 pp"
+      "n": "No overnight here",
+      "t": "Note",
+      "d": "No overnight here. This trip skips the Kōyasan temple-lodging (shukubō) night entirely — the family isn't after a deep spiritual stay, so Kōyasan is a quick ~1–1.5 hour daytime stop and the night is spent at the onsen hamlet of Yunomine in the Kumano interior, ~2 hours south down Route 168."
     }
   ],
   links: [
@@ -438,20 +418,20 @@ window.DESTINATIONS = [
   jp: "熊野本宮・湯の峰",
   region: "Kumano · Wakayama (Kii interior)",
   type: "stay",
-  days: "Days 4–5 · 2 nights",
-  legMiles: 53,
+  days: "Days 3–4 · 2 nights",
+  legMiles: 102,
   lat: 33.8403, lng: 135.7733, zoom: 12,
   tagline: "The sacred heart of the Kii Peninsula: the grandest Kumano shrine, Japan's largest torii, a riverbed you dig into a hot spring, and a world-heritage bath.",
   intro: [
-    "From Kōyasan the trip turns south down <b>Route 168</b> — the classic pilgrim road — following the <b>Totsukawa River</b> through deep forested gorges and <b>Totsukawa</b>, Japan's largest village by area. The valley opens at the <b>Hongū</b> basin, spiritual centre of the <b>Kumano Kodō</b> pilgrimage and home to <b>Kumano Hongū Taisha</b>, the head shrine of the three <b>Kumano Sanzan</b> (Hongū, Hayatama, Nachi). A few minutes away, on the river sandbank where the shrine once stood, rises <b>Ōyunohara</b> — <b>Japan's largest torii gate</b>, a steel colossus 33.9 m high.",
-    "This is the loop's contemplative rest base — <b>two nights</b> at the ancient onsen hamlets of <b>Yunomine</b> and <b>Kawayu</b>, where you can soak in the world-heritage <b>Tsuboyu</b> bath, cook eggs in the bubbling spring, or <b>dig your own bath</b> in the warm pebbles of the riverbed. For the child there's the <b>Doro-kyō gorge jet-boat</b> and the swaying <b>Tanise suspension bridge</b>. Route 168 is moderate, paved two-lane riding — winding but not technical, ridden at a relaxed pace."
+    "Day 3 is one combined ride: a <b>quick stop at Kōyasan</b> (no overnight) and then south down <b>Route 168</b> — the classic pilgrim road — following the <b>Totsukawa River</b> through deep forested gorges and <b>Totsukawa</b>, Japan's largest village by area. The valley opens at the <b>Hongū</b> basin, spiritual centre of the <b>Kumano Kodō</b> pilgrimage and home to <b>Kumano Hongū Taisha</b>, the head shrine of the three <b>Kumano Sanzan</b> (Hongū, Hayatama, Nachi). A few minutes away, on the river sandbank where the shrine once stood, rises <b>Ōyunohara</b> — <b>Japan's largest torii gate</b>, a steel colossus 33.9 m high.",
+    "This is the loop's contemplative rest base — <b>two nights</b> at the ancient onsen hamlets of <b>Yunomine</b> and <b>Kawayu</b>, where you can soak in the world-heritage <b>Tsuboyu</b> bath, cook eggs in the bubbling spring, or <b>dig your own bath</b> in the warm pebbles of the riverbed. For the child there's the <b>Doro-kyō gorge river-boat</b> and the swaying <b>Tanise suspension bridge</b>. Route 168 is moderate, paved two-lane riding — winding but not technical, ridden at a relaxed pace."
   ],
   highlights: [
     "<b>Kumano Hongū Taisha</b> — the head shrine of the Kumano Sanzan, its cypress-bark halls reached up a cedar-lined stone stair",
     "<b>Ōyunohara great torii</b> — Japan's largest torii (33.9 m) standing over the old shrine sandbank; a genuine \"wow\" for a child",
     "<b>Yunomine Onsen & Tsuboyu</b> — soak in the tiny <b>Tsuboyu</b>, the only UNESCO World Heritage bath you can actually bathe in (reserve a 30-min slot), and <b>boil eggs or vegetables</b> in the public <i>yuzutsu</i> hot spring",
     "<b>Kawayu Onsen</b> — scoop out your <b>own riverbed bath</b> in the warm gravel of the Ōto River, mixing hot spring and cool stream to taste",
-    "<b>Doro-kyō gorge jet-boat</b> — a glass-clear gorge cruise on the Kitayama River through towering cliffs (boards near Shingū; can also be ridden on the Day-6 descent to the coast)",
+    "<b>Doro-kyō gorge river-boat</b> — a ~40-min cruise on the glass-clear Kitayama River through Japan's premier gorge; boards at the Kumano River Riverboat Center (Tamaki-guchi, Shingū). It's a featured <b>must-do scheduled on Day 5</b> (the descent to the coast) — but the Hongū basin is close to the boarding point, so it also works as a <b>Day-4 rest-day outing</b> if you'd rather ride down to it from Yunomine on the free day. Do it once, on whichever day suits.",
     "<b>Tanise no Tsuribashi</b> — at 297 m one of Japan's longest pedestrian suspension bridges, swinging high over the Totsukawa (a thrill on the way in)",
     "<b>Kumano Kodō short walk</b> — the gentle <b>Hosshinmon-ōji → Hongū</b> final section of the Nakahechi trail, a manageable family stretch of the pilgrimage"
   ],
@@ -492,7 +472,11 @@ window.DESTINATIONS = [
     { "l": "Kumano Hongū Taisha (official)", "u": "https://www.hongutaisha.jp/" },
     { "l": "Wikipedia — Kumano Hongū Taisha", "u": "https://en.wikipedia.org/wiki/Kumano_Hong%C5%AB_Taisha" },
     { "l": "Wikipedia — Yunomine Onsen", "u": "https://en.wikipedia.org/wiki/Yunomine_Onsen" },
-    { "l": "Wikipedia — Dorokyō", "u": "https://en.wikipedia.org/wiki/Doroky%C5%8D" }
+    { "l": "Dorokyō Gorge (JNTO official)", "u": "https://www.japan.travel/en/spot/1990/" },
+    {
+      "l": "Doro-kyō river-boat cruise — Kumano River Riverboat Center (official)",
+      "u": "https://www.shinguu.jp/en/spots/detail/A0083"
+    }
   ],
   photos: [
     {
@@ -517,7 +501,7 @@ window.DESTINATIONS = [
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Doro_Gorge_Jet_Boat.jpg/960px-Doro_Gorge_Jet_Boat.jpg",
-      "cap": "A jet-boat in the Doro-kyō gorge"
+      "cap": "A traditional river-boat in the Doro-kyō gorge"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Dorokyo_in_2019_August_A.jpg/960px-Dorokyo_in_2019_August_A.jpg",
@@ -535,7 +519,7 @@ window.DESTINATIONS = [
   jp: "熊野・那智勝浦",
   region: "Kumano · Wakayama / Mie",
   type: "stop",
-  days: "Day 6",
+  days: "Day 5",
   legMiles: 30,
   lat: 33.6259, lng: 135.9412, zoom: 13,
   tagline: "Sacred waterfalls, pilgrim shrines and a wild Pacific shore.",
@@ -544,11 +528,11 @@ window.DESTINATIONS = [
     "Overnight is at <b>Katsuura</b>, a working tuna port whose ryokan are famous for cliff-and-cave hot-spring baths over the sea. It's a short, scenic riding day off the mountains — a dramatic contrast to the misty interior shrines upstream."
   ],
   highlights: [
+    "⭐ <b>Doro-kyō gorge river-boat — MUST-DO</b> — the classic Kumano river experience: a ~40-minute boat cruise through <b>Doro-kyō</b>, Japan's premier river gorge, gliding over glass-clear emerald water beneath 50 m cliffs and weird water-carved rocks (a Special Place of Scenic Beauty & Natural Monument). A guaranteed thrill for a 6-year-old. The wooden river-boat boards at the <b>Kumano River Riverboat Center, Tamaki-guchi (Kumanogawa, Shingū)</b> — Mar–Nov, daily except Mon, ~hourly 09:00–15:00, ¥3,000 adult / ¥1,500 child 4–12 (under-4s not carried); reserve ahead. <i>The old Kumano Kotsu waterjet boat was discontinued in 2021; this wooden boat (plus a year-round hovercraft option) is the current way to ride the gorge.</i> [[Dorokyo Gorge River-Boat — official]](https://www.shinguu.jp/en/spots/detail/A0083)",
     "<b>Nachi Falls (Nachi-no-Taki)</b> — at 133 m Japan's tallest single-drop waterfall, worshipped as a <i>kami</i> in its own right; the falls themselves are the sacred object of Hirō-jinja shrine at their foot",
     "<b>Kumano Nachi Taisha & Seiganto-ji pagoda</b> — the postcard of Japan: the vermilion three-storied pagoda with the white thread of the falls behind it. Seiganto-ji is temple #1 of the Saigoku Kannon pilgrimage",
     "<b>Daimon-zaka</b> — a short, atmospheric cobbled pilgrim path climbing under 800-year-old cedars; you can rent <b>Heian-era pilgrim costume</b> nearby, a fun dress-up for a child",
     "<b>Kumano Hayatama Taisha (Shingū)</b> — the third of the three grand Kumano Sanzan shrines, by the river mouth; in its grounds stands a <b>1,000-year-old sacred nagi tree</b>, Japan's largest",
-    "<b>Doro-kyō gorge jet-boat</b> — a thrilling glass-clear gorge cruise between sheer cliffs, boarded en route down from the interior (a kid highlight)",
     "<b>Katsuura cave & cliff onsen</b> — soak in seaside grotto baths; <b>Hotel Urashima's Bōki-dō</b> is a natural sea cave with the surf booming below",
     "<b>Katsuura morning tuna market</b> — Japan's #1 port for fresh (line-caught, not frozen) tuna; you can watch the dawn auction from a gallery"
   ],
@@ -594,6 +578,10 @@ window.DESTINATIONS = [
     }
   ],
   links: [
+    {
+      "l": "Doro-kyō river-boat cruise — Kumano River Riverboat Center (official)",
+      "u": "https://www.shinguu.jp/en/spots/detail/A0083"
+    },
     { "l": "Nachikatsuura tourism (official)", "u": "https://nachikan.jp/en/" },
     { "l": "Kumano Kodō / Tanabe-Kumano (official)", "u": "https://www.tb-kumano.jp/en/" },
     { "l": "Wikipedia — Kumano Nachi Taisha", "u": "https://en.wikipedia.org/wiki/Kumano_Nachi_Taisha" },
@@ -632,7 +620,7 @@ window.DESTINATIONS = [
   jp: "白浜",
   region: "Nanki-Shirahama · Wakayama",
   type: "stay",
-  days: "Days 7–8 · 2 nights",
+  days: "Days 6–7 · 2 nights",
   legMiles: 54,
   lat: 33.6853, lng: 135.3378, zoom: 13,
   tagline: "A white-sand resort coast, panda safaris and seaside hot springs.",
@@ -745,7 +733,7 @@ window.DESTINATIONS = [
   jp: "徳島・鳴門",
   region: "Tokushima · Shikoku",
   type: "stop",
-  days: "Day 9",
+  days: "Day 8",
   legMiles: 91,
   lat: 34.1722, lng: 134.6093, zoom: 12,
   tagline: "A ferry across the strait, then the great whirlpools of Naruto.",
@@ -852,7 +840,7 @@ window.DESTINATIONS = [
   jp: "祖谷渓",
   region: "Shikoku mountains",
   type: "stay",
-  days: "Days 10–11 · 2 nights",
+  days: "Days 9–10 · 2 nights",
   legMiles: 69,
   lat: 33.889, lng: 133.812, zoom: 12,
   tagline: "Vine bridges, deep gorges and one of Japan's hidden valleys.",
@@ -955,7 +943,7 @@ window.DESTINATIONS = [
   jp: "高知",
   region: "Shikoku south coast",
   type: "stop",
-  days: "Day 12",
+  days: "Day 11",
   legMiles: 37,
   lat: 33.5597, lng: 133.5311, zoom: 13,
   tagline: "Pacific shores, a perfectly preserved castle and big southern flavour.",
@@ -1065,7 +1053,7 @@ window.DESTINATIONS = [
   jp: "四万十川",
   region: "Shikoku west",
   type: "stay",
-  days: "Days 13–14 · 2 nights",
+  days: "Days 12–13 · 2 nights",
   legMiles: 66,
   lat: 32.9914, lng: 132.9338, zoom: 12,
   tagline: "Japan's 'last clear stream' and its low submersible bridges.",
@@ -1177,7 +1165,7 @@ window.DESTINATIONS = [
   jp: "宇和島",
   region: "Ehime south",
   type: "stop",
-  days: "Day 15",
+  days: "Day 14",
   legMiles: 41,
   lat: 33.2233, lng: 132.5606, zoom: 13,
   tagline: "An original castle and a preserved merchant town en route north.",
@@ -1212,7 +1200,7 @@ window.DESTINATIONS = [
     {
       "n": "_Usually ridden through → sleep at Dōgo Onsen_",
       "t": "Note",
-      "d": "Day 15 ends at Matsuyama/Dōgo, a 2-night onsen base (see next stop)."
+      "d": "Day 14 ends at Matsuyama/Dōgo, a 2-night onsen base (see next stop)."
     },
     {
       "n": "Uchiko machiya inns (e.g. Kibako, Orinasu)",
@@ -1271,7 +1259,7 @@ window.DESTINATIONS = [
   jp: "道後温泉",
   region: "Ehime · Matsuyama",
   type: "stay",
-  days: "Days 15–16 · 2 nights",
+  days: "Days 14–15 · 2 nights",
   legMiles: 55,
   lat: 33.8519, lng: 132.7866, zoom: 14,
   tagline: "One of Japan's oldest hot springs beneath a hilltop castle.",
@@ -1375,7 +1363,7 @@ window.DESTINATIONS = [
   jp: "しまなみ海道",
   region: "Seto Inland Sea",
   type: "stop",
-  days: "Day 17",
+  days: "Day 16",
   legMiles: 36,
   lat: 34.11, lng: 133.01, zoom: 11,
   tagline: "Island-hopping across the Seto Inland Sea by a chain of great bridges.",
@@ -1482,7 +1470,7 @@ window.DESTINATIONS = [
   jp: "尾道",
   region: "Hiroshima coast",
   type: "stay",
-  days: "Days 17–18 · 2 nights",
+  days: "Days 16–17 · 2 nights",
   legMiles: 32,
   lat: 34.409, lng: 133.205, zoom: 14,
   tagline: "A hillside temple town and lemon-scented islands.",
@@ -1588,7 +1576,7 @@ window.DESTINATIONS = [
   jp: "倉敷",
   region: "Okayama",
   type: "stop",
-  days: "Day 19",
+  days: "Day 18",
   legMiles: 41,
   lat: 34.5957, lng: 133.7718, zoom: 14,
   tagline: "A willow-lined canal quarter of white-walled storehouses.",
@@ -1705,7 +1693,7 @@ window.DESTINATIONS = [
   jp: "姫路",
   region: "Hyogo",
   type: "stop",
-  days: "Day 20",
+  days: "Day 19",
   legMiles: 104,
   lat: 34.8394, lng: 134.6939, zoom: 14,
   tagline: "Japan's most magnificent castle, then into cosmopolitan Kobe.",
@@ -1824,7 +1812,7 @@ window.DESTINATIONS = [
   jp: "淡路島",
   region: "Seto Inland Sea · Hyōgo",
   type: "stop",
-  days: "Day 21",
+  days: "Day 20",
   legMiles: 43,
   lat: 34.45, lng: 134.93, zoom: 11,
   tagline: "A farewell loop across the world's great suspension bridge.",
@@ -1860,7 +1848,7 @@ window.DESTINATIONS = [
     {
       "n": "_Day loop → sleep in Osaka_",
       "t": "Note",
-      "d": "Day 21 ends in Osaka; Awaji is ridden as a loop, not an overnight in the base plan."
+      "d": "Day 20 ends in Osaka; Awaji is ridden as a loop, not an overnight in the base plan."
     },
     {
       "n": "Yumekaiyu Awajishima (Sumoto Onsen)",
@@ -1923,7 +1911,7 @@ window.DESTINATIONS = [
 window.HOME = { city: "Seattle", airport: "SEA" };
 window.FLIGHTS = {
   "intro": "You're starting from Seattle. The motorcycles are an Osaka loop (pick up and return at the Suita base), but the long-haul leg is a simple round-trip nonstop SEA ⇄ Tokyo — then the Tōkaidō Shinkansen (~2h30m) down to Osaka and back. Not an open-jaw / Osaka-airport (KIX) ticket.",
-  "season": "Best window: October–early November 2026 (the trip's preferred season). The Osaka riding loop is bracketed by a Tokyo arrival night (Day 0) + a full Tokyo museum day (Day 1) before the Day-2 pickup, and by a Super Nintendo World / USJ day (Day 23) and a reposition-to-Tokyo day (Day 24) before flying home on Day 25 — door-to-door ≈ 26 days (Day 0–25).",
+  "season": "Best window: October–early November 2026 (the trip's preferred season). The Osaka riding loop is bracketed by a Tokyo arrival night (Day 0) + a full Tokyo museum day (Day 1) before the Day-2 pickup, and by a Super Nintendo World / USJ day (Day 22) and a reposition-to-Tokyo day (Day 23) before flying home on Day 24 — door-to-door ≈ 25 days (Day 0–24).",
   "legs": [
     {
       "dir": "Outbound",
@@ -1942,12 +1930,12 @@ window.FLIGHTS = {
       "dir": "Return",
       "from": "Tokyo · Haneda (HND)",
       "to": "Seattle · SEA",
-      "sample": "Sample: depart ~Wed 4 Nov 2026 (after the Day-24 reposition to Tokyo)",
+      "sample": "Sample: depart ~Wed 4 Nov 2026 (after the Day-23 reposition to Tokyo)",
       "type": "Nonstop",
       "duration": "≈ 9h 30m–10h",
       "airlines": ["ANA", "Delta", "JAL (Narita)"],
       "fareFrom": "$900",
-      "note": "Nonstop home — you re-cross the date line and land in Seattle the same calendar day. After the Day-23 USJ day, reposition Osaka→Tokyo by Nozomi on Day 24 (Kyoto sightseeing en route) and overnight near Haneda/Shinagawa for the Day-25 flight.",
+      "note": "Nonstop home — you re-cross the date line and land in Seattle the same calendar day. After the Day-22 USJ day, reposition Osaka→Tokyo by Nozomi on Day 23 (Kyoto sightseeing en route) and overnight near Haneda/Shinagawa for the Day-24 flight.",
       "expedia": "https://www.expedia.com/lp/flights/hnd/sea/tokyo-to-seattle"
     }
   ],
@@ -1973,7 +1961,7 @@ window.FLIGHTS = {
   ]
 };
 
-/* Day-by-day schedule (Day 0–25). day.html builds a timed routine per day. */
+/* Day-by-day schedule (Day 0–24). day.html builds a timed routine per day. */
 window.DAYS = [
 {
     "d": 0,
@@ -2007,6 +1995,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Kitashinagawa — a few minutes from Shinagawa Station",
+        "picks": [
+          {
+            "name": "NorthStar Beans (ノーススターコーヒー)",
+            "cuisine": "specialty coffee",
+            "rating": 4.8,
+            "why": "Ruslan & Galiya — a tiny top-rated Shinagawa specialty roastery for a proper morning pour-over to shake off jet-lag; quiet and walkable from the hotels",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=17650011963556167219",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "dinner",
         "area": "Shinagawa Konan (east) exit — all a short walk from the station and hotels",
@@ -2109,6 +2112,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Kichijōji (near the Ghibli Museum walk)",
+        "picks": [
+          {
+            "name": "LIGHT UP COFFEE",
+            "cuisine": "specialty coffee",
+            "rating": 4.4,
+            "why": "Galiya/Ruslan — Kichijōji single-origin specialty roaster for a proper morning brew; cake/iced drinks for Aslan",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=15630683996468648685",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Kichijōji (by Inokashira Park, walking distance from the Ghibli Museum)",
@@ -2213,7 +2231,7 @@ window.DAYS = [
     "title": "Shinkansen to Osaka & Bike Pickup",
     "route": "Tokyo 🚄 Shin-Osaka → Suita base",
     "desc": "Strictly no riding. A relaxed late-morning Nozomi (~2h30m) brings you to Shin-Osaka around midday, then to the Suita base for the rental handover: paperwork and insurance, a full walk-around of the Africa Twin and CB400X, fitting the child's gear, pairing intercoms and a slow on-foot shakedown. Cap it with an easy Dōtonbori/Namba evening — the first real ride is Day 3, fresh and rested.",
-    "luggage": "Start the chain. The cases forwarded from Tokyo are waiting at the Osaka hotel — repack into a chain case (forward it today from the front desk to the Shirahama rest base, Days 7–8, the first reliable forwarding target) and a heavier base-camp case left in Osaka left-luggage for the whole loop (collect Day 22). Only riding gear and a soft overnight bag goes on the bikes.",
+    "luggage": "Start the chain. The cases forwarded from Tokyo are waiting at the Osaka hotel — repack into a chain case (forward it today from the front desk to the Shirahama rest base, Days 6–7, the first reliable forwarding target) and a heavier base-camp case left in Osaka left-luggage for the whole loop (collect Day 21). Only riding gear and a soft overnight bag goes on the bikes.",
     "tags": ["rest", "kid"],
     "gfrom": "Tokyo Station",
     "gto": "Suita, Osaka",
@@ -2247,6 +2265,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Nishi-Shinsaibashi (near Namba)",
+        "picks": [
+          {
+            "name": "LiLo Coffee Roasters",
+            "cuisine": "specialty coffee",
+            "rating": 4.8,
+            "why": "Galiya & Ruslan — Osaka's marquee third-wave roaster, huge single-origin lineup minutes from Dōtonbori; iced drinks and pastries keep Aslan happy",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=16291659530834990214",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Shin-Osaka (arrival)",
@@ -2343,22 +2376,22 @@ window.DAYS = [
   },
 {
     "d": 3,
-    "id": "koyasan",
-    "miles": 45,
-    "dmin": 139,
+    "id": "kumano-interior",
+    "miles": 102,
+    "dmin": 272,
     "rest": false,
-    "region": "Kōya, Wakayama",
-    "title": "Up to the Sacred Mountain",
-    "route": "Osaka → Kōyasan",
-    "desc": "The first real ride is gentle and short — slip south out of the Kansai sprawl and pick up the paved Route 480/370 climb into the forested highlands of Kōyasan. An early-afternoon arrival is deliberate: walk the Danjō Garan and the head temple Kongōbu-ji, save lantern-lit Okunoin for the atmospheric dusk walk, then settle into a shukubō for a shōjin-ryōri dinner and a quiet mountain night.",
-    "tags": ["ride", "kid"],
-    "gfrom": "Osaka, Japan",
-    "gto": "Koyasan, Wakayama, Japan",
-    "gvia": "",
+    "region": "Kōya → Kumano, Wakayama",
+    "title": "Sacred Mountain & the Pilgrim Road",
+    "route": "Osaka → Kōyasan → Hongū / Yunomine",
+    "desc": "The biggest of the opening days, by design: a quick visit to the sacred mountain, then straight down the great pilgrim road to the onsen hamlets of the Kumano interior. Slip south out of the Kansai sprawl and climb the paved Route 480/370 into the forested highlands of Kōyasan — keep it to a brisk ~1–1.5 hours (the cedar avenue of Okunoin, or the vermilion Danjō Garan and head temple Kongōbu-ji) rather than a temple-stay night. Then drop off the mountain and turn south down Route 168, following the Totsukawa River through deep forested gorges; pause to walk the swaying Tanise suspension bridge, then roll into the Hongū basin for Kumano Hongū Taisha and the giant Ōyunohara torii, overnighting at the ancient onsen hamlet of Yunomine. Start early and let tomorrow's Kumano rest day absorb the long ride.",
+    "tags": ["ride", "kid", "onsen"],
+    "gfrom": "Suita, Osaka",
+    "gto": "Yunomine Onsen, Wakayama, Japan",
+    "gvia": "Okunoin Cemetery Koyasan|Tanise no Tsuribashi Totsukawa|Kumano Hongu Taisha",
     "poi": [
       {
         "name": "Danjo Garan & Konpon Daitō",
-        "what": "The vermilion great pagoda, spiritual heart of the mountain (early-afternoon arrival walk)",
+        "what": "The brilliant vermilion great pagoda, spiritual heart of the mountain — the most efficient single stop on the quick ~1–1.5 h Kōyasan visit",
         "q": "Konpon Daito Koyasan",
         "slot": "scenic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Konpon_Daito_Pagoda_-_Garan_Complex_-_Koyasan_-_Japan_%2847950047772%29.jpg/960px-Konpon_Daito_Pagoda_-_Garan_Complex_-_Koyasan_-_Japan_%2847950047772%29.jpg",
@@ -2367,7 +2400,7 @@ window.DAYS = [
       },
       {
         "name": "Kongōbu-ji",
-        "what": "Head temple of Shingon Buddhism: the Banryūtei rock garden (Japan's largest) and painted fusuma halls (afternoon)",
+        "what": "Head temple of Shingon Buddhism: the Banryūtei rock garden (Japan's largest) and painted fusuma halls — part of the brisk daytime Kōyasan stop",
         "q": "Kongobu-ji Koyasan",
         "slot": "activity",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Narrow_rock_garden%2C_Kongobuji%2C_Koyasan%2C_2016.jpg/960px-Narrow_rock_garden%2C_Kongobuji%2C_Koyasan%2C_2016.jpg",
@@ -2376,123 +2409,13 @@ window.DAYS = [
       },
       {
         "name": "Okunoin",
-        "what": "Lantern-lit cedar avenue to Kōbō Daishi's mausoleum (a dusk walk, at its most atmospheric)",
+        "what": "Lantern-lit cedar avenue to Kōbō Daishi's mausoleum — walk the first stretch on the quick daytime stop (no temple-stay night this trip)",
         "q": "Okunoin Cemetery Koyasan",
         "slot": "scenic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Choishi_Path_-_Okunoin_Cemetery_-_Koyasan_-_Japan_-_18_%2847949824357%29.jpg/960px-Choishi_Path_-_Okunoin_Cemetery_-_Koyasan_-_Japan_-_18_%2847949824357%29.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Okunoin",
         "it": ["castle"]
       },
-      {
-        "name": "Shukubō shōjin-ryōri",
-        "what": "Temple lodging and a Buddhist vegetarian dinner",
-        "q": "Ekoin Koyasan",
-        "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/View_of_Toro-do_from_Gobyo-bashi%2C_Okunoin%2C_Koyasan%2C_2016.jpg/960px-View_of_Toro-do_from_Gobyo-bashi%2C_Okunoin%2C_Koyasan%2C_2016.jpg",
-        "it": ["castle"]
-      }
-    ],
-    "eats": [
-      {
-        "slot": "lunch",
-        "area": "Kōyasan temple village (Senjuinbashi)",
-        "picks": [
-          {
-            "name": "Kōya Soba Kokone (高野蕎麦ここね)",
-            "cuisine": "handmade soba",
-            "rating": 4.1,
-            "why": "Galiya — fresh mountain soba, the noodle she'll want at altitude",
-            "kid": false,
-            "map": "https://maps.google.com/?cid=2864987165657710582",
-            "photo": "https://upload.wikimedia.org/wikipedia/commons/5/58/Ten_zaru_soba_by_jetalone_in_Tokyo.jpg"
-          },
-          {
-            "name": "Kotobuki Shokudō",
-            "cuisine": "casual shokudō — udon, rice bowls, katsu",
-            "rating": 4.4,
-            "why": "Aslan — plain udon, rice and katsu he'll actually eat",
-            "kid": true,
-            "map": "https://maps.google.com/?cid=3056959925161555233",
-            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"
-          },
-          {
-            "name": "Bon On Shya Cafe",
-            "cuisine": "cafe set lunch / teishoku",
-            "rating": 4.7,
-            "why": "Ruslan — popular, relaxed set-meal stop after the climb, good coffee",
-            "kid": false,
-            "map": "https://maps.google.com/?cid=11540644926054536259",
-            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Soba_and_tempura_combo_%2826498960080%29.jpg/960px-Soba_and_tempura_combo_%2826498960080%29.jpg"
-          }
-        ]
-      },
-      {
-        "slot": "dinner",
-        "area": "Kōyasan — at the shukubō (temple lodging)",
-        "picks": [
-          {
-            "name": "Fudō-in (shukubō shōjin-ryōri)",
-            "cuisine": "Buddhist vegetarian temple dinner",
-            "rating": 4.7,
-            "why": "Galiya — the signature Kōyasan shōjin-ryōri tray (goma-dofu, vegetable tempura, miso) in a 1,200-year-old temple stay",
-            "kid": false,
-            "map": "https://maps.google.com/?cid=6285515137194093127",
-            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Buddhist_vegetarian_food%2C_Shukubo_of_Kongosanmaiin_-_May_3%2C_2011.jpg/960px-Buddhist_vegetarian_food%2C_Shukubo_of_Kongosanmaiin_-_May_3%2C_2011.jpg"
-          },
-          {
-            "name": "Kōyasan Saizen-in (shukubō)",
-            "cuisine": "shōjin-ryōri — child portion on request",
-            "rating": 4.5,
-            "why": "Aslan — temples will plate a simple kids' tray (plain rice, mild goma-dofu, vegetable tempura); ask when booking",
-            "kid": true,
-            "map": "https://maps.google.com/?cid=13554302819427116538",
-            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fukuchiin_shojin_ryori_appetizer.jpg/960px-Fukuchiin_shojin_ryori_appetizer.jpg"
-          }
-        ]
-      }
-    ],
-    "localTodo": [
-      {
-        "time": "~12:00",
-        "name": "Danjō Garan & Konpon Daitō",
-        "what": "vermilion great pagoda, the spiritual heart of the mountain — an easy first walk on arrival",
-        "map": "https://www.google.com/maps/search/?api=1&query=Danjo%20Garan%20Koyasan"
-      },
-      {
-        "time": "~14:00",
-        "name": "Kongōbu-ji",
-        "what": "head temple of Shingon Buddhism — the Banryūtei rock garden and painted fusuma halls",
-        "map": "https://www.google.com/maps/search/?api=1&query=Kongobuji%20Koyasan"
-      },
-      {
-        "time": "~15:30",
-        "name": "Kadohama Goma-tofu Honpo",
-        "what": "the famous sesame-tofu shop — taste/buy Kōyasan's silky signature goma-dofu (mild, a safe nibble for Aslan)",
-        "map": "https://maps.google.com/?cid=15025927858595747065"
-      },
-      {
-        "time": "~17:00",
-        "name": "Okunoin lantern walk",
-        "what": "cedar avenue of 200,000 tombs to Kōbō Daishi's mausoleum — most atmospheric at dusk",
-        "map": "https://www.google.com/maps/search/?api=1&query=Okunoin%20Cemetery%20Koyasan"
-      }
-    ]
-  },
-{
-    "d": 4,
-    "id": "kumano-interior",
-    "miles": 52,
-    "dmin": 122,
-    "rest": false,
-    "region": "Kumano, Wakayama",
-    "title": "The Pilgrim Road (Route 168)",
-    "route": "Kōyasan → Hongū / Yunomine",
-    "desc": "Drop off the mountain and turn south down Route 168, the classic pilgrim road, following the Totsukawa River through deep forested gorges. Pause to walk the swaying Tanise suspension bridge, then roll into the Hongū basin for the head Kumano shrine and the giant Ōyunohara torii. Overnight at the ancient onsen hamlets of Yunomine or Kawayu.",
-    "tags": ["ride", "kid", "onsen"],
-    "gfrom": "Koyasan, Wakayama, Japan",
-    "gto": "Yunomine Onsen, Wakayama, Japan",
-    "gvia": "Totsukawa, Nara, Japan",
-    "poi": [
       {
         "name": "Tanise no Tsuribashi",
         "what": "A 297 m swaying pedestrian suspension bridge over the Totsukawa",
@@ -2511,7 +2434,7 @@ window.DAYS = [
       },
       {
         "name": "Kumano Hongū Taisha & Ōyunohara",
-        "what": "Head Kumano shrine and Japan's largest torii",
+        "what": "Head Kumano shrine and Japan's largest torii, beside the Yunomine overnight",
         "q": "Kumano Hongu Taisha",
         "slot": "scenic",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Torii_at_Oyunohara_01.jpg/960px-Torii_at_Oyunohara_01.jpg",
@@ -2521,59 +2444,74 @@ window.DAYS = [
     ],
     "eats": [
       {
-        "slot": "lunch",
-        "area": "Hongū basin (near Kumano Hongū Taisha)",
+        "slot": "coffee",
+        "area": "Kōyasan town",
         "picks": [
           {
-            "name": "山伏そば 拝庵 (Yamabushi Soba Haian)",
-            "cuisine": "handmade soba / mountain noodles",
-            "rating": 4.3,
-            "why": "Galiya — fresh soba right by the Hongū torii path",
-            "kid": false,
-            "map": "https://maps.google.com/?cid=16404798185217074257",
-            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Soba_and_tempura_combo_%2826498960080%29.jpg/960px-Soba_and_tempura_combo_%2826498960080%29.jpg"
-          },
-          {
-            "name": "きっちん (Kitchin)",
-            "cuisine": "casual diner / curry rice & set meals",
-            "rating": 4.3,
-            "why": "Aslan — plain rice, katsu and curry he'll actually eat",
-            "kid": true,
-            "map": "https://maps.google.com/?cid=4351367167838386248",
-            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Katsu-curry_002.jpg/960px-Katsu-curry_002.jpg"
-          },
-          {
-            "name": "宮ずし (Miya-zushi)",
-            "cuisine": "sushi & local mehari-zushi",
+            "name": "Tempu Terrace",
+            "cuisine": "cafe / espresso & light bites",
             "rating": 4.6,
-            "why": "Galiya — sushi plus the Kumano pilgrim's mustard-leaf rice rolls",
+            "why": "Ruslan & Galiya — proper coffee and a warm break at 800 m before the walk",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=8414907357130941779",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/330px-A_small_cup_of_coffee.JPG"
+          },
+          {
+            "name": "Komi Coffee",
+            "cuisine": "coffee roastery cafe",
+            "rating": 4.1,
+            "why": "Ruslan — hand-drip specialty coffee on the temple-town street",
             "kid": false,
-            "map": "https://maps.google.com/?cid=15958625622105258960",
-            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Sushi_platter%2C_Nikko%2C_Japan.jpg/960px-Sushi_platter%2C_Nikko%2C_Japan.jpg"
+            "map": "https://maps.google.com/?cid=9477189132371607285",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/330px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
+      {
+        "slot": "lunch",
+        "area": "Kōyasan town",
+        "picks": [
+          {
+            "name": "Hanabishi",
+            "cuisine": "Kōya shōjin-ryōri / Buddhist vegetarian set",
+            "rating": 4.2,
+            "why": "Galiya — Kōyasan's temple cuisine (gomadōfu, tempura, soba) eaten at its source",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=12392921685726484034",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fukuchiin_shojin_ryori_appetizer.jpg/330px-Fukuchiin_shojin_ryori_appetizer.jpg"
+          },
+          {
+            "name": "Kotobuki Shokudō",
+            "cuisine": "casual shokudō — udon, katsu, curry rice",
+            "rating": 4.4,
+            "why": "Aslan — plain udon, katsu & rice he'll actually eat in a relaxed diner",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=3056959925161555233",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/330px-Kake_udon_by_udono.jpg"
           }
         ]
       },
       {
         "slot": "dinner",
-        "area": "Yunomine Onsen (tiny hot-spring hamlet — most ryokan/minshuku serve dinner; these are the walk-in options)",
+        "area": "Yunomine Onsen",
         "picks": [
           {
-            "name": "You-got-it Bar | 湯垢離バー",
-            "cuisine": "izakaya / local small plates & drinks",
-            "rating": 4.7,
-            "why": "Galiya & Ruslan — the village's best-rated spot, local dishes and a craft drink after the soak",
-            "kid": false,
-            "map": "https://maps.google.com/?cid=10401943476802246045",
-            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Meharizushi-Kumano-Mie.JPG/960px-Meharizushi-Kumano-Mie.JPG"
+            "name": "Ryokan Yunomineso",
+            "cuisine": "onsen-ryokan kaiseki dinner",
+            "rating": 4.5,
+            "why": "whole family — multi-course local kaiseki at the inn; ask for a child's set (plain rice, karaage, tamago) for Aslan",
+            "kid": true,
+            "map": "https://maps.google.com/?cid=5061754705104044984",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Jisaku_Kaiseki_Ryori_01.jpg/330px-Jisaku_Kaiseki_Ryori_01.jpg"
           },
           {
-            "name": "Yunomine Onsen Shop / Dining Hall",
-            "cuisine": "simple set meals, curry & onsen eggs",
-            "rating": 3.5,
-            "why": "Aslan — plainest, simplest food in the hamlet (curry/rice) plus boil-your-own onsen eggs by the spring",
-            "kid": true,
-            "map": "https://maps.google.com/?cid=3217771374086901163",
-            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/251128_Onsen_Tamago_at_Kusatsu_Onsen.jpg/960px-251128_Onsen_Tamago_at_Kusatsu_Onsen.jpg"
+            "name": "Ryokan Adumaya",
+            "cuisine": "historic onsen-ryokan kaiseki",
+            "rating": 4.4,
+            "why": "Galiya — refined kaiseki at a centuries-old Yunomine inn with traditional baths",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=13210106354841318663",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Jisaku_Kaiseki_Ryori_01.jpg/330px-Jisaku_Kaiseki_Ryori_01.jpg"
           }
         ]
       }
@@ -2581,26 +2519,32 @@ window.DAYS = [
     "localTodo": [
       {
         "time": "~10:30",
-        "name": "Tanise no Tsuribashi",
-        "what": "walk the 297 m swaying suspension bridge high over the Totsukawa — a thrill for a 6-year-old (hold his hand on the slats)",
-        "map": "https://www.google.com/maps/search/?api=1&query=Tanise%20no%20Tsuribashi%20Totsukawa"
+        "name": "Kōyasan quick stop — Okunoin",
+        "what": "brisk walk up the lantern-lit cedar avenue to Kōbō Daishi's mausoleum (or the vermilion Danjō Garan pagoda); keep it to ~1–1.5 h, a daytime visit, not a temple stay",
+        "map": "https://www.google.com/maps/search/?api=1&query=Okunoin%20Cemetery%20Koyasan"
+      },
+      {
+        "time": "~11:15",
+        "name": "Danjō Garan & Kongōbu-ji",
+        "what": "the great vermilion Konpon Daitō pagoda complex and the head temple's huge rock garden, a short stroll from the cafes",
+        "map": "https://www.google.com/maps/search/?api=1&query=Danjo%20Garan%20Koyasan"
       },
       {
         "time": "~14:30",
-        "name": "Kumano Hongū Taisha & Ōyunohara",
-        "what": "head shrine of the Kumano Sanzan up a cedar-lined stair, then Japan's largest torii (33.9 m) on the river sandbank",
-        "map": "https://maps.google.com/?cid=8104643903319895810"
+        "name": "Tanise no Tsuribashi",
+        "what": "297 m swaying pedestrian suspension bridge high over the Totsukawa — a leg-stretch on the descent down Route 168",
+        "map": "https://www.google.com/maps/search/?api=1&query=Tanise%20no%20Tsuribashi"
       },
       {
-        "time": "~16:30",
-        "name": "Tsuboyu, Yunomine Onsen",
-        "what": "reserve a 30-min slot in the only UNESCO World Heritage bath you can bathe in; boil eggs/veg in the public yuzutsu spring — fun, hands-on for Aslan and a proper traditional soak for Galiya",
-        "map": "https://www.google.com/maps/search/?api=1&query=Tsuboyu%20Yunomine%20Onsen"
+        "time": "~16:00",
+        "name": "Kumano Hongū Taisha & Ōyunohara",
+        "what": "head shrine of the Kumano Sanzan and the giant 33.9 m Ōyunohara torii on the river sandbank, just before Yunomine",
+        "map": "https://www.google.com/maps/search/?api=1&query=Kumano%20Hongu%20Taisha"
       }
     ]
   },
 {
-    "d": 5,
+    "d": 4,
     "id": "kumano-interior",
     "miles": 20,
     "rest": true,
@@ -2608,7 +2552,7 @@ window.DAYS = [
     "title": "Kumano Interior Rest Day",
     "route": "Yunomine / Kawayu (light riding)",
     "desc": "A slow soak-and-stroll day in the sacred interior — the most restful base of the loop. Bathe in the tiny Tsuboyu (the only World Heritage bath you can enter) and boil eggs in the spring; at Kawayu, scoop your own riverbed bath in the warm gravel. Keep the Kumano Kodō to a gentle 30–40 min Hosshinmon-ōji → Hongū taster (easy for a child), and return to the giant Ōyunohara torii at golden hour. Rain plan: the indoor Kumano Hongū Heritage Center and covered ryokan baths.",
-    "luggage": "Nothing to send today — you're in the remote Kumano interior (2-day delivery), so the overnight kit stays on the bikes. Your chain case is already on its way to the Shirahama base, waiting there for your Day-7 arrival.",
+    "luggage": "Nothing to send today — you're in the remote Kumano interior (2-day delivery), so the overnight kit stays on the bikes. Your chain case is already on its way to the Shirahama base, waiting there for your Day-6 arrival.",
     "tags": ["rest", "kid", "onsen", "stay2"],
     "gfrom": "Yunomine Onsen, Wakayama, Japan",
     "gto": "Kumano Hongu Taisha",
@@ -2640,6 +2584,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Hongū village (steps from Kumano Hongū Taisha)",
+        "picks": [
+          {
+            "name": "「sei」 Glass shop · Tea room · Coffee stand",
+            "cuisine": "specialty coffee",
+            "rating": 4.7,
+            "why": "Ruslan & Galiya — a serious hand-pour coffee stand in the pilgrim village (a rare find this deep in the Kii interior); tea and sweets, so Aslan can have a treat too",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=2372018652556039714",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Hongū (near Kumano Hongū Taisha / Ōyunohara)",
@@ -2735,7 +2694,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 6,
+    "d": 5,
     "id": "kumano",
     "miles": 52,
     "dmin": 112,
@@ -2743,15 +2702,15 @@ window.DAYS = [
     "region": "Wakayama",
     "title": "Down to the Sacred Coast",
     "route": "Yunomine → Doro-kyō → Nachi-Katsuura",
-    "desc": "A short, scenic descent from the mountains to the Pacific. Drop along the Kitayama River to Doro-kyō, where a jet-boat threads the glass-clear gorge, then continue to Nachi Falls — Japan's tallest waterfall — beside the vermilion pagoda of Kumano Nachi Taisha, reached up the cobbled Daimon-zaka. With the riding done by mid-afternoon, bank the rest of the day in the water at the tuna port of Katsuura — the seaside cave onsen and fresh maguro.",
+    "desc": "A short, scenic descent from the mountains to the Pacific, opening with the trip's first must-do: drop along the Kitayama River to Doro-kyō — Japan's premier river gorge — and board the traditional river-boat for a ~40-minute glide through glass-clear emerald water beneath 50 m cliffs (a sure-fire thrill for a 6-year-old, so build the morning around it). Continue to Nachi Falls — Japan's tallest waterfall — beside the vermilion pagoda of Kumano Nachi Taisha, reached up the cobbled Daimon-zaka. With the riding done by mid-afternoon, bank the rest of the day in the water at the tuna port of Katsuura — the seaside cave onsen and fresh maguro.",
     "tags": ["ride", "kid"],
     "gfrom": "Yunomine Onsen, Wakayama, Japan",
     "gto": "Kii-Katsuura, Wakayama, Japan",
     "gvia": "Doro-kyo Gorge, Japan",
     "poi": [
       {
-        "name": "Doro-kyō jet-boat",
-        "what": "Glass-clear gorge cruise between sheer cliffs (a kid highlight)",
+        "name": "Doro-kyō river-boat",
+        "what": "⭐ Must-do — a ~40-minute traditional wooden river-boat glide through Japan's premier river gorge: glass-clear emerald water under 50 m cliffs and strange water-carved rocks, the classic Kumano river experience and a top kid thrill (Mar–Nov, closed Mon; reserve ahead). Note: the old Kumano Kotsu waterjet boat was discontinued in 2021 — this traditional river-boat is the current way to ride the gorge.",
         "q": "Doro-kyo Gorge Kitayama",
         "slot": "stop",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Doro_Gorge_Jet_Boat.jpg/960px-Doro_Gorge_Jet_Boat.jpg",
@@ -2793,6 +2752,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Katsuura port",
+        "picks": [
+          {
+            "name": "KUMANO COFFEE BREWERS",
+            "cuisine": "specialty coffee",
+            "rating": 4.9,
+            "why": "Ruslan & Galiya — third-wave hand-brew right in Katsuura port for an afternoon-downtime or pre-departure cup; quiet enough for Aslan with a sweet treat",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=18129618703588605853",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Nachisan (Nachi Falls)",
@@ -2854,9 +2828,9 @@ window.DAYS = [
     "localTodo": [
       {
         "time": "~10:00",
-        "name": "Doro-kyō jet-boat",
+        "name": "Doro-kyō river-boat",
         "what": "glass-clear gorge cruise between sheer cliffs on the Kitayama River — a kid highlight",
-        "map": "https://www.google.com/maps/search/?api=1&query=Dorokyo%20jet%20boat%20Kitayama"
+        "map": "https://www.google.com/maps/search/?api=1&query=Dorokyo%20river%20boat%20Kitayama"
       },
       {
         "time": "~11:30",
@@ -2885,7 +2859,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 7,
+    "d": 6,
     "id": "shirahama",
     "miles": 56,
     "dmin": 111,
@@ -2957,6 +2931,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Shirahama (Engetsu Island seafront)",
+        "picks": [
+          {
+            "name": "QUAYTH (キース)",
+            "cuisine": "specialty coffee",
+            "rating": 4.7,
+            "why": "Galiya & Ruslan — owner-roasted single-origin coffee in a sea-view cafe by Engetsu Island; okara/soymilk donuts & a coffee shake for Aslan",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=11143410138652144840",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Tore-Tore Ichiba / Katata (en route into Shirahama)",
@@ -3058,7 +3047,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 8,
+    "d": 7,
     "id": "shirahama",
     "miles": 15,
     "rest": true,
@@ -3066,7 +3055,7 @@ window.DAYS = [
     "title": "Shirahama Rest Day",
     "route": "Shirahama (light riding)",
     "desc": "The trip's first beach base — and really the kids' big day out: Adventure World, with giant pandas and a drive-through safari (a full, busy day, so it's energetic rather than truly lazy). For a genuinely low-key alternative, just do Shirarahama beach, the sea-edge Sakino-yu onsen and an Engetsu Island sunset. Rain plan: Adventure World runs mostly under cover, or the indoor Kyoto University Shirahama Aquarium.",
-    "luggage": "The base-camp case stays in Osaka storage; your full chain case is here at Shirahama. Forward it onward today, Shirahama → Iya/Oboke — a remote 2-day leg, so it'll be waiting at the Iya ryokan for your Day-10 check-in. Just the overnight bag rides on for the Day-9 ferry.",
+    "luggage": "The base-camp case stays in Osaka storage; your full chain case is here at Shirahama. Forward it onward today, Shirahama → Iya/Oboke — a remote 2-day leg, so it'll be waiting at the Iya ryokan for your Day-9 check-in. Just the overnight bag rides on for the Day-8 ferry.",
     "tags": ["rest", "kid", "onsen", "stay2"],
     "gfrom": "Shirahama, Wakayama, Japan",
     "gto": "Adventure World, Shirahama",
@@ -3099,6 +3088,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Shirahama town",
+        "picks": [
+          {
+            "name": "Kissa Colony",
+            "cuisine": "kissaten",
+            "rating": 5.0,
+            "why": "Ruslan & Galiya — a proper hand-brewed coffee in a cosy old-school kissaten; cake/sweets so Aslan gets a treat too",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=14791673768714025255",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Shirahama beach / Adventure World",
@@ -3194,7 +3198,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 9,
+    "d": 8,
     "id": "tokushima",
     "miles": 91,
     "dmin": 166,
@@ -3244,7 +3248,7 @@ window.DAYS = [
       },
       {
         "name": "Ōtsuka Museum of Art (option)",
-        "what": "Japan's largest exhibition space — 1,000+ full-size ceramic reproductions of the world's masterpieces (the Sistine Chapel ceiling recreated whole, the Mona Lisa, Monet's water lilies) that you can photograph and even touch, which makes it genuinely fun with a 6-year-old. A 2–4 h commitment, so don't force it onto this already-full ferry day — best as a relaxed Day-10 morning before riding into Iya, or the rainy-day fallback. Closed Mondays — check the weekday.",
+        "what": "Japan's largest exhibition space — 1,000+ full-size ceramic reproductions of the world's masterpieces (the Sistine Chapel ceiling recreated whole, the Mona Lisa, Monet's water lilies) that you can photograph and even touch, which makes it genuinely fun with a 6-year-old. A 2–4 h commitment, so don't force it onto this already-full ferry day — best as a relaxed Day-9 morning before riding into Iya, or the rainy-day fallback. Closed Mondays — check the weekday.",
         "q": "Otsuka Museum of Art Naruto",
         "slot": "stop",
         "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Naruto_Whirlpools_taken_4-21-2008.jpg/960px-Naruto_Whirlpools_taken_4-21-2008.jpg",
@@ -3277,6 +3281,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Naruto (next-morning before riding on)",
+        "picks": [
+          {
+            "name": "ナルトロースター by Hirundo Coffee (Naruto Roaster)",
+            "cuisine": "specialty coffee",
+            "rating": 4.8,
+            "why": "Galiya & Ruslan — a genuine small-batch specialty roaster right in central Naruto for a proper morning brew; relaxed enough to bring Aslan for a juice/treat",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=8542385708703777857",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Wakayama City (before the port)",
@@ -3372,7 +3391,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 10,
+    "d": 9,
     "id": "iya",
     "miles": 75,
     "dmin": 125,
@@ -3412,6 +3431,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Tokushima City",
+        "picks": [
+          {
+            "name": "Toyotomi Coffee (豊富珈琲)",
+            "cuisine": "specialty coffee",
+            "rating": 4.5,
+            "why": "Ruslan & Galiya — Tokushima's own self-roasting specialty house for a proper cup before the hills; cake & juice on hand for Aslan",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=13239288018006348160",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Oboke Gorge",
@@ -3507,7 +3541,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 11,
+    "d": 10,
     "id": "iya",
     "miles": 25,
     "rest": true,
@@ -3515,7 +3549,7 @@ window.DAYS = [
     "title": "Iya Rest Day",
     "route": "Iya Valley (light riding)",
     "desc": "Slow mountain time far from any city: the Kazurabashi vine bridge (hold a small child's hand on the slatted gaps), the peeing-boy statue viewpoint, and an Oboke Gorge sightseeing boat, with the scarecrow village of Nagoro a deeper optional drive. Downtime is the riverside onsen ryokan. Rain plan: the indoor Lapis Ōboke rock-and-yōkai museum and a hearth dekomawashi lunch.",
-    "luggage": "The leapfrog node: forward the chain case today from the Iya ryokan desk to the Dōgo/Matsuyama hotel for the Day-15 check-in (allow 2 days out of remote Iya). The chain deliberately skips the Shimanto rest base — carry the soft overnight bag through Kōchi (Day 12) and both Shimanto nights, then rejoin the full case at Dōgo.",
+    "luggage": "The leapfrog node: forward the chain case today from the Iya ryokan desk to the Dōgo/Matsuyama hotel for the Day-14 check-in (allow 2 days out of remote Iya). The chain deliberately skips the Shimanto rest base — carry the soft overnight bag through Kōchi (Day 11) and both Shimanto nights, then rejoin the full case at Dōgo.",
     "tags": ["rest", "kid", "onsen", "stay2"],
     "gfrom": "Oboke, Tokushima, Japan",
     "gto": "Iya Kazurabashi, Japan",
@@ -3557,6 +3591,21 @@ window.DAYS = [
     ],
     "eats": [
       {
+        "slot": "coffee",
+        "area": "Ōboke (near the gorge station)",
+        "picks": [
+          {
+            "name": "hanan coffee (ハナンコーヒー)",
+            "cuisine": "specialty coffee",
+            "rating": 4.9,
+            "why": "Ruslan/Galiya — a genuine self-roast specialty cafe deep in the gorge, the best brew for miles; pre-boat morning stop, cake/soft drinks keep Aslan happy",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=2482114103176376026",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Coffee_Pour_Over_Setup.jpg/960px-Coffee_Pour_Over_Setup.jpg"
+          }
+        ]
+      },
+      {
         "slot": "lunch",
         "area": "Iya Valley — near the Kazurabashi vine bridge",
         "picks": [
@@ -3590,7 +3639,7 @@ window.DAYS = [
         ]
       },
       {
-        "slot": "coffee",
+        "slot": "snack",
         "area": "Michi-no-eki Ōboke (gorge roadside station)",
         "picks": [
           {
@@ -3672,7 +3721,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 12,
+    "d": 11,
     "id": "kochi",
     "miles": 75,
     "dmin": 180,
@@ -3722,6 +3771,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Central Kōchi (Ozuchō)",
+        "picks": [
+          {
+            "name": "GRAYGE COFFEE ROASTER",
+            "cuisine": "specialty coffee",
+            "rating": 4.4,
+            "why": "Ruslan & Galiya — a proper small-batch Kōchi roaster for a single-origin pour-over after arrival; relaxed enough for a juice or treat for Aslan",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=5093153783662767099",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Hirome Market, central Kōchi",
@@ -3817,7 +3881,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 13,
+    "d": 12,
     "id": "shimanto",
     "miles": 128,
     "dmin": 273,
@@ -3826,7 +3890,7 @@ window.DAYS = [
     "title": "The Clear River",
     "route": "Kochi → Shimanto River",
     "desc": "The longest riding day of the loop — but well inside the comfort cap and bracketed by rest. Follow the Shimanto, Japan's last free-flowing clear river, past its low submersible bridges, after a stop at the famously translucent Niyodo Blue.",
-    "luggage": "Ride with the overnight bag only. Shimanto is leapfrogged — deep rural Shikoku is 2-day delivery — so your chain case is already in transit from Iya to Dōgo (arriving Day 15) and you travel light through both Shimanto nights.",
+    "luggage": "Ride with the overnight bag only. Shimanto is leapfrogged — deep rural Shikoku is 2-day delivery — so your chain case is already in transit from Iya to Dōgo (arriving Day 14) and you travel light through both Shimanto nights.",
     "tags": ["ride", "kid"],
     "gfrom": "Kochi, Japan",
     "gto": "Shimanto, Kochi, Japan",
@@ -3875,6 +3939,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Kochi (departure)",
+        "picks": [
+          {
+            "name": "GRAYGE COFFEE ROASTER",
+            "cuisine": "specialty coffee",
+            "rating": 4.4,
+            "why": "Ruslan & Galiya — central-Kochi third-wave roaster for a proper morning cup before the loop's longest ride; mellow drinks/juice for Aslan",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=5093153783662767099",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Susaki",
@@ -3957,7 +4036,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 14,
+    "d": 13,
     "id": "shimanto",
     "miles": 20,
     "rest": true,
@@ -3997,6 +4076,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Sada, by the sinking bridge",
+        "picks": [
+          {
+            "name": "hotori coffee",
+            "cuisine": "specialty coffee",
+            "rating": 4.5,
+            "why": "Ruslan & Galiya — a riverside specialty cafe right by the Sada chinkabashi; pair with the afternoon cycle. Cakes/juice for Aslan.",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=14204901372440090147",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Shimanto riverside (Yamachi / Sada bend)",
@@ -4083,7 +4177,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 15,
+    "d": 14,
     "id": "dogo",
     "miles": 117,
     "dmin": 210,
@@ -4092,7 +4186,7 @@ window.DAYS = [
     "title": "Castles & Old Towns",
     "route": "Shimanto → Uwajima / Uchiko → Matsuyama",
     "desc": "Uwajima Castle and Uchiko's preserved merchant streets en route up the Ehime coast to Matsuyama and Dōgo Onsen.",
-    "luggage": "Roll into the Dōgo/Matsuyama 2-night base, where your chain case (forwarded from Iya on Day 11) is waiting at the front desk. Confirm it's held under your name at check-in and unpack the full suitcase for two nights.",
+    "luggage": "Roll into the Dōgo/Matsuyama 2-night base, where your chain case (forwarded from Iya on Day 10) is waiting at the front desk. Confirm it's held under your name at check-in and unpack the full suitcase for two nights.",
     "tags": ["ride", "kid", "onsen"],
     "gfrom": "Shimanto, Kochi, Japan",
     "gto": "Matsuyama, Ehime, Japan",
@@ -4132,6 +4226,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Central Matsuyama (Nibanchō / Ōkaidō)",
+        "picks": [
+          {
+            "name": "SPOT COFFEE STAND",
+            "cuisine": "specialty coffee",
+            "rating": 4.9,
+            "why": "Galiya & Ruslan — Matsuyama's standout specialty espresso/pour-over (366 reviews); sweet milk drinks for Aslan too",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=5681671833040133501",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Uwajima (Marunouchi, near the castle)",
@@ -4227,7 +4336,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 16,
+    "d": 15,
     "id": "dogo",
     "miles": 10,
     "rest": true,
@@ -4235,7 +4344,7 @@ window.DAYS = [
     "title": "Dōgo Onsen Rest Day",
     "route": "Matsuyama (light riding)",
     "desc": "Matsuyama Castle by ropeway, then the historic Dōgo Onsen bathhouse. Classic onsen evening.",
-    "luggage": "Next chain node, an easy one — Matsuyama → Onomichi is a clean city-to-city next-day leg. Forward the chain case from the Dōgo hotel today before the morning courier cutoff, addressed to the Onomichi/Setoda hotel for the Day-17 check-in. The base-camp case remains in Osaka.",
+    "luggage": "Next chain node, an easy one — Matsuyama → Onomichi is a clean city-to-city next-day leg. Forward the chain case from the Dōgo hotel today before the morning courier cutoff, addressed to the Onomichi/Setoda hotel for the Day-16 check-in. The base-camp case remains in Osaka.",
     "tags": ["rest", "onsen", "kid", "stay2"],
     "gfrom": "Matsuyama, Ehime, Japan",
     "gto": "Dogo Onsen, Matsuyama, Japan",
@@ -4277,6 +4386,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Nibanchō / city centre (near Matsuyama Castle)",
+        "picks": [
+          {
+            "name": "SPOT COFFEE STAND",
+            "cuisine": "specialty coffee",
+            "rating": 4.9,
+            "why": "Ruslan & Galiya — Matsuyama's standout specialty stand, a perfect pre-castle morning cup; milky lattes for Galiya and Aslan can share a sweet treat",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=5681671833040133501",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Ōkaidō / city centre (near Matsuyama Castle)",
@@ -4363,7 +4487,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 17,
+    "d": 16,
     "id": "onomichi",
     "miles": 86,
     "dmin": 193,
@@ -4372,7 +4496,7 @@ window.DAYS = [
     "title": "Shimanami Kaidō",
     "route": "Matsuyama → Shimanami → Onomichi / Setoda",
     "desc": "The famous island-hopping bridge route across the Seto Inland Sea — gentle, scenic, unforgettable, and a highlight ride for the whole family.",
-    "luggage": "Ride the overnight bag over the bridges into the Onomichi/Setoda 2-night base, where your chain case (forwarded from Dōgo on Day 16) is waiting at the front desk. Confirm it's held under your name and unpack the full suitcase for two nights.",
+    "luggage": "Ride the overnight bag over the bridges into the Onomichi/Setoda 2-night base, where your chain case (forwarded from Dōgo on Day 15) is waiting at the front desk. Confirm it's held under your name and unpack the full suitcase for two nights.",
     "tags": ["ride", "kid"],
     "gfrom": "Matsuyama, Ehime, Japan",
     "gto": "Onomichi, Hiroshima, Japan",
@@ -4416,16 +4540,16 @@ window.DAYS = [
     "eats": [
       {
         "slot": "coffee",
-        "area": "Kirosan Observatory, Ōshima",
+        "area": "Onomichi (shōtengai arcade)",
         "picks": [
           {
-            "name": "Kirosan Observatory Park",
-            "cuisine": "café / bridge-view rest stop",
-            "rating": 4.4,
-            "why": "Ruslan & all — coffee and the best Shimanami panorama mid-morning",
+            "name": "POUR specialty coffee",
+            "cuisine": "specialty coffee",
+            "rating": 4.7,
+            "why": "Galiya & Ruslan — Onomichi's best third-wave roaster in the arcade; pour-overs and espresso, with sweets/juice for Aslan",
             "kid": false,
-            "map": "https://www.google.com/maps/search/?api=1&query=Kirosan%20Observatory%20Park",
-            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Beef_curry_rice_003.jpg/960px-Beef_curry_rice_003.jpg"
+            "map": "https://maps.google.com/?cid=7090208965271270685",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
           }
         ]
       },
@@ -4525,7 +4649,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 18,
+    "d": 17,
     "id": "onomichi",
     "miles": 25,
     "rest": true,
@@ -4533,7 +4657,7 @@ window.DAYS = [
     "title": "Island Rest Day",
     "route": "Setoda / Onomichi (light riding)",
     "desc": "Easy pace: Setoda's Kōsanji temple and marble Hill of Hope, lemon groves and gelato, then Onomichi's hillside lanes and cat alley — take the Senkō-ji ropeway up and wander down rather than climbing the full temple stair. Downtime at the waterfront cafés. Rain plan: the covered Onomichi shōtengai arcade and the Onomichi U2 cycle-and-harbour complex.",
-    "luggage": "Closing the loop: forward the chain case from Onomichi straight back to the Osaka end hotel today, held under your name, so it rejoins the base-camp case ahead of your Day-22 return. Ride the final three single-night days (Kurashiki → Kobe → Awaji) on just the overnight bag.",
+    "luggage": "Closing the loop: forward the chain case from Onomichi straight back to the Osaka end hotel today, held under your name, so it rejoins the base-camp case ahead of your Day-21 return. Ride the final three single-night days (Kurashiki → Kobe → Awaji) on just the overnight bag.",
     "tags": ["rest", "kid", "stay2"],
     "gfrom": "Onomichi, Hiroshima, Japan",
     "gto": "Setoda, Ikuchijima, Japan",
@@ -4583,6 +4707,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Onomichi (Tsuchidō arcade)",
+        "picks": [
+          {
+            "name": "POUR specialty coffee",
+            "cuisine": "specialty coffee",
+            "rating": 4.7,
+            "why": "Galiya & Ruslan — Onomichi's flagship third-wave roaster in the shōtengai arcade; juice and cake for Aslan, great before the morning ride or as an afternoon U2/arcade stop",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=7090208965271270685",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "snack",
         "area": "Setoda, Ikuchijima",
@@ -4703,7 +4842,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 19,
+    "d": 18,
     "id": "kurashiki",
     "miles": 90,
     "dmin": 195,
@@ -4752,6 +4891,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Kurashiki Bikan",
+        "picks": [
+          {
+            "name": "Kurashiki Coffee-kan (倉敷珈琲館)",
+            "cuisine": "kissaten",
+            "rating": 4.6,
+            "why": "Galiya & Ruslan — a classic siphon-brewed kissaten right on the canal; cakes & cold milk for Aslan",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=65869878438024158",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Tomonoura",
@@ -4847,7 +5001,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 20,
+    "d": 19,
     "id": "himeji",
     "miles": 105,
     "dmin": 169,
@@ -4879,6 +5033,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Kobe (Motomachi / Chuo Ward)",
+        "picks": [
+          {
+            "name": "TAOCA COFFEE Kobe Motomachi",
+            "cuisine": "specialty coffee",
+            "rating": 4.8,
+            "why": "Galiya & Ruslan — Kobe's marquee specialty roaster; pour-overs and house cakes (a slice/juice for Aslan)",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=9385516540078879431",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Himeji Castle (Honmachi)",
@@ -4968,7 +5137,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 21,
+    "d": 20,
     "id": "awaji",
     "miles": 64,
     "dmin": 105,
@@ -5009,6 +5178,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Kobe — Motomachi (near Meriken Park, before the museum)",
+        "picks": [
+          {
+            "name": "TAOCA COFFEE Kobe Motomachi",
+            "cuisine": "specialty coffee",
+            "rating": 4.8,
+            "why": "Galiya & Ruslan — Kobe's beloved specialty roaster for a top pour-over/latte; quiet morning stop a short walk from Meriken Park (cookies/cake for Aslan)",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=9385516540078879431",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "North Awaji (Iwaya / Shizuki, near the bridge)",
@@ -5104,7 +5288,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 22,
+    "d": 21,
     "id": "osaka",
     "miles": 15,
     "rest": true,
@@ -5112,7 +5296,7 @@ window.DAYS = [
     "title": "Osaka & Bike Return",
     "route": "Osaka (light riding)",
     "desc": "Return the motorcycles at the Suita base and celebrate the journey — a relaxed Osaka recovery day before tomorrow's big USJ outing. Osaka Castle and park, and the food streets of Dōtonbori; the Kaiyukan whale-shark aquarium is the calm option if you'd rather save energy for Super Nintendo World.",
-    "luggage": "The loop is closed — both cases are back in Osaka: the base-camp case from left-luggage and the chain case forwarded back from Onomichi (Day 18). Reunite and repack, then choose the homeward move — takkyūbin both ahead to the Tokyo departure hotel or Haneda (send Day 22–23, before the morning cutoff), or carry them on the Day-24 train.",
+    "luggage": "The loop is closed — both cases are back in Osaka: the base-camp case from left-luggage and the chain case forwarded back from Onomichi (Day 17). Reunite and repack, then choose the homeward move — takkyūbin both ahead to the Tokyo departure hotel or Haneda (send Day 21–22, before the morning cutoff), or carry them on the Day-23 train.",
     "tags": ["rest", "kid", "stay2"],
     "gfrom": "Suita, Osaka",
     "gto": "Osaka Aquarium Kaiyukan",
@@ -5181,6 +5365,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Shinsaibashi (near Namba)",
+        "picks": [
+          {
+            "name": "LiLo Coffee Roasters",
+            "cuisine": "specialty coffee",
+            "rating": 4.8,
+            "why": "Ruslan & Galiya — Osaka's top in-house roaster (huge single-origin lineup, espresso & pour-over) a short walk from Namba; sweet iced lattes and cocoa keep Aslan happy",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=16291659530834990214",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Namba / Den Den Town",
@@ -5288,7 +5487,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 23,
+    "d": 22,
     "id": "osaka",
     "miles": 0,
     "rest": true,
@@ -5330,6 +5529,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Osaka Port / bayfront (near Kaiyukan, across the bay from USJ)",
+        "picks": [
+          {
+            "name": "9 Borden Coffee",
+            "cuisine": "specialty coffee",
+            "rating": 4.6,
+            "why": "Ruslan & Galiya — a proper bayfront specialty roaster for a serious morning cup; relaxed cafe with cake/juice on hand for Aslan",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=7634926797592378582",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Universal CityWalk Osaka (just outside the park gate)",
@@ -5401,7 +5615,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 24,
+    "d": 23,
     "id": "tokyo",
     "miles": 0,
     "rest": true,
@@ -5443,6 +5657,21 @@ window.DAYS = [
       }
     ],
     "eats": [
+      {
+        "slot": "coffee",
+        "area": "Higashiyama, Kyoto",
+        "picks": [
+          {
+            "name": "% ARABICA Kyoto Higashiyama",
+            "cuisine": "specialty coffee",
+            "rating": 4.4,
+            "why": "Galiya & Ruslan — Kyoto's marquee third-wave roaster, world-class lattes near Yasaka Pagoda; warm milk/juice keeps Aslan happy on a last Kyoto morning",
+            "kid": false,
+            "map": "https://maps.google.com/?cid=5927226485630185275",
+            "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"
+          }
+        ]
+      },
       {
         "slot": "lunch",
         "area": "Fushimi Inari / Kyoto Station",
@@ -5538,7 +5767,7 @@ window.DAYS = [
     ]
   },
 {
-    "d": 25,
+    "d": 24,
     "id": "tokyo",
     "miles": 0,
     "rest": true,
@@ -5565,17 +5794,17 @@ window.DAYS = [
 ];
 
 /* Themed 'Ramen Trail' foodie thread (sourced from tour/00-overview.md);
-   rendered as a section on index.html and a 🍜 flag on day.html days 9/13/18. */
+   rendered as a section on index.html and a 🍜 flag on day.html days 8/12/17. */
 window.RAMEN_TRAIL = {
   "title": "The Ramen Trail",
   "subtitle": "a foodie thread for Galiya",
   "intro": "The loop happens to thread <b>four of Japan's famous regional ramen cities</b>, so we make it an explicit, celebrated thread for <b>Galiya</b> (the foodie, who loves ramen/noodles above all — see 00-family.md). Each is a genuinely <i>different</i> local bowl, eaten where it's made, and each falls on a day already on the route — no detours required. All shops below were verified operating (Google Places, June 2026); links are key-free Google Maps.",
-  "note": "<b>Notes & honesty:</b> the famous <b>Shūkaen (朱華園, est. 1947)</b> — for decades <i>the</i> Onomichi-ramen marquee — <b>closed permanently in 2019</b>; its exact flavour is carried on by the founder's wife and daughter at the successor shop <b>Shu (朱)</b>, so we point there and to the classic <b>Tsutafuji</b> instead. For <b>Aslan (6)</b>, every stop has a kid-simple out — a plain bowl (no raw egg / pork belly), a side of rice, or gyoza. The <b>Day-9 lunch + dinner are a single \"two-ramen\" day</b>, so pace appetites accordingly.",
+  "note": "<b>Notes & honesty:</b> the famous <b>Shūkaen (朱華園, est. 1947)</b> — for decades <i>the</i> Onomichi-ramen marquee — <b>closed permanently in 2019</b>; its exact flavour is carried on by the founder's wife and daughter at the successor shop <b>Shu (朱)</b>, so we point there and to the classic <b>Tsutafuji</b> instead. For <b>Aslan (6)</b>, every stop has a kid-simple out — a plain bowl (no raw egg / pork belly), a side of rice, or gyoza. The <b>Day-8 lunch + dinner are a single \"two-ramen\" day</b>, so pace appetites accordingly.",
   "bookend": "<b>Bookend & off-route awareness:</b> the Tokyo bookend (Days 0–1) is a chance to add classic <b>Tokyo shoyu ramen</b> as an optional fifth bowl. Japan's other headline styles — <b>Sapporo miso, Hakata/Fukuoka tonkotsu, Kitakata, Kishimen</b> — are <b>off this Osaka loop</b> (Hokkaidō and Kyūshū aren't on the route), so they're flagged for awareness, not promised.",
   "stops": [
     {
       "n": 1,
-      "day": 9,
+      "day": 8,
       "slot": "lunch",
       "city": "Wakayama City",
       "pref": "Wakayama",
@@ -5591,7 +5820,7 @@ window.RAMEN_TRAIL = {
     },
     {
       "n": 2,
-      "day": 9,
+      "day": 8,
       "slot": "dinner",
       "city": "Tokushima City",
       "pref": "Tokushima",
@@ -5605,7 +5834,7 @@ window.RAMEN_TRAIL = {
     },
     {
       "n": 3,
-      "day": 13,
+      "day": 12,
       "slot": "lunch",
       "city": "Susaki",
       "pref": "Kōchi",
@@ -5621,7 +5850,7 @@ window.RAMEN_TRAIL = {
     },
     {
       "n": 4,
-      "day": 18,
+      "day": 17,
       "slot": "rest-day anchor",
       "city": "Onomichi",
       "pref": "Hiroshima",
@@ -5664,7 +5893,7 @@ window.CHECKLIST = [
       "Get the explicit 22-day quote for both bikes + the deposit/hold amount in writing",
       "Confirm passenger riding is allowed — including a CHILD passenger on the Africa Twin",
       "Confirm large-bike + sub-500cc availability for your exact dates",
-      "Confirm ETC card per bike (expressway tolls — Himeji/Kobe Day 20, Akashi Kaikyō bridge Day 21)",
+      "Confirm ETC card per bike (expressway tolls — Himeji/Kobe Day 19, Akashi Kaikyō bridge Day 20)",
       "Panniers/top-box fitted or allowed; ask about the optional support-truck add-on for flight-day bags",
       "Helmets & gear (rent or bring), intercoms paired"
     ]
@@ -5690,9 +5919,9 @@ window.CHECKLIST = [
       "Book round-trip nonstop SEA ⇄ Tokyo (prefer Haneda for the train connection)",
       "Buy point-to-point Nozomi Shinkansen tickets Tokyo ⇄ Shin-Osaka (reserved, via smartEX) — not a JR Pass",
       "Keikyu (Haneda→Shinagawa) / N'EX (Narita) for the airport hops",
-      "Three Tokyo hotel nights near a Shinkansen station (Day 0 arrival, Day 1 museum day, Day 24 departure)",
+      "Three Tokyo hotel nights near a Shinkansen station (Day 0 arrival, Day 1 museum day, Day 23 departure)",
       "Book the Tokyo museum-day tickets early — Ghibli Museum (Lawson, ~a month ahead, sells out fast) and a timed teamLab Planets slot",
-      "Book the Day-23 USJ dated park tickets + a Super Nintendo World Area Timed-Entry or Express Pass",
+      "Book the Day-22 USJ dated park tickets + a Super Nintendo World Area Timed-Entry or Express Pass",
       "Arrange takkyūbin luggage forwarding Tokyo→Osaka and Osaka→Tokyo",
       "IC card (Suica/ICOCA) for trains on non-riding days"
     ]
@@ -5701,10 +5930,10 @@ window.CHECKLIST = [
     "sec": "Lodging",
     "icon": "🏨",
     "items": [
-      "Book all hotels/ryokan — the Kōyasan shukubō night and the six 2-night bases first (Kumano interior, Shirahama, Iya, Shimanto, Dōgo, Onomichi)",
-      "Keep the Kii-interior nights (Kōyasan / Hongū-Yunomine / Nachi) cancellable — Routes 168/311 can close after heavy rain",
+      "Book all hotels/ryokan — the six 2-night bases first (Kumano interior, Shirahama, Iya, Shimanto, Dōgo, Onomichi)",
+      "Keep the Kii-interior nights (Hongū-Yunomine / Nachi) cancellable — Routes 168/311 can close after heavy rain",
       "Confirm secure motorcycle parking at every property (narrow onsen-hamlet lanes — ask where to leave the bikes)",
-      "Reserve a Tsuboyu bath slot at Yunomine ahead of Day 5",
+      "Reserve a Tsuboyu bath slot at Yunomine ahead of Day 4",
       "Family room / beds; private or family bath where wanted; dinner included at remote inns",
       "Laundry access every 3–4 days"
     ]
@@ -5713,10 +5942,10 @@ window.CHECKLIST = [
     "sec": "Ferry & timed stops",
     "icon": "⛴️",
     "items": [
-      "Nankai Ferry (Day 9, Wakayama→Tokushima) is first-come, first-served for motorcycles — no reservation; arrive 30+ min early (deck ~20 bikes)",
+      "Nankai Ferry (Day 8, Wakayama→Tokushima) is first-come, first-served for motorcycles — no reservation; arrive 30+ min early (deck ~20 bikes)",
       "Check the day's Nankai timetable (~8 sailings each way)",
       "Time the Naruto whirlpools to a spring-tide / slack window (full or new moon)",
-      "Check road & river status daily in the typhoon-exposed Kii interior (Days 3–9)"
+      "Check road & river status daily in the typhoon-exposed Kii interior (Days 3–8)"
     ]
   },
   {
@@ -5907,26 +6136,25 @@ window.DAYART = {
   "1": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Brooklyn_Museum_-_Nihonbashi_-_Utagawa_Hiroshige_%28Ando%29_-_overall.jpg",
   "2": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Hokusai42_fuji-lake.jpg/1280px-Hokusai42_fuji-lake.jpg",
   "3": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Hiroshige%2C_A_family_in_a_misty_landscape.jpg/1280px-Hiroshige%2C_A_family_in_a_misty_landscape.jpg",
-  "4": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Hiroshige%2C_A_family_in_a_misty_landscape.jpg/1280px-Hiroshige%2C_A_family_in_a_misty_landscape.jpg",
+  "4": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Falls_of_Kirifuri_at_Mt._Kurokami%2C_Shimotsuke_Province_LACMA_M.2011.135.2_%281_of_2%29.jpg",
   "5": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Falls_of_Kirifuri_at_Mt._Kurokami%2C_Shimotsuke_Province_LACMA_M.2011.135.2_%281_of_2%29.jpg",
-  "6": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Falls_of_Kirifuri_at_Mt._Kurokami%2C_Shimotsuke_Province_LACMA_M.2011.135.2_%281_of_2%29.jpg",
-  "7": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Flickr_-_%E2%80%A6trialsanderrors_-_Hiroshige%2C_The_coast_at_Hota_in_Awa_province%2C_1858.jpg/1280px-Flickr_-_%E2%80%A6trialsanderrors_-_Hiroshige%2C_The_coast_at_Hota_in_Awa_province%2C_1858.jpg",
-  "8": "https://upload.wikimedia.org/wikipedia/commons/c/ca/%27The_Great_Wave_off_Kanagawa%27_by_Hokusai%2C_Honolulu_Museum_of_Art.jpg",
-  "9": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Awa%2C_Naruto_Whirlpools%2C_ca_1855.jpg/1280px-Awa%2C_Naruto_Whirlpools%2C_ca_1855.jpg",
-  "10": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg/1280px-Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg",
-  "11": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Hiroshige%2C_A_family_in_a_misty_landscape.jpg/1280px-Hiroshige%2C_A_family_in_a_misty_landscape.jpg",
-  "12": "https://upload.wikimedia.org/wikipedia/commons/7/7e/58_Tosa.jpg",
+  "6": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Flickr_-_%E2%80%A6trialsanderrors_-_Hiroshige%2C_The_coast_at_Hota_in_Awa_province%2C_1858.jpg/1280px-Flickr_-_%E2%80%A6trialsanderrors_-_Hiroshige%2C_The_coast_at_Hota_in_Awa_province%2C_1858.jpg",
+  "7": "https://upload.wikimedia.org/wikipedia/commons/c/ca/%27The_Great_Wave_off_Kanagawa%27_by_Hokusai%2C_Honolulu_Museum_of_Art.jpg",
+  "8": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Awa%2C_Naruto_Whirlpools%2C_ca_1855.jpg/1280px-Awa%2C_Naruto_Whirlpools%2C_ca_1855.jpg",
+  "9": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg/1280px-Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg",
+  "10": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Hiroshige%2C_A_family_in_a_misty_landscape.jpg/1280px-Hiroshige%2C_A_family_in_a_misty_landscape.jpg",
+  "11": "https://upload.wikimedia.org/wikipedia/commons/7/7e/58_Tosa.jpg",
+  "12": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg/1280px-Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg",
   "13": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg/1280px-Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg",
-  "14": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg/1280px-Brooklyn_Museum_-_Kajikazawa_in_Kai_Province_-_Katsushika_Hokusai.jpg",
+  "14": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Hiroshige_Iyo_Saij%C5%8D.jpg",
   "15": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Hiroshige_Iyo_Saij%C5%8D.jpg",
-  "16": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Hiroshige_Iyo_Saij%C5%8D.jpg",
-  "17": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Brooklyn_Museum_-_Itsukushima_in_Aki_Province_-_Utagawa_Hiroshige_%28Ando%29.jpg/1280px-Brooklyn_Museum_-_Itsukushima_in_Aki_Province_-_Utagawa_Hiroshige_%28Ando%29.jpg",
-  "18": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Bingo_Province%2C_Abuto%2C_Kannon_Temple_%285765891938%29.jpg",
-  "19": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Bizen_Province%2C_Tanokuchi_Coast%2C_Yugasan_torii_%285765891374%29.jpg/1280px-Bizen_Province%2C_Tanokuchi_Coast%2C_Yugasan_torii_%285765891374%29.jpg",
-  "20": "https://upload.wikimedia.org/wikipedia/commons/a/ad/45_-_Harima_Province%2C_Maiko_Beach%2C_from_the_series_Famous_Places_in_the_Sixty-odd_Provinces%2C_MFAB_11.26243.jpg",
+  "16": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Brooklyn_Museum_-_Itsukushima_in_Aki_Province_-_Utagawa_Hiroshige_%28Ando%29.jpg/1280px-Brooklyn_Museum_-_Itsukushima_in_Aki_Province_-_Utagawa_Hiroshige_%28Ando%29.jpg",
+  "17": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Bingo_Province%2C_Abuto%2C_Kannon_Temple_%285765891938%29.jpg",
+  "18": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Bizen_Province%2C_Tanokuchi_Coast%2C_Yugasan_torii_%285765891374%29.jpg/1280px-Bizen_Province%2C_Tanokuchi_Coast%2C_Yugasan_torii_%285765891374%29.jpg",
+  "19": "https://upload.wikimedia.org/wikipedia/commons/a/ad/45_-_Harima_Province%2C_Maiko_Beach%2C_from_the_series_Famous_Places_in_the_Sixty-odd_Provinces%2C_MFAB_11.26243.jpg",
+  "20": "https://upload.wikimedia.org/wikipedia/commons/c/ce/05_Settsu_n.jpg",
   "21": "https://upload.wikimedia.org/wikipedia/commons/c/ce/05_Settsu_n.jpg",
   "22": "https://upload.wikimedia.org/wikipedia/commons/c/ce/05_Settsu_n.jpg",
-  "23": "https://upload.wikimedia.org/wikipedia/commons/c/ce/05_Settsu_n.jpg",
-  "24": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hiroshige-53-Stations-Hoeido-55-Kyoto-MFA-01.jpg/1280px-Hiroshige-53-Stations-Hoeido-55-Kyoto-MFA-01.jpg",
-  "25": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Brooklyn_Museum_-_Nihonbashi_-_Utagawa_Hiroshige_%28Ando%29_-_overall.jpg"
+  "23": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Hiroshige-53-Stations-Hoeido-55-Kyoto-MFA-01.jpg/1280px-Hiroshige-53-Stations-Hoeido-55-Kyoto-MFA-01.jpg",
+  "24": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Brooklyn_Museum_-_Nihonbashi_-_Utagawa_Hiroshige_%28Ando%29_-_overall.jpg"
 };

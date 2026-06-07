@@ -1,50 +1,57 @@
 ```json
 {
   "d": 16,
-  "title": "Dōgo Onsen Rest Day",
-  "overnight": "Matsuyama, Ehime",
-  "schedule": "relaxed morning · ~10:00 Matsuyama Castle by ropeway · lunch ~12:30 near Ōkaidō (city centre) · afternoon Dōgo Haikara-dōri arcade & Botchan tram · ~16:30 Dōgo Onsen Honkan soak · dinner ~18:30 in the Dōgo Onsen quarter",
+  "title": "Shimanami Kaidō",
+  "overnight": "Onomichi / Setoda, Hiroshima",
+  "schedule": "depart Matsuyama ~09:00 · coffee ~10:30 Kirosan Observatory · lunch ~12:30 on Ōmishima near Ōyamazumi Shrine · gelato & Kōsan-ji at Setoda mid-afternoon · arrive Onomichi ~17:00 · dinner in Onomichi (3h13m riding over the bridges)",
   "todo": [
-    {"time":"~10:00","name":"Matsuyama Castle","what":"ropeway or single-seat chairlift up Katsuyama hill to a rare hilltop original keep — the lift is a kid hit","map":"https://www.google.com/maps/search/?api=1&query=Matsuyama%20Castle%20Ehime"},
-    {"time":"~14:00","name":"Dōgo Haikara-dōri arcade","what":"covered shopping street of onsen sweets, mikan juice and the Botchan Karakuri clock on the hour — easy, all-weather","map":"https://www.google.com/maps/search/?api=1&query=Dogo%20Haikara-dori%20Matsuyama"},
-    {"time":"~15:00","name":"Botchan Ressha","what":"ride the coal-black steam-style heritage tram between the city centre and Dōgo","map":"https://www.google.com/maps/search/?api=1&query=Botchan%20Ressha%20Dogo%20Onsen%20Station"},
-    {"time":"~16:30","name":"Dōgo Onsen Honkan","what":"soak in the grand 1894 wooden bathhouse with its Spirited Away resonance; keep Aslan's soak short, or book Asuka-no-Yu's private family bath","map":"https://www.google.com/maps/search/?api=1&query=Dogo%20Onsen%20Honkan"}
+    {"time":"~09:30","name":"Imabari Castle","what":"sea-water-moat castle at the foot of the bridges; quick photo stop before crossing","map":"https://www.google.com/maps/search/?api=1&query=Imabari%20Castle"},
+    {"time":"~10:30","name":"Kirosan Observatory Park","what":"panorama café over the Kurushima-Kaikyō triple suspension bridge — coffee with the view","map":"https://www.google.com/maps/search/?api=1&query=Kirosan%20Observatory%20Park"},
+    {"time":"~12:00","name":"Ōyamazumi Shrine, Ōmishima","what":"ancient samurai-armour shrine in a giant camphor grove — wander before lunch","map":"https://www.google.com/maps/search/?api=1&query=Oyamazumi%20Shrine"},
+    {"time":"~14:30","name":"Setoda, Ikuchijima","what":"lemon gelato on the waterfront and the gilt-and-marble Kōsan-ji temple with the white-marble Hill of Hope","map":"https://www.google.com/maps/search/?api=1&query=Kosanji%20Temple%20Setoda"}
   ],
   "meals": [
-    {"slot":"lunch","area":"Ōkaidō / city centre (near Matsuyama Castle)",
-     "picks":[
-       {"name":"Taimeshi Motoyama (鯛めし本山)","cuisine":"Matsuyama taimeshi — sea bream cooked over rice","rating":4.6,"why":"Galiya — Matsuyama's signature sea-bream rice at a packed local favourite","kid":false,"map":"https://maps.google.com/?cid=9133809393906596874","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Taimeshi.jpg/960px-Taimeshi.jpg"},
-       {"name":"Nabeyaki Udon Yuian (鍋焼うどん結庵)","cuisine":"nabeyaki udon — Matsuyama's sweet soft udon in a clay pot","rating":4.5,"why":"Aslan — soft mild noodles in a little pot, the easy local bowl he'll actually eat","kid":true,"map":"https://maps.google.com/?cid=16769157094995214182","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Nabeyaki_udon.jpg/960px-Nabeyaki_udon.jpg"}
-     ]},
-    {"slot":"dinner","area":"Dōgo Onsen quarter",
-     "picks":[
-       {"name":"Men-ya Niikura (麺や 新倉)","cuisine":"ramen","rating":4.3,"why":"Galiya — a well-loved bowl a short walk from the Honkan after the soak","kid":false,"map":"https://maps.google.com/?cid=113848077267614461","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"},
-       {"name":"Sushiemon Dōgo (宇和島グルメ寿司 すしえもん 道後店)","cuisine":"conveyor-belt sushi","rating":4.4,"why":"Aslan — pick-your-own conveyor plates (egg, plain rice, cooked picks); Galiya gets fresh local fish too","kid":true,"map":"https://maps.google.com/?cid=5710359260940265591","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Kaiten_sushi_%282131921293%29.jpg/960px-Kaiten_sushi_%282131921293%29.jpg"},
-       {"name":"Isshinmaru (一心丸)","cuisine":"izakaya — Ehime seafood & jakoten","rating":4.5,"why":"Galiya & Ruslan — local jakoten fish cakes and Setouchi sashimi right in the Dōgo quarter","kid":false,"map":"https://maps.google.com/?cid=7147719788954986805","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Serving_jakoten_in_Dogo.jpg/960px-Serving_jakoten_in_Dogo.jpg"}
-     ]}
+    {"slot":"coffee","area":"Onomichi (shōtengai arcade)","picks":[
+      {"name":"POUR specialty coffee","cuisine":"specialty coffee","rating":4.7,"why":"Galiya & Ruslan — Onomichi's best third-wave roaster in the arcade; pour-overs and espresso, with sweets/juice for Aslan","kid":false,"map":"https://maps.google.com/?cid=7090208965271270685","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
+    ]},
+    {"slot":"lunch","area":"Ōmishima (near Ōyamazumi Shrine)","picks":[
+      {"name":"Seafood Restaurant Yoshikawa","cuisine":"Setouchi seafood / sashimi & sea-bream rice bowls","rating":4.1,"why":"Galiya — fresh Inland-Sea fish eaten on the island where it's caught","kid":false,"map":"https://maps.google.com/?cid=6391261138187840589","photo":"https://upload.wikimedia.org/wikipedia/commons/4/47/Kaisendon_001.jpg"},
+      {"name":"Tairyo","cuisine":"Japanese restaurant / sea-bream (tai) teishoku set meals","rating":4.0,"why":"Galiya & Ruslan — popular tai set meals with rice right by the shrine","kid":false,"map":"https://maps.google.com/?cid=14126754483064723175","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/%E6%B0%97%E6%AF%94%E3%81%AE%E9%AF%9B%E3%82%81%E3%81%97_photo_by_Pcs34560_20160116_1300.jpg/960px-%E6%B0%97%E6%AF%94%E3%81%AE%E9%AF%9B%E3%82%81%E3%81%97_photo_by_Pcs34560_20160116_1300.jpg"},
+      {"name":"Roadside Station Tatara Shimanami Park","cuisine":"food court / curry rice, noodles, burgers, soft-serve","rating":4.1,"why":"Aslan — easy food court (curry rice, noodles, the Mishima sea-bream burger) with bridge views; pick-your-own plate","kid":true,"map":"https://maps.google.com/?cid=4631298090120556845","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Beef_curry_rice_003.jpg/960px-Beef_curry_rice_003.jpg"}
+    ]},
+    {"slot":"dinner","area":"Onomichi","picks":[
+      {"name":"Tsutafuji Maruboshi (Onomichi Ramen)","cuisine":"Onomichi ramen — clear soy-niboshi broth, pork-back-fat bits, flat noodles","rating":4.1,"why":"Galiya — the defining Setouchi bowl at one of Onomichi's most loved shops","kid":false,"map":"https://maps.google.com/?cid=6892398988895765996","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Onomichi_ramen_by_Ozchin_in_Onomichi.jpg/960px-Onomichi_ramen_by_Ozchin_in_Onomichi.jpg"},
+      {"name":"Shōya Hanten","cuisine":"classic Onomichi ramen (mild soy broth)","rating":4.5,"why":"Aslan — gentle soy-broth ramen, basically plain noodles he'll eat; add a side of karaage","kid":true,"map":"https://maps.google.com/?cid=14662320892713452271","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Onomichi_ramen_and_Karaage.jpg/960px-Onomichi_ramen_and_Karaage.jpg"},
+      {"name":"Miyachi","cuisine":"Onomichi ramen specialist","rating":4.4,"why":"Galiya & Ruslan — well-rated local bowl if the others have a queue","kid":false,"map":"https://maps.google.com/?cid=17814048139730344579","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Onomichi_ramen_by_Ozchin_in_Onomichi.jpg/960px-Onomichi_ramen_by_Ozchin_in_Onomichi.jpg"}
+    ]}
   ]
 }
 ```
 
-## Day 16 — Dōgo Onsen Rest Day (Matsuyama, Ehime)
+## Day 17 — Shimanami Kaidō (Matsuyama → Onomichi / Setoda)
 
-A genuine downtime day in Shikoku's largest city — the most rain-proof rest day of the loop and the natural laundry/city-comforts stop. No real riding (~10 mi). **Schedule:** relaxed morning · ~10:00 Matsuyama Castle by ropeway · lunch ~12:30 near Ōkaidō · afternoon in the Dōgo Haikara-dōri arcade and the Botchan tram · ~16:30 Dōgo Onsen Honkan soak · dinner ~18:30 in the Dōgo quarter.
+The signature island-hopping ride: seven bridges over the Seto Inland Sea, a highlight day for the whole family. Roughly **3h13m of riding** spread across stops, so leave Matsuyama around **09:00**, take coffee at the Kirosan panorama mid-morning, eat **lunch on Ōmishima near Ōyamazumi Shrine (~12:30)**, drop into **Setoda** for lemon gelato and Kōsan-ji in the afternoon, and roll into the **Onomichi / Setoda 2-night base around 17:00** for a ramen dinner.
 
-### Where to eat
+### Eating
 
-**Lunch — Ōkaidō / city centre (near the castle)**
-- 🐟 **Taimeshi Motoyama (鯛めし本山)** — Matsuyama-style *taimeshi* (sea bream cooked over rice), 4.6★ — Galiya's local-specialty pick. [Map](https://maps.google.com/?cid=9133809393906596874)
-- 🍲 **Nabeyaki Udon Yuian (鍋焼うどん結庵)** — Matsuyama's signature *nabeyaki udon*, soft sweet noodles in a clay pot, 4.5★ — **[KID]** the easy mild bowl for Aslan. [Map](https://maps.google.com/?cid=16769157094995214182)
+**Coffee (Onomichi, shōtengai arcade)**
+- **POUR specialty coffee** (4.7) — *Galiya & Ruslan:* Onomichi's best third-wave roaster, a big space in the covered arcade with pour-overs and espresso (sweets/juice for Aslan). [Map](https://maps.google.com/?cid=7090208965271270685)
+- *Along the route*, the **Kirosan Observatory Park** café is still the mid-morning panorama rest stop over the triple suspension bridge (see Things to do).
 
-**Dinner — Dōgo Onsen quarter**
-- 🍜 **Men-ya Niikura (麺や 新倉)** — ramen, 4.3★ — Galiya's noodles, a short walk from the Honkan. [Map](https://maps.google.com/?cid=113848077267614461)
-- 🍣 **Sushiemon Dōgo (すしえもん 道後店)** — conveyor-belt sushi, 4.4★ — **[KID]** pick-your-own plates for Aslan, fresh local fish for Galiya. [Map](https://maps.google.com/?cid=5710359260940265591)
-- 🐠 **Isshinmaru (一心丸)** — Ehime seafood izakaya with *jakoten* fish cakes, 4.5★ — Galiya & Ruslan, right in the Dōgo quarter. [Map](https://maps.google.com/?cid=7147719788954986805)
+**Lunch (~12:30, Ōmishima near Ōyamazumi Shrine)**
+- **Seafood Restaurant Yoshikawa** (4.1) — *Galiya:* fresh Setouchi seafood and sashimi/sea-bream rice bowls eaten on the island. [Map](https://maps.google.com/?cid=6391261138187840589)
+- **Tairyo** (4.0) — *Galiya & Ruslan:* popular sea-bream (tai) teishoku set meals with rice, right by the shrine. [Map](https://maps.google.com/?cid=14126754483064723175)
+- **Roadside Station Tatara Shimanami Park** (4.1) — *Aslan (kid):* relaxed food court — curry rice, noodles, the famous Mishima sea-bream burger and soft-serve — with bridge views, easy when he's tired. [Map](https://maps.google.com/?cid=4631298090120556845)
+
+**Dinner (Onomichi)**
+- **Tsutafuji Maruboshi** (4.1) — *Galiya:* the defining Onomichi ramen — clear soy-niboshi broth, pork-back-fat bits, flat noodles — at one of the town's most loved shops. [Map](https://maps.google.com/?cid=6892398988895765996)
+- **Shōya Hanten** (4.5) — *Aslan (kid):* mild soy-broth Onomichi ramen, basically plain noodles he'll eat; add karaage on the side. [Map](https://maps.google.com/?cid=14662320892713452271)
+- **Miyachi** (4.4) — *Galiya & Ruslan:* well-rated local bowl if the others have a line. [Map](https://maps.google.com/?cid=17814048139730344579)
 
 ### Things to do
-- 🏯 **Matsuyama Castle** (~10:00) — ropeway/chairlift up to a rare hilltop original keep; the lift is the kid hook.
-- 🛍️ **Dōgo Haikara-dōri arcade** (~14:00) — covered street of onsen sweets, mikan juice and the Botchan Karakuri clock.
-- 🚋 **Botchan Ressha** (~15:00) — retro steam-style heritage tram into the Dōgo quarter.
-- ♨️ **Dōgo Onsen Honkan** (~16:30) — soak in the 1894 wooden bathhouse (*Spirited Away* resonance); keep a 6-year-old's soak short or book Asuka-no-Yu's private family bath.
+- **~09:30 Imabari Castle** — sea-water-moat castle at the foot of the bridges, a quick photo before crossing.
+- **~10:30 Kirosan Observatory Park** — panorama café over the Kurushima-Kaikyō triple suspension bridge.
+- **~12:00 Ōyamazumi Shrine, Ōmishima** — ancient samurai-armour shrine in a giant camphor grove; wander before lunch.
+- **~14:30 Setoda, Ikuchijima** — lemon gelato on the waterfront and the dazzling gilt-and-marble Kōsan-ji temple with its white-marble Hill of Hope.
 
-*All restaurant links are key-free Google Maps URLs; all dish photos are HTTP-200-verified Wikimedia Commons thumbnails. Addresses confirmed in Matsuyama, Ehime.*
+*Onomichi is the foodie payoff of the day — a celebrated ramen town — so the dinner picks lean fully into the local bowl, with a milder shop flagged for Aslan. The Tatara roadside station is the reliable kid-friendly lunch on the island if the seafood spots are too adventurous for him.*

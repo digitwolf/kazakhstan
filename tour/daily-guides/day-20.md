@@ -1,50 +1,57 @@
 ```json
 {
   "d": 20,
-  "title": "The Great Castle",
-  "overnight": "Kobe, Hyogo",
-  "schedule": "depart Kurashiki ~09:00 · Bizen-yaki hand-shaping in Imbe ~09:45 · Himeji Castle + Kōko-en, lunch ~12:30 · arrive Kobe ~17:00 · Kobe-beef dinner in the city",
+  "title": "Bridge to Awaji & Home",
+  "overnight": "Osaka (Namba / Dōtonbori)",
+  "schedule": "depart Kobe ~09:00 · 10:00 Kawasaki Good Times World (opens 10:00) · ~11:45 ride the Akashi Kaikyō Bridge to Awaji · lunch ~12:30 north Awaji (Iwaya/Shizuki) · afternoon Nijigen no Mori + Awaji Hanasajiki · recross ~16:30 and drop into Osaka · dinner ~19:00 in Namba/Dōtonbori",
   "todo": [
-    {"time":"~09:45","name":"Bizen-yaki pottery town, Imbe","what":"brick-chimney kiln village ~35 min east on Route 2; short beginner hand-shaping workshop (reserve ahead; confirm under-6 OK; not a Monday) — a hands-on craft for Aslan","map":"https://www.google.com/maps/search/?api=1&query=Imbe%20Bizen%20pottery%20Okayama"},
-    {"time":"~12:00","name":"Himeji Castle & Kōko-en","what":"the White Heron castle, Japan's finest keep, plus the Kōko-en garden — unhurried, lunch nearby","map":"https://www.google.com/maps/search/?api=1&query=Himeji%20Castle"},
-    {"time":"~17:30","name":"Kobe Harborland & Mosaic","what":"harbour-front boardwalk, Ferris wheel and shops for an easy evening stroll before dinner — kid-friendly","map":"https://www.google.com/maps/search/?api=1&query=Kobe%20Harborland"}
+    {"time":"~10:00","name":"Kawasaki Good Times World","what":"Kawasaki Heavy Industries museum at Meriken Park — sit-on motorcycles & Jet Skis, a Shinkansen cab, helicopter and robots; a perfect moto-family hit for Aslan (~1.5h, opens 10:00, closed Mon)","map":"https://www.google.com/maps/search/?api=1&query=Kawasaki%20Good%20Times%20World%20Kobe"},
+    {"time":"~11:45","name":"Akashi Kaikyō Bridge","what":"Ride the ~4 km span — for years the longest suspension bridge on earth; photo stop at the Awaji end","map":"https://www.google.com/maps/search/?api=1&query=Akashi%20Kaikyo%20Bridge"},
+    {"time":"~14:00","name":"Nijigen no Mori","what":"Anime theme park on Awaji (Naruto, Godzilla, Crayon Shin-chan zones) — a kid magnet for Aslan","map":"https://www.google.com/maps/search/?api=1&query=Nijigen%20no%20Mori%20Awaji"},
+    {"time":"~15:30","name":"Awaji Hanasajiki","what":"Hillside flower fields looking over the Inland Sea — an easy, pretty last stretch before recrossing","map":"https://www.google.com/maps/search/?api=1&query=Awaji%20Hanasajiki"}
   ],
   "meals": [
-    {"slot":"lunch","area":"Himeji Castle (Honmachi)",
+    {"slot":"coffee","area":"Kobe — Motomachi (near Meriken Park, before the museum)",
      "picks":[
-       {"name":"Menme (めん処 まる味)","cuisine":"Himeji udon / local noodles","rating":4.5,"why":"Galiya — well-loved noodle house steps from the castle","kid":false,"map":"https://maps.google.com/?cid=12605750817218965755","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Udon_by_udono.jpg/960px-Udon_by_udono.jpg"},
-       {"name":"HIMEJI UDEN (姫路うでん)","cuisine":"udon specialist","rating":4.7,"why":"Aslan — a bowl of plain udon he'll actually eat","kid":true,"map":"https://maps.google.com/?cid=16675121459691659468","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Udon_by_udono.jpg/960px-Udon_by_udono.jpg"},
-       {"name":"Eel restaurant Hiiragi (柊)","cuisine":"anago / unagi (grilled eel) sets","rating":4.1,"why":"Ruslan & Galiya — Seto-Inland anago, a Himeji specialty","kid":false,"map":"https://maps.google.com/?cid=11227371164931079938","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Unagi_Don_-_Kura_AUD12.90_regular_%283723645846%29.jpg/960px-Unagi_Don_-_Kura_AUD12.90_regular_%283723645846%29.jpg"}
+       {"name":"TAOCA COFFEE Kobe Motomachi","cuisine":"specialty coffee","rating":4.8,"why":"Galiya & Ruslan — Kobe's beloved specialty roaster for a top pour-over/latte; quiet morning stop a short walk from Meriken Park (cookies/cake for Aslan)","kid":false,"map":"https://maps.google.com/?cid=9385516540078879431","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
      ]},
-    {"slot":"dinner","area":"Kobe (Sannomiya / Chuo Ward)",
+    {"slot":"lunch","area":"North Awaji (Iwaya / Shizuki, near the bridge)",
      "picks":[
-       {"name":"Kobe Beef KOJYU","cuisine":"Kobe-beef teppanyaki","rating":4.9,"why":"Galiya & Ruslan — the trip's Kobe-beef splurge (reserve ahead)","kid":false,"map":"https://maps.google.com/?cid=1379734323732265440","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/4_Kobe_Beef%2C_Kobe_Japan.jpg/960px-4_Kobe_Beef%2C_Kobe_Japan.jpg"},
-       {"name":"KOBE BEEF EiKiChi","cuisine":"Kobe-beef teppanyaki / steak","rating":4.8,"why":"Ruslan — chef-grilled Kobe beef at the counter","kid":false,"map":"https://maps.google.com/?cid=12911166532687467298","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/4_Kobe_Beef%2C_Kobe_Japan.jpg/960px-4_Kobe_Beef%2C_Kobe_Japan.jpg"},
-       {"name":"Sushiro Sannomiya Ikuta Road","cuisine":"conveyor-belt sushi (famiresu chain)","rating":3.7,"why":"Aslan — kaiten sushi, tamago/karaage/plain plates and a touchscreen he'll love","kid":true,"map":"https://maps.google.com/?cid=9260017382291780962","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Plateau_de_Sushis.JPG/960px-Plateau_de_Sushis.JPG"}
+       {"name":"genpei (魚増鮮魚店 げんぺい)","cuisine":"Awaji seafood — sashimi & kaisen-don","rating":4.6,"why":"Galiya — island-fresh fish right by the Iwaya bridge landing","kid":false,"map":"https://maps.google.com/?cid=9299380464621384460","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kaisendon_001.jpg/960px-Kaisendon_001.jpg"},
+       {"name":"GOODMEAT AWAJISHIMA","cuisine":"Awaji wagyu / grilled beef","rating":4.3,"why":"Ruslan — local Awaji-beef on the island where it's raised","kid":false,"map":"https://maps.google.com/?cid=16763712060960368477","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/JP_%E6%97%A5%E6%9C%AC_Japan_%E6%B2%96%E7%B9%A9_OKINAWA_%E9%82%A3%E9%9C%B8_Naha_%E4%B9%85%E8%8C%82%E5%9C%B0_Kumoji_MK_Building_shop_%E5%92%8C%E7%89%9B%E7%87%92%E8%82%89%E5%BA%97_BBQ_Motobu_WAGYU_Yakiniku_Beef_Restaurant_lunch_meal_January_2025_R12S_09.jpg/960px-thumbnail.jpg"},
+       {"name":"Izumoan (いずも庵)","cuisine":"udon & soba noodles","rating":4.1,"why":"Aslan — plain hot udon he'll actually eat (Galiya gets her noodles too)","kid":true,"map":"https://maps.google.com/?cid=8247348910706101654","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Sanuki_udon_by_open-arms.jpg/960px-Sanuki_udon_by_open-arms.jpg"}
+     ]},
+    {"slot":"dinner","area":"Osaka — Namba / Dōtonbori",
+     "picks":[
+       {"name":"Namba Okonomiyaki Ajinoya Honten (味乃家)","cuisine":"Osaka okonomiyaki","rating":4.3,"why":"Galiya — the city's signature savoury pancake, a celebratory homecoming dish","kid":false,"map":"https://maps.google.com/?cid=13558371125293422542","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Okonomiyaki_001.jpg/960px-Okonomiyaki_001.jpg"},
+       {"name":"Hanamaruken Hozenji","cuisine":"Osaka ramen (braised-pork shoyu)","rating":4.3,"why":"Galiya & Ruslan — a hearty famous Osaka ramen bowl","kid":false,"map":"https://maps.google.com/?cid=12134182644213953393","photo":"https://upload.wikimedia.org/wikipedia/commons/4/42/Ramen.jpg"},
+       {"name":"CHOJIRO Hozenji Flagship (廻る寿司 长次郎)","cuisine":"conveyor-belt sushi (kaiten-zushi)","rating":4.1,"why":"Aslan — touch-panel kaiten with plain egg, cucumber, karaage & rice he can pick himself","kid":true,"map":"https://maps.google.com/?cid=2946437673775376530","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kaiten-zushi_002.jpg/960px-Kaiten-zushi_002.jpg"}
      ]}
   ]
 }
 ```
 
-# Day 20 — The Great Castle (Kurashiki → Himeji → Kobe)
+## Day 21 — Bridge to Awaji & Home
 
-**Schedule:** depart Kurashiki ~09:00 · Bizen-yaki hand-shaping in Imbe ~09:45 · Himeji Castle + Kōko-en garden with lunch ~12:30 · into Kobe by ~17:00 · Kobe-beef dinner in the city. A short 105-mi / ~2h49m ride, so the day is built around the castle and an easy harbour evening rather than the road.
+**Overnight:** Osaka (Namba / Dōtonbori) — the loop closes here; bikes are due back the next day.
 
-## Where to eat
+**Schedule:** Depart Kobe ~09:00. Open the day at **Kawasaki Good Times World** at Meriken Park (opens 10:00, closed Mondays) — a thematically perfect, hands-on motorcycle-tour stop for Aslan. Ride the **Akashi Kaikyō Bridge** (~11:45) onto Awaji, eat **lunch ~12:30** on the north end (Iwaya/Shizuki), then a relaxed afternoon at **Nijigen no Mori** (anime park, kid magnet) and **Awaji Hanasajiki** (flower fields). Recross around 16:30, drop into Osaka and check in, then **dinner ~19:00** in Namba/Dōtonbori.
 
-**Lunch — by Himeji Castle (Honmachi):**
-- **Menme (めん処 まる味)** — Himeji udon / local noodles, 4.5★. Galiya's noodle pick, a few minutes from the castle gate. [Map](https://maps.google.com/?cid=12605750817218965755)
-- **HIMEJI UDEN (姫路うでん)** — udon specialist, 4.7★. *Kid pick* — a plain udon bowl Aslan will eat. [Map](https://maps.google.com/?cid=16675121459691659468)
-- **Eel restaurant Hiiragi (柊)** — anago / unagi sets, 4.1★. Grilled Seto-Inland eel, a Himeji specialty for Ruslan & Galiya. [Map](https://maps.google.com/?cid=11227371164931079938)
+### Coffee — Kobe, Motomachi (before the museum)
+- **TAOCA COFFEE Kobe Motomachi** — specialty coffee, 4.8★. Galiya & Ruslan: Kobe's beloved specialty roaster for a top pour-over or latte; a quiet morning stop a short walk from Meriken Park, with cookies/cake for Aslan. https://maps.google.com/?cid=9385516540078879431
 
-**Dinner — Kobe (Sannomiya / Chuo Ward):**
-- **Kobe Beef KOJYU** — Kobe-beef teppanyaki, 4.9★ (3,300+ reviews). The trip's Kobe-beef splurge — reserve ahead. [Map](https://maps.google.com/?cid=1379734323732265440)
-- **KOBE BEEF EiKiChi** — Kobe-beef teppanyaki / steak, 4.8★. Chef-grilled at the counter. [Map](https://maps.google.com/?cid=12911166532687467298)
-- **Sushiro Sannomiya Ikuta Road** — conveyor-belt sushi chain, 3.7★. *Kid pick* — kaiten sushi with tamago, karaage and plain plates and a touchscreen Aslan will love (familiar famiresu chain). [Map](https://maps.google.com/?cid=9260017382291780962)
+### Lunch — North Awaji (Iwaya / Shizuki, near the bridge)
+- **genpei** — Awaji seafood, sashimi & kaisen-don, 4.6★. Galiya: island-fresh fish a stone's throw from the Iwaya bridge landing. https://maps.google.com/?cid=9299380464621384460
+- **GOODMEAT AWAJISHIMA** — Awaji wagyu / grilled beef, 4.3★. Ruslan: local Awaji-beef on the island that raises it. https://maps.google.com/?cid=16763712060960368477
+- **Izumoan** *(kid)* — udon & soba, 4.1★. Aslan: plain hot udon he'll actually eat; Galiya gets her noodles too. https://maps.google.com/?cid=8247348910706101654
 
-## Things to do
-- **~09:45 Bizen-yaki pottery town, Imbe** — kiln village ~35 min east on Route 2; a short beginner hand-shaping workshop makes a cup/bowl that's fired and posted home (reserve ahead, confirm under-6 participation, and check it isn't a Monday). Hands-on craft for Aslan.
-- **~12:00 Himeji Castle & Kōko-en** — the White Heron castle and its garden, unhurried, with lunch nearby.
-- **~17:30 Kobe Harborland & Mosaic** — harbour boardwalk, Ferris wheel and shops for an easy evening before the Kobe-beef dinner.
+### Dinner — Osaka, Namba / Dōtonbori
+- **Namba Okonomiyaki Ajinoya Honten** — Osaka okonomiyaki, 4.3★. Galiya: the city's signature dish for a homecoming dinner. https://maps.google.com/?cid=13558371125293422542
+- **Hanamaruken Hozenji** — Osaka ramen (braised-pork shoyu), 4.3★. Galiya & Ruslan: a hearty famous bowl. https://maps.google.com/?cid=12134182644213953393
+- **CHOJIRO Hozenji Flagship** *(kid)* — conveyor-belt sushi, 4.1★. Aslan: touch-panel kaiten with plain egg, cucumber, karaage and rice he can grab himself. https://maps.google.com/?cid=2946437673775376530
 
-*All Google links are key-free `googleMapsUri`/maps-search URLs; all dish photos are Wikimedia Commons thumbnails verified HTTP 200. Restaurant ratings from Google Places (text search, location-biased on Himeji Castle 34.84,134.69 and Kobe 34.68,135.19).*
+### To do
+- **~10:00 Kawasaki Good Times World** — Kawasaki museum at Meriken Park; sit-on bikes & Jet Skis, Shinkansen cab, helicopter, robots. Opens 10:00, closed Mon. https://www.google.com/maps/search/?api=1&query=Kawasaki%20Good%20Times%20World%20Kobe
+- **~11:45 Akashi Kaikyō Bridge** — ride the ~4 km span; photo stop at the Awaji end. https://www.google.com/maps/search/?api=1&query=Akashi%20Kaikyo%20Bridge
+- **~14:00 Nijigen no Mori** — Awaji anime park (Naruto/Godzilla/Crayon Shin-chan); a kid magnet. https://www.google.com/maps/search/?api=1&query=Nijigen%20no%20Mori%20Awaji
+- **~15:30 Awaji Hanasajiki** — hillside flower fields over the Inland Sea. https://www.google.com/maps/search/?api=1&query=Awaji%20Hanasajiki

@@ -3,7 +3,7 @@
 > A ferry across the strait, then the great whirlpools of Naruto.
 
 - **Region:** Tokushima · Shikoku
-- **Itinerary:** Day 9
+- **Itinerary:** Day 8
 - **Stop type:** stop
 - **Ride to here (direct):** 91 mi (ride) + Nankai ferry
 

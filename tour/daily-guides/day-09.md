@@ -1,52 +1,61 @@
 ```json
 {
   "d": 9,
-  "title": "Ferry to Shikoku",
-  "overnight": "Naruto, Tokushima",
-  "schedule": "depart Shirahama ~09:00 · Wakayama Castle ~11:15 · lunch ~12:00 in Wakayama City · Nankai Ferry ~14:00 (~2h15m) · land Tokushima ~16:15 · Uzunomichi whirlpools ~17:00 · dinner in Naruto ~18:30",
+  "title": "Into Iya Valley",
+  "overnight": "Iya Valley / Oboke, Tokushima",
+  "schedule": "depart Naruto ~09:00 (optional: 2–3 h at the Ōtsuka Museum of Art first, then leave ~11:30) · coffee/leg-stretch ~10:30 around Tokushima City · lunch ~12:30 at Oboke Gorge · arrive Iya/Oboke onsen ryokan ~14:30–15:00 · long afternoon soak (several ryokan have a private cable-car down to open-air gorge baths) · dinner ~18:30 in the Iya/Oboke valley",
   "todo": [
-    {"time":"~11:15","name":"Wakayama Castle","what":"hilltop keep and gardens for a leg-stretch before the port","map":"https://www.google.com/maps/search/?api=1&query=Wakayama%20Castle"},
-    {"time":"~14:00","name":"Nankai Ferry (Wakayama Port)","what":"bikes ride straight on for the ~2h15m crossing — first-come, no reservations, be at the ticket office 30+ min early","map":"https://www.google.com/maps/search/?api=1&query=Nankai%20Ferry%20Wakayama%20Port"},
-    {"time":"~17:00","name":"Uzunomichi whirlpool walkway","what":"glass-floored walk 45 m above the Naruto whirlpools under the Ōnaruto Bridge — a safe thrill for Aslan","map":"https://www.google.com/maps/search/?api=1&query=Uzunomichi%20Naruto"},
-    {"time":"opt.","name":"Ōtsuka Museum of Art","what":"1,000+ touchable full-size ceramic reproductions of world masterpieces — better saved for a relaxed Day-10 morning (closed Mon)","map":"https://www.google.com/maps/search/?api=1&query=Otsuka%20Museum%20of%20Art%20Naruto"}
+    {"time":"~09:30","name":"Ōtsuka Museum of Art (optional)","what":"1,000+ touchable full-size ceramic reproductions of world masterpieces in Naruto — a 2–3 h art highlight before turning inland; closed Mondays, so check the weekday","map":"https://www.google.com/maps/search/?api=1&query=Otsuka%20Museum%20of%20Art%20Naruto"},
+    {"time":"~12:30","name":"Oboke Gorge","what":"jade Yoshino-River gorge — ride the sightseeing boat under sculpted schist cliffs and stop at the Lapis Oboke yokai-folklore museum (kid hit)","map":"https://www.google.com/maps/search/?api=1&query=Oboke%20Gorge"},
+    {"time":"~15:30","name":"Iya-no-Kazurabashi viewpoint","what":"first look at the live-vine bridge and the gorge scenery above the ryokan (the full crossing is saved for tomorrow's rest day)","map":"https://www.google.com/maps/search/?api=1&query=Iya%20Kazurabashi%20vine%20bridge"},
+    {"time":"~16:00","name":"Onsen ryokan soak","what":"settle into the riverside onsen ryokan — several run a private cable-car down to open-air baths in the gorge; the early arrival is for a long, slow soak","map":"https://www.google.com/maps/search/?api=1&query=Iya%20Onsen%20ryokan"}
   ],
   "meals": [
-    {"slot":"lunch","area":"Wakayama City (before the port)",
+    {"slot":"coffee","area":"Tokushima City",
      "picks":[
-       {"name":"Ramen Marui (本家アロチ 丸高中華そば系)","cuisine":"Wakayama chūka-soba ramen","rating":4.1,"why":"Galiya — the city's signature thin-noodle soy-tonkotsu bowl, with haya-zushi mackerel sushi on the side","kid":false,"map":"https://maps.google.com/?cid=5976911720099818815","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Wakayamaramen222.jpg/960px-Wakayamaramen222.jpg"},
-       {"name":"Masayoshi Ramen (正善)","cuisine":"Wakayama chūka-soba ramen","rating":4.0,"why":"Ruslan — hearty local ramen, big and well-loved (1,400+ reviews)","kid":false,"map":"https://maps.google.com/?cid=3460900872369840909","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Masayoshi_ramen_20240422.jpg/960px-Masayoshi_ramen_20240422.jpg"},
-       {"name":"Udon no Ōtaman (うどんの大田萬)","cuisine":"udon / plain noodles","rating":4.1,"why":"Aslan — simple plain udon and rice he'll actually eat","kid":true,"map":"https://maps.google.com/?cid=771188512389577753","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"}
+       {"name":"Toyotomi Coffee (豊富珈琲)","cuisine":"specialty coffee","rating":4.5,"why":"Ruslan & Galiya — Tokushima's own self-roasting specialty house for a proper cup before the hills; cake & juice on hand for Aslan","kid":false,"map":"https://maps.google.com/?cid=13239288018006348160","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
      ]},
-    {"slot":"dinner","area":"Naruto",
+    {"slot":"lunch","area":"Oboke Gorge",
      "picks":[
-       {"name":"Donoura Naruto (どの浦 鳴門店)","cuisine":"Tokushima ramen","rating":4.3,"why":"Galiya — the local dark sweet-soy tonkotsu bowl with stewed pork belly, the first-dinner ramen on landing","kid":false,"map":"https://maps.google.com/?cid=18023051851105388920","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Tokushima_Ramen%2C_Men-Oh_-_May_2%2C_2018.jpg/960px-Tokushima_Ramen%2C_Men-Oh_-_May_2%2C_2018.jpg"},
-       {"name":"Sushikatsu (すし勝)","cuisine":"sushi — local Naruto-dai sea bream","rating":4.3,"why":"Galiya & Ruslan — Naruto's prize tide-fed sea bream as sashimi/nigiri","kid":false,"map":"https://maps.google.com/?cid=9481479808904369613","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nigiri_Sushi_%2825966163204%29.jpg/960px-Nigiri_Sushi_%2825966163204%29.jpg"},
-       {"name":"Tamura Udon (田村うどん)","cuisine":"udon / plain noodles","rating":4.1,"why":"Aslan — a clean plain udon bowl, an easy safe dinner","kid":true,"map":"https://maps.google.com/?cid=8786397789103930994","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"}
+       {"name":"そば茶屋 (Soba Chaya)","cuisine":"Iya soba (handmade buckwheat noodles)","rating":4.3,"why":"Galiya — the valley's own rustic Iya soba right by the gorge","kid":false,"map":"https://maps.google.com/?cid=1637649177588569982","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Zaru_soba_by_spinachdip.jpg/960px-Zaru_soba_by_spinachdip.jpg"},
+       {"name":"Cafe & Jibie (道の駅 大歩危 / Michi-no-Eki Ōboke)","cuisine":"roadside-station cafe — curry rice, udon, plates","rating":4.3,"why":"Aslan — casual gorge-view rest stop with simple curry rice & udon he'll eat","kid":true,"map":"https://maps.google.com/?cid=3489408883758792596","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Beef_curry_rice_003.jpg/960px-Beef_curry_rice_003.jpg"},
+       {"name":"Restaurant Iyabashi","cuisine":"udon & teishoku set meals","rating":4.1,"why":"Ruslan — hearty udon/teishoku near the gorge, plain udon also works for Aslan","kid":true,"map":"https://maps.google.com/?cid=12655428176554131611","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"}
+     ]},
+    {"slot":"dinner","area":"Iya Valley / Oboke",
+     "picks":[
+       {"name":"清流のそば処 祖谷美人 (Iya Bijin)","cuisine":"handmade Iya soba & local set meals","rating":4.0,"why":"Galiya — celebrated mountain-soba house perched over the gorge near the vine bridge","kid":false,"map":"https://maps.google.com/?cid=17357317293131209474","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Zaru_soba_by_spinachdip.jpg/960px-Zaru_soba_by_spinachdip.jpg"},
+       {"name":"おのみ家 (Onomiya)","cuisine":"home-style Japanese teishoku / local fare","rating":4.7,"why":"Ruslan & Galiya — warm valley cooking and rice-based set meals in Nishi-Iya","kid":false,"map":"https://maps.google.com/?cid=17047889143403398966","photo":"https://upload.wikimedia.org/wikipedia/commons/d/d7/Tonjiru_teishoku.jpg"},
+       {"name":"Sanukiya (讃岐屋, Ikeda)","cuisine":"self-serve Sanuki udon","rating":4.2,"why":"Aslan — plain udon & rice, famiresu-style; the kid-safe fallback down in Ikeda since the valley is tiny (most ryokan also serve a child-friendly dinner with plain rice & dekomawashi skewers)","kid":true,"map":"https://maps.google.com/?cid=13602908240971594126","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Sanuki_udon_by_open-arms.jpg/960px-Sanuki_udon_by_open-arms.jpg"}
      ]}
   ]
 }
 ```
 
-## Day 9 — Ferry to Shikoku (overnight: Naruto, Tokushima)
+## Day 10 — Into Iya Valley
 
-**Schedule:** depart Shirahama ~09:00 · Wakayama Castle ~11:15 · lunch ~12:00 in Wakayama City · Nankai Ferry ~14:00 (~2h15m crossing) · land Tokushima ~16:15 · Uzunomichi whirlpools ~17:00 · dinner in Naruto ~18:30.
+**Overnight:** Iya Valley / Oboke, Tokushima (remote onsen-ryokan country in the heart of Shikoku).
 
-This is the loop's pivot from Honshu to Shikoku — and a **two-ramen day for a noodle lover.** Ride up to Wakayama Port (with a castle stop), eat the city's famous **Wakayama chūka-soba**, then roll the bikes straight onto the **Nankai Ferry** (first-come, no reservations — be at the ticket office 30+ min early). Land beside Naruto and its giant tidal whirlpools, then close the day with **Tokushima ramen** by the strait.
+**Schedule:** depart Naruto ~09:00 (or give the **Ōtsuka Museum of Art** a proper 2–3 h first and roll out ~11:30 — it's closed Mondays, so check the day) · coffee/leg-stretch around **Tokushima City** ~10:30 · **lunch ~12:30 at Oboke Gorge** · arrive the **Iya/Oboke onsen ryokan ~14:30–15:00** · long afternoon soak (several ryokan have a private cable-car down to open-air gorge baths) · **dinner ~18:30** in the valley. The short ride (75 mi / ~2h05m) and early arrival are by design — the afternoon is for the onsen.
 
-### Lunch — Wakayama City (before the port)
-- **Ramen Marui** — Wakayama chūka-soba (4.1) — Galiya's pick: the city's thin-noodle soy-tonkotsu bowl, with haya-zushi mackerel sushi on the side. https://maps.google.com/?cid=5976911720099818815
-- **Masayoshi Ramen** — Wakayama chūka-soba (4.0) — Ruslan: hearty, hugely popular (1,400+ reviews). https://maps.google.com/?cid=3460900872369840909
-- **Udon no Ōtaman** — udon (4.1) — **kid pick** for Aslan: plain udon and rice. https://maps.google.com/?cid=771188512389577753
+### Where to eat
 
-### Dinner — Naruto
-- **Donoura Naruto** — Tokushima ramen (4.3) — Galiya: the dark sweet-soy tonkotsu bowl with stewed pork belly, the classic first-dinner on landing. https://maps.google.com/?cid=18023051851105388920
-- **Sushikatsu** — sushi, local Naruto-dai sea bream (4.3) — Galiya & Ruslan: the tide-fed bream is Naruto's prize fish. https://maps.google.com/?cid=9481479808904369613
-- **Tamura Udon** — udon (4.1) — **kid pick** for Aslan: a clean plain udon bowl. https://maps.google.com/?cid=8786397789103930994
+**Coffee — Tokushima City (~10:30)**
+- ☕ **Toyotomi Coffee (豊富珈琲)** — Tokushima's own **self-roasting specialty** house; a proper cup and leg-stretch for *Ruslan & Galiya* before the climb inland (cake & juice for *Aslan*). [Map](https://maps.google.com/?cid=13239288018006348160) · ⭐4.5
 
-### To do
-- **~11:15 Wakayama Castle** — hilltop keep and gardens, a leg-stretch before the port.
-- **~14:00 Nankai Ferry (Wakayama Port)** — bikes ride straight on for the ~2h15m crossing; first-come, no reservations (deck space ~20 bikes).
-- **~17:00 Uzunomichi** — glass-floored walkway 45 m above the Naruto whirlpools; a safe thrill for Aslan (whirlpools are strongest near spring tides and the daily slack swings).
-- **Optional Ōtsuka Museum of Art** — 1,000+ touchable full-size ceramic reproductions of world masterpieces; best saved for a relaxed Day-10 morning before riding into Iya (closed Mondays).
-</content>
-</invoke>
+**Lunch — Oboke Gorge**
+- 🍜 **そば茶屋 (Soba Chaya)** — handmade **Iya soba** right by the gorge; *Galiya's* mountain-noodle pick. [Map](https://maps.google.com/?cid=1637649177588569982) · ⭐4.3
+- 🍛 **Cafe & Jibie (道の駅 大歩危 / Michi-no-Eki Ōboke)** *(kid)* — gorge-view roadside station with **curry rice & udon**; the easy, simple-food stop for *Aslan*. [Map](https://maps.google.com/?cid=3489408883758792596) · ⭐4.3
+- 🥢 **Restaurant Iyabashi** *(kid-OK)* — **udon & teishoku** sets; hearty for *Ruslan*, plain udon for *Aslan*. [Map](https://maps.google.com/?cid=12655428176554131611) · ⭐4.1
+
+**Dinner — Iya Valley / Oboke**
+- 🍜 **清流のそば処 祖谷美人 (Iya Bijin)** — celebrated **handmade Iya soba** house over the gorge near the vine bridge; *Galiya's* dinner. [Map](https://maps.google.com/?cid=17357317293131209474) · ⭐4.0
+- 🍲 **おのみ家 (Onomiya)** — home-style Japanese **teishoku** in Nishi-Iya; warm valley cooking for *Ruslan & Galiya*. [Map](https://maps.google.com/?cid=17047889143403398966) · ⭐4.7
+- 🍜 **Sanukiya (讃岐屋, Ikeda)** *(kid)* — self-serve **Sanuki udon**, plain bowls & rice; the famiresu-style fallback down in Ikeda for *Aslan*. The valley is tiny, so the **ryokan's own dinner** (plain rice + *dekomawashi* skewers + udon) is also a reliable kid option. [Map](https://maps.google.com/?cid=13602908240971594126) · ⭐4.2
+
+### Things to do
+- 🎨 **Ōtsuka Museum of Art (Naruto, optional morning)** — 1,000+ touchable full-size ceramic reproductions of world masterpieces; great with a 6-year-old. *Closed Mondays.*
+- 🚤 **Oboke Gorge** — jade-river sightseeing boat under schist cliffs, plus the **Lapis Oboke** yokai-folklore museum (kid hit).
+- 📷 **Iya-no-Kazurabashi viewpoint** — first look at the live-vine bridge (full crossing saved for the Day-11 rest day).
+- ♨️ **Onsen ryokan soak** — settle in early; several lodgings have a **private cable-car down to open-air baths** in the gorge.
+
+*All restaurant addresses confirmed in Miyoshi, Tokushima (Shikoku). Dish photos are Wikimedia Commons thumbnails, each HTTP-200 verified.*

@@ -3,7 +3,7 @@
 > A hillside temple town and lemon-scented islands.
 
 - **Region:** Hiroshima coast
-- **Itinerary:** Days 17–18 · 2 nights
+- **Itinerary:** Days 16–17 · 2 nights
 - **Stop type:** stay
 - **Ride to here (direct):** 32 mi
 

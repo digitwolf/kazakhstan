@@ -3,14 +3,14 @@
 > The air gateway either side of the loop — a jet-lag arrival night and a full kid-focused museum day (Ghibli, teamLab, Nintendo) before the Shinkansen south, then the reposition city for the flight home.
 
 - **Region:** Kantō · Tokyo
-- **Itinerary:** Day 0–1 (arrival) · Days 24–25 (departure)
+- **Itinerary:** Day 0–1 (arrival) · Days 23–24 (departure)
 - **Stop type:** bookend
 - **Ride to here (direct):** Air gateway — no riding (fly in, Shinkansen to the bikes)
 
 ## About
 Tokyo is **not part of the Osaka riding loop** — it is the **air gateway** that brackets it. The family flies **nonstop SEA ⇄ Tokyo** (Haneda on ANA/Delta, Narita on JAL) and rides the **Tōkaidō Shinkansen (~2h30m Nozomi) Tokyo ⇄ Shin-Osaka** to reach and leave the bikes at the **Suita, Osaka** base (see [flights](../02-flights.md)). The bikes are never in Tokyo; the city is where the trip begins and ends on foot and by train.
 
-On the way in, a **Day-0 arrival night** near **Shinagawa** absorbs the jet lag, and a **full Day-1 museum day** gives the family three of Tokyo's best kid experiences — the **Ghibli Museum** in Mitaka, **teamLab Planets** in Toyosu, and **Nintendo TOKYO** in Shibuya — before the **Day-2** train down to the bike pickup. On the way home, **Day 24** repositions from Osaka/Kyoto back to Tokyo by Nozomi (Fushimi Inari sits right on the line), an overnight near Haneda/Shinagawa, then the **nonstop flight home on Day 25**. Forward the big luggage by **takkyūbin** so the train legs stay light.
+On the way in, a **Day-0 arrival night** near **Shinagawa** absorbs the jet lag, and a **full Day-1 museum day** gives the family three of Tokyo's best kid experiences — the **Ghibli Museum** in Mitaka, **teamLab Planets** in Toyosu, and **Nintendo TOKYO** in Shibuya — before the **Day-2** train down to the bike pickup. On the way home, **Day 23** repositions from Osaka/Kyoto back to Tokyo by Nozomi (Fushimi Inari sits right on the line), an overnight near Haneda/Shinagawa, then the **nonstop flight home on Day 24**. Forward the big luggage by **takkyūbin** so the train legs stay light.
 
 ## Things to see & do
 - **Ghibli Museum (Mitaka)** — Hayao Miyazaki's whimsical, hands-on museum on the edge of Inokashira Park: Totoro, the Catbus, a rooftop robot and an exclusive members-only short film. **Advance, date-and-time-specific tickets only (Lawson, ~a month ahead) — no door sales; it sells out fast** **[KID]**

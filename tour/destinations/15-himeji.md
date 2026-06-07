@@ -3,7 +3,7 @@
 > Japan's most magnificent castle, then into cosmopolitan Kobe.
 
 - **Region:** Hyogo
-- **Itinerary:** Day 20
+- **Itinerary:** Day 19
 - **Stop type:** stop
 - **Ride to here (direct):** 104 mi
 

@@ -1,52 +1,58 @@
 ```json
 {
   "d": 5,
-  "title": "Kumano Interior Rest Day",
-  "overnight": "Yunomine Onsen, Tanabe, Wakayama",
-  "schedule": "no-ride rest day · slow morning onsen (Tsuboyu slot + boil eggs at the spring) · Kawayu riverbed bath (river-level dependent) · lunch ~12:30 in Hongū near the shrine · afternoon gentle Kumano Kodō taster + Hongū Taisha · Ōyunohara giant torii at golden hour · dinner near Yunomine/Hongū",
+  "title": "Down to the Sacred Coast",
+  "overnight": "Nachi-Katsuura, Wakayama",
+  "schedule": "depart Yunomine ~09:00 · Doro-kyō river-boat ~10:00 · Daimon-zaka & Nachi Falls ~11:30 · lunch ~13:00 at Nachisan · roll into Katsuura ~14:30 · cave onsen ~15:30 · tuna dinner ~18:30 (short 52 mi / ~1h52m riding day — bank the afternoon as downtime)",
   "todo": [
-    {"time":"~09:30","name":"Tsuboyu, Yunomine","what":"Reserve a 30-min slot in the only UNESCO World Heritage bath you can bathe in; boil eggs/veg in the public yuzutsu spring by the river","map":"https://www.google.com/maps/search/?api=1&query=Tsuboyu%20Yunomine%20Onsen"},
-    {"time":"~11:00","name":"Kawayu Onsen riverbed bath","what":"Scoop your own hot bath in the warm gravel of the Ōto River (weather/river-level dependent — high water after rain cancels it)","map":"https://www.google.com/maps/search/?api=1&query=Kawayu%20Onsen"},
-    {"time":"~14:00","name":"Kumano Kodō taster + Kumano Hongū Taisha","what":"Short 30–40 min Hosshinmon-ōji-style stretch then the cypress-bark head shrine up the cedar stair (rain plan: free Kumano Hongū Heritage Center)","map":"https://www.google.com/maps/search/?api=1&query=Kumano%20Hongu%20Taisha"},
-    {"time":"~16:30","name":"Ōyunohara Ōtorii","what":"Japan's largest torii (33.9 m) on the old shrine sandbank — best at golden hour","map":"https://www.google.com/maps/search/?api=1&query=Oyunohara%20Otorii"}
+    {"time":"~10:00","name":"Doro-kyō river-boat","what":"glass-clear gorge cruise between sheer cliffs on the Kitayama River — a kid highlight","map":"https://www.google.com/maps/search/?api=1&query=Dorokyo%20river%20boat%20Kitayama"},
+    {"time":"~11:30","name":"Daimon-zaka","what":"short cobbled pilgrim path under giant cedars up to the shrine (kid-friendly)","map":"https://www.google.com/maps/search/?api=1&query=Daimonzaka%20Nachikatsuura"},
+    {"time":"~12:00","name":"Nachi Falls & Kumano Nachi Taisha","what":"Japan's tallest single-drop waterfall (133 m) beside the vermilion Seiganto-ji pagoda — the postcard of Japan","map":"https://www.google.com/maps/search/?api=1&query=Nachi%20Falls%20Kumano%20Nachi%20Taisha"},
+    {"time":"~13:45","name":"Kumano Hayatama Taisha, Shingū (optional)","what":"the third Kumano grand shrine and its 1,000-year-old sacred nagi tree, a quick stop on the way down","map":"https://www.google.com/maps/search/?api=1&query=Kumano%20Hayatama%20Taisha"},
+    {"time":"~15:30","name":"Katsuura cave onsen (Bōki-dō)","what":"natural sea-grotto hot-spring bath with the surf booming below, at Hotel Urashima","map":"https://www.google.com/maps/search/?api=1&query=Hotel%20Urashima%20Bokido%20cave%20onsen%20Katsuura"}
   ],
   "meals": [
-    {"slot":"lunch","area":"Hongū (near Kumano Hongū Taisha / Ōyunohara)",
+    {"slot":"coffee","area":"Katsuura port",
      "picks":[
-       {"name":"Mitsuashi Noodle shop (みつ葉)","cuisine":"ramen / noodles","rating":4.8,"why":"Galiya — the standout noodle bowl right by the shrine; a plain bowl works for Aslan too","kid":false,"map":"https://maps.google.com/?cid=14384004974723876992","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"},
-       {"name":"きっちん (Kitchen)","cuisine":"casual Japanese set meals / katsu & rice","rating":4.3,"why":"Aslan — easy katsu, rice and simple plates he'll actually eat, steps from the shrine","kid":true,"map":"https://maps.google.com/?cid=4351367167838386248","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Tonkatsu.jpg/960px-Tonkatsu.jpg"},
-       {"name":"宮ずし (Miyazushi)","cuisine":"sushi","rating":4.6,"why":"Galiya — neighbourhood sushi counter in the pilgrim town (tamago for Aslan)","kid":false,"map":"https://maps.google.com/?cid=15958625622105258960","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/960px-Sushi_platter.jpg"}
+       {"name":"KUMANO COFFEE BREWERS","cuisine":"specialty coffee","rating":4.9,"why":"Ruslan & Galiya — third-wave hand-brew right in Katsuura port for an afternoon-downtime or pre-departure cup; quiet enough for Aslan with a sweet treat","kid":false,"map":"https://maps.google.com/?cid=18129618703588605853","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
      ]},
-    {"slot":"dinner","area":"Yunomine / Hongū (remote onsen hamlet — book your ryokan dinner if staying half-board; otherwise these are the nearby options)",
+    {"slot":"lunch","area":"Nachisan (Nachi Falls)",
      "picks":[
-       {"name":"ときわや (Tokiwaya), Kawayu","cuisine":"local Kumano set meals (mehari-zushi, river fish)","rating":4.2,"why":"Galiya — regional Kumano cooking eaten where it's made, riverside at Kawayu","kid":false,"map":"https://maps.google.com/?cid=2791320893729462743","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Meharizushi-Kumano-Mie.JPG/960px-Meharizushi-Kumano-Mie.JPG"},
-       {"name":"Okage-san Izakaya (おかげさん), Wataze","cuisine":"izakaya — karaage, grills, rice","rating":4.8,"why":"Aslan — karaage and plain rice; hearty plates and a drink for Ruslan","kid":true,"map":"https://maps.google.com/?cid=2574437099364628723","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Karaage.jpg/960px-Karaage.jpg"},
-       {"name":"Yumune Chaya (湯峰茶屋), Yunomine","cuisine":"onsen-village cafe / mehari-zushi & light meals","rating":3.9,"why":"convenient in-hamlet option right by the overnight onsen if you don't want to ride out","kid":false,"map":"https://maps.google.com/?cid=16222776516153084156","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mehari_zushi_by_m-louis.jpg/960px-Mehari_zushi_by_m-louis.jpg"}
+       {"name":"Chinchōan Moudemochi","cuisine":"handmade Kumano soba","rating":4.3,"why":"Galiya & Ruslan — fresh soba right at the falls/shrine path","kid":false,"map":"https://maps.google.com/?cid=530398846035148961","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Soba_and_tempura_combo_%2826498960080%29.jpg/960px-Soba_and_tempura_combo_%2826498960080%29.jpg"},
+       {"name":"Miyamatei","cuisine":"set-meal teahouse (udon, curry-rice)","rating":3.5,"why":"Aslan — the convenient on-site sit-down spot for plain udon & curry-rice (Nachisan is a tiny temple village, so options are limited; conbini onigiri are an easy backup)","kid":true,"map":"https://maps.google.com/?cid=7320587628942868247","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Kama-age_Udon.jpg/960px-Kama-age_Udon.jpg"}
+     ]},
+    {"slot":"dinner","area":"Katsuura port",
+     "picks":[
+       {"name":"Tuna Bowl Muromaru (まぐろ丼 むろまる)","cuisine":"maguro-don / tuna bowls","rating":4.5,"why":"Galiya & Ruslan — fresh line-caught Katsuura tuna straight off Japan's #1 tuna port","kid":false,"map":"https://maps.google.com/?cid=1322154716535247244","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Maguro-don_%28raw_tuna_fish_bowl%29%2C_Chiyoda-ward%2C_Tokyo_%28%E3%81%BE%E3%81%90%E3%82%8D%E4%B8%BC%2C_%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%29_%282011-05-10_13.26.07_by_yuiseki_aoba%29.jpg/960px-Maguro-don_%28raw_tuna_fish_bowl%29%2C_Chiyoda-ward%2C_Tokyo_%28%E3%81%BE%E3%81%90%E3%82%8D%E4%B8%BC%2C_%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%29_%282011-05-10_13.26.07_by_yuiseki_aoba%29.jpg"},
+       {"name":"Maguro no Yamaki","cuisine":"tuna specialist (maguro-don, seared zuke)","rating":4.2,"why":"Galiya — hugely popular local tuna house with seared and sashimi options","kid":false,"map":"https://maps.google.com/?cid=16729597622358529220","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Maguro-tataki-don_of_Sukiya.jpg/960px-Maguro-tataki-don_of_Sukiya.jpg"},
+       {"name":"Rio Ramen","cuisine":"ramen & gyoza","rating":4.2,"why":"Aslan — plain ramen broth & gyoza he'll actually eat, and Galiya's noodle fix if she's tuna'd out","kid":true,"map":"https://maps.google.com/?cid=17918930914327022472","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg/960px-Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg"}
      ]}
   ]
 }
 ```
 
-## Day 5 — Kumano Interior Rest Day (Yunomine Onsen, Wakayama)
+## Day 6 — Down to the Sacred Coast (Yunomine → Doro-kyō → Nachi-Katsuura)
 
-A genuine downtime day in the sacred Kii interior — onsen first, sightseeing second. No real riding (~20 mi of pottering between Yunomine, Kawayu and Hongū).
+A short, scenic 52-mile descent off the Kumano mountains to the Pacific, all paved and relaxed (~1h52m riding), so the afternoon is deliberately banked as downtime in the tuna port of Katsuura.
 
-**Schedule:** slow morning at Yunomine — reserve a 30-min slot in the tiny **Tsuboyu** (the only UNESCO World Heritage bath you can bathe in) and boil eggs in the public *yuzutsu* spring · late morning at **Kawayu** to dig your own riverbed bath (weather/river-level dependent) · **lunch ~12:30 in Hongū** by the shrine · afternoon **Kumano Kodō taster walk + Kumano Hongū Taisha** · **Ōyunohara** giant torii at golden hour · **dinner near Yunomine/Hongū**.
+**Schedule:** depart Yunomine ~09:00 · Doro-kyō river-boat ~10:00 · Daimon-zaka & Nachi Falls ~11:30 · lunch ~13:00 at Nachisan · into Katsuura ~14:30 · cave onsen ~15:30 · tuna dinner ~18:30.
 
-### Where to eat
+### Eat
+**Coffee — Katsuura port**
+- **KUMANO COFFEE BREWERS** — third-wave specialty hand-brew, 4.9★ — Ruslan & Galiya, perfect for the banked afternoon downtime or a pre-departure cup; calm enough for Aslan with a sweet treat. https://maps.google.com/?cid=18129618703588605853
 
-**Lunch — Hongū, by the shrine**
-- **Mitsuashi Noodle shop (みつ葉)** — ramen/noodles, 4.8 — Galiya's bowl right by the shrine; a plain bowl suits Aslan too. https://maps.google.com/?cid=14384004974723876992
-- **きっちん (Kitchen)** — casual katsu & rice sets, 4.3 — *kid pick* for Aslan, simple plates steps from the shrine. https://maps.google.com/?cid=4351367167838386248
-- **宮ずし (Miyazushi)** — sushi, 4.6 — for Galiya (tamago for Aslan). https://maps.google.com/?cid=15958625622105258960
+**Lunch — Nachisan, at the falls**
+- **Chinchōan Moudemochi** — handmade Kumano soba, 4.3★ — Galiya & Ruslan. https://maps.google.com/?cid=530398846035148961
+- **Miyamatei** *(kid)* — set-meal teahouse with plain udon & curry-rice, 3.5★ — the convenient on-site stop for Aslan. Nachisan is a tiny temple village so choice is limited; conbini onigiri are an easy backup. https://maps.google.com/?cid=7320587628942868247
 
-**Dinner — Yunomine / Hongū** (tiny remote hamlet — most ryokan serve half-board dinner; book it if staying in. These are the nearby standalone options.)
-- **ときわや (Tokiwaya), Kawayu** — local Kumano set meals (mehari-zushi, river fish), 4.2 — regional cooking for Galiya. https://maps.google.com/?cid=2791320893729462743
-- **Okage-san Izakaya (おかげさん), Wataze** — izakaya, 4.8 — *kid pick*: karaage + plain rice for Aslan, hearty for Ruslan. https://maps.google.com/?cid=2574437099364628723
-- **Yumune Chaya (湯峰茶屋), Yunomine** — onsen-village cafe / mehari-zushi, 3.9 — the convenient in-hamlet choice by the overnight onsen. https://maps.google.com/?cid=16222776516153084156
+**Dinner — Katsuura port** (Japan's #1 fresh-tuna port)
+- **Tuna Bowl Muromaru** — maguro-don & tuna bowls, 4.5★ — Galiya & Ruslan, tuna straight off the boats. https://maps.google.com/?cid=1322154716535247244
+- **Maguro no Yamaki** — tuna specialist (seared zuke, sashimi), 4.2★ — Galiya. https://maps.google.com/?cid=16729597622358529220
+- **Rio Ramen** *(kid)* — plain ramen & gyoza for Aslan, plus Galiya's noodle fix, 4.2★. https://maps.google.com/?cid=17918930914327022472
 
-### Things to do
-- **~09:30 Tsuboyu, Yunomine** — reserve a 30-min slot in the World Heritage bath; boil eggs/veg in the spring.
-- **~11:00 Kawayu Onsen** — scoop your own bath in the warm riverbed (cancels when the Ōto River runs high after rain).
-- **~14:00 Kumano Kodō taster + Kumano Hongū Taisha** — a gentle 30–40 min stretch then the head shrine (rain plan: the free Kumano Hongū Heritage Center).
-- **~16:30 Ōyunohara Ōtorii** — Japan's largest torii (33.9 m) at golden hour.
+### Do
+- **~10:00 Doro-kyō river-boat** — glass-clear gorge cruise between sheer cliffs (kid highlight).
+- **~11:30 Daimon-zaka** — short cobbled cedar-lined pilgrim path up to the shrine.
+- **~12:00 Nachi Falls & Kumano Nachi Taisha** — Japan's tallest single-drop waterfall beside the vermilion Seiganto-ji pagoda.
+- **~13:45 Kumano Hayatama Taisha, Shingū** *(optional)* — the third Kumano grand shrine and its 1,000-year-old sacred nagi tree.
+- **~15:30 Katsuura cave onsen (Bōki-dō)** — natural sea-grotto bath over the booming surf at Hotel Urashima.

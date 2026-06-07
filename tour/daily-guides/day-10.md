@@ -1,54 +1,69 @@
 ```json
 {
   "d": 10,
-  "title": "Into Iya Valley",
+  "title": "Iya Rest Day",
   "overnight": "Iya Valley / Oboke, Tokushima",
-  "schedule": "depart Naruto ~09:00 (optional: 2–3 h at the Ōtsuka Museum of Art first, then leave ~11:30) · coffee/leg-stretch ~10:30 around Tokushima City · lunch ~12:30 at Oboke Gorge · arrive Iya/Oboke onsen ryokan ~14:30–15:00 · long afternoon soak (several ryokan have a private cable-car down to open-air gorge baths) · dinner ~18:30 in the Iya/Oboke valley",
+  "schedule": "slow morning onsen soak · ~10:30 Kazurabashi vine bridge + Peeing-Boy viewpoint · lunch ~12:30 Iya soba near the vine bridge · ~13:30 Oboke Gorge sightseeing boat · coffee/snack at Michi-no-eki Ōboke · back to the ryokan for baths · dinner at the onsen ryokan (or casual options near Ōboke)",
   "todo": [
-    {"time":"~09:30","name":"Ōtsuka Museum of Art (optional)","what":"1,000+ touchable full-size ceramic reproductions of world masterpieces in Naruto — a 2–3 h art highlight before turning inland; closed Mondays, so check the weekday","map":"https://www.google.com/maps/search/?api=1&query=Otsuka%20Museum%20of%20Art%20Naruto"},
-    {"time":"~12:30","name":"Oboke Gorge","what":"jade Yoshino-River gorge — ride the sightseeing boat under sculpted schist cliffs and stop at the Lapis Oboke yokai-folklore museum (kid hit)","map":"https://www.google.com/maps/search/?api=1&query=Oboke%20Gorge"},
-    {"time":"~15:30","name":"Iya-no-Kazurabashi viewpoint","what":"first look at the live-vine bridge and the gorge scenery above the ryokan (the full crossing is saved for tomorrow's rest day)","map":"https://www.google.com/maps/search/?api=1&query=Iya%20Kazurabashi%20vine%20bridge"},
-    {"time":"~16:00","name":"Onsen ryokan soak","what":"settle into the riverside onsen ryokan — several run a private cable-car down to open-air baths in the gorge; the early arrival is for a long, slow soak","map":"https://www.google.com/maps/search/?api=1&query=Iya%20Onsen%20ryokan"}
+    {"time":"~09:30","name":"Morning onsen soak","what":"Lazy rest-day start in the riverside ryokan baths (several have a private cable-car down to open-air baths in the gorge)","map":"https://www.google.com/maps/search/?api=1&query=Iya%20Onsen%20ryokan%20Miyoshi%20Tokushima"},
+    {"time":"~10:30","name":"Iya-no-Kazurabashi vine bridge","what":"Cross the 45 m live-vine bridge over the gorge — hold Aslan's hand tightly on the slatted gaps","map":"https://www.google.com/maps/search/?api=1&query=Iya%20Kazurabashi"},
+    {"time":"~11:30","name":"Peeing-Boy statue (Shōben-kozō)","what":"Bronze boy on a cliff edge 200 m above the river — quick photo viewpoint on the gorge road","map":"https://www.google.com/maps/search/?api=1&query=Iya%20no%20Shobenkozo"},
+    {"time":"~13:30","name":"Ōboke Gorge sightseeing boat","what":"Easy 30-min boat through jade Yoshino-river cliffs; pairs with the Lapis Ōboke yōkai museum next door if it rains","map":"https://www.google.com/maps/search/?api=1&query=Oboke%20Gorge%20sightseeing%20boat"},
+    {"time":"optional","name":"Nagoro Scarecrow Village","what":"Quirky kid stop, but a long winding ~1 h drive deeper up the valley — only if everyone's keen","map":"https://www.google.com/maps/search/?api=1&query=Nagoro%20Scarecrow%20Village"}
   ],
   "meals": [
-    {"slot":"lunch","area":"Oboke Gorge",
+    {"slot":"coffee","area":"Ōboke (near the gorge station)",
      "picks":[
-       {"name":"そば茶屋 (Soba Chaya)","cuisine":"Iya soba (handmade buckwheat noodles)","rating":4.3,"why":"Galiya — the valley's own rustic Iya soba right by the gorge","kid":false,"map":"https://maps.google.com/?cid=1637649177588569982","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Zaru_soba_by_spinachdip.jpg/960px-Zaru_soba_by_spinachdip.jpg"},
-       {"name":"Cafe & Jibie (道の駅 大歩危 / Michi-no-Eki Ōboke)","cuisine":"roadside-station cafe — curry rice, udon, plates","rating":4.3,"why":"Aslan — casual gorge-view rest stop with simple curry rice & udon he'll eat","kid":true,"map":"https://maps.google.com/?cid=3489408883758792596","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Beef_curry_rice_003.jpg/960px-Beef_curry_rice_003.jpg"},
-       {"name":"Restaurant Iyabashi","cuisine":"udon & teishoku set meals","rating":4.1,"why":"Ruslan — hearty udon/teishoku near the gorge, plain udon also works for Aslan","kid":true,"map":"https://maps.google.com/?cid=12655428176554131611","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"}
+       {"name":"hanan coffee (ハナンコーヒー)","cuisine":"specialty coffee","rating":4.9,"why":"Ruslan/Galiya — a genuine self-roast specialty cafe deep in the gorge, the best brew for miles; pre-boat morning stop, cake/soft drinks keep Aslan happy","kid":false,"map":"https://maps.google.com/?cid=2482114103176376026","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Coffee_Pour_Over_Setup.jpg/960px-Coffee_Pour_Over_Setup.jpg"}
      ]},
-    {"slot":"dinner","area":"Iya Valley / Oboke",
+    {"slot":"lunch","area":"Iya Valley — near the Kazurabashi vine bridge",
      "picks":[
-       {"name":"清流のそば処 祖谷美人 (Iya Bijin)","cuisine":"handmade Iya soba & local set meals","rating":4.0,"why":"Galiya — celebrated mountain-soba house perched over the gorge near the vine bridge","kid":false,"map":"https://maps.google.com/?cid=17357317293131209474","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Zaru_soba_by_spinachdip.jpg/960px-Zaru_soba_by_spinachdip.jpg"},
-       {"name":"おのみ家 (Onomiya)","cuisine":"home-style Japanese teishoku / local fare","rating":4.7,"why":"Ruslan & Galiya — warm valley cooking and rice-based set meals in Nishi-Iya","kid":false,"map":"https://maps.google.com/?cid=17047889143403398966","photo":"https://upload.wikimedia.org/wikipedia/commons/d/d7/Tonjiru_teishoku.jpg"},
-       {"name":"Sanukiya (讃岐屋, Ikeda)","cuisine":"self-serve Sanuki udon","rating":4.2,"why":"Aslan — plain udon & rice, famiresu-style; the kid-safe fallback down in Ikeda since the valley is tiny (most ryokan also serve a child-friendly dinner with plain rice & dekomawashi skewers)","kid":true,"map":"https://maps.google.com/?cid=13602908240971594126","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Sanuki_udon_by_open-arms.jpg/960px-Sanuki_udon_by_open-arms.jpg"}
+       {"name":"Iya Bijin (清流のそば処 祖谷美人)","cuisine":"Iya soba (handmade mountain buckwheat)","rating":4.0,"why":"Galiya — the valley's signature soba eaten at the source, on a gorge-view terrace","kid":false,"map":"https://maps.google.com/?cid=17357317293131209474","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Iya_Soba.jpg/960px-Iya_Soba.jpg"},
+       {"name":"Senkichi (祖谷 千吉)","cuisine":"Iya soba + dekomawashi hearth skewers & rice","rating":4.2,"why":"Aslan — mild grilled potato/tofu skewers and plain rice he'll eat; soba for the grown-ups","kid":true,"map":"https://maps.google.com/?cid=18342506515780846740","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Dengaku_%282384193986%29.jpg/960px-Dengaku_%282384193986%29.jpg"},
+       {"name":"Soba-jaya (そば茶屋)","cuisine":"Iya soba teahouse","rating":4.3,"why":"Ruslan/Galiya — well-rated soba backup on the Yamashiro side toward Ōboke","kid":false,"map":"https://maps.google.com/?cid=1637649177588569982","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Iya_Soba.jpg/960px-Iya_Soba.jpg"}
+     ]},
+    {"slot":"snack","area":"Michi-no-eki Ōboke (gorge roadside station)",
+     "picks":[
+       {"name":"Cafe & Jibie (道の駅 大歩危)","cuisine":"Cafe — coffee, soft-serve & local game snacks","rating":4.3,"why":"Aslan — soft-serve and an easy snack between the boat and the ryokan; coffee for Ruslan","kid":true,"map":"https://maps.google.com/?cid=3489408883758792596","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
+     ]},
+    {"slot":"dinner","area":"Iya / Ōboke (onsen ryokan, or casual nearby)",
+     "picks":[
+       {"name":"Onsen-ryokan half-board kaiseki","cuisine":"Iya kaiseki — Iya soba, amego river fish, dekomawashi","rating":4.5,"why":"Galiya — the genuine rest-day highlight; book the in-house dinner when you reserve the room","kid":false,"map":"https://www.google.com/maps/search/?api=1&query=Iya%20Onsen%20ryokan%20dinner%20Miyoshi","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Ikaho_dinner_01.jpg/960px-Ikaho_dinner_01.jpg"},
+       {"name":"Isuba (イスバ)","cuisine":"Wood-fired pizza & pasta","rating":4.1,"why":"Aslan — plain Margherita pizza is the sure-thing kid dinner if you eat out","kid":true,"map":"https://maps.google.com/?cid=12401291956266270519","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Margherita_pizza_on_plate.jpg/960px-Margherita_pizza_on_plate.jpg"},
+       {"name":"Yamaya Cafe, Bar & Guesthouse","cuisine":"Casual riverside cafe-bar","rating":4.8,"why":"Ruslan/Galiya — relaxed Ōboke riverside spot for a drink and easy plates if not dining in","kid":false,"map":"https://maps.google.com/?cid=5681294211031365048","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
      ]}
   ]
 }
 ```
 
-## Day 10 — Into Iya Valley
+## Day 11 — Iya Rest Day (Iya Valley / Ōboke, Tokushima)
 
-**Overnight:** Iya Valley / Oboke, Tokushima (remote onsen-ryokan country in the heart of Shikoku).
+A genuine do-very-little day deep in one of Japan's three hidden valleys. The real downtime is the **riverside onsen ryokan** (several have a private cable-car down to open-air baths in the gorge), so keep the outings light: the **Kazurabashi vine bridge** and the **Ōboke Gorge boat** are the easy pair, with the **Peeing-Boy viewpoint** on the way. Nagoro Scarecrow Village is a long winding drive — leave it optional. **Rain plan:** the indoor **Lapis Ōboke** rock-and-*yōkai* museum and *dekomawashi* skewers by the ryokan hearth.
 
-**Schedule:** depart Naruto ~09:00 (or give the **Ōtsuka Museum of Art** a proper 2–3 h first and roll out ~11:30 — it's closed Mondays, so check the day) · coffee/leg-stretch around **Tokushima City** ~10:30 · **lunch ~12:30 at Oboke Gorge** · arrive the **Iya/Oboke onsen ryokan ~14:30–15:00** · long afternoon soak (several ryokan have a private cable-car down to open-air gorge baths) · **dinner ~18:30** in the valley. The short ride (75 mi / ~2h05m) and early arrival are by design — the afternoon is for the onsen.
+**Schedule:** slow morning onsen → ~10:30 vine bridge + Peeing-Boy → ~12:30 Iya soba near the bridge → ~13:30 Ōboke gorge boat → coffee/snack at Michi-no-eki Ōboke → ryokan baths → dinner.
 
-### Where to eat
+### Eat
+**Coffee — Ōboke (near the gorge station):**
+- **hanan coffee (ハナンコーヒー)** — 4.9 — Ruslan/Galiya's pick: a genuine self-roast **specialty** cafe tucked deep in the gorge, easily the best coffee for miles. A morning stop before the boat; cake and soft drinks keep Aslan happy. https://maps.google.com/?cid=2482114103176376026
 
-**Lunch — Oboke Gorge**
-- 🍜 **そば茶屋 (Soba Chaya)** — handmade **Iya soba** right by the gorge; *Galiya's* mountain-noodle pick. [Map](https://maps.google.com/?cid=1637649177588569982) · ⭐4.3
-- 🍛 **Cafe & Jibie (道の駅 大歩危 / Michi-no-Eki Ōboke)** *(kid)* — gorge-view roadside station with **curry rice & udon**; the easy, simple-food stop for *Aslan*. [Map](https://maps.google.com/?cid=3489408883758792596) · ⭐4.3
-- 🥢 **Restaurant Iyabashi** *(kid-OK)* — **udon & teishoku** sets; hearty for *Ruslan*, plain udon for *Aslan*. [Map](https://maps.google.com/?cid=12655428176554131611) · ⭐4.1
+**Lunch — by the vine bridge (Iya soba country):**
+- **Iya Bijin (清流のそば処 祖谷美人)** — 4.0 — Galiya's pick: the valley's signature handmade soba on a gorge-view terrace. https://maps.google.com/?cid=17357317293131209474
+- **Senkichi (祖谷 千吉)** — 4.2 — *kid pick for Aslan*: mild grilled *dekomawashi* skewers (potato/tofu/konnyaku) and plain rice, plus soba for the adults. https://maps.google.com/?cid=18342506515780846740
+- **Soba-jaya (そば茶屋)** — 4.3 — well-rated soba backup toward Ōboke. https://maps.google.com/?cid=1637649177588569982
 
-**Dinner — Iya Valley / Oboke**
-- 🍜 **清流のそば処 祖谷美人 (Iya Bijin)** — celebrated **handmade Iya soba** house over the gorge near the vine bridge; *Galiya's* dinner. [Map](https://maps.google.com/?cid=17357317293131209474) · ⭐4.0
-- 🍲 **おのみ家 (Onomiya)** — home-style Japanese **teishoku** in Nishi-Iya; warm valley cooking for *Ruslan & Galiya*. [Map](https://maps.google.com/?cid=17047889143403398966) · ⭐4.7
-- 🍜 **Sanukiya (讃岐屋, Ikeda)** *(kid)* — self-serve **Sanuki udon**, plain bowls & rice; the famiresu-style fallback down in Ikeda for *Aslan*. The valley is tiny, so the **ryokan's own dinner** (plain rice + *dekomawashi* skewers + udon) is also a reliable kid option. [Map](https://maps.google.com/?cid=13602908240971594126) · ⭐4.2
+**Snack — Michi-no-eki Ōboke:**
+- **Cafe & Jibie (道の駅 大歩危)** — 4.3 — *kid-friendly*: soft-serve and easy snacks between the boat and the ryokan, coffee for Ruslan. https://maps.google.com/?cid=3489408883758792596
 
-### Things to do
-- 🎨 **Ōtsuka Museum of Art (Naruto, optional morning)** — 1,000+ touchable full-size ceramic reproductions of world masterpieces; great with a 6-year-old. *Closed Mondays.*
-- 🚤 **Oboke Gorge** — jade-river sightseeing boat under schist cliffs, plus the **Lapis Oboke** yokai-folklore museum (kid hit).
-- 📷 **Iya-no-Kazurabashi viewpoint** — first look at the live-vine bridge (full crossing saved for the Day-11 rest day).
-- ♨️ **Onsen ryokan soak** — settle in early; several lodgings have a **private cable-car down to open-air baths** in the gorge.
+**Dinner — at the ryokan, or casual near Ōboke:**
+- **Onsen-ryokan half-board kaiseki** — Galiya's pick and the rest-day highlight: Iya soba, *amego* river fish and *dekomawashi*. Book the in-house dinner with the room — most Iya lodgings serve half-board and there are very few standalone dinner restaurants out here. https://www.google.com/maps/search/?api=1&query=Iya%20Onsen%20ryokan%20dinner%20Miyoshi
+- **Isuba (イスバ)** — 4.1 — *kid pick for Aslan*: wood-fired Margherita pizza, the sure thing if you eat out. https://maps.google.com/?cid=12401291956266270519
+- **Yamaya Cafe, Bar & Guesthouse** — 4.8 — relaxed Ōboke riverside cafe-bar for a drink and easy plates. https://maps.google.com/?cid=5681294211031365048
 
-*All restaurant addresses confirmed in Miyoshi, Tokushima (Shikoku). Dish photos are Wikimedia Commons thumbnails, each HTTP-200 verified.*
+*Note — this is remote rural Iya:* dinner is realistically the ryokan half-board; the eat-out picks and the nearest conbini are down around Ōboke/Ikeda, so plan ahead rather than expecting late-night options.
+
+### Do
+- Morning onsen soak at the ryokan (private gorge cable-car baths if yours has one).
+- **Kazurabashi vine bridge** — cross slowly; hold Aslan's hand on the slatted gaps.
+- **Peeing-Boy (Shōben-kozō) viewpoint** — quick cliff-edge photo stop.
+- **Ōboke Gorge sightseeing boat** (~30 min) — pair with **Lapis Ōboke** yōkai museum if wet.
+- *Optional:* **Nagoro Scarecrow Village** — quirky, but a long ~1 h drive up-valley.

@@ -3,7 +3,7 @@
 > One of Japan's oldest hot springs beneath a hilltop castle.
 
 - **Region:** Ehime · Matsuyama
-- **Itinerary:** Days 15–16 · 2 nights
+- **Itinerary:** Days 14–15 · 2 nights
 - **Stop type:** stay
 - **Ride to here (direct):** 55 mi
 

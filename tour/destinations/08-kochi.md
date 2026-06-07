@@ -3,7 +3,7 @@
 > Pacific shores, a perfectly preserved castle and big southern flavour.
 
 - **Region:** Shikoku south coast
-- **Itinerary:** Day 12
+- **Itinerary:** Day 11
 - **Stop type:** stop
 - **Ride to here (direct):** 37 mi
 

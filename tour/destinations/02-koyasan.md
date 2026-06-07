@@ -3,43 +3,37 @@
 > A 1,200-year-old monastery town in the clouds — temple lodging, lantern-lit cedar avenues and Japan's most atmospheric cemetery.
 
 - **Region:** Kōya · Wakayama (Kii Peninsula)
-- **Itinerary:** Day 3 · 1 night (shukubō temple stay)
+- **Itinerary:** Day 3 · quick daytime stop (no overnight)
 - **Stop type:** stop
 - **Ride to here (direct):** 54 mi
 
 ## About
 The first real ride leaves the Kansai sprawl and climbs the paved **Route 480 / 370** approach into the forested highlands of **Kōyasan** — a UNESCO World Heritage monastic town founded in **816** by the monk **Kūkai (Kōbō Daishi)** as the headquarters of **Shingon Buddhism**. Set in a high basin at ~800 m and ringed by eight peaks, it holds **117 temples**, a great vermilion pagoda, and **Okunoin** — Japan's largest cemetery, where more than 200,000 tombs, moss-covered and lantern-lit, line a two-kilometre avenue of giant cedars to Kūkai's mausoleum.
 
-The night here is the experience: a **shukubō** (temple lodging) stay with monks, a **shōjin-ryōri** Buddhist vegetarian dinner, and optional **morning prayers** or the dawn *goma* fire ritual. It is a gentle, awe-inspiring, low-mileage opener that eases the family into the trip — short riding, then an early arrival to walk Okunoin before dark.
+This trip treats Kōyasan as a **quick daytime stop, not an overnight** — the family isn't after a deep spiritual temple stay, so plan a brisk **~1–1.5 hour visit** (walk the cedar avenue of Okunoin, or the vermilion Danjō Garan pagoda complex and Kongōbu-ji, perhaps a temple-village lunch of *shōjin-ryōri*), then **ride straight on down the Route 168 pilgrim road to overnight at Yunomine** in the Kumano interior (see [Kumano Interior — Hongū & Yunomine](03-kumano-interior.md)). It is a gentle, awe-inspiring waypoint that eases the family into the trip without committing the whole afternoon to the mountain.
 
-> **For the newer rider:** the Osaka→Kōyasan day is short (~2h15m) but the final climb is a winding two-lane mountain road — ride it slowly and well within the comfort cap; there is no schedule to beat. **October note:** at 800 m Kōyasan is noticeably cooler than the lowlands (dress the child warmly for the evening) and the early-autumn colour starts here first; the Route 480/168 corridor is in the typhoon-exposed Kii interior, so keep the booking cancellable and check road status after heavy rain.
+> **For the newer rider:** Kōyasan opens the trip's biggest first-week ride (Osaka → Kōyasan → Yunomine, ~102 mi / ~4h32m), so **start early and keep the Kōyasan stop brief**. The Route 480 / 370 climb is a winding two-lane mountain road — ride it slowly and well within the comfort cap; the Kumano rest day tomorrow absorbs the long day. **October note:** at 800 m Kōyasan is noticeably cooler than the lowlands (pack a warm layer for the child) and the early-autumn colour starts here first; the Route 480/168 corridor is in the typhoon-exposed Kii interior, so keep the onward Yunomine booking cancellable and check road status after heavy rain.
 
 ## Things to see & do
-- **Okunoin** — a two-kilometre lantern-lit avenue of ancient cedars and 200,000+ tombs to Kōbō Daishi's mausoleum; an evening guided walk is unforgettable and surprisingly captivating for a child **[KID]**
-- **Konpon Daitō & Danjo Garan** — the brilliant vermilion Great Stupa and Kūkai's original temple complex, the spiritual heart of the mountain
+Pick **one or two** of these for the quick stop — enough to feel the mountain before riding on:
+- **Okunoin** — a two-kilometre avenue of ancient cedars and 200,000+ tombs to Kōbō Daishi's mausoleum; even a daytime walk of the first stretch is unforgettable and surprisingly captivating for a child **[KID]**
+- **Konpon Daitō & Danjo Garan** — the brilliant vermilion Great Stupa and Kūkai's original temple complex, the spiritual heart of the mountain (the most efficient single stop)
 - **Kongōbu-ji** — the head temple of Shingon Buddhism, with painted sliding screens and **Banryūtei**, Japan's largest rock garden
-- **Daimon** — the towering vermilion Great Gate guarding the western approach, with sweeping valley views
-- **Shukubō morning service** — sit in on sutra chanting or the dawn *goma* (sacred fire) ritual at your temple
-- **Reihōkan Museum** — Buddhist art and National Treasures of the mountain
+- **Daimon** — the towering vermilion Great Gate guarding the western approach, with sweeping valley views (right on the road out)
+- **Reihōkan Museum** — Buddhist art and National Treasures of the mountain (only if you have extra time)
 
 ## What to eat
-The whole point is the temple table — **there are no late-night restaurants**, so dinner is your shukubō's set meal and you eat early.
-- **Shōjin-ryōri** — refined Buddhist vegetarian temple cuisine (no meat, fish, onion or garlic), served lacquer-tray style as your shukubō dinner and breakfast; a quietly memorable meal for the whole family.
-- **Goma-dōfu** — silky sesame "tofu," ground and set without soy — the signature Kōyasan delicacy, often the highlight of the tray.
+With no overnight here, the temple table is a **lunch option** rather than the set kaiseki dinner — several temples and town restaurants serve *shōjin-ryōri* midday, and the shops sell sesame-tofu and pickles to take away.
+- **Shōjin-ryōri** — refined Buddhist vegetarian temple cuisine (no meat, fish, onion or garlic), served lacquer-tray style; a quietly memorable lunch for the whole family before the ride south.
+- **Goma-dōfu** — silky sesame "tofu," ground and set without soy — the signature Kōyasan delicacy, sold to eat in or take away.
 - **Kōya-dōfu** — freeze-dried tofu, accidentally invented on this cold mountain centuries ago and now used across Japan; reconstituted in a sweet-savoury broth.
 - **Tempura of mountain vegetables (sansai)** & **fu** (wheat gluten) — seasonal hillside greens and chewy fu, staples of the meatless table.
-- **Amazake & local sake** — warming low/non-alcohol rice drinks for a cool mountain evening; the temple shops sell sesame-tofu and pickles to take away.
+- **Amazake** — a warming low/non-alcohol rice drink for a cool mountain morning.
 
 ## Where to stay
-Lodging on the mountain is almost all **shukubō** (temple stays); rates are typically **per person with dinner & breakfast** included. The town's main streets are fully driveable and **most temples have a dedicated guest parking lot** — confirm yours has space and ask where to leave wet riding gear.
+**No overnight here.** This trip skips the Kōyasan temple-lodging (*shukubō*) night entirely — the family isn't after a deep spiritual stay, so Kōyasan is a **quick ~1–1.5 hour daytime stop** and the night is spent at the onsen hamlet of **Yunomine** in the Kumano interior, ~2 hours south down Route 168.
 
-| Property | Type | Parking | ¥/night | ≈USD | Notes |
-|---|---|---|---|---|---|
-| Ekō-in | Shukubō temple lodging | On-site temple lot (confirm space) | ¥16,000–28,000 pp | $105–185 pp | Popular with foreign guests; morning *goma* fire ritual and a guided evening Okunoin tour; tatami rooms with futons suit a child well. |
-| Fukuchi-in | Shukubō (with onsen) | On-site temple lot (confirm space) | ¥15,000–30,000 pp | $100–200 pp | Garden views and a rare **hot-spring bath** on the mountain; larger tatami rooms work for a family. |
-| Sekishō-in / Henjōson-in | Shukubō temple lodging | On-site temple lot (confirm space) | ¥12,000–22,000 pp | $80–145 pp | Classic, quieter temple stays with tatami rooms, futons and shōjin-ryōri. |
-
-_Rates indicative **per person, half-board** (≈ ¥150 = $1); confirm rates, secure motorcycle parking, and passenger/child rules before booking — and ask the temple where to park and store riding gear._
+➡️ **Sleep at [Kumano Interior — Hongū & Yunomine](03-kumano-interior.md)** (Day 3 night, 2-night onsen-ryokan base). *If you ever did want the temple-stay experience, Kōyasan's shukubō (e.g. Ekō-in, Fukuchi-in, Sekishō-in) run ~¥12,000–30,000 pp half-board — but that's not part of this itinerary.*
 
 ## Links
 - [Kōyasan Shukubō Association (official)](https://eng.shukubo.net/)

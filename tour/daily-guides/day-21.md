@@ -1,50 +1,64 @@
 ```json
 {
   "d": 21,
-  "title": "Bridge to Awaji & Home",
+  "title": "Osaka & Bike Return",
   "overnight": "Osaka (Namba / Dōtonbori)",
-  "schedule": "depart Kobe ~09:00 · 10:00 Kawasaki Good Times World (opens 10:00) · ~11:45 ride the Akashi Kaikyō Bridge to Awaji · lunch ~12:30 north Awaji (Iwaya/Shizuki) · afternoon Nijigen no Mori + Awaji Hanasajiki · recross ~16:30 and drop into Osaka · dinner ~19:00 in Namba/Dōtonbori",
+  "schedule": "no riding · return the bikes at the Suita base ~09:30–10:30 · city loop on foot/train · lunch ~13:00 near Namba / Den Den Town · afternoon Umeda (Nintendo/Pokémon/Ghibli) → Den Den Town → Kuromon Ichiba · celebration dinner ~19:00 in Dōtonbori",
   "todo": [
-    {"time":"~10:00","name":"Kawasaki Good Times World","what":"Kawasaki Heavy Industries museum at Meriken Park — sit-on motorcycles & Jet Skis, a Shinkansen cab, helicopter and robots; a perfect moto-family hit for Aslan (~1.5h, opens 10:00, closed Mon)","map":"https://www.google.com/maps/search/?api=1&query=Kawasaki%20Good%20Times%20World%20Kobe"},
-    {"time":"~11:45","name":"Akashi Kaikyō Bridge","what":"Ride the ~4 km span — for years the longest suspension bridge on earth; photo stop at the Awaji end","map":"https://www.google.com/maps/search/?api=1&query=Akashi%20Kaikyo%20Bridge"},
-    {"time":"~14:00","name":"Nijigen no Mori","what":"Anime theme park on Awaji (Naruto, Godzilla, Crayon Shin-chan zones) — a kid magnet for Aslan","map":"https://www.google.com/maps/search/?api=1&query=Nijigen%20no%20Mori%20Awaji"},
-    {"time":"~15:30","name":"Awaji Hanasajiki","what":"Hillside flower fields looking over the Inland Sea — an easy, pretty last stretch before recrossing","map":"https://www.google.com/maps/search/?api=1&query=Awaji%20Hanasajiki"}
+    {"time":"~09:30","name":"Bike return — Suita base (Bike Rental Japan)","what":"hand back the Africa Twin + CB400X, empty panniers, settle paperwork; the riding loop is closed","map":"https://www.google.com/maps/search/?api=1&query=Bike%20Rental%20Japan%20Suita%20Osaka"},
+    {"time":"~11:00","name":"Osaka Castle & park","what":"easy first walk of the no-ride day — moats, stone walls, gold-trimmed keep","map":"https://www.google.com/maps/search/?api=1&query=Osaka%20Castle"},
+    {"time":"~14:30","name":"Nintendo OSAKA + Pokémon Center (Daimaru Umeda 13F)","what":"Kansai flagship Nintendo store + big Pokémon Center on one walk-in floor — Mario/Zelda/Splatoon & Pokémon plush for Aslan and Galiya","map":"https://www.google.com/maps/search/?api=1&query=Nintendo%20OSAKA%20Daimaru%20Umeda"},
+    {"time":"~15:30","name":"Donguri Republic (Studio Ghibli shop)","what":"Totoro/Ponyo/Kiki goods — Galiya's Ghibli souvenir stop","map":"https://www.google.com/maps/search/?api=1&query=Donguri%20Republic%20Osaka"},
+    {"time":"~16:30","name":"Den Den Town & Super Potato","what":"Osaka's toy/figure mecca — retro Mario shop, gachapon floors, and the best shot at Transformers / Takara Tomy robot figures for Aslan","map":"https://www.google.com/maps/search/?api=1&query=Super%20Potato%20Den%20Den%20Town%20Osaka"},
+    {"time":"~17:30","name":"Kuromon Ichiba","what":"\"Osaka's kitchen\" — eat-as-you-walk seafood, wagyu skewers and fruit, a short walk from Den Den Town","map":"https://www.google.com/maps/search/?api=1&query=Kuromon%20Ichiba"}
   ],
   "meals": [
-    {"slot":"lunch","area":"North Awaji (Iwaya / Shizuki, near the bridge)",
+    {"slot":"coffee","area":"Shinsaibashi (near Namba)",
      "picks":[
-       {"name":"genpei (魚増鮮魚店 げんぺい)","cuisine":"Awaji seafood — sashimi & kaisen-don","rating":4.6,"why":"Galiya — island-fresh fish right by the Iwaya bridge landing","kid":false,"map":"https://maps.google.com/?cid=9299380464621384460","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kaisendon_001.jpg/960px-Kaisendon_001.jpg"},
-       {"name":"GOODMEAT AWAJISHIMA","cuisine":"Awaji wagyu / grilled beef","rating":4.3,"why":"Ruslan — local Awaji-beef on the island where it's raised","kid":false,"map":"https://maps.google.com/?cid=16763712060960368477","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/JP_%E6%97%A5%E6%9C%AC_Japan_%E6%B2%96%E7%B9%A9_OKINAWA_%E9%82%A3%E9%9C%B8_Naha_%E4%B9%85%E8%8C%82%E5%9C%B0_Kumoji_MK_Building_shop_%E5%92%8C%E7%89%9B%E7%87%92%E8%82%89%E5%BA%97_BBQ_Motobu_WAGYU_Yakiniku_Beef_Restaurant_lunch_meal_January_2025_R12S_09.jpg/960px-thumbnail.jpg"},
-       {"name":"Izumoan (いずも庵)","cuisine":"udon & soba noodles","rating":4.1,"why":"Aslan — plain hot udon he'll actually eat (Galiya gets her noodles too)","kid":true,"map":"https://maps.google.com/?cid=8247348910706101654","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Sanuki_udon_by_open-arms.jpg/960px-Sanuki_udon_by_open-arms.jpg"}
+       {"name":"LiLo Coffee Roasters","cuisine":"specialty coffee","rating":4.8,"why":"Ruslan & Galiya — Osaka's top in-house roaster (huge single-origin lineup, espresso & pour-over) a short walk from Namba; sweet iced lattes and cocoa keep Aslan happy","kid":false,"map":"https://maps.google.com/?cid=16291659530834990214","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
      ]},
-    {"slot":"dinner","area":"Osaka — Namba / Dōtonbori",
+    {"slot":"lunch","area":"Namba / Den Den Town",
      "picks":[
-       {"name":"Namba Okonomiyaki Ajinoya Honten (味乃家)","cuisine":"Osaka okonomiyaki","rating":4.3,"why":"Galiya — the city's signature savoury pancake, a celebratory homecoming dish","kid":false,"map":"https://maps.google.com/?cid=13558371125293422542","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Okonomiyaki_001.jpg/960px-Okonomiyaki_001.jpg"},
-       {"name":"Hanamaruken Hozenji","cuisine":"Osaka ramen (braised-pork shoyu)","rating":4.3,"why":"Galiya & Ruslan — a hearty famous Osaka ramen bowl","kid":false,"map":"https://maps.google.com/?cid=12134182644213953393","photo":"https://upload.wikimedia.org/wikipedia/commons/4/42/Ramen.jpg"},
-       {"name":"CHOJIRO Hozenji Flagship (廻る寿司 长次郎)","cuisine":"conveyor-belt sushi (kaiten-zushi)","rating":4.1,"why":"Aslan — touch-panel kaiten with plain egg, cucumber, karaage & rice he can pick himself","kid":true,"map":"https://maps.google.com/?cid=2946437673775376530","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kaiten-zushi_002.jpg/960px-Kaiten-zushi_002.jpg"}
+       {"name":"Udon Tamatama","cuisine":"hand-made udon noodles","rating":4.7,"why":"Aslan — plain kake udon he'll happily slurp; Galiya gets top-rated noodles too","kid":true,"map":"https://maps.google.com/?cid=8637420094679159397","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"},
+       {"name":"Kyoto Wamen Yukichi (Namba Sennichimae)","cuisine":"ramen","rating":5.0,"why":"Galiya — a standout bowl right in the Namba food maze","kid":false,"map":"https://maps.google.com/?cid=14468422320166151533","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ramen_2.jpg/960px-Ramen_2.jpg"},
+       {"name":"Tsurutontan Soemoncho","cuisine":"premium udon (big bowls, lots of plain options)","rating":4.0,"why":"Galiya & Ruslan — famous Osaka udon house; easy plain bowls work for Aslan too","kid":false,"map":"https://maps.google.com/?cid=12563860394098208989","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"}
+     ]},
+    {"slot":"dinner","area":"Dōtonbori",
+     "picks":[
+       {"name":"Chibo Dōtonbori","cuisine":"Osaka okonomiyaki / teppanyaki","rating":4.1,"why":"Galiya & Ruslan — the celebratory Osaka griddle classic on the neon canal","kid":false,"map":"https://maps.google.com/?cid=11230990528616538865","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Okonomiyaki_Osaka_2.JPG/960px-Okonomiyaki_Osaka_2.JPG"},
+       {"name":"Sushiro Dōtonbori","cuisine":"conveyor-belt sushi","rating":4.6,"why":"Aslan — tap-the-screen kaiten sushi with plain rice, tamago, karaage and fries; pure kid win","kid":true,"map":"https://maps.google.com/?cid=11787458940792052758","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Conveyor_belt_sushi_at_Mashiro_Sushi.jpg/960px-Conveyor_belt_sushi_at_Mashiro_Sushi.jpg"},
+       {"name":"OKO - Fun Okonomiyaki Bar","cuisine":"okonomiyaki / teppan (English-friendly)","rating":4.7,"why":"Galiya — top-rated, lively cook-at-the-counter alternative if Chibo has a queue","kid":false,"map":"https://maps.google.com/?cid=17891229658034342593","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Okonomiyaki_-a_Japanese_savory_pancake_in_Osaka%2C_Japan.jpg/960px-Okonomiyaki_-a_Japanese_savory_pancake_in_Osaka%2C_Japan.jpg"}
      ]}
   ]
 }
 ```
 
-## Day 21 — Bridge to Awaji & Home
+# Day 22 — Osaka & Bike Return
 
-**Overnight:** Osaka (Namba / Dōtonbori) — the loop closes here; bikes are due back the next day.
+**Overnight:** Osaka (Namba / Dōtonbori)
+**Schedule:** no riding. Return the motorcycles at the **Suita base (~09:30–10:30)**, then turn the day into a walking/train city loop — **lunch ~13:00 near Namba / Den Den Town**, an afternoon souvenir sweep (Umeda Nintendo/Pokémon → Donguri Republic Ghibli shop → Den Den Town → Kuromon Ichiba), and a **celebration dinner ~19:00 in Dōtonbori**.
 
-**Schedule:** Depart Kobe ~09:00. Open the day at **Kawasaki Good Times World** at Meriken Park (opens 10:00, closed Mondays) — a thematically perfect, hands-on motorcycle-tour stop for Aslan. Ride the **Akashi Kaikyō Bridge** (~11:45) onto Awaji, eat **lunch ~12:30** on the north end (Iwaya/Shizuki), then a relaxed afternoon at **Nijigen no Mori** (anime park, kid magnet) and **Awaji Hanasajiki** (flower fields). Recross around 16:30, drop into Osaka and check in, then **dinner ~19:00** in Namba/Dōtonbori.
+The loop is closed: empty the panniers, reunite the base-camp and forwarded cases at the Osaka hotel, and decide whether to takkyūbin them ahead to Tokyo for the Day-24 train.
 
-### Lunch — North Awaji (Iwaya / Shizuki, near the bridge)
-- **genpei** — Awaji seafood, sashimi & kaisen-don, 4.6★. Galiya: island-fresh fish a stone's throw from the Iwaya bridge landing. https://maps.google.com/?cid=9299380464621384460
-- **GOODMEAT AWAJISHIMA** — Awaji wagyu / grilled beef, 4.3★. Ruslan: local Awaji-beef on the island that raises it. https://maps.google.com/?cid=16763712060960368477
-- **Izumoan** *(kid)* — udon & soba, 4.1★. Aslan: plain hot udon he'll actually eat; Galiya gets her noodles too. https://maps.google.com/?cid=8247348910706101654
+## Where to eat
 
-### Dinner — Osaka, Namba / Dōtonbori
-- **Namba Okonomiyaki Ajinoya Honten** — Osaka okonomiyaki, 4.3★. Galiya: the city's signature dish for a homecoming dinner. https://maps.google.com/?cid=13558371125293422542
-- **Hanamaruken Hozenji** — Osaka ramen (braised-pork shoyu), 4.3★. Galiya & Ruslan: a hearty famous bowl. https://maps.google.com/?cid=12134182644213953393
-- **CHOJIRO Hozenji Flagship** *(kid)* — conveyor-belt sushi, 4.1★. Aslan: touch-panel kaiten with plain egg, cucumber, karaage and rice he can grab himself. https://maps.google.com/?cid=2946437673775376530
+### Coffee — Shinsaibashi (near Namba)
+- **LiLo Coffee Roasters** (specialty coffee, 4.8) — Osaka's standout in-house roaster: a huge single-origin lineup, sharp espresso and pour-over, a short walk from Namba. Sweet iced lattes and cocoa make it easy for Aslan too. [Map](https://maps.google.com/?cid=16291659530834990214)
 
-### To do
-- **~10:00 Kawasaki Good Times World** — Kawasaki museum at Meriken Park; sit-on bikes & Jet Skis, Shinkansen cab, helicopter, robots. Opens 10:00, closed Mon. https://www.google.com/maps/search/?api=1&query=Kawasaki%20Good%20Times%20World%20Kobe
-- **~11:45 Akashi Kaikyō Bridge** — ride the ~4 km span; photo stop at the Awaji end. https://www.google.com/maps/search/?api=1&query=Akashi%20Kaikyo%20Bridge
-- **~14:00 Nijigen no Mori** — Awaji anime park (Naruto/Godzilla/Crayon Shin-chan); a kid magnet. https://www.google.com/maps/search/?api=1&query=Nijigen%20no%20Mori%20Awaji
-- **~15:30 Awaji Hanasajiki** — hillside flower fields over the Inland Sea. https://www.google.com/maps/search/?api=1&query=Awaji%20Hanasajiki
+### Lunch — Namba / Den Den Town
+- **Udon Tamatama** (hand-made udon, 4.7) — *kid pick* — plain kake udon Aslan will actually slurp, and a top-rated noodle bowl for Galiya. [Map](https://maps.google.com/?cid=8637420094679159397)
+- **Kyoto Wamen Yukichi**, Namba Sennichimae (ramen, 5.0) — Galiya's foodie pick, deep in the Namba food maze. [Map](https://maps.google.com/?cid=14468422320166151533)
+- **Tsurutontan Soemoncho** (premium udon, 4.0) — famous big-bowl Osaka udon house; the plain bowls also suit Aslan. [Map](https://maps.google.com/?cid=12563860394098208989)
+
+### Dinner — Dōtonbori (celebration)
+- **Chibo Dōtonbori** (Osaka okonomiyaki / teppanyaki, 4.1) — the celebratory griddle classic right on the neon canal, for Galiya & Ruslan. [Map](https://maps.google.com/?cid=11230990528616538865)
+- **Sushiro Dōtonbori** (conveyor-belt sushi, 4.6) — *kid pick* — tap-the-screen kaiten sushi with plain rice, tamago, karaage and fries; a guaranteed Aslan win. [Map](https://maps.google.com/?cid=11787458940792052758)
+- **OKO - Fun Okonomiyaki Bar** (okonomiyaki / teppan, 4.7) — top-rated, English-friendly cook-at-the-counter alternative if Chibo has a queue. [Map](https://maps.google.com/?cid=17891229658034342593)
+
+## Things to do
+- **~09:30 — Bike return at the Suita base** (Bike Rental Japan): hand back the Africa Twin + CB400X, empty the panniers, settle the paperwork. The riding loop is officially closed.
+- **~11:00 — Osaka Castle & park:** an easy first walk of the no-ride day — broad moats, turreted stone walls, the gold-trimmed reconstructed keep.
+- **~14:30 — Nintendo OSAKA + Pokémon Center (Daimaru Umeda 13F):** Kansai's flagship Nintendo store and a large Pokémon Center on one walk-in floor — Mario/Zelda/Splatoon and Pokémon plush for Aslan (and Galiya).
+- **~15:30 — Donguri Republic (Studio Ghibli shop):** Totoro/Ponyo/Kiki goods — Galiya's Ghibli souvenir stop.
+- **~16:30 — Den Den Town & Super Potato:** Osaka's toy/figure mecca — retro Mario shop, gachapon floors, and the best shot on the whole trip at Transformers / Takara Tomy robot figures for Aslan.
+- **~17:30 — Kuromon Ichiba:** "Osaka's kitchen" — graze on seafood, wagyu skewers and fruit a short walk from Den Den Town before the Dōtonbori dinner.

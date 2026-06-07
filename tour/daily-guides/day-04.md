@@ -1,47 +1,59 @@
 ```json
 {
   "d": 4,
-  "title": "The Pilgrim Road (Route 168)",
+  "title": "Kumano Interior Rest Day",
   "overnight": "Yunomine Onsen, Tanabe, Wakayama",
-  "schedule": "depart Kōyasan ~09:00 · Tanise suspension bridge ~10:30 · coffee/leg-stretch at Totsukawa ~11:15 · lunch ~13:00 in the Hongū basin · Kumano Hongū Taisha & the giant Ōyunohara torii ~14:30 · check in at Yunomine ~16:00 + Tsuboyu/onsen soak · dinner in Yunomine ~18:30",
+  "schedule": "no-ride rest day · slow morning onsen (Tsuboyu slot + boil eggs at the spring) · Kawayu riverbed bath (river-level dependent) · lunch ~12:30 in Hongū near the shrine · afternoon gentle Kumano Kodō taster + Hongū Taisha · Ōyunohara giant torii at golden hour · dinner near Yunomine/Hongū",
   "todo": [
-    {"time":"~10:30","name":"Tanise no Tsuribashi","what":"walk the 297 m swaying suspension bridge high over the Totsukawa — a thrill for a 6-year-old (hold his hand on the slats)","map":"https://www.google.com/maps/search/?api=1&query=Tanise%20no%20Tsuribashi%20Totsukawa"},
-    {"time":"~14:30","name":"Kumano Hongū Taisha & Ōyunohara","what":"head shrine of the Kumano Sanzan up a cedar-lined stair, then Japan's largest torii (33.9 m) on the river sandbank","map":"https://maps.google.com/?cid=8104643903319895810"},
-    {"time":"~16:30","name":"Tsuboyu, Yunomine Onsen","what":"reserve a 30-min slot in the only UNESCO World Heritage bath you can bathe in; boil eggs/veg in the public yuzutsu spring — fun, hands-on for Aslan and a proper traditional soak for Galiya","map":"https://www.google.com/maps/search/?api=1&query=Tsuboyu%20Yunomine%20Onsen"}
+    {"time":"~09:30","name":"Tsuboyu, Yunomine","what":"Reserve a 30-min slot in the only UNESCO World Heritage bath you can bathe in; boil eggs/veg in the public yuzutsu spring by the river","map":"https://www.google.com/maps/search/?api=1&query=Tsuboyu%20Yunomine%20Onsen"},
+    {"time":"~11:00","name":"Kawayu Onsen riverbed bath","what":"Scoop your own hot bath in the warm gravel of the Ōto River (weather/river-level dependent — high water after rain cancels it)","map":"https://www.google.com/maps/search/?api=1&query=Kawayu%20Onsen"},
+    {"time":"~14:00","name":"Kumano Kodō taster + Kumano Hongū Taisha","what":"Short 30–40 min Hosshinmon-ōji-style stretch then the cypress-bark head shrine up the cedar stair (rain plan: free Kumano Hongū Heritage Center)","map":"https://www.google.com/maps/search/?api=1&query=Kumano%20Hongu%20Taisha"},
+    {"time":"~16:30","name":"Ōyunohara Ōtorii","what":"Japan's largest torii (33.9 m) on the old shrine sandbank — best at golden hour","map":"https://www.google.com/maps/search/?api=1&query=Oyunohara%20Otorii"}
   ],
   "meals": [
-    {"slot":"lunch","area":"Hongū basin (near Kumano Hongū Taisha)",
+    {"slot":"coffee","area":"Hongū village (steps from Kumano Hongū Taisha)",
      "picks":[
-       {"name":"山伏そば 拝庵 (Yamabushi Soba Haian)","cuisine":"handmade soba / mountain noodles","rating":4.3,"why":"Galiya — fresh soba right by the Hongū torii path","kid":false,"map":"https://maps.google.com/?cid=16404798185217074257","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Soba_and_tempura_combo_%2826498960080%29.jpg/960px-Soba_and_tempura_combo_%2826498960080%29.jpg"},
-       {"name":"きっちん (Kitchin)","cuisine":"casual diner / curry rice & set meals","rating":4.3,"why":"Aslan — plain rice, katsu and curry he'll actually eat","kid":true,"map":"https://maps.google.com/?cid=4351367167838386248","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Katsu-curry_002.jpg/960px-Katsu-curry_002.jpg"},
-       {"name":"宮ずし (Miya-zushi)","cuisine":"sushi & local mehari-zushi","rating":4.6,"why":"Galiya — sushi plus the Kumano pilgrim's mustard-leaf rice rolls","kid":false,"map":"https://maps.google.com/?cid=15958625622105258960","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Sushi_platter%2C_Nikko%2C_Japan.jpg/960px-Sushi_platter%2C_Nikko%2C_Japan.jpg"}
+       {"name":"「sei」 Glass shop · Tea room · Coffee stand","cuisine":"specialty coffee","rating":4.7,"why":"Ruslan & Galiya — a serious hand-pour coffee stand in the pilgrim village (a rare find this deep in the Kii interior); tea and sweets, so Aslan can have a treat too","kid":false,"map":"https://maps.google.com/?cid=2372018652556039714","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
      ]},
-    {"slot":"dinner","area":"Yunomine Onsen (tiny hot-spring hamlet — most ryokan/minshuku serve dinner; these are the walk-in options)",
+    {"slot":"lunch","area":"Hongū (near Kumano Hongū Taisha / Ōyunohara)",
      "picks":[
-       {"name":"You-got-it Bar | 湯垢離バー","cuisine":"izakaya / local small plates & drinks","rating":4.7,"why":"Galiya & Ruslan — the village's best-rated spot, local dishes and a craft drink after the soak","kid":false,"map":"https://maps.google.com/?cid=10401943476802246045","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Meharizushi-Kumano-Mie.JPG/960px-Meharizushi-Kumano-Mie.JPG"},
-       {"name":"Yunomine Onsen Shop / Dining Hall","cuisine":"simple set meals, curry & onsen eggs","rating":3.5,"why":"Aslan — plainest, simplest food in the hamlet (curry/rice) plus boil-your-own onsen eggs by the spring","kid":true,"map":"https://maps.google.com/?cid=3217771374086901163","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/251128_Onsen_Tamago_at_Kusatsu_Onsen.jpg/960px-251128_Onsen_Tamago_at_Kusatsu_Onsen.jpg"}
+       {"name":"Mitsuashi Noodle shop (みつ葉)","cuisine":"ramen / noodles","rating":4.8,"why":"Galiya — the standout noodle bowl right by the shrine; a plain bowl works for Aslan too","kid":false,"map":"https://maps.google.com/?cid=14384004974723876992","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"},
+       {"name":"きっちん (Kitchen)","cuisine":"casual Japanese set meals / katsu & rice","rating":4.3,"why":"Aslan — easy katsu, rice and simple plates he'll actually eat, steps from the shrine","kid":true,"map":"https://maps.google.com/?cid=4351367167838386248","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Tonkatsu.jpg/960px-Tonkatsu.jpg"},
+       {"name":"宮ずし (Miyazushi)","cuisine":"sushi","rating":4.6,"why":"Galiya — neighbourhood sushi counter in the pilgrim town (tamago for Aslan)","kid":false,"map":"https://maps.google.com/?cid=15958625622105258960","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Sushi_platter.jpg/960px-Sushi_platter.jpg"}
+     ]},
+    {"slot":"dinner","area":"Yunomine / Hongū (remote onsen hamlet — book your ryokan dinner if staying half-board; otherwise these are the nearby options)",
+     "picks":[
+       {"name":"ときわや (Tokiwaya), Kawayu","cuisine":"local Kumano set meals (mehari-zushi, river fish)","rating":4.2,"why":"Galiya — regional Kumano cooking eaten where it's made, riverside at Kawayu","kid":false,"map":"https://maps.google.com/?cid=2791320893729462743","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Meharizushi-Kumano-Mie.JPG/960px-Meharizushi-Kumano-Mie.JPG"},
+       {"name":"Okage-san Izakaya (おかげさん), Wataze","cuisine":"izakaya — karaage, grills, rice","rating":4.8,"why":"Aslan — karaage and plain rice; hearty plates and a drink for Ruslan","kid":true,"map":"https://maps.google.com/?cid=2574437099364628723","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Karaage.jpg/960px-Karaage.jpg"},
+       {"name":"Yumune Chaya (湯峰茶屋), Yunomine","cuisine":"onsen-village cafe / mehari-zushi & light meals","rating":3.9,"why":"convenient in-hamlet option right by the overnight onsen if you don't want to ride out","kid":false,"map":"https://maps.google.com/?cid=16222776516153084156","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mehari_zushi_by_m-louis.jpg/960px-Mehari_zushi_by_m-louis.jpg"}
      ]}
   ]
 }
 ```
 
-## Day 4 — The Pilgrim Road (Route 168)
+## Day 5 — Kumano Interior Rest Day (Yunomine Onsen, Wakayama)
 
-**Overnight:** Yunomine Onsen, Tanabe, Wakayama
-**Schedule:** depart Kōyasan ~09:00 · Tanise suspension bridge ~10:30 · coffee/leg-stretch at Totsukawa ~11:15 · lunch ~13:00 in the Hongū basin · Kumano Hongū Taisha & the giant Ōyunohara torii ~14:30 · check in at Yunomine ~16:00 + Tsuboyu/onsen soak · dinner in Yunomine ~18:30
+A genuine downtime day in the sacred Kii interior — onsen first, sightseeing second. No real riding (~20 mi of pottering between Yunomine, Kawayu and Hongū).
 
-This is a ~52 mi / 2 h descent down Route 168 with two natural stops, so the family rolls into the Hongū basin around lunchtime, sees the shrine and torii in the afternoon, and has the evening for Yunomine's hot springs. Yunomine is a genuinely tiny hamlet — most ryokan and minshuku serve a kaiseki dinner (mehari-zushi, river amago, Kumano-gyū), so the walk-in dinner picks below are the backup if your inn doesn't include a meal.
+**Schedule:** slow morning at Yunomine — reserve a 30-min slot in the tiny **Tsuboyu** (the only UNESCO World Heritage bath you can bathe in) and boil eggs in the public *yuzutsu* spring · late morning at **Kawayu** to dig your own riverbed bath (weather/river-level dependent) · **lunch ~12:30 in Hongū** by the shrine · afternoon **Kumano Kodō taster walk + Kumano Hongū Taisha** · **Ōyunohara** giant torii at golden hour · **dinner near Yunomine/Hongū**.
 
-### Lunch — Hongū basin (near Kumano Hongū Taisha)
-- **山伏そば 拝庵 (Yamabushi Soba Haian)** — handmade soba, 4.3 — Galiya's noodle fix right by the torii path. https://maps.google.com/?cid=16404798185217074257
-- **きっちん (Kitchin)** — casual diner, curry rice & set meals, 4.3 — *kid pick* for Aslan: plain rice, katsu and curry. https://maps.google.com/?cid=4351367167838386248
-- **宮ずし (Miya-zushi)** — sushi & local mehari-zushi, 4.6 — Galiya, sushi plus the Kumano pilgrim's mustard-leaf rice rolls. https://maps.google.com/?cid=15958625622105258960
+### Where to eat
 
-### Dinner — Yunomine Onsen
-- **You-got-it Bar | 湯垢離バー** — izakaya / local small plates, 4.7 — the hamlet's best-rated spot for Galiya & Ruslan after the soak. https://maps.google.com/?cid=10401943476802246045
-- **Yunomine Onsen Shop / Dining Hall** — simple set meals, curry & onsen eggs, 3.5 — *kid pick* for Aslan: the plainest food in town plus boil-your-own onsen eggs by the spring (note: lowest rating but the easiest walk-in for a picky eater in a village this small). https://maps.google.com/?cid=3217771374086901163
+**Coffee — Hongū village, by the shrine**
+- **「sei」 Glass shop · Tea room · Coffee stand** — specialty coffee, 4.7 — a genuine hand-pour coffee stand in the pilgrim village (a rare treat this deep in the Kii interior); tea and sweets on hand, so Aslan can have a treat too. https://maps.google.com/?cid=2372018652556039714
+
+**Lunch — Hongū, by the shrine**
+- **Mitsuashi Noodle shop (みつ葉)** — ramen/noodles, 4.8 — Galiya's bowl right by the shrine; a plain bowl suits Aslan too. https://maps.google.com/?cid=14384004974723876992
+- **きっちん (Kitchen)** — casual katsu & rice sets, 4.3 — *kid pick* for Aslan, simple plates steps from the shrine. https://maps.google.com/?cid=4351367167838386248
+- **宮ずし (Miyazushi)** — sushi, 4.6 — for Galiya (tamago for Aslan). https://maps.google.com/?cid=15958625622105258960
+
+**Dinner — Yunomine / Hongū** (tiny remote hamlet — most ryokan serve half-board dinner; book it if staying in. These are the nearby standalone options.)
+- **ときわや (Tokiwaya), Kawayu** — local Kumano set meals (mehari-zushi, river fish), 4.2 — regional cooking for Galiya. https://maps.google.com/?cid=2791320893729462743
+- **Okage-san Izakaya (おかげさん), Wataze** — izakaya, 4.8 — *kid pick*: karaage + plain rice for Aslan, hearty for Ruslan. https://maps.google.com/?cid=2574437099364628723
+- **Yumune Chaya (湯峰茶屋), Yunomine** — onsen-village cafe / mehari-zushi, 3.9 — the convenient in-hamlet choice by the overnight onsen. https://maps.google.com/?cid=16222776516153084156
 
 ### Things to do
-- **~10:30 Tanise no Tsuribashi** — walk the 297 m swaying suspension bridge over the Totsukawa (hold Aslan's hand on the slatted gaps). https://www.google.com/maps/search/?api=1&query=Tanise%20no%20Tsuribashi%20Totsukawa
-- **~14:30 Kumano Hongū Taisha & Ōyunohara** — head shrine of the Kumano Sanzan, then Japan's largest torii (33.9 m) on the river sandbank. https://maps.google.com/?cid=8104643903319895810
-- **~16:30 Tsuboyu, Yunomine Onsen** — reserve a 30-min slot in the only World Heritage bath you can bathe in; boil eggs in the yuzutsu spring (hands-on for Aslan, traditional soak for Galiya). https://www.google.com/maps/search/?api=1&query=Tsuboyu%20Yunomine%20Onsen
+- **~09:30 Tsuboyu, Yunomine** — reserve a 30-min slot in the World Heritage bath; boil eggs/veg in the spring.
+- **~11:00 Kawayu Onsen** — scoop your own bath in the warm riverbed (cancels when the Ōto River runs high after rain).
+- **~14:00 Kumano Kodō taster + Kumano Hongū Taisha** — a gentle 30–40 min stretch then the head shrine (rain plan: the free Kumano Hongū Heritage Center).
+- **~16:30 Ōyunohara Ōtorii** — Japan's largest torii (33.9 m) at golden hour.

@@ -3,7 +3,7 @@
 > A willow-lined canal quarter of white-walled storehouses.
 
 - **Region:** Okayama
-- **Itinerary:** Day 19
+- **Itinerary:** Day 18
 - **Stop type:** stop
 - **Ride to here (direct):** 41 mi
 

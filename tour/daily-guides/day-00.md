@@ -9,6 +9,10 @@
     {"time":"~18:00","name":"Konan-side stroll (optional)","what":"a gentle canal-side walk on the Konan (east) exit if energy allows — pedestrian decks and easy restaurants, no train needed","map":"https://www.google.com/maps/search/?api=1&query=Shinagawa%20Konan%20exit"}
   ],
   "meals": [
+    {"slot":"coffee","area":"Kitashinagawa — a few minutes from Shinagawa Station",
+     "picks":[
+       {"name":"NorthStar Beans (ノーススターコーヒー)","cuisine":"specialty coffee","rating":4.8,"why":"Ruslan & Galiya — a tiny top-rated Shinagawa specialty roastery for a proper morning pour-over to shake off jet-lag; quiet and walkable from the hotels","kid":false,"map":"https://maps.google.com/?cid=17650011963556167219","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
+     ]},
     {"slot":"dinner","area":"Shinagawa Konan (east) exit — all a short walk from the station and hotels",
      "picks":[
        {"name":"Ramen Hayashida Shinagawa Konanguchi (らぁ麺 はやし田 品川港南口店)","cuisine":"Tokyo shōyu ramen","cuisine_note":"clear chicken-and-soy bowl","rating":4.2,"why":"Galiya — a polished Tokyo soy-ramen bowl steps from the station on a tired arrival night","kid":false,"map":"https://maps.google.com/?cid=7404246691714038558","photo":"https://upload.wikimedia.org/wikipedia/commons/4/42/Ramen.jpg"},
@@ -24,6 +28,9 @@
 **Schedule:** land Haneda mid/late afternoon · Keikyū Line to Shinagawa (~15 min) · check in & drop bags ~17:30 · easy dinner near Shinagawa station ~19:00 · early night.
 
 This is the arrival bookend, not a riding day. The nonstop flight crosses the date line and lands mid/late afternoon, so the only real decision tonight is an easy, close-to-the-hotel dinner before an early night — there's a full kid-focused Tokyo museum day tomorrow (Ghibli Museum, teamLab, Nintendo), so keep it low-effort and don't forward the luggage yet. Everything below is on the **Konan (east) exit** of Shinagawa, a few minutes' walk from the station and its hotels — no extra trains after a 10-hour flight.
+
+### Coffee — Kitashinagawa (next morning, before the museum day)
+- **NorthStar Beans** (4.8) — a tiny, highly-rated specialty roastery a few minutes from Shinagawa Station; a proper pour-over to reset the jet-lag before heading into Tokyo. A real third-wave roaster, not a chain. https://maps.google.com/?cid=17650011963556167219
 
 ### Dinner — Shinagawa Konan (east) exit
 - **Ramen Hayashida Shinagawa Konanguchi** (4.2) — a refined Tokyo *shōyu* (clear chicken-and-soy) ramen bowl, an ideal warm, easy meal for Galiya right by the station. https://maps.google.com/?cid=7404246691714038558

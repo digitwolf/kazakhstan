@@ -1,46 +1,55 @@
 ```json
 {
   "d": 13,
-  "title": "The Clear River",
+  "title": "Shimanto Rest Day",
   "overnight": "Shimanto (Nakamura), Kochi",
-  "schedule": "depart Kochi ~09:00 · Niyodo Blue / Ino-cho washi mid-morning · lunch ~12:30 Susaki (nabeyaki ramen) · Sada Chinkabashi photo stop · arrive Shimanto ~16:30 (longest ride of the loop, ~4h33m) · dinner in Nakamura",
+  "schedule": "slow start ~09:30 · morning yakatabune river boat past the sinking bridges ~10:30 · riverside lunch ~12:30 near the Sada/Yamachi river bend · afternoon sinking-bridge cycle or the Akitsuio dragonfly-&-fish museum (rain/kid fallback) · easy dinner ~18:30 in Nakamura town",
   "todo": [
-    {"time":"~10:00","name":"Ino-cho Paper Museum (Tosa washi)","what":"Make your own postcard/sheet of Tosa washi on the Niyodo River — hands-on craft for Aslan (~¥400, closed Mon)","map":"https://www.google.com/maps/search/?api=1&query=Ino-cho%20Paper%20Museum%20Kochi"},
-    {"time":"~11:00","name":"Niyodo Blue river","what":"Photo stop at the famously translucent blue water","map":"https://www.google.com/maps/search/?api=1&query=Niyodo%20River%20Niyodo%20Blue"},
-    {"time":"~15:30","name":"Sada Chinkabashi","what":"Walk a railless 'sinking bridge' over the clear Shimanto","map":"https://www.google.com/maps/search/?api=1&query=Sada%20Chinkabashi%20Shimanto"}
+    {"time":"~10:30","name":"Shimanto yakatabune river boat","what":"Covered cruise gliding past the railless 'sinking bridges' — calm, no-effort, great for Aslan and the newer rider","map":"https://www.google.com/maps/search/?api=1&query=Shimanto%20River%20yakatabune%20boat"},
+    {"time":"~14:00","name":"Sada / Sata chinkabashi cycle & stroll","what":"Rent a flat bike at the michi-no-eki and ride out across the long sinking bridges over Japan's last clear stream","map":"https://www.google.com/maps/search/?api=1&query=Sada%20Chinkabashi%20Shimanto"},
+    {"time":"~15:00","name":"Akitsuio museum, Tonbo Kingdom","what":"Indoor dragonfly-and-river-fish aquarium — the wet-weather / kid hook for Aslan","map":"https://www.google.com/maps/search/?api=1&query=Shimantogawa%20Gakuyukan%20Akitsuio%20Tonbo%20Kingdom"},
+    {"time":"optional","name":"Cape Ashizuri","what":"Granite cape & white lighthouse — only if everyone's rested; it's a ~1.5–2h ride each way, a half-day, not a rest","map":"https://www.google.com/maps/search/?api=1&query=Cape%20Ashizuri"}
   ],
   "meals": [
-    {"slot":"lunch","area":"Susaki",
-     "picks":[
-       {"name":"Mayumi no Mise (まゆみの店)","cuisine":"Susaki nabeyaki ramen","rating":4.1,"why":"Galiya — Susaki's signature hot-pot ramen (chicken broth, thin noodles, egg) at the town's most famous shop","kid":false,"map":"https://maps.google.com/?cid=602723661575591055","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nabeyaki_ramen_01.jpg/960px-Nabeyaki_ramen_01.jpg"},
-       {"name":"Hashimoto Shokudo","cuisine":"shokudo diner / nabeyaki ramen","rating":4.3,"why":"Aslan — a homey diner where the mild chicken-broth nabeyaki ramen plus plain rice/sides suit a picky eater","kid":true,"map":"https://maps.google.com/?cid=5613975438265449042","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Nabeyaki_ramen_02.jpg/960px-Nabeyaki_ramen_02.jpg"}
+    {"slot":"coffee","area":"Sada, by the sinking bridge","picks":[
+       {"name":"hotori coffee","cuisine":"specialty coffee","rating":4.5,"why":"Ruslan & Galiya — a riverside specialty cafe right by the Sada chinkabashi; pair with the afternoon cycle. Cakes/juice for Aslan.","kid":false,"map":"https://maps.google.com/?cid=14204901372440090147","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
      ]},
-    {"slot":"dinner","area":"Shimanto (Nakamura)",
+    {"slot":"lunch","area":"Shimanto riverside (Yamachi / Sada bend)",
      "picks":[
-       {"name":"Local Cuisine Hanazen (郷土料理 花ぜん)","cuisine":"Shimanto river cuisine — wild eel, ayu","rating":4.3,"why":"Galiya — Shimanto's line-caught wild eel (unagi) and ayu cooked where they're fished","kid":false,"map":"https://maps.google.com/?cid=15777740087084303905","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Kabayaki_grilled_eel.jpg/960px-Kabayaki_grilled_eel.jpg"},
-       {"name":"Chika (チカ)","cuisine":"izakaya","rating":4.4,"why":"Aslan — busy local izakaya with karaage, plain rice and fried bites he'll happily eat (broad menu for the whole table)","kid":true,"map":"https://maps.google.com/?cid=14908376005053640875","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Chicken_karaage_003.jpg/960px-Chicken_karaage_003.jpg"},
-       {"name":"Chubo Wakamatsu (厨房 わかまつ)","cuisine":"Japanese / katsuo & local fish","rating":4.4,"why":"Ruslan & Galiya — well-rated all-rounder for Kochi katsuo and seasonal river fish","kid":false,"map":"https://maps.google.com/?cid=9013227086709514243","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Katsuo_no_tataki_in_Kochi_01.jpg/960px-Katsuo_no_tataki_in_Kochi_01.jpg"}
+       {"name":"こいちご飯 (Koichi Gohan)","cuisine":"Shimanto-river eel & ayu teishoku","rating":4.2,"why":"Galiya — river eel and sweetfish set meals eaten right by the water","kid":false,"map":"https://maps.google.com/?cid=16665219646928958643","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Unadon_%2815664670489%29.jpg/960px-Unadon_%2815664670489%29.jpg"},
+       {"name":"Shimantoya","cuisine":"riverside tourist restaurant — eel/ayu sets + plain rice & udon","rating":3.9,"why":"Aslan — big casual riverside spot with simple rice/udon sets he'll eat","kid":true,"map":"https://maps.google.com/?cid=10746447903860844056","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Ayu_no_Shioyaki.jpg/960px-Ayu_no_Shioyaki.jpg"}
+     ]},
+    {"slot":"dinner","area":"Nakamura town, Shimanto",
+     "picks":[
+       {"name":"Chubo Wakamatsu (厨房 わかまつ)","cuisine":"Tosa izakaya — katsuo tataki & local Kochi dishes","rating":4.4,"why":"Galiya — seared bonito katsuo tataki, the Kochi specialty, in a lively local izakaya","kid":false,"map":"https://maps.google.com/?cid=9013227086709514243","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Katsuo_no_tataki_at_Kochi_City.jpg/960px-Katsuo_no_tataki_at_Kochi_City.jpg"},
+       {"name":"Sushi Kazu","cuisine":"sushi","rating":4.2,"why":"Ruslan & Galiya — fresh local nigiri in central Nakamura","kid":false,"map":"https://maps.google.com/?cid=702334641640917640","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nigiri_Sushi_%2825966163204%29.jpg/960px-Nigiri_Sushi_%2825966163204%29.jpg"},
+       {"name":"さぬきや (Sanukiya Udon)","cuisine":"udon","rating":4.2,"why":"Aslan — plain hot udon, an easy sure-thing near the station","kid":true,"map":"https://maps.google.com/?cid=7610857881456023209","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Kake_udon_by_Joe_Jones_in_Tokyo.jpg/960px-Kake_udon_by_Joe_Jones_in_Tokyo.jpg"}
      ]}
   ]
 }
 ```
 
-## Day 13 — The Clear River (Kochi → Shimanto)
+# Day 14 — Shimanto Rest Day (overnight: Shimanto / Nakamura, Kochi)
 
-**Schedule:** Depart Kochi ~09:00 for the loop's longest ride (~128 mi / 4h33m, but bracketed by the upcoming rest day). Mid-morning craft and photo stops on the Niyodo (Ino-cho washi paper-making for Aslan, then the translucent Niyodo Blue), lunch around **Susaki** at midday, a sinking-bridge photo at Sada Chinkabashi, and arrival at **Shimanto (Nakamura)** ~16:30 for dinner in town.
+The best-placed rest of the trip, right after the two hardest riding days. No long ride today — slow river time on Japan's "last clear stream."
 
-### Lunch — Susaki (the nabeyaki-ramen town)
-- **Mayumi no Mise (まゆみの店)** — Susaki nabeyaki ramen, 4.1 — the town's famous original: hot-pot chicken-broth ramen with thin noodles and egg. Galiya's regional-specialty pick. https://maps.google.com/?cid=602723661575591055
-- **Hashimoto Shokudo** — shokudo / nabeyaki ramen, 4.3 *(kid)* — homey diner; the mild chicken broth plus plain rice and sides work for Aslan. https://maps.google.com/?cid=5613975438265449042
+**Schedule:** slow start ~09:30 · morning covered *yakatabune* river boat past the sinking bridges ~10:30 · riverside lunch ~12:30 · afternoon sinking-bridge cycle or the indoor Akitsuio dragonfly-and-fish museum (rain/kid fallback) · easy dinner ~18:30 in Nakamura town. (Canoe/SUP is a summer thing — usually too cold in late October.)
 
-### Dinner — Shimanto / Nakamura
-- **Local Cuisine Hanazen (郷土料理 花ぜん)** — Shimanto river cuisine, 4.3 — wild line-caught eel (unagi) and ayu from the clear river; Galiya's foodie pick. https://maps.google.com/?cid=15777740087084303905
-- **Chika (チカ)** — izakaya, 4.4 *(kid)* — popular local izakaya with karaage, plain rice and fried bites; easy for Aslan and a broad menu for everyone. https://maps.google.com/?cid=14908376005053640875
-- **Chubo Wakamatsu (厨房 わかまつ)** — Japanese, 4.4 — well-rated all-rounder for Kochi katsuo and seasonal river fish. https://maps.google.com/?cid=9013227086709514243
+## Eat
+**Coffee — Sada, by the sinking bridge:**
+- **hotori coffee** — riverside specialty cafe right by the Sada *chinkabashi*, 4.5 — Ruslan & Galiya; pair it with the afternoon bridge cycle, with cake/juice for Aslan. https://maps.google.com/?cid=14204901372440090147
 
-### Things to do
-- **~10:00 Ino-cho Paper Museum (Tosa washi)** — make your own postcard or sheet of Tosa washi on the Niyodo River; a hands-on craft Aslan will love (~¥400, **closed Mondays** — if Day 13 falls on a Monday, do it on the Day-12 afternoon or skip).
-- **~11:00 Niyodo Blue river** — photo stop at the famously translucent blue water.
-- **~15:30 Sada Chinkabashi** — walk one of the Shimanto's low railless "sinking bridges" before checking in.
+**Lunch — Shimanto riverside (Yamachi / Sada bend):**
+- **こいちご飯 (Koichi Gohan)** — Shimanto-river eel & ayu teishoku, 4.2 — Galiya, regional river fish by the water. https://maps.google.com/?cid=16665219646928958643
+- **Shimantoya** *(kid)* — big casual riverside restaurant with eel/ayu sets plus plain rice & udon for Aslan, 3.9. https://maps.google.com/?cid=10746447903860844056
 
-*Note: the classic riverside eel house **Shimantoya** (3.9, 1,190 reviews) is a well-known option too but sits just below the 4.0 bar, so it's listed here as a backup rather than a primary pick.*
+**Dinner — Nakamura town:**
+- **Chubo Wakamatsu (厨房 わかまつ)** — Tosa izakaya, katsuo tataki & Kochi dishes, 4.4 — Galiya. https://maps.google.com/?cid=9013227086709514243
+- **Sushi Kazu** — fresh local sushi, 4.2 — Ruslan & Galiya. https://maps.google.com/?cid=702334641640917640
+- **さぬきや (Sanukiya Udon)** *(kid)* — plain hot udon near the station, 4.2 — the easy win for Aslan. https://maps.google.com/?cid=7610857881456023209
+
+## Do
+- **~10:30 Yakatabune river boat** — covered cruise past the railless sinking bridges, calm and effortless. https://www.google.com/maps/search/?api=1&query=Shimanto%20River%20yakatabune%20boat
+- **~14:00 Sada/Sata chinkabashi cycle & stroll** — flat rental-bike ride out across the famous sinking bridges. https://www.google.com/maps/search/?api=1&query=Sada%20Chinkabashi%20Shimanto
+- **~15:00 Akitsuio museum, Tonbo Kingdom** — indoor dragonfly & river-fish aquarium, the kid/rain hook. https://www.google.com/maps/search/?api=1&query=Shimantogawa%20Gakuyukan%20Akitsuio%20Tonbo%20Kingdom
+- **Optional: Cape Ashizuri** — granite cape & lighthouse, but a ~1.5–2h ride each way (a half-day, not a rest) — only if everyone's keen. https://www.google.com/maps/search/?api=1&query=Cape%20Ashizuri

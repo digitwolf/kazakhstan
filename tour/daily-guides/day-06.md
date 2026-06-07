@@ -1,51 +1,59 @@
 ```json
 {
   "d": 6,
-  "title": "Down to the Sacred Coast",
-  "overnight": "Nachi-Katsuura, Wakayama",
-  "schedule": "depart Yunomine ~09:00 · Doro-kyō jet-boat ~10:00 · Daimon-zaka & Nachi Falls ~11:30 · lunch ~13:00 at Nachisan · roll into Katsuura ~14:30 · cave onsen ~15:30 · tuna dinner ~18:30 (short 52 mi / ~1h52m riding day — bank the afternoon as downtime)",
+  "title": "Capes & White Sand",
+  "overnight": "Shirahama, Wakayama",
+  "schedule": "depart Katsuura ~09:00 · coffee/photo stop at Hashigui-iwa ~09:45 · Sandanbeki cliffs ~11:15 · tuna lunch at Tore-Tore Ichiba ~12:15 · arrive Shirahama ~13:30 · afternoon: Shirarahama beach, Senjōjiki, Sakino-yu onsen · Engetsu Island sunset ~18:45 · dinner in Shirahama ~19:30",
   "todo": [
-    {"time":"~10:00","name":"Doro-kyō jet-boat","what":"glass-clear gorge cruise between sheer cliffs on the Kitayama River — a kid highlight","map":"https://www.google.com/maps/search/?api=1&query=Dorokyo%20jet%20boat%20Kitayama"},
-    {"time":"~11:30","name":"Daimon-zaka","what":"short cobbled pilgrim path under giant cedars up to the shrine (kid-friendly)","map":"https://www.google.com/maps/search/?api=1&query=Daimonzaka%20Nachikatsuura"},
-    {"time":"~12:00","name":"Nachi Falls & Kumano Nachi Taisha","what":"Japan's tallest single-drop waterfall (133 m) beside the vermilion Seiganto-ji pagoda — the postcard of Japan","map":"https://www.google.com/maps/search/?api=1&query=Nachi%20Falls%20Kumano%20Nachi%20Taisha"},
-    {"time":"~13:45","name":"Kumano Hayatama Taisha, Shingū (optional)","what":"the third Kumano grand shrine and its 1,000-year-old sacred nagi tree, a quick stop on the way down","map":"https://www.google.com/maps/search/?api=1&query=Kumano%20Hayatama%20Taisha"},
-    {"time":"~15:30","name":"Katsuura cave onsen (Bōki-dō)","what":"natural sea-grotto hot-spring bath with the surf booming below, at Hotel Urashima","map":"https://www.google.com/maps/search/?api=1&query=Hotel%20Urashima%20Bokido%20cave%20onsen%20Katsuura"}
+    {"time":"~09:45","name":"Hashigui-iwa","what":"line of sea pillars marching out to sea — quick photo + coffee stop","map":"https://www.google.com/maps/search/?api=1&query=Hashigui-iwa%20Kushimoto"},
+    {"time":"~11:15","name":"Sandanbeki Cliffs","what":"50 m cliffs with a sea-cave lift down to the waves","map":"https://www.google.com/maps/search/?api=1&query=Sandanbeki%20Shirahama"},
+    {"time":"~14:30","name":"Shirarahama Beach & Senjōjiki","what":"white quartz sand for shallow swimming, then clamber the tilted '1,000-tatami' rock terrace","map":"https://www.google.com/maps/search/?api=1&query=Shirarahama%20Beach%20Shirahama"},
+    {"time":"~16:00","name":"Sakino-yu Onsen","what":"1,300-year-old open-air rock bath right at the surf line (Galiya's onsen pick)","map":"https://www.google.com/maps/search/?api=1&query=Sakinoyu%20Onsen%20Shirahama"},
+    {"time":"~18:45","name":"Engetsu Island sunset","what":"classic sunset shot through the 'round-moon' natural sea arch","map":"https://www.google.com/maps/search/?api=1&query=Engetsu%20Island%20Shirahama"}
   ],
   "meals": [
-    {"slot":"lunch","area":"Nachisan (Nachi Falls)",
+    {"slot":"coffee","area":"Shirahama (Engetsu Island seafront)",
      "picks":[
-       {"name":"Chinchōan Moudemochi","cuisine":"handmade Kumano soba","rating":4.3,"why":"Galiya & Ruslan — fresh soba right at the falls/shrine path","kid":false,"map":"https://maps.google.com/?cid=530398846035148961","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Soba_and_tempura_combo_%2826498960080%29.jpg/960px-Soba_and_tempura_combo_%2826498960080%29.jpg"},
-       {"name":"Miyamatei","cuisine":"set-meal teahouse (udon, curry-rice)","rating":3.5,"why":"Aslan — the convenient on-site sit-down spot for plain udon & curry-rice (Nachisan is a tiny temple village, so options are limited; conbini onigiri are an easy backup)","kid":true,"map":"https://maps.google.com/?cid=7320587628942868247","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Kama-age_Udon.jpg/960px-Kama-age_Udon.jpg"}
+       {"name":"QUAYTH (キース)","cuisine":"specialty coffee","rating":4.7,"why":"Galiya & Ruslan — owner-roasted single-origin coffee in a sea-view cafe by Engetsu Island; okara/soymilk donuts & a coffee shake for Aslan","kid":false,"map":"https://maps.google.com/?cid=11143410138652144840","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
      ]},
-    {"slot":"dinner","area":"Katsuura port",
+    {"slot":"lunch","area":"Tore-Tore Ichiba / Katata (en route into Shirahama)",
      "picks":[
-       {"name":"Tuna Bowl Muromaru (まぐろ丼 むろまる)","cuisine":"maguro-don / tuna bowls","rating":4.5,"why":"Galiya & Ruslan — fresh line-caught Katsuura tuna straight off Japan's #1 tuna port","kid":false,"map":"https://maps.google.com/?cid=1322154716535247244","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Maguro-don_%28raw_tuna_fish_bowl%29%2C_Chiyoda-ward%2C_Tokyo_%28%E3%81%BE%E3%81%90%E3%82%8D%E4%B8%BC%2C_%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%29_%282011-05-10_13.26.07_by_yuiseki_aoba%29.jpg/960px-Maguro-don_%28raw_tuna_fish_bowl%29%2C_Chiyoda-ward%2C_Tokyo_%28%E3%81%BE%E3%81%90%E3%82%8D%E4%B8%BC%2C_%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%29_%282011-05-10_13.26.07_by_yuiseki_aoba%29.jpg"},
-       {"name":"Maguro no Yamaki","cuisine":"tuna specialist (maguro-don, seared zuke)","rating":4.2,"why":"Galiya — hugely popular local tuna house with seared and sashimi options","kid":false,"map":"https://maps.google.com/?cid=16729597622358529220","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Maguro-tataki-don_of_Sukiya.jpg/960px-Maguro-tataki-don_of_Sukiya.jpg"},
-       {"name":"Rio Ramen","cuisine":"ramen & gyoza","rating":4.2,"why":"Aslan — plain ramen broth & gyoza he'll actually eat, and Galiya's noodle fix if she's tuna'd out","kid":true,"map":"https://maps.google.com/?cid=17918930914327022472","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg/960px-Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg"}
+       {"name":"Shirasen Shokudo (白鮮食堂)","cuisine":"Kuroshio tuna & seafood teishoku","rating":4.6,"why":"Galiya & Ruslan — top-rated fresh maguro/seafood set near the port","kid":false,"map":"https://maps.google.com/?cid=5130477216008432969","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kaisendon_001.jpg/960px-Kaisendon_001.jpg"},
+       {"name":"TORETORE ICHIBA (とれとれ市場 南紀白浜)","cuisine":"giant seafood market & food court","rating":3.9,"why":"the planned tuna-cutting market stop — huge food court so everyone grazes; plain grilled skewers & rice for Aslan","kid":true,"map":"https://maps.google.com/?cid=9780413186048099620","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sashimi_of_S%C3%A3o_Paulo.jpg/960px-Sashimi_of_S%C3%A3o_Paulo.jpg"},
+       {"name":"Kaisen Sushi Toretore Ichiba (海鮮寿司とれとれ市場)","cuisine":"conveyor-belt sushi","rating":3.7,"why":"Aslan — pick-what-you-see kaiten sushi (plain rice, egg, cucumber rolls) inside the same market","kid":true,"map":"https://maps.google.com/?cid=10776434485905267434","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kaiten-zushi_002.jpg/960px-Kaiten-zushi_002.jpg"}
+     ]},
+    {"slot":"dinner","area":"Shirahama town",
+     "picks":[
+       {"name":"Gyosai Keishoku Kou (魚菜・軽食 幸)","cuisine":"seafood izakaya / sashimi","rating":4.6,"why":"Galiya & Ruslan — fresh local Nanki seafood and sashimi in town","kid":false,"map":"https://maps.google.com/?cid=1087738113559531192","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sashimi_of_S%C3%A3o_Paulo.jpg/960px-Sashimi_of_S%C3%A3o_Paulo.jpg"},
+       {"name":"Shirahama Key Noodle Dakishimetai","cuisine":"ramen","rating":4.3,"why":"Galiya — a proper bowl of noodles to end the day","kid":false,"map":"https://maps.google.com/?cid=10240352576288176698","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"},
+       {"name":"Ramen Bakumatsu - Nanki Shirahama","cuisine":"ramen shop with gyoza, karaage & rice sets","rating":4.1,"why":"Aslan — plain ramen plus gyoza/karaage and a rice bowl he'll actually eat","kid":true,"map":"https://maps.google.com/?cid=8622937101684774092","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Chicken_karaage_003.jpg/960px-Chicken_karaage_003.jpg"}
      ]}
   ]
 }
 ```
 
-## Day 6 — Down to the Sacred Coast (Yunomine → Doro-kyō → Nachi-Katsuura)
+## Day 7 — Capes & White Sand (overnight: Shirahama, Wakayama)
 
-A short, scenic 52-mile descent off the Kumano mountains to the Pacific, all paved and relaxed (~1h52m riding), so the afternoon is deliberately banked as downtime in the tuna port of Katsuura.
+A short, scenic 56 mi coastal day around the southern tip of the Kii Peninsula, held deliberately short so the afternoon belongs to the beach, not the road. **Depart Katsuura ~09:00**, photo-and-coffee stop at the **Hashigui-iwa** sea pillars (~09:45), drop down the **Sandanbeki** cliffs (~11:15), then a **tuna lunch at Tore-Tore Ichiba** (~12:15) before rolling into **Shirahama by ~13:30**. The whole afternoon is the resort: white-sand swimming at **Shirarahama**, clambering **Senjōjiki**, soaking at **Sakino-yu** onsen, and the **Engetsu Island** sunset through the sea arch (~18:45), then dinner in town.
 
-**Schedule:** depart Yunomine ~09:00 · Doro-kyō jet-boat ~10:00 · Daimon-zaka & Nachi Falls ~11:30 · lunch ~13:00 at Nachisan · into Katsuura ~14:30 · cave onsen ~15:30 · tuna dinner ~18:30.
+### Coffee — Shirahama (Engetsu Island seafront)
+- **QUAYTH (キース)** — specialty coffee, 4.7 — Galiya & Ruslan; the owner hand-roasts the beans in a white two-storey sea-view cafe right by Engetsu Island (good for the sunset stop). Okara/soymilk donuts and a sweet espresso "coffee shake" keep Aslan happy. Open 11:00–17:00, closed Mon/Tue. https://maps.google.com/?cid=11143410138652144840
 
-### Eat
-**Lunch — Nachisan, at the falls**
-- **Chinchōan Moudemochi** — handmade Kumano soba, 4.3★ — Galiya & Ruslan. https://maps.google.com/?cid=530398846035148961
-- **Miyamatei** *(kid)* — set-meal teahouse with plain udon & curry-rice, 3.5★ — the convenient on-site stop for Aslan. Nachisan is a tiny temple village so choice is limited; conbini onigiri are an easy backup. https://maps.google.com/?cid=7320587628942868247
+### Lunch — Tore-Tore Ichiba / Katata
+- **Shirasen Shokudo** — Kuroshio tuna & seafood teishoku, 4.6 — Galiya & Ruslan; top-rated fresh maguro near the port. https://maps.google.com/?cid=5130477216008432969
+- **TORETORE ICHIBA** (kid) — the famous seafood market & food court, 3.9 — the planned tuna-cutting stop; a sprawling food court so everyone grazes (plain grilled skewers and rice for Aslan). https://maps.google.com/?cid=9780413186048099620
+- **Kaisen Sushi Toretore Ichiba** (kid) — conveyor-belt sushi, 3.7 — pick-what-you-see kaiten sushi (plain rice, egg, cucumber rolls) inside the same market for Aslan. https://maps.google.com/?cid=10776434485905267434
 
-**Dinner — Katsuura port** (Japan's #1 fresh-tuna port)
-- **Tuna Bowl Muromaru** — maguro-don & tuna bowls, 4.5★ — Galiya & Ruslan, tuna straight off the boats. https://maps.google.com/?cid=1322154716535247244
-- **Maguro no Yamaki** — tuna specialist (seared zuke, sashimi), 4.2★ — Galiya. https://maps.google.com/?cid=16729597622358529220
-- **Rio Ramen** *(kid)* — plain ramen & gyoza for Aslan, plus Galiya's noodle fix, 4.2★. https://maps.google.com/?cid=17918930914327022472
+### Dinner — Shirahama town
+- **Gyosai Keishoku Kou** — seafood izakaya / sashimi, 4.6 — Galiya & Ruslan; fresh local Nanki seafood. https://maps.google.com/?cid=1087738113559531192
+- **Shirahama Key Noodle Dakishimetai** — ramen, 4.3 — Galiya's noodle fix to close the day. https://maps.google.com/?cid=10240352576288176698
+- **Ramen Bakumatsu - Nanki Shirahama** (kid) — ramen with gyoza, karaage & rice sets, 4.1 — plain ramen plus fried chicken and rice Aslan will actually eat. https://maps.google.com/?cid=8622937101684774092
 
-### Do
-- **~10:00 Doro-kyō jet-boat** — glass-clear gorge cruise between sheer cliffs (kid highlight).
-- **~11:30 Daimon-zaka** — short cobbled cedar-lined pilgrim path up to the shrine.
-- **~12:00 Nachi Falls & Kumano Nachi Taisha** — Japan's tallest single-drop waterfall beside the vermilion Seiganto-ji pagoda.
-- **~13:45 Kumano Hayatama Taisha, Shingū** *(optional)* — the third Kumano grand shrine and its 1,000-year-old sacred nagi tree.
-- **~15:30 Katsuura cave onsen (Bōki-dō)** — natural sea-grotto bath over the booming surf at Hotel Urashima.
+### Things to do
+- **~09:45 Hashigui-iwa** — line of pillar rocks marching out to sea; quick photo + coffee.
+- **~11:15 Sandanbeki Cliffs** — 50 m cliffs with a sea-cave lift down to the waves.
+- **~14:30 Shirarahama Beach & Senjōjiki** — brilliant white quartz sand for shallow, gentle swimming, then clamber the tilted "1,000-tatami" rock terrace.
+- **~16:00 Sakino-yu Onsen** — Galiya's pick: a 1,300-year-old open-air rock bath cut right at the surf line.
+- **~18:45 Engetsu Island** — the classic Shirahama sunset shot through the "round-moon" sea arch.
+
+*All restaurants are in Shirahama-chō, Nishimuro District, Wakayama Prefecture (verified). Hotel parking & child/passenger rules: confirm before booking.*

@@ -1,50 +1,57 @@
 ```json
 {
   "d": 19,
-  "title": "Canal Town",
-  "overnight": "Kurashiki, Okayama",
-  "schedule": "depart Onomichi ~09:00 · Fukuyama Castle ~09:40 · Tomonoura (Ponyo harbour) ~10:30 · lunch ~12:30 in Tomonoura · Washūzan viewpoint ~14:30 · arrive Kurashiki ~16:00 · Bikan canal quarter + Ōhara Museum late afternoon · dinner in Kurashiki Bikan",
+  "title": "The Great Castle",
+  "overnight": "Kobe, Hyogo",
+  "schedule": "depart Kurashiki ~09:00 · Bizen-yaki hand-shaping in Imbe ~09:45 · Himeji Castle + Kōko-en, lunch ~12:30 · arrive Kobe ~17:00 · Kobe-beef dinner in the city",
   "todo": [
-    {"time":"~09:40","name":"Fukuyama Castle","what":"station-side castle keep, quick photo stop","map":"https://www.google.com/maps/search/?api=1&query=Fukuyama%20Castle%20Hiroshima"},
-    {"time":"~10:30","name":"Tomonoura (Ponyo harbour)","what":"the seaside town that inspired Ghibli's Ponyo — the stone gangi jetty, the old jōyatō lighthouse and the cliffside hillside; Galiya's headline Ghibli stop and an easy kid-friendly port walk","map":"https://www.google.com/maps/search/?api=1&query=Tomonoura%20Fukuyama"},
-    {"time":"~14:30","name":"Washūzan Viewpoint","what":"sweeping panorama of the Seto Ōhashi bridge over the island-dotted Inland Sea","map":"https://www.google.com/maps/search/?api=1&query=Washuzan%20Viewpoint%20Kurashiki"},
-    {"time":"~16:00","name":"Kurashiki Bikan + Ōhara Museum of Art","what":"willow-lined canal of white-walled kura storehouses; a flat-bottomed boat ride for the child, then Japan's first Western-art museum","map":"https://www.google.com/maps/search/?api=1&query=Kurashiki%20Bikan%20historical%20quarter"}
+    {"time":"~09:45","name":"Bizen-yaki pottery town, Imbe","what":"brick-chimney kiln village ~35 min east on Route 2; short beginner hand-shaping workshop (reserve ahead; confirm under-6 OK; not a Monday) — a hands-on craft for Aslan","map":"https://www.google.com/maps/search/?api=1&query=Imbe%20Bizen%20pottery%20Okayama"},
+    {"time":"~12:00","name":"Himeji Castle & Kōko-en","what":"the White Heron castle, Japan's finest keep, plus the Kōko-en garden — unhurried, lunch nearby","map":"https://www.google.com/maps/search/?api=1&query=Himeji%20Castle"},
+    {"time":"~17:30","name":"Kobe Harborland & Mosaic","what":"harbour-front boardwalk, Ferris wheel and shops for an easy evening stroll before dinner — kid-friendly","map":"https://www.google.com/maps/search/?api=1&query=Kobe%20Harborland"}
   ],
   "meals": [
-    {"slot":"lunch","area":"Tomonoura",
+    {"slot":"coffee","area":"Kobe (Motomachi / Chuo Ward)",
      "picks":[
-       {"name":"Shiokura Seafood Restaurant","cuisine":"Setouchi seafood / sashimi set","rating":4.3,"why":"Galiya — fresh Inland-Sea fish in the Ponyo harbour","kid":false,"map":"https://maps.google.com/?cid=11425586595266106681","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Sashimi_set.jpg/960px-Sashimi_set.jpg"},
-       {"name":"Tomonoura Ramen Taimaru","cuisine":"ramen","rating":4.1,"why":"Aslan — a plain shōyu ramen bowl he'll eat, plus noodles for Galiya","kid":true,"map":"https://maps.google.com/?cid=5549553753109472065","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"},
-       {"name":"Cafe & Dining Bar T8 TOMONOURA","cuisine":"Western cafe / omurice & pasta","rating":4.6,"why":"Aslan & family — easy Western plates with a harbour view","kid":true,"map":"https://maps.google.com/?cid=14111119771642764996","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Omurice_1.jpg/960px-Omurice_1.jpg"}
+       {"name":"TAOCA COFFEE Kobe Motomachi","cuisine":"specialty coffee","rating":4.8,"why":"Galiya & Ruslan — Kobe's marquee specialty roaster; pour-overs and house cakes (a slice/juice for Aslan)","kid":false,"map":"https://maps.google.com/?cid=9385516540078879431","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
      ]},
-    {"slot":"dinner","area":"Kurashiki Bikan",
+    {"slot":"lunch","area":"Himeji Castle (Honmachi)",
      "picks":[
-       {"name":"Sakura-sō","cuisine":"Japanese set meals / local Setouchi","rating":4.3,"why":"Galiya — a proper Japanese teishoku dinner steps from the canal","kid":false,"map":"https://maps.google.com/?cid=14482124938972194149","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/%E5%AE%9A%E9%A3%9F_-_traditional_Japanese_set_meal_at_New_Chitose_Airport_%2897%29.jpg/960px-%E5%AE%9A%E9%A3%9F_-_traditional_Japanese_set_meal_at_New_Chitose_Airport_%2897%29.jpg"},
-       {"name":"Furuichi Bukkake-an Udon Restaurant","cuisine":"bukkake udon","rating":4.7,"why":"Aslan & Galiya — plain springy udon for him, the famous local bukkake bowl for her","kid":true,"map":"https://maps.google.com/?cid=11714000109321652119","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Kizami-bukkake-furuichi.jpg/960px-Kizami-bukkake-furuichi.jpg"},
-       {"name":"Kappa","cuisine":"tonkatsu","rating":4.2,"why":"Aslan — crisp katsu & rice, a long-running Kurashiki favourite","kid":true,"map":"https://maps.google.com/?cid=8826212601760362483","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Tonkatsu_by_ayustety_in_Tokyo.jpg/960px-Tonkatsu_by_ayustety_in_Tokyo.jpg"}
+       {"name":"Menme (めん処 まる味)","cuisine":"Himeji udon / local noodles","rating":4.5,"why":"Galiya — well-loved noodle house steps from the castle","kid":false,"map":"https://maps.google.com/?cid=12605750817218965755","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Udon_by_udono.jpg/960px-Udon_by_udono.jpg"},
+       {"name":"HIMEJI UDEN (姫路うでん)","cuisine":"udon specialist","rating":4.7,"why":"Aslan — a bowl of plain udon he'll actually eat","kid":true,"map":"https://maps.google.com/?cid=16675121459691659468","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Udon_by_udono.jpg/960px-Udon_by_udono.jpg"},
+       {"name":"Eel restaurant Hiiragi (柊)","cuisine":"anago / unagi (grilled eel) sets","rating":4.1,"why":"Ruslan & Galiya — Seto-Inland anago, a Himeji specialty","kid":false,"map":"https://maps.google.com/?cid=11227371164931079938","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Unagi_Don_-_Kura_AUD12.90_regular_%283723645846%29.jpg/960px-Unagi_Don_-_Kura_AUD12.90_regular_%283723645846%29.jpg"}
+     ]},
+    {"slot":"dinner","area":"Kobe (Sannomiya / Chuo Ward)",
+     "picks":[
+       {"name":"Kobe Beef KOJYU","cuisine":"Kobe-beef teppanyaki","rating":4.9,"why":"Galiya & Ruslan — the trip's Kobe-beef splurge (reserve ahead)","kid":false,"map":"https://maps.google.com/?cid=1379734323732265440","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/4_Kobe_Beef%2C_Kobe_Japan.jpg/960px-4_Kobe_Beef%2C_Kobe_Japan.jpg"},
+       {"name":"KOBE BEEF EiKiChi","cuisine":"Kobe-beef teppanyaki / steak","rating":4.8,"why":"Ruslan — chef-grilled Kobe beef at the counter","kid":false,"map":"https://maps.google.com/?cid=12911166532687467298","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/4_Kobe_Beef%2C_Kobe_Japan.jpg/960px-4_Kobe_Beef%2C_Kobe_Japan.jpg"},
+       {"name":"Sushiro Sannomiya Ikuta Road","cuisine":"conveyor-belt sushi (famiresu chain)","rating":3.7,"why":"Aslan — kaiten sushi, tamago/karaage/plain plates and a touchscreen he'll love","kid":true,"map":"https://maps.google.com/?cid=9260017382291780962","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Plateau_de_Sushis.JPG/960px-Plateau_de_Sushis.JPG"}
      ]}
   ]
 }
 ```
 
-## Day 19 — Canal Town (Onomichi → Kurashiki)
+# Day 20 — The Great Castle (Kurashiki → Himeji → Kobe)
 
-**Schedule:** depart Onomichi ~09:00 · Fukuyama Castle ~09:40 · **Tomonoura (Ponyo harbour) ~10:30** · lunch ~12:30 in Tomonoura · Washūzan viewpoint ~14:30 · arrive **Kurashiki ~16:00** · Bikan canal quarter + Ōhara Museum of Art late afternoon · dinner in the Bikan quarter. 90 mi / ~3h15m riding, broken by easy stops — a relaxed, kid-paced day.
+**Schedule:** depart Kurashiki ~09:00 · Bizen-yaki hand-shaping in Imbe ~09:45 · Himeji Castle + Kōko-en garden with lunch ~12:30 · into Kobe by ~17:00 · Kobe-beef dinner in the city. A short 105-mi / ~2h49m ride, so the day is built around the castle and an easy harbour evening rather than the road.
 
-### Lunch — Tomonoura
-- **Shiokura Seafood Restaurant** — Setouchi seafood / sashimi set, 4.3★. Galiya: fresh Inland-Sea fish right in the Ponyo harbour. https://maps.google.com/?cid=11425586595266106681
-- **Tomonoura Ramen Taimaru** *(kid-friendly)* — ramen, 4.1★. Aslan: a plain shōyu bowl he'll actually eat, noodles for Galiya too. https://maps.google.com/?cid=5549553753109472065
-- **Cafe & Dining Bar T8 TOMONOURA** *(kid-friendly)* — Western cafe (omurice, pasta), 4.6★. Easy Western plates with a harbour view. https://maps.google.com/?cid=14111119771642764996
+## Where to eat
 
-### Dinner — Kurashiki Bikan
-- **Sakura-sō** — Japanese set meals / local Setouchi, 4.3★. Galiya: a proper teishoku dinner steps from the canal. https://maps.google.com/?cid=14482124938972194149
-- **Furuichi Bukkake-an Udon** *(kid-friendly)* — bukkake udon, 4.7★. Plain springy udon for Aslan, the famous local bukkake bowl for Galiya. https://maps.google.com/?cid=11714000109321652119
-- **Kappa** *(kid-friendly)* — tonkatsu, 4.2★. Crisp katsu & rice, a long-running Kurashiki favourite. https://maps.google.com/?cid=8826212601760362483
+**Coffee — Kobe (Motomachi / Chuo Ward):**
+- **TAOCA COFFEE Kobe Motomachi** — specialty coffee, 4.8★ (1,670+ reviews). Kobe's standout specialty roaster for a morning cup before heading out, or a wind-down after arrival; pour-overs plus house cakes and juice for Aslan. [Map](https://maps.google.com/?cid=9385516540078879431)
 
-### To do
-- **~09:40 Fukuyama Castle** — station-side keep, quick photo stop.
-- **~10:30 Tomonoura (Ponyo harbour)** — Miyazaki stayed here ~two months conceiving *Ponyo*; walk the stone gangi jetty and old jōyatō lighthouse. Galiya's headline Ghibli stop, and an easy port walk for Aslan.
-- **~14:30 Washūzan Viewpoint** — panorama of the Seto Ōhashi bridge over the island-dotted Inland Sea.
-- **~16:00 Kurashiki Bikan + Ōhara Museum of Art** — willow-lined canal of white-walled storehouses; a flat-bottomed boat ride is a hit with the child, then Japan's first Western-art museum.
+**Lunch — by Himeji Castle (Honmachi):**
+- **Menme (めん処 まる味)** — Himeji udon / local noodles, 4.5★. Galiya's noodle pick, a few minutes from the castle gate. [Map](https://maps.google.com/?cid=12605750817218965755)
+- **HIMEJI UDEN (姫路うでん)** — udon specialist, 4.7★. *Kid pick* — a plain udon bowl Aslan will eat. [Map](https://maps.google.com/?cid=16675121459691659468)
+- **Eel restaurant Hiiragi (柊)** — anago / unagi sets, 4.1★. Grilled Seto-Inland eel, a Himeji specialty for Ruslan & Galiya. [Map](https://maps.google.com/?cid=11227371164931079938)
 
-*All restaurant links are Google Maps; all dish photos are Wikimedia Commons (HTTP 200 verified). Confirm hours before going — small Tomonoura spots can close early or between services.*
+**Dinner — Kobe (Sannomiya / Chuo Ward):**
+- **Kobe Beef KOJYU** — Kobe-beef teppanyaki, 4.9★ (3,300+ reviews). The trip's Kobe-beef splurge — reserve ahead. [Map](https://maps.google.com/?cid=1379734323732265440)
+- **KOBE BEEF EiKiChi** — Kobe-beef teppanyaki / steak, 4.8★. Chef-grilled at the counter. [Map](https://maps.google.com/?cid=12911166532687467298)
+- **Sushiro Sannomiya Ikuta Road** — conveyor-belt sushi chain, 3.7★. *Kid pick* — kaiten sushi with tamago, karaage and plain plates and a touchscreen Aslan will love (familiar famiresu chain). [Map](https://maps.google.com/?cid=9260017382291780962)
+
+## Things to do
+- **~09:45 Bizen-yaki pottery town, Imbe** — kiln village ~35 min east on Route 2; a short beginner hand-shaping workshop makes a cup/bowl that's fired and posted home (reserve ahead, confirm under-6 participation, and check it isn't a Monday). Hands-on craft for Aslan.
+- **~12:00 Himeji Castle & Kōko-en** — the White Heron castle and its garden, unhurried, with lunch nearby.
+- **~17:30 Kobe Harborland & Mosaic** — harbour boardwalk, Ferris wheel and shops for an easy evening before the Kobe-beef dinner.
+
+*All Google links are key-free `googleMapsUri`/maps-search URLs; all dish photos are Wikimedia Commons thumbnails verified HTTP 200. Restaurant ratings from Google Places (text search, location-biased on Himeji Castle 34.84,134.69 and Kobe 34.68,135.19).*

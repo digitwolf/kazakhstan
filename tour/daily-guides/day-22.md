@@ -1,57 +1,52 @@
 ```json
 {
   "d": 22,
-  "title": "Osaka & Bike Return",
-  "overnight": "Osaka (Namba / Dōtonbori)",
-  "schedule": "no riding · return the bikes at the Suita base ~09:30–10:30 · city loop on foot/train · lunch ~13:00 near Namba / Den Den Town · afternoon Umeda (Nintendo/Pokémon/Ghibli) → Den Den Town → Kuromon Ichiba · celebration dinner ~19:00 in Dōtonbori",
+  "title": "Super Nintendo World / USJ",
+  "overnight": "Universal City, Osaka (USJ bayfront)",
+  "schedule": "no riding · breakfast at the hotel ~07:15 · be at the USJ gate for opening ~08:00 (reserve the Super Nintendo World Area Timed-Entry in the USJ app first) · quick lunch ~12:30 at Universal CityWalk · afternoon back in the park · dinner ~18:30 at CityWalk on the way back to the hotel",
   "todo": [
-    {"time":"~09:30","name":"Bike return — Suita base (Bike Rental Japan)","what":"hand back the Africa Twin + CB400X, empty panniers, settle paperwork; the riding loop is closed","map":"https://www.google.com/maps/search/?api=1&query=Bike%20Rental%20Japan%20Suita%20Osaka"},
-    {"time":"~11:00","name":"Osaka Castle & park","what":"easy first walk of the no-ride day — moats, stone walls, gold-trimmed keep","map":"https://www.google.com/maps/search/?api=1&query=Osaka%20Castle"},
-    {"time":"~14:30","name":"Nintendo OSAKA + Pokémon Center (Daimaru Umeda 13F)","what":"Kansai flagship Nintendo store + big Pokémon Center on one walk-in floor — Mario/Zelda/Splatoon & Pokémon plush for Aslan and Galiya","map":"https://www.google.com/maps/search/?api=1&query=Nintendo%20OSAKA%20Daimaru%20Umeda"},
-    {"time":"~15:30","name":"Donguri Republic (Studio Ghibli shop)","what":"Totoro/Ponyo/Kiki goods — Galiya's Ghibli souvenir stop","map":"https://www.google.com/maps/search/?api=1&query=Donguri%20Republic%20Osaka"},
-    {"time":"~16:30","name":"Den Den Town & Super Potato","what":"Osaka's toy/figure mecca — retro Mario shop, gachapon floors, and the best shot at Transformers / Takara Tomy robot figures for Aslan","map":"https://www.google.com/maps/search/?api=1&query=Super%20Potato%20Den%20Den%20Town%20Osaka"},
-    {"time":"~17:30","name":"Kuromon Ichiba","what":"\"Osaka's kitchen\" — eat-as-you-walk seafood, wagyu skewers and fruit, a short walk from Den Den Town","map":"https://www.google.com/maps/search/?api=1&query=Kuromon%20Ichiba"}
+    {"time":"~08:00","name":"Super Nintendo World (USJ)","what":"life-size Mushroom Kingdom — Mario Kart: Koopa's Challenge, Yoshi's Adventure, interactive Power-Up Band. Get the free Area Timed-Entry in the app the moment gates open (or use Express Pass)","map":"https://www.google.com/maps/search/?api=1&query=Super%20Nintendo%20World%20Osaka"},
+    {"time":"~13:30","name":"Universal Studios Japan","what":"Wizarding World of Harry Potter, Minion Park and family shows — pace it and build in shade/rest breaks for Aslan","map":"https://www.google.com/maps/search/?api=1&query=Universal%20Studios%20Japan"},
+    {"time":"alt","name":"Osaka Aquarium Kaiyukan","what":"calm all-weather alternative across the bay — whale-shark tank you spiral down past, if a full theme-park day is too much","map":"https://www.google.com/maps/search/?api=1&query=Osaka%20Aquarium%20Kaiyukan"}
   ],
   "meals": [
-    {"slot":"lunch","area":"Namba / Den Den Town",
+    {"slot":"coffee","area":"Osaka Port / bayfront (near Kaiyukan, across the bay from USJ)",
      "picks":[
-       {"name":"Udon Tamatama","cuisine":"hand-made udon noodles","rating":4.7,"why":"Aslan — plain kake udon he'll happily slurp; Galiya gets top-rated noodles too","kid":true,"map":"https://maps.google.com/?cid=8637420094679159397","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"},
-       {"name":"Kyoto Wamen Yukichi (Namba Sennichimae)","cuisine":"ramen","rating":5.0,"why":"Galiya — a standout bowl right in the Namba food maze","kid":false,"map":"https://maps.google.com/?cid=14468422320166151533","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Ramen_2.jpg/960px-Ramen_2.jpg"},
-       {"name":"Tsurutontan Soemoncho","cuisine":"premium udon (big bowls, lots of plain options)","rating":4.0,"why":"Galiya & Ruslan — famous Osaka udon house; easy plain bowls work for Aslan too","kid":false,"map":"https://maps.google.com/?cid=12563860394098208989","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"}
+       {"name":"9 Borden Coffee","cuisine":"specialty coffee","rating":4.6,"why":"Ruslan & Galiya — a proper bayfront specialty roaster for a serious morning cup; relaxed cafe with cake/juice on hand for Aslan","kid":false,"map":"https://maps.google.com/?cid=7634926797592378582","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
      ]},
-    {"slot":"dinner","area":"Dōtonbori",
+    {"slot":"lunch","area":"Universal CityWalk Osaka (just outside the park gate)",
      "picks":[
-       {"name":"Chibo Dōtonbori","cuisine":"Osaka okonomiyaki / teppanyaki","rating":4.1,"why":"Galiya & Ruslan — the celebratory Osaka griddle classic on the neon canal","kid":false,"map":"https://maps.google.com/?cid=11230990528616538865","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Okonomiyaki_Osaka_2.JPG/960px-Okonomiyaki_Osaka_2.JPG"},
-       {"name":"Sushiro Dōtonbori","cuisine":"conveyor-belt sushi","rating":4.6,"why":"Aslan — tap-the-screen kaiten sushi with plain rice, tamago, karaage and fries; pure kid win","kid":true,"map":"https://maps.google.com/?cid=11787458940792052758","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Conveyor_belt_sushi_at_Mashiro_Sushi.jpg/960px-Conveyor_belt_sushi_at_Mashiro_Sushi.jpg"},
-       {"name":"OKO - Fun Okonomiyaki Bar","cuisine":"okonomiyaki / teppan (English-friendly)","rating":4.7,"why":"Galiya — top-rated, lively cook-at-the-counter alternative if Chibo has a queue","kid":false,"map":"https://maps.google.com/?cid=17891229658034342593","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Okonomiyaki_-a_Japanese_savory_pancake_in_Osaka%2C_Japan.jpg/960px-Okonomiyaki_-a_Japanese_savory_pancake_in_Osaka%2C_Japan.jpg"}
+       {"name":"Osaka Soba Shinobu AN","cuisine":"soba & udon noodles","rating":4.3,"why":"Galiya — proper hand-cut soba/udon for a quick foodie noodle fix between rides","kid":false,"map":"https://maps.google.com/?cid=8457458393198602915","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Soba_and_tempura_combo_%2826498960080%29.jpg/960px-Soba_and_tempura_combo_%2826498960080%29.jpg"},
+       {"name":"551 Horai Universal Citywalk Osaka","cuisine":"butaman pork buns & gyoza","rating":4.1,"why":"Aslan — fluffy plain pork buns and gyoza he'll happily eat; Osaka's famous grab-and-go, fast for a park day","kid":true,"map":"https://maps.google.com/?cid=16138308789551627008","photo":"https://upload.wikimedia.org/wikipedia/commons/8/87/Nikuman.jpg"}
+     ]},
+    {"slot":"dinner","area":"Universal CityWalk Osaka / USJ bayfront",
+     "picks":[
+       {"name":"GYUKATSU Kyoto Katsugyu Universal Citywalk Osaka","cuisine":"gyukatsu (breaded beef cutlet, grill-it-yourself)","rating":4.7,"why":"the whole family — crisp breaded beef Aslan loves as plain katsu, and a fun cook-on-a-stone format; the standout near USJ","kid":true,"map":"https://maps.google.com/?cid=7712802532359384383","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tonkatsu_of_Kimukatsu.jpg/960px-Tonkatsu_of_Kimukatsu.jpg"},
+       {"name":"九九雲 (Kukuun)","cuisine":"ramen","rating":4.5,"why":"Galiya — a well-loved ramen bowl a short hop along the bayfront (Osaka Port, near Kaiyukan) to end the day","kid":false,"map":"https://maps.google.com/?cid=16379801422414639646","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"}
      ]}
   ]
 }
 ```
 
-# Day 22 — Osaka & Bike Return
+## Day 23 — Super Nintendo World / USJ (Osaka)
 
-**Overnight:** Osaka (Namba / Dōtonbori)
-**Schedule:** no riding. Return the motorcycles at the **Suita base (~09:30–10:30)**, then turn the day into a walking/train city loop — **lunch ~13:00 near Namba / Den Den Town**, an afternoon souvenir sweep (Umeda Nintendo/Pokémon → Donguri Republic Ghibli shop → Den Den Town → Kuromon Ichiba), and a **celebration dinner ~19:00 in Dōtonbori**.
+**No riding — the bikes are back at the Suita base.** This is the kid centrepiece of the whole trip, so build the day around the park and keep food fast and easy.
 
-The loop is closed: empty the panniers, reunite the base-camp and forwarded cases at the Osaka hotel, and decide whether to takkyūbin them ahead to Tokyo for the Day-24 train.
+**Schedule:** breakfast at the hotel ~07:15 · be at the USJ gate for opening **~08:00** and reserve the **Super Nintendo World Area Timed-Entry in the USJ app the moment you're in** (or use a paid Express Pass) · quick lunch **~12:30** at Universal CityWalk · afternoon back in the park · dinner **~18:30** at CityWalk on the way back to the hotel. It is the busiest day of the trip — hydrate and plan shade/rest breaks for the 6-year-old.
 
-## Where to eat
+### Things to do
+- **~08:00 — Super Nintendo World (USJ):** life-size Mushroom Kingdom — **Mario Kart: Koopa's Challenge**, gentle **Yoshi's Adventure**, and the interactive **Power-Up Band** to punch ? blocks and collect coins. A direct hit for Aslan and Galiya (Mario/Nintendo). [Map](https://www.google.com/maps/search/?api=1&query=Super%20Nintendo%20World%20Osaka)
+- **~13:30 — Universal Studios Japan:** Wizarding World of Harry Potter, Minion Park and family shows. [Map](https://www.google.com/maps/search/?api=1&query=Universal%20Studios%20Japan)
+- **Calm alternative — Osaka Aquarium Kaiyukan:** indoor, all-weather whale-shark aquarium across the bay if a full theme-park day is too much. [Map](https://www.google.com/maps/search/?api=1&query=Osaka%20Aquarium%20Kaiyukan)
 
-### Lunch — Namba / Den Den Town
-- **Udon Tamatama** (hand-made udon, 4.7) — *kid pick* — plain kake udon Aslan will actually slurp, and a top-rated noodle bowl for Galiya. [Map](https://maps.google.com/?cid=8637420094679159397)
-- **Kyoto Wamen Yukichi**, Namba Sennichimae (ramen, 5.0) — Galiya's foodie pick, deep in the Namba food maze. [Map](https://maps.google.com/?cid=14468422320166151533)
-- **Tsurutontan Soemoncho** (premium udon, 4.0) — famous big-bowl Osaka udon house; the plain bowls also suit Aslan. [Map](https://maps.google.com/?cid=12563860394098208989)
+### Where to eat
+**Coffee — Osaka Port / bayfront (near Kaiyukan):**
+- ☕ **9 Borden Coffee** (4.6) — a genuine bayfront **specialty roaster** for a serious morning cup before the park; relaxed cafe with cake/juice for Aslan. [Google Maps](https://maps.google.com/?cid=7634926797592378582)
 
-### Dinner — Dōtonbori (celebration)
-- **Chibo Dōtonbori** (Osaka okonomiyaki / teppanyaki, 4.1) — the celebratory griddle classic right on the neon canal, for Galiya & Ruslan. [Map](https://maps.google.com/?cid=11230990528616538865)
-- **Sushiro Dōtonbori** (conveyor-belt sushi, 4.6) — *kid pick* — tap-the-screen kaiten sushi with plain rice, tamago, karaage and fries; a guaranteed Aslan win. [Map](https://maps.google.com/?cid=11787458940792052758)
-- **OKO - Fun Okonomiyaki Bar** (okonomiyaki / teppan, 4.7) — top-rated, English-friendly cook-at-the-counter alternative if Chibo has a queue. [Map](https://maps.google.com/?cid=17891229658034342593)
+**Lunch — Universal CityWalk** (just outside the gate; you can re-enter the park):
+- 🍜 **Osaka Soba Shinobu AN** (4.3) — hand-cut soba & udon; Galiya's quick foodie noodle stop. [Google Maps](https://maps.google.com/?cid=8457458393198602915)
+- 🥟 **551 Horai Universal Citywalk** (4.1) — *kid pick:* fluffy plain **butaman pork buns** and gyoza Aslan will eat, fast for a park day. [Google Maps](https://maps.google.com/?cid=16138308789551627008)
 
-## Things to do
-- **~09:30 — Bike return at the Suita base** (Bike Rental Japan): hand back the Africa Twin + CB400X, empty the panniers, settle the paperwork. The riding loop is officially closed.
-- **~11:00 — Osaka Castle & park:** an easy first walk of the no-ride day — broad moats, turreted stone walls, the gold-trimmed reconstructed keep.
-- **~14:30 — Nintendo OSAKA + Pokémon Center (Daimaru Umeda 13F):** Kansai's flagship Nintendo store and a large Pokémon Center on one walk-in floor — Mario/Zelda/Splatoon and Pokémon plush for Aslan (and Galiya).
-- **~15:30 — Donguri Republic (Studio Ghibli shop):** Totoro/Ponyo/Kiki goods — Galiya's Ghibli souvenir stop.
-- **~16:30 — Den Den Town & Super Potato:** Osaka's toy/figure mecca — retro Mario shop, gachapon floors, and the best shot on the whole trip at Transformers / Takara Tomy robot figures for Aslan.
-- **~17:30 — Kuromon Ichiba:** "Osaka's kitchen" — graze on seafood, wagyu skewers and fruit a short walk from Den Den Town before the Dōtonbori dinner.
+**Dinner — Universal CityWalk / bayfront:**
+- 🥩 **GYUKATSU Kyoto Katsugyu Universal Citywalk** (4.7) — *kid pick:* crisp breaded **gyukatsu** you grill on a hot stone; plain katsu for Aslan, fun for everyone — the standout near USJ. [Google Maps](https://maps.google.com/?cid=7712802532359384383)
+- 🍜 **九九雲 (Kukuun)** (4.5) — a well-loved **ramen** bowl a short hop along the bayfront (Osaka Port, near Kaiyukan) to close the day for Galiya. [Google Maps](https://maps.google.com/?cid=16379801422414639646)

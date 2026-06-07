@@ -11,6 +11,10 @@
     {"time":"~17:00","name":"Nintendo TOKYO + Pokémon Center (Shibuya PARCO)","what":"official Nintendo flagship — Mario/Zelda/Splatoon — with Pokémon Center next door","map":"https://www.google.com/maps/search/?api=1&query=Nintendo%20TOKYO%20Shibuya%20PARCO"}
   ],
   "meals": [
+    {"slot":"coffee","area":"Kichijōji (near the Ghibli Museum walk)",
+     "picks":[
+       {"name":"LIGHT UP COFFEE","cuisine":"specialty coffee","rating":4.4,"why":"Galiya/Ruslan — Kichijōji single-origin specialty roaster for a proper morning brew; cake/iced drinks for Aslan","kid":false,"map":"https://maps.google.com/?cid=15630683996468648685","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
+     ]},
     {"slot":"lunch","area":"Kichijōji (by Inokashira Park, walking distance from the Ghibli Museum)",
      "picks":[
        {"name":"Ramen Maji","cuisine":"Tokyo shōyu / tonkotsu ramen","rating":4.3,"why":"Galiya — a popular local ramen bowl steps from the Ghibli walk","kid":false,"map":"https://maps.google.com/?cid=4134068209230090282","photo":"https://upload.wikimedia.org/wikipedia/commons/4/42/Ramen.jpg"},
@@ -32,6 +36,9 @@
 A full, kid-focused Tokyo day on foot and by train before the train south: **Ghibli Museum (Mitaka)** in the morning, **teamLab Planets (Toyosu)** in the afternoon, and **Nintendo TOKYO (Shibuya)** as the early-evening cap. Book the Ghibli and teamLab timed tickets well ahead — both sell out.
 
 **Schedule:** morning Ghibli Museum, Mitaka · lunch ~12:30 in Kichijōji (a short walk through Inokashira Park) · afternoon teamLab Planets, Toyosu · early-evening Nintendo TOKYO, Shibuya · dinner in Shibuya.
+
+### Coffee — Kichijōji (near the Ghibli Museum walk)
+- **LIGHT UP COFFEE** (4.4) — Kichijōji single-origin specialty roaster for a proper morning brew before or after Ghibli; cake and iced drinks for Aslan. https://maps.google.com/?cid=15630683996468648685
 
 ### Lunch — Kichijōji (walking distance from the Ghibli Museum)
 - **Ramen Maji** (4.3) — popular local ramen bowl for Galiya, right by the museum walk. https://maps.google.com/?cid=4134068209230090282
