@@ -1,7 +1,10 @@
 /* ============================================================
-   Japan Family Motorcycle Tour — destination data
+   PNW Family "First Tour" — destination data
    Generated from tour/ markdown by gen_data.py (website-builder).
    Shared by index.html, place.html and day.html.
+   A 7-day round-trip ride: Woodinville → the Oregon coast (Yachats)
+   → home over Mount St. Helens & Mount Rainier. Built around a
+   brand-new rider (Galiya, Kawasaki W230) — no freeways.
    Photos: Wikimedia Commons (all URLs verified reachable).
    Hotels are SUGGESTIONS — confirm motorcycle parking,
    passenger/child rules and availability before booking.
@@ -46,45 +49,34 @@ window.wikiLink = function (name, wiki) {
   return "https://en.wikipedia.org/wiki/Special:Search?search=" + encodeURIComponent(name || "");
 };
 
-/* Approx. exchange rate for showing USD alongside JPY hotel prices (update as needed). */
-window.JPY_PER_USD = 150;
-/* Convert a JPY range string like "¥28,000–60,000" to "≈ $185–400". */
-window.priceUSD = function (jpy) {
-  if (!jpy) return "";
-  const nums = (jpy.match(/\d[\d,]*/g) || []).map(n => Math.round(parseInt(n.replace(/,/g, ""), 10) / window.JPY_PER_USD / 5) * 5);
-  if (!nums.length) return "";
-  const fmt = n => "$" + n.toLocaleString("en-US");
-  return nums.length > 1 ? `≈ ${fmt(nums[0])}–${nums[nums.length - 1].toLocaleString("en-US")}` : `≈ ${fmt(nums[0])}`;
-};
+/* Hotel prices are already in USD (e.g. "$189–329"). This helper is kept as a no-op
+   passthrough so the templates can call it without a second currency conversion. */
+window.priceUSD = function (p) { return ""; };
 
 /* Representative photos by lodging type (verified Wikimedia Commons).
    These illustrate the STYLE of stay, not the exact property. */
 window.HOTEL_IMG = {
-  onsen:  U+"a/a3/Takanoyu_Onsen_Rotenburo_086.jpg/960px-Takanoyu_Onsen_Rotenburo_086.jpg",
-  ryokan: U+"6/60/Interior_of_a_ryokan_room_%282999708441%29.jpg/960px-Interior_of_a_ryokan_room_%282999708441%29.jpg",
-  design: U+"e/e3/Modern_bedroom_design_in_a_stylish_hotel_room_featuring_geometric_patterns_and_soft_linens.jpg/960px-Modern_bedroom_design_in_a_stylish_hotel_room_featuring_geometric_patterns_and_soft_linens.jpg",
-  hotel:  U+"e/e8/Comfort_Twin_Room_in_Triple_Configuration_%2821917602991%29.jpg/960px-Comfort_Twin_Room_in_Triple_Configuration_%2821917602991%29.jpg"
+  room:   U+"e/e8/Comfort_Twin_Room_in_Triple_Configuration_%2821917602991%29.jpg/960px-Comfort_Twin_Room_in_Triple_Configuration_%2821917602991%29.jpg",
+  design: U+"e/e3/Modern_bedroom_design_in_a_stylish_hotel_room_featuring_geometric_patterns_and_soft_linens.jpg/960px-Modern_bedroom_design_in_a_stylish_hotel_room_featuring_geometric_patterns_and_soft_linens.jpg"
 };
 /* Pick a representative image from a hotel's `t` (type) label. Returns null for non-bookable "Note" rows. */
 window.hotelImage = function (t) {
   const s = (t || "").toLowerCase();
   if (s.includes("note")) return null;
-  if (s.includes("onsen")) return window.HOTEL_IMG.onsen;
-  if (s.includes("ryokan") || s.includes("rural") || s.includes("farmhouse") || s.includes("inn")) return window.HOTEL_IMG.ryokan;
-  if (s.includes("luxury") || s.includes("boutique") || s.includes("design") || s.includes("glamping")) return window.HOTEL_IMG.design;
-  return window.HOTEL_IMG.hotel; // nice hotel, family-friendly, practical
+  if (s.includes("resort") || s.includes("oceanfront") || s.includes("spa") || s.includes("boutique") || s.includes("nice hotel"))
+    return window.HOTEL_IMG.design;
+  return window.HOTEL_IMG.room; // lodge, inn, motel, cabin, B&B — practical, family-friendly
 };
 /* Build a reliable search/booking link for a property name. */
 window.hotelLink = function (name, place) {
-  return "https://www.google.com/search?q=" + encodeURIComponent(name + " " + (place || "") + " hotel Japan");
+  return "https://www.google.com/search?q=" + encodeURIComponent(name + " " + (place || "") + " hotel");
 };
 /* Expected motorcycle-parking situation by lodging type. Every suggestion is
    selected to accommodate bikes; the exact spot must still be confirmed on booking. */
 window.hotelParking = function (t) {
   const s = (t || "").toLowerCase();
   if (s.includes("note")) return null;
-  if (s.includes("onsen") || s.includes("ryokan") || s.includes("rural") || s.includes("farmhouse") || s.includes("glamping"))
-    return "Free on-site parking";
-  if (s.includes("practical")) return "On-site / nearby lot";
-  return "On-site garage or valet"; // nice hotel, boutique, luxury, family-friendly
+  if (s.includes("motel") || s.includes("lodge") || s.includes("cabin") || s.includes("inn"))
+    return "Free on-site lot";
+  return "On-site parking"; // resort, hotel, boutique
 };

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Destination · Japan Family Motorcycle Tour</title>
+<title>Destination · PNW Family First Tour</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -138,7 +138,7 @@
 
 <nav class="top">
   <div class="wrap">
-    <div class="brand mincho">日本 <span>·</span> Japan Family Tour</div>
+    <div class="brand mincho">🏍️ <span>·</span> PNW First Tour</div>
     <a class="back" href="index.html#destinations">← All destinations</a>
   </div>
 </nav>
@@ -181,7 +181,7 @@
         <div class="block">
           <h2><span class="ico">🏨</span> Where to Stay</h2>
           <ul class="hotels" id="pHotels"></ul>
-          <p style="color:var(--muted); font-size:13px; margin-top:12px;">Photos are <b>representative of the style of stay</b>, not the exact property. Prices are <b>indicative per room / night</b> for two adults (USD converted at ≈ ¥150 = $1) — confirm exact rates, secure motorcycle parking, and that passenger / child-passenger riding is allowed before booking.</p>
+          <p style="color:var(--muted); font-size:13px; margin-top:12px;">Photos are <b>representative of the style of stay</b>, not the exact property. Prices are <b>indicative per room / night</b> in USD — confirm exact rates, secure motorcycle parking, and that passenger / child-passenger riding is allowed before booking.</p>
         </div>
 
         <div class="pn" id="pPN"></div>
@@ -204,7 +204,7 @@
 
 <div id="lb"><img id="lbImg" alt="" /><div class="cap" id="lbCap"></div></div>
 
-<footer><div class="wrap">Part of the ≈25-day (Day 0–24) Osaka-loop Japan Family Motorcycle Tour · <a href="index.html">Back to the full itinerary →</a></div></footer>
+<footer><div class="wrap">Part of the 7-day PNW Family First Tour (Jul 1–7, 2026) · <a href="index.html">Back to the full itinerary →</a></div></footer>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -212,31 +212,29 @@
 <script src="data.js"></script>
 <script>
   const params = new URLSearchParams(location.search);
-  const id = params.get('id') || 'osaka';
+  const id = params.get('id') || 'home';
   const list = window.DESTINATIONS;
   const idx = Math.max(0, list.findIndex(d => d.id === id));
   const d = list[idx];
 
-  document.title = d.name + " · Japan Family Motorcycle Tour";
+  document.title = d.name + " · PNW Family First Tour";
 
   // hero
   document.getElementById('pheroBg').style.backgroundImage = `url("${d.photos[0].src}")`;
   document.getElementById('pRegion').textContent = d.region;
   document.getElementById('pTitle').innerHTML = `${d.name}<span class="jp mincho">${d.jp}</span>`;
   document.getElementById('pTagline').textContent = d.tagline;
-  const typeLabel = { start:'Start · bike pickup', stay:'2-night rest base', stop:'Overnight stop', end:'Finish · bike return', bookend:'Air gateway · Tokyo' };
+  const typeLabel = { start:'Home · start & finish', stay:'2-night base', stop:'Overnight stop', end:'Finish' };
   document.getElementById('pMeta').innerHTML =
     `<span class="pill days">${d.days}</span>` +
     `<span class="pill ${d.type==='stay'?'stay':''}">${typeLabel[d.type] || 'Stop'}</span>`;
 
   // miles overlay on hero photo
   const milesTag = document.getElementById('pMilesTag');
-  if (d.type === 'bookend') {
-    milesTag.innerHTML = `<span class="ic">✈️</span>Air gateway <span class="u">· no riding</span>`;
-  } else if (d.legMiles > 0) {
+  if (d.legMiles > 0) {
     milesTag.innerHTML = `<span class="ic">🏍️</span><b>${d.legMiles}</b> mi <span class="u">ride to here</span>`;
   } else {
-    milesTag.innerHTML = `<span class="ic">🏍️</span>Start <span class="u">· bike pickup</span>`;
+    milesTag.innerHTML = `<span class="ic">🏍️</span>Home <span class="u">· start & finish</span>`;
   }
 
   // intro
@@ -280,20 +278,14 @@
 
   // google maps
   document.getElementById('pGmaps').href =
-    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(d.name + ' Japan')}`;
+    `https://www.google.com/maps/search/?api=1&query=${d.lat}%2C${d.lng}`;
 
-  // prev / next — Tokyo is a non-route bookend, so the riding loop's prev/next
-  // chain runs only through the 16 loop stops; the bookend links into the loop ends.
-  const route = list.filter(x => x.type !== 'bookend');
-  let prev, next;
-  if (d.type === 'bookend') {
-    prev = route[route.length - 1];   // Awaji — the last riding stop before the train back
-    next = route[0];                  // Osaka — where the loop begins
-  } else {
-    const ri = route.findIndex(x => x.id === d.id);
-    prev = route[(ri - 1 + route.length) % route.length];
-    next = route[(ri + 1) % route.length];
-  }
+  // prev / next — the loop runs through all stops in route order, wrapping at the ends
+  // (home is both the first and last node).
+  const route = list;
+  const ri = route.findIndex(x => x.id === d.id);
+  const prev = route[(ri - 1 + route.length) % route.length];
+  const next = route[(ri + 1) % route.length];
   document.getElementById('pPN').innerHTML =
     `<a class="prev" href="place.html?id=${prev.id}"><div class="dir">← Previous</div><div class="nm">${prev.name}</div></a>` +
     `<a class="next" href="place.html?id=${next.id}"><div class="dir">Next →</div><div class="nm">${next.name}</div></a>`;

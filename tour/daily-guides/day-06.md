@@ -1,59 +1,60 @@
 ```json
 {
   "d": 6,
-  "title": "Capes & White Sand",
-  "overnight": "Shirahama, Wakayama",
-  "schedule": "depart Katsuura ~09:00 · coffee/photo stop at Hashigui-iwa ~09:45 · Sandanbeki cliffs ~11:15 · tuna lunch at Tore-Tore Ichiba ~12:15 · arrive Shirahama ~13:30 · afternoon: Shirarahama beach, Senjōjiki, Sakino-yu onsen · Engetsu Island sunset ~18:45 · dinner in Shirahama ~19:30",
+  "title": "Spirit Lake & the Road to Rainier",
+  "overnight": "Packwood, WA",
+  "schedule": "breakfast in Castle Rock ~08:30 · ride Spirit Lake Hwy (SR-504) to Coldwater Lake & the blast-zone viewpoints · lunch back at the SR-504 junction ~13:00 · US-12 over Mossyrock/Morton · arrive Packwood ~16:30 · easy small-town dinner",
   "todo": [
-    {"time":"~09:45","name":"Hashigui-iwa","what":"line of sea pillars marching out to sea — quick photo + coffee stop","map":"https://www.google.com/maps/search/?api=1&query=Hashigui-iwa%20Kushimoto"},
-    {"time":"~11:15","name":"Sandanbeki Cliffs","what":"50 m cliffs with a sea-cave lift down to the waves","map":"https://www.google.com/maps/search/?api=1&query=Sandanbeki%20Shirahama"},
-    {"time":"~14:30","name":"Shirarahama Beach & Senjōjiki","what":"white quartz sand for shallow swimming, then clamber the tilted '1,000-tatami' rock terrace","map":"https://www.google.com/maps/search/?api=1&query=Shirarahama%20Beach%20Shirahama"},
-    {"time":"~16:00","name":"Sakino-yu Onsen","what":"1,300-year-old open-air rock bath right at the surf line (Galiya's onsen pick)","map":"https://www.google.com/maps/search/?api=1&query=Sakinoyu%20Onsen%20Shirahama"},
-    {"time":"~18:45","name":"Engetsu Island sunset","what":"classic sunset shot through the 'round-moon' natural sea arch","map":"https://www.google.com/maps/search/?api=1&query=Engetsu%20Island%20Shirahama"}
+    {"time":"~09:30","name":"Coldwater Lake Recreation Area","what":"calm lake formed by the 1980 eruption — short boardwalk, easy legs-stretch the whole family can do, big views back at the crater","map":"https://www.google.com/maps/search/?api=1&query=Coldwater+Lake+Recreation+Area+Mount+St+Helens"},
+    {"time":"~10:30","name":"Johnston Ridge / Spirit Lake Hwy viewpoints","what":"the dramatic end-of-road blast-zone overlooks straight into the crater (check road status — upper SR-504 has had closures); turn around where open","map":"https://www.google.com/maps/search/?api=1&query=Spirit+Lake+Highway+viewpoint+Mount+St+Helens"},
+    {"time":"~12:15","name":"North Fork Survivors","what":"quirky roadside stop with the volcano museum, a real ash-buried A-frame and a gift shop — easy souvenir win for Aslan","map":"https://maps.google.com/?cid=11273759739720209341"},
+    {"time":"~15:30","name":"Mossyrock / Riffe Lake pull-off on US-12","what":"scenic reservoir stop to break up the eastbound leg toward Packwood","map":"https://www.google.com/maps/search/?api=1&query=Riffe+Lake+viewpoint+Mossyrock+WA"}
   ],
   "meals": [
-    {"slot":"coffee","area":"Shirahama (Engetsu Island seafront)",
-     "picks":[
-       {"name":"QUAYTH (キース)","cuisine":"specialty coffee","rating":4.7,"why":"Galiya & Ruslan — owner-roasted single-origin coffee in a sea-view cafe by Engetsu Island; okara/soymilk donuts & a coffee shake for Aslan","kid":false,"map":"https://maps.google.com/?cid=11143410138652144840","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
-     ]},
-    {"slot":"lunch","area":"Tore-Tore Ichiba / Katata (en route into Shirahama)",
-     "picks":[
-       {"name":"Shirasen Shokudo (白鮮食堂)","cuisine":"Kuroshio tuna & seafood teishoku","rating":4.6,"why":"Galiya & Ruslan — top-rated fresh maguro/seafood set near the port","kid":false,"map":"https://maps.google.com/?cid=5130477216008432969","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kaisendon_001.jpg/960px-Kaisendon_001.jpg"},
-       {"name":"TORETORE ICHIBA (とれとれ市場 南紀白浜)","cuisine":"giant seafood market & food court","rating":3.9,"why":"the planned tuna-cutting market stop — huge food court so everyone grazes; plain grilled skewers & rice for Aslan","kid":true,"map":"https://maps.google.com/?cid=9780413186048099620","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sashimi_of_S%C3%A3o_Paulo.jpg/960px-Sashimi_of_S%C3%A3o_Paulo.jpg"},
-       {"name":"Kaisen Sushi Toretore Ichiba (海鮮寿司とれとれ市場)","cuisine":"conveyor-belt sushi","rating":3.7,"why":"Aslan — pick-what-you-see kaiten sushi (plain rice, egg, cucumber rolls) inside the same market","kid":true,"map":"https://maps.google.com/?cid=10776434485905267434","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kaiten-zushi_002.jpg/960px-Kaiten-zushi_002.jpg"}
-     ]},
-    {"slot":"dinner","area":"Shirahama town",
-     "picks":[
-       {"name":"Gyosai Keishoku Kou (魚菜・軽食 幸)","cuisine":"seafood izakaya / sashimi","rating":4.6,"why":"Galiya & Ruslan — fresh local Nanki seafood and sashimi in town","kid":false,"map":"https://maps.google.com/?cid=1087738113559531192","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sashimi_of_S%C3%A3o_Paulo.jpg/960px-Sashimi_of_S%C3%A3o_Paulo.jpg"},
-       {"name":"Shirahama Key Noodle Dakishimetai","cuisine":"ramen","rating":4.3,"why":"Galiya — a proper bowl of noodles to end the day","kid":false,"map":"https://maps.google.com/?cid=10240352576288176698","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"},
-       {"name":"Ramen Bakumatsu - Nanki Shirahama","cuisine":"ramen shop with gyoza, karaage & rice sets","rating":4.1,"why":"Aslan — plain ramen plus gyoza/karaage and a rice bowl he'll actually eat","kid":true,"map":"https://maps.google.com/?cid=8622937101684774092","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Chicken_karaage_003.jpg/960px-Chicken_karaage_003.jpg"}
-     ]}
+    {"slot":"breakfast","area":"Castle Rock","picks":[
+      {"name":"Peper's 49ER Restaurant","cuisine":"American diner breakfast","rating":4.2,"why":"Galiya & Ruslan — hearty pre-ride diner plates; Aslan gets plain pancakes/eggs","kid":true,"map":"https://maps.google.com/?cid=4506938187642784906","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Pancakes_%281%29.jpg/330px-Pancakes_%281%29.jpg"},
+      {"name":"The Oasis Bar & Grill","cuisine":"American bar & grill","rating":4.5,"why":"backup in town if Peper's is busy — fuel up before the SR-504 climb","kid":true,"map":"https://maps.google.com/?cid=9411642080220914546"}
+    ]},
+    {"slot":"lunch","area":"Mount St. Helens / Castle Rock (SR-504 junction)","picks":[
+      {"name":"Amaro's Table","cuisine":"Pacific NW / American","rating":4.8,"why":"Galiya — best-rated kitchen right where Spirit Lake Hwy meets I-5, perfect after the viewpoints","kid":true,"map":"https://maps.google.com/?cid=16172930673490403158","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/330px-Cheeseburger.jpg"},
+      {"name":"Lone Fir Cafe","cuisine":"casual American diner","rating":4.4,"why":"Ruslan — classic volcano-country roadhouse if you loop down the Cougar side instead","kid":true,"map":"https://maps.google.com/?cid=6753037004800324019"}
+    ]},
+    {"slot":"dinner","area":"Packwood","picks":[
+      {"name":"Cliff Droppers","cuisine":"burgers","rating":4.6,"why":"Galiya & Ruslan — Packwood's standout burger joint; Aslan gets a plain burger + fries","kid":true,"map":"https://maps.google.com/?cid=1323618167841938218","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/330px-Cheeseburger.jpg"},
+      {"name":"Cruiser's Pizza","cuisine":"pizza","rating":4.2,"why":"Aslan — easiest kid pick in town, plain cheese pizza; busiest/most-reviewed spot in Packwood","kid":true,"map":"https://maps.google.com/?cid=5640658349503661047","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Pizza.jpg/330px-Pizza.jpg"},
+      {"name":"Blue Spruce Saloon And Diner","cuisine":"American saloon / diner","rating":4.3,"why":"Ruslan — hearty local saloon with a full diner menu and a beer after the ride","kid":true,"map":"https://maps.google.com/?cid=3407359734120354488"}
+    ]}
   ]
 }
 ```
 
-## Day 7 — Capes & White Sand (overnight: Shirahama, Wakayama)
+# Day 6 — Spirit Lake & the Road to Rainier (Mon 6 July 2026)
 
-A short, scenic 56 mi coastal day around the southern tip of the Kii Peninsula, held deliberately short so the afternoon belongs to the beach, not the road. **Depart Katsuura ~09:00**, photo-and-coffee stop at the **Hashigui-iwa** sea pillars (~09:45), drop down the **Sandanbeki** cliffs (~11:15), then a **tuna lunch at Tore-Tore Ichiba** (~12:15) before rolling into **Shirahama by ~13:30**. The whole afternoon is the resort: white-sand swimming at **Shirarahama**, clambering **Senjōjiki**, soaking at **Sakino-yu** onsen, and the **Engetsu Island** sunset through the sea arch (~18:45), then dinner in town.
+A short, scenery-heavy day. Roll the Spirit Lake Highway (SR-504) up into the Mount St. Helens blast zone, walk an easy boardwalk at **Coldwater Lake**, gawk at the crater from the high viewpoints, then drop back to I-5 and cross over on **US-12** through Mossyrock and Morton to **Packwood**, Mount Rainier's quiet south gateway. Packwood is small, so dinner is casual — but the burgers and pizza are genuinely good and easy for a picky six-year-old.
 
-### Coffee — Shirahama (Engetsu Island seafront)
-- **QUAYTH (キース)** — specialty coffee, 4.7 — Galiya & Ruslan; the owner hand-roasts the beans in a white two-storey sea-view cafe right by Engetsu Island (good for the sunset stop). Okara/soymilk donuts and a sweet espresso "coffee shake" keep Aslan happy. Open 11:00–17:00, closed Mon/Tue. https://maps.google.com/?cid=11143410138652144840
+**Schedule:** breakfast in Castle Rock ~08:30 · ride SR-504 to Coldwater Lake & the viewpoints · lunch back at the I-5/SR-504 junction ~13:00 · US-12 east · arrive Packwood ~16:30 · easy small-town dinner.
 
-### Lunch — Tore-Tore Ichiba / Katata
-- **Shirasen Shokudo** — Kuroshio tuna & seafood teishoku, 4.6 — Galiya & Ruslan; top-rated fresh maguro near the port. https://maps.google.com/?cid=5130477216008432969
-- **TORETORE ICHIBA** (kid) — the famous seafood market & food court, 3.9 — the planned tuna-cutting stop; a sprawling food court so everyone grazes (plain grilled skewers and rice for Aslan). https://maps.google.com/?cid=9780413186048099620
-- **Kaisen Sushi Toretore Ichiba** (kid) — conveyor-belt sushi, 3.7 — pick-what-you-see kaiten sushi (plain rice, egg, cucumber rolls) inside the same market for Aslan. https://maps.google.com/?cid=10776434485905267434
+> Note: the upper Spirit Lake Highway (toward Johnston Ridge) has had landslide closures in recent seasons — check the WSDOT / Forest Service road status the morning of and turn around at the highest open viewpoint. Coldwater Lake and the lower overlooks are the reliable, family-friendly payoff.
 
-### Dinner — Shirahama town
-- **Gyosai Keishoku Kou** — seafood izakaya / sashimi, 4.6 — Galiya & Ruslan; fresh local Nanki seafood. https://maps.google.com/?cid=1087738113559531192
-- **Shirahama Key Noodle Dakishimetai** — ramen, 4.3 — Galiya's noodle fix to close the day. https://maps.google.com/?cid=10240352576288176698
-- **Ramen Bakumatsu - Nanki Shirahama** (kid) — ramen with gyoza, karaage & rice sets, 4.1 — plain ramen plus fried chicken and rice Aslan will actually eat. https://maps.google.com/?cid=8622937101684774092
+## Where to eat
 
-### Things to do
-- **~09:45 Hashigui-iwa** — line of pillar rocks marching out to sea; quick photo + coffee.
-- **~11:15 Sandanbeki Cliffs** — 50 m cliffs with a sea-cave lift down to the waves.
-- **~14:30 Shirarahama Beach & Senjōjiki** — brilliant white quartz sand for shallow, gentle swimming, then clamber the tilted "1,000-tatami" rock terrace.
-- **~16:00 Sakino-yu Onsen** — Galiya's pick: a 1,300-year-old open-air rock bath cut right at the surf line.
-- **~18:45 Engetsu Island** — the classic Shirahama sunset shot through the "round-moon" sea arch.
+**Breakfast — Castle Rock**
+- **Peper's 49ER Restaurant** (American diner, 4.2) — hearty pre-ride plates; plain pancakes & eggs for Aslan. Kid-friendly. https://maps.google.com/?cid=4506938187642784906
+- **The Oasis Bar & Grill** (4.5) — solid in-town backup. https://maps.google.com/?cid=9411642080220914546
 
-*All restaurants are in Shirahama-chō, Nishimuro District, Wakayama Prefecture (verified). Hotel parking & child/passenger rules: confirm before booking.*
+**Lunch — back at the SR-504 / I-5 junction (Castle Rock)**
+- **Amaro's Table** (Pacific NW / American, 4.8) — the best-rated kitchen right at the foot of the Spirit Lake Highway; great after the viewpoints. Kid-friendly. https://maps.google.com/?cid=16172930673490403158
+- **Lone Fir Cafe** (casual diner, 4.4) — classic volcano-country roadhouse if you come down the Cougar/south side instead. https://maps.google.com/?cid=6753037004800324019
+
+**Dinner — Packwood**
+- **Cliff Droppers** (burgers, 4.6) — Packwood's standout; plain burger + fries keeps Aslan happy. Kid pick. https://maps.google.com/?cid=1323618167841938218
+- **Cruiser's Pizza** (pizza, 4.2) — the town's busiest spot; plain cheese pizza is the easy kid option. Kid pick. https://maps.google.com/?cid=5640658349503661047
+- **Blue Spruce Saloon And Diner** (American saloon/diner, 4.3) — hearty menu and a cold beer for Ruslan after the ride. https://maps.google.com/?cid=3407359734120354488
+
+(All four Packwood/Castle Rock spots confirmed OPERATIONAL via Google Places. Mountain Goat Coffee, 4.6, is the morning espresso stop in Packwood for the next day's Rainier start.)
+
+## Things to do
+- **~09:30 Coldwater Lake Recreation Area** — easy boardwalk and big crater views; works for the whole family. https://www.google.com/maps/search/?api=1&query=Coldwater+Lake+Recreation+Area+Mount+St+Helens
+- **~10:30 Spirit Lake Hwy viewpoints / Johnston Ridge** — dramatic blast-zone overlooks; go as high as the road is open. https://www.google.com/maps/search/?api=1&query=Spirit+Lake+Highway+viewpoint+Mount+St+Helens
+- **~12:15 North Fork Survivors** — volcano museum, ash-buried A-frame, gift shop; easy souvenir for Aslan. https://maps.google.com/?cid=11273759739720209341
+- **~15:30 Riffe Lake / Mossyrock pull-off** — scenic reservoir break on the US-12 leg into Packwood. https://www.google.com/maps/search/?api=1&query=Riffe+Lake+viewpoint+Mossyrock+WA

@@ -1,6 +1,6 @@
 ---
 name: day-illustrator
-description: Draws a minimalist Japanese travel-poster SVG illustration for one tour day, based on that day's title, region, route and stops. Writes assets/day-<n>.svg. Use to (re)generate day hero artwork.
+description: Draws a minimalist Pacific-Northwest travel-poster SVG illustration for one tour day, based on that day's title, region, route and stops. Writes assets/day-<n>.svg. Use to (re)generate day hero artwork. (Note: the current site uses photo hero art via window.DAYART, so day SVGs are optional/decorative.)
 tools: Read, Write, Bash
 ---
 
@@ -17,15 +17,14 @@ Read the day from `window.DAYS` in `data.js` (index `n-1`): use its `title`, `re
 - File ≤ ~8 KB; pure shapes (path/polygon/circle/rect/ellipse), no external refs, no scripts, no raster images.
 
 ## Palette by region (sky → accents)
-- Kanto / Tokyo-Yokohama: dawn blue-violet `#2a3a6b`→`#e7a06a`, city/sea.
-- Hakone / Fuji: cool dawn `#3b5aa6`→`#f2c1a0` with a **snow-capped Fuji** cone (white tip).
-- Izu / Setouchi / coastal: teal sea `#1f6f78`/`#3fb8af`, sky `#bfe3e0`→`#f4d9a8`, an arched **bridge** for Shimanami/Awaji.
-- Shikoku mountains (Iya/Shimanto/Kochi): forest greens `#2f6f4f`/`#5fb35f`, a **river curve** or **vine-bridge** line, misty layers.
-- Kansai (Himeji/Osaka): warm dusk `#6b3b6b`→`#f0a830`, a **castle** silhouette.
-- Onsen days: add 2–3 wavy **steam** strokes rising; rest days: a calmer, warmer scene.
+- Puget Sound / Hood Canal (Day 1): cool blue `#2a4a6b`→`#bfe3e0`, a **ferry** silhouette on the water, the Olympics behind.
+- Washington & Oregon coast (Days 2–4): teal sea `#1f6f78`/`#3fb8af`, sky `#bfe3e0`→`#f4d9a8`, **sea stacks / a lighthouse** on a headland; surf line.
+- Cascades / volcano (Day 5–6): forest greens `#2f6f4f`/`#5fb35f` with a **truncated volcano cone** (Mount St. Helens) under a wide sky.
+- Mount Rainier (Day 7): a glaciated **snow-capped peak** `#3b5aa6`→`#f2c1a0`, wildflower-meadow foreground, an alpine pass line.
+- Rest day: a calmer, warmer scene (beach + lighthouse glow).
 
 ## Motif by day theme (pick what fits the title/stops)
-Fuji cone, red **torii**, arched **bridge**, **castle** keep, **river** ribbon, **onsen steam**, **city skyline**, **coastline/cliffs**, **pagoda**. Use 1 hero motif + layered terrain; don't crowd it.
+Ferry on water, **lighthouse**, **sea stack / Haystack Rock**, coastal **cliffs/headland**, **volcano cone**, a glaciated **mountain peak**, a winding **mountain pass**, evergreen **forest** ridges. Use 1 hero motif + layered terrain; don't crowd it.
 
 ## Output & verify
 - Write `assets/day-<n>.svg`. Ensure it's valid XML: `python3 -c "import xml.dom.minidom,sys; xml.dom.minidom.parse('assets/day-<n>.svg'); print('ok')"`.

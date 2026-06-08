@@ -1,37 +1,32 @@
 # How this project was generated
 
-A record of how the Japan family motorcycle-tour site was built, and the two-agent workflow that now maintains it.
+A record of how the PNW family motorcycle "first tour" site was built, and the two-agent workflow that maintains it. (The repo began life as a 21-day Japan tour and was converted to this 7-day Pacific-Northwest first tour — the architecture is unchanged.)
 
 ## Origin
-The project started from a single brief, [`summary.md`](../summary.md): a 3-week, family-friendly, paved ADV motorcycle tour of Japan (experienced rider + 6-year-old passenger + newer-rider wife), with a preferred route and constraints (safety-first, 4–6h days, onsen rest bases, no off-road).
+The trip is a 7-day, family-friendly, all-paved ride built around a **brand-new rider** (Galiya, Kawasaki W230) with her partner (Ruslan, BMW R1300GS) carrying their 6-year-old (Aslan). Round trip from Woodinville, WA over July 1–7, 2026: the Edmonds–Kingston ferry and Hood Canal to the coast, the full Oregon Coast to a 2-night Yachats base (the Fourth of July), then home over Mount St. Helens and Mount Rainier. Constraints: safety-first, **no freeways**, short confidence-building days, frequent stops for the child.
 
-## Build sequence (what happened, in order)
-1. **Route → itinerary.** Derived a concrete 21-day plan from the brief's high-level route and its five preferred 2-night rest bases (Hakone, Iya/Oboke, Shimanto, Dogo, Onomichi).
-2. **Landing page.** Built `index.html`: hero, Leaflet route map (dark CARTO tiles), route ribbon, filterable day-by-day timeline, safety + parameters sections. CDN-only, no build step.
-3. **Single source of truth.** Factored all stop content into `data.js` (`window.DESTINATIONS`), consumed by both the landing page and the detail template.
-4. **Destination subpages.** Added `place.html`, one reusable template rendering any stop from `?id=` (hero, gallery, food, hotels, map, prev/next).
-5. **Photos.** Pulled images from the **Wikimedia Commons** search API, **verifying every URL returns HTTP 200** before embedding (the API rate-limits hard, so requests are spaced ~7s). Grew to **9 diverse photos per destination (144 total)**, iconic image first.
-6. **Flights from Seattle.** Added an open-jaw plan (fly into Tokyo/Haneda, home out of Osaka/Kansai) with indicative fares from public flight-search data and clickable Expedia/Google-Flights deep links. (Live scraping isn't possible — Expedia returns HTTP 429 to bots.)
-7. **Hotels enriched.** Each suggestion got an indicative ¥ price, a USD conversion (≈ ¥150 = $1), a representative-by-type photo, a booking link, and a **motorcycle-parking badge** (every property selected for bike parking).
-8. **Mileage + routes.** Per-day riding miles (≈1,606 total) shown on day cards and overlaid on each destination hero; each day links to a **Google Maps start→end route** (waypoints for multi-stop days); each day card deep-links to its destination page.
-9. **Daily schedule view.** Moved the 21-day data into `data.js` as `window.DAYS` (with along-the-way `poi[]` stops) and added `day.html` — a per-day timed routine (wake/coffee/breakfast/departure + sightseeing, coffee and lunch stops), a Google-Maps route through the day's waypoints, and the destination's photos. Day cards now open the day view.
-10. **Reorganization.** Extracted the trip content into the [`tour/`](../tour/README.md) markdown directory as the human-readable source of record, and defined the two agents below.
+## How it's built
+Content lives as markdown in [`tour/`](../tour/README.md) and is compiled to `data.js` by **`gen_data.py`**:
 
-## Real travel times (OSRM)
-Ride times were first estimated at a flat 30 mph — wrong (100 mi is ~2 h, not 3+). Replaced with **real road routing**: geocode stops via **Nominatim**, route each day through its stops via **OSRM** (`router.project-osrm.org`) for real distance + duration. Google's Directions API needs a paid key, so OSRM (OpenStreetMap) is the free equivalent. Each riding day stores real `miles` + `dmin`; bad geocodes that produce absurd routes (one day came back 1,103 mi) are sanity-checked and corrected. Later switched to the **Google Directions API** (key kept in `~/google_maps.key`, never committed) for authoritative times. Trip total ≈ 1,606 mi; average riding day ≈ 3h32m.
+- **`gen_data.py`** parses `tour/destinations/NN-id.md` into `window.DESTINATIONS`, and holds the curated `COORDS`, the 7-day `DAYS` schedule (with along-the-way `poi[]` stops), `GEO` routing points, the `CHECKLIST`, the `FOOD_TRAIL`, and `DAYART`. It also folds in the per-day food guides from `tour/daily-guides/day-NN.md` (a fenced ```json block → each day's `eats`/`localTodo`). Run `python3 gen_data.py` to rebuild `data.js`.
+- **`index.html`** — landing page: hero, "how the trip works", Leaflet route map (dark CARTO tiles), route ribbon, destination gallery, the 🦀 Coast Food Trail, a filterable day-by-day timeline, safety + parameters. CDN-only, no build step.
+- **`place.html`** — one reusable template rendering any stop from `?id=` (hero with mileage overlay, gallery + lightbox, food, lodging cards with USD price + parking badge, map, prev/next).
+- **`day.html`** — one reusable template rendering any day from `?d=N` (photo-collage hero, the plan, a timed routine spread across the real `dmin`, per-stop Wikipedia links, the Google-Maps day route, the Where-to-Eat guide, prev/next-day).
+- **`checklist.html`** — interactive pre-trip checklist from `window.CHECKLIST`, ticks saved in `localStorage`.
 
-## Key constraints learned
-- **GitHub Pages** serves static files from the repo root with no build — keep `index.html` at root.
-- **Verify every image URL** (Wikimedia) before committing; broken URLs render as broken pages.
-- **Flight/booking sites block bots** — provide deep links + indicative figures, don't scrape.
-- Hotels/flights/prices are *indicative* and must be confirmed when booking; the site says so.
+## Real travel times (Google Directions)
+Distances and ride times are **real road-routed figures**, not flat-speed estimates — computed with the Google Directions API (key read from `~/google_maps.key`, never committed) and baked into `window.DAYS` as `miles` + `dmin`, plus per-destination `legMiles`. Trip total ≈ **970 mi** over 7 days; average riding day ≈ 3h40m; the longest is the Day-5 coast→Cascades transfer (~216 mi / ~4.1h). Every routed day is sanity-checked (implied speed, distance vs the direct leg).
+
+## Key constraints
+- **GitHub Pages** serves static files from the repo root with no build — keep the HTML at root.
+- **Verify every image URL** (Wikimedia Commons) before committing; broken URLs render as broken pages.
+- Hotels/prices are *indicative* and must be confirmed when booking; the site says so.
+- The Google Maps key is never committed (untracked `gmaps-key.js` locally; CI secret in deploy).
 
 ## The two-agent workflow
-Going forward the project is maintained by two specialized agents (see [`.claude/agents/`](../.claude/agents/)):
-
 | Agent | Owns | Job |
 |-------|------|-----|
-| **tour-expert** | `tour/*.md` | Plans & curates the trip — destinations, days, hotels, food, flights, mileage, routes. The source of record. |
-| **website-builder** | `data.js`, `index.html`, `place.html` | Converts `tour/` markdown into the static site and verifies it (image 200s, JS balance, local serve). |
+| **tour-expert** | `tour/*.md` | Plans & curates the trip — destinations, days, lodging, food, the ferry/getting-there, mileage, routes. The source of record. |
+| **website-builder** | `gen_data.py`, `data.js`, the HTML | Compiles `tour/` markdown into the static site and verifies it (image 200s, JS balance, local serve). |
 
-Content flows **`tour/` → `data.js` → HTML**. Change trip facts via the tour-expert; rebuild the site via the website-builder.
+Content flows **`tour/` → `data.js` → HTML**. Change trip facts via the tour-expert; rebuild the site via the website-builder. The **local-guide** agent writes the per-day food guides under `tour/daily-guides/`.

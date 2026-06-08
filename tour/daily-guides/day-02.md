@@ -1,70 +1,60 @@
 ```json
 {
   "d": 2,
-  "title": "Shinkansen to Osaka & Bike Pickup",
-  "overnight": "Osaka (Namba / Dōtonbori)",
-  "schedule": "late-morning Nozomi Tokyo → Shin-Osaka, arrive ~midday · lunch ~12:30 near Shin-Osaka · afternoon Suita rental pickup, paperwork & gear-fit · gentle Minoh Falls warm-up ride (~24 mi / 1h07m, optional/weather-dependent) · evening welcome dinner in Dōtonbori / Namba",
+  "title": "Across the Columbia to Cannon Beach",
+  "overnight": "Cannon Beach, OR",
+  "schedule": "wake ~08:00 · breakfast & coffee in Westport · depart ~09:30 · easy coastal ride south through Raymond & Long Beach (oyster country) · over the Astoria–Megler Bridge ~13:00 · lunch & a riverfront afternoon in Astoria (Column, sea lions, Maritime Museum) · ~25 mi south to Cannon Beach, arrive late afternoon · dinner under Haystack Rock",
   "todo": [
-    {"time":"~14:00","name":"Suita rental base (Bike Rental Japan)","what":"Pickup, insurance paperwork, Africa Twin + CB400X walk-around, fit Aslan's child gear and pair intercoms — all on foot before the warm-up ride","map":"https://www.google.com/maps/search/?api=1&query=Bike%20Rental%20Japan%20Suita%20Osaka"},
-    {"time":"~15:30","name":"Minoh Falls / Minoo Park","what":"The warm-up ride's gentle turnaround (~30 min north of Suita): an easy, mostly-flat ~40-min forest-gorge walk to a 33 m waterfall with wild monkeys and momiji-tempura stalls — kid-friendly, lets Galiya settle into the rental before Day 3, then a calm city leg back to Dōtonbori (optional / weather-dependent)","map":"https://www.google.com/maps/search/?api=1&query=Minoo%20Park%2C%20Minoh%2C%20Osaka%2C%20Japan"},
-    {"time":"~18:00","name":"Dōtonbori neon canyon","what":"The running Glico Man sign, giant mechanical crab and the city's loudest street-food strip — the easy welcome-evening stroll","map":"https://www.google.com/maps/search/?api=1&query=Dotonbori%20Osaka"},
-    {"time":"~19:00","name":"Den Den Town & Super Potato","what":"Aslan's toy fix: retro-game shop with a Mario-statue storefront, floors of gachapon, and the loop's best shot at Transformers / Takara Tomy robots","map":"https://www.google.com/maps/search/?api=1&query=Super%20Potato%20Nipponbashi%20Osaka"},
-    {"time":"optional","name":"Osaka Castle park","what":"Broad moats and the gold-trimmed keep lit at dusk — a relaxed first-evening walk if energy allows","map":"https://www.google.com/maps/search/?api=1&query=Osaka%20Castle"}
+    {"time":"~13:00","name":"Astoria–Megler Bridge","what":"the 4-mile bridge across the mouth of the Columbia into Oregon — the day's signature ride","map":"https://www.google.com/maps/search/?api=1&query=Astoria-Megler+Bridge"},
+    {"time":"~14:00","name":"The Astoria Column","what":"160-step painted tower with a panorama over the river, town and Coast Range; Aslan can toss balsa gliders from the top (4.8★)","map":"https://maps.google.com/?cid=12946077969317517854"},
+    {"time":"~15:00","name":"Columbia River Maritime Museum & riverfront sea lions","what":"hands-on maritime history for Aslan, plus the barking sea-lion haul-out on the docks below the Riverwalk","map":"https://www.google.com/maps/search/?api=1&query=Columbia+River+Maritime+Museum+Astoria"},
+    {"time":"~17:00","name":"Haystack Rock, Cannon Beach","what":"walk straight onto the beach at the 235-ft sea stack — tidepools, puffins and the postcard view from your overnight town","map":"https://www.google.com/maps/search/?api=1&query=Haystack+Rock+Cannon+Beach"}
   ],
   "meals": [
-    {"slot":"coffee","area":"Nishi-Shinsaibashi (near Namba)",
-     "picks":[
-       {"name":"LiLo Coffee Roasters","cuisine":"specialty coffee","rating":4.8,"why":"Galiya & Ruslan — Osaka's marquee third-wave roaster, huge single-origin lineup minutes from Dōtonbori; iced drinks and pastries keep Aslan happy","kid":false,"map":"https://maps.google.com/?cid=16291659530834990214","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
-     ]},
-    {"slot":"lunch","area":"Shin-Osaka (arrival)",
-     "picks":[
-       {"name":"Maru de Sankaku","cuisine":"Osaka ramen","rating":4.4,"why":"Galiya — a top-rated local ramen bowl minutes from Shin-Osaka","kid":false,"map":"https://maps.google.com/?cid=17941306275953871503","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"},
-       {"name":"Yusuke","cuisine":"udon / Japanese","rating":4.3,"why":"Aslan — plain kake-udon and rice he'll actually eat","kid":true,"map":"https://maps.google.com/?cid=2573639927540784130","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/960px-Kake_udon_by_udono.jpg"},
-       {"name":"Human Beings Everybody Noodles","cuisine":"ramen","rating":4.2,"why":"Galiya & Ruslan — wildly popular noodle shop in Nishinakajima by the station","kid":false,"map":"https://maps.google.com/?cid=6418836266917594457","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"}
-     ]},
-    {"slot":"snack","area":"Minoh Falls path",
-     "picks":[
-       {"name":"Hisakunikosendo","cuisine":"momiji-tempura (maple-leaf tempura)","rating":4.4,"why":"Aslan — a fun, sweet-salty deep-fried maple-leaf snack on the easy falls walk; one of Minoh's long-running makers","kid":true,"map":"https://maps.google.com/?cid=16416516797408264592","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Momiji_no_Tempura.jpg/960px-Momiji_no_Tempura.jpg"},
-       {"name":"Koyo-ryorikan","cuisine":"momiji-tempura / sweet stall","rating":4.6,"why":"everyone — another riverside path stall for crisp maple-leaf tempura by Minoh Falls (any of the path stalls works)","kid":true,"map":"https://maps.google.com/?cid=2539227206672459667","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Minoh_Falls_Minoh_Osaka_pref_Japan01s5.jpg/960px-Minoh_Falls_Minoh_Osaka_pref_Japan01s5.jpg"}
-     ]},
-    {"slot":"dinner","area":"Dōtonbori / Namba",
-     "picks":[
-       {"name":"OKO - Fun Okonomiyaki Bar","cuisine":"okonomiyaki / teppan","rating":4.7,"why":"Galiya — Osaka's signature as-you-like-it pancake cooked at the counter","kid":false,"map":"https://maps.google.com/?cid=17891229658034342593","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Okonomiyaki_001.jpg/960px-Okonomiyaki_001.jpg"},
-       {"name":"Sushiro Sennichimae","cuisine":"conveyor-belt sushi","rating":4.6,"why":"Aslan — order-screen kaiten sushi with karaage, plain rice, egg and udon he'll happily pick from","kid":true,"map":"https://maps.google.com/?cid=13944981815152990368","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Conveyor_belt_sushi_at_Mashiro_Sushi.jpg/960px-Conveyor_belt_sushi_at_Mashiro_Sushi.jpg"},
-       {"name":"Takoyaki Wanaka Dotonbori","cuisine":"takoyaki street food","rating":4.2,"why":"everyone — the molten octopus-dumpling icon eaten standing on the strip","kid":false,"map":"https://maps.google.com/?cid=2130839552230731987","photo":"https://upload.wikimedia.org/wikipedia/commons/d/d8/Takoyaki_by_yomi955.jpg"}
-     ]}
+    {"slot":"breakfast","area":"Westport","picks":[
+      {"name":"Capt'n Jack's","cuisine":"coffee shop / breakfast","rating":4.6,"why":"Ruslan — strong coffee and a relaxed start before the ride","kid":true,"map":"https://maps.google.com/?cid=17216258680165636564"},
+      {"name":"Blue Buoy","cuisine":"diner / seafood breakfast","rating":4.5,"why":"Galiya — big harbor-town breakfast; Aslan gets plain eggs, toast & hashbrowns","kid":true,"map":"https://maps.google.com/?cid=3139538248414449400"}
+    ]},
+    {"slot":"lunch","area":"Astoria riverfront","picks":[
+      {"name":"Bowpicker Fish and Chips","cuisine":"battered albacore tuna fish & chips","rating":4.8,"why":"whole family — Astoria's legendary boat-shaped stand; crispy and kid-friendly (cash only, limited hours — check before going)","kid":true,"map":"https://maps.google.com/?cid=10661837831491802640","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fish_and_chips.jpg/960px-Fish_and_chips.jpg"},
+      {"name":"Buoy Beer Co. Taproom","cuisine":"riverfront brewpub / seafood","rating":4.5,"why":"Galiya & Ruslan — on-pier seafood and local beer with a glass-floor sea-lion window Aslan will love","kid":true,"map":"https://maps.google.com/?cid=11352265591615845826"},
+      {"name":"Fort George Brewery","cuisine":"brewpub burgers & pub fare","rating":4.5,"why":"Aslan — burgers and fries in a roomy family pub; Ruslan gets the famous beer","kid":true,"map":"https://maps.google.com/?cid=16478071298936810665","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/NCI_Visuals_Food_Hamburger.jpg/960px-NCI_Visuals_Food_Hamburger.jpg"}
+    ]},
+    {"slot":"dinner","area":"Cannon Beach (under Haystack Rock)","picks":[
+      {"name":"Ecola Seafood Restaurant & Market","cuisine":"fresh Dungeness crab / clam chowder / fish & chips","rating":4.4,"why":"Galiya — off-the-boat Dungeness crab and a proper clam chowder at the village fish market","kid":false,"map":"https://maps.google.com/?cid=6963953583807006938","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Cup_of_clam_chowder%2C_with_saltines.jpg/960px-Cup_of_clam_chowder%2C_with_saltines.jpg"},
+      {"name":"Public Coast Brewing Co","cuisine":"brewpub burgers & seafood","rating":4.3,"why":"whole family — local beer for Ruslan, fresh fish for Galiya, and burgers/fries plus a kids' menu for Aslan","kid":true,"map":"https://maps.google.com/?cid=10044052816328267324","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/NCI_Visuals_Food_Hamburger.jpg/960px-NCI_Visuals_Food_Hamburger.jpg"},
+      {"name":"Pizza A' Fetta Cannon Beach","cuisine":"wood-style pizza by the slice","rating":4.3,"why":"Aslan — easy hand-tossed pizza right on Hemlock St, the simplest win of the day","kid":true,"map":"https://maps.google.com/?cid=10796748354004653791","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Eq_it-na_pizza-margherita_sep2005_sml.jpg/960px-Eq_it-na_pizza-margherita_sep2005_sml.jpg"}
+    ]}
   ]
 }
 ```
 
-## Day 2 — Shinkansen to Osaka & Bike Pickup
+## Day 2 — Across the Columbia to Cannon Beach (Westport, WA → Cannon Beach, OR)
 
-**Overnight:** Osaka (Namba / Dōtonbori) · **Short ~24 mi / 1h07m warm-up ride (optional/weather-dependent).**
+A short, easy coastal day. Wake around 8, fuel up with breakfast in Westport, and roll out by 09:30 down Hwy 101 through Raymond and the Willapa Bay oyster flats. Cross the dramatic 4-mile Astoria–Megler Bridge into Oregon around midday, spend the afternoon in Astoria's Victorian riverport — the Column gliders, the dockside sea lions and the Maritime Museum — then drop ~25 miles south to overnight in Cannon Beach, asleep within sight of Haystack Rock.
 
-**Schedule:** A late-morning Nozomi from Tokyo/Shinagawa glides into **Shin-Osaka around midday**. Eat **lunch near the station (~12:30)**, then make the short hop out to the **Suita rental base** for the afternoon handover — paperwork, insurance, a full walk-around of the Africa Twin and CB400X, fitting Aslan's child gear, pairing intercoms and an on-foot shakedown. Then — weather and jet-lag allowing — take a **gentle Minoh Falls warm-up ride**: ~30 min north out of Suita on quiet suburban roads to **Minoo Park**, an easy forest-gorge walk to a 33 m waterfall (wild monkeys, momiji-tempura stalls), then a calm city leg back into **Dōtonbori / Namba** for the welcome dinner. It's a low-stakes first ride to let Galiya settle into the rental, riding on the left and the child-pillion setup before the demanding Day 3 — **skip it if the flight landed late or it's wet**.
+**Schedule:** wake ~08:00 · breakfast in Westport · depart ~09:30 · ride south through oyster country · over the Astoria–Megler Bridge ~13:00 · lunch & afternoon in Astoria · ~25 mi to Cannon Beach, arrive late afternoon · dinner under Haystack Rock.
 
-### Coffee — Nishi-Shinsaibashi (near Namba)
-- **LiLo Coffee Roasters** — specialty coffee, ⭐4.8 — Osaka's marquee third-wave roaster with a sprawling single-origin lineup, a few minutes' walk from Dōtonbori; iced drinks and pastries for Aslan. https://maps.google.com/?cid=16291659530834990214
+### Where to eat
 
-### Lunch — near Shin-Osaka
-- **Maru de Sankaku** — Osaka ramen, ⭐4.4 — Galiya's noodle fix, top-rated and minutes from the station. https://maps.google.com/?cid=17941306275953871503
-- **Yusuke** *(kid)* — udon / Japanese, ⭐4.3 — plain kake-udon and rice for Aslan. https://maps.google.com/?cid=2573639927540784130
-- **Human Beings Everybody Noodles** — ramen, ⭐4.2 — a hugely popular Nishinakajima noodle shop for Galiya & Ruslan. https://maps.google.com/?cid=6418836266917594457
+**Breakfast — Westport (before leaving)**
+- **Capt'n Jack's** (4.6★) — strong coffee and an easy start. [Map](https://maps.google.com/?cid=17216258680165636564)
+- **Blue Buoy** (4.5★) — hearty harbor-town breakfast; plain eggs, toast and hashbrowns keep Aslan happy. [Map](https://maps.google.com/?cid=3139538248414449400)
 
-### Snack — Minoh Falls path *(if you do the warm-up ride)*
-- **Hisakunikosendo** *(kid)* — momiji-tempura (maple-leaf tempura), ⭐4.4 — crisp, sweet-salty deep-fried maple leaves on the easy walk up to the falls; a fun simple treat for Aslan. https://maps.google.com/?cid=16416516797408264592
-- **Koyo-ryorikan** *(kid)* — momiji-tempura / sweet stall, ⭐4.6 — another riverside path stall by Minoh Falls; any of the path stalls works. https://maps.google.com/?cid=2539227206672459667
+**Lunch — Astoria riverfront**
+- **Bowpicker Fish and Chips** (4.8★) — Astoria's famous boat-shaped stand; crispy battered albacore the whole family, picky kid included, will devour. Cash only and limited hours, so check before riding over. [Map](https://maps.google.com/?cid=10661837831491802640)
+- **Buoy Beer Co. Taproom** (4.5★) — on-pier seafood and local beer with a glass floor over a sea-lion haul-out Aslan will love. [Map](https://maps.google.com/?cid=11352265591615845826)
+- **Fort George Brewery** (4.5★) — roomy family-friendly brewpub; burgers and fries for Aslan, the celebrated beer for Ruslan. [Map](https://maps.google.com/?cid=16478071298936810665)
 
-### Dinner — Dōtonbori / Namba
-- **OKO - Fun Okonomiyaki Bar** — okonomiyaki / teppan, ⭐4.7 — Osaka's signature pancake at the counter, Galiya's pick. https://maps.google.com/?cid=17891229658034342593
-- **Sushiro Sennichimae** *(kid)* — conveyor-belt sushi, ⭐4.6 — screen-order kaiten with karaage, plain rice, egg and udon Aslan will eat. https://maps.google.com/?cid=13944981815152990368
-- **Takoyaki Wanaka Dotonbori** — takoyaki street food, ⭐4.2 — the molten octopus-dumpling icon eaten standing on the strip. https://maps.google.com/?cid=2130839552230731987
+**Dinner — Cannon Beach (under Haystack Rock)**
+- **Ecola Seafood Restaurant & Market** (4.4★) — Galiya's pick: fresh Dungeness crab and a real clam chowder at the village fish market. [Map](https://maps.google.com/?cid=6963953583807006938)
+- **Public Coast Brewing Co** (4.3★) — local beer for Ruslan, fresh fish for Galiya, and burgers, fries and a kids' menu for Aslan — the easy whole-family option. [Map](https://maps.google.com/?cid=10044052816328267324)
+- **Pizza A' Fetta** (4.3★) — simplest win of the day: hand-tossed pizza by the slice right on Hemlock St for Aslan. [Map](https://maps.google.com/?cid=10796748354004653791)
+
+*Sweet stop:* **Cannon Beach Bakery** (4.2★) on Hemlock for Galiya's coast-town pastries — a fine after-dinner or next-morning detour. [Map](https://maps.google.com/?cid=5851885321136961195)
 
 ### Things to do
-- **Suita rental base (Bike Rental Japan)** — afternoon pickup, gear-fit and on-foot controls shakedown.
-- **Minoh Falls / Minoo Park** *(warm-up turnaround, optional)* — ~30 min north of Suita; an easy ~40-min forest walk to a 33 m waterfall with wild monkeys and momiji-tempura stalls, then a calm ride back to Dōtonbori — Galiya's gentle first ride on the rental before Day 3.
-- **Dōtonbori neon canyon** — Glico Man, the giant crab and the welcome-evening stroll.
-- **Den Den Town & Super Potato** — Aslan's toy/figure hunt (retro games, gachapon, Transformers/robots).
-- **Osaka Castle park** *(optional)* — moats and the floodlit keep if there's energy after dinner.
-</content>
-</invoke>
+- **~13:00 — Astoria–Megler Bridge:** the 4-mile crossing into Oregon, the day's signature ride. [Map](https://www.google.com/maps/search/?api=1&query=Astoria-Megler+Bridge)
+- **~14:00 — The Astoria Column** (4.8★): climb the painted tower for a 360° river panorama; Aslan can launch balsa gliders from the top. [Map](https://maps.google.com/?cid=12946077969317517854)
+- **~15:00 — Columbia River Maritime Museum & riverfront sea lions:** hands-on maritime history, plus the barking sea-lion haul-out on the docks. [Map](https://www.google.com/maps/search/?api=1&query=Columbia+River+Maritime+Museum+Astoria)
+- **~17:00 — Haystack Rock, Cannon Beach:** walk onto the beach at the 235-ft sea stack for tidepools, puffins and the postcard view from your overnight town. [Map](https://www.google.com/maps/search/?api=1&query=Haystack+Rock+Cannon+Beach)

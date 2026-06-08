@@ -1,169 +1,142 @@
-# Iconic Motorcycle Touring Roads & Scenic Byways of Japan
+# Scenic Routes — the roads actually ridden (PNW first tour)
 
-A reference catalogue of Japan's famous riding roads. Each entry notes region, what makes
-it good on a bike, rough length, difficulty for a **newer rider with a child pillion**,
-toll/seasonal-closure notes, and passenger/kid suitability. Figures are approximate and
-should be re-checked against official sources before a trip (closures and tolls change yearly).
+A reference catalogue of the **roads on this 7-day loop**, in route order, plus the realistic
+fallbacks. Each entry notes the segment, what makes it good on a bike, rough length, difficulty
+for a **newly-endorsed rider on a small-tank W230 with a 6-year-old pillion on the GS**, and any
+seasonal-opening or fuel caveat. The whole route is **paved two-lane, off all freeways and
+Interstates by design** — these are the "as the road teaches" miles for a first tour.
 
-Difficulty key (for a newer rider 2-up): **Easy** = wide, gentle, low traffic ·
-**Moderate** = some tight turns/elevation, manageable at a relaxed pace ·
-**Challenging** = sustained hairpins, narrow, or high/exposed · **Expert/off-road** = avoid 2-up.
-
----
-
-## Kantō / Izu / Hakone (closest to a Tokyo–Yokohama start)
-
-### Izu Skyline
-- **Region:** Izu Peninsula, Shizuoka.
-- **Length:** ~40 km ridge-line toll road.
-- **Why ride it:** Panoramas of the Pacific, the Izu hills and — on clear days — Mt. Fuji. Well-maintained, mix of sweepers and a few tight turns; not as extreme as alpine passes.
-- **Toll:** ~¥580 per motorcycle (some report up to ~¥900 for the full length; pay by section). Check current rate at the Shizuoka Road Public Corp. site.
-- **Closure:** Generally open year-round; fog/ice possible at altitude in cold months.
-- **Newer rider / kid:** Good. A signature, accessible ride; relaxed pace works well 2-up.
-- Sources: https://theninjarider.com/izuskyline/ · https://www.japanistry.com/izu-skyline · https://siz-road.or.jp.e.nd.hp.transer.com/
-
-### West Izu Skyline (Nishi-Izu Skyline)
-- **Region:** Izu Peninsula, Shizuoka. **Length:** ~15 km (often ridden as a longer ridge run).
-- **Why ride it:** Toll-free, quieter and arguably better scenery than the main Izu Skyline, with Mt. Fuji backdrops.
-- **Toll:** None. **Closure:** None noted. **Newer rider / kid:** Easy–Moderate, very suitable.
-- Source: https://farwayout.com/top-20-best-motorcycle-roads-in-japan/
-
-### Hakone Turnpike (Anest Iwata Turnpike)
-- **Region:** Hakone, Kanagawa/Shizuoka. **Length:** ~15.8 km, sea level to >1,000 m.
-- **Why ride it:** Legendary enthusiast road — wide, beautifully surfaced sweeping curves with big elevation change and Sagami Bay / Mt. Fuji views from the top café.
-- **Toll:** ~¥520 per motorcycle.
-- **Closure:** Open year-round; can close briefly for snow/ice in winter.
-- **Newer rider / kid:** Moderate. Wide and forgiving, but a known speed road — keep a calm pace 2-up. Excellent views reward a slow ride.
-- Sources: https://samuraicarjapanjdm.jp/hakone-turnpike-driving-guide/ · https://www.satoshirides.com/ridereports/hakonerides
-
-### Ashinoko Skyline & Hakone Skyline
-- **Region:** Hakone. **Length:** ~15 km combined.
-- **Why ride it:** Some of the closest, most dramatic Mt. Fuji + Lake Ashi views; Mikuni Pass is a favourite sunset stop.
-- **Toll:** Ashinoko Skyline ~¥300, Hakone Skyline ~¥260 per motorcycle.
-- **Closure:** None generally noted. **Newer rider / kid:** Easy. Great family viewpoint ride.
-- Source: https://farwayout.com/top-20-best-motorcycle-roads-in-japan/
-
-### Irohazaka Winding Road
-- **Region:** Nikko, Tochigi. **Length:** ~15.8 km (a one-way uphill + one-way downhill pair).
-- **Why ride it:** 48 famous hairpins (named after the *iroha* syllabary) climbing to Okunikko; spectacular autumn foliage; one-way design means no oncoming traffic.
-- **Toll:** Free. **Closure:** Subject to winter closure for snow/ice (roughly late Dec–mid-Apr; varies).
-- **Newer rider / kid:** Moderate–Challenging. Continuous tight hairpins; the one-way layout helps, but tiring 2-up. Best in good weather. October foliage = heavy traffic.
-- Sources: https://www.japan-guide.com/e//e3816.html · https://www.dangerousroads.org/asia/japan/66-iroha-zaka-road-japan.html
+Difficulty key (new rider, 2-up):
+**Easy** = wide, gentle, low traffic ·
+**Moderate** = some real corners or elevation, fine at a relaxed pace ·
+**Spirited** = sustained curves/switchbacks/altitude — ride calm, pick a clear day.
+*(Nothing on this route is rated harder than that; that's the point.)*
 
 ---
 
-## Chūbu / Japan Alps (Nagano, Gifu, Yamanashi)
+## Day 1 — Edmonds–Kingston ferry + Hood Canal
 
-### Venus Line
-- **Region:** Nagano (Chino → Utsukushigahara). **Length:** ~62 km, up to ~1,954 m.
-- **Why ride it:** Open highland plateau touring — flowing curves, big-sky panoramas, lakes and grassland rather than claustrophobic forest. One of Japan's most beloved rides.
-- **Toll:** None. **Closure:** Snow-closed roughly Nov–Apr; cold/foggy mornings into late autumn.
-- **Newer rider / kid:** Moderate but very rewarding — open sightlines, not technical. Good 2-up in fair weather. High altitude = cold; dress the child warmly in October.
-- Source: https://farwayout.com/top-20-best-motorcycle-roads-in-japan/
+### Edmonds–Kingston ferry (Washington State Ferries)
+- **Segment:** Edmonds terminal → Kingston, across Puget Sound (~30 min sailing).
+- **Why ride it:** Skips Seattle traffic entirely, and a ferry crossing is a genuinely fun, low-stress *first* for a new rider — roll on, shut off, relax with the Olympics on the horizon. Motorcycles load **first and exit first**; no reservation for bikes (first-come — arrive ~30 min early).
+- **Difficulty:** Easy. The only "skill" is a slow, careful roll up the metal ramp and parking on the car deck (mind the painted deck and tie-down cleats — go slow, feet down). [KID]
+- Refs: https://wsdot.wa.gov/travel/washington-state-ferries/schedules/edmonds-kingston · https://wsdot.wa.gov/travel/washington-state-ferries/take-ferry/bicyclesmotorcycles
 
-### Norikura Skyline / Norikura Echo Line
-- **Region:** Gifu/Nagano. Highest paved road in Japan (~2,716 m at Tatamidaira).
-- **Why ride it:** Alpine grandeur above the tree line. **Note:** the Skyline (Gifu side) is **closed to private motor vehicles** — buses/taxis/bicycles only; the Echo Line (Nagano side) has private-vehicle access but also seasonal/time limits. Verify current access rules before routing a motorcycle here.
-- **Closure:** Seasonal (typically open ~mid-May to end Oct/early Nov, weather permitting).
-- **Newer rider / kid:** High, cold, exposed; access restrictions make it a poor fit for a 2-up self-ride. Confirm vehicle eligibility first.
-- General season/closure ref: https://www.japan-guide.com/e/e2273.html
-
-### Shiga–Kusatsu Kōgen Route (Route 292)
-- **Region:** Gunma/Nagano. **Length:** ~33 km; highest national road in Japan (~2,172 m).
-- **Why ride it:** Panoramic volcanic highland between Shiga Kōgen and Kusatsu Onsen.
-- **Toll:** None. **Closure:** Snow-closed late Nov–mid-Apr; **volcanic gas restrictions** near Mt. Shirane can shut sections at short notice.
-- **Newer rider / kid:** Moderate; the volcanic-gas no-stopping zone is a consideration with a child. Check active-volcano advisories.
-- Source: https://farwayout.com/top-20-best-motorcycle-roads-in-japan/
+### Hood Canal west shore (WA-106 / US-101)
+- **Segment:** Kingston/Port Gamble down to the Hood Canal, WA-106 along the south shore, then US-101 toward Shelton/Aberdeen. ~50 mi of shoreline two-lane.
+- **Why ride it:** The day's signature easy ride — quiet, low-traffic two-lane hugging the fjord-like canal, water on one side, forest on the other. Gentle bends, slow speeds, big views. The ideal first hour for a brand-new endorsement.
+- **Difficulty:** Easy. Flowing, well-sighted curves; nothing tight or fast.
+- **Fuel note:** the Hood Canal → Aberdeen stretch is rural — **top off before it; don't run the W230 low.**
+- Refs: https://www.experiencewa.com/regions/olympic-peninsula/ · https://www.wta.org/go-outside/destinations
 
 ---
 
-## Chūgoku & Setouchi (the Honshu→Shikoku link)
+## Days 2–3 — US-101, the Washington & Oregon coast
 
-### Shimanami Kaido
-- **Region:** Onomichi (Hiroshima, Honshu) → Imabari (Ehime, Shikoku), across 6 islands of the Seto Inland Sea.
-- **Length:** ~60 km expressway with a chain of landmark suspension/cable-stayed bridges.
-- **Why ride it:** The single best Honshu↔Shikoku crossing on a bike — island-hopping over turquoise sea, world-famous bridges, light traffic, many michi-no-eki and viewpoints (e.g. Kirosan Observatory over the Kurushima-Kaikyō bridges).
-- **Toll:** Expressway tolls per bridge/section (ETC reduces cost). World-famous as a *cycling* road, but fully open to motorcycles on the expressway carriageway.
-- **Closure:** Open year-round; bridges can have wind restrictions in storms.
-- **Newer rider / kid:** Easy–Moderate and highly recommended 2-up — gentle gradients, stunning, memorable. A trip highlight for a child.
-- Sources: https://www.japan-guide.com/e/e3478.html · https://www.jb-honshi.co.jp/english/customer_index/traffic/
+### US-101, Washington coast (Westport ↔ Long Beach ↔ Astoria)
+- **Segment:** Westport → Raymond → Long Beach Peninsula → Astoria–Megler Bridge. ~99 mi.
+- **Why ride it:** Flat, low-stress coastal two-lane through oyster country (Willapa Bay) and out the Long Beach Peninsula, the "world's longest drivable beach."
+- **The Astoria–Megler Bridge:** a soaring **4.1-mile** crossing of the mouth of the Columbia — the day's one "big" feature. Straightforward at a steady pace; can be **windy** out over the water — both bikes hold a calm, central line and don't fight gusts. [KID]
+- **Difficulty:** Easy, except the bridge is Easy–Moderate in wind.
+- Refs: https://traveloregon.com/places-to-go/regions/oregon-coast/ · https://en.wikipedia.org/wiki/Astoria%E2%80%93Megler_Bridge
 
-### Mt. Daisen loop (around Route 45 / Hiruzen-Daisen Skyline)
-- **Region:** Tottori/Okayama, Chūgoku. **Length:** ~30 km.
-- **Why ride it:** Sweeping forest road around the 1,729 m Daisen volcano; superb autumn colour; can extend to the Hiruzen-Daisen Skyline.
-- **Toll:** None. **Closure:** None noted (high-altitude snow possible deep winter).
-- **Newer rider / kid:** Moderate, scenic and relaxed. Good detour if routing along the San'in coast.
-- Source: https://farwayout.com/top-20-best-motorcycle-roads-in-japan/
+### US-101, Oregon north coast (Astoria → Cannon Beach → Tillamook → Newport → Yachats)
+- **Segment:** ~161 mi of the classic Oregon Coast Highway, broken into many short scenic legs.
+- **Why ride it:** The marquee coast riding of the trip — Haystack Rock, the dairy valleys around Tillamook, headlands, beaches and the run south to the rest base. All paved, low-speed coastal two-lane with a stop every few miles.
+- **Difficulty:** Easy–Moderate (length, not technicality). Summer brings **RVs and slow-moving traffic** — be patient, use the frequent pullouts, don't make risky passes. Start early so the afternoon capes aren't rushed.
+- Refs: https://traveloregon.com/things-to-do/trip-ideas/scenic-drives/the-oregon-coast-highway/
 
----
-
-## Shikoku
-
-### UFO Line (Town Road Kamekoma Line, Shikoku Karst / Ishizuchi range)
-- **Region:** Kōchi/Ehime border. **Length:** ~26 km along a ridge up to ~1,700 m (highest road in Shikoku).
-- **Why ride it:** Iconic ridge-top riding with the road snaking along open mountain spine — Japan's "road in the sky." Used in car commercials; unforgettable on a clear day.
-- **Toll:** None. **Closure:** Snow-closed ~late Nov–early Apr; very cloud/fog-prone even in season.
-- **Newer rider / kid:** Moderate–Challenging — narrow, exposed, weather-dependent. Doable 2-up at a careful pace on a clear, calm day; skip in fog/wind.
-- Source: https://farwayout.com/top-20-best-motorcycle-roads-in-japan/
-
-### Shikoku Karst Skyline (Tengu Kōgen)
-- **Region:** Kōchi/Ehime border. **Why ride it:** Open limestone-karst plateau with grazing cattle and 360° highland views — one of Japan's three great karsts. Pairs naturally with the UFO Line.
-- **Toll:** None. **Closure:** High, snow-affected in winter. **Newer rider / kid:** Moderate, open and scenic.
-- Context source: https://mototourist.jp/motorcycle-touring-areas-in-japan/shikoku-motorcycle-touring-guide/
-
-### Niyodo River Valley ("Niyodo Blue")
-- **Region:** Kōchi. **Why ride it:** Emerald-clear river, quiet riverside backroads, gorges and clear-water pools (e.g. Nakatsu Gorge); tranquil, low-traffic, scenic riding.
-- **Toll:** None. **Closure:** None noted (mountain weather). **Newer rider / kid:** Mostly Easy–Moderate valley roads — excellent gentle, beautiful riding with swim/photo stops kids enjoy. Some upper side-roads narrow.
-- Source: https://mototourist.jp/motorcycle-touring-areas-in-japan/shikoku-motorcycle-touring-guide/
-
-### Shimanto River roads ("last pure river of Japan")
-- **Region:** Kōchi. **Why ride it:** Dam-free river with quiet roads hugging the bank toward the Pacific; famous low *chinkabashi* "sinking bridges." Relaxed, rural, scenic.
-- **Toll:** None. **Closure:** None noted. **Newer rider / kid:** Easy–Moderate, very family-friendly pace.
-- Source: https://mototourist.jp/motorcycle-touring-areas-in-japan/shikoku-motorcycle-touring-guide/
-
-### Cape Muroto & Cape Ashizuri coastal roads
-- **Region:** Kōchi (Pacific capes). **Why ride it:** Wide-open Pacific coast riding to dramatic headlands and lighthouses; Muroto is a UNESCO Global Geopark.
-- **Toll:** None. **Newer rider / kid:** Easy–Moderate coastal cruising — good 2-up. Long distances between the two capes.
-- Source: https://mototourist.jp/motorcycle-touring-areas-in-japan/shikoku-motorcycle-touring-guide/
-
-### Tsurugi Super Rindō (Super Forest Road)
-- **Region:** Tokushima (Mt. Tsurugi area). **Length:** ~88 km — Japan's longest gravel road.
-- **Why ride it:** Legendary adventure route. **BUT** mostly gravel, narrow, no guardrails, prone to landslide closures.
-- **Newer rider / kid:** **Expert / off-road — not suitable 2-up with a child.** Listed only for completeness. Check status at rindo navi before any attempt.
-- Source: https://farwayout.com/top-20-best-motorcycle-roads-in-japan/
+### Three Capes Scenic Loop (Cape Meares · Cape Lookout · Cape Kiwanda / Pacific City)
+- **Segment:** A ~40-mile loop off US-101 west of Tillamook linking three headlands.
+- **Why ride it:** A quieter, prettier alternative to the highway — Cape Meares lighthouse and the Octopus Tree, forest along Cape Lookout, and the dory beach + big climbable dune at Cape Kiwanda/Pacific City. Slow, scenic, view-to-view. [KID]
+- **Difficulty:** Easy–Moderate. Narrower and twistier than US-101 in spots, low speeds; **check for any segment closures** (parts of the loop have had slide/repair closures over the years — verify before relying on it).
+- Refs: https://www.tillamookcoast.com/three-capes-scenic-route/ · https://traveloregon.com/things-to-do/trip-ideas/scenic-drives/the-three-capes-scenic-loop/
 
 ---
 
-## Kyūshū (out of the current route's scope, but classic — for reference)
+## Day 4 — Cape Perpetua area (rest day, light riding)
 
-### Yamanami Highway (Route 11, Beppu ↔ Aso)
-- **Length:** ~58 km (highlight section ~25 km). Through Aso-Kujū National Park grasslands; widely dubbed "Japan's Best Ride."
-- **Toll:** Free public road. **Newer rider / kid:** Moderate, open and flowing — superb 2-up.
-- Sources: https://theninjarider.com/yamanamihighway/ · https://farwayout.com/top-20-best-motorcycle-roads-in-japan/
-
-### Aso Panorama Line / Milk Road (Aso caldera)
-- Grassland ridge roads around the active Mt. Aso caldera with vast panoramas and lookouts (Daikanbō).
-- **Toll:** Free public roads (Aso-san Park Toll Road detour ~¥400). **Note:** access near the active crater closes on volcanic-alert level. **Newer rider / kid:** Moderate, scenic.
-- Sources: https://www.shogunmotorbikeadventures.com/motorcycle-diaries/aso-panorama-line-kumamoto · https://farwayout.com/top-20-best-motorcycle-roads-in-japan/
+### Cape Perpetua Scenic Area + Heceta Head (US-101 south of Yachats)
+- **Segment:** Short hops south from Yachats — Cape Perpetua, Heceta Head, Sea Lion Caves. ~30 mi round-trip of riding.
+- **Why ride it:** The most dramatic few miles of the central coast (Thor's Well, Devil's Churn, Spouting Horn) and one of the most photographed lighthouses in the U.S. — all within an easy rest-day reach.
+- **Difficulty:** Easy. Short, scenic, low-pressure. **Safety:** keep Aslan well back from the wet rocks at Thor's Well / Devil's Churn — they are genuinely dangerous, not a bike issue.
+- Refs: https://www.fs.usda.gov/recarea/siuslaw/recarea/?recid=42283 · https://oregonstateparks.org/index.cfm?do=park.profile&parkId=110
 
 ---
 
-## Tōhoku & Hokkaidō highlights (reference / future trips)
+## Day 5 — Coast Range crossing (Alsea River road)
 
-- **Bandai-Azuma Skyline** (Fukushima, ~28 km, to 1,622 m) — "road above the clouds," volcanic landscapes. Snow-closed ~mid-Nov–mid-Apr. Toll-free.
-- **Zaō Echo Line** (Miyagi/Yamagata, ~35 km) — Okama crater lake; snow-closed early Nov–late Apr; Zaō High Line detour ~¥390.
-- **Hachimantai Aspite Line** (Iwate/Akita, ~37 km) — volcanic high road; snow-closed mid-Nov–early Apr.
-- **Lake Towada & Oirase Gorge** (~60 km) — premier northern autumn-foliage ride, gentle and family-friendly.
-- **Hokkaidō Route 228/229 SW coast** (~380 km) and **Shiretoko Pass** (~33 km) — big-sky coastal and wilderness riding.
-- Source for all: https://farwayout.com/top-20-best-motorcycle-roads-in-japan/
+### OR-34, the Alsea River road (Waldport/Yachats → Alsea → Corvallis)
+- **Segment:** ~60 mi climbing out of the coast over the Coast Range to the Willamette Valley, following the Alsea River.
+- **Why ride it:** The trip's first real inland riding road — a flowing, shaded forest two-lane along the river, gentle sweepers, light traffic. A lovely, confidence-building transition off the coast.
+- **Difficulty:** Easy–Moderate. Some curves and elevation but well-graded and forgiving at a relaxed pace. **Watch for log trucks** and damp, shaded corners in the morning.
+- **Fuel note:** fuel before the Coast Range and again in the valley; rural stretches between.
+- Refs: https://traveloregon.com/things-to-do/trip-ideas/scenic-drives/ · https://en.wikipedia.org/wiki/Oregon_Route_34
+
+*(The valley legs north to the Columbia crossing at Longview are quiet valley/secondary highways — easy, flat, unremarkable transfer miles chosen to stay off I-5.)*
+
+---
+
+## Day 6 — Mount St. Helens + US-12
+
+### Spirit Lake Memorial Highway (SR-504)
+- **Segment:** Castle Rock up toward the crater — ~50 mi of dead-end mountain highway, ridden up and back.
+- **Why ride it:** A genuinely great motorcycle road — smooth, modern, sweeping two-lane climbing through the 1980 blast zone toward the volcano, viewpoint after viewpoint (Hoffstadt Bluffs, Coldwater Lake). Low traffic, well-graded sweepers — superb, relaxed mountain riding for a newer rider.
+- **Difficulty:** Moderate (sweepers + elevation), but never tight or scary. Ideal "step up from the coast" riding.
+- **Closure note:** **Johnston Ridge Observatory and the upper end of SR-504 have been closed since a 2023 landslide.** Treat SR-504 as a roadside-viewpoint ride up to the closure point; the highway up to **Coldwater Lake / Hoffstadt Bluffs is the highlight.** **Verify the current end-of-road status (WSDOT / USFS) before Day 6.** [KID]
+- Refs: https://wsdot.com/travel/real-time/mountainpasses (general) · https://www.fs.usda.gov/mountsthelens · https://wsdot.wa.gov/
+
+### US-12 east (Mossyrock/Morton → Packwood)
+- **Segment:** ~50 mi of US-12 up the upper Cowlitz valley to Packwood.
+- **Why ride it:** Easy, scenic forested two-lane following the river toward Rainier — a relaxed end to a short day. Watch for **elk** near Packwood at dusk. [KID]
+- **Difficulty:** Easy. Open, flowing, low-stress.
+- **Fuel note:** top off in Castle Rock and again before the US-12 run; Packwood is small and rural.
+- Refs: https://en.wikipedia.org/wiki/U.S._Route_12_in_Washington
+
+---
+
+## Day 7 — Mount Rainier roads + Chinook Pass (the graduation ride)
+
+### Stevens Canyon Road → Paradise (Mount Rainier National Park, south side)
+- **Segment:** Packwood/Stevens Canyon entrance climbing past Box Canyon and Reflection Lakes to Paradise (~5,400 ft), then down past Narada Falls. ~25 mi inside the park.
+- **Why ride it:** The most beautiful riding of the whole trip — subalpine meadows, the mountain filling the windscreen, Reflection Lakes mirroring Rainier, Narada Falls beside the road. Early July brings the wildflower bloom to the roadside.
+- **Difficulty:** Moderate. Scenic, low **25–35 mph** park speeds, gentle curves and grades — *not* white-knuckle. **Heavy summer/holiday traffic and sightseeing pace** are the real factors, plus possible morning chill at altitude. [KID]
+- **Park entry:** Mount Rainier uses a **timed-entry reservation** for the Paradise corridor in summer — sort it ahead (see touring-practical.md).
+- Refs: https://www.nps.gov/mora/planyourvisit/the-road-to-paradise.htm · https://www.nps.gov/mora/planyourvisit/timed-entry-reservations.htm
+
+### Chinook Pass (SR-410) → Tipsoo Lake → Enumclaw
+- **Segment:** East out of the park and up SR-410 over Chinook Pass (5,430 ft) past Tipsoo Lake, then the long descent to Enumclaw and home. ~80 mi to the driveway.
+- **Why ride it:** **The graduation ride.** Dramatic alpine switchbacks up to the pass, the postcard Tipsoo Lake at the top, then a long satisfying descent — the new rider's "you did it" road and the emotional finish of the tour.
+- **Difficulty:** Spirited (for this trip) — sustained switchbacks and altitude, but wide, well-surfaced and ridden at a calm pace it's a confidence-builder, not a trial. Pick a clear day; alpine weather can turn.
+- **Seasonal opening — important:** SR-410 over Chinook Pass is a **seasonal pass that closes all winter and typically reopens by late May / early July depending on snowpack.** It is normally open for an early-July ride, **but confirm the WSDOT pass report before Day 7.**
+- **Fallback if closed:** descend via US-12 / SR-7 through the lowlands toward Enumclaw — it trades the alpine finish for busier valley roads but stays off the freeway.
+- Refs: https://wsdot.com/travel/real-time/mountainpasses/chinook · https://www.nps.gov/mora/planyourvisit/sunrise.htm · https://wsdot.wa.gov/travel/roads-bridges/seasonal-road-closures
+
+---
+
+## Quick difficulty / season summary
+
+| Road | Day | Difficulty (new rider 2-up) | Season caveat |
+|------|-----|------------------------------|----------------|
+| Edmonds–Kingston ferry | 1 | Easy (slow roll-on) | Year-round |
+| Hood Canal WA-106 / US-101 | 1 | Easy | Year-round; fuel before |
+| US-101 WA coast + Astoria Bridge | 2 | Easy (bridge: wind) | Year-round |
+| US-101 OR north coast | 3 | Easy–Moderate (length, RVs) | Year-round; summer traffic |
+| Three Capes Loop | 3 | Easy–Moderate | Check segment closures |
+| Cape Perpetua / Heceta US-101 | 4 | Easy | Year-round |
+| OR-34 Alsea River road | 5 | Easy–Moderate | Year-round; log trucks |
+| SR-504 Spirit Lake Hwy | 6 | Moderate (sweepers) | **Upper road closed since 2023 slide** |
+| US-12 east to Packwood | 6 | Easy | Year-round |
+| Stevens Canyon Rd / Paradise | 7 | Moderate | Park timed-entry; summer crowds |
+| Chinook Pass SR-410 | 7 | Spirited (graduation) | **Seasonal — confirm WSDOT it's open** |
 
 ---
 
 ### Sources
-- FarWayOut — Top 20 Best Motorcycle Roads in Japan: https://farwayout.com/top-20-best-motorcycle-roads-in-japan/
-- The Ninja Rider — Izu Skyline / Yamanami / Shikoku guides: https://theninjarider.com/izuskyline/ , https://theninjarider.com/yamanamihighway/ , https://theninjarider.com/chugokushikokutouring/
-- Mototourist — Shikoku touring guide: https://mototourist.jp/motorcycle-touring-areas-in-japan/shikoku-motorcycle-touring-guide/
-- Japan-Guide — Shimanami Kaido / Irohazaka: https://www.japan-guide.com/e/e3478.html , https://www.japan-guide.com/e//e3816.html
-- Samurai Car Japan JDM — Hakone Turnpike: https://samuraicarjapanjdm.jp/hakone-turnpike-driving-guide/
-- Shizuoka Road Public Corp (Izu/Hakone skyline tolls): https://siz-road.or.jp.e.nd.hp.transer.com/
-- Honshi (Seto bridges traffic): https://www.jb-honshi.co.jp/english/customer_index/traffic/
+- Washington State Ferries — Edmonds–Kingston + motorcycle loading: https://wsdot.wa.gov/travel/washington-state-ferries/
+- WSDOT mountain passes (Chinook): https://wsdot.com/travel/real-time/mountainpasses/chinook
+- NPS Mount Rainier — Road to Paradise / timed entry / Sunrise: https://www.nps.gov/mora/planyourvisit/
+- USFS Mount St. Helens NVM: https://www.fs.usda.gov/mountsthelens
+- Travel Oregon — Oregon Coast Highway & scenic drives: https://traveloregon.com/things-to-do/trip-ideas/scenic-drives/
+- Tillamook Coast — Three Capes route: https://www.tillamookcoast.com/three-capes-scenic-route/
+- USFS Cape Perpetua: https://www.fs.usda.gov/recarea/siuslaw/recarea/?recid=42283

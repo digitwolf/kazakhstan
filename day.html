@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Day — Japan Family Motorcycle Tour</title>
+<title>Day — PNW Family First Tour</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -46,7 +46,7 @@
   .note{color:var(--muted);font-size:13px;margin:-6px 0 14px;}
   .summary-lead{font-size:16.5px;color:#dbe3ea;margin:0 0 14px;}
   .summary-body{font-size:14.5px;color:#c7d1db;margin:14px 0 0;}
-  /* luggage (takkyūbin) callout — a distinct, easy-to-spot "what to do with the bags today" note */
+  /* luggage callout — a distinct, easy-to-spot "what to do with the bags today" note */
   .luggage{display:flex;gap:13px;align-items:flex-start;margin:16px 0 0;padding:14px 16px;
     background:linear-gradient(180deg,rgba(240,168,48,.10),rgba(240,168,48,.045));
     border:1px solid rgba(240,168,48,.42);border-left:4px solid var(--accent-2);border-radius:11px;}
@@ -132,7 +132,7 @@
   .trailbadge{font-size:11px;font-weight:800;color:#fff;background:var(--accent);padding:2px 8px;border-radius:999px;white-space:nowrap;}
   @media (max-width:560px){.picks{grid-template-columns:1fr;}}
 
-  /* 🍜 Ramen Trail day callout (window.DAYS[].ramenTrail) — the marquee bowl(s) of the day */
+  /* 🦀 Coast Food Trail day callout (window.DAYS[].foodTrail) — the marquee eat of the day */
   .ramen-call{display:flex;gap:13px;align-items:flex-start;margin:0 0 18px;padding:14px 16px;
     background:linear-gradient(180deg,rgba(227,73,59,.12),rgba(227,73,59,.05));
     border:1px solid rgba(227,73,59,.42);border-left:4px solid var(--accent);border-radius:11px;}
@@ -173,7 +173,7 @@
 </head>
 <body>
 <nav class="top"><div class="wrap">
-  <div class="brand mincho">日本 <span>·</span> Japan Family Tour</div>
+  <div class="brand mincho">🏍️ <span>·</span> PNW First Tour</div>
   <a class="back" href="index.html#itinerary">← Full itinerary</a>
 </div></nav>
 
@@ -240,7 +240,7 @@
   </aside>
 </div></div></main>
 
-<footer><div class="wrap">Part of the ≈25-day (Day 0–24) Osaka-loop Japan Family Motorcycle Tour · <a href="index.html">Back to the full itinerary →</a></div></footer>
+<footer><div class="wrap">Part of the 7-day PNW Family First Tour (Jul 1–7, 2026) · <a href="index.html">Back to the full itinerary →</a></div></footer>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -255,7 +255,7 @@
   const day = DAYS[idx];
   dn = day.d;
   const dest = DEST.find(x => x.id === day.id) || DEST[0];
-  document.title = `Day ${day.d}: ${day.title} · Japan Family Tour`;
+  document.title = `Day ${day.d}: ${day.title} · PNW First Tour`;
 
   const short = s => s.split(',')[0];
   const fromS = short(day.gfrom), toS = short(day.gto);
@@ -264,10 +264,10 @@
   // ---- interest badges (tie to the family interests in tour/00-family.md) ----
   // Key order here is also the day-level badge display order (family-distinct first).
   const INTEREST = {
-    ghibli:['👻','Ghibli'], nintendo:['🎮','Nintendo'], toys:['🧸','Toys'],
-    moto:['🏍️','Motorcycles'], onsen:['♨️','Onsen'], art:['🎨','Art'],
-    craft:['🎎','Craft'], food:['🍜','Food'], scenic:['🌄','Scenic'],
-    castle:['🏯','History'], kid:['🧒','Kid']
+    skill:['🎓','Skill-building'], food:['🦀','Food'], volcano:['🌋','Volcano'],
+    lighthouse:['🗼','Lighthouse'], wildlife:['🐾','Wildlife'], toys:['🧸','Toys'],
+    kid:['🧒','Kid'], moto:['🏍️','Riding'], coast:['🌊','Coast'],
+    scenic:['🌄','Scenic'], history:['🏛️','History']
   };
   const badgesHtml = keys => (keys || []).filter(k => INTEREST[k])
     .map(k => `<span class="badge"><span class="em">${INTEREST[k][0]}</span>${INTEREST[k][1]}</span>`).join('');
@@ -324,17 +324,17 @@
     [day.region, 'Region']
   ].map(([v, k]) => `<div class="s"><div class="v">${v}</div><div class="k">${k}</div></div>`).join('');
   const stopList = day.poi.map(p => p.name).join(', ').replace(/,([^,]*)$/, ' and$1');
-  const evening = day.tags.includes('onsen') || dest.type === 'stay'
-    ? 'an onsen soak and dinner once you arrive' : 'dinner in town once you arrive';
+  const evening = dest.type === 'stay'
+    ? 'a beach walk and dinner once you arrive' : 'dinner in town once you arrive';
   document.getElementById('sumBody').innerHTML = day.rest
     ? `A relaxed base day around <b>${toS}</b> — no packing or transfer. Today's stops: ${stopList}. Plenty of downtime for ${evening.replace('once you arrive','')}.`
     : `Today rides from <b>${fromS}</b> to <b>${toS}</b> (${day.miles} mi, ≈ ${rideH}h in the saddle), stopping at ${stopList}. Plan for ${evening}.`;
 
-  // ---- luggage (takkyūbin) callout — shown only on days that carry a luggage note ----
+  // ---- luggage callout — shown only on days that carry a luggage note ----
   if (day.luggage) {
     document.getElementById('luggage').innerHTML =
       `<div class="luggage"><div class="lg-ic">🧳</div><div class="lg-b">` +
-      `<div class="lg-k">Luggage · takkyūbin</div>` +
+      `<div class="lg-k">Luggage</div>` +
       `<div class="lg-d">${day.luggage}</div></div></div>`;
   }
 
@@ -358,11 +358,11 @@
   const DWELL = { coffee:30, lunch:60, dinner:60, stop:40, scenic:25, activity:45 };  // minutes at each stop
   const AVG = 30;  // mph effective touring pace (rural roads, newer rider, breaks)
   if (!day.rest) {
-    ev.push(['07:00','⏰','Wake up','',false,'Same start every riding day — keeps the family rhythm.']);
-    ev.push(['07:30','☕','Coffee','',false,'']);
-    ev.push(['08:00','🍳','Breakfast','',false,'At the hotel or ryokan.']);
-    ev.push(['09:00','🏍️','Depart hotel','',false,`Gear on, bikes loaded — ${day.miles} mi, ≈${rideH}h riding to ${toS}.`]);
-    const depart = 540, driveMin = driveMinReal;   // real routed driving time
+    ev.push(['08:00','⏰','Wake up','',false,'An 8am start most days — relaxed but not late.']);
+    ev.push(['08:30','☕','Coffee','',false,'']);
+    ev.push(['09:00','🍳','Breakfast','',false,'At the hotel before gearing up.']);
+    ev.push(['09:30','🏍️','Depart','',false,`Gear on, bikes loaded — ${day.miles} mi, ≈${rideH}h riding to ${toS}.`]);
+    const depart = 570, driveMin = driveMinReal;   // 09:30 depart; real routed driving time
     let dwellBefore = 0;
     day.poi.forEach((q, i) => {
       const frac = (q.frac != null) ? q.frac : (i + 0.5) / day.poi.length;   // position along the route
@@ -375,13 +375,12 @@
     const arrive = r5(depart + driveMin + dwellBefore);
     ev.push([hhmm(arrive),'🏁',`Arrive ${toS}`,'',false,'Check in and park the bikes securely.']);
     const dinner = Math.max(1140, arrive + 90);
-    if (day.tags.includes('onsen') || dest.type === 'stay')
-      ev.push([hhmm(Math.min(dinner-60, arrive+45)),'♨️','Onsen / freshen up','',false,'Soak off the road before dinner.']);
-    ev.push([hhmm(dinner),'🍽️','Dinner','',false,'Local regional food or a ryokan kaiseki spread.']);
+    ev.push([hhmm(Math.min(dinner-60, arrive+45)),'🚿','Freshen up','',false,'Stretch the legs and shake off the road before dinner.']);
+    ev.push([hhmm(dinner),'🍽️','Dinner','',false,'Fresh local seafood or a good town spot — see Where to Eat.']);
   } else {
-    ev.push(['07:30','⏰','Wake up','',false,'A lie-in — no transfer today.']);
-    ev.push(['08:00','☕','Coffee','',false,'']);
-    ev.push(['08:30','🍳','Breakfast','',false,'']);
+    ev.push(['08:00','⏰','Wake up','',false,'No transfer today — an easy 8am start.']);
+    ev.push(['08:30','☕','Coffee','',false,'']);
+    ev.push(['09:00','🍳','Breakfast','',false,'']);
     const n = day.poi.length, startA = 600, endA = 1020;   // spread activities 10:00–17:00
     const lunchAt = Math.floor(n/2); let inserted = false;
     day.poi.forEach((q, i) => {
@@ -389,11 +388,11 @@
       poiTimes[i] = hhmm(t);
       const k = KIND[q.slot] || KIND.activity;
       ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q, routeTo(prevQ(i), q.q), short(prevQ(i)), q.img, window.wikiLink(q.name, q.wiki)]);
-      if (!inserted && i === lunchAt-1) { ev.push(['12:30','🍜','Lunch','',false,'A relaxed local lunch.']); inserted = true; }
+      if (!inserted && i === lunchAt-1) { ev.push(['12:30','🦀','Lunch','',false,'A relaxed local lunch.']); inserted = true; }
     });
-    if (!inserted) ev.push(['12:30','🍜','Lunch','',false,'A relaxed local lunch.']);
-    ev.push(['18:00','♨️','Free time / onsen','',false,'No clock to watch.']);
-    ev.push(['19:00','🍽️','Dinner','',false,'Ryokan dinner or a local spot.']);
+    if (!inserted) ev.push(['12:30','🦀','Lunch','',false,'A relaxed local lunch.']);
+    ev.push(['18:00','🌅','Free time','',false,'No clock to watch.']);
+    ev.push(['19:00','🍽️','Dinner','',false,'A local spot in town — see Where to Eat.']);
   }
 
   document.getElementById('sched').innerHTML = ev.map(e => {
@@ -451,21 +450,19 @@
   const esc = s => String(s == null ? '' : s)
     .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 
-  // ---- 🍜 Ramen Trail day callout (window.DAYS[].ramenTrail; Days 9/13/18) ----
-  // The day's marquee regional bowl(s) with a key-free Google Maps link. Day 9 carries
-  // two (the "two-ramen day"); the per-pick badge below marks any eats pick that IS a
-  // trail shop. Part of the themed thread surfaced from tour/00-overview.md.
-  if (day.ramenTrail && day.ramenTrail.length) {
-    const two = day.ramenTrail.length > 1;
-    const rows = day.ramenTrail.map(r =>
+  // ---- 🦀 Coast Food Trail day callout (window.DAYS[].foodTrail) ----
+  // The day's marquee coastal eat with a key-free Google Maps link. Part of the themed
+  // foodie thread surfaced from data.js (window.FOOD_TRAIL).
+  if (day.foodTrail && day.foodTrail.length) {
+    const rows = day.foodTrail.map(r =>
       `<div class="rc-row"><b>${esc(r.city)}</b> — ${esc(r.style)} · ` +
       `<a href="${esc(r.shopUrl)}" target="_blank" rel="noopener">${esc(r.shop)} ↗</a></div>`).join('');
     document.getElementById('ramenCallout').innerHTML =
-      `<div class="ramen-call"><div class="rc-ic">🍜</div><div>` +
-      `<div class="rc-k">Ramen Trail${two ? ' · Two-ramen day' : ''}</div>${rows}</div></div>`;
+      `<div class="ramen-call"><div class="rc-ic">🦀</div><div>` +
+      `<div class="rc-k">Coast Food Trail</div>${rows}</div></div>`;
   }
 
-  if ((day.eats && day.eats.length) || (day.ramenTrail && day.ramenTrail.length)) {
+  if ((day.eats && day.eats.length) || (day.foodTrail && day.foodTrail.length)) {
     document.getElementById('eatsBlock').style.display = '';
   }
   if (day.eats && day.eats.length) {
@@ -473,7 +470,7 @@
       const ml = MEAL[meal.slot] || ['🍴', (meal.slot || 'Meal').charAt(0).toUpperCase() + (meal.slot || '').slice(1)];
       const picks = (meal.picks || []).map(p => {
         const rating = (p.rating != null && p.rating !== '') ? `<span class="pick-rating">⭐ ${esc(p.rating)}</span>` : '';
-        const trail = p.trail ? `<span class="trailbadge">🍜 Ramen Trail</span>` : '';
+        const trail = p.trail ? `<span class="trailbadge">🦀 Coast Food Trail</span>` : '';
         const kid = p.kid ? `<span class="kidpick">👦 Kid pick — simple food</span>` : '';
         const cz = p.cuisine ? `<div class="cz">${esc(p.cuisine)}${p.cuisine_note ? ` · ${esc(p.cuisine_note)}` : ''}</div>` : '';
         const why = p.why ? `<div class="wy">${esc(p.why)}</div>` : '';
@@ -513,24 +510,15 @@
     day.poi.map(q => `<span class="ar">›</span><span class="n">${q.name.split(',')[0]}</span>`).join('') +
     `<span class="ar">›</span><span class="n key">${toS}</span>`;
 
-  // ---- no-riding days (rail/flight bookends AND the Tokyo/USJ city days): no driving
-  //      route map — show a transit/city note + per-stop links instead ----
-  const noDrive = day.rail || day.miles === 0;
+  // ---- no-riding days (miles === 0): show a note instead of a driving route map ----
+  //      (every day on this trip rides, so this is a safety fallback) ----
+  const noDrive = day.miles === 0;
   if (noDrive) {
-    const railNote = {
-      0: 'Fly nonstop <b>Seattle → Tokyo (Haneda)</b> (~10h30m), then the Keikyu Line ~15 min to <b>Shinagawa</b>. No riding today.',
-      1: 'A full <b>Tokyo museum day</b> on foot &amp; by train — <b>Ghibli Museum</b> (Mitaka), <b>teamLab Planets</b> (Toyosu) and <b>Nintendo TOKYO</b> (Shibuya). No riding; the bikes are still in Osaka.',
-      2: 'Morning <b>Nozomi Shinkansen</b> Tokyo → Shin-Osaka (~2h30m), then to the Suita base for the bike pickup. Strictly no riding.',
-      23: 'A full day at <b>Universal Studios Japan</b> &amp; <b>Super Nintendo World</b> on Osaka Bay — reached by train, bikes already returned. No riding.',
-      24: 'A last Kyoto/Osaka morning, then an afternoon <b>Nozomi Shinkansen</b> Kyoto/Shin-Osaka → Tokyo (~2h30m). Overnight near Haneda.',
-      25: 'Fly <b>nonstop Tokyo → Seattle</b> — re-cross the date line and land the same calendar day. No riding.'
-    }[day.d] || 'A no-riding day.';
-    const cityDay = !day.rail && day.miles === 0;   // Tokyo museum / USJ days (vs rail/flight)
     const head = document.querySelector('aside .card h3');
-    if (head) head.textContent = cityDay ? 'On foot & by train' : 'Getting there';
+    if (head) head.textContent = 'On foot today';
     document.getElementById('dmap').outerHTML =
       '<div style="padding:16px;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;font-size:13.5px;color:#c7d1db;">' +
-      (cityDay ? '🚇🚶 ' : '🚄✈️ ') + railNote + '</div>';
+      '🚶 A no-riding day — explore on foot.</div>';
     const rb = document.getElementById('routeBtn'); if (rb) rb.style.display = 'none';
     document.getElementById('destBtn').href = `place.html?id=${dest.id}`;
   } else

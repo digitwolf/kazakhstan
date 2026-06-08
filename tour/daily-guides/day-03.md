@@ -1,55 +1,60 @@
 ```json
 {
   "d": 3,
-  "title": "Sacred Mountain & the Pilgrim Road",
-  "overnight": "Yunomine Onsen, Tanabe, Wakayama",
-  "schedule": "depart Osaka ~08:30 · coffee + quick Kōyasan stop late morning ~10:30–12:00 · lunch ~12:00 in Kōyasan town · descend Route 168 (Tanise bridge, Hongū / Ōyunohara) · arrive Yunomine late afternoon ~16:30–17:00 · ryokan kaiseki dinner in Yunomine",
+  "title": "Cheese, Capes & the Coast Run",
+  "overnight": "Yachats, OR",
+  "schedule": "wake at Cannon Beach ~08:00 · Haystack Rock beach stretch ~09:00 · depart ~09:30 · lunch at Tillamook Creamery ~12:00 · Pelican Brewing pint + Cape Kiwanda ~14:00 · arrive Yachats ~17:00 · dinner in Yachats",
   "todo": [
-    {"time":"~10:30","name":"Kōyasan quick stop — Okunoin","what":"brisk walk up the lantern-lit cedar avenue to Kōbō Daishi's mausoleum (or the vermilion Danjō Garan pagoda); keep it to ~1–1.5 h, a daytime visit, not a temple stay","map":"https://www.google.com/maps/search/?api=1&query=Okunoin%20Cemetery%20Koyasan"},
-    {"time":"~11:15","name":"Danjō Garan & Kongōbu-ji","what":"the great vermilion Konpon Daitō pagoda complex and the head temple's huge rock garden, a short stroll from the cafes","map":"https://www.google.com/maps/search/?api=1&query=Danjo%20Garan%20Koyasan"},
-    {"time":"~14:30","name":"Tanise no Tsuribashi","what":"297 m swaying pedestrian suspension bridge high over the Totsukawa — a leg-stretch on the descent down Route 168","map":"https://www.google.com/maps/search/?api=1&query=Tanise%20no%20Tsuribashi"},
-    {"time":"~16:00","name":"Kumano Hongū Taisha & Ōyunohara","what":"head shrine of the Kumano Sanzan and the giant 33.9 m Ōyunohara torii on the river sandbank, just before Yunomine","map":"https://www.google.com/maps/search/?api=1&query=Kumano%20Hongu%20Taisha"}
+    {"time":"~09:45","name":"Haystack Rock, Cannon Beach","what":"235-ft sea stack with tidepools and puffins — quick beach stretch before the ride south","map":"https://www.google.com/maps/search/?api=1&query=Haystack+Rock+Cannon+Beach+Oregon"},
+    {"time":"~12:30","name":"Tillamook Creamery","what":"self-guided cheese-making viewing gallery, free samples, and the famous scoop counter — Aslan's ice-cream highlight of the trip","map":"https://maps.google.com/?cid=16409213061769628058"},
+    {"time":"~14:30","name":"Cape Kiwanda & the Pacific City dory beach","what":"giant sandstone headland and dune right beside Pelican Brewing — climb, watch the dory boats, easy family stop","map":"https://www.google.com/maps/search/?api=1&query=Cape+Kiwanda+Pacific+City+Oregon"},
+    {"time":"~16:30","name":"Yaquina Head / Newport Bayfront (optional)","what":"lighthouse and sea-lion docks if you have time before pushing the last 25 min to Yachats","map":"https://www.google.com/maps/search/?api=1&query=Yaquina+Head+Lighthouse+Newport+Oregon"}
   ],
   "meals": [
-    {"slot":"coffee","area":"Kōyasan town","picks":[
-      {"name":"Tempu Terrace","cuisine":"cafe / espresso & light bites","rating":4.6,"why":"Ruslan & Galiya — proper coffee and a warm break at 800 m before the walk","kid":true,"map":"https://maps.google.com/?cid=8414907357130941779","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/330px-A_small_cup_of_coffee.JPG"},
-      {"name":"Komi Coffee","cuisine":"coffee roastery cafe","rating":4.1,"why":"Ruslan — hand-drip specialty coffee on the temple-town street","kid":false,"map":"https://maps.google.com/?cid=9477189132371607285","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/330px-A_small_cup_of_coffee.JPG"}
+    {"slot":"breakfast","area":"Cannon Beach","picks":[
+      {"name":"Lazy Susan Cafe","cuisine":"Pacific NW breakfast (waffles, hash, oatmeal)","rating":4.6,"why":"Galiya & Ruslan — beloved Cannon Beach breakfast institution","kid":false,"map":"https://maps.google.com/?cid=9539713796856644525","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Honey_Run_Covered_Bridge_2024_Pancake_Breakfast-104A2111.jpg/960px-Honey_Run_Covered_Bridge_2024_Pancake_Breakfast-104A2111.jpg"},
+      {"name":"Sea Level Bakery + Coffee","cuisine":"bakery, pastries & espresso","rating":4.6,"why":"Aslan — plain pastries/muffins he'll eat; great coffee for Ruslan, quick to-go before the ride","kid":true,"map":"https://maps.google.com/?cid=5140496243597652907"}
     ]},
-    {"slot":"lunch","area":"Kōyasan town","picks":[
-      {"name":"Hanabishi","cuisine":"Kōya shōjin-ryōri / Buddhist vegetarian set","rating":4.2,"why":"Galiya — Kōyasan's temple cuisine (gomadōfu, tempura, soba) eaten at its source","kid":false,"map":"https://maps.google.com/?cid=12392921685726484034","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Fukuchiin_shojin_ryori_appetizer.jpg/330px-Fukuchiin_shojin_ryori_appetizer.jpg"},
-      {"name":"Kotobuki Shokudō","cuisine":"casual shokudō — udon, katsu, curry rice","rating":4.4,"why":"Aslan — plain udon, katsu & rice he'll actually eat in a relaxed diner","kid":true,"map":"https://maps.google.com/?cid=3056959925161555233","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Kake_udon_by_udono.jpg/330px-Kake_udon_by_udono.jpg"}
+    {"slot":"lunch","area":"Tillamook","picks":[
+      {"name":"Tillamook Creamery","cuisine":"cheese, grilled cheese, mac & cheese + famous ice cream","rating":4.5,"why":"Aslan — grilled cheese, mac & cheese and a huge ice-cream cone (the day's kid win); Galiya — see the cheese made on-site","kid":true,"map":"https://maps.google.com/?cid=16409213061769628058","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ice_cream_in_cones.jpg/960px-Ice_cream_in_cones.jpg"},
+      {"name":"Pelican Brewing – Pacific City","cuisine":"brewpub — chowder, fish & chips, burgers, craft beer","rating":4.1,"why":"Ruslan — pint on the beach at Cape Kiwanda; Galiya — clam chowder; an easy second stop ~30 min south of the Creamery","kid":false,"map":"https://maps.google.com/?cid=6312434849402413715","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fish_and_chips.jpg/960px-Fish_and_chips.jpg"}
     ]},
-    {"slot":"dinner","area":"Yunomine Onsen","picks":[
-      {"name":"Ryokan Yunomineso","cuisine":"onsen-ryokan kaiseki dinner","rating":4.5,"why":"whole family — multi-course local kaiseki at the inn; ask for a child's set (plain rice, karaage, tamago) for Aslan","kid":true,"map":"https://maps.google.com/?cid=5061754705104044984","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Jisaku_Kaiseki_Ryori_01.jpg/330px-Jisaku_Kaiseki_Ryori_01.jpg"},
-      {"name":"Ryokan Adumaya","cuisine":"historic onsen-ryokan kaiseki","rating":4.4,"why":"Galiya — refined kaiseki at a centuries-old Yunomine inn with traditional baths","kid":false,"map":"https://maps.google.com/?cid=13210106354841318663","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Jisaku_Kaiseki_Ryori_01.jpg/330px-Jisaku_Kaiseki_Ryori_01.jpg"}
+    {"slot":"dinner","area":"Yachats","picks":[
+      {"name":"The Drift Inn Hotel & Restaurant","cuisine":"American comfort food, seafood, live music","rating":4.3,"why":"Whole family — confirmed open, lively, broad menu with burgers/pasta/fries for Aslan and fresh seafood for Galiya & Ruslan","kid":true,"map":"https://maps.google.com/?cid=15878405420698897937","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Fish_and_chips.jpg/960px-Fish_and_chips.jpg"},
+      {"name":"Luna Sea Fish House (Seal Rock)","cuisine":"fresh local seafood, fish & chips, chowder","rating":4.5,"why":"Galiya & Ruslan — the genuinely great Luna Sea (the tiny Yachats counter is mediocre); 12 min north, dock-to-table fish & chips Aslan will also eat","kid":true,"map":"https://maps.google.com/?cid=14291681410554983807","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Fish_and_Chips_Bath%2C_UK.jpg/960px-Fish_and_Chips_Bath%2C_UK.jpg"},
+      {"name":"Yachats Underground Pub & Grub","cuisine":"pub fare — burgers, fries, fish & chips","rating":4.0,"why":"Aslan — casual cellar pub with simple burger-and-fries kids' fare; walkable in town if the Drift Inn has a wait","kid":true,"map":"https://maps.google.com/?cid=1754061589375500362"}
     ]}
   ]
 }
 ```
 
-## Day 3 — Sacred Mountain & the Pilgrim Road
+## Day 3 — Fri 3 July 2026: Cheese, Capes & the Coast Run
 
-**Overnight:** Yunomine Onsen, Tanabe, Wakayama
-**Schedule:** depart Osaka ~08:30 · coffee + a brisk Kōyasan stop late morning (~10:30–12:00) · lunch ~12:00 in Kōyasan town · descend Route 168 past the Tanise suspension bridge and Hongū / Ōyunohara · arrive Yunomine late afternoon (~16:30–17:00) · ryokan kaiseki dinner in the onsen hamlet.
+A scenery-rich ride down the central Oregon coast: a dawn stretch under Haystack Rock at Cannon Beach, the Three Capes detour, and the **Tillamook Creamery** at the midpoint for lunch and Aslan's ice-cream payoff, then on to your 2-night base in **Yachats**.
 
-This is the biggest of the opening days (102 mi / ~4h32m riding), so start early, keep the mountain visit to ~1–1.5 h, and let tomorrow's Kumano rest day absorb it. Tiny Yunomine has no restaurant scene to speak of — **dinner is taken at your ryokan** (kaiseki, included with the stay), which is exactly the point.
+**Schedule:** wake at Cannon Beach ~08:00 · Haystack Rock beach stretch ~09:00 · depart ~09:30 · lunch at Tillamook Creamery ~12:00 · Pelican Brewing pint + Cape Kiwanda ~14:00 · arrive Yachats ~17:00 · dinner in Yachats.
 
-### Coffee — Kōyasan town (late morning, before the walk)
-- **Tempu Terrace** — cafe / espresso & light bites · 4.6 — proper coffee and a warm break at 800 m; kid-friendly. https://maps.google.com/?cid=8414907357130941779
-- **Komi Coffee** — coffee roastery cafe · 4.1 — hand-drip specialty coffee on the temple-town street. https://maps.google.com/?cid=9477189132371607285
+### Where to eat
 
-### Lunch — Kōyasan town (~12:00)
-- **Hanabishi** — Kōya shōjin-ryōri / Buddhist vegetarian set · 4.2 — Galiya: the mountain's temple cuisine (gomadōfu, tempura, soba) eaten at its source. https://maps.google.com/?cid=12392921685726484034
-- **Kotobuki Shokudō** — casual shokudō (udon, katsu, curry rice) · 4.4 — Aslan: plain udon, katsu & rice he'll actually eat. https://maps.google.com/?cid=3056959925161555233
+**Breakfast — Cannon Beach**
+- [Lazy Susan Cafe](https://maps.google.com/?cid=9539713796856644525) — 4.6 · classic Cannon Beach breakfast (waffles, hash). Galiya & Ruslan.
+- [Sea Level Bakery + Coffee](https://maps.google.com/?cid=5140496243597652907) — 4.6 · pastries + great espresso, easy to-go. **Kid pick** (plain pastries for Aslan).
 
-### Dinner — Yunomine Onsen (at the ryokan)
-- **Ryokan Yunomineso** — onsen-ryokan kaiseki · 4.5 — whole family; ask for a child's set (plain rice, karaage, tamago) for Aslan. https://maps.google.com/?cid=5061754705104044984
-- **Ryokan Adumaya** — historic onsen-ryokan kaiseki · 4.4 — Galiya: refined kaiseki at a centuries-old Yunomine inn with traditional baths. https://maps.google.com/?cid=13210106354841318663
+**Lunch — Tillamook (center on the Creamery)**
+- [Tillamook Creamery](https://maps.google.com/?cid=16409213061769628058) — 4.5 (28k+ reviews) · grilled cheese, mac & cheese, and the legendary ice-cream counter. **Kid pick** — Aslan's highlight; Galiya gets the cheese-making gallery and samples.
+- [Pelican Brewing – Pacific City](https://maps.google.com/?cid=6312434849402413715) — 4.1 · brewpub on the beach at Cape Kiwanda, ~30 min south. Chowder + a pint for Ruslan; pairs with the Cape stop.
+
+**Dinner — Yachats**
+- [The Drift Inn Hotel & Restaurant](https://maps.google.com/?cid=15878405420698897937) — 4.3 (2,700+ reviews) · the safe, lively all-rounder, confirmed open, live music, burgers/pasta for Aslan + seafood for the adults. **Kid pick.**
+- [Luna Sea Fish House (Seal Rock)](https://maps.google.com/?cid=14291681410554983807) — 4.5 (4,700+ reviews) · the truly good Luna Sea, 12 min north. Dock-to-table fish & chips. **Kid pick** for plain fish & chips.
+- [Yachats Underground Pub & Grub](https://maps.google.com/?cid=1754061589375500362) — 4.0 · walkable in-town backup, simple burgers and fries. **Kid pick.**
+
+> Note: you asked about **Luna Sea Fish House Yachats** and **Yachats Brewing**. The Yachats Luna Sea counter is currently only 3.6 (12 reviews) — the same brand's **Seal Rock** location (12 min away) is the one locals rave about, so it's listed instead. **Yachats Brewing** (348 Hwy 101 N) now shows as **closed/rebranded** in current listings — the address comes up as *WildCraft Cider & Pantry* and Yelp lists Yachats Brewing as closed. I've anchored dinner on the confirmed-open Drift Inn rather than risk a closed door; verify Yachats Brewing/WildCraft by phone if you want to try it.
 
 ### Things to do
-- **~10:30 — Kōyasan quick stop, Okunoin:** brisk walk up the lantern-lit cedar avenue to Kōbō Daishi's mausoleum (or the Danjō Garan); ~1–1.5 h, a daytime visit, not a temple stay. https://www.google.com/maps/search/?api=1&query=Okunoin%20Cemetery%20Koyasan
-- **~11:15 — Danjō Garan & Kongōbu-ji:** the vermilion Konpon Daitō pagoda complex and the head temple's huge rock garden. https://www.google.com/maps/search/?api=1&query=Danjo%20Garan%20Koyasan
-- **~14:30 — Tanise no Tsuribashi:** 297 m swaying pedestrian suspension bridge over the Totsukawa, a leg-stretch on the Route 168 descent. https://www.google.com/maps/search/?api=1&query=Tanise%20no%20Tsuribashi
-- **~16:00 — Kumano Hongū Taisha & Ōyunohara:** head shrine of the Kumano Sanzan and the giant 33.9 m torii on the river sandbank, just before Yunomine. https://www.google.com/maps/search/?api=1&query=Kumano%20Hongu%20Taisha
+- **~09:45 — Haystack Rock, Cannon Beach:** sea stack, tidepools, puffins. Quick leg-stretch. [Map](https://www.google.com/maps/search/?api=1&query=Haystack+Rock+Cannon+Beach+Oregon)
+- **~12:30 — Tillamook Creamery:** cheese-making gallery, samples, ice cream. [Map](https://maps.google.com/?cid=16409213061769628058)
+- **~14:30 — Cape Kiwanda, Pacific City:** sandstone headland, dune, dory beach beside Pelican Brewing. [Map](https://www.google.com/maps/search/?api=1&query=Cape+Kiwanda+Pacific+City+Oregon)
+- **~16:30 — Yaquina Head Lighthouse / Newport Bayfront (optional):** lighthouse and sea lions before the last 25 min to Yachats. [Map](https://www.google.com/maps/search/?api=1&query=Yaquina+Head+Lighthouse+Newport+Oregon)
 
-*Note: the Doro-kyō river-boat gorge cruise is on Day 5, not today. October/typhoon caution — Routes 168/311 can close after heavy rain; check road and river status before setting off.*
+Sources: [Yachats Brewing on Yelp (listed closed)](https://www.yelp.com/biz/yachats-brewing-yachats-2), [Travel Oregon — Yachats Brewing & Farm Store](https://traveloregon.com/things-to-do/eat-drink/beer-breweries/yachats-brewing-farm-store/)

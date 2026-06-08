@@ -1,95 +1,66 @@
-# Motorcycle & Auto Museums — fit to the Osaka loop
+# Vehicles & Aviation — museums that fit the PNW loop
 
-Reference for the moto-enthusiast family: which motorcycle (and moto-adjacent) museums
-exist in Japan and which actually fit **this Osaka-anchored loop** (Kansai → Kii → Shikoku →
-Setouchi → Osaka). Verified via web search June 2026; **opening days/hours and reservation
-rules change — reconfirm before relying on them.** Many of these close 1–2 fixed weekdays, so
-they only "fit" if the calendar weekday cooperates.
+The moto-and-machines interest for this family doesn't have a motorcycle museum on the route — but
+the PNW delivers a different kind of "things-with-engines" win: a **WWII blimp hangar full of
+aircraft right on the route**, plus two world-class collections a short hop off it. Aslan loves
+hands-on museums and big machines; Ruslan loves the vehicle/aviation/maritime story. Re-confirm
+hours and ticket prices before relying on them.
 
-## TL;DR for this trip
-- **The big-four factory museums (Honda/Yamaha/Suzuki) are NOT on this loop.** Honda Collection
-  Hall is in Tochigi (Motegi, north of Tokyo); Yamaha Communication Plaza is in Iwata and Suzuki
-  Plaza in Hamamatsu — both Shizuoka, on the **Tokyo–Nagoya corridor** the loop never touches.
-  Reaching any of them means a major rework (or a Tokyo-bookend side trip, see below).
-- **Two motorcycle attractions DO sit on the existing route, and both are already in the plan:**
-  - **Kawasaki Good Times World**, Kobe — **Day 19** POI (Himeji/Kobe). The one major corporate
-    moto museum directly on the loop.
-  - **Shikoku Automobile Museum**, Kōnan (Kōchi) — added as a **Day 11** POI; ~30 motorcycles +
-    ~30 cars, right on the eastward run into Kōchi past the Anpanman stop.
-- **Honda Welcome Plaza Aoyama (Tokyo) is CLOSED** (closed 31 Mar 2025) — no longer an option
-  for the Tokyo bookend.
+Fit tags:
+**[ON-ROUTE: Day N]** already on the planned route ·
+**[NEAR-ROUTE]** a short, sane detour ·
+**[OFF-ROUTE]** worth knowing about, but not without reworking the trip.
 
-## On-route (added / already in the plan)
+---
 
-### Kawasaki Good Times World — Kobe (Day 19)
-- **Where:** inside the Kobe Maritime Museum, Meriken Park, Kobe — directly on the Day-19
-  Kurashiki → Himeji → Kobe run.
-- **What:** Kawasaki Heavy Industries corporate museum — motorcycle gallery (sit on several),
-  jet-skis, riding simulator, Shinkansen driver's cab, helicopter, robots. [KID]
-- **Hours/closed:** ~10:00–18:00, last entry 17:30; **closed Mondays** (next day if Mon is a
-  national holiday) and Dec 29–Jan 3. Admission ¥900 adult / ¥400 school-age / free under 6
-  (includes the Maritime Museum). Paid car/bike parking at Meriken Park.
-- **Status:** already a Day-19 POI in the itinerary + Himeji destination file.
-- Sources: https://www.khi.co.jp/kawasakiworld/english/ ·
-  https://global.kawasaki.com/en/corp/sustainability/contribution/next_generation/corporate_museum.html
+## Tillamook Air Museum — the on-route headline **[ON-ROUTE: Day 3]**
 
-### Shikoku Automobile Museum (四国自動車博物館) — Kōnan, Kōchi (Day 11)
-- **Where:** 896 Ōtani, Noichi-chō, Kōnan City, Kōchi 781-5233 — on Kōchi's eastern plain,
-  ~6 km past the **Anpanman Museum (Kami)** stop and on the same Day-11 line into Kōchi city.
-  Effectively zero added route distance.
-- **What:** small private museum, **~30 motorcycles + ~30 cars**, 1960s–80s classics and race
-  machines — Honda, Yamaha and some rarities. A 30–45 min stop for a moto family. [KID]
-- **Hours/closed:** **10:00–16:00; closed Mon AND Tue** (open if a national holiday lands on
-  those days). ¥800 adult / ¥500 student / ¥300 elementary–JHS / under-6 free.
-- **Caveat:** the two-day Mon+Tue closure is the real constraint — confirm the trip's Day-11
-  weekday. If Day 11 is a Mon/Tue, skip it or shift to the Day-12 morning start out of Kōchi.
-- **Status:** added as a Day-11 POI + Kōchi destination file (June 2026).
-- Sources: https://lovemota.vistanet.co.jp/museum/ · https://ja.wikipedia.org/wiki/四国自動車博物館 ·
-  https://www.jalan.net/kankou/spt_39324cc3292012598/
+- **What:** Vintage and warbird aircraft housed inside **Hangar B, one of the largest free-standing wooden structures in the world** — a 1940s U.S. Navy **blimp hangar** built to shelter anti-submarine airships. The building itself is the star: a cavernous wooden cathedral you ride right up to.
+- **Why it fits:** It's **next to the Tillamook Creamery**, the marquee Day-3 stop — so Galiya gets cheese + ice cream while **Ruslan and Aslan get the air museum**, no detour, no extra day. The scale and the aircraft are a guaranteed kid win, and the WWII-hangar history is Ruslan's kind of story. **[KID]**
+- **Practical:** plan ~1–1.5 hours; admission charged (confirm current). Combine with the Creamery as the Day-3 midday block.
+- Ref: https://tillamookair.com/ · https://en.wikipedia.org/wiki/Tillamook_Air_Museum
 
-## NOT on the loop (would need a route rework — flagged for the owner to decide)
+## Columbia River Maritime Museum — the on-route bonus **[ON-ROUTE: Day 2]**
 
-### Honda Collection Hall — Mobility Resort Motegi, Tochigi
-- North of Tokyo (Motegi, Haga District, Tochigi). **Reopened 1 Mar 2024** after renovation;
-  4 eras of cars, bikes, power products and racing machines. **Admission free**, ~10:00–16:30.
-- **Off-route** by hundreds of km from the Kansai loop. Only feasible as a dedicated Kanto day
-  from the Tokyo bookend (Motegi is ~2.5–3 h each way from central Tokyo by car/bus — a full
-  day), not as a loop POI.
-- Sources: https://www.mr-motegi.jp/eng/collection-hall/ ·
-  https://global.honda/en/topics/2024/c_2024-02-15eng.html
+- **What:** Not aviation, but the **machines-and-history** itch: one of the best maritime museums on the West Coast, on the Astoria waterfront — Coast Guard rescue boats, a lightship you can board, and the story of the deadly Columbia River Bar. **[KID]**
+- **Why it fits:** Already in **Astoria on Day 2**, paired with the Astoria Column. A natural Ruslan-and-Aslan stop while the afternoon riding is done early.
+- Ref: https://www.crmm.org/
 
-### Yamaha (Motor) Communication Plaza — Iwata, Shizuoka
-- 2500 Shingai, Iwata-shi, Shizuoka. **Admission free.** Hours ~9:00–17:00 weekdays; open only
-  the **2nd & 4th Saturdays** (10:00–17:00); generally closed Sundays/most Saturdays — verify.
-- On the Tokyo–Nagoya Tōkaidō corridor, **not on the Osaka loop.** Would fit a Tokyo→Osaka
-  one-way (which this trip deliberately isn't) but not the loop.
-- Sources: https://global.yamaha-motor.com/showroom/cp/info/ ·
-  https://www.inhamamatsu.com/art/yamaha-communication-plaza.php
+---
 
-### Suzuki Plaza — Hamamatsu, Shizuoka
-- Suzuki HQ, Hamamatsu. **Admission free**, ~9:00–16:30, **closed Mondays**, and **reservation
-  recommended/required** in advance. Motorcycles, cars, looms (Suzuki's textile origins).
-- Same Tōkaidō corridor as Yamaha — **off the loop.**
-- Sources: https://automuseums.info/museum/suzuki-history-museum/ ·
-  https://www.inhamamatsu.com/art/suzuki-plaza.php
+## Evergreen Aviation & Space Museum (Spruce Goose) — **[NEAR-ROUTE / OPTIONAL]**
 
-### Iwashita Collection — Yufuin, Ōita (Kyushu)
-- The greatest private Japanese bike hoard (~600 bikes, ~200 on display, incl. the only
-  surviving Ducati Apollo). 645-6 Yufuincho Kawakita, Yufu, Ōita.
-- **In Kyushu** — entirely off this Honshu/Shikoku/Kansai loop. Not feasible without a Kyushu
-  extension.
-- Sources: https://automuseums.info/museum/iwashita-collection/ ·
-  https://mylifeatspeed.com/greatest-bike-hoard-youve-never-seen-full-iwashita-collection/
+- **What:** Home of Howard Hughes' **"Spruce Goose"** — the largest wooden flying boat ever built — plus a big aircraft + spacecraft collection (and a water park with a 747 on the roof) in **McMinnville, OR.**
+- **Why it could fit:** McMinnville sits in the northern Willamette Valley **roughly between the coast and the I-5 corridor.** It is **not on the Day-5 Alsea→Corvallis→Longview line as planned**, but a willamette-valley variant of Day 5 could pass near it. Treat it as an **optional swap/detour**, not a default — it would lengthen an already-long transfer day, so only if the family wants a second big-aviation hit and trims elsewhere.
+- **Verdict:** A spectacular museum, but **off the planned Day-5 line**; flag it as an owner decision, not a built-in stop.
+- Ref: https://www.evergreenmuseum.org/
 
-### Honda Welcome Plaza Aoyama — Tokyo — CLOSED
-- The Aoyama HQ showroom (bikes + cars) that would have been a perfect Tokyo-bookend stop
-  **closed permanently on 31 March 2025.** Do not plan around it.
-- Source: https://www.tripadvisor.com/Attraction_Review-g1066451-d1788781-Reviews-Honda_Welcome_Plaza_Aoyama-Minato_Tokyo_Tokyo_Prefecture_Kanto.html
+## LeMay — America's Car Museum (Tacoma) — **[NEAR-ROUTE / BOOKEND]**
 
-## Tokyo-bookend option (owner decision, no loop change)
-The trip already has a **Tokyo arrival night (Day 0)** and a **Tokyo departure night (Day 22)**.
-If the family wants a factory museum, the lowest-disruption path is a **dedicated Kanto day
-bolted onto the Tokyo bookend** — most likely **Honda Collection Hall at Motegi** (free, fully
-reopened, the strongest collection of the three). It is a full day round-trip from central Tokyo
-and would add a night, so it is a schedule decision, not a loop reroute. Yamaha/Suzuki only make
-sense if the trip ever reverts to a Tokyo→Osaka one-way.
+- **What:** One of the largest auto museums in the U.S. — hundreds of cars and some motorcycles, in a landmark building in **Tacoma, WA.**
+- **Why it could fit:** Tacoma is **near the Seattle metro**, on the way *home* from the Cascades only if you detour west toward I-5 (which the trip deliberately avoids). It's best framed as a **before/after-the-trip outing from home** (Woodinville→Tacoma is an easy non-tour day) rather than a Day-7 stop — Day 7 is the Chinook Pass graduation finale and shouldn't be diluted.
+- **Verdict:** Great local museum, **off the riding loop**; do it as a home-based bookend day, not on tour.
+- Ref: https://www.americascarmuseum.org/
+
+---
+
+## Fit summary
+
+| Museum | Fit | When |
+|--------|-----|------|
+| **Tillamook Air Museum** (WWII blimp hangar) | **ON-ROUTE** — next to the Creamery | **Day 3** (default stop) |
+| Columbia River Maritime Museum | ON-ROUTE | Day 2 (with the Astoria Column) |
+| Evergreen Aviation (Spruce Goose, McMinnville) | NEAR-ROUTE / optional | Day-5 valley variant only — owner decision |
+| LeMay America's Car Museum (Tacoma) | OFF the loop | Home-based bookend day, not on tour |
+
+**Bottom line:** the **Tillamook Air Museum is the one to build in** — it's already on Day 3, free of
+detour, and lands for both Ruslan and Aslan while Galiya does the Creamery. The other two are
+"know they exist" options that would cost route compromises.
+
+---
+
+### Sources
+- Tillamook Air Museum: https://tillamookair.com/
+- Columbia River Maritime Museum: https://www.crmm.org/
+- Evergreen Aviation & Space Museum: https://www.evergreenmuseum.org/
+- LeMay — America's Car Museum: https://www.americascarmuseum.org/

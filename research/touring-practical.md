@@ -1,118 +1,65 @@
-# Practical Touring Intel — Japan
+# Practical Touring Intel — PNW first tour
 
-Brief, sourced notes on tolls/ETC, fuel, lodging, and onsen-with-tattoo rules. Verify
-current figures before the trip; prices/policies drift.
-
----
-
-## Tolls & ETC (Electronic Toll Collection)
-- Japan has two toll models: **distance-based** (take a ticket on entry, pay on exit) and **flat-rate** (urban sections). Toll booths offer three lane types: **General (一般)** = cash/card, manned or automated; **ETC** = transponder only; **Hybrid** = both.
-- **ETC saves real money:** ~30% discounts on weekends/holidays and overnight (00:00–04:00), plus access to ETC-only exits. (Illustrative: Tokyo Bay Aqualine ¥3,140 cash vs ¥800 with ETC.)
-- **For rentals:** most bikes don't include an ETC transponder by default — request it when booking. Typical add-on ~¥500–¥1,000/day or a flat ~¥3,000–¥5,000 per rental, plus the actual tolls billed afterward. Staff usually pre-insert the ETC card; check the dash indicator shows **green** (red = card seated wrong).
-- **Riding ETC lanes:** approach ~20 km/h, centered. If the gate doesn't open, **don't brake hard** (danger to following traffic) — ease past and pull over to call the operator.
-- **At manned/general lanes:** hand over your entry ticket; the attendant calculates the distance fare; pay cash or card. Workable without ETC on rural routes with few tolls, but ETC is recommended for any expressway use.
-- Sources: https://www.satoshirides.com/tool-kit-blog-library/tolls · https://www.japan-guide.com/e/e2354.html · https://www.trip.com/guide/transport/etc-card-japan.html
+Sourced, practical notes for the 7-day Woodinville loop: the ferry, fuel range for the small-tank
+W230, layered cold/wet coastal + alpine gear, park passes and timed entry, and what you *don't*
+need (no IDP, no passport, no rentals — these are the family's own bikes ridden from the garage).
+Verify live figures before relying on any single one (fares, timed-entry rules and pass status
+change).
 
 ---
 
-## Fuel availability
-- Regular petrol roughly **¥170–¥185/litre** (re-check; volatile). A 400cc bike ~20–25 km/L, so a ~200 km day ≈ ¥1,500–¥2,000 in fuel.
-- **Cities/highways:** plentiful gas stations. **Rural/mountain areas:** stations are sparser and **often close early (evenings) and on Sundays/holidays** — fill up before heading into remote valleys (Shikoku interior, Kii peninsula, Alps passes). Don't let the tank run low on a long mountain leg.
-- **Michi-no-eki (roadside stations)** are a touring lifeline: toilets, food, local produce, maps, parking — good rest/regroup points; not all sell fuel, so treat fuel separately.
-- Source: https://theninjarider.com/motorcycle-touring-japan-guide/ (fuel/michi-no-eki) · https://www.japan-guide.com/e/e2354.html
+## 1. Washington State Ferries — Edmonds–Kingston (Day 1)
 
----
+- **The crossing:** ~30 min across Puget Sound; the trip's only ferry. It exists to **skip Seattle traffic** and give the new rider a relaxing opener.
+- **Motorcycles are first-come, no reservation.** WSF does **not** take vehicle reservations on Edmonds–Kingston (it's a first-come route), and **motorcycles load first and unload first** regardless — a real perk. **Arrive ~30 minutes early**, follow the motorcycle lane/signs at the tollbooth.
+- **Fare:** motorcycle + rider on Edmonds–Kingston is roughly **~$9** (cheaper than a car; passenger/child fare is small or free for young kids — confirm current rate). Pay at the tollbooth; the eastbound (Kingston→Edmonds) direction is typically the one charged, but check current fare collection.
+- **On the boat:** roll up the steel ramp slowly, feet down (it can be wet/slick), park where directed, leave it in gear / on the stand — crew may ask you to chock or you can use the deck cleats. No need to strap a heavy bike on a calm Sound crossing, but be ready.
+- Refs: https://wsdot.wa.gov/travel/washington-state-ferries/schedules/edmonds-kingston · https://wsdot.wa.gov/travel/washington-state-ferries/take-ferry/bicyclesmotorcycles · https://wsdot.wa.gov/travel/washington-state-ferries/fares
 
-## Motorcycle-friendly lodging
-- Confirm **secure/covered motorcycle parking** before booking — many urban hotels lack it; business hotels and ryokan vary. (House style note for this project: hotel suggestions should always carry a "confirm before booking — bike parking, passenger/child rules" caveat.)
-- **Ryokan/minshuku** in onsen towns are often bike-welcoming and a trip highlight; ask about a place to store gear and wet riding kit.
-- Rental shops cluster in **Tokyo, Osaka, Sapporo, Fukuoka**; availability thins in rural areas — arrange the bike from a major hub.
-- Source: https://theninjarider.com/motorcycle-touring-japan-guide/ · https://theninjarider.com/motorcycle-rental-japan/
+## 2. Fuel & range — the small-tank W230 is the binding constraint
 
----
+- **The W230 carries ~3.4 gal** and is happiest at 55–65 mph; treat its **usable range as a hard planning limit, not the GS's.** Plan every day around *her* tank, and **top off early and often** — never gamble on the next station on a remote stretch.
+- **Rural gaps to watch (top off before each):**
+  - **Day 1:** Hood Canal → Aberdeen (rural; fuel before leaving the Kingston/Hood Canal area).
+  - **Day 5:** the Coast Range (OR-34) and valley legs — fuel in Yachats/Waldport and again in Corvallis.
+  - **Day 6–7:** Castle Rock before SR-504; again before the US-12 run to **Packwood** (small town); and **fuel up at Packwood before the Day-7 mountain finale** — there is essentially no fuel inside Mount Rainier NP or over Chinook Pass until Enumclaw.
+- **Habit:** refuel both bikes whenever the W230 hits ~half a tank near a town; keep the group on the same fill cycle so the small tank never dictates an emergency stop.
+- **Carry a small reserve plan:** a ~1L spare/known nearest-station note for the rural days is cheap insurance for the W230.
 
-## Inter-island ferries (the Osaka-loop Shikoku connector)
-- **Nankai Ferry — Wakayama Port ⇄ Tokushima Port** crosses the Kii Strait in **~2h15m**, with about **8 sailings/day each way** (first departures ~02:00, last ~21:00). It's a **car ferry that takes motorcycles** — ride straight on and off.
-- **No reservations for motorcycles:** boarding is **first-come, first-served**; deck space is limited (~20 bikes). Come to the ticket office **at least 30 minutes before departure** and check the live timetable.
-- Why it matters for this trip: it lets an Osaka loop run **Kii Peninsula → Shikoku without backtracking through Osaka**, replacing a ~4–5h road transfer (around via Kobe/Awaji) with a restful ~2h15m crossing — and a fun boat ride for a child.
-- Sources: <https://nankai-ferry.co.jp/> · timetable <http://nankai-ferry.co.jp.e.afe.hp.transer.com/timetable/> · guide <https://e-stay.jp/en/wakayama/nankai-ferry/>
+## 3. Gear — pack for cold/wet coast AND alpine, in one week
 
-## Luggage forwarding (takkyūbin / takuhaibin) — the key tool for a moto family
-Motorcycles cannot carry big suitcases, so **door-to-door courier luggage forwarding is essential**, not optional. This is the standard, well-established way to move bags around Japan.
+- **The packing problem:** this trip swings from a **cold, foggy coast (mid-50s–60s °F)** to a **hot valley (80s)** to a **cold alpine pass (40s–50s at altitude, snowbanks)**. Pack **layers you can add/shed at every stop**, not one fixed setup.
+- **Bring:** waterproof riding gear / rain shell for everyone (coast fog & drizzle are likely even in July); warm mid-layers for the Day-7 climb; **heated grips** are a comfort win on the cool coast and the pass.
+- **Aslan (child pillion):** a properly-fitted warm + waterproof layer for the cold mornings on the coast and the Chinook Pass/Paradise altitude — kids chill faster than adults. Plus the full child-pillion setup (footpegs, backrest, grab strap, tandem belt, fitted child helmet) detailed in [`bikes-and-prep.md`](bikes-and-prep.md) and `tour/00-overview.md`.
+- **Sun + wind:** the valley days and exposed headlands also mean sun and steady wind — vented options and good eye protection.
 
-### What it is
-- **Takkyūbin / takuhaibin** = door-to-door parcel/luggage courier. The dominant carrier is **Yamato Transport** (the black-cat "Kuroneko" brand; the service is "TA-Q-BIN"). **Sagawa Express** is the main alternative; smaller carriers exist. Hotels almost always partner with one of them.
-- It is the everyday tool for **hotel-to-hotel (and airport-to-hotel) bag forwarding**, used constantly by Japanese travellers and tourists alike. Cool/frozen variants exist (for food) but are irrelevant to luggage.
+## 4. Park passes & Mount Rainier timed entry (Day 7)
 
-### How to book (it's done at the hotel front desk)
-- Ask at the **hotel front/bell desk** — they keep the courier consignment forms (**送り状 / *okurijō*** waybill) and arrange the daily pickup.
-- You fill in the **destination hotel name + address + phone**, **your name** (the guest the bag will be held under), and the **intended check-in / arrival date**. The desk helps with the Japanese address fields.
-- **Pay at the desk, usually cash** (some take card). Keep the tracking slip — the waybill has a tracking number.
-- The front desk hands the bag to the courier at the once-daily pickup. **Confirm the destination hotel will hold luggage under the guest name for the arrival date** — this is standard for hotels/larger ryokan, but **call ahead for small ryokan, minshuku and temple lodging (shukubō)**, which have limited reception hours and storage.
+- **Mount Rainier National Park entrance fee:** a private-vehicle pass covers the bike(s); an **America the Beautiful annual pass** ($80) pays off if you visit more than ~2–3 federal sites a year and covers everyone in the group's vehicles. Motorcycles are charged per-vehicle (a per-motorcycle rate exists — confirm current).
+- **Summer timed-entry reservation (the important one):** Mount Rainier runs a **timed-entry reservation system for the Paradise corridor** (and Sunrise) in peak summer — **you cannot just ride in mid-day without one.** Reserve a Day-7 morning slot at **recreation.gov** ahead of time; a limited number release the day before. **The reservation is separate from the entrance fee.** Sort this before the trip.
+- **Mount St. Helens (Days 5–6):** the **Silver Lake visitor center** is a WA State Parks site (Discover Pass / small fee); SR-504 viewpoints are free. A **WA Discover Pass** ($30/yr or $10/day) covers state-park lots if you stop at state sites.
+- Refs: https://www.nps.gov/mora/planyourvisit/fees.htm · https://www.nps.gov/mora/planyourvisit/timed-entry-reservations.htm · https://www.recreation.gov/ · https://www.discoverpass.wa.gov/
 
-### Where it's left / picked up — the "lobby-to-lobby" reality
-- It is **front-desk to front-desk, by delivery van** — **NOT** coin lockers, **NOT** self-service, and **NOT** instant. Think "hotel reception → courier van → next hotel reception," handled by staff at both ends.
-- **Drop:** leave the bag with the front/bell desk **before the courier's once-daily morning cutoff** (commonly ~10:00–12:00; varies by property and area — confirm the day before). Miss the cutoff and the bag goes the *next* day.
-- **Collect:** it arrives at the next hotel's front desk, who **hold it for your check-in**. So in practice it is effectively "lobby-to-lobby," but **time-shifted by ~1 day**, not a same-trip same-day handoff.
+## 5. Paperwork — what you DON'T need
 
-### Timing (critical for routing)
-- **Next-day delivery** to most Honshū/Shikoku cities **if dropped before the morning cutoff** (send today → arrives tomorrow). Same-region can sometimes be same-/next-day.
-- **Allow 2 days to remote / mountain areas:** Kōyasan, the Kumano interior (Yunomine/Hongū), the Iya Valley/Oboke, and deep rural Shikoku. Send-by / arrives logic: drop on Day X → arrives Day X+2.
-- **Consequence:** you generally **cannot forward a bag to a single-night remote stop and have it meet you in time.** Forward bags must **leapfrog single-night and remote stops** to a later **multi-night base**.
+- **No passport, no IDP, no visa** — this is a domestic WA→OR→WA loop on home soil.
+- **No rental contracts** — the family rides their **own** bikes (W230 + R1300GS). No deposit, no operator pillion-policy, no rental age rules.
+- **What you DO need per rider:** a valid **Washington/Oregon motorcycle endorsement** (Galiya's newly earned), current **registration + insurance** on both bikes, and the pre-trip service in [`bikes-and-prep.md`](bikes-and-prep.md). Carry proof of insurance/registration on each bike.
 
-### Size / weight & cost (Yamato, re-confirm)
-- **Size cap ~160 cm** total dimensions (L+W+H), **≤25 kg** per piece. (Convenience-store drop-offs can be stricter, ~varies; hotel desks handle full-size suitcases fine.)
-- **Cost ~¥1,500–¥3,200 per medium suitcase per leg** depending on size and distance (a Tokyo↔Osaka-length leg for a standard 60–160 cm case runs roughly ¥1,600–¥3,170); short regional legs are cheaper, long-distance/larger cases more.
-- Sources: <https://www.kuronekoyamato.co.jp/ytc/en/send/services/> · <https://www.japan-guide.com/e/e2278.html> · <https://mailmate.jp/blog/japan-luggage-delivery> · <https://www.japan-experience.com/plan-your-trip/to-know/before-you-travel/takkyubin-ship-your-luggage-between-destinations-in-japan>
+## 6. Quick road-rule & comfort reminders
 
-### Luggage strategy for THIS Osaka loop (motorcycle-specific)
-The route is an **Osaka loop** (pick up and return the bikes at the Suita base) built around **six 2-night rest bases**, and that rest-base rhythm is what makes the luggage plan work.
-
-#### The plan: forward the big case(s) rest-base → rest-base
-**The recommended pattern is a rest-base-to-rest-base forwarding chain.** The main suitcase(s) **leapfrog by takkyūbin from one 2-night rest base to the next** (and to/from the Osaka start/finish), arriving ahead of the family. Between the rest bases, the family **carries only a small soft overnight bag + riding gear on the bikes** for the single-night stops in between. This gives the comfort of a full suitcase at every rest base — where the family actually unpacks, does laundry and stays two nights — without ever strapping a big case to a motorcycle.
-
-- **The chain (primary plan), in route order:**
-  - **Osaka (start)** → forward the big case(s) to **Shirahama** (Days 7–8). *Why skip the first rest base (Kumano interior, Days 4–5)? It's a 2-day-delivery remote area, so a case sent from Osaka may not arrive in time — and the family is riding through it self-contained anyway. Shirahama is the **first reliable forwarding target**.*
-  - **Shirahama (Days 7–8)** → forward to **Iya/Oboke (Days 10–11)**. *Iya is itself a remote 2-day area, so send it on the **Day-7 arrival** at Shirahama (not on departure) to be sure it's waiting at check-in.*
-  - **Iya/Oboke (Days 10–11)** → forward to **Dōgo/Matsuyama (Days 15–16)**. *This leg skips the Shimanto rest base (Days 13–14); see the timing exception below.*
-  - **Dōgo/Matsuyama (Days 15–16)** → forward to **Onomichi/Setoda (Days 17–18)**.
-  - **Onomichi/Setoda (Days 17–18)** → forward to **Osaka** for the finish.
-- **On the bikes between bases:** the small overnight bag + riding gear, rain layers, tools/first-aid, and 1–2 days of clothes in panniers / top-box / tail bag. Bike Rental Japan offers a **support-truck add-on (~¥10,000/day)** and panniers/top-box on some models if the family wants to move more than fits on two bikes (see `motorcycle-rental.md`).
-
-#### Supporting detail & exceptions
-- **Osaka-loop storage simplifies it further.** Because the loop starts and ends in Osaka, anything the family won't need on the road (spare clothes, souvenirs accumulated, off-bike shoes) can simply **wait in left-luggage at the Osaka start hotel** (or storage at the Suita rental base) from Day 2 to Day 22, rather than riding the chain at all. So in practice the chain moves *one* main forwarded case while a second, heavier "base camp" case stays parked in Osaka — keep each forwarded leg light.
-- **Remote / single-night timing exceptions — never forward into these:**
-  - **Kōyasan (Day 3, single-night shukubō, remote)** — 2-day delivery + limited temple reception; carry the night's kit on the bikes.
-  - **Kumano interior / Yunomine–Hongū (Days 4–5 rest base, but remote 2-day area)** — the one rest base the chain *skips*; ride it self-contained.
-  - **Nachi-Katsuura (Day 6), Naruto (Day 9), Kochi (Day 12), Uchiko/Uwajima (Day 15 en route), Kurashiki (Day 19), Himeji/Kobe (Day 20), Awaji (Day 21)** — single-night stops; the overnight bag rides on the bikes, the forwarded case is already waiting at the next *rest base*.
-  - **Shimanto River (Days 13–14 rest base)** — a genuine 2-night base, but the chain **leapfrogs it** (Iya → Dōgo direct) because forwarding *into* and *out of* deep rural west Shikoku eats two transit days each way and risks missing the Day-13 check-in. Carry the overnight bag through the Shimanto nights; the main case meets you again at Dōgo on Day 15.
-- **Allow the right transit time on every forwarded leg:** next-day to cities, **2 days to remote/mountain areas** (Iya is the one that needs 2 days). Drop the case at the front desk **before the morning courier cutoff** (~10:00–12:00) or it goes the next day — which on a 2-night base means sending it on the **arrival** afternoon, not the departure morning.
-- **Bookends (consistent with `00-overview.md`):**
-  - **Arrival:** on the **Day-1 Tokyo museum day** (or the Day-0 night), forward the big cases by takkyūbin from the Tokyo hotel to the **Osaka start hotel** (arrives next day) so the **Day-2 Shinkansen** is light. On **Day 2** at the Osaka hotel, **repack into the case that rides the rest-base chain vs. the case that stays in Osaka storage**, then send the chain case ahead to Shirahama.
-  - **Departure:** the chain delivers the forwarded case back to Osaka by the finish; reunite it with the stored case there, then either **takkyūbin both to the Tokyo departure hotel / Haneda** (forward on **Day 22–23**, allowing the day in transit) or carry them on the **Day-24 Nozomi**. Airport TA-Q-BIN can also deliver hotel→airport for the flight home.
-  - **Reconfirm before relying:** cutoffs, prices and small-ryokan hold policies drift — verify at each desk the day before, and call remote lodging ahead.
-
----
-
-## Onsen with tattoos (brief)
-- The picture is **easing in 2026**: roughly **~20%** of onsen welcome tattoos unconditionally and **~30%** allow entry if you **cover** the tattoo with a sticker; tourist-heavy areas (Hakone, Beppu, Nikko) are more relaxed, and the Japan Tourism Agency has encouraged cover-stickers and private baths. Major brands (e.g. Hoshino Resorts) have group-level non-restriction statements.
-- **Practical options:** waterproof **tattoo cover stickers** ("tattoo hidden sheets") from convenience stores/drugstores for small work; **private/family baths (kashikiri-buro)** rented in 40–60 min slots (free with some ryokan stays up to ~¥3,000); ryokan rooms with **en-suite rotenburo**. A private bath also sidesteps the no-kids/crowd issues and is convenient for a family.
-- Sources: https://thejapanode.com/guides/japan-onsen-etiquette-tattoo-guide · https://www.tattoofriendlyonsen.com/guides/can-you-visit-onsen-in-japan-with-tattoos · https://www.japan.travel/en/uk/inspiration/onsen-hot-springs-on-tattoos-and-etiquette/
-
----
-
-## Quick road-rules / safety reminders (verify before riding)
-- International Driving Permit (1949 Geneva Convention) required for most foreign visitors; some nationalities need a Japanese translation instead — confirm eligibility.
-- Ride on the **left**. Helmets mandatory. Passenger (tandem) rules and any age/size limits for a child pillion should be checked against current Japanese law and the rental company's policy **before** committing the route.
-- Sources: https://www.shogunmotorbikeadventures.com/blogs/japanese-road-rules-for-foreign-riders · https://www.japan-experience.com/plan-your-trip/to-know/traveling-japan/riding-a-motorbike-in-japan
+- **Lane-splitting is illegal in both Washington and Oregon** — don't filter, even in holiday traffic. (Plan to sit in line patiently; the ferry already removes the worst of it.)
+- **Helmets are mandatory** for all riders and passengers in both states — non-negotiable and already the plan.
+- **Stop every 60–90 min** for Aslan; the route is built with frequent towns/viewpoints for exactly this.
+- **No two long days back-to-back, no riding after dark** — baked into the itinerary.
+- **Wildlife on the road:** elk near Packwood/US-12 and deer in the mountains, especially **dawn/dusk** — another reason the plan avoids riding late.
 
 ---
 
 ### Sources
-- Satoshi Rides — tolls/ETC: https://www.satoshirides.com/tool-kit-blog-library/tolls
-- Japan-Guide — expressways: https://www.japan-guide.com/e/e2354.html
-- Trip.com — ETC card for foreigners: https://www.trip.com/guide/transport/etc-card-japan.html
-- The Ninja Rider — touring/rental guides: https://theninjarider.com/motorcycle-touring-japan-guide/ , https://theninjarider.com/motorcycle-rental-japan/
-- Takkyūbin / luggage forwarding: https://www.kuronekoyamato.co.jp/ytc/en/send/services/ , https://www.japan-guide.com/e/e2278.html , https://mailmate.jp/blog/japan-luggage-delivery , https://www.japan-experience.com/plan-your-trip/to-know/before-you-travel/takkyubin-ship-your-luggage-between-destinations-in-japan
-- Onsen tattoo guides: https://thejapanode.com/guides/japan-onsen-etiquette-tattoo-guide , https://www.tattoofriendlyonsen.com/guides/can-you-visit-onsen-in-japan-with-tattoos , https://www.japan.travel/en/uk/inspiration/onsen-hot-springs-on-tattoos-and-etiquette/
-- Road rules: https://www.shogunmotorbikeadventures.com/blogs/japanese-road-rules-for-foreign-riders , https://www.japan-experience.com/plan-your-trip/to-know/traveling-japan/riding-a-motorbike-in-japan
+- Washington State Ferries — Edmonds–Kingston schedule, motorcycle loading, fares: https://wsdot.wa.gov/travel/washington-state-ferries/
+- NPS Mount Rainier — fees & timed entry: https://www.nps.gov/mora/planyourvisit/fees.htm , https://www.nps.gov/mora/planyourvisit/timed-entry-reservations.htm
+- Recreation.gov (timed-entry booking): https://www.recreation.gov/
+- WA Discover Pass: https://www.discoverpass.wa.gov/
+- WSDOT — motorcycle/lane rules & passes: https://wsdot.wa.gov/ , https://wsdot.com/travel/real-time/mountainpasses/chinook
+- Oregon DMV — motorcycle endorsement: https://www.oregon.gov/odot/dmv/

@@ -1,59 +1,46 @@
 ```json
 {
   "d": 7,
-  "title": "Shirahama Rest Day",
-  "overnight": "Shirahama, Wakayama",
-  "schedule": "slow morning at the beach base · Adventure World (pandas + safari) from ~10:00 · lunch ~12:30 near the park/town · Shirarahama beach + Sakino-yu surf-line onsen in the afternoon · Engetsu Island sunset ~17:00 · dinner in Shirahama",
+  "title": "Over Rainier, Home",
+  "overnight": "Home · Woodinville, WA",
+  "schedule": "coffee in Packwood ~08:30 · into Mount Rainier NP for Paradise wildflowers, Reflection Lakes & Narada Falls · over Chinook Pass (SR-410) ~12:00 · celebration lunch in Enumclaw ~13:00 · home to Woodinville ~15:30 (dinner at home)",
   "todo": [
-    {"time":"~10:00","name":"Adventure World","what":"giant pandas, drive-through safari and a marine park — the trip's biggest kid day (full, busy day out)","map":"https://www.google.com/maps/search/?api=1&query=Adventure%20World%20Shirahama"},
-    {"time":"~14:30","name":"Shirarahama Beach","what":"dazzling white quartz sand, shallow gentle swimming for Aslan","map":"https://www.google.com/maps/search/?api=1&query=Shirarahama%20Beach%20Shirahama"},
-    {"time":"~16:00","name":"Sakino-yu Onsen","what":"1,300-year-old rock open-air bath cut right at the surf line — Galiya's traditional onsen pick","map":"https://www.google.com/maps/search/?api=1&query=Sakinoyu%20Onsen%20Shirahama"},
-    {"time":"~17:00","name":"Engetsu Island","what":"sunset through the natural 'round-moon' sea arch","map":"https://www.google.com/maps/search/?api=1&query=Engetsu%20Island%20Shirahama"}
+    {"time":"~09:30","name":"Paradise, Mount Rainier NP","what":"peak-summer subalpine wildflower meadows under the mountain; short stroll on the Skyline/Nisqually Vista paths","map":"https://www.google.com/maps/search/?api=1&query=Paradise+Mount+Rainier+National+Park"},
+    {"time":"~10:30","name":"Reflection Lakes","what":"classic mirror view of Rainier just off Stevens Canyon Rd — a quick photo pull-out the whole family will love","map":"https://www.google.com/maps/search/?api=1&query=Reflection+Lakes+Mount+Rainier"},
+    {"time":"~11:00","name":"Narada Falls","what":"168-ft falls with a short, kid-doable viewpoint walk; mist and rainbows on a sunny day","map":"https://www.google.com/maps/search/?api=1&query=Narada+Falls+Mount+Rainier"},
+    {"time":"~12:00","name":"Chinook Pass (SR-410)","what":"5,430-ft pass and one of the best motorcycle roads in the state — the grand finale ride down toward Enumclaw","map":"https://www.google.com/maps/search/?api=1&query=Chinook+Pass+SR-410"}
   ],
   "meals": [
-    {"slot":"coffee","area":"Shirahama town",
-     "picks":[
-       {"name":"Kissa Colony","cuisine":"kissaten","rating":5.0,"why":"Ruslan & Galiya — a proper hand-brewed coffee in a cosy old-school kissaten; cake/sweets so Aslan gets a treat too","kid":false,"map":"https://maps.google.com/?cid=14791673768714025255","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
-     ]},
-    {"slot":"lunch","area":"Shirahama beach / Adventure World",
-     "picks":[
-       {"name":"Ramen Bakumatsu - Nanki Shirahama","cuisine":"ramen","rating":4.1,"why":"Galiya — a proper local ramen bowl, with a plain bowl for Aslan too","kid":false,"map":"https://maps.google.com/?cid=8622937101684774092","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"},
-       {"name":"Shirahama Paradise","cuisine":"hamburgers / fries","rating":4.7,"why":"Aslan — burgers and fries he'll definitely eat after the safari","kid":true,"map":"https://maps.google.com/?cid=12401708232370838168","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/NCI_Visuals_Food_Hamburger.jpg/960px-NCI_Visuals_Food_Hamburger.jpg"},
-       {"name":"ALOHA shirahama","cuisine":"Hawaiian café / loco moco","rating":4.5,"why":"Ruslan & Galiya — relaxed beach-resort café with rice plates kids manage","kid":false,"map":"https://maps.google.com/?cid=10747776881131157008","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kaisendon_001.jpg/960px-Kaisendon_001.jpg"}
-     ]},
-    {"slot":"dinner","area":"Shirahama",
-     "picks":[
-       {"name":"Sushi Kappo Kosushi","cuisine":"sushi","rating":4.3,"why":"Galiya — fresh Nanki sushi at the source, the foodie dinner","kid":false,"map":"https://maps.google.com/?cid=1900225647196365823","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Sushi_mini_set_01.jpg/960px-Sushi_mini_set_01.jpg"},
-       {"name":"Hama Shokudo (浜食堂)","cuisine":"seafood teishoku / kaisendon","rating":4.6,"why":"Galiya & Ruslan — hearty local seafood set meals and bowls","kid":false,"map":"https://maps.google.com/?cid=14754136528231163036","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Sashimi_of_S%C3%A3o_Paulo.jpg/960px-Sashimi_of_S%C3%A3o_Paulo.jpg"},
-       {"name":"Shirahama Key Noodle Dakishimetai","cuisine":"ramen / gyoza","rating":4.3,"why":"Aslan — plain ramen and gyoza he'll happily eat","kid":true,"map":"https://maps.google.com/?cid=10240352576288176698","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shoyu_Ramen.jpg/960px-Shoyu_Ramen.jpg"}
-     ]}
+    {"slot":"coffee","area":"Packwood","picks":[
+      {"name":"Mountain Goat Coffee","cuisine":"espresso bar / breakfast pastries","rating":4.6,"why":"Ruslan & Galiya — strong PNW coffee before the park; the standout fuel stop in town","kid":false,"map":"https://maps.google.com/?cid=2351003668736349144","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Latte.jpg/330px-Latte.jpg"},
+      {"name":"Base Camp Coffee","cuisine":"drive-up coffee stand","rating":4.7,"why":"Aslan — quick hot cocoa / muffin and a no-fuss stop on the way out","kid":true,"map":"https://maps.google.com/?cid=7730475893704290194","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Pancakes.jpg/330px-Pancakes.jpg"}
+    ]},
+    {"slot":"lunch","area":"Enumclaw","picks":[
+      {"name":"Casting Iron","cuisine":"scratch bar & grill (PNW comfort food)","rating":4.7,"why":"Galiya & Ruslan — top-rated celebration lunch to toast finishing the tour","kid":false,"map":"https://maps.google.com/?cid=10184653972172552891","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/330px-Cheeseburger.jpg"},
+      {"name":"Burger Buds","cuisine":"smash burgers & fries","rating":4.9,"why":"Aslan — plain burger, fries and a milkshake he'll actually eat; highest-rated spot in town","kid":true,"map":"https://maps.google.com/?cid=6820249718495195552","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/French_Fries.jpg/330px-French_Fries.jpg"},
+      {"name":"The Historic Mint Restaurant & Alehouse","cuisine":"American pub / family alehouse","rating":4.3,"why":"whole family — roomy historic spot with a kids menu and burgers, good fallback if there's a wait","kid":true,"map":"https://maps.google.com/?cid=11528093723048268309","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/330px-Cheeseburger.jpg"}
+    ]}
   ]
 }
 ```
 
-## Day 8 — Shirahama Rest Day (Shirahama, Wakayama)
+# Day 7 — Over Rainier, Home (Tue 7 July 2026)
 
-**Schedule:** Slow morning at the beach base, then Adventure World (pandas + safari) from ~10:00 — the trip's biggest kid day. Lunch ~12:30 near the park or in town, then a low-key afternoon: Shirarahama's white-sand beach, the surf-line Sakino-yu onsen, and the Engetsu Island sunset around 17:00. Dinner in Shirahama town. No real riding (~15 mi).
+The finale: Packwood → Mount Rainier National Park → Chinook Pass → Enumclaw → home to Woodinville. In-park dining is thin (Paradise Inn / Sunrise only), so fuel up with coffee in Packwood, save the celebration for a real lunch in Enumclaw, and keep dinner easy at home.
 
-### Eat
+**Schedule:** coffee in Packwood ~08:30 · into the park for Paradise wildflowers, Reflection Lakes and Narada Falls · over Chinook Pass (SR-410) ~12:00 · celebration lunch in Enumclaw ~13:00 · home ~15:30.
 
-**Coffee — Shirahama town**
-- [Kissa Colony](https://maps.google.com/?cid=14791673768714025255) — kissaten, 5.0. A cosy old-school kissaten with carefully hand-brewed coffee for Ruslan & Galiya; cake and sweets give Aslan a treat. A genuine specialty/kissaten pick rather than a chain.
+## Coffee — Packwood
+- **Mountain Goat Coffee** (4.6) — the town's standout espresso bar; strong PNW coffee and pastries before the park. For Ruslan & Galiya. [Map](https://maps.google.com/?cid=2351003668736349144)
+- **Base Camp Coffee** (4.7) — quick drive-up stand; hot cocoa and a muffin for Aslan, no fuss. Kid-friendly. [Map](https://maps.google.com/?cid=7730475893704290194)
 
-**Lunch — Shirahama beach / Adventure World**
-- [Ramen Bakumatsu - Nanki Shirahama](https://maps.google.com/?cid=8622937101684774092) — ramen, 4.1. Galiya's local noodle bowl; a plain bowl works for Aslan too.
-- [Shirahama Paradise](https://maps.google.com/?cid=12401708232370838168) — hamburgers/fries, 4.7. **Kid pick** — easy burgers and fries after the safari.
-- [ALOHA shirahama](https://maps.google.com/?cid=10747776881131157008) — Hawaiian café / loco moco, 4.5. Relaxed beach-resort rice plates.
+## Lunch — Enumclaw (the celebration)
+- **Casting Iron** (4.7) — scratch-made bar & grill, the top sit-down pick to toast a finished tour. Galiya & Ruslan. [Map](https://maps.google.com/?cid=10184653972172552891)
+- **Burger Buds** (4.9, kid pick) — smash burgers, fries and milkshakes; the highest-rated spot in town and an easy win for Aslan. [Map](https://maps.google.com/?cid=6820249718495195552)
+- **The Historic Mint Restaurant & Alehouse** (4.3, kid-friendly) — roomy historic alehouse with burgers and a kids menu; good fallback if the others have a wait. [Map](https://maps.google.com/?cid=11528093723048268309)
 
-**Dinner — Shirahama**
-- [Sushi Kappo Kosushi](https://maps.google.com/?cid=1900225647196365823) — sushi, 4.3. Galiya's foodie dinner: fresh Nanki sushi.
-- [Hama Shokudo (浜食堂)](https://maps.google.com/?cid=14754136528231163036) — seafood teishoku / kaisendon, 4.6. Hearty local seafood sets and bowls.
-- [Shirahama Key Noodle Dakishimetai](https://maps.google.com/?cid=10240352576288176698) — ramen / gyoza, 4.3. **Kid pick** — plain ramen and gyoza for Aslan.
-
-### Do
-- **~10:00 Adventure World** — giant pandas, drive-through safari and marine park (a full, joyful kid day).
-- **~14:30 Shirarahama Beach** — white quartz sand, shallow gentle swimming.
-- **~16:00 Sakino-yu Onsen** — 1,300-year-old rock bath right at the surf line (Galiya's onsen pick).
-- **~17:00 Engetsu Island** — sunset through the natural sea arch.
-
-All restaurants verified in Shirahama / Nishimuro District, Wakayama via the Google Places API (location-biased on 33.6853, 135.3378); dish photos are HTTP-200-verified Wikimedia Commons thumbnails.
+## Things to do
+- **~09:30 Paradise, Mount Rainier NP** — peak-summer subalpine wildflower meadows; short Skyline/Nisqually Vista strolls. [Map](https://www.google.com/maps/search/?api=1&query=Paradise+Mount+Rainier+National+Park)
+- **~10:30 Reflection Lakes** — mirror view of Rainier just off Stevens Canyon Rd; quick photo pull-out. [Map](https://www.google.com/maps/search/?api=1&query=Reflection+Lakes+Mount+Rainier)
+- **~11:00 Narada Falls** — 168-ft falls, short kid-doable viewpoint walk. [Map](https://www.google.com/maps/search/?api=1&query=Narada+Falls+Mount+Rainier)
+- **~12:00 Chinook Pass (SR-410)** — 5,430-ft pass, the grand-finale motorcycle road down to Enumclaw. [Map](https://www.google.com/maps/search/?api=1&query=Chinook+Pass+SR-410)

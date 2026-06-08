@@ -1,58 +1,58 @@
+Day 5 turns the tour homeward and inland: a last Yachats coast breakfast, then up the Alsea River canyon to the Willamette Valley for a Corvallis lunch, north past Longview, across the Columbia, and into Washington's Mount St. Helens gateway for the night. It's the longest transfer day, so keep the lunch stop efficient and plan on a relaxed, simple dinner near Castle Rock — options out here are limited, and a good local diner is exactly right.
+
 ```json
 {
   "d": 5,
-  "title": "Down to the Sacred Coast",
-  "overnight": "Nachi-Katsuura, Wakayama",
-  "schedule": "depart Yunomine ~09:00 · Doro-kyō river-boat ~10:00 · Daimon-zaka & Nachi Falls ~11:30 · lunch ~13:00 at Nachisan · roll into Katsuura ~14:30 · cave onsen ~15:30 · tuna dinner ~18:30 (short 52 mi / ~1h52m riding day — bank the afternoon as downtime)",
+  "title": "Inland to the Volcano",
+  "overnight": "Castle Rock, WA",
+  "schedule": "breakfast in Yachats ~08:30 · depart ~09:30 up the Alsea canyon · lunch in Corvallis ~12:30 · cross the Columbia at Longview ~15:30 · arrive Castle Rock / Mount St. Helens gateway ~16:30 · dinner in Castle Rock",
   "todo": [
-    {"time":"~10:00","name":"Doro-kyō river-boat","what":"glass-clear gorge cruise between sheer cliffs on the Kitayama River — a kid highlight","map":"https://www.google.com/maps/search/?api=1&query=Dorokyo%20river%20boat%20Kitayama"},
-    {"time":"~11:30","name":"Daimon-zaka","what":"short cobbled pilgrim path under giant cedars up to the shrine (kid-friendly)","map":"https://www.google.com/maps/search/?api=1&query=Daimonzaka%20Nachikatsuura"},
-    {"time":"~12:00","name":"Nachi Falls & Kumano Nachi Taisha","what":"Japan's tallest single-drop waterfall (133 m) beside the vermilion Seiganto-ji pagoda — the postcard of Japan","map":"https://www.google.com/maps/search/?api=1&query=Nachi%20Falls%20Kumano%20Nachi%20Taisha"},
-    {"time":"~13:45","name":"Kumano Hayatama Taisha, Shingū (optional)","what":"the third Kumano grand shrine and its 1,000-year-old sacred nagi tree, a quick stop on the way down","map":"https://www.google.com/maps/search/?api=1&query=Kumano%20Hayatama%20Taisha"},
-    {"time":"~15:30","name":"Katsuura cave onsen (Bōki-dō)","what":"natural sea-grotto hot-spring bath with the surf booming below, at Hotel Urashima","map":"https://www.google.com/maps/search/?api=1&query=Hotel%20Urashima%20Bokido%20cave%20onsen%20Katsuura"}
+    {"time":"~08:00","name":"Yachats State Recreation Area","what":"quick last look at the surf and tide pools before turning inland","map":"https://www.google.com/maps/search/?api=1&query=Yachats+State+Recreation+Area"},
+    {"time":"~10:30","name":"Alsea Falls (short detour)","what":"easy forest waterfall stop to stretch legs on the canyon run","map":"https://www.google.com/maps/search/?api=1&query=Alsea+Falls+Recreation+Site+Oregon"},
+    {"time":"~13:30","name":"Oregon State University / downtown Corvallis","what":"leafy college-town stroll after lunch","map":"https://www.google.com/maps/search/?api=1&query=Oregon+State+University+Corvallis"},
+    {"time":"~17:30","name":"Mount St. Helens Visitor Center at Silver Lake","what":"eruption story, models and a kid-friendly walk-through volcano (check closing time)","map":"https://www.google.com/maps/search/?api=1&query=Mount+St.+Helens+Visitor+Center+Silver+Lake+WA"}
   ],
   "meals": [
-    {"slot":"coffee","area":"Katsuura port",
-     "picks":[
-       {"name":"KUMANO COFFEE BREWERS","cuisine":"specialty coffee","rating":4.9,"why":"Ruslan & Galiya — third-wave hand-brew right in Katsuura port for an afternoon-downtime or pre-departure cup; quiet enough for Aslan with a sweet treat","kid":false,"map":"https://maps.google.com/?cid=18129618703588605853","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/960px-A_small_cup_of_coffee.JPG"}
-     ]},
-    {"slot":"lunch","area":"Nachisan (Nachi Falls)",
-     "picks":[
-       {"name":"Chinchōan Moudemochi","cuisine":"handmade Kumano soba","rating":4.3,"why":"Galiya & Ruslan — fresh soba right at the falls/shrine path","kid":false,"map":"https://maps.google.com/?cid=530398846035148961","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Soba_and_tempura_combo_%2826498960080%29.jpg/960px-Soba_and_tempura_combo_%2826498960080%29.jpg"},
-       {"name":"Miyamatei","cuisine":"set-meal teahouse (udon, curry-rice)","rating":3.5,"why":"Aslan — the convenient on-site sit-down spot for plain udon & curry-rice (Nachisan is a tiny temple village, so options are limited; conbini onigiri are an easy backup)","kid":true,"map":"https://maps.google.com/?cid=7320587628942868247","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Kama-age_Udon.jpg/960px-Kama-age_Udon.jpg"}
-     ]},
-    {"slot":"dinner","area":"Katsuura port",
-     "picks":[
-       {"name":"Tuna Bowl Muromaru (まぐろ丼 むろまる)","cuisine":"maguro-don / tuna bowls","rating":4.5,"why":"Galiya & Ruslan — fresh line-caught Katsuura tuna straight off Japan's #1 tuna port","kid":false,"map":"https://maps.google.com/?cid=1322154716535247244","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Maguro-don_%28raw_tuna_fish_bowl%29%2C_Chiyoda-ward%2C_Tokyo_%28%E3%81%BE%E3%81%90%E3%82%8D%E4%B8%BC%2C_%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%29_%282011-05-10_13.26.07_by_yuiseki_aoba%29.jpg/960px-Maguro-don_%28raw_tuna_fish_bowl%29%2C_Chiyoda-ward%2C_Tokyo_%28%E3%81%BE%E3%81%90%E3%82%8D%E4%B8%BC%2C_%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%29_%282011-05-10_13.26.07_by_yuiseki_aoba%29.jpg"},
-       {"name":"Maguro no Yamaki","cuisine":"tuna specialist (maguro-don, seared zuke)","rating":4.2,"why":"Galiya — hugely popular local tuna house with seared and sashimi options","kid":false,"map":"https://maps.google.com/?cid=16729597622358529220","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Maguro-tataki-don_of_Sukiya.jpg/960px-Maguro-tataki-don_of_Sukiya.jpg"},
-       {"name":"Rio Ramen","cuisine":"ramen & gyoza","rating":4.2,"why":"Aslan — plain ramen broth & gyoza he'll actually eat, and Galiya's noodle fix if she's tuna'd out","kid":true,"map":"https://maps.google.com/?cid=17918930914327022472","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg/960px-Shoyu_ramen%2C_at_Kasukabe_Station_%282014.05.05%29_1.jpg"}
-     ]}
+    {"slot":"breakfast","area":"Yachats","picks":[
+      {"name":"Green Salmon Coffee Company","cuisine":"coffee house / bakery breakfast","rating":4.5,"why":"Galiya & Ruslan — beloved Yachats roaster, pastries and a strong coffee for the long ride","kid":false,"map":"https://maps.google.com/?cid=15236297694368532859","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Pancake_stack.jpg/330px-Pancake_stack.jpg"},
+      {"name":"Beach Street Kitchen","cuisine":"American breakfast / brunch","rating":4.7,"why":"Aslan — eggs, pancakes and plain toast he'll eat before a big day","kid":true,"map":"https://maps.google.com/?cid=9912055002029852844","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Pancake_stack.jpg/330px-Pancake_stack.jpg"}
+    ]},
+    {"slot":"lunch","area":"Corvallis","picks":[
+      {"name":"Swan Dive Sandwiches + Bar","cuisine":"chef-driven sandwiches","rating":4.8,"why":"Galiya — inventive Willamette Valley sandwiches, top-rated downtown spot","kid":false,"map":"https://maps.google.com/?cid=15979286481041514821","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Club-sandwich.jpg/330px-Club-sandwich.jpg"},
+      {"name":"Block 15 Brewing Downtown Pub","cuisine":"brewpub / American","rating":4.5,"why":"Ruslan — well-known Corvallis brewery with hearty pub plates","kid":false,"map":"https://maps.google.com/?cid=5868937247190344687","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/330px-Cheeseburger.jpg"},
+      {"name":"Old World Deli","cuisine":"deli sandwiches","rating":4.5,"why":"Aslan — simple grilled cheese / plain deli sandwich, casual and quick","kid":true,"map":"https://maps.google.com/?cid=7965508546757815127","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Club-sandwich.jpg/330px-Club-sandwich.jpg"}
+    ]},
+    {"slot":"dinner","area":"Castle Rock / Silver Lake / Toutle","picks":[
+      {"name":"Amaro's Table Castle Rock","cuisine":"Pacific Northwest / American","rating":4.8,"why":"Galiya & Ruslan — the standout sit-down restaurant at the volcano gateway","kid":false,"map":"https://maps.google.com/?cid=16172930673490403158","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/330px-Cheeseburger.jpg"},
+      {"name":"Peper's 49ER Restaurant","cuisine":"classic American family diner","rating":4.2,"why":"Aslan — old-school diner with burgers, fries, grilled cheese and pancakes; reliable kid food","kid":true,"map":"https://maps.google.com/?cid=4506938187642784906","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cheeseburger.jpg/330px-Cheeseburger.jpg"},
+      {"name":"El Compadre Restaurant","cuisine":"Mexican","rating":4.4,"why":"whole family — generous, casual Mexican with plain rice/beans/quesadilla for Aslan","kid":true,"map":"https://maps.google.com/?cid=17521742468811933775","photo":"https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Mexican_cuisine_1.jpg/330px-Mexican_cuisine_1.jpg"}
+    ]}
   ]
 }
 ```
 
-## Day 6 — Down to the Sacred Coast (Yunomine → Doro-kyō → Nachi-Katsuura)
+## Day 5 — Inland to the Volcano (Sun 5 July 2026)
 
-A short, scenic 52-mile descent off the Kumano mountains to the Pacific, all paved and relaxed (~1h52m riding), so the afternoon is deliberately banked as downtime in the tuna port of Katsuura.
+**Schedule:** breakfast in Yachats ~08:30 · depart ~09:30 up the Alsea canyon · lunch in Corvallis ~12:30 · cross the Columbia at Longview ~15:30 · arrive Castle Rock / Mount St. Helens gateway ~16:30 · dinner in Castle Rock. This is the longest transfer day, so don't dawdle over lunch and expect a low-key dinner.
 
-**Schedule:** depart Yunomine ~09:00 · Doro-kyō river-boat ~10:00 · Daimon-zaka & Nachi Falls ~11:30 · lunch ~13:00 at Nachisan · into Katsuura ~14:30 · cave onsen ~15:30 · tuna dinner ~18:30.
+### Where to eat
 
-### Eat
-**Coffee — Katsuura port**
-- **KUMANO COFFEE BREWERS** — third-wave specialty hand-brew, 4.9★ — Ruslan & Galiya, perfect for the banked afternoon downtime or a pre-departure cup; calm enough for Aslan with a sweet treat. https://maps.google.com/?cid=18129618703588605853
+**Breakfast — Yachats**
+- [Green Salmon Coffee Company](https://maps.google.com/?cid=15236297694368532859) — 4.5, coffee house / bakery. Galiya & Ruslan: beloved local roaster, pastries and a serious coffee to launch the long ride.
+- [Beach Street Kitchen](https://maps.google.com/?cid=9912055002029852844) — 4.7, American breakfast. Aslan (kid): eggs, pancakes and plain toast.
 
-**Lunch — Nachisan, at the falls**
-- **Chinchōan Moudemochi** — handmade Kumano soba, 4.3★ — Galiya & Ruslan. https://maps.google.com/?cid=530398846035148961
-- **Miyamatei** *(kid)* — set-meal teahouse with plain udon & curry-rice, 3.5★ — the convenient on-site stop for Aslan. Nachisan is a tiny temple village so choice is limited; conbini onigiri are an easy backup. https://maps.google.com/?cid=7320587628942868247
+**Lunch — Corvallis (Willamette Valley)**
+- [Swan Dive Sandwiches + Bar](https://maps.google.com/?cid=15979286481041514821) — 4.8, chef-driven sandwiches. Galiya: the top-rated downtown lunch.
+- [Block 15 Brewing Downtown Pub](https://maps.google.com/?cid=5868937247190344687) — 4.5, brewpub. Ruslan: hearty pub plates and a local beer.
+- [Old World Deli](https://maps.google.com/?cid=7965508546757815127) — 4.5, deli. Aslan (kid): simple grilled cheese / plain sandwich, fast.
 
-**Dinner — Katsuura port** (Japan's #1 fresh-tuna port)
-- **Tuna Bowl Muromaru** — maguro-don & tuna bowls, 4.5★ — Galiya & Ruslan, tuna straight off the boats. https://maps.google.com/?cid=1322154716535247244
-- **Maguro no Yamaki** — tuna specialist (seared zuke, sashimi), 4.2★ — Galiya. https://maps.google.com/?cid=16729597622358529220
-- **Rio Ramen** *(kid)* — plain ramen & gyoza for Aslan, plus Galiya's noodle fix, 4.2★. https://maps.google.com/?cid=17918930914327022472
+**Dinner — Castle Rock / Silver Lake / Toutle** (realistically limited; these are the best of what's there)
+- [Amaro's Table Castle Rock](https://maps.google.com/?cid=16172930673490403158) — 4.8, Pacific Northwest / American. Galiya & Ruslan: the standout sit-down meal at the gateway.
+- [Peper's 49ER Restaurant](https://maps.google.com/?cid=4506938187642784906) — 4.2, classic American diner. Aslan (kid): burgers, fries, grilled cheese, pancakes — dependable simple food.
+- [El Compadre Restaurant](https://maps.google.com/?cid=17521742468811933775) — 4.4, Mexican. Whole family, with plain rice/beans/quesadilla for Aslan.
 
-### Do
-- **~10:00 Doro-kyō river-boat** — glass-clear gorge cruise between sheer cliffs (kid highlight).
-- **~11:30 Daimon-zaka** — short cobbled cedar-lined pilgrim path up to the shrine.
-- **~12:00 Nachi Falls & Kumano Nachi Taisha** — Japan's tallest single-drop waterfall beside the vermilion Seiganto-ji pagoda.
-- **~13:45 Kumano Hayatama Taisha, Shingū** *(optional)* — the third Kumano grand shrine and its 1,000-year-old sacred nagi tree.
-- **~15:30 Katsuura cave onsen (Bōki-dō)** — natural sea-grotto bath over the booming surf at Hotel Urashima.
+### Things to do
+- **~08:00 Yachats State Recreation Area** — one last look at the surf and tide pools before turning inland. [map](https://www.google.com/maps/search/?api=1&query=Yachats+State+Recreation+Area)
+- **~10:30 Alsea Falls** — short forest-waterfall leg-stretch on the canyon run. [map](https://www.google.com/maps/search/?api=1&query=Alsea+Falls+Recreation+Site+Oregon)
+- **~13:30 OSU / downtown Corvallis** — leafy college-town stroll after lunch. [map](https://www.google.com/maps/search/?api=1&query=Oregon+State+University+Corvallis)
+- **~17:30 Mount St. Helens Visitor Center at Silver Lake** — eruption story, models and a walk-through volcano kids love (verify closing time before going). [map](https://www.google.com/maps/search/?api=1&query=Mount+St.+Helens+Visitor+Center+Silver+Lake+WA)

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Japan Family Motorcycle Tour · 26-Day Trip, Osaka Loop</title>
-<meta name="description" content="A scenic, family-friendly 3-week motorcycle tour of Japan — an Osaka loop through Kōyasan, the Kumano interior, the Kii coast, Shikoku's valleys, the Shimanami Kaidō and the Seto Inland Sea." />
+<title>PNW Family First Tour · 7-Day Motorcycle Loop, Woodinville → Oregon Coast → Rainier</title>
+<meta name="description" content="A 7-day family motorcycle 'first tour' for a brand-new rider — Woodinville to the Oregon Coast (Yachats) via the Edmonds ferry and Tillamook, home over Mount St. Helens and Mount Rainier. No freeways." />
 <link rel="preconnect" href="https://unpkg.com" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
@@ -176,7 +176,7 @@
   .badge.rest { background: rgba(95,179,95,.14); color: #87d287; border: 1px solid rgba(95,179,95,.3); }
   .badge.stay2 { background: rgba(227,73,59,.16); color: #f08070; border: 1px solid rgba(227,73,59,.32); }
   .badge.kid  { background: rgba(240,168,48,.14); color: #f4c06a; border: 1px solid rgba(240,168,48,.3); }
-  .badge.onsen{ background: rgba(160,120,220,.14); color: #c2a4ee; border: 1px solid rgba(160,120,220,.3); }
+  .badge.scenic{ background: rgba(160,120,220,.14); color: #c2a4ee; border: 1px solid rgba(160,120,220,.3); }
   .pill-region { font-size: 11px; font-weight: 700; color: var(--accent-2); text-transform: uppercase; letter-spacing: .08em; }
 
   /* ---------- Info grid ---------- */
@@ -312,12 +312,12 @@
 
 <nav class="top">
   <div class="wrap">
-    <div class="brand mincho">日本 <span>·</span> Japan Family Tour</div>
+    <div class="brand mincho">🏍️ <span>·</span> PNW First Tour</div>
     <div class="links">
-      <a href="#getting-there">Flights</a>
+      <a href="#getting-there">Getting There</a>
       <a href="#map-sec">Map</a>
       <a href="#destinations">Destinations</a>
-      <a href="#ramen">Ramen</a>
+      <a href="#food">Food</a>
       <a href="#itinerary">Itinerary</a>
       <a href="checklist.html">Checklist</a>
       <a href="#safety">Safety</a>
@@ -329,12 +329,12 @@
 <header class="hero">
   <div class="wrap">
     <img class="hero-banner" src="assets/hero.jpg"
-      alt="日本ツアー — Japan Tour: 3 weeks of adventure, culture and family memories" />
+      alt="A Pacific Northwest family first tour — coast, volcano and mountain in seven days" />
     <p class="lead">
-      A relaxed, safety-first three-week family motorcycle tour — famous highlights and quiet rural Japan:
-      mountain villages, onsen evenings, coastal roads, river valleys and the islands of the Seto Inland Sea.
-      Built around a newer rider's confidence and a 6-year-old passenger's comfort.
-      An <b>Osaka-anchored loop</b> from <b>Seattle</b> — fly nonstop to Tokyo, then ride the Shinkansen down to the bikes.
+      A relaxed, safety-first <b>7-day family motorcycle "first tour"</b> — built to grow a brand-new rider's
+      confidence and a 6-year-old passenger's love of the road. A round trip from <b>Woodinville</b>: the Edmonds
+      ferry and quiet Hood Canal to the Pacific, the whole Oregon Coast down to <b>Yachats</b> (Tillamook cheese
+      and the Fourth of July), then home over <b>Mount St. Helens and Mount Rainier</b> — all on backroads, no freeways.
     </p>
     <div class="hero-cta">
       <a class="btn primary" href="#itinerary">View the Day-by-Day Trip →</a>
@@ -343,10 +343,10 @@
     </div>
 
     <div class="stats">
-      <div class="stat"><div class="n">25</div><div class="l">Days door-to-door (Day 0–24)</div></div>
+      <div class="stat"><div class="n">7</div><div class="l">Days (Jul 1–7, 2026)</div></div>
       <div class="stat"><div class="n" id="statMiles">—</div><div class="l">Total distance</div></div>
       <div class="stat"><div class="n" id="statAvg">—</div><div class="l">Avg riding / day</div></div>
-      <div class="stat"><div class="n">6</div><div class="l">Two-night rest bases</div></div>
+      <div class="stat"><div class="n">1</div><div class="l">Two-night base (Yachats)</div></div>
     </div>
   </div>
 </header>
@@ -355,8 +355,8 @@
 <section id="getting-there">
   <div class="wrap">
     <div class="sec-head">
-      <span class="tag">From Home · Seattle</span>
-      <h2>Getting There &amp; Back</h2>
+      <span class="tag">From Home · Woodinville</span>
+      <h2>How the Trip Works</h2>
       <p id="flIntro"></p>
     </div>
     <div class="flight-grid" id="flLegs"></div>
@@ -366,7 +366,7 @@
         <ul id="flTips"></ul>
       </div>
       <div class="card">
-        <h3><span class="ico">💴</span> Budget &amp; Links</h3>
+        <h3><span class="ico">💵</span> Budget &amp; Links</h3>
         <p id="flEstimate" style="color:#c7d1db; font-size:14.5px; margin:0 0 14px;"></p>
         <div class="linkrow" id="flLinks"></div>
         <p id="flSeason" style="color:var(--muted); font-size:13px; margin-top:14px;"></p>
@@ -381,16 +381,15 @@
     <div class="sec-head">
       <span class="tag">The Journey</span>
       <h2>Interactive Route Map</h2>
-      <p>An Osaka loop: down the Kii spine through Kōyasan and the sacred Kumano interior, along the Pacific coast,
-        a ferry across to Shikoku's remote valleys, the Shimanami Kaidō island bridges, and back over the Akashi
-        Kaikyō Bridge to Osaka. Click any marker for details.</p>
+      <p>A loop down the coast and home over the mountains: the Edmonds ferry and Hood Canal to the Washington coast,
+        the full Oregon Coast through Astoria and Tillamook to the Yachats base, then inland over Mount St. Helens and
+        Mount Rainier's Chinook Pass back to Woodinville. Click any marker for details.</p>
     </div>
     <div id="map"></div>
     <div class="map-legend">
-      <span><i class="dot start"></i> Start · bike pickup</span>
-      <span><i class="dot stay"></i> 2-night rest base</span>
+      <span><i class="dot start"></i> Home · start &amp; finish</span>
+      <span><i class="dot stay"></i> 2-night base (Yachats)</span>
       <span><i class="dot stop"></i> Overnight stop</span>
-      <span><i class="dot end"></i> Finish · bike return</span>
     </div>
   </div>
 </section>
@@ -420,12 +419,12 @@
   </div>
 </section>
 
-<!-- ============ RAMEN TRAIL ============ -->
-<section id="ramen">
+<!-- ============ COAST FOOD TRAIL ============ -->
+<section id="food">
   <div class="wrap">
     <div class="sec-head">
       <span class="tag">A Foodie Thread for Galiya</span>
-      <h2>🍜 The Ramen Trail</h2>
+      <h2>🦀 The Coast Food Trail</h2>
       <p id="ramenIntro"></p>
     </div>
     <div class="ramen-grid" id="ramenGrid"></div>
@@ -438,18 +437,18 @@
   <div class="wrap">
     <div class="sec-head">
       <span class="tag">Day by Day</span>
-      <h2>The Trip, Day by Day (Day 0–24)</h2>
-      <p>A day-by-day breakdown (Day 0 Tokyo arrival → Day 24 fly home; ≈ 25 days door-to-door). Driving times are
-        <b style="color:var(--text)">real Google-routed figures</b> — the 12 transfer days average <b style="color:var(--text)" id="itinAvg">~2h56m</b>
-        (longest ~4h33m on Day 13), with breaks every 60–90 minutes for the young passenger.
-        <b style="color:var(--text)">≈ 1,195 miles (1,923 km) total</b> over the Osaka riding loop (incl. the short Day-2 Minoh warm-up ride). Tap any day for its full schedule.</p>
+      <h2>The Trip, Day by Day (Day 1–7)</h2>
+      <p>A day-by-day breakdown (Wed Jul 1 → Tue Jul 7, 2026). Driving times are
+        <b style="color:var(--text)">real Google-routed figures</b> — riding days average <b style="color:var(--text)" id="itinAvg">~3h40m</b>
+        (longest ~4h10m on Day 5), with breaks every 60–90 minutes for the young passenger.
+        <b style="color:var(--text)">≈ 970 miles total</b> over the 7-day loop, all on backroads — no freeways. Tap any day for its full schedule.</p>
     </div>
     <div class="filter-bar" id="filters">
       <span class="chip active" data-filter="all">All days</span>
-      <span class="chip" data-filter="rest">Rest / 2-night</span>
+      <span class="chip" data-filter="rest">Rest day</span>
       <span class="chip" data-filter="ride">Riding days</span>
       <span class="chip" data-filter="kid">Kid highlights</span>
-      <span class="chip" data-filter="onsen">Onsen</span>
+      <span class="chip" data-filter="scenic">Scenic</span>
     </div>
     <div class="timeline" id="timeline"></div>
   </div>
@@ -461,37 +460,37 @@
     <div class="sec-head">
       <span class="tag">Riding Safely Together</span>
       <h2>Safety &amp; Comfort First</h2>
-      <p>The whole plan is shaped around the newer rider's confidence and the child passenger's wellbeing — not mileage.</p>
+      <p>This is a <b>first tour</b> — every choice is shaped around Galiya's brand-new-rider confidence and Aslan's comfort, not mileage.</p>
     </div>
     <div class="grid cols-3">
       <div class="card">
-        <h3><span class="ico">🛣️</span> Newer Rider</h3>
+        <h3><span class="ico">🛣️</span> New Rider (Galiya · W230)</h3>
         <ul>
-          <li>Rides near the front so her pace controls the group</li>
-          <li>Paved rural, prefectural &amp; coastal roads</li>
-          <li>Avoid dense cities, wet twisties &amp; weekend rider roads</li>
-          <li>No back-to-back long transfer days</li>
-          <li>No narrow mountain roads after dark</li>
+          <li>Rides up front so her pace controls the group</li>
+          <li><b>No freeways or Interstates</b> — backroads, US-101 &amp; gentle passes</li>
+          <li>Short, confidence-building days; only one ~4h day</li>
+          <li>The ferry &amp; frequent stops break up Day 1</li>
+          <li>Chinook Pass is the low-speed "graduation" capstone</li>
         </ul>
       </div>
       <div class="card">
-        <h3><span class="ico">🧒</span> Child Passenger</h3>
+        <h3><span class="ico">🧒</span> Child Passenger (Aslan · GS)</h3>
         <ul>
           <li>Properly fitting helmet, jacket, gloves, pants &amp; boots</li>
-          <li>Top case / back pad and intercom preferred</li>
-          <li>Must reach pegs and sit securely</li>
-          <li>Stop every 60–90 minutes</li>
-          <li>Snacks, rain layers &amp; spare gloves carried by lead rider</li>
+          <li>Top-box backrest, grab strap &amp; intercom</li>
+          <li>Must reach the pegs and sit securely</li>
+          <li>Stop every 60–90 minutes; never overtired</li>
+          <li>Snacks, rain layers &amp; spare gloves carried by Ruslan</li>
         </ul>
       </div>
       <div class="card warn">
         <h3><span class="ico">⚠️</span> Before You Go</h3>
         <ul>
-          <li>Valid licence + 1949 Geneva IDP for each rider</li>
-          <li>Insurance that covers motorcycle riding</li>
-          <li>Confirm passenger &amp; child passenger allowed on rental</li>
-          <li>Confirm large-bike availability — Osaka loop (pick-up = drop-off)</li>
-          <li>Avoid rainy season, August heat &amp; winter mountains</li>
+          <li>Motorcycle endorsement on each licence (Galiya's is new)</li>
+          <li>Current insurance + registration on both bikes</li>
+          <li>Service both bikes; mind the W230's small tank &amp; range</li>
+          <li>Pack for coast fog, rain <em>and</em> alpine chill at Chinook Pass</li>
+          <li>Book Yachats early — it sells out for the Fourth of July</li>
         </ul>
       </div>
     </div>
@@ -509,30 +508,29 @@
       <div class="card">
         <h3><span class="ico">📋</span> Parameters</h3>
         <table class="params">
-          <tr><td>Trip length</td><td>≈ 25 days door-to-door (Day 0–24); Osaka riding loop ≈ 1,195 mi</td></tr>
-          <tr><td>Group</td><td>Husband, wife, 6-year-old son</td></tr>
-          <tr><td>Rider 1 bike</td><td>Large ADV — ideally Honda Africa Twin</td></tr>
-          <tr><td>Rider 2 bike</td><td>Under 500 cc — ideally Honda CB400X / NX400</td></tr>
-          <tr><td>Riding style</td><td>Scenic touring, mostly paved, no planned off-road</td></tr>
-          <tr><td>Daily ride time</td><td>Usually 4–6 hours maximum</td></tr>
-          <tr><td>Best season</td><td>Oct–early Nov, or late Apr–May after Golden Week</td></tr>
-          <tr><td>Logistics</td><td>Osaka loop — pick up &amp; return at the Suita base; nonstop SEA⇄Tokyo + Shinkansen</td></tr>
+          <tr><td>Trip length</td><td>7 days (Jul 1–7, 2026); round-trip loop ≈ 970 mi</td></tr>
+          <tr><td>Group</td><td>Galiya, Ruslan &amp; their 6-year-old son Aslan</td></tr>
+          <tr><td>Rider 1 bike</td><td>BMW R1300GS — Ruslan, carrying Aslan</td></tr>
+          <tr><td>Rider 2 bike</td><td>Kawasaki W230 — Galiya (brand-new rider)</td></tr>
+          <tr><td>Riding style</td><td>Scenic touring, all paved, <b>no freeways</b></td></tr>
+          <tr><td>Daily ride time</td><td>~2–4 h (one ~4h transfer day)</td></tr>
+          <tr><td>Best season</td><td>Early July — long days, dry passes</td></tr>
+          <tr><td>Logistics</td><td>Own bikes, round trip from home; Edmonds–Kingston ferry</td></tr>
         </table>
       </div>
       <div class="card">
         <h3><span class="ico">🏨</span> Where We Stay</h3>
         <ul>
           <li>Secure or easy motorcycle parking</li>
-          <li>Family-friendly rooms, private/family bath where possible</li>
-          <li>Onsen ryokan in scenic areas; nice hotels in cities</li>
-          <li>Western beds where available (ryokan when desired)</li>
-          <li>Laundry access every 3–4 days</li>
-          <li>Dinner included in remote areas</li>
+          <li>Family-friendly rooms; the Yachats stay is the oceanfront splurge</li>
+          <li>Coast motels &amp; inns, a mountain lodge in Packwood</li>
+          <li>Book the Fourth-of-July coast nights well ahead</li>
+          <li>Always confirm parking + passenger rules before booking</li>
         </ul>
-        <h3 style="margin-top:20px;"><span class="ico">🍜</span> What We Eat</h3>
+        <h3 style="margin-top:20px;"><span class="ico">🦀</span> What We Eat</h3>
         <ul>
-          <li>Local regional food &amp; roadside stations (michi-no-eki)</li>
-          <li>Seafood, ramen, udon, ryokan kaiseki dinners</li>
+          <li>Off-the-boat Dungeness crab, clam chowder &amp; fish-and-chips</li>
+          <li>Tillamook cheese &amp; ice cream; coast-town breweries</li>
         </ul>
       </div>
     </div>
@@ -541,8 +539,8 @@
 
 <footer>
   <div class="wrap">
-    <div>Built from <code>summary.md</code> · A premium family ADV-style paved touring trip — not a mileage challenge.</div>
-    <div class="mincho">良い旅を — Have a wonderful journey 🏍️</div>
+    <div>A family first tour — built to grow a new rider's confidence and a love of the road, not to chase miles.</div>
+    <div class="mincho">Ride safe — and have a wonderful journey 🏍️</div>
   </div>
 </footer>
 
@@ -551,9 +549,8 @@
 <script src="data.js"></script>
 <script>
 /* ---------- Route stops sourced from data.js (single source of truth) ----------
-   "bookend" cards (Tokyo — the air gateway) are NOT on the bike loop, so they are
-   excluded from the map markers, the loop polyline and the route ribbon. They still
-   appear in the destination gallery below. */
+   "home" (type "start") is both the start and the finish of the loop and stays in the
+   map markers, polyline and ribbon. (No bookend cards on this trip.) */
 const STOPS = window.DESTINATIONS.filter(d => d.type !== 'bookend').map(d => ({
   id: d.id, name: d.name, lat: d.lat, lng: d.lng, type: d.type, note: d.tagline
 }));
@@ -585,51 +582,31 @@ document.getElementById('flLinks').innerHTML = F.links.map(l =>
 document.getElementById('flLegs').innerHTML = F.legs.map(g => `
   <div class="flight">
     <div class="dir">${g.dir}</div>
-    <div class="route"><span class="ap">${g.from}</span><span class="pl">✈</span><span class="ap">${g.to}</span></div>
+    <div class="route"><span class="ap">${g.from}</span><span class="pl">→</span><span class="ap">${g.to}</span></div>
     <div class="sample">${g.sample}</div>
     <div class="specs">
-      <div class="s"><div class="v">${g.type}</div><div class="k">Stops</div></div>
-      <div class="s"><div class="v">${g.duration}</div><div class="k">Flight time</div></div>
-      <div class="s"><div class="v">from ${g.fareFrom}</div><div class="k">Round-trip, indicative</div></div>
+      <div class="s"><div class="v">${g.type}</div><div class="k">How</div></div>
+      <div class="s"><div class="v">${g.duration}</div><div class="k">Distance</div></div>
     </div>
-    <div class="air">${g.airlines.map(a => `<span>${a}</span>`).join('')}</div>
     <p class="fnote">${g.note}</p>
-    <div class="bk">
-      <a href="${g.expedia}" target="_blank" rel="noopener">Search on Expedia →</a>
-      ${g.expediaAlt ? `<a class="alt" href="${g.expediaAlt}" target="_blank" rel="noopener">via Narita</a>` : ''}
-    </div>
   </div>`).join('');
 
 /* ---------- Build route ribbon ---------- */
 const ribbon = document.getElementById('ribbon');
-const homeNode = document.createElement('span');
-homeNode.className = 'node key';
-homeNode.textContent = '✈ Seattle';
-ribbon.appendChild(homeNode);
-const homeArrow = document.createElement('span');
-homeArrow.className = 'arrow'; homeArrow.textContent = '→';
-ribbon.appendChild(homeArrow);
-STOPS.forEach((s, i) => {
+STOPS.forEach((s) => {
   const node = document.createElement('span');
-  node.className = 'node' + (s.type === 'stay' ? ' key' : '');
+  node.className = 'node' + (s.type === 'stay' || s.type === 'start' ? ' key' : '');
   node.textContent = s.name;
   ribbon.appendChild(node);
   const a = document.createElement('span');
   a.className = 'arrow'; a.textContent = '→';
   ribbon.appendChild(a);
 });
-// close the loop back to the Osaka start, then home
+// close the loop back home
 const loopBack = document.createElement('span');
 loopBack.className = 'node key';
-loopBack.textContent = STOPS[0].name + ' (finish)';
+loopBack.textContent = 'Home (finish)';
 ribbon.appendChild(loopBack);
-const loopArrow = document.createElement('span');
-loopArrow.className = 'arrow'; loopArrow.textContent = '→';
-ribbon.appendChild(loopArrow);
-const homeEnd = document.createElement('span');
-homeEnd.className = 'node key';
-homeEnd.textContent = '✈ Seattle';
-ribbon.appendChild(homeEnd);
 
 /* ---------- Build destination gallery ---------- */
 const destGrid = document.getElementById('destGrid');
@@ -649,8 +626,8 @@ window.DESTINATIONS.forEach(d => {
   destGrid.appendChild(a);
 });
 
-/* ---------- Build the Ramen Trail (themed foodie thread from data.js) ---------- */
-const RT = window.RAMEN_TRAIL;
+/* ---------- Build the Coast Food Trail (themed foodie thread from data.js) ---------- */
+const RT = window.FOOD_TRAIL;
 if (RT && RT.stops && RT.stops.length) {
   document.getElementById('ramenIntro').innerHTML = RT.intro;
   const cap = s => (s || '').charAt(0).toUpperCase() + (s || '').slice(1);
@@ -668,7 +645,7 @@ if (RT && RT.stops && RT.stops.length) {
         <div class="rstyle">${s.style}</div>
         <div class="rdesc">${s.styleDesc}</div>
         <div class="rshop">
-          <span class="lbl">Marquee shop</span>
+          <span class="lbl">Top pick</span>
           <a href="${s.shopUrl}" target="_blank" rel="noopener">📍 ${s.shop} ↗</a>
           ${s.shopNote ? ` <span class="note">— ${s.shopNote}</span>` : ''}
         </div>
@@ -679,16 +656,19 @@ if (RT && RT.stops && RT.stops.length) {
   document.getElementById('ramenNotes').innerHTML =
     [RT.note, RT.bookend].filter(Boolean).map(n => `<p>${n}</p>`).join('');
 } else {
-  const sec = document.getElementById('ramen'); if (sec) sec.style.display = 'none';
+  const sec = document.getElementById('food'); if (sec) sec.style.display = 'none';
 }
 
 /* ---------- Build timeline ---------- */
 const BADGE_LABELS = {
-  rest:  ['rest','Rest day'],
-  ride:  ['ride','Riding day'],
-  stay2: ['stay2','2-night stay'],
-  kid:   ['kid','Kid highlight'],
-  onsen: ['onsen','Onsen']
+  rest:    ['rest','Rest day'],
+  ride:    ['ride','Riding day'],
+  skill:   ['skill','Skill-building'],
+  kid:     ['kid','Kid highlight'],
+  scenic:  ['scenic','Scenic'],
+  moto:    ['moto','Riding road'],
+  volcano: ['volcano','Volcano'],
+  food:    ['food','Food']
 };
 const timeline = document.getElementById('timeline');
 function renderDays(filter) {
@@ -745,7 +725,7 @@ document.querySelectorAll('#filters .chip').forEach(chip => {
 });
 
 /* ---------- Leaflet map ---------- */
-const map = L.map('map', { scrollWheelZoom: false }).setView([34.6, 135.2], 6);
+const map = L.map('map', { scrollWheelZoom: false }).setView([46.0, -123.0], 7);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; OpenStreetMap &copy; CARTO',
   subdomains: 'abcd', maxZoom: 19
@@ -763,7 +743,7 @@ STOPS.forEach((s, i) => {
     .bindPopup(`<b>${i+1}. ${s.name}</b><br>${s.note}<br><a href="place.html?id=${s.id}">View details →</a>`);
 });
 
-// close the loop visually back to the Osaka start
+// close the loop visually back home
 const loopLatLngs = latlngs.concat([latlngs[0]]);
 L.polyline(loopLatLngs, {
   color: '#e3493b', weight: 3, opacity: .75, dashArray: '6 8'
