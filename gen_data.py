@@ -807,6 +807,57 @@ for _dnum, _g in sorted(GUIDE_BY_D.items()):
     if _todo:
         _day["localTodo"] = _todo
 
+# ============ THE ROADS (tour/04-roads.md — the per-day riding-quality record) ============
+# The tour-expert's road guide: per riding day a Surface split, a one-line Character,
+# 1–2 prose paragraphs and verified Commons road photos. Folded into window.DAYS[n]
+# as `road`: {surface, character, paras[], photos[{src, alt, cap}]} — absent for days
+# without an entry (Days 1 & 16). day.html renders "The Road" section from it and
+# index.html derives the timeline surface hints. Fails loudly on a day-number mismatch.
+ROADS_MD = os.path.join(os.path.dirname(__file__), "tour", "04-roads.md")
+
+def parse_roads(path):
+    text = open(path, encoding="utf-8").read()
+    parts = re.split(r"^##\s+Day\s+(\d+)\s+—.*$", text, flags=re.M)
+    out = {}
+    for i in range(1, len(parts), 2):
+        n, body = int(parts[i]), parts[i + 1]
+        road = {}
+        m = re.search(r"^-\s+\*\*Surface:\*\*\s*(.*)$", body, re.M)
+        road["surface"] = plain(m.group(1)) if m else ""
+        m = re.search(r"^-\s+\*\*Character:\*\*\s*(.*)$", body, re.M)
+        road["character"] = plain(m.group(1)) if m else ""
+        prose = body.split("### Photos")[0]
+        paras, buf = [], []
+        for ln in prose.splitlines():
+            if ln.startswith("- ") or ln.startswith("#"):
+                continue
+            if ln.strip() == "":
+                if buf:
+                    paras.append(md_inline(" ".join(buf)))
+                    buf = []
+            else:
+                buf.append(ln.strip())
+        if buf:
+            paras.append(md_inline(" ".join(buf)))
+        road["paras"] = paras
+        photos = []
+        if "### Photos" in body:
+            for ln in body.split("### Photos", 1)[1].splitlines():
+                m = re.match(r"^-\s+!\[([^\]]*)\]\(([^)]+)\)\s*(?:—\s*(.*))?$", ln)
+                if m:
+                    photos.append({"src": m.group(2).strip(),
+                                   "alt": plain(m.group(1)),
+                                   "cap": plain(m.group(3) or "")})
+        road["photos"] = photos
+        out[n] = road
+    return out
+
+ROADS = parse_roads(ROADS_MD)
+for _n in sorted(ROADS):
+    if _n not in DAY_BY_D:
+        raise SystemExit("tour/04-roads.md: 'Day %d' has no matching entry in DAYS (1..%d)" % (_n, len(DAYS)))
+    DAY_BY_D[_n]["road"] = ROADS[_n]
+
 # ============ HOW THE TRIP WORKS (guided package; fly ALA in and out) ============
 FLIGHTS = {
  "intro": "This is a guided package: Silk Off Road Tours provides the rental Suzuki DR650SE, the ride leader, the support truck that carries all luggage, every night's lodging, breakfasts, entry fees and both airport transfers. On the rider: a round-trip flight to Almaty (ALA), documents, personal insurance, fuel, and lunches & dinners (that last one is a feature — see the Food Trail). The loop starts and finishes in Almaty — no open-jaw flight logic.",
@@ -1023,6 +1074,8 @@ print("DESTINATIONS:", len(ORDER), "DAYS:", len(DAYS),
 print("ids:", ", ".join(ORDER))
 kmsum = sum(d["km"] for d in DAYS)
 print("riding km sum:", kmsum, "(expect 2809)")
+print("roads:", len(ROADS), "day entries (Days %d–%d);" % (min(ROADS), max(ROADS)),
+      sum(len(r["photos"]) for r in ROADS.values()), "road photos")
 # image url inventory
 urls = set()
 for i in ORDER:
@@ -1031,6 +1084,8 @@ for i in ORDER:
 for d in DAYS:
     for p in d["poi"]:
         if p.get("img"): urls.add(p["img"])
+    for ph in d.get("road", {}).get("photos", []):
+        urls.add(ph["src"])
 for v in DAYART.values(): urls.add(v)
 for st in FOOD_TRAIL["stops"]:
     if st.get("photo"): urls.add(st["photo"])

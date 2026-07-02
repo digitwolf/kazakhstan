@@ -4,7 +4,7 @@ A **16-day guided ADV motorcycle loop across Kazakhstan and Kyrgyzstan** with **
 
 ## The goal
 
-A **real ADV step-up** for an experienced rider: after a guided Morocco training tour, this is the graduation ride — **desert to 4,000 m glaciers on the old Silk Road**, roughly 40% of it on gravel and dirt, on a light rental dual-sport instead of the big GS at home. The format is the proven "anchor-point adventure": a guided ride with a ride leader and support truck, fixed nightly anchors (hotels, guest houses, yurt camps), and genuinely adventurous riding between them — now with a **dedicated training day** before the big legs and a **real rest day** in the middle, Morocco-style. Because the participants for this departure **aren't fixed yet**, the tour is deliberately **designed anchor-first**: the must-see anchor nights are locked, and the connections between them are a menu of easier/harder **route options** the actual group will choose (see below).
+**Built for experienced ADV riders who value beautiful offroad — the roads are the product.** The anchors are the frame, but the reason to come is what's under the tires: desert pistes, a 4WD gorge track, a gravel road to 4,021 m, a stacked-hairpin climb to Song-Kol and a rocky serpentine off its rim (the full day-by-day riding record is **[04-roads.md](04-roads.md)**). For this rider it's also a **real ADV step-up**: after a guided Morocco training tour, this is the graduation ride — **desert to 4,000 m glaciers on the old Silk Road**, roughly 40% of it on gravel and dirt, on a light rental dual-sport instead of the big GS at home. The format is the proven "anchor-point adventure": a guided ride with a ride leader and support truck, fixed nightly anchors (hotels, guest houses, yurt camps), and genuinely adventurous riding between them — now with a **dedicated training day** before the big legs and a **real rest day** in the middle, Morocco-style. Because the participants for this departure **aren't fixed yet**, the tour is deliberately **designed anchor-first**: the must-see anchor nights are locked, and the connections between them are a menu of easier/harder **route options** the actual group will choose (see below).
 
 ## The flexible anchor model
 
@@ -41,6 +41,7 @@ Fly into **Almaty** (Day 1, bike handover and welcome dinner), spend **Day 2 on 
 
 ## Priorities
 
+0. **The roads are the product** — this loop is chosen for riders who value beautiful offroad: when an option trades comfort for a better track (and the weather allows), the track wins. The per-day surface record lives in [04-roads.md](04-roads.md).
 1. **Use the training day** — Day 2 exists to dial in the DR650 (levers, pressures, sag) and refresh off-road stance, gravel braking and sand basics *before* the big days. Arrive with nothing to prove on Day 3.
 2. **Ride the step-up honestly** — take the gravel/dirt options (the desert pistes on Day 4 have an asphalt alternative; ride the pistes if conditions allow).
 3. **Altitude discipline** — hydrate, layer, respect the 4,000 m day and the nights at 3,000 m; the Day-8 rest day is part of the acclimatization plan, not a luxury.

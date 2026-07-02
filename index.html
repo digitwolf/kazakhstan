@@ -233,6 +233,14 @@
   .badge.border { background: rgba(111,177,232,.14); color: #8ec4f0; border: 1px solid rgba(111,177,232,.3); }
   .badge.plain { background: rgba(255,255,255,.05); color: var(--muted); border: 1px solid var(--line); }
   .pill-region { font-size: 11px; font-weight: 700; color: var(--accent-2); text-transform: uppercase; letter-spacing: .08em; }
+  /* compact per-day surface hint (from window.DAYS[].road — tour/04-roads.md) */
+  .surfmini { display: flex; align-items: center; gap: 10px; margin-top: 11px; }
+  .surfmini .bar { display: flex; width: 200px; max-width: 45%; height: 5px; border-radius: 3px; overflow: hidden; background: var(--bg-soft); }
+  .surfmini .bar i { display: block; height: 100%; }
+  .surfmini .bar i.tarmac { background: #3fb8af; }
+  .surfmini .bar i.gravel { background: #f0a830; }
+  .surfmini .bar i.rough { background: #e3493b; }
+  .surfmini .lbl { font-size: 11.5px; font-weight: 600; color: var(--muted); white-space: nowrap; }
 
   /* ---------- Info grid ---------- */
   .grid { display: grid; gap: 18px; }
@@ -383,6 +391,7 @@
       <b>two countries</b>, from the Singing Dune of the Kazakh steppe over a chain of 3,000–4,000 m
       Tian Shan passes to the glaciers above Issyk-Kul and the nomad yurts of Song-Kol — built as a
       <b>flexible plan around 5 fixed anchors</b>, with easier/harder route options between them.
+      Built for experienced ADV riders who value beautiful offroad — <b>the roads are the product</b>.
       Rental Suzuki DR650SE, ride leader, support truck, ~60% asphalt / 40% gravel &amp; dirt.
     </p>
     <div class="hero-cta">
@@ -799,6 +808,26 @@ const BADGE_LABELS = {
   history:   ['plain','History'],
   lake:      ['plain','Lake']
 };
+/* Compact per-day surface hint: parse the road guide's Surface line ("NN km <type> · …")
+   into a thin tarmac/gravel/rough ratio bar + a "km dirt" chip (see day.html for the full strip). */
+function surfHintHtml(day) {
+  if (!day.road || !day.road.surface) return '';
+  const segs = day.road.surface.split('·').map(part => {
+    const m = part.match(/(\d[\d,]*)\s*km\s+(.+)/);
+    if (!m) return null;
+    const label = m[2].trim();
+    const type = /two-track|4wd|4x4|rocky|rough|sand|dirt/i.test(label) ? 'rough'
+               : /tarmac|asphalt|paved/i.test(label) ? 'tarmac' : 'gravel';
+    return { km: parseInt(m[1].replace(/,/g, ''), 10), type };
+  }).filter(Boolean);
+  if (!segs.length) return '';   // e.g. the rest day's "none — no riding"
+  const bar = segs.map(s => `<i class="${s.type}" style="flex:${s.km}"></i>`).join('');
+  const dirt = segs.filter(s => s.type !== 'tarmac').reduce((a, s) => a + s.km, 0);
+  const lbl = dirt > 0 ? `${dirt} km dirt` : 'all tarmac';
+  return `<div class="surfmini" title="${day.road.surface.replace(/"/g, '&quot;')}">` +
+    `<span class="bar">${bar}</span><span class="lbl">${lbl}</span></div>`;
+}
+
 const timeline = document.getElementById('timeline');
 function renderDays(filter) {
   timeline.innerHTML = '';
@@ -835,6 +864,7 @@ function renderDays(filter) {
         <div class="route">${day.route}</div>
         <div class="desc">${day.desc}</div>
         <div class="badges">${badges}</div>
+        ${surfHintHtml(day)}
         <div class="day-actions">
           <a class="day-go" href="day.html?d=${day.d}">🕘 View day schedule →</a>
           <a class="day-route2" href="place.html?id=${day.id}">Destination ↗</a>

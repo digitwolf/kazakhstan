@@ -79,6 +79,27 @@
   .hl .row .hook{color:#c7d1db;font-size:13.5px;margin-top:2px;line-height:1.5;}
   .hl .row .badges{margin-top:8px;}
   .poic .badges{margin:0 0 10px;}
+  /* The Road — the per-day riding-quality record (window.DAYS[].road, tour/04-roads.md) */
+  .road-char{font-size:16px;font-weight:600;font-style:italic;color:#e9dfd2;line-height:1.5;
+    margin:0 0 16px;padding-left:14px;border-left:3px solid var(--accent-2);}
+  .surfbar{display:flex;height:16px;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:var(--bg-soft);}
+  .surfbar i{display:block;height:100%;}
+  .ss-tarmac{background:#3fb8af;} .ss-gravel{background:#f0a830;} .ss-rough{background:#e3493b;}
+  .surfmeta{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:9px;font-size:12.5px;color:#c7d1db;font-weight:600;}
+  .surfmeta .sl{display:inline-flex;align-items:center;gap:6px;}
+  .surfmeta .sl b{color:#fff;}
+  .surfmeta .sw{width:11px;height:11px;border-radius:3px;display:inline-block;flex-shrink:0;}
+  .surfraw{font-size:12.5px;color:var(--muted);margin-top:7px;}
+  .road-p{font-size:14.5px;color:#c7d1db;margin:14px 0 0;}
+  .roadshots{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-top:18px;}
+  .roadshots figure{margin:0;cursor:zoom-in;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  .roadshots img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;transition:transform .3s;}
+  .roadshots figure:hover img{transform:scale(1.05);}
+  .roadshots figcaption{font-size:11.5px;color:var(--muted);padding:8px 10px;line-height:1.45;}
+  #lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;flex-direction:column;gap:14px;
+    align-items:center;justify-content:center;z-index:200;cursor:zoom-out;padding:20px;}
+  #lb img{max-width:92vw;max-height:82vh;border-radius:8px;}
+  #lb .cap{color:#ccc;font-size:14px;max-width:800px;text-align:center;line-height:1.5;}
   .summary-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
   .summary-grid .s{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:11px 13px;}
   .summary-grid .s .v{font-size:18px;font-weight:800;color:#fff;}
@@ -206,6 +227,14 @@
       <p class="summary-body" id="sumBody"></p>
       <div id="luggage"></div>
     </div>
+    <div class="block" id="roadBlock" style="display:none">
+      <h2><span>🛣️</span> The Road</h2>
+      <p class="note">The roads are the product — what's under the tires today: the surface split, the day's character, and how it rides.</p>
+      <p class="road-char" id="roadChar"></p>
+      <div id="surf"></div>
+      <div id="roadParas"></div>
+      <div class="roadshots" id="roadShots"></div>
+    </div>
     <div class="block" id="hlBlock">
       <h2><span>⭐</span> Day Highlights</h2>
       <p class="note">The day's don't-miss stops at a glance — with badges for what each one is best for. The full timed plan follows below.</p>
@@ -248,6 +277,8 @@
     </div>
   </aside>
 </div></div></main>
+
+<div id="lb"><img id="lbImg" alt=""><div class="cap" id="lbCap"></div></div>
 
 <footer><div class="wrap">Part of the 16-day "From Desert Up to Glaciers" loop (Sep 5–20, 2026) · <a href="index.html">Back to the full itinerary →</a></div></footer>
 
@@ -479,6 +510,56 @@
   };
   const esc = s => String(s == null ? '' : s)
     .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+  // ---- The Road (window.DAYS[].road — the riding-quality record from tour/04-roads.md) ----
+  // Renders the Surface line as a proportional color-coded strip (tarmac / gravel / rough),
+  // the Character line as a lead-in, the prose, and the road photos (click → lightbox).
+  const SURF = {
+    tarmac: ['ss-tarmac', 'tarmac'],
+    gravel: ['ss-gravel', 'gravel / piste'],
+    rough:  ['ss-rough',  'rough / two-track']
+  };
+  const surfSegs = s => (s || '').split('·').map(part => {
+    const m = part.match(/(\d[\d,]*)\s*km\s+(.+)/);
+    if (!m) return null;
+    const label = m[2].trim();
+    const type = /two-track|4wd|4x4|rocky|rough|sand|dirt/i.test(label) ? 'rough'
+               : /tarmac|asphalt|paved/i.test(label) ? 'tarmac' : 'gravel';
+    return { km: parseInt(m[1].replace(/,/g, ''), 10), label, type };
+  }).filter(Boolean);
+  if (day.road) {
+    const road = day.road;
+    document.getElementById('roadBlock').style.display = '';
+    document.getElementById('roadChar').textContent = road.character;
+    const segs = surfSegs(road.surface);
+    let surfHtml;
+    if (segs.length) {
+      const bar = segs.map(s =>
+        `<i class="${SURF[s.type][0]}" style="flex:${s.km}" title="${esc(s.km + ' km ' + s.label)}"></i>`).join('');
+      const agg = {};
+      segs.forEach(s => agg[s.type] = (agg[s.type] || 0) + s.km);
+      const chips = Object.keys(SURF).filter(t => agg[t]).map(t =>
+        `<span class="sl"><i class="sw ${SURF[t][0]}"></i>${SURF[t][1]} · <b>${agg[t]} km</b></span>`).join('');
+      surfHtml = `<div class="surfbar">${bar}</div><div class="surfmeta">${chips}</div>` +
+        `<div class="surfraw">Surface: ${esc(road.surface)}</div>`;
+    } else {
+      surfHtml = `<div class="surfraw">Surface: ${esc(road.surface)}</div>`;   // e.g. the rest day
+    }
+    document.getElementById('surf').innerHTML = surfHtml;
+    document.getElementById('roadParas').innerHTML =
+      (road.paras || []).map(p => `<p class="road-p">${p}</p>`).join('');
+    document.getElementById('roadShots').innerHTML = (road.photos || []).map(p =>
+      `<figure data-full="${esc(p.src)}" data-cap="${esc(p.cap)}">` +
+      `<img loading="lazy" src="${esc(p.src)}" alt="${esc(p.alt)}"><figcaption>${esc(p.cap)}</figcaption></figure>`).join('');
+  }
+  // lightbox for the road photos
+  const lb = document.getElementById('lb'), lbImg = document.getElementById('lbImg'), lbCap = document.getElementById('lbCap');
+  document.getElementById('roadShots').addEventListener('click', e => {
+    const fig = e.target.closest('figure'); if (!fig) return;
+    lbImg.src = fig.dataset.full; lbCap.textContent = fig.dataset.cap; lb.style.display = 'flex';
+  });
+  lb.addEventListener('click', () => lb.style.display = 'none');
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.style.display = 'none'; });
 
   // ---- Silk Road Food Trail day callout (window.DAYS[].foodTrail) ----
   // The day's marquee Silk Road eat with a key-free Google Maps link. Part of the themed
