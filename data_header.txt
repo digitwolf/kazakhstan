@@ -1,13 +1,15 @@
 /* ============================================================
-   PNW Family "First Tour" — destination data
+   "From Desert Up to Glaciers" — the Loop — destination data
    Generated from tour/ markdown by gen_data.py (website-builder).
-   Shared by index.html, place.html and day.html.
-   A 7-day round-trip ride: Woodinville → the Oregon coast (Yachats)
-   → home over Mount St. Helens & Mount Rainier. Built around a
-   brand-new rider (Galiya, Kawasaki W230) — no freeways.
+   Shared by index.html, place.html, day.html and checklist.html.
+   A 16-day guided ADV motorcycle loop, Almaty → Almaty across
+   Kazakhstan & Kyrgyzstan (Sep 5–20, 2026): ≈ 2,800 km, ~60%
+   asphalt / 40% gravel-dirt, rental Suzuki DR650SE, guided by
+   Silk Off Road Tours with a ride leader and support truck.
+   DISTANCES ARE KILOMETRES site-wide; prices are USD.
    Photos: Wikimedia Commons (all URLs verified reachable).
-   Hotels are SUGGESTIONS — confirm motorcycle parking,
-   passenger/child rules and availability before booking.
+   Lodging is booked by the operator — independent suggestions
+   are indicative; confirm parking and rates before booking.
    ============================================================ */
 const U = "https://upload.wikimedia.org/wikipedia/commons/thumb/";
 
@@ -49,7 +51,7 @@ window.wikiLink = function (name, wiki) {
   return "https://en.wikipedia.org/wiki/Special:Search?search=" + encodeURIComponent(name || "");
 };
 
-/* Hotel prices are already in USD (e.g. "$189–329"). This helper is kept as a no-op
+/* Hotel prices are already in USD (e.g. "$40–$80"). This helper is kept as a no-op
    passthrough so the templates can call it without a second currency conversion. */
 window.priceUSD = function (p) { return ""; };
 
@@ -57,26 +59,30 @@ window.priceUSD = function (p) { return ""; };
    These illustrate the STYLE of stay, not the exact property. */
 window.HOTEL_IMG = {
   room:   U+"e/e8/Comfort_Twin_Room_in_Triple_Configuration_%2821917602991%29.jpg/960px-Comfort_Twin_Room_in_Triple_Configuration_%2821917602991%29.jpg",
-  design: U+"e/e3/Modern_bedroom_design_in_a_stylish_hotel_room_featuring_geometric_patterns_and_soft_linens.jpg/960px-Modern_bedroom_design_in_a_stylish_hotel_room_featuring_geometric_patterns_and_soft_linens.jpg"
+  design: U+"e/e3/Modern_bedroom_design_in_a_stylish_hotel_room_featuring_geometric_patterns_and_soft_linens.jpg/960px-Modern_bedroom_design_in_a_stylish_hotel_room_featuring_geometric_patterns_and_soft_linens.jpg",
+  yurt:   U+"f/f1/Song-Kul%2C_Kyrgyzstan_%2830709310728%29.jpg/960px-Song-Kul%2C_Kyrgyzstan_%2830709310728%29.jpg"
 };
 /* Pick a representative image from a hotel's `t` (type) label. Returns null for non-bookable "Note" rows. */
 window.hotelImage = function (t) {
   const s = (t || "").toLowerCase();
   if (s.includes("note")) return null;
-  if (s.includes("resort") || s.includes("oceanfront") || s.includes("spa") || s.includes("boutique") || s.includes("nice hotel"))
+  if (s.includes("yurt")) return window.HOTEL_IMG.yurt;
+  if (s.includes("resort") || s.includes("spa") || s.includes("4★") || s.includes("5★") ||
+      s.includes("high-rise") || s.includes("lodge"))
     return window.HOTEL_IMG.design;
-  return window.HOTEL_IMG.room; // lodge, inn, motel, cabin, B&B — practical, family-friendly
+  return window.HOTEL_IMG.room; // hotel, guest house, homestay, cabin, eco-hotel — practical
 };
 /* Build a reliable search/booking link for a property name. */
 window.hotelLink = function (name, place) {
   return "https://www.google.com/search?q=" + encodeURIComponent(name + " " + (place || "") + " hotel");
 };
-/* Expected motorcycle-parking situation by lodging type. Every suggestion is
-   selected to accommodate bikes; the exact spot must still be confirmed on booking. */
+/* Expected motorcycle-parking situation by lodging type — a fallback for when the
+   tour data carries no explicit parking note. Confirm the exact spot on booking. */
 window.hotelParking = function (t) {
   const s = (t || "").toLowerCase();
   if (s.includes("note")) return null;
-  if (s.includes("motel") || s.includes("lodge") || s.includes("cabin") || s.includes("inn"))
-    return "Free on-site lot";
-  return "On-site parking"; // resort, hotel, boutique
+  if (s.includes("yurt") || s.includes("camp")) return "Bikes parked by the camp";
+  if (s.includes("guest house") || s.includes("homestay") || s.includes("eco"))
+    return "Walled yard / courtyard";
+  return "Guarded lot — confirm"; // hotels, resorts
 };

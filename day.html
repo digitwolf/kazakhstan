@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Day — PNW Family First Tour</title>
+<title>Day — From Desert Up to Glaciers</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Shippori+Mincho:wght@600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <style>
   :root{--bg:#0e1116;--bg-soft:#161b22;--panel:#1c222b;--panel-2:#232b36;--line:#2c3540;
     --text:#e8edf3;--muted:#9aa7b5;--accent:#e3493b;--accent-2:#f0a830;--teal:#3fb8af;--green:#5fb35f;--radius:14px;--maxw:1080px;}
   *{box-sizing:border-box;} html{scroll-behavior:smooth;}
   body{margin:0;font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;}
-  h1,h2,h3{line-height:1.2;margin:0 0 .4em;} .mincho{font-family:'Shippori Mincho',serif;}
+  h1,h2,h3{line-height:1.2;margin:0 0 .4em;} .mincho{font-family:inherit;}
   a{color:var(--teal);text-decoration:none;} a:hover{text-decoration:underline;}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px;}
   nav.top{position:sticky;top:0;z-index:50;background:rgba(14,17,22,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
@@ -55,7 +55,15 @@
   .luggage .lg-k{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-2);margin-bottom:3px;}
   .luggage .lg-d{font-size:14px;color:#e5ddcb;line-height:1.55;}
   .place-ctx{font-size:14px;color:#aeb9c4;font-style:italic;margin:0 0 14px;}
-  /* interest badges — tie to the family interests in tour/00-family.md */
+  /* segment banner — which anchor-plan segment/option the reference day rides */
+  .segbanner{display:flex;gap:13px;align-items:flex-start;margin:0 0 16px;padding:13px 16px;
+    background:linear-gradient(180deg,rgba(63,184,175,.11),rgba(63,184,175,.04));
+    border:1px solid rgba(63,184,175,.42);border-left:4px solid var(--teal);border-radius:11px;}
+  .segbanner .sb-ic{font-size:20px;line-height:1.2;flex-shrink:0;}
+  .segbanner .sb-k{font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#6fd6cd;margin-bottom:3px;}
+  .segbanner .sb-d{font-size:13.5px;color:#d3e4e2;line-height:1.55;}
+  .segbanner .sb-d b{color:#fff;}
+  /* interest badges — tie to the tour themes in tour/00-riders.md / 00-overview.md */
   .badges{display:flex;flex-wrap:wrap;gap:6px;}
   .badge{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:700;
     padding:3px 9px;border-radius:999px;background:var(--panel-2);border:1px solid var(--line);color:#dbe3ea;}
@@ -132,7 +140,7 @@
   .trailbadge{font-size:11px;font-weight:800;color:#fff;background:var(--accent);padding:2px 8px;border-radius:999px;white-space:nowrap;}
   @media (max-width:560px){.picks{grid-template-columns:1fr;}}
 
-  /* 🦀 Coast Food Trail day callout (window.DAYS[].foodTrail) — the marquee eat of the day */
+  /* Silk Road Food Trail day callout (window.DAYS[].foodTrail) — the marquee eat of the day */
   .ramen-call{display:flex;gap:13px;align-items:flex-start;margin:0 0 18px;padding:14px 16px;
     background:linear-gradient(180deg,rgba(227,73,59,.12),rgba(227,73,59,.05));
     border:1px solid rgba(227,73,59,.42);border-left:4px solid var(--accent);border-radius:11px;}
@@ -173,7 +181,7 @@
 </head>
 <body>
 <nav class="top"><div class="wrap">
-  <div class="brand mincho">🏍️ <span>·</span> PNW First Tour</div>
+  <div class="brand mincho">🏍️ <span>·</span> Desert → Glaciers</div>
   <a class="back" href="index.html#itinerary">← Full itinerary</a>
 </div></nav>
 
@@ -192,6 +200,7 @@
     <div class="block">
       <h2><span>📋</span> The Plan for the Day</h2>
       <p class="place-ctx" id="placeCtx"></p>
+      <div id="segBanner"></div>
       <p class="summary-lead" id="sumLead"></p>
       <div class="summary-grid" id="sumGrid"></div>
       <p class="summary-body" id="sumBody"></p>
@@ -214,7 +223,7 @@
     </div>
     <div class="block" id="eatsBlock" style="display:none">
       <h2><span>🍜</span> Where to Eat</h2>
-      <p class="note">Local-guide picks for the day, grouped by meal — ⭐ rating, why it's worth it, and a Google Maps link. The <span class="kidpick-tag">👦 Kid pick</span> flags the simple-food option for the picky 6-year-old.</p>
+      <p class="note">Lunches and dinners are on the rider — by design. The day's Silk Road Food Trail marquee is below; local-guide picks (when written) follow, grouped by meal with a Google Maps link. Cash rules outside the big towns.</p>
       <div id="ramenCallout"></div>
       <div id="eats"></div>
     </div>
@@ -230,7 +239,7 @@
       <h3>Route for the day</h3>
       <div id="dmap"></div>
       <a class="btn-route" id="routeBtn" target="_blank" rel="noopener">🗺️ Open day route in Google Maps</a>
-      <a class="btn-dest" id="destBtn">🏯 Destination guide ↗</a>
+      <a class="btn-dest" id="destBtn">⛰️ Destination guide ↗</a>
       <a class="btn-dest" id="destWiki" target="_blank" rel="noopener">📖 Wikipedia ↗</a>
     </div>
     <div class="card">
@@ -240,7 +249,7 @@
   </aside>
 </div></div></main>
 
-<footer><div class="wrap">Part of the 7-day PNW Family First Tour (Jul 1–7, 2026) · <a href="index.html">Back to the full itinerary →</a></div></footer>
+<footer><div class="wrap">Part of the 16-day "From Desert Up to Glaciers" loop (Sep 5–20, 2026) · <a href="index.html">Back to the full itinerary →</a></div></footer>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
@@ -251,30 +260,31 @@
   const p = new URLSearchParams(location.search);
   let dn = parseInt(p.get('d'), 10);
   let idx = DAYS.findIndex(x => x.d === dn);
-  if (idx < 0) idx = DAYS.findIndex(x => !x.rail);  // default to the first riding day
+  if (idx < 0) idx = DAYS.findIndex(x => x.km > 0);  // default to the first riding day
   const day = DAYS[idx];
   dn = day.d;
   const dest = DEST.find(x => x.id === day.id) || DEST[0];
-  document.title = `Day ${day.d}: ${day.title} · PNW First Tour`;
+  document.title = `Day ${day.d}: ${day.title} · From Desert Up to Glaciers`;
 
   const short = s => s.split(',')[0];
   const fromS = short(day.gfrom), toS = short(day.gto);
   const stripTags = s => s.replace(/<[^>]+>/g, '');
 
-  // ---- interest badges (tie to the family interests in tour/00-family.md) ----
-  // Key order here is also the day-level badge display order (family-distinct first).
+  // ---- interest badges (keep in sync with the KW keys in gen_data.py) ----
+  // Key order here is also the day-level badge display order.
   const INTEREST = {
-    skill:['🎓','Skill-building'], food:['🦀','Food'], volcano:['🌋','Volcano'],
-    lighthouse:['🗼','Lighthouse'], wildlife:['🐾','Wildlife'], toys:['🧸','Toys'],
-    kid:['🧒','Kid'], moto:['🏍️','Riding'], coast:['🌊','Coast'],
-    scenic:['🌄','Scenic'], history:['🏛️','History']
+    training:['🎓','Training'], offroad:['🪨','Off-road'], pass:['🏔️','Mountain pass'],
+    yurt:['⛺','Yurt life'], nomad:['🦅','Nomad culture'], food:['🍜','Food'],
+    lake:['🌊','Lake'], desert:['🏜️','Desert'], canyon:['🏞️','Canyon'],
+    hotspring:['♨️','Hot springs'], border:['🛂','Border'], history:['🏛️','History'],
+    wildlife:['🐾','Wildlife'], moto:['🏍️','The bike'], scenic:['🌄','Scenic'], rest:['😌','Rest']
   };
   const badgesHtml = keys => (keys || []).filter(k => INTEREST[k])
     .map(k => `<span class="badge"><span class="em">${INTEREST[k][0]}</span>${INTEREST[k][1]}</span>`).join('');
   const firstSentence = s => { const m = (s || '').match(/^.*?[.!?](\s|$)/); return (m ? m[0] : (s || '')).trim(); };
 
   // hero — crossfading slideshow of the day's public images:
-  // the region-matched ukiyo-e print, then each stop's photo, then the destination photos.
+  // the region-matched scenic photo, then each stop's photo, then the destination photos.
   const bg = document.getElementById('bg');
   const slides = [];
   if (window.DAYART && window.DAYART[day.d]) slides.push(window.DAYART[day.d]);
@@ -303,32 +313,54 @@
     });
     start();
   }
-  document.getElementById('daytag').textContent = `Day ${day.d}` + (day.rest ? ' · Rest day' : '');
+  document.getElementById('daytag').textContent = `Day ${day.d}` +
+    (day.rest ? ' · Rest day' : (day.training ? ' · Training day' : '')) +
+    (day.date ? ` · ${day.date}` : '');
   document.getElementById('title').textContent = day.title;
   document.getElementById('route').innerHTML = stripTags(day.route);
-  const driveMinReal = day.dmin != null ? day.dmin : day.miles / 30 * 60;   // real OSRM road time when available
-  const rideH = day.miles > 0 ? Math.max(0.5, Math.round(driveMinReal / 60 * 2) / 2) : 0;
+  const driveMinReal = day.dmin != null ? day.dmin : day.km / 50 * 60;   // honest planning estimate
+  const rideH = day.km > 0 ? Math.max(0.5, Math.round(driveMinReal / 60 * 2) / 2) : 0;
   document.getElementById('stats').innerHTML =
     `<span class="pill region">${day.region}</span>` +
-    (day.miles > 0 ? `<span class="pill mi">🏍️ ${day.miles} mi</span><span class="pill time">≈ ${rideH}h riding</span>`
-                   : `<span class="pill time">No transfer — explore day</span>`);
+    (day.km > 0 ? `<span class="pill mi">🏍️ ${day.km} km</span><span class="pill time">≈ ${rideH}h riding</span>`
+                : `<span class="pill time">${day.rest ? 'No riding — rest day' : 'No riding today'}</span>`);
 
   // ---- summary section (place context + full day description) ----
   document.getElementById('placeCtx').textContent =
     dest.tagline ? `${dest.region} — ${stripTags(dest.tagline)}` : dest.region;
   document.getElementById('sumLead').textContent = day.desc;
   document.getElementById('sumGrid').innerHTML = [
-    day.rest ? ['Rest', 'Riding'] : [`${day.miles} mi`, 'Distance'],
-    day.rest ? ['Local', 'Pace'] : [`${rideH}h`, 'Riding time'],
+    day.km > 0 ? [`${day.km} km`, 'Distance'] : [day.rest ? 'Rest' : 'No ride', 'Riding'],
+    day.km > 0 ? [`${rideH}h`, 'Ride time (est.)'] : ['Local', 'Pace'],
     [day.poi.length, 'Stops'],
     [day.region, 'Region']
   ].map(([v, k]) => `<div class="s"><div class="v">${v}</div><div class="k">${k}</div></div>`).join('');
   const stopList = day.poi.map(p => p.name).join(', ').replace(/,([^,]*)$/, ' and$1');
-  const evening = dest.type === 'stay'
-    ? 'a beach walk and dinner once you arrive' : 'dinner in town once you arrive';
-  document.getElementById('sumBody').innerHTML = day.rest
-    ? `A relaxed base day around <b>${toS}</b> — no packing or transfer. Today's stops: ${stopList}. Plenty of downtime for ${evening.replace('once you arrive','')}.`
-    : `Today rides from <b>${fromS}</b> to <b>${toS}</b> (${day.miles} mi, ≈ ${rideH}h in the saddle), stopping at ${stopList}. Plan for ${evening}.`;
+  document.getElementById('sumBody').innerHTML = day.km > 0
+    ? `Today rides from <b>${fromS}</b> to <b>${toS}</b> (${day.km} km, ≈ ${rideH}h in the saddle), stopping at ${stopList}. Plan for dinner once you arrive — see Where to Eat.`
+    : `A no-riding day around <b>${toS}</b> — no packing, no transfer. Today: ${stopList}.`;
+
+  // ---- segment banner: which anchor-plan segment/option the reference day rides ----
+  (function () {
+    const el = document.getElementById('segBanner');
+    let html = '';
+    if (day.opt && window.SEGMENTS) {
+      let seg = null, opt = null;
+      window.SEGMENTS.forEach(s => s.options.forEach(o => { if (o.id === day.opt) { seg = s; opt = o; } }));
+      if (seg && opt) {
+        html = `<div class="segbanner"><div class="sb-ic">🧭</div><div>` +
+          `<div class="sb-k">The anchor plan · reference line</div>` +
+          `<div class="sb-d">Today rides <b>${opt.id} “${opt.name}”</b> — the reference option through segment ` +
+          `<b>${seg.seg}: ${seg.title}</b> (${opt.days} day${opt.days > 1 ? 's' : ''}, ${(opt.est ? '~' : '') + opt.km} km, ${opt.diffLabel || opt.difficulty}). ` +
+          `The group may swap in an easier/harder option — <a href="index.html#anchors">see all anchors &amp; options →</a></div></div></div>`;
+      }
+    } else if (day.optNote) {
+      html = `<div class="segbanner"><div class="sb-ic">🧭</div><div>` +
+        `<div class="sb-k">The anchor plan</div>` +
+        `<div class="sb-d">${day.optNote} <a href="index.html#anchors">See all anchors &amp; options →</a></div></div></div>`;
+    }
+    el.innerHTML = html;
+  })();
 
   // ---- luggage callout — shown only on days that carry a luggage note ----
   if (day.luggage) {
@@ -356,29 +388,28 @@
   const prevQ = i => i === 0 ? day.gfrom : day.poi[i - 1].q;   // leg starts at origin, then each prior stop
 
   const DWELL = { coffee:30, lunch:60, dinner:60, stop:40, scenic:25, activity:45 };  // minutes at each stop
-  const AVG = 30;  // mph effective touring pace (rural roads, newer rider, breaks)
-  if (!day.rest) {
+  if (day.km > 0) {
     ev.push(['08:00','⏰','Wake up','',false,'An 8am start most days — relaxed but not late.']);
     ev.push(['08:30','☕','Coffee','',false,'']);
-    ev.push(['09:00','🍳','Breakfast','',false,'At the hotel before gearing up.']);
-    ev.push(['09:30','🏍️','Depart','',false,`Gear on, bikes loaded — ${day.miles} mi, ≈${rideH}h riding to ${toS}.`]);
-    const depart = 570, driveMin = driveMinReal;   // 09:30 depart; real routed driving time
+    ev.push(['09:00','🍳','Breakfast','',false,'Included — at the hotel, guest house or camp before gearing up.']);
+    ev.push(['09:30','🏍️','Depart','',false,`Gear on, duffel in the truck — ${day.km} km, ≈${rideH}h riding to ${toS} behind the leader.`]);
+    const depart = 570, driveMin = driveMinReal;   // 09:30 depart; honest planning ride time
     let dwellBefore = 0;
     day.poi.forEach((q, i) => {
       const frac = (q.frac != null) ? q.frac : (i + 0.5) / day.poi.length;   // position along the route
-      const t = r5(depart + frac * driveMin + dwellBefore);                  // cumulative drive + time already spent stopped
+      const t = r5(depart + frac * driveMin + dwellBefore);                  // cumulative ride + time already spent stopped
       poiTimes[i] = hhmm(t);
       const k = KIND[q.slot] || KIND.stop;
       ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q, routeTo(prevQ(i), q.q), short(prevQ(i)), q.img, window.wikiLink(q.name, q.wiki)]);
       dwellBefore += (DWELL[q.slot] || 35);
     });
     const arrive = r5(depart + driveMin + dwellBefore);
-    ev.push([hhmm(arrive),'🏁',`Arrive ${toS}`,'',false,'Check in and park the bikes securely.']);
+    ev.push([hhmm(arrive),'🏁',`Arrive ${toS}`,'',false,'Check in and park the bikes where the hosts point — walled yard, guarded lot, or the grass by the yurts.']);
     const dinner = Math.max(1140, arrive + 90);
-    ev.push([hhmm(Math.min(dinner-60, arrive+45)),'🚿','Freshen up','',false,'Stretch the legs and shake off the road before dinner.']);
-    ev.push([hhmm(dinner),'🍽️','Dinner','',false,'Fresh local seafood or a good town spot — see Where to Eat.']);
+    ev.push([hhmm(Math.min(dinner-60, arrive+45)),'🚿','Freshen up','',false,'Stretch the legs and shake off the dust before dinner.']);
+    ev.push([hhmm(dinner),'🍽️','Dinner','',false,'Plov, lagman, shashlik or the host family\'s table — see Where to Eat. Cash outside the big towns.']);
   } else {
-    ev.push(['08:00','⏰','Wake up','',false,'No transfer today — an easy 8am start.']);
+    ev.push(['08:00','⏰','Wake up','',false,day.rest ? 'No riding today — an easy start.' : 'No riding today.']);
     ev.push(['08:30','☕','Coffee','',false,'']);
     ev.push(['09:00','🍳','Breakfast','',false,'']);
     const n = day.poi.length, startA = 600, endA = 1020;   // spread activities 10:00–17:00
@@ -388,11 +419,11 @@
       poiTimes[i] = hhmm(t);
       const k = KIND[q.slot] || KIND.activity;
       ev.push([hhmm(t), k[0], q.name, k[1], true, q.what, q.q, routeTo(prevQ(i), q.q), short(prevQ(i)), q.img, window.wikiLink(q.name, q.wiki)]);
-      if (!inserted && i === lunchAt-1) { ev.push(['12:30','🦀','Lunch','',false,'A relaxed local lunch.']); inserted = true; }
+      if (!inserted && i === lunchAt-1) { ev.push(['12:30','🍜','Lunch','',false,'A relaxed local lunch — lagman, manty or a long bowl of something.']); inserted = true; }
     });
-    if (!inserted) ev.push(['12:30','🦀','Lunch','',false,'A relaxed local lunch.']);
+    if (!inserted) ev.push(['12:30','🍜','Lunch','',false,'A relaxed local lunch.']);
     ev.push(['18:00','🌅','Free time','',false,'No clock to watch.']);
-    ev.push(['19:00','🍽️','Dinner','',false,'A local spot in town — see Where to Eat.']);
+    ev.push(['19:00','🍽️','Dinner','',false,'A local spot — see Where to Eat.']);
   }
 
   document.getElementById('sched').innerHTML = ev.map(e => {
@@ -441,7 +472,6 @@
   // ---- where to eat (per-day local-guide picks from window.DAYS[].eats) ----
   // Grouped by meal slot with the area; each pick shows name, cuisine, ⭐rating, why,
   // the verified Wikimedia dish photo (lazy + graceful fallback) and a Google Maps link.
-  // The kid pick (kid:true) is flagged for the picky 6-year-old.
   const MEAL = {
     breakfast:['🍳','Breakfast'], coffee:['☕','Coffee'], brunch:['🥐','Brunch'],
     lunch:['🍜','Lunch'], snack:['🍡','Snack'], dinner:['🍽️','Dinner'],
@@ -450,16 +480,16 @@
   const esc = s => String(s == null ? '' : s)
     .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 
-  // ---- 🦀 Coast Food Trail day callout (window.DAYS[].foodTrail) ----
-  // The day's marquee coastal eat with a key-free Google Maps link. Part of the themed
+  // ---- Silk Road Food Trail day callout (window.DAYS[].foodTrail) ----
+  // The day's marquee Silk Road eat with a key-free Google Maps link. Part of the themed
   // foodie thread surfaced from data.js (window.FOOD_TRAIL).
   if (day.foodTrail && day.foodTrail.length) {
     const rows = day.foodTrail.map(r =>
       `<div class="rc-row"><b>${esc(r.city)}</b> — ${esc(r.style)} · ` +
       `<a href="${esc(r.shopUrl)}" target="_blank" rel="noopener">${esc(r.shop)} ↗</a></div>`).join('');
     document.getElementById('ramenCallout').innerHTML =
-      `<div class="ramen-call"><div class="rc-ic">🦀</div><div>` +
-      `<div class="rc-k">Coast Food Trail</div>${rows}</div></div>`;
+      `<div class="ramen-call"><div class="rc-ic">🍜</div><div>` +
+      `<div class="rc-k">Silk Road Food Trail</div>${rows}</div></div>`;
   }
 
   if ((day.eats && day.eats.length) || (day.foodTrail && day.foodTrail.length)) {
@@ -470,8 +500,8 @@
       const ml = MEAL[meal.slot] || ['🍴', (meal.slot || 'Meal').charAt(0).toUpperCase() + (meal.slot || '').slice(1)];
       const picks = (meal.picks || []).map(p => {
         const rating = (p.rating != null && p.rating !== '') ? `<span class="pick-rating">⭐ ${esc(p.rating)}</span>` : '';
-        const trail = p.trail ? `<span class="trailbadge">🦀 Coast Food Trail</span>` : '';
-        const kid = p.kid ? `<span class="kidpick">👦 Kid pick — simple food</span>` : '';
+        const trail = p.trail ? `<span class="trailbadge">🍜 Silk Road Food Trail</span>` : '';
+        const kid = p.kid ? `<span class="kidpick">👍 Group pick</span>` : '';
         const cz = p.cuisine ? `<div class="cz">${esc(p.cuisine)}${p.cuisine_note ? ` · ${esc(p.cuisine_note)}` : ''}</div>` : '';
         const why = p.why ? `<div class="wy">${esc(p.why)}</div>` : '';
         const gmap = p.map ? `<a class="gmap" href="${esc(p.map)}" target="_blank" rel="noopener">📍 View on Google Maps ↗</a>` : '';
@@ -510,9 +540,8 @@
     day.poi.map(q => `<span class="ar">›</span><span class="n">${q.name.split(',')[0]}</span>`).join('') +
     `<span class="ar">›</span><span class="n key">${toS}</span>`;
 
-  // ---- no-riding days (miles === 0): show a note instead of a driving route map ----
-  //      (every day on this trip rides, so this is a safety fallback) ----
-  const noDrive = day.miles === 0;
+  // ---- no-riding days (km === 0: arrival, the Day-8 rest day, departure) ----
+  const noDrive = day.km === 0;
   if (noDrive) {
     const head = document.querySelector('aside .card h3');
     if (head) head.textContent = 'On foot today';
@@ -530,7 +559,7 @@
     ifr.src = window.gmapEmbedDir(day.gfrom, day.gto, day.poi.map(p => p.q));
     document.getElementById('dmap').replaceWith(ifr);
   } else {
-    const map = L.map('dmap', { scrollWheelZoom:false }).setView([dest.lat, dest.lng], day.miles>40?9:12);
+    const map = L.map('dmap', { scrollWheelZoom:false }).setView([dest.lat, dest.lng], day.km>60?8:11);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
       { attribution:'&copy; OSM &copy; CARTO', subdomains:'abcd', maxZoom:19 }).addTo(map);
     L.circleMarker([dest.lat, dest.lng], { radius:9, color:'#fff', weight:2, fillColor:'#e3493b', fillOpacity:1 })

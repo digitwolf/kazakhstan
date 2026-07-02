@@ -1,91 +1,64 @@
-# Getting Started — the trip begins in the garage
+# Getting Started — flights, papers, money, kit
 
-There are **no flights, no rentals, no passport and no IDP** on this trip. The family rides their **own** motorcycles round-trip from **Woodinville, WA**, departing **Wednesday 1 July 2026** and home **Tuesday 7 July 2026**. The whole "getting there" is loading the panniers, pairing the intercoms, and turning the key — so this page covers the few logistics that actually matter: the **ferry**, the **W230's fuel range**, **pace and intercoms**, the **mountain passes home**, the **Mount Rainier park entry**, and the **budget**.
+This trip is a **guided package**: the operator provides the bike, ride leader, support truck, lodging, breakfasts and **both airport transfers**. What's on the rider: flights, documents, personal insurance, fuel, lunches/dinners, and the right kit for desert heat *and* 4,000 m cold. Dates: **Sep 5–20, 2026 (planned — confirm with the operator; this loop is a custom extended edition of the published tour)**.
 
-This is built around **Galiya's first solo tour** on her **Kawasaki W230**, so the single biggest planning rule is upstream of all of this: **stay off freeways and Interstates the entire way** (see [overview](00-overview.md) and [00-family.md](00-family.md)). Everything below serves a relaxed, confidence-building first tour.
+## Flights — a round trip, Almaty in and out
 
----
+- The loop **starts and finishes in Almaty**, so it's a **simple round-trip ticket to Almaty International Airport (ALA)** — no open-jaw, no Bishkek flight logic. (Bishkek is now just the Day-12 overnight mid-tour; Manas/FRU plays no role.)
+- **Arrive ALA by Day 1 (Sat Sep 5).** The operator's transfer meets arrivals; bike handover and the welcome dinner are that day, so land in the morning or the day before.
+- **Depart ALA on Day 16 (Sun Sep 20).** Bike return and transfer included.
+- Typical US West Coast connections run via Istanbul (Turkish Airlines), Frankfurt, Dubai or Astana. Buffer days on either side are cheap insurance against a missed handover — and round-trip ALA fares are usually cheaper and more flexible than the old open-jaw.
 
-## Before you roll — the garage checklist
-- **Both bikes serviced and ready:** tires (pressure + tread), chain/final drive, brakes, lights, fluids. Do this a week ahead, not the night before.
-- **Registration & insurance** current on both bikes; **Galiya's motorcycle endorsement** in her wallet.
-- **Intercoms paired and tested** (see Pace, below) and phones/GPS mounted and charged.
-- **Pack light, pack the night before.** Panniers + a soft top bag; rain layers and warm layers on top (the coast is cool and damp, the Cascades are cold at altitude even in July). Aslan's full child-pillion gear fitted and tested while parked.
-- **Lodging booked — especially the coast.** Yachats and the central Oregon coast **sell out completely for the Fourth of July**; book months ahead. Confirm **secure motorcycle parking + passenger/child rules** at every property.
-- **Departure morning:** strong coffee in Woodinville, top off both tanks in town, and ride the short, mellow run to the Edmonds ferry.
+## The rental bike & the deposit
 
----
+- **Suzuki DR650SE** — 43 hp, 865–885 mm seat, ~160 kg, carbureted and simple. Third-party insurance is included in the price.
+- **USD 500 refundable damage deposit** paid at handover; **damage liability is on the rider** (a dropped bike comes out of the deposit). Photograph the bike thoroughly at the Day-1 inspection.
+- **Day 2 is the shakedown:** the training day exists to set the bike up (levers, pressures, sag) and surface any issues while you're still an hour from the workshop — use it hard.
+- Luggage rides in the support truck — the bike carries only a tank bag / small tail bag and water.
 
-## Day 1 — the Edmonds–Kingston ferry
-The trip opens by riding the bikes onto the **Edmonds–Kingston ferry** (Washington State Ferries), a relaxed ~30-minute Puget Sound crossing that **skips Seattle traffic entirely** and is a small adventure in itself for a six-year-old.
+## Documents
 
-- **No motorcycle reservation is needed — or possible — on this route.** WSF takes Edmonds–Kingston motorcycles **first-come, first-served**, so **arrive early** (especially around a holiday week), follow the dock crew to the motorcycle staging lane, and you'll typically load ahead of the car queue.
-- **Fare:** roughly **~$9 per motorcycle** (rider + bike; passengers ticket separately) — inexpensive, paid at the tollbooth. Confirm current fares and the sailing schedule on the WSF site before you go.
-- **On board:** put the bike in gear, leave it on the side stand (or as crew direct), and head up to the passenger deck — the Olympics are on the horizon the whole way across.
-- From **Kingston** the route drops onto quiet backroads to the **Hood Canal** shore (Hwy 106) — the gentle, low-speed first hour of the tour.
+- **Passport valid 6+ months beyond the trip**, with at least two blank pages — you'll collect stamps at ALA (in and out) **plus four border stamps mid-tour** (KZ exit + KG entry on Day 5, KG exit + KZ entry on Day 14).
+- **Kazakhstan — visa-free for US citizens, up to 30 days** per visit (max 90 days in any 180), all purposes except work/missionary. The trip's two KZ segments (Days 1–5 and 14–16) each restart well inside the limit. Registration with migration authorities is required for stays over 5 days — hotels handle it automatically for their guests. Source: [U.S. Embassy in Kazakhstan](https://kz.usembassy.gov/visa-free-travel-to-kazakhstan/), [travel.state.gov](https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Kazakhstan.html).
+- **Kyrgyzstan — visa-free for US citizens**, but the rules changed on **Jan 1, 2026**: now **up to 30 days within each 60-day period** from entry (the old flat 60-day allowance is gone). The trip's ~10 days in Kyrgyzstan (Days 5–14) fit easily; just don't assume old guidebook numbers. Source: [Kyrgyzstan Tourism](https://kyrgyzstan-tourism.com/news/kyrgyzstan-introduces-visa-free-regime-for-up-to-30-days-for-citizens-of-55-countries/), [Kyrgyz MFA](https://mfa.gov.kg/en/Main-menu/Consular-services/Consular-visas-issues/izovye-i-bezvizovye-rezhimy), [travel.state.gov](https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Kyrgyzstan.html). **Re-verify both countries' rules ~1 month before departure** — they move.
+- **Home motorcycle license + International Driving Permit (IDP)** — an operator requirement, and police document checks on KZ/KG highways are routine. Get the IDP from AAA (about USD 20, two passport photos).
+- Carry paper photocopies + phone photos of everything; keep the passport on you (not in the truck) on both border days.
 
----
+## The border days — Kegen/Karkara, twice
 
-## The W230's fuel range — plan every long leg around it
-Galiya's **Kawasaki W230** is a friendly 233cc single happiest at **55–65 mph**, but it carries a **small ~3.4-gallon tank**. On a relaxed tour it has comfortable range, but its useful tank is the limiter for the group, so **top off early and often** and never gamble on the next station. The legs to watch:
+The loop crosses the quiet rural **Kegen/Karkara post twice**: **southbound into Kyrgyzstan on Day 5** (after Charyn Canyon) and **northbound back into Kazakhstan on Day 14** (from Cholpon-Ata toward Saty). The drill is the same both ways: the operator handles the **bike's** paperwork (it's their fleet, they run this crossing every tour); each rider queues with their own passport — exit stamp one side, entry stamp the other, usually well under an hour here, but budget half a day in the plan each time. Cash only in the border area; no reliable ATMs between Chundzha and Karakol, or between Cholpon-Ata and Saty.
 
-- **Day 1:** the **Hood Canal → Aberdeen** rural stretch — fuel before it.
-- **Day 5:** the **Coast Range and Willamette Valley** legs out of Yachats — the trip's longest day; fuel in Corvallis and again before the final climb.
-- **Day 6:** **US-12 from Castle Rock to Packwood** is rural — top off in Castle Rock.
-- **Day 7:** **fuel in Packwood before entering Mount Rainier** — there is no gas inside the park, and the Paradise/Chinook Pass loop plus the run home is a long stretch between pumps.
+**Set your watch at the border.** Kazakhstan unified the whole country on **UTC+5 in March 2024**; Kyrgyzstan is **UTC+6**. So on **Day 5 (KZ → KG) clocks go forward +1 h**, and on **Day 14 (KG → KZ) clocks go back −1 h** — a free extra hour of daylight for the Saty leg and Lake Kaindy. Phones on auto-sync usually catch it late in the border valley; the ride leader's briefing time is the truth.
 
-A simple rule for the group: **whenever Galiya's bike is at half a tank near a town, everyone fills up.**
+## Money — tenge, som, and cash
 
----
+- **Kazakhstan: tenge (KZT)** ≈ 500/USD; **Kyrgyzstan: som (KGS)** ≈ 87/USD — both approximate, check before travel.
+- **Cash is the tool.** Fuel stations, roadside cafés, bazaars, and everything at Song-Kol/Suusamyr/Saty are cash-only. Cards work in Almaty, Karakol, Bishkek and Cholpon-Ata hotels/restaurants. Withdraw tenge at ALA, som in Karakol or Bishkek; carry ~USD 100 equivalent in small local notes at all times, plus USD ~200 in crisp bills as reserve (USD is exchangeable everywhere). Keep enough tenge from the first KZ leg to cover Day 14–15 (Saty is cash-only and has no ATM).
+- **Meal budget (lunches/dinners are excluded):** roadside café lunch USD 3–6, good sit-down dinner USD 8–15, city celebration dinner USD 20–30. Plan **~USD 25–35/day over ~15 eating days ≈ USD 400–525 for the trip**, and eat like a king (see the [Silk Road Food Trail](00-overview.md#the-silk-road-food-trail)).
 
-## Pace, intercoms & group riding
-- **Galiya rides up front and sets the pace.** Ruslan rides sweep at the back (carrying Aslan), keeping her speed and giving her room — no pushing from behind.
-- **Intercoms on the whole time** so the riders can call out hazards, fuel, and "I need a break," and so Aslan can talk to dad.
-- **Breaks every 60–90 minutes** for Aslan — built into every day's stop list.
-- **No riding after dark, no pushed-hard wet twisties.** The coast is often damp; ride to the conditions.
-- **No two long days back-to-back** — the long Day 5 deliberately follows the Yachats rest day.
+## Fuel strategy on the DR650
 
----
+- **Fuel is excluded.** The DR650SE's ~13 L tank at ~4.5–5 L/100 km gives a real-world **range of ~250 km** — exactly the length of the longest gaps.
+- Rule: **fill at every fuel stop the ride leader calls**, and brim it before Altyn-Emel and the desert-piste run to Chundzha (D3/D4), the Barskoon climb (D7), Song-Kol (D10–11) — there are no stations in the parks, on the passes, or at the lake — **and before the Kolsai/Saty leg (D14–15)**: fill around Kegen after the border; Saty itself has no reliable station, and the next sure fuel toward home is on the Shelek road — with the Kaindy/Kolsai detours the Saty legs run right up against the tank's range.
+- The support truck carries reserve fuel for emergencies, not for planning around.
+- 91–92 octane (AI-92) is universal and fine for the DR; expect roughly **USD 0.55–0.80/L**, so **~USD 95–125 total** for ~2,800 km. Pay cash.
 
-## The ride home — the mountain passes
-The return (Days 6–7) trades saltwater for the Cascades and ends on the trip's best riding.
+## Packing — the truck carries it, the mountain rates it
 
-- **Day 7 routes home *through* Mount Rainier National Park** (Stevens Canyon Road → Paradise → Reflection Lakes → Narada Falls) and **out over Chinook Pass (SR-410)** to alpine Tipsoo Lake, then down through Enumclaw.
-- **Chinook Pass normally clears of snow and reopens by early July**, but it is a seasonal high pass — **check the WSDOT Chinook Pass report before Day 7.** If it's still closed, the fallback is the lowland SR-7 / Enumclaw route home (busier, less scenic, but it gets you back).
-- These are **scenic, low-speed mountain roads** chosen as the new rider's graduation ride — not technical alpine sport-riding.
+- **The support truck carries the duffel** (soft bag, ~15–20 kg); you only ride with a day kit. Pack for two climates in one trip — and for **16 days**, plan on laundry at the two-night stops (Karakol hotel, the Day-8 rest day) rather than more clothes.
+- **Riding kit:** full ADV suit with removable thermal + waterproof liners, off-road-capable boots, two glove weights (summer + insulated), balaclava/neck tube. Hydration pack — desert days *and* altitude both punish dehydration.
+- **Layers for 4,000 m:** merino base layers, a packable down mid-layer, warm hat. Suek Pass and the ~3,000 m nights can sit near or below freezing even in September, while Chundzha's desert can top 30 °C days earlier.
+- **For the yurt camps (D7–8, D10 — three nights):** a **sleeping-bag liner** (blankets are provided, laundering is rustic), headlamp, wet wipes, small quick-dry towel, earplugs, and swim kit for the rest day at the lake. Power at yurt camps is limited/solar — bring a 10,000+ mAh power bank.
+- **Small stuff that earns its place:** sunscreen + lip balm (altitude sun), ibuprofen/acetaminophen for altitude headaches, water-purification backup, TP, a few small gifts for herder hosts.
 
----
+## Comms & eSIM
 
-## Mount Rainier — park entry & timed entry
-- **Mount Rainier National Park charges an entrance fee** (private vehicle/motorcycle pass, valid 7 days) — or use an **America the Beautiful annual pass**. Each motorcycle pays the per-motorcycle rate.
-- In summer the park runs a **timed-entry reservation** for the busy **Paradise corridor** (and Sunrise). **Reserve your Day-7 timed-entry slot in advance** through Recreation.gov as soon as the window opens; a limited number are also released the day before. Without it you may be turned back at the gate during peak hours.
-- There is **no fuel, and limited services, inside the park** — fuel and eat in Packwood first.
+- **eSIM before you fly** (Airalo/Holafly regional Central Asia plans cover both countries), or local SIMs: **Beeline/Kcell** in Kazakhstan (kiosk at ALA), **O!/Beeline/MegaCom** in Kyrgyzstan — cheap and fast in towns, passport needed to register.
+- **Expect zero coverage** at Song-Kol, in Altyn-Emel's back country, on all the high passes, and patchy signal around Saty/Kolsai. The safety net is the ride leader and support truck, not your phone. Tell family the blackout days in advance; consider a Garmin inReach if they'll worry.
+- Remember the **time change** (KG is +1 h on KZ) when scheduling calls home from Days 5–14.
 
----
+## Insurance — the non-negotiable one
 
-## Budget snapshot (indicative, USD)
-A short, own-bikes trip is cheap by touring standards — the cost is fuel, six nights of lodging, and a couple of small fees.
-
-| Item | Estimate | Notes |
-|---|---|---|
-| **Fuel (both bikes, ~970 mi each)** | ~$120–180 total | Two thrifty bikes; coast/mountain two-lanes. |
-| **Lodging — 6 nights** | ~$1,100–1,800 total | 1× Westport, 1× Astoria, **2× Yachats** (the splurge / books out for the 4th), 1× Castle Rock/Silver Lake, 1× Packwood. See each destination file for property options & prices. |
-| **Edmonds–Kingston ferry** | ~$9 / motorcycle (~$18 both) | First-come, first-served; passengers ticket separately. |
-| **Mount Rainier park pass** | ~$30 / motorcycle (or the annual pass) | Plus a (small-fee or free) **timed-entry reservation** for Paradise. |
-| **Mount St. Helens** | Visitor-center / site fees only | The Silver Lake state-park visitor center charges a modest admission; the monument's upper road (Johnston Ridge) is closed. |
-| **Food** | budget to taste | The coast seafood + Tillamook + mountain burgers are half the point — see the [Coast Food Trail](00-overview.md#the-coast-food-trail). |
-
-No flights, no rental fees, no insurance deposits, no luggage forwarding — the savings of touring from your own driveway.
-
----
-
-## Reference links
-- [Washington State Ferries — schedules (pick Edmonds–Kingston)](https://wsdot.wa.gov/travel/washington-state-ferries/schedules)
-- [Washington State Ferries — main page (fares, motorcycles, info)](https://wsdot.wa.gov/travel/washington-state-ferries)
-- [Mount Rainier National Park (NPS) — fees & timed entry](https://www.nps.gov/mora/index.htm)
-- [Mount Rainier timed-entry reservations (Recreation.gov)](https://www.recreation.gov/timed-entry/10089508)
-- [Mount St. Helens National Volcanic Monument (USFS)](https://www.fs.usda.gov/giffordpinchot/recreation/mount-st-helens)
-- [Mount St. Helens Visitor Center at Silver Lake (WA State Parks)](https://parks.wa.gov/mount-st-helens-visitor-center)
-- [WSDOT — Chinook Pass (SR-410) pass report](https://wsdot.com/travel/real-time/mountainpasses/chinook)
-- [WSDOT mountain pass reports (all passes)](https://wsdot.com/travel/real-time/mountainpasses)
-- [Wikipedia — Kawasaki W230](https://en.wikipedia.org/wiki/Kawasaki_W230)
+- **Personal insurance is excluded from the tour price.** Buy **travel medical + emergency evacuation** cover for the full **16 days** that **explicitly includes riding a motorcycle over 250 cc** (many default policies cap engine size or exclude moto entirely — the DR650 is 644 cc) and is valid **to at least 4,100 m altitude** in **both Kazakhstan and Kyrgyzstan**.
+- Evacuation matters more than medical here: from Song-Kol, the Barskoon passes or the Kolsai valley, the realistic path to a Western-standard hospital is a long ground leg plus a flight. Carry the insurer's 24-h number on paper, and give a copy to the ride leader.
+- The bike's **third-party** insurance is included; your **damage liability** on the rental is separate (the deposit) — some travel policies can cover rental-vehicle excess, worth checking.

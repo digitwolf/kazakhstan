@@ -1,30 +1,39 @@
 #!/usr/bin/env python3
 """Generate data.js from tour/ markdown (website-builder).
-Run: python3 gen_data.py  (writes data.js)."""
+Run: python3 gen_data.py  (writes data.js).
+
+Trip: "From Desert Up to Glaciers — the Loop" — a 16-day guided ADV motorcycle
+loop, Almaty -> Almaty (Kazakhstan + Kyrgyzstan), Sep 5-20 2026, ~2,800 km,
+rental Suzuki DR650SE, guided by Silk Off Road Tours. Distances are KILOMETRES
+site-wide; prices are USD. Source of record: tour/*.md."""
 import re, json, glob, os
 
 TOUR = os.path.join(os.path.dirname(__file__), "tour", "destinations")
 
-# id -> (lat, lng, zoom). Coordinates curated by website-builder (not in md).
+# id -> (lat, lng, zoom). Curated by website-builder; towns/villages geocoded via the
+# Google Geocoding API (key from ~/google_maps.key — never committed), natural features
+# cross-checked against OpenStreetMap/Nominatim.
 COORDS = {
-    "home":      (47.75530, -122.13389, 10),  # start AND finish — Woodinville, WA
-    "westport":  (46.89009, -124.10406, 12),
-    "astoria":   (46.18788, -123.83125, 12),
-    "cannon-beach": (45.89177, -123.96153, 12),
-    "tillamook": (45.45650, -123.84370, 11),
-    "yachats":   (44.31123, -124.10484, 13),
-    "st-helens": (46.19120, -122.19440,  9),  # the volcano (overnight base is Castle Rock)
-    "rainier":   (46.85272, -121.76040,  9),  # the mountain (overnight base is Packwood)
+    "almaty":      (43.23798, 76.88286, 11),  # base — start AND finish of the loop
+    "altyn-emel":  (44.15957, 78.75441,  9),  # Basshi village, the park gate (A1)
+    "chundzha":    (43.53651, 79.46360, 11),
+    "karakol":     (42.47821, 78.39560, 12),  # A2
+    "issyk-kul":   (42.16568, 77.44438, 10),  # south-shore yurt camp, Tosor/Tamga (A3)
+    "kochkor":     (42.21640, 75.75754, 13),
+    "song-kol":    (41.83392, 75.13119, 10),  # A4
+    "suusamyr":    (42.17893, 73.96243, 10),
+    "bishkek":     (42.87462, 74.56976, 11),
+    "cholpon-ata": (42.64854, 77.08275, 12),
+    "saty":        (43.06992, 78.40982, 11),  # A5
 }
 
-# Destination/gallery order (== file order). "home" is the start AND finish of the loop;
-# it stays in the gallery, the route ribbon and the map polyline (type "start"). The
-# remaining six stops follow in route order down the coast and back over the Cascades.
-ORDER = ["home","westport","astoria","cannon-beach","tillamook","yachats","st-helens","rainier"]
+# Destination/gallery order (== file order == route order). "almaty" is the base —
+# start AND finish of the loop (type "start"); the other ten stops follow in route order.
+ORDER = ["almaty","altyn-emel","chundzha","karakol","issyk-kul","kochkor",
+         "song-kol","suusamyr","bishkek","cholpon-ata","saty"]
 
 def md_inline(s):
-    """Convert markdown bold/links to HTML, drop [KID] markers."""
-    s = s.replace("**[KID]**", "").replace("[KID]", "")
+    """Convert markdown bold/links to HTML."""
     s = re.sub(r"\[([^\]]+)\]\((https?://[^)]+)\)",
                r'<a href="\2" target="_blank" rel="noopener">\1</a>', s)
     s = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", s)  # remaining (relative) md links -> plain text
@@ -33,7 +42,6 @@ def md_inline(s):
     return re.sub(r"\s+", " ", s).strip()
 
 def plain(s):
-    s = s.replace("**[KID]**", "").replace("[KID]", "")
     s = re.sub(r"\*\*([^*]+)\*\*", r"\1", s)
     s = re.sub(r"\*([^*]+)\*", r"\1", s)
     s = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", s)
@@ -56,16 +64,9 @@ def parse_dest(path):
     text = open(path, encoding="utf-8").read()
     lines = text.splitlines()
     d = {}
-    # title + jp
     m = re.match(r"^#\s+(.*)$", lines[0])
-    title = m.group(1).strip()
-    jm = re.search(r"([　-鿿＀-￯]+)\s*$", title)
-    if jm:
-        d["jp"] = jm.group(1)
-        d["name"] = title[:jm.start()].strip()
-    else:
-        d["jp"] = ""
-        d["name"] = title
+    d["name"] = m.group(1).strip()
+    d["jp"] = ""   # legacy field kept for template compatibility (unused on this tour)
     # tagline = first blockquote
     for ln in lines:
         if ln.startswith("> "):
@@ -87,8 +88,9 @@ def parse_dest(path):
         if m:
             ride = m.group(1).strip()
             break
-    rm = re.search(r"(\d+)\s*mi", ride)
-    d["legMiles"] = int(rm.group(1)) if rm else 0
+    # "NN km (...)" (a "~" prefix is fine); Almaty uses "—" (arrival day) -> 0
+    rm = re.search(r"(\d[\d,]*)\s*km", ride)
+    d["legKm"] = int(rm.group(1).replace(",", "")) if rm else 0
 
     secs = sections(text)
     # About -> intro paragraphs (skip blockquotes)
@@ -128,7 +130,7 @@ def parse_dest(path):
             food.append({"n": plain(body), "d": ""})
     d["food"] = food
 
-    # Where to stay -> hotels (table)
+    # Where to stay -> hotels (table: Property | Type | Parking | Price/night (USD) | — | Notes)
     hotels = []
     for ln in secs.get("Where to stay", []):
         if not ln.strip().startswith("|"):
@@ -139,19 +141,17 @@ def parse_dest(path):
         prop = cells[0]
         if prop.lower().startswith("property") or set(prop) <= set("-: "):
             continue
-        typ, parking, yen, usd, notes = cells[1], cells[2], cells[3], cells[4], cells[5]
+        typ, parking, price, _spare, notes = cells[1], cells[2], cells[3], cells[4], cells[5]
         if prop.startswith("_") or typ == "—":
             hotels.append({"n": plain(prop), "t": "Note", "d": plain(notes)})
         else:
             h = {"n": plain(prop), "t": plain(typ), "d": plain(notes)}
             if parking and parking != "—":
                 h["park"] = md_inline(parking)
-            if yen and yen != "—":
-                h["price"] = yen
+            if price and price != "—":
+                h["price"] = price
             hotels.append(h)
     if not hotels:
-        # No lodging table (e.g. a quick stop with no overnight): capture the first prose
-        # paragraph of "Where to stay" as a single Note row so the card still explains itself.
         buf = []
         for ln in secs.get("Where to stay", []):
             if ln.strip() == "":
@@ -184,7 +184,6 @@ def parse_dest(path):
 DESTS = {}
 for path in sorted(glob.glob(os.path.join(TOUR, "*.md"))):
     d = parse_dest(path)
-    # id from filename: NN-id.md
     fid = re.match(r"\d+-(.*)\.md", os.path.basename(path)).group(1)
     d["id"] = fid
     lat, lng, zoom = COORDS[fid]
@@ -196,67 +195,86 @@ def P(did, idx):
     ph = DESTS[did]["photos"]
     return ph[idx % len(ph)]["src"]
 
-# POI images are pulled from the verified destination photos via P(id, idx) so every
-# image is an already-HTTP-200-checked Wikimedia thumbnail. IMG holds nothing extra.
-IMG = {}
-
-# Verified English-Wikipedia article URLs (HTTP 200, batch-verified) keyed by POI name.
+# Verified English-Wikipedia article URLs (checked via the MediaWiki API — all resolve).
 # poi() attaches WIKI[name] as an explicit `wiki` override; everything else falls back
 # at render time to a Wikipedia search link via window.wikiLink (always resolves).
 WIKI = {
-    "Edmonds–Kingston Ferry": "https://en.wikipedia.org/wiki/Edmonds%E2%80%93Kingston_ferry",
-    "Hood Canal": "https://en.wikipedia.org/wiki/Hood_Canal",
-    "Grays Harbor Lighthouse": "https://en.wikipedia.org/wiki/Grays_Harbor_Light",
-    "Cape Disappointment": "https://en.wikipedia.org/wiki/Cape_Disappointment_(Washington)",
-    "Long Beach Peninsula": "https://en.wikipedia.org/wiki/Long_Beach_Peninsula",
-    "Astoria–Megler Bridge": "https://en.wikipedia.org/wiki/Astoria%E2%80%93Megler_Bridge",
-    "Astoria Column": "https://en.wikipedia.org/wiki/Astoria_Column",
-    "Columbia River Maritime Museum": "https://en.wikipedia.org/wiki/Columbia_River_Maritime_Museum",
-    "Haystack Rock, Cannon Beach": "https://en.wikipedia.org/wiki/Haystack_Rock",
-    "Tillamook Creamery": "https://en.wikipedia.org/wiki/Tillamook_County_Creamery_Association",
-    "Tillamook Air Museum": "https://en.wikipedia.org/wiki/Tillamook_Air_Museum",
-    "Cape Meares Lighthouse": "https://en.wikipedia.org/wiki/Cape_Meares_Light",
-    "Cape Kiwanda": "https://en.wikipedia.org/wiki/Cape_Kiwanda_State_Natural_Area",
-    "Oregon Coast Aquarium": "https://en.wikipedia.org/wiki/Oregon_Coast_Aquarium",
-    "Cape Perpetua": "https://en.wikipedia.org/wiki/Cape_Perpetua",
-    "Thor's Well & Cape Perpetua": "https://en.wikipedia.org/wiki/Cape_Perpetua",
-    "Heceta Head Lighthouse": "https://en.wikipedia.org/wiki/Heceta_Head_Light",
-    "Sea Lion Caves": "https://en.wikipedia.org/wiki/Sea_Lion_Caves",
-    "Yachats 4th of July": "https://en.wikipedia.org/wiki/Yachats,_Oregon",
-    "Mount St. Helens Visitor Center": "https://en.wikipedia.org/wiki/Mount_St._Helens",
-    "Spirit Lake Highway viewpoints": "https://en.wikipedia.org/wiki/Spirit_Lake_(Washington)",
-    "Coldwater Lake": "https://en.wikipedia.org/wiki/Coldwater_Lake",
-    "Mount St. Helens": "https://en.wikipedia.org/wiki/Mount_St._Helens",
-    "Paradise, Mount Rainier": "https://en.wikipedia.org/wiki/Paradise,_Mount_Rainier_National_Park",
-    "Reflection Lakes": "https://en.wikipedia.org/wiki/Mount_Rainier_National_Park",
-    "Narada Falls": "https://en.wikipedia.org/wiki/Narada_Falls",
-    "Tipsoo Lake & Chinook Pass": "https://en.wikipedia.org/wiki/Chinook_Pass",
-    "Packwood": "https://en.wikipedia.org/wiki/Packwood,_Washington",
-    "Corvallis": "https://en.wikipedia.org/wiki/Corvallis,_Oregon",
-    "Enumclaw": "https://en.wikipedia.org/wiki/Enumclaw,_Washington",
+    "Almaty": "https://en.wikipedia.org/wiki/Almaty",
+    "Panfilov Park & Zenkov Cathedral": "https://en.wikipedia.org/wiki/Ascension_Cathedral,_Almaty",
+    "Kok-Tobe at sunset": "https://en.wikipedia.org/wiki/Kok_Tobe",
+    "Medeu": "https://en.wikipedia.org/wiki/Medeu",
+    "Altyn-Emel National Park": "https://en.wikipedia.org/wiki/Altyn-Emel_National_Park",
+    "The Singing Dune": "https://en.wikipedia.org/wiki/Altyn-Emel_National_Park",
+    "Aktau chalk mountains": "https://en.wikipedia.org/wiki/Aktau_Mountains",
+    "Katutau lava fields": "https://en.wikipedia.org/wiki/Katutau",
+    "Charyn Canyon — the Valley of Castles": "https://en.wikipedia.org/wiki/Charyn_Canyon",
+    "Chundzha hot springs": "https://en.wikipedia.org/wiki/Chunja_hot_springs",
+    "Kegen & the Karkara border (KZ → KG, clocks +1 h)": "https://en.wikipedia.org/wiki/Kegen",
+    "Holy Trinity Church, Karakol": "https://en.wikipedia.org/wiki/Karakol",
+    "Jeti-Oguz — the Seven Bulls": "https://en.wikipedia.org/wiki/Jeti-Oguz",
+    "Altyn-Arashan track & hot springs": "https://en.wikipedia.org/wiki/Altyn_Arashan",
+    "Przhevalsky memorial (optional)": "https://en.wikipedia.org/wiki/Nikolay_Przhevalsky",
+    "Barskoon gorge & Gagarin's waterfall": "https://en.wikipedia.org/wiki/Barskoon",
+    "First swim in Issyk-Kul": "https://en.wikipedia.org/wiki/Issyk-Kul",
+    "Swim, nap, repeat": "https://en.wikipedia.org/wiki/Issyk-Kul",
+    "Eagle-hunter farmhouse lunch": "https://en.wikipedia.org/wiki/Hunting_with_eagles",
+    "Terskey Alatau coast roads": "https://en.wikipedia.org/wiki/Terskey_Alatoo",
+    "Shyrdak felt workshops": "https://en.wikipedia.org/wiki/Shyrdak",
+    "Kochkor bazaar — last fuel & ATMs": "https://en.wikipedia.org/wiki/Kochkor",
+    "First sight of Song-Kol": "https://en.wikipedia.org/wiki/Song-K%C3%B6l",
+    "Kumis & boorsok in the yurts": "https://en.wikipedia.org/wiki/Kumis",
+    "Kokomeren gorge": "https://en.wikipedia.org/wiki/K%C3%B6k%C3%B6meren",
+    "Suusamyr valley & its honey": "https://en.wikipedia.org/wiki/Suusamyr_Valley",
+    "Too-Ashuu Pass & the summit tunnel": "https://en.wikipedia.org/wiki/T%C3%B6%C3%B6_Ashuu",
+    "Ala-Too Square": "https://en.wikipedia.org/wiki/Ala-Too_Square",
+    "Osh Bazaar": "https://en.wikipedia.org/wiki/Osh_Bazaar",
+    "Big-city dinner — plov & the classics": "https://en.wikipedia.org/wiki/Pilaf",
+    "The Boom gorge": "https://en.wikipedia.org/wiki/Boom_Gorge",
+    "Cholpon-Ata petroglyphs": "https://en.wikipedia.org/wiki/Cholpon-Ata",
+    "North-shore beach evening": "https://en.wikipedia.org/wiki/Issyk-Kul",
+    "Smoked lake fish on the promenade": "https://en.wikipedia.org/wiki/Issyk-Kul",
+    "Around the lake's eastern tip": "https://en.wikipedia.org/wiki/T%C3%BCp",
+    "Lake Kaindy (if light allows)": "https://en.wikipedia.org/wiki/Lake_Kaindy",
+    "Lake Kaindy & the sunken forest": "https://en.wikipedia.org/wiki/Lake_Kaindy",
+    "Kolsai Lake 1 morning walk": "https://en.wikipedia.org/wiki/Kolsay_Lakes_National_Park",
+    "Balykchy": "https://en.wikipedia.org/wiki/Balykchy",
+    "The DR650 handover & inspection": "https://en.wikipedia.org/wiki/Suzuki_DR650",
+    "Bike return & the deposit": "https://en.wikipedia.org/wiki/Suzuki_DR650",
+    "Welcome dinner — beshbarmak": "https://en.wikipedia.org/wiki/Beshbarmak",
+    "Celebration dinner in Almaty": "https://en.wikipedia.org/wiki/Beshbarmak",
+    "33 Parrots Pass switchbacks": "https://en.wikipedia.org/wiki/Kalmak-Ashuu",
+    "Life on the jailoo": "https://en.wikipedia.org/wiki/Song-K%C3%B6l",
 }
 
-# ============ INTEREST THEMES (tie to tour/00-family.md) ============
+# ============ INTEREST THEMES (tie to tour/00-riders.md + 00-overview.md) ============
 # Optional per-POI `it` (interest) tags drive the day.html "day highlights" badges and
-# the per-stop badges. Render labels/emoji live in day.html; here we store keys only.
-# Keys (priority/display order): skill 🎓 · food 🦀 · volcano 🌋 · lighthouse 🗼 ·
-#   wildlife 🐾 · toys 🧸 · kid 🧒 · moto 🏍️ · coast 🌊 · scenic 🌄 · history 🏛️
-# Family map: Galiya → food/scenic/coast; Aslan → kid/toys/wildlife/volcano; Ruslan → moto/skill.
-# "skill" is the trip's signature thread — building a brand-new rider's confidence.
+# the per-stop badges. Render labels/emoji live in day.html (keep its INTEREST map in
+# sync with these keys); here we store keys only.
+# Keys (priority/display order): training 🎓 · offroad 🪨 · pass 🏔️ · yurt ⛺ ·
+#   nomad 🦅 · food 🍜 · lake 🌊 · desert 🏜️ · canyon 🏞️ · hotspring ♨️ · border 🛂 ·
+#   history 🏛️ · wildlife 🐾 · moto 🏍️ · scenic 🌄 · rest 😌
 KW = [
- ("skill",    ["shakedown","warm-up","first miles","confidence","graduation","start line","new rider","skill-build"]),
- ("food",     ["chowder","seafood","crab","dungeness","oyster","fish and chips","fish & chips","cheese","creamery",
-               "ice cream","brewery","brewing","bakery","coffee","clam","tuna","salmon","market","diner","burgers","pub"]),
- ("volcano",  ["volcano","st. helens","st helens","crater","eruption","lava","blast zone","spirit lake","coldwater"]),
- ("lighthouse",["lighthouse","light station","heceta","light "]),
- ("wildlife", ["sea lion","sea lions","elk","marmot","wildlife","tide pool","tidepool","whale","puffin","aquarium","seal","dory"]),
- ("toys",     ["toy","souvenir","candy","kite","gift shop"]),
- ("kid",      ["kid","goonies","glider","trolley","blimp hangar","air museum","beach","sand","playground","petting"]),
- ("moto",     ["chinook pass","stevens canyon","switchback","mountain pass","scenic byway","the road","sweepers","hairpin"]),
- ("coast",    ["beach","surf","jetty","ocean","seashore","cove","headland","dune","bay","harbor","harbour","spit"]),
- ("scenic",   ["viewpoint","overlook","falls","waterfall","gorge","vista","panorama","wildflower","meadow","reflection",
-               "lake","forest","old-growth","sunset","column","cape","bridge","ferry","canal","river","pass"]),
- ("history",  ["museum","historic","fort","column","lewis and clark","clatsop","maritime","heritage","pioneer","1980"]),
+ ("training",  ["skills session","training day","off-road stance","gravel braking","sand basics",
+                "shakedown","drill","option-selector","suspension sag"]),
+ ("offroad",   ["gravel","dirt","piste","off-road","offroad","washboard","doubletrack","rocky",
+                "rough track","4x4","single-track","rutted","fords"]),
+ ("pass",      [" pass","switchback","hairpin","serpentine","summit tunnel","4,021 m","3,000 m"]),
+ ("yurt",      ["yurt","jailoo"]),
+ ("nomad",     ["nomad","herder","eagle hunt","berkutchi","kumis","shyrdak","felt","horseback","mare"]),
+ ("food",      ["lagman","laghman","plov","beshbarmak","besbarmak","manty","samsa","shashlik","ashlan",
+                "boorsok","bazaar","honey","fish","apricot","tea stop","kurut"]),
+ ("lake",      ["lake","shore","beach","swim","issyk-kul","song-kol","kolsai","kaindy"]),
+ ("desert",    ["desert","dune","steppe","badland","chalk","semi-desert","aktau","katutau","lava"]),
+ ("canyon",    ["canyon","gorge","valley of castles"]),
+ ("hotspring", ["hot spring","hot-spring","thermal","banya","arashan","soak"]),
+ ("border",    ["border","kegen","karkara","passport","clocks"]),
+ ("history",   ["museum","petroglyph","cathedral","mosque","church","soviet","monument","bronze age",
+                "saka","memorial","explorer","orthodox","tsarist","balbal"]),
+ ("wildlife",  ["kulan","gazelle","wildlife","marmot","golden eagle","birdlife","crane","ibex"]),
+ ("moto",      ["dr650","handover","bike check","chain","air filter","deposit","support truck","ride leader"]),
+ ("scenic",    ["viewpoint","panorama","sunset","glacier","waterfall","peak","alpine","meadow","vista",
+                "stars","milky way","golden hour","pasture"]),
+ ("rest",      ["rest day","laundry","no riding","nap","sleep in"]),
 ]
 
 def infer_interests(name, what, slot, explicit):
@@ -276,115 +294,409 @@ def infer_interests(name, what, slot, explicit):
             seen.append(k)
     return seen[:3]
 
-# ============ DAYS (0..23) ============
-# Each: d, id, miles, dmin(optional), rest, rail(optional), region, title, route,
-#       desc, tags, gfrom, gto, gvia, poi[]
-def poi(name, what, q, slot, img, wiki=None, it=None, kid=False):
-    p = {"name": name, "what": what, "q": q, "slot": slot, "img": img}
+# ============ DAYS (1..16) ============
+# Each: d, date, id (that night's destination), km, dmin (honest ride-time minutes:
+# ~65 km/h asphalt, ~35 km/h gravel mixes per the day's character — several legs are
+# off Google's road graph, so these are planning estimates, not routed figures),
+# rest/training flags, region, title, route, desc, tags, opt (anchor-plan option the
+# reference day rides, see SEGMENTS), gfrom/gto/gvia, poi[].
+def poi(name, what, q, slot, img=None, wiki=None, it=None):
+    p = {"name": name, "what": what, "q": q, "slot": slot}
+    if img:
+        p["img"] = img
     w = wiki or WIKI.get(name)
     if w:
         p["wiki"] = w   # explicit verified article; else day.html falls back to a Wikipedia search link
     interests = infer_interests(name, what, slot, it)
     if interests:
-        p["it"] = interests   # interest-theme keys → emoji badges in day.html
-    if kid:
-        p["kid"] = True   # explicit kid-friendly stop (also surfaced via the `kid` interest badge)
+        p["it"] = interests   # interest-theme keys -> emoji badges in day.html
     return p
 
 DAYS = [
- {"d":1,"id":"westport","miles":176,"dmin":275,"ferry":True,"rest":False,"region":"Puget Sound → Washington Coast",
-  "title":"Ferry, Fjord & First Miles",
-  "route":"Woodinville → Edmonds–Kingston ferry → Hood Canal (Hama Hama oysters) → Westport",
-  "desc":"The trip begins the gentle way. Ride the short hop from Woodinville to the Edmonds waterfront and roll the bikes onto the Edmonds–Kingston ferry — a calm half-hour across Puget Sound that skips Seattle's traffic entirely and lets Galiya settle in before the first real miles. From Kingston, quiet two-lane roads trace the west shore of Hood Canal, the long glacial fjord with the Olympics rising across the water — with a stop at the family's favourite, the Hama Hama Oyster Saloon in Lilliwaup, for a fresh oyster lunch right on the water. Then drop south through Shelton to Aberdeen and out to the Pacific at Westport. It's a forgiving, scenic first day built around the ferry break and frequent stops — the W230's confidence-building shakedown and Aslan's easy introduction to life on the back of the GS. Arrive at the salty fishing-and-surf town of Westport with the afternoon to walk the marina and climb the lighthouse.",
-  "tags":["ride","skill","scenic","food","kid"],
-  "gfrom":"Woodinville, WA","gto":"Westport, WA","gvia":"Edmonds Ferry Terminal, Edmonds, WA|Hama Hama Oyster Saloon, Lilliwaup, WA|Hoodsport, WA|Aberdeen, WA",
-  "poi":[poi("Edmonds–Kingston Ferry","Roll the bikes aboard for a ~30-minute Puget Sound crossing — the relaxed, traffic-free start to the tour and Galiya's first ferry load-on. Aim for the <b>10:20 AM</b> summer sailing (Wed Jul 1; weekday departures run 9:35 / 10:20 / 11:05 / 11:55 AM) and arrive ~15 min early — motorcycles load first. No reservation needed for bikes.","Edmonds Ferry Terminal, Edmonds, WA","activity",P("home",1),it=["skill","scenic"],kid=True),
-         poi("Hama Hama Oyster Saloon","The family's favourite Hood Canal stop — just-shucked oysters (raw, grilled, or fried in a po'boy) and steamer clams at the Hama Hama oyster farm's roadside saloon in Lilliwaup, right on US-101 over the water. The perfect first-day lunch; check the seasonal days/hours before you count on it.","Hama Hama Oyster Saloon, Lilliwaup, WA","lunch",P("home",6),it=["food"]),
-         poi("Hood Canal","Quiet shoreline two-lanes along the long glacial fjord, the Olympic Mountains across the water — easy, gorgeous riding to build confidence on Day 1.","Hoodsport, WA","scenic",P("home",7),it=["scenic","coast"]),
-         poi("Aberdeen & Grays Harbor","Coffee and a fuel stop at the harbor city (Kurt Cobain's hometown) before the last run out to the coast.","Aberdeen, WA","coffee",P("home",8)),
-         poi("Grays Harbor Lighthouse","Washington's tallest lighthouse, on arrival in Westport — a fitting first landmark of the Pacific.","Grays Harbor Lighthouse, Westport, WA","scenic",P("westport",0),it=["lighthouse","coast"]),
-         poi("Westhaven State Park","Westport's surf beach and south jetty — a leg-stretch on the sand to celebrate reaching the ocean on day one.","Westhaven State Park, Westport, WA","activity",P("westport",4),it=["coast","kid"],kid=True)]},
+ {"d":1,"date":"Sat Sep 5","id":"almaty","km":0,"rest":False,"region":"Kazakhstan — Almaty",
+  "title":"Arrival in Almaty",
+  "route":"Airport transfer → DR650 handover & inspection → first look at the city → welcome dinner",
+  "desc":"The loop begins the unhurried way. The Silk Off Road Tours crew meets arrivals at Almaty airport (ALA), transfers the group to the hotel, and runs the paperwork and Suzuki DR650SE handover — photograph the bike thoroughly, the USD 500 damage deposit rides on it. With the afternoon free, walk Panfilov Park and the wooden Zenkov Cathedral, graze the Green Bazaar, or ride the cable car up Kok-Tobe for the sunset panorama — 4,000-metre peaks hang over the avenues, a preview of where the tour is headed. The welcome dinner is where 6–10 riders who will share ~2,800 km meet for the first time; order the beshbarmak.",
+  "tags":["arrival","food","history"],
+  "gfrom":"Almaty, Kazakhstan","gto":"Almaty, Kazakhstan","gvia":"",
+  "poi":[poi("The DR650 handover & inspection","Day 1's real business: fit your DR650SE, walk around it with a camera (the deposit conversation later is easier with photos), sort riding gear and the duffel for the support truck, and ask every question now — the steppe has no service bays.","Almaty, Kazakhstan","activity",P("almaty",1),it=["moto"]),
+         poi("Panfilov Park & Zenkov Cathedral","Almaty's icon: the candy-colored Ascension (Zenkov) Cathedral, built in 1907 almost entirely of wood, standing in the shady Park of the 28 Panfilov Guardsmen — the single best short walk in the city.","Panfilov Park, Almaty","scenic",P("almaty",0),it=["history"]),
+         poi("Green Bazaar","The classic Central Asian market: pyramids of dried fruit and spices, dairy and horse-meat halls, samsa stands, and vendors who insist you try everything. Perfect first-afternoon immersion.","Green Bazaar, Almaty","stop",P("almaty",2),it=["food","history"]),
+         poi("Kok-Tobe at sunset","Ride the cable car from the center up to the hilltop park under the TV tower for a full panorama of Almaty against the mountains — welcome-dinner-adjacent timing.","Kok-Tobe, Almaty","scenic",P("almaty",3),it=["scenic"]),
+         poi("Welcome dinner — beshbarmak","Kazakhstan's national dish to open the trip: hand-pulled pasta sheets under slow-boiled meat with onion broth, at a proper Kazakh restaurant. The Silk Road Food Trail starts here.","Almaty, Kazakhstan","dinner",P("almaty",5),it=["food"])]},
 
- {"d":2,"id":"cannon-beach","miles":125,"dmin":173,"rest":False,"region":"Washington Coast → Oregon",
-  "title":"Across the Columbia to Cannon Beach",
-  "route":"Westport → Long Beach → Astoria → Cannon Beach",
-  "desc":"A relaxed second day with a beach payoff. Roll south through the oyster country of South Bend and Raymond, out onto the Long Beach Peninsula — one of the longest drivable beaches in the world — past the windswept headland of Cape Disappointment, then over the Astoria–Megler Bridge (four-plus miles across the mighty Columbia into Oregon). Spend the afternoon in Astoria, a hilly Victorian riverport full of kid wins — the Astoria Column with its balsa-glider launch, barking sea lions on the docks, and the excellent Columbia River Maritime Museum — then drop the last ~25 miles south to sleep at Cannon Beach, right under the 235-foot Haystack Rock. Wake up on the beach.",
-  "tags":["ride","kid","history","coast"],
-  "gfrom":"Westport, WA","gto":"Cannon Beach, OR","gvia":"Raymond, WA|Long Beach, WA|Astoria, OR",
-  "poi":[poi("South Bend & Raymond","Oyster-country leg-stretch along Willapa Bay — 'the Oyster Capital of the World' — on quiet Highway 101.","Raymond, WA","coffee",P("westport",3),it=["food"]),
-         poi("Long Beach Peninsula","A 28-mile ribbon of sand you can ride a bike or fly a kite on; the boardwalk and the World Kite Museum are easy fun for Aslan.","Long Beach, WA","scenic",P("westport",5),it=["coast","kid"],kid=True),
-         poi("Astoria–Megler Bridge","The 4.1-mile bridge across the Columbia into Oregon — the longest continuous truss bridge in North America and a memorable ride-over.","Astoria-Megler Bridge","scenic",P("astoria",1),it=["scenic","history"]),
-         poi("Astoria Column","Climb the 164-step painted tower for a 360° view, then launch a balsa-wood glider from the top — a classic kid thrill.","Astoria Column, Astoria, OR","activity",P("astoria",0),it=["history","scenic"],kid=True),
-         poi("Columbia River Maritime Museum","One of the best maritime museums on the West Coast — lightships, a Coast Guard rescue-boat display and shipwreck lore that grabs a 6-year-old.","Columbia River Maritime Museum, Astoria, OR","lunch",P("astoria",4),it=["history","kid"],kid=True),
-         poi("Astoria sea lions","Hundreds of barking sea lions haul out on the East Mooring Basin docks — free, loud and a guaranteed Aslan favourite.","Astoria, OR","scenic",P("astoria",6),it=["wildlife","kid"],kid=True),
-         poi("Haystack Rock, Cannon Beach","Arrive at the iconic 235-foot sea stack — tide pools, nesting puffins and a long flat beach right outside the night's lodging. Sunset on the sand caps the day.","Haystack Rock, Cannon Beach, OR","activity",P("cannon-beach",0),it=["coast","wildlife","scenic"],kid=True)]},
+ {"d":2,"date":"Sun Sep 6","id":"almaty","km":120,"dmin":160,"rest":False,"training":True,
+  "region":"Kazakhstan — Almaty foothills",
+  "title":"Training Day in the Foothills",
+  "route":"Morning skills session (bike setup, off-road stance, gravel braking, sand basics) → easy foothill & steppe loop → back to Almaty",
+  "desc":"Morocco-style: before any big leg, a dedicated skills-and-shakedown day. The morning is bike setup — levers, tire pressures, suspension sag — then off-road stance, gravel braking and sand basics on the DR650, re-grooving the habits on an unfamiliar, lighter bike. Then an easy ~120 km foothill-and-steppe loop east of the city to bed it all in and calibrate pace with the ride leader. This day is also the option-selector: the ride leader watches the group through the drills, and that verdict picks the glacier road vs. the coast road, Tosor vs. the Kochkor split, for the days ahead. Dial in the bike and the reflexes while the stakes are low.",
+  "tags":["ride","training","offroad"],
+  "optNote":"The training day doubles as the <b>option-selector</b> for the flexible anchor plan: the ride leader's verdict on the drills picks the harder or easier route options between the anchors (S3 and S4 especially).",
+  "gfrom":"Almaty, Kazakhstan","gto":"Almaty, Kazakhstan","gvia":"Medeu, Almaty|Turgen, Kazakhstan",
+  "poi":[poi("Morning skills session","Bike setup first — lever and bar position, tire pressures for mixed surfaces, suspension sag, a full walk-around — then standing position, weighting the pegs, gravel braking front/rear balance, and sand basics: momentum, loose grip, paddling and recovery. Rehearsal for the Singing Dune pistes on Day 4.","Almaty, Kazakhstan","activity",P("almaty",4),it=["training","moto"]),
+         poi("Foothill & steppe loop (~120 km)","An easy loop through the foothills and steppe east of the city to settle suspension, luggage and group riding order — the last soft warm-up before the tour rolls out east on Day 3.","Turgen, Kazakhstan","scenic",P("chundzha",0),it=["training","scenic"]),
+         poi("Evening gear sort","Back in Almaty by late afternoon: pack the duffel for the support truck (soft bag, 15–20 kg), charge everything, and get the last big-city sleep — tomorrow the steppe starts.","Almaty, Kazakhstan","stop",it=["moto"])]},
 
- {"d":3,"id":"yachats","miles":136,"dmin":192,"rest":False,"region":"Oregon Coast",
-  "title":"Cheese, Capes & the Coast Run",
-  "route":"Cannon Beach → Tillamook → Pacific City → Newport → Yachats",
-  "desc":"The signature coast day, and the most varied riding of the trip — all on scenic Highway 101 and the Three Capes byway, no freeways. Wake under Haystack Rock, then roll south to the marquee mid-day stop the family asked for: the Tillamook Creamery for a cheese-factory tour and famous ice cream, with the giant wooden blimp hangar of the Tillamook Air Museum next door. Detour the Three Capes Scenic Loop past Cape Meares Lighthouse and the dory-boat beach and big dune at Pacific City. Carry on down the coast — Lincoln City, Depoe Bay, the Oregon Coast Aquarium at Newport — and arrive by early evening at Yachats, the tiny gem where forest meets surf, your two-night base for the Fourth of July.",
-  "tags":["ride","food","kid","scenic"],
-  "gfrom":"Cannon Beach, OR","gto":"Yachats, OR","gvia":"Tillamook Creamery, Tillamook, OR|Pacific City, OR|Newport, OR",
-  "poi":[poi("Tillamook Creamery","The marquee stop: a free self-guided cheese-factory viewing gallery, samples, and the legendary ice-cream counter — the trip's biggest foodie-and-kid double win.","Tillamook Creamery, Tillamook, OR","lunch",P("tillamook",0),it=["food","kid"],kid=True),
-         poi("Tillamook Air Museum","Vintage aircraft inside one of the world's largest wooden structures — a WWII blimp hangar. Catnip for Ruslan and Aslan alike.","Tillamook Air Museum, Tillamook, OR","activity",P("tillamook",3),it=["history","kid"],kid=True),
-         poi("Cape Meares Lighthouse","Oregon's shortest lighthouse on a clifftop headland, beside the gnarled, many-trunked Octopus Tree — a short Three-Capes detour.","Cape Meares Lighthouse, OR","scenic",P("tillamook",5),it=["lighthouse","scenic"]),
-         poi("Cape Kiwanda / Pacific City","Dory boats launched straight off the beach, a giant sand dune to climb and Pelican Brewing on the sand — a lively coastal stop.","Cape Kiwanda, Pacific City, OR","scenic",P("tillamook",7),it=["coast","scenic"],kid=True),
-         poi("Oregon Coast Aquarium","A optional Newport stop ~25 mi before Yachats — sea otters, a walk-through shark tunnel and a giant Pacific octopus; great if the day's running early.","Oregon Coast Aquarium, Newport, OR","stop",P("astoria",6),it=["wildlife","kid"],kid=True)]},
+ {"d":3,"date":"Mon Sep 7","id":"altyn-emel","km":250,"dmin":230,"rest":False,
+  "region":"Kazakhstan — Zhetysu","opt":"S1a",
+  "title":"Into the Steppe",
+  "route":"Almaty → Konaev → Saryozek → mountain pass & retro-museum tea stop → Altyn-Emel NP (Basshi)",
+  "desc":"The first touring day, and it wastes no time getting big. The route runs east out of Almaty onto the open steppe plateau — long, fast tarmac with the Tian Shan wall sliding along the right mirror — then lifts over a proper mountain pass and drops toward the Ili River basin. A mid-ride tea stop at a quirky roadside retro museum breaks up the 250 km before the group rolls into Basshi, the small village at the gate of Altyn-Emel National Park — one of Kazakhstan's largest protected areas at roughly 4,600 km² of desert, badlands and river floodplain. The night is the village guest house: bikes in the walled yard, a home-cooked dinner, and a sky full of stars.",
+  "tags":["ride","scenic","desert"],
+  "gfrom":"Almaty, Kazakhstan","gto":"Basshi, Kazakhstan","gvia":"Konaev, Kazakhstan|Saryozek, Kazakhstan",
+  "poi":[poi("Steppe plateau tarmac","Long, open two-lane across the steppe with the Tian Shan wall on the horizon — the first taste of Kazakh distance, ridden in group formation behind the leader.","Konaev, Kazakhstan","scenic",P("chundzha",1),it=["scenic","desert"]),
+         poi("Mountain pass & retro-museum tea stop","The day lifts over a mountain pass toward the Ili basin, with tea and simple plates at a quirky roadside retro museum — the classic operator's halfway break.","Saryozek, Kazakhstan","coffee",it=["pass","food"]),
+         poi("Basshi — the park gate","Arrive at the guest-house village at Altyn-Emel's entrance with time to settle in; kulan (Asiatic wild ass) and goitered gazelle graze the plains beyond the last houses. Light permitting, catch golden hour from the edge of the steppe.","Basshi, Kazakhstan","activity",P("altyn-emel",5),it=["wildlife","desert"],wiki="https://en.wikipedia.org/wiki/Altyn-Emel_National_Park")]},
 
- {"d":4,"id":"yachats","miles":31,"dmin":51,"rest":True,"region":"Oregon Coast",
-  "title":"Yachats & the Fourth of July",
-  "route":"Yachats · Cape Perpetua · Heceta Head (light riding)",
-  "desc":"The rest day — and it falls on the Fourth of July, in one of the coast's most beloved spots to spend it. Sleep in, then take a short, easy loop south to Cape Perpetua: the highest viewpoint on the Oregon coast, the churning Thor's Well and Devil's Churn, and the photogenic Heceta Head Lighthouse, with the Sea Lion Caves and rich tide pools for Aslan. Back in the village, Yachats throws its famously quirky La De Da Parade and caps the night with fireworks over the bay. No real riding pressure today — it's about tide pools, chowder, a beach walk on the 804 Trail and the holiday. (Book everything here far ahead — Yachats sells out for the Fourth.)",
-  "tags":["rest","kid","scenic"],
-  "gfrom":"Yachats, OR","gto":"Cape Perpetua, Yachats, OR","gvia":"Heceta Head Lighthouse, OR|Sea Lion Caves, OR",
-  "poi":[poi("Yachats 4th of July","The village's beloved, tongue-in-cheek La De Da Parade by day and fireworks over the bay at night — small-town Americana at its best.","Yachats, OR","activity",P("yachats",6),it=["kid","history"],kid=True),
-         poi("Thor's Well & Cape Perpetua","The Pacific drains into a churning sinkhole at Thor's Well, with Devil's Churn and Spouting Horn nearby and the coast's highest overlook above — Cape Perpetua's signature scenery.","Cape Perpetua, Yachats, OR","scenic",P("yachats",0),it=["scenic","coast"]),
-         poi("Heceta Head Lighthouse","One of the most photographed lighthouses in the United States, glowing white on its forested headland.","Heceta Head Lighthouse, OR","scenic",P("yachats",3),it=["lighthouse","scenic"]),
-         poi("Sea Lion Caves","An elevator down to America's largest sea cave, home to a wild Steller sea lion colony — a memorable kid stop.","Sea Lion Caves, OR","activity",P("yachats",8),it=["wildlife","kid"],kid=True),
-         poi("804 Trail & tide pools","An easy oceanfront path along the basalt shelf right from the village, with some of the coast's best tide pools at low tide.","804 Trail, Yachats, OR","scenic",P("yachats",9),it=["coast","wildlife"])]},
+ {"d":4,"date":"Tue Sep 8","id":"chundzha","km":250,"dmin":350,"rest":False,
+  "region":"Kazakhstan — Zhetysu / Uyghur District","opt":"S2a",
+  "title":"The Singing Dune to the Hot Springs",
+  "route":"Altyn-Emel → Singing Dune → Aktau white-and-red mountains → desert pistes → Chundzha; evening at the hot springs",
+  "desc":"The tour's desert day proper — the operator's original 250 km leg. Instead of backtracking to the highway, the route leaves Basshi through Altyn-Emel itself: graded dirt, washboard and real sandy doubletrack past the 150-m Singing Dune (climb it barefoot, slide down, make it hum) and the Martian white-and-red Aktau badlands, before dropping south across the Ili basin on empty tarmac to Chundzha, capital of Kazakhstan's Uyghur District. This is the first proper off-tarmac riding of the tour, with the support truck sweeping — and the reward is engineered: a field of 140 thermal springs, outdoor pools at 36–50 °C, and the best lagman in the country. Soak until the desert is out of your gear.",
+  "tags":["ride","offroad","desert","hotspring"],
+  "gfrom":"Basshi, Kazakhstan","gto":"Chundzha, Kazakhstan","gvia":"Singing Dune, Altyn-Emel|Aktau Mountains, Altyn-Emel",
+  "poi":[poi("The Singing Dune","An isolated barchan about 150 m high and 3 km long that produces a deep organ-like hum when dry sand avalanches down its lee face — one of the strangest sounds in Central Asia. Climb the ridge barefoot and set it off.","Singing Dune, Altyn-Emel","activity",P("altyn-emel",0),it=["desert","scenic"]),
+         poi("Aktau chalk mountains","Bands of white, cream, red and orange rock folded into gullies and cathedral shapes — an open-air geology lesson roughly 400 million years in the making, best in low morning light.","Aktau Mountains, Altyn-Emel","scenic",P("altyn-emel",2),it=["desert","scenic"]),
+         poi("Katutau lava fields","Melted-looking towers and honeycombed outcrops of dark volcanic rock — and the pistes between them are proper DR650 terrain.","Katutau, Altyn-Emel","scenic",P("altyn-emel",4),it=["desert","offroad"]),
+         poi("Desert pistes to the Ili basin","Graded dirt, washboard and sand patches through the park, then open near-empty tarmac south across the Ili basin — the Day-2 sand drills earn their keep here. An asphalt alternative exists inside the park if conditions are bad.","Chundzha, Kazakhstan","stop",P("chundzha",1),it=["offroad","desert"]),
+         poi("Chundzha hot springs","The perfectly engineered overnight: outdoor thermal pools at 36–50 °C under the open sky, saunas and plunge tubs — exactly what a morning of dune and badland pistes orders, with lagman until you can't.","Chundzha, Kazakhstan","dinner",P("chundzha",4),it=["hotspring","food"])]},
 
- {"d":5,"id":"st-helens","miles":216,"dmin":247,"rest":False,"region":"Coast → Cascades",
-  "title":"Inland to the Volcano",
-  "route":"Yachats → Alsea → Corvallis → cross the Columbia → Mount St. Helens",
-  "desc":"The return turns inland and the scenery changes completely. Leave the coast on the quiet, twisting Alsea River road over the Coast Range to Corvallis and the Willamette Valley for lunch, then cross the Columbia back into Washington near Longview. This is the trip's longest transfer — paced with regular breaks — but the payoff is enormous: rolling up the Spirit Lake Highway into the blast zone of Mount St. Helens, the volcano that famously blew its top in 1980. Settle in at the Castle Rock / Silver Lake gateway, where the always-open Visitor Center tells the eruption story, and save the high viewpoints for tomorrow's short, easy morning.",
-  "tags":["ride","scenic","volcano"],
-  "gfrom":"Yachats, OR","gto":"Castle Rock, WA","gvia":"Alsea, OR|Corvallis, OR|Longview, WA",
-  "poi":[poi("Alsea River road","A gentle, scenic two-lane over the Coast Range along the Alsea River — the calm way off the coast and a lovely warm-up to the day's miles.","Alsea, OR","scenic",P("yachats",1),it=["scenic","moto"]),
-         poi("Corvallis","Willamette Valley lunch stop — a relaxed college town to break the long transfer roughly halfway.","Corvallis, OR","lunch",P("st-helens",6),it=["food"]),
-         poi("Columbia River crossing","Recross the Columbia near Longview/Rainier back into Washington, leaving the coast behind for the Cascades.","Longview, WA","stop",P("astoria",1),it=["scenic","history"]),
-         poi("Mount St. Helens Visitor Center","The always-open Visitor Center at Silver Lake — eruption exhibits, a walk-in model volcano and the first close look at the mountain. (Johnston Ridge Observatory remains closed since 2023.)","Mount St. Helens Visitor Center, Silver Lake, WA","activity",P("st-helens",1),it=["volcano","kid"],kid=True)]},
+ {"d":5,"date":"Wed Sep 9","id":"karakol","km":280,"dmin":280,"rest":False,
+  "region":"KZ → Kyrgyzstan — Issyk-Kul","opt":"S2a",
+  "title":"Charyn Canyon & the Border",
+  "route":"Chundzha → Charyn Canyon → Kegen/Karkara border (KZ → KG, clocks +1 h) → Karkara valley → Karakol",
+  "desc":"The tour's great transition: it starts in Kazakh desert and ends in a Kyrgyz mountain town. Less than an hour from Chundzha comes Charyn Canyon — the Valley of Castles, where 12-million-year-old sandstone has eroded into towers and fortress walls up to ~100 m high; go early for cool air and empty trails. Then the route climbs along the Ketmen range to Kegen and the quiet, summer-friendly Karkara border post — the operator handles the bikes' paperwork, you queue with your passport, and clocks go forward an hour. The descent into Kyrgyzstan is the day's riding reward: open alpine valley, snow peaks of the Terskey Alatau ahead, barely any traffic, and Karakol — the adventure capital — for the evening: the wooden Holy Trinity Church, the nail-less Dungan Mosque, and ashlan-fuu country.",
+  "tags":["ride","canyon","border","history"],
+  "gfrom":"Chundzha, Kazakhstan","gto":"Karakol, Kyrgyzstan","gvia":"Charyn Canyon|Kegen, Kazakhstan|Karkara border crossing",
+  "poi":[poi("Charyn Canyon — the Valley of Castles","A red sandstone gorge where the rock has eroded into towers, arches and fortress walls along a 2-km valley (the canyon runs 150 m+ deep elsewhere). Walk the valley floor to the Charyn River viewpoint before the day-trip crowds arrive.","Charyn Canyon","activity",P("karakol",0),it=["canyon","scenic"]),
+         poi("Kegen & the Karkara border (KZ → KG, clocks +1 h)","Kazakhstan → Kyrgyzstan the scenic way: a small seasonal post in the high Karkara valley, all green pasture and yurts. Passports, bike documents, twenty minutes of stamps — and the tour is in country number two. Set your watch: +1 h.","Karkara border crossing","stop",P("karakol",2),it=["border"]),
+         poi("Karkara valley descent","Open alpine valley riding down toward Issyk-Kul with the snow wall of the Terskey Alatau ahead and almost no traffic — the sweetest tarmac of the first week.","Karakol, Kyrgyzstan","scenic",it=["scenic","pass"]),
+         poi("Holy Trinity Church, Karakol","Karakol's wooden cathedral, rebuilt in 1895 after an earthquake destroyed the original; green domes and golden crosses over log walls, perfect in evening light.","Holy Trinity Cathedral, Karakol","scenic",P("karakol",7),it=["history"]),
+         poi("Dungan Mosque","Commissioned in 1904 and built over six years in Chinese pagoda style, held together by joinery on 42 wooden pillars — famously built without a single nail. Still an active mosque; visitors welcome outside prayer times.","Dungan Mosque, Karakol","stop",P("karakol",5),it=["history"])]},
 
- {"d":6,"id":"rainier","miles":153,"dmin":180,"rest":False,"region":"Cascades",
-  "title":"Spirit Lake & the Road to Rainier",
-  "route":"Castle Rock → Spirit Lake Hwy viewpoints → US-12 → Packwood",
-  "desc":"A deliberately short, relaxed day so the volcano gets a proper morning. Ride the rest of the Spirit Lake Highway up into the blast zone for the big roadside viewpoints over the crater, the recovering forest and Coldwater Lake (the upper road to Johnston Ridge is closed, so this is an out-and-back to the open viewpoints). Then drop back down and cross over on US-12 through Mossyrock and Morton to Packwood, the small mountain town that's the southern gateway to Mount Rainier — elk wander the meadows at the edge of town. Easy afternoon: rest up, because tomorrow is the grand finale ride home over the mountain.",
-  "tags":["ride","volcano","scenic","kid"],
-  "gfrom":"Castle Rock, WA","gto":"Packwood, WA","gvia":"Coldwater Lake, WA|Mossyrock, WA|Morton, WA",
-  "poi":[poi("Spirit Lake Highway viewpoints","WA-504 climbs into the 1980 blast zone — sweeping pullouts at Hoffstadt Bluffs and beyond frame the crater and the regrowing forest.","Hoffstadt Bluffs, WA","scenic",P("st-helens",2),it=["volcano","scenic"]),
-         poi("Coldwater Lake","A lake born in the eruption, ringed by the blast zone — an easy boardwalk and the turnaround point of the morning's volcano spur.","Coldwater Lake, WA","activity",P("st-helens",5),it=["volcano","scenic","wildlife"],kid=True),
-         poi("Mount St. Helens","The truncated, steaming volcano itself, seen up close from the highway — a geology lesson a 6-year-old won't forget.","Mount St. Helens","scenic",P("st-helens",0),it=["volcano","scenic"]),
-         poi("Packwood","A quiet US-12 mountain town and the south gateway to Mount Rainier — resident elk often graze the meadows at dusk.","Packwood, WA","activity",P("rainier",7),it=["wildlife","kid"],kid=True)]},
+ {"d":6,"date":"Thu Sep 10","id":"karakol","km":110,"dmin":145,"rest":False,
+  "region":"Kyrgyzstan — Issyk-Kul",
+  "title":"Jeti-Oguz & Altyn-Arashan",
+  "route":"Day loop out of Karakol: Jeti-Oguz red cliffs → Altyn-Arashan gorge track & hot springs → Karakol",
+  "desc":"A riding day with no packing — the luggage never moves. The morning runs 28 km southwest to Jeti-Oguz, where a wall of sheer red sandstone cliffs — seven ribs of rock said to be seven petrified bulls — rises out of the spruce forest, with easy gravel up the gorge to the Kok-Jaiyk 'Valley of Flowers' meadows. The afternoon is the riding main course: from Ak-Suu village a genuinely rough 4x4/moto track climbs ~14 km up the Arashan river gorge — rocks, ruts, stream splashes, the stuff the DR650 was rented for — to a green valley at ~2,600 m where hot-spring pools steam beside the river below the snow pyramid of Palatka peak. Soak, drink tea at a yurt camp, ride back down — and eat ashlan-fuu at the bazaar for pennies.",
+  "tags":["ride","offroad","hotspring","scenic"],
+  "optNote":"This is the <b>anchor A2 day loop</b> — Karakol is a two-night anchor precisely so this day rides light: no camp move, no packing, just the Terskey Alatau.",
+  "gfrom":"Karakol, Kyrgyzstan","gto":"Karakol, Kyrgyzstan","gvia":"Jeti-Oguz Rocks|Teploklyuchenka (Ak-Suu)|Altyn-Arashan",
+  "poi":[poi("Jeti-Oguz — the Seven Bulls","Sheer red sandstone cliffs out of the spruce forest, with the split 'Broken Heart' rock guarding the gorge entrance. Paved to the village, then easy gravel up past the old Soviet spa to the Valley of Flowers meadows — photo stop upon photo stop.","Jeti-Oguz Rocks","scenic",P("karakol",3),it=["scenic","canyon"]),
+         poi("Altyn-Arashan track & hot springs","The rough stuff: ~14 km of rocks, ruts and stream splashes up the Arashan gorge to hydrogen-sulfide pools at ~41 °C steaming beside the river at ~2,600 m. Soak, tea at the yurt camp, then ride it all back down. Weather-dependent; the support truck waits at the valley mouth.","Altyn-Arashan","activity",P("karakol",4),it=["offroad","hotspring"]),
+         poi("Przhevalsky memorial (optional)","The explorer Nikolai Przhevalsky (of Przewalski's-horse fame) made Karakol his base and is buried above the lake shore nearby — a short detour if the loop comes home with daylight to spare.","Karakol, Kyrgyzstan","stop",it=["history"])]},
 
- {"d":7,"id":"home","miles":165,"dmin":247,"rest":False,"region":"Mount Rainier → Home",
-  "title":"Over Rainier, Home",
-  "route":"Packwood → Paradise → Chinook Pass → Enumclaw → Home",
-  "desc":"The graduation ride. Climb into Mount Rainier National Park to Paradise, where July wildflower meadows spread beneath the glaciers and Myrtle Falls frames the peak. Drop along Stevens Canyon past Reflection Lakes and Narada Falls, then up over Chinook Pass (5,430 ft) at Tipsoo Lake — a spectacular, low-speed alpine pass and the most rewarding riding of the trip, a fitting capstone for a brand-new rider. Descend the eastern flank to Enumclaw for a celebratory lunch, then quiet roads home to Woodinville. Seven days, a ferry, the whole Oregon coast, a volcano and a mountain pass — and a rider who left a beginner and came home a tourer.",
-  "tags":["ride","moto","scenic","kid"],
-  "gfrom":"Packwood, WA","gto":"Woodinville, WA","gvia":"Paradise, Mount Rainier National Park, WA|Reflection Lakes, Mount Rainier, WA|Tipsoo Lake, WA|Enumclaw, WA",
-  "poi":[poi("Paradise, Mount Rainier","The park's famous subalpine meadow — peak July wildflowers, the Skyline Trail and Myrtle Falls with Rainier towering behind.","Paradise, Mount Rainier National Park, WA","activity",P("rainier",3),it=["scenic","wildlife"],kid=True),
-         poi("Reflection Lakes","Mount Rainier mirrored in still tarns right beside Stevens Canyon Road — the classic postcard stop.","Reflection Lakes, Mount Rainier, WA","scenic",P("rainier",1),it=["scenic"]),
-         poi("Narada Falls","A 168-foot waterfall a few steps from the road, often hung with rainbows in the spray.","Narada Falls, Mount Rainier, WA","scenic",P("rainier",4),it=["scenic"]),
-         poi("Tipsoo Lake & Chinook Pass","The alpine high point — a wildflower-rimmed lake at 5,430 ft on the dramatic, sweeping Chinook Pass (WA-410). The ride of the trip.","Tipsoo Lake, WA","scenic",P("rainier",0),it=["moto","scenic"]),
-         poi("Enumclaw","Descend the east side for a celebration lunch in the farm town below Rainier, then the easy run home.","Enumclaw, WA","lunch",P("rainier",8),it=["food"]),
-         poi("Home — Woodinville","Back where it started — bikes parked, a 6-year-old asleep, and a brand-new rider who is now a tourer.","Woodinville, WA","activity",P("home",0),it=["skill"])]},
+ {"d":7,"date":"Fri Sep 11","id":"issyk-kul","km":190,"dmin":295,"rest":False,
+  "region":"Kyrgyzstan — Issyk-Kul","opt":"S3a",
+  "title":"Up to the Glaciers",
+  "route":"Karakol → Barskoon gorge → Sarimonok 3,126 m → Barskoon 3,754 m → Suek Pass 4,021 m → glaciers → Issyk-Kul south shore",
+  "desc":"The day the whole tour is named for — and the hardest reference leg. From Karakol the route climbs into the Barskoon gorge and onto the high gravel mining road toward Kumtor, crossing Sarimonok Pass (3,126 m), Barskoon Pass (3,754 m) and finally Suek Pass at 4,021 m — the highest point of the trip, with glaciers hanging beside the road, marmots on the verges and a real chance of snow flurries in any month. Ride it behind the leader; the weather can turn fast. Then the payoff: a 2,400-metre descent from the ice down to a warm, slightly saline lake you can swim in before dinner. Desert-to-glacier-to-beach in a single riding day — and the rest day lands tomorrow for a reason.",
+  "tags":["ride","offroad","pass","scenic"],
+  "gfrom":"Karakol, Kyrgyzstan","gto":"Tosor, Kyrgyzstan","gvia":"Barskoon, Kyrgyzstan|Barskoon Waterfall|Suek Pass",
+  "poi":[poi("Barskoon gorge & Gagarin's waterfall","Spruce forest, granite walls and the famous falls a short walk from the gorge road — Yuri Gagarin holidayed here after his flight, and a monument to him stands among the trees.","Barskoon Waterfall","scenic",P("issyk-kul",2),it=["scenic","canyon"]),
+         poi("The three-pass mining road","Hard gravel switchbacks built for the Kumtor gold mine: Sarimonok (3,126 m), then Barskoon (3,754 m) — altitude discipline from here up: hydrate, layer, easy throttle.","Barskoon Pass","stop",P("issyk-kul",1),it=["pass","offroad"]),
+         poi("Suek Pass — 4,021 m","The roof of the tour: glacier tongues at arm's length above the road, thin cold air, and the whole Terskey Alatau falling away behind. Photos, a few minutes of grinning, then the 2,400 m descent begins.","Suek Pass","scenic",it=["pass","scenic"]),
+         poi("First swim in Issyk-Kul","The camp is steps from a pebble beach; the mildly salty 'warm lake' — the world's second-largest alpine lake, and it never freezes — is genuinely swimmable. The classic way to wash off a 4,000-metre day (sandals: the pebbles are sharp).","Tosor, Kyrgyzstan","activity",P("issyk-kul",0),it=["lake"]),
+         poi("Yurt-camp evening","Sunset over the water with the Kungey Alatau glowing pink across the lake, dinner in the communal yurt, and a sky full of stars once the generator goes off.","Tosor, Kyrgyzstan","dinner",P("issyk-kul",3),it=["yurt","scenic"])]},
+
+ {"d":8,"date":"Sat Sep 12","id":"issyk-kul","km":0,"rest":True,
+  "region":"Kyrgyzstan — Issyk-Kul south shore",
+  "title":"Rest Day at the Lake",
+  "route":"No riding — lake swim, Skazka canyon walk, banya, laundry, bike checks, a long lunch",
+  "desc":"The one full no-riding day of the tour, placed deliberately: it lands immediately after the 4,021 m Suek day, sits at lake altitude (~1,600 m) to aid acclimatization between the 4,000 m crossing and the 3,000 m nights at Song-Kol, and opens a maintenance window before the hard Days 9–12 block. Sleep in, swim off the camp's pebble beach, walk the red-rock Skazka (Fairy Tale) canyon, book the banya with the hosts, hand a laundry bag to the crew and give the mechanic time with your DR650 — chain, spokes, air filter after the dusty mining road. This is part of the acclimatization plan, not a luxury.",
+  "tags":["rest","lake"],
+  "gfrom":"Tosor, Kyrgyzstan","gto":"Tosor, Kyrgyzstan","gvia":"",
+  "poi":[poi("Swim, nap, repeat","Zero kilometres. Sleep in, swim off the camp's beach, read on the pebbles, walk the shore — deliberate recovery before the passes to Song-Kol, Suusamyr and Bishkek.","Tosor, Kyrgyzstan","activity",P("issyk-kul",0),it=["rest","lake"]),
+         poi("Skazka (Fairy Tale) Canyon","Eroded red-and-orange rock formations a short hop along the south-shore road — a quick, photogenic leg-stretch that needs walking shoes, not riding boots.","Skazka Canyon","scenic",it=["canyon","scenic"]),
+         poi("Banya afternoon","The south-shore camps and nearby Tamga guest houses can fire up a steam bath — the definitive fix for a week of riding shoulders; book it in the morning, small cash cost.","Tamga, Kyrgyzstan","activity",it=["hotspring","rest"]),
+         poi("Laundry & bike checks","Hand a bag to the support crew for washing and let the mechanic work through the DR650 — chain, tyres, air filter — so the bike starts the Song-Kol block as fresh as you do.","Tosor, Kyrgyzstan","stop",it=["moto","rest"]),
+         poi("Horseback to a jailoo (optional)","Camps arrange half-day horse treks up to a nearby summer pasture with a local horseman — a gentle preview of Song-Kol's herding world. Agree the price first (typically $10–15/hour).","Tosor, Kyrgyzstan","activity",P("issyk-kul",3),it=["nomad","yurt"])]},
+
+ {"d":9,"date":"Sun Sep 13","id":"kochkor","km":200,"dmin":215,"rest":False,
+  "region":"Kyrgyzstan — Naryn","opt":"S4a",
+  "title":"South Shore & the Eagle Hunters",
+  "route":"Issyk-Kul south shore → Terskey Alatau roads → farmhouse lunch with an eagle-hunting family → Kochkor",
+  "desc":"A lakeshore-and-farmland day along the Terskey Alatau front range, hugging Issyk-Kul's quiet coast before bending southwest into the Kochkor valley. The set-piece comes en route: lunch at the farmhouse of a family of hereditary berkutchi — eagle hunters — who fly and live with golden eagles as their fathers and grandfathers did, and will show you how a five-kilo bird is trained, hooded and carried on horseback. Kochkor itself is an unpolished, thoroughly real herders' market town at ~1,800 m: shyrdak felt-carpet cooperatives, a working bazaar, and the last hot shower, phone signal and reliable ATMs before the yurts of Song-Kol.",
+  "tags":["ride","nomad","food"],
+  "gfrom":"Tosor, Kyrgyzstan","gto":"Kochkor, Kyrgyzstan","gvia":"Bokonbayevo, Kyrgyzstan|Balykchy, Kyrgyzstan",
+  "poi":[poi("Terskey Alatau coast roads","Tarmac and good gravel under the front range, with the lake on the right and 4,000-metre snow on the left — easy, flowing riding after the rest day.","Bokonbayevo, Kyrgyzstan","scenic",P("kochkor",3),it=["scenic","lake"]),
+         poi("Eagle-hunter farmhouse lunch","The Day-9 highlight: a country spread at a berkutchi dynasty's home near the south shore, with the golden eagles brought out after lunch. Hunting with eagles here is a living tradition, not a show — bring small som notes if you'd like to tip.","Bokonbayevo, Kyrgyzstan","lunch",P("kochkor",0),it=["nomad","wildlife","food"]),
+         poi("Shyrdak felt workshops","Kochkor's women's cooperatives demonstrate how shyrdak — the brilliantly coloured, mosaic-stitched felt carpets on UNESCO's Intangible Heritage list — are cut, layered and sewn; small pieces pack fine on a bike.","Kochkor, Kyrgyzstan","activity",P("kochkor",1),it=["nomad","history"]),
+         poi("Kochkor bazaar — last fuel & ATMs","Stock up on water, snacks, som and fuel: these are the last reliable ATMs and pumps before Song-Kol, and there is nothing to buy at the lake. The animal-and-produce bazaar is liveliest in the morning.","Kochkor, Kyrgyzstan","stop",P("kochkor",2),it=["food","moto"])]},
+
+ {"d":10,"date":"Mon Sep 14","id":"song-kol","km":130,"dmin":175,"rest":False,
+  "region":"Kyrgyzstan — Naryn","opt":"S4a",
+  "title":"Switchbacks to Song-Kol",
+  "route":"Kochkor → 33 Parrots Pass 3,133 m switchbacks → Song-Kol Lake (3,016 m) among the nomad herders",
+  "desc":"A short day with a big centrepiece: the '33 Parrots' pass — a stack of tight hairpin switchbacks winding up the mountain wall out of the Kochkor valley, gravel in the upper reaches, with the whole valley unrolling behind (the nickname comes from a beloved Soviet cartoon — count the bends). Over the top the road turns to dirt across open pasture and Song-Kol appears, impossibly blue against the yellow-green grass: Kyrgyzstan's highest large lake at 3,016 m, ringed by jailoo summer pastures where nomad families graze thousands of horses exactly as their great-grandparents did. The night is a herders' yurt camp — kumis, boorsok, and a Milky Way bright enough to cast shadows. It is cold here even in summer; if weather closes the pass, the group falls back to the Kyzart village eco-hotel.",
+  "tags":["ride","offroad","pass","yurt","nomad"],
+  "gfrom":"Kochkor, Kyrgyzstan","gto":"Song-Kul Lake, Kyrgyzstan","gvia":"Kalmak-Ashuu (33 Parrots) Pass",
+  "poi":[poi("33 Parrots Pass switchbacks","A wall of numbered hairpins climbing out of the Kochkor valley to 3,133 m, gravel in the upper reaches — take it at your own pace behind the leader, and stop at the top for the valley shot.","Kalmak-Ashuu (33 Parrots) Pass","scenic",P("song-kol",3),it=["pass","offroad"]),
+         poi("First sight of Song-Kol","Over the top the road turns to dirt across open pasture and the lake appears — 29 km by 18 km of glass-clear water in a treeless bowl of grass so wide the horizon curves.","Song-Kul Lake, Kyrgyzstan","scenic",P("song-kol",0),it=["lake","scenic"]),
+         poi("Life on the jailoo","Walk between the yurts: mares milked at dusk, foals tethered in lines, kids herding sheep on horseback. Guests are welcome to help with the animals — just ask your hosts. Most camps will saddle a horse for a shore ride ($10–15/hour, agree first).","Song-Kul Lake, Kyrgyzstan","activity",P("song-kol",1),it=["nomad","yurt"]),
+         poi("Kumis & boorsok in the yurts","Fermented mare's milk — mildly fizzy, sour, faintly alcoholic — and fried dough pillows with kaymak and jam, offered to every guest. A small bowl is polite; it's the toll for the view.","Song-Kul Lake, Kyrgyzstan","dinner",P("song-kol",2),it=["food","nomad"]),
+         poi("The night sky at 3,016 m","Zero light pollution: step out of the yurt around midnight and the Milky Way is bright enough to cast shadows. Bring every layer you own — frost is possible in any month.","Song-Kul Lake, Kyrgyzstan","scenic",it=["scenic","yurt"])]},
+
+ {"d":11,"date":"Tue Sep 15","id":"suusamyr","km":240,"dmin":360,"rest":False,
+  "region":"Kyrgyzstan — Naryn / Chüy","opt":"S5a",
+  "title":"Passes to Suusamyr",
+  "route":"Song-Kol → rocky off-road descent → Moldo-Ashuu 3,546 m → Kara-Keche 3,384 m → Kokomeren gorge → Suusamyr valley",
+  "desc":"The most demanding riding day of the tour — 240 km, most of it off the asphalt. From Song-Kol the route drops off the plateau on a rocky off-road descent, climbs the switchbacks of Moldo-Ashuu Pass (3,546 m), then takes the gravel coal road over Kara-Keche Pass (3,384 m) — built to serve the open-cast mine that heats half of Kyrgyzstan — before following the boiling turquoise Kokomeren river gorge out into the open. The reward is the Suusamyr valley: a 150-km grass sea at ~2,200 m, the largest alpine pasture in Central Asia, famous for its white wildflower honey. The night is a cabin camp ringed by panoramic mountains: real beds, hot food, and a well-earned rest. No heroics on the rocky descents — a dropped DR650 is a deposit conversation.",
+  "tags":["ride","offroad","pass","scenic"],
+  "gfrom":"Song-Kul Lake, Kyrgyzstan","gto":"Suusamyr, Kyrgyzstan","gvia":"Moldo-Ashuu Pass|Kara-Keche Pass|Kyzyl-Oi, Kyrgyzstan",
+  "poi":[poi("Moldo-Ashuu Pass — 3,546 m","A ladder of gravel switchbacks with the whole Song-Kol plateau falling away behind — the classic photo stop of Day 11. Loose surface; ride it patiently.","Moldo-Ashuu Pass","scenic",P("suusamyr",2),it=["pass","offroad"]),
+         poi("Kara-Keche coal road — 3,384 m","A working mining road past the open-cast coal pits; expect the occasional loaded truck and give it room. The grades are honest and the views enormous.","Kara-Keche Pass","stop",it=["pass","offroad"]),
+         poi("Kokomeren gorge","The wild blue-green Kokomeren river crashes through a bare rock canyon alongside the road — one of Kyrgyzstan's most dramatic stretches of gravel riding.","Kyzyl-Oi, Kyrgyzstan","scenic",P("suusamyr",1),it=["canyon","offroad"]),
+         poi("Suusamyr valley & its honey","Out into the grass sea: herds drifting home, shepherd camps trailing smoke, and roadside apiaries selling the valley's famous white honey by the jar — the best edible souvenir of the whole route.","Suusamyr, Kyrgyzstan","activity",P("suusamyr",0),it=["scenic","food"]),
+         poi("Cabin camp under the ranges","Twin-share cabins with real beds and panoramic mountains on every side — kuurdak, shorpo and bread for dinner (cash; dinners are on the rider).","Suusamyr, Kyrgyzstan","dinner",P("suusamyr",3),it=["food","scenic"])]},
+
+ {"d":12,"date":"Wed Sep 16","id":"bishkek","km":153,"dmin":140,"rest":False,
+  "region":"Kyrgyzstan — Chüy / Bishkek","opt":"S5a",
+  "title":"Too-Ashuu & the Capital",
+  "route":"Suusamyr → Too-Ashuu Pass 3,200 m (~4 km summit tunnel) → long descent → Bishkek",
+  "desc":"Short but memorable. From Suusamyr the road climbs to Too-Ashuu Pass (3,200 m) and punches through the mountain in its famous ~4-km summit tunnel — cold, dark and unforgettable on a motorcycle: visor up, lights on — then hairpins down nearly two and a half vertical kilometres into the Chüy valley, alpine pasture turning to poplar-lined farmland in under an hour. Bishkek is Central Asia's most relaxed capital: leafy Soviet-boned blocks, Ala-Too Square, the working Osh Bazaar, and — after nearly two weeks of steppe and passes — hot water, espresso and the tour's big-city dinner night. Plov at Navat, the famous laghman at Cafe Faiza, or the Supara yurt-village splurge; toast the first 2,000 km.",
+  "tags":["ride","pass","food","history"],
+  "gfrom":"Suusamyr, Kyrgyzstan","gto":"Bishkek, Kyrgyzstan","gvia":"Too-Ashuu Pass",
+  "poi":[poi("Too-Ashuu Pass & the summit tunnel","The last of the big western passes at 3,200 m; the ~4 km tunnel is narrow, dim and fume-y — visor up, lights on — and the burst of light on the Chüy side opens onto a 2,500 m descent of hairpins that deserves fresh attention, not end-of-block autopilot.","Too-Ashuu Pass","scenic",P("bishkek",3),it=["pass","moto"]),
+         poi("Ala-Too Square","The ceremonial heart of the capital: the national flag on its giant mast, the equestrian Manas monument, fountains, and the hourly changing of the guard — with the State History Museum's white monolith behind.","Ala-Too Square, Bishkek","activity",P("bishkek",0),it=["history"]),
+         poi("Osh Bazaar","Bishkek's big working bazaar: pyramids of spices, dried fruit, kurut, horse-meat sausage and cheap kalpak hats — the best souvenir sweep of the tour. Watch pockets in the crowds.","Osh Bazaar, Bishkek","stop",P("bishkek",2),it=["food","history"]),
+         poi("Big-city dinner — plov & the classics","The one mid-tour city night: proper plov and beshbarmak at Navat's carved-wood teahouse, the legendary hand-pulled laghman at Cafe Faiza, or refined Kyrgyz cooking at the Supara Ethno-Complex — and Kyrgyzstan's pioneering craft brewery, Save the Ales, for the toast.","Bishkek, Kyrgyzstan","dinner",P("bishkek",1),it=["food"])]},
+
+ {"d":13,"date":"Thu Sep 17","id":"cholpon-ata","km":261,"dmin":240,"rest":False,
+  "region":"Kyrgyzstan — Chüy / Issyk-Kul","opt":"S5a",
+  "title":"Boom Gorge to the North Shore",
+  "route":"Bishkek → Boom (Boam) gorge → Issyk-Kul north shore → Cholpon-Ata; afternoon at the petroglyph field",
+  "desc":"The loop's recovery day: 261 km of honest asphalt east from Bishkek, funnelling through the Boom gorge — the red-rock canyon of the Chüy river that is the only natural gate between the capital's valley and the Issyk-Kul basin (watch the gusty wind where it opens toward Balykchy) — before the lake spreads blue on the right for the last 100 km. Cholpon-Ata is the sunny, sandy resort side of Issyk-Kul, and its cultural showpiece sits just uphill: a 'stone garden' of some 5,000 glacial boulders over 42 hectares, carved with ibex, deer and horsemen — Bronze Age to Saka to Turkic. Go in the late-afternoon side light, then swim off the town beach and eat smoked lake fish on the promenade while the sun drops behind the mountains across the water.",
+  "tags":["ride","scenic","history","lake"],
+  "gfrom":"Bishkek, Kyrgyzstan","gto":"Cholpon-Ata, Kyrgyzstan","gvia":"Boom Gorge|Balykchy, Kyrgyzstan",
+  "poi":[poi("The Boom gorge","The Chüy river's red-walled canyon carries the road and railway side by side out of the capital's valley — after days of gravel passes, flowing tarmac feels like a gift.","Boom Gorge","scenic",P("cholpon-ata",5),it=["canyon","scenic"]),
+         poi("North-shore lake road","Balykchy, then 100 km of shoreline riding with the Kungey Alatau behind and — across the water — the Terskey Alatau the tour crossed at 4,021 m on Day 7.","Balykchy, Kyrgyzstan","stop",P("cholpon-ata",4),it=["lake","scenic"]),
+         poi("Cholpon-Ata petroglyphs","Marked paths through 42 hectares of carved boulders with the lake below: ibex, deer, hunting scenes and balbal stone figures, from the end of the Bronze Age (~1500 BC) through the Saka-Usun tribes to the Turkic era. Small cash entry fee.","Cholpon-Ata Petroglyphs","activity",P("cholpon-ata",0),it=["history"]),
+         poi("North-shore beach evening","The classic Cholpon-Ata program: a swim off the sandy town beach, the white chapels of Ruh Ordo along the shore, and shashlik smoke drifting down the promenade.","Ruh Ordo, Cholpon-Ata","activity",P("cholpon-ata",3),it=["lake"]),
+         poi("Smoked lake fish on the promenade","The north-shore staple: whole fried or hot-smoked Issyk-Kul fish with bread, herbs and a squeeze of lemon — the best simple dinner on the lake. Cards work in the bigger places; still carry som.","Cholpon-Ata, Kyrgyzstan","dinner",P("cholpon-ata",2),it=["food","lake"])]},
+
+ {"d":14,"date":"Fri Sep 18","id":"saty","km":325,"dmin":340,"rest":False,
+  "region":"KG → Kazakhstan — Almaty Region","opt":"S5a",
+  "title":"Karkara & Back into Kazakhstan",
+  "route":"Cholpon-Ata → Tüp → Karkara valley → Karkara/Kegen border (KG → KZ, clocks −1 h) → Saty; evening Lake Kaindy if light allows",
+  "desc":"The longest day of the tour closes the international chapter. From Cholpon-Ata the route runs east along the north shore, rounds Issyk-Kul's eastern tip at Tüp, and climbs back into the high Karkara valley — the same green border pastures crossed nine days earlier, now in the opposite direction. Stamped back into Kazakhstan (clocks go back an hour — a free hour of daylight), the road drops through Kegen and turns up a mountain valley to Saty, the one-street village of log houses and haystacks that is base camp for Kolsai Lakes National Park. Fill the tanks around Kegen: Saty has no reliable station. If the light holds, the evening ride is the strangest sight of the trip — Lake Kaindy's drowned spruce forest, up a ~12 km rough track. Otherwise it opens Day 15.",
+  "tags":["ride","border","lake"],
+  "gfrom":"Cholpon-Ata, Kyrgyzstan","gto":"Saty, Kazakhstan","gvia":"Tüp, Kyrgyzstan|Karkara border crossing|Kegen, Kazakhstan",
+  "poi":[poi("Around the lake's eastern tip","North-shore tarmac through Tüp and up into the Karkara valley's open pastures — yurts, herds and snow peaks all still exactly where you left them on Day 5.","Tüp, Kyrgyzstan","scenic",P("cholpon-ata",2),it=["lake","scenic"]),
+         poi("Karkara border, reversed (KG → KZ, clocks −1 h)","The same quiet post, run the other way: the operator handles the bikes, you queue with your passport, and Kazakhstan hands back an hour of daylight for the Saty leg. Cash only in the border area.","Karkara border crossing","stop",P("karakol",2),it=["border"]),
+         poi("Fuel at Kegen","Brim the DR650 here — Saty has no reliable station, and with the Kaindy and Kolsai detours the next sure fuel is on the Shelek road tomorrow, right at the tank's range.","Kegen, Kazakhstan","coffee",it=["moto"]),
+         poi("Saty village evening","Cows coming home at dusk, kids on horseback, hay wagons on the one street. Walk it end to end; it takes fifteen minutes and it's the last quiet of the trip.","Saty, Kazakhstan","activity",P("saty",5),it=["scenic"]),
+         poi("Lake Kaindy (if light allows)","A ~12 km rough, rocky piste — fords, ruts, proper DR650 terrain — climbs to the lake where bleached spruce trunks stand dead-straight out of turquoise water, preserved since the 1911 earthquake dammed the valley.","Lake Kaindy","scenic",P("saty",0),it=["offroad","lake"])]},
+
+ {"d":15,"date":"Sat Sep 19","id":"almaty","km":300,"dmin":280,"rest":False,
+  "region":"Kazakhstan — Almaty Region / Almaty","opt":"S6a",
+  "title":"Kolsai Lakes & the Run Home",
+  "route":"Morning walk to Kolsai Lake-1 (and Kaindy if missed) → Saty → Shelek → Almaty; celebration dinner",
+  "desc":"The finale earns its early alarm. Fifteen minutes up the valley from Saty lies Kolsai Lake 1 (~1,800 m): a kilometre-long ribbon of blue-green water pinned between steep spruce slopes — the 'pearls of the Tian Shan', with boardwalk paths and rowboats by the hour. If Kaindy was missed on arrival, its sunken forest comes first, before the day-trip crowds. Then the bikes point home: down the mountain valley, out through Shelek and across the steppe to Almaty — ~300 km, closing the loop exactly where it opened sixteen days ago. The evening is the celebration dinner: bikes and deposits handed back at the guarded lot, one final long table, beshbarmak, toasts, and 2,800 km worth of stories.",
+  "tags":["ride","scenic","lake","food"],
+  "gfrom":"Saty, Kazakhstan","gto":"Almaty, Kazakhstan","gvia":"Kolsai Lake 1|Shelek, Kazakhstan",
+  "poi":[poi("Kolsai Lake 1 morning walk","The first of the three Kolsai lakes: a kilometre of blue-green water up to ~80 m deep between forested ridges, with boardwalk paths, rowboats for rent and trout in the water. The higher lakes are hiking and horse territory beyond the road.","Kolsai Lake 1","activity",P("saty",2),it=["lake","scenic"]),
+         poi("Lake Kaindy & the sunken forest","If missed on Day 14: dozens of Schrenk's spruce trunks standing dead-straight out of turquoise water at ~2,000 m — a lake created overnight when the 1911 Kebin earthquake dammed the gorge. Walk the rim trail down to the shore, then point the bikes at Almaty.","Lake Kaindy","scenic",P("saty",1),it=["lake","offroad"]),
+         poi("The Shelek road run","Down the valley and out across the steppe: Saty → Shelek → Almaty on flowing tarmac, the Tian Shan wall now on the left mirror — the loop closing itself.","Shelek, Kazakhstan","stop",it=["scenic","moto"]),
+         poi("Celebration dinner in Almaty","The loop's last evening: dusty DR650s and deposits handed back at the hotel's guarded lot, then one final long table — beshbarmak, toasts, and 2,800 km worth of stories.","Almaty, Kazakhstan","dinner",P("almaty",5),it=["food","moto"])]},
+
+ {"d":16,"date":"Sun Sep 20","id":"almaty","km":0,"rest":False,"region":"Kazakhstan — Almaty",
+  "title":"Departure",
+  "route":"Bike return wrap-up → airport transfer to Almaty (ALA) → fly home",
+  "desc":"Airport transfers and goodbyes. The bikes went back last night; today is the included transfer to Almaty International Airport (ALA) and the flight home — with the mountains still hanging over the avenues exactly where they were on Day 1. Sixteen days, two countries, two border crossings, one 4,021-metre pass, three yurt-camp nights and ~2,800 km: from desert up to glaciers, and back to the start.",
+  "tags":["departure"],
+  "gfrom":"Almaty, Kazakhstan","gto":"Almaty, Kazakhstan","gvia":"",
+  "poi":[poi("Bike return & the deposit","Final paperwork with the crew: the DR650 checked over, the USD 500 damage deposit settled (this is where the Day-1 photos pay off), and the duffel back off the support truck.","Almaty, Kazakhstan","stop",it=["moto"]),
+         poi("Last look at the mountains","If the flight is late, one more espresso in the center or a last ride up Kok-Tobe — the Zailiysky Alatau makes a good final frame.","Kok-Tobe, Almaty","scenic",P("almaty",3),it=["scenic"]),
+         poi("Airport transfer (ALA)","The operator's transfer to Almaty International Airport is included — allow for traffic, and keep the passport handy for the exit stamp collection: two borders and two airports' worth.","Almaty, Kazakhstan","activity",it=["border"])]},
 ]
 
-# ============ COAST FOOD TRAIL (themed foodie thread for Galiya) ============
-# A curated cross-route thread: the trip's signature coastal eats — Dungeness crab,
-# chowder, fresh fish-and-chips, and Tillamook cheese & ice cream — each tied to the day
-# it falls on. Rendered as a themed 🦀 section on index.html (deep-linking to day.html?d=N)
-# and as a per-day 🦀 flag on the matching day pages. Photos reuse the verified destination
-# thumbnails (HTTP 200). Same data shape as the old Ramen Trail so the templates stay simple.
+# ============ ANCHORS & SEGMENTS (the flexible anchor-point plan) ============
+# Source: tour/03-anchors-and-options.md. Five fixed, pre-booked anchor nights (A1–A5)
+# + the Almaty base; each pair of anchors is connected by route OPTIONS trading
+# difficulty and pace. The 16-day itinerary is the reference line (the (a) options).
+# Distances marked est(imate) are planned estimates for non-reference options.
+ANCHORS = [
+ {"a":"A1","id":"altyn-emel","name":"Altyn-Emel National Park","nights":"1 night — Basshi guest house","days":"Day 3",
+  "why":"The Singing Dune and the white-and-red Aktau mountains: the Kazakh desert-steppe signature of the trip, and the terrain the DR650 was rented for."},
+ {"a":"A2","id":"karakol","name":"Karakol","nights":"2 nights — Jeti-Oguz / Altyn-Arashan day loop on day two","days":"Days 5–6",
+  "why":"The Tian Shan trailhead town: Jeti-Oguz red cliffs, the Altyn-Arashan gorge and hot springs, the Holy Trinity Church and Dungan Mosque, ashlan-fuu at the bazaar. A riding day with no packing."},
+ {"a":"A3","id":"issyk-kul","name":"Issyk-Kul south shore yurt camp","nights":"2 nights, mid-trip","days":"Days 7–8","rest":True,
+  "why":"The rest-day anchor — the one full no-riding day of the tour: lake swim, Skazka canyon, banya, laundry, bike checks. Placed to recover after the hardest connection and acclimatize between the high passes."},
+ {"a":"A4","id":"song-kol","name":"Song-Kol Lake yurt camp (3,016 m)","nights":"1 night (bad-weather fallback: Kyzart village eco-hotel)","days":"Day 10",
+  "why":"The nomad heart of Kyrgyzstan — yurts, herders, kumis and boorsok at 3,000 m. No version of this trip skips Song-Kol."},
+ {"a":"A5","id":"saty","name":"Saty / Kolsai Lakes","nights":"1 night — Saty guest house","days":"Day 14",
+  "why":"Lake Kaindy's sunken forest and Kolsai Lake-1 — Kazakhstan's alpine finale before the run home."},
+]
+
+# ============ GEO (routing points, "lat,lng") ============
+# Towns/villages geocoded via the Google Geocoding API; natural features and passes
+# cross-checked against OSM/Nominatim. "Sarimonok Pass" is a planning approximation
+# on the Barskoon mining road (the leg is off Google's road graph anyway).
+GEO = {
+ "Almaty, Kazakhstan":"43.23798,76.88286",
+ "Panfilov Park, Almaty":"43.25858,76.95341",
+ "Green Bazaar, Almaty":"43.26423,76.95475",
+ "Kok-Tobe, Almaty":"43.23310,76.97553",
+ "Medeu, Almaty":"43.15762,77.05846",
+ "Turgen, Kazakhstan":"43.39837,77.59422",
+ "Assy-Turgen Observatory":"43.22567,77.87174",
+ "Bartogay Reservoir":"43.34944,78.50361",
+ "Konaev, Kazakhstan":"43.86137,77.06352",
+ "Saryozek, Kazakhstan":"44.35975,77.96399",
+ "Basshi, Kazakhstan":"44.15957,78.75441",
+ "Altyn-Emel National Park":"44.12987,78.85057",
+ "Singing Dune, Altyn-Emel":"43.86573,78.56178",
+ "Aktau Mountains, Altyn-Emel":"44.03720,79.29509",
+ "Katutau, Altyn-Emel":"43.99693,79.04980",
+ "Chundzha, Kazakhstan":"43.53651,79.46360",
+ "Charyn Canyon":"43.35987,79.05003",
+ "Kokpek, Kazakhstan":"43.44821,78.67462",
+ "Kegen, Kazakhstan":"43.01687,79.22483",
+ "Karkara border crossing":"42.80154,79.18217",
+ "Karkara, Kazakhstan":"42.89201,79.23666",
+ "Karakol, Kyrgyzstan":"42.47821,78.39560",
+ "Jeti-Oguz Rocks":"42.33778,78.23151",
+ "Teploklyuchenka (Ak-Suu)":"42.50221,78.52158",
+ "Altyn-Arashan":"42.38157,78.60667",
+ "Dungan Mosque, Karakol":"42.49737,78.39069",
+ "Holy Trinity Cathedral, Karakol":"42.48909,78.39469",
+ "Barskoon, Kyrgyzstan":"42.15465,77.59560",
+ "Barskoon Waterfall":"42.00999,77.60762",
+ "Sarimonok Pass":"41.95000,77.62000",
+ "Barskoon Pass":"41.89357,77.69207",
+ "Suek Pass":"41.78102,77.76056",
+ "Tosor, Kyrgyzstan":"42.16568,77.44438",
+ "Tosor Pass":"41.94750,77.36833",
+ "Tamga, Kyrgyzstan":"42.15000,77.54475",
+ "Skazka Canyon":"42.15475,77.35194",
+ "Bokonbayevo, Kyrgyzstan":"42.11718,76.99311",
+ "Balykchy, Kyrgyzstan":"42.46136,76.18552",
+ "Kochkor, Kyrgyzstan":"42.21640,75.75754",
+ "Kyzart, Kyrgyzstan":"42.03013,74.98225",
+ "Kalmak-Ashuu (33 Parrots) Pass":"41.91430,75.42118",
+ "Song-Kul Lake, Kyrgyzstan":"41.83392,75.13119",
+ "Moldo-Ashuu Pass":"41.66863,75.03657",
+ "Kara-Keche Pass":"41.74213,74.84804",
+ "Chaek, Kyrgyzstan":"41.93312,74.53603",
+ "Kyzyl-Oi, Kyrgyzstan":"41.95549,74.15629",
+ "Suusamyr, Kyrgyzstan":"42.17893,73.96243",
+ "Too-Ashuu Pass":"42.34528,73.80694",
+ "Bishkek, Kyrgyzstan":"42.87462,74.56976",
+ "Ala-Too Square, Bishkek":"42.87571,74.60367",
+ "Osh Bazaar, Bishkek":"42.87497,74.57024",
+ "Boom Gorge":"42.58048,75.80468",
+ "Cholpon-Ata, Kyrgyzstan":"42.64854,77.08275",
+ "Cholpon-Ata Petroglyphs":"42.66063,77.05674",
+ "Ruh Ordo, Cholpon-Ata":"42.64898,77.09438",
+ "Tüp, Kyrgyzstan":"42.74060,78.79295",
+ "Saty, Kazakhstan":"43.06992,78.40982",
+ "Kolsai Lake 1":"42.93539,78.32590",
+ "Lake Kaindy":"42.98408,78.46738",
+ "Shelek, Kazakhstan":"43.60105,78.25607",
+}
+
+def G(*names):
+    """Build a [lat,lng] chain from GEO point names (for SEGMENTS option map lines)."""
+    out = []
+    for n in names:
+        lat, lng = GEO[n].split(",")
+        out.append([float(lat), float(lng)])
+    return out
+
+SEGMENTS = [
+ {"seg":"S1","from":"almaty","to":"altyn-emel","title":"Almaty → Altyn-Emel (A1)",
+  "options":[
+   {"id":"S1a","name":"Steppe Classic","reference":True,"refDays":"Day 3","days":1,"km":250,"est":False,
+    "difficulty":"easy","diffLabel":"easy–moderate",
+    "surface":"Tarmac with a mountain pass — a gentle opener the day after training.",
+    "highlights":["First taste of open steppe","Mountain-pass warm-up","Retro-museum tea stop"],
+    "via":[],
+    "geo":G("Almaty, Kazakhstan","Konaev, Kazakhstan","Saryozek, Kazakhstan","Basshi, Kazakhstan")},
+   {"id":"S1b","name":"Assy Plateau Traverse","reference":False,"days":1,"km":280,"est":True,
+    "difficulty":"hard","diffLabel":"hard, weather-dependent",
+    "surface":"Up the Turgen gorge on a rough, badly degraded track (4WD-grade), across the high gravel plateau at ~2,500–2,750 m past the observatory, then dirt down past Bartogay. Turns greasy and can close in rain — only for a group that sails through the Day-2 session.",
+    "highlights":["High summer-pasture plateau","Assy-Turgen observatory at 2,750 m","Bartogay reservoir","Real off-road on day one of the route proper"],
+    "via":[],
+    "geo":G("Almaty, Kazakhstan","Turgen, Kazakhstan","Assy-Turgen Observatory","Bartogay Reservoir","Kokpek, Kazakhstan","Basshi, Kazakhstan")},
+  ]},
+ {"seg":"S2","from":"altyn-emel","to":"karakol","title":"Altyn-Emel → Karakol (A2)",
+  "options":[
+   {"id":"S2a","name":"Hot Springs & the Canyon","reference":True,"refDays":"Days 4–5","days":2,"km":530,"est":False,
+    "difficulty":"moderate","diffLabel":"moderate",
+    "surface":"Desert pistes and sand patches through the park (asphalt alternative inside the park if conditions are bad), then a mostly-tarmac border day.",
+    "highlights":["The Singing Dune & Aktau ridden en route","Evening soak at the Chundzha hot springs","Charyn Canyon","The quiet Kegen/Karkara border (+1 h)","Laghman country in the Uyghur District"],
+    "via":["chundzha"],
+    "geo":G("Basshi, Kazakhstan","Singing Dune, Altyn-Emel","Aktau Mountains, Altyn-Emel","Chundzha, Kazakhstan","Charyn Canyon","Kegen, Kazakhstan","Karkara border crossing","Karakol, Kyrgyzstan")},
+   {"id":"S2b","name":"Canyon Direct","reference":False,"days":1,"km":430,"est":True,
+    "difficulty":"moderate","diffLabel":"easy–moderate but long","frees":"Frees 1 day → an extra anchor night (A2/A3) or weather buffer",
+    "surface":"Tarmac-forward all day; the challenge is saddle time and the border queue. Honestly trades the full dune/Aktau piste day and the hot springs for a freed day.",
+    "highlights":["Charyn Canyon with more time on-site","A full extra day banked for the anchors"],
+    "via":[],
+    "geo":G("Basshi, Kazakhstan","Kokpek, Kazakhstan","Charyn Canyon","Kegen, Kazakhstan","Karkara border crossing","Karakol, Kyrgyzstan")},
+  ]},
+ {"seg":"S3","from":"karakol","to":"issyk-kul","title":"Karakol → Issyk-Kul south shore (A3)",
+  "options":[
+   {"id":"S3a","name":"The Glacier Road","reference":True,"refDays":"Day 7","days":1,"km":190,"est":False,
+    "difficulty":"hard","diffLabel":"hard — the toughest reference day",
+    "surface":"Hard gravel up Barskoon gorge over Sarimonok 3,126 m, Barskoon 3,754 m and Suek 4,021 m, past glaciers, then down to the lake. High-altitude, cold, weather-dependent — the rest day lands immediately after for a reason.",
+    "highlights":["The 4,021 m high point of the tour","Glaciers at arm's length","The Barskoon waterfalls"],
+    "via":[],
+    "geo":G("Karakol, Kyrgyzstan","Barskoon, Kyrgyzstan","Barskoon Waterfall","Sarimonok Pass","Barskoon Pass","Suek Pass","Barskoon Pass","Barskoon Waterfall","Barskoon, Kyrgyzstan","Tamga, Kyrgyzstan","Tosor, Kyrgyzstan")},
+   {"id":"S3b","name":"The Coast Road","reference":False,"days":1,"km":130,"est":True,
+    "difficulty":"easy","diffLabel":"easy",
+    "surface":"South-shore tarmac along the lake with short, optional dirt spurs. The honest trade: no glaciers, no 4,000 m — the named bail-out if the group or the weather says no to Suek.",
+    "highlights":["A second look at Jeti-Oguz from the road","Skazka canyon done en route instead of on the rest day","Lakeside villages"],
+    "via":[],
+    "geo":G("Karakol, Kyrgyzstan","Jeti-Oguz Rocks","Barskoon, Kyrgyzstan","Tamga, Kyrgyzstan","Tosor, Kyrgyzstan")},
+  ]},
+ {"seg":"S4","from":"issyk-kul","to":"song-kol","title":"Issyk-Kul south shore → Song-Kol (A4)",
+  "options":[
+   {"id":"S4a","name":"Eagle Hunters & 33 Parrots","reference":True,"refDays":"Days 9–10","days":2,"km":330,"est":False,
+    "difficulty":"moderate","diffLabel":"moderate",
+    "surface":"Tarmac and good gravel along the Terskey Alatau, then the 33 Parrots (3,133 m) gravel switchbacks up to the lake. Reference = split with a Kochkor overnight; can also run as 1 long day (~270 km, estimate) to free a day.",
+    "highlights":["Farmhouse lunch with an eagle-hunting family","Kochkor's felt workshops","The switchback climb","First sight of Song-Kol"],
+    "via":["kochkor"],
+    "geo":G("Tosor, Kyrgyzstan","Skazka Canyon","Bokonbayevo, Kyrgyzstan","Balykchy, Kyrgyzstan","Kochkor, Kyrgyzstan","Kalmak-Ashuu (33 Parrots) Pass","Song-Kul Lake, Kyrgyzstan")},
+   {"id":"S4b","name":"Tosor Pass Direttissima","reference":False,"days":1,"km":110,"est":True,
+    "difficulty":"hard","diffLabel":"hard — the hardest riding of the tour",
+    "surface":"Straight up over Tosor Pass (3,893 m) on exceptionally rough high-alpine gravel/single-track: fords, rock steps, mud, possible snow near the top even in September; steep loose descent, then west to the lake. Strong-group, good-weather-window only. Skips the eagle hunters and Kochkor — the trade is culture for terrain.",
+    "highlights":["The wildest pass of the trip","Near-zero traffic","The direct herders' line from shore to plateau"],
+    "via":[],
+    "geo":G("Tosor, Kyrgyzstan","Tosor Pass") + [[41.78,76.60],[41.76,75.90],[41.80,75.35]] + G("Song-Kul Lake, Kyrgyzstan")},
+  ]},
+ {"seg":"S5","from":"song-kol","to":"saty","title":"Song-Kol → Saty / Kolsai (A5)",
+  "options":[
+   {"id":"S5a","name":"Grand Western Loop","reference":True,"refDays":"Days 11–14","days":4,"km":979,"est":False,
+    "difficulty":"hard","diffLabel":"one hard off-road day, then moderate-to-easy tarmac",
+    "surface":"One hard rocky off-road day (the Song-Kol descent, Moldo-Ashuu 3,546 m and Kara-Keche 3,384 m), then Too-Ashuu's tunnel and descent, the Boom gorge, north-shore lake roads and the Karkara valley gravel to the border.",
+    "highlights":["Suusamyr's vast pasture","Bishkek's big-city night","The Cholpon-Ata petroglyphs","Smoked lake fish on the north shore","The Karkara valley"],
+    "via":["suusamyr","bishkek","cholpon-ata"],
+    "geo":G("Song-Kul Lake, Kyrgyzstan","Moldo-Ashuu Pass","Kara-Keche Pass","Chaek, Kyrgyzstan","Kyzyl-Oi, Kyrgyzstan","Suusamyr, Kyrgyzstan","Too-Ashuu Pass","Bishkek, Kyrgyzstan","Boom Gorge","Balykchy, Kyrgyzstan","Cholpon-Ata, Kyrgyzstan","Tüp, Kyrgyzstan","Karkara border crossing","Karkara, Kazakhstan","Kegen, Kazakhstan","Saty, Kazakhstan")},
+   {"id":"S5b","name":"North Shore Direct","reference":False,"days":2,"km":575,"est":True,
+    "difficulty":"moderate","diffLabel":"moderate then easy","frees":"Frees 2 days → extra anchor nights (A3/A4) and/or the Song-Kol/Suek weather buffer",
+    "surface":"The Kalmak-Ashuu track down (the best-graded of all the Song-Kol accesses — maintained gravel, greasy after rain), then tarmac around the lake's east end and along the north shore; the reference Day-14 leg to Saty. The trade: no Suusamyr, no Too-Ashuu, no Bishkek.",
+    "highlights":["Still gets the petroglyphs and the fish stands","Two full days banked for anchors or weather"],
+    "via":["cholpon-ata"],
+    "geo":G("Song-Kul Lake, Kyrgyzstan","Kalmak-Ashuu (33 Parrots) Pass","Kochkor, Kyrgyzstan","Balykchy, Kyrgyzstan","Cholpon-Ata, Kyrgyzstan","Tüp, Kyrgyzstan","Karkara border crossing","Karkara, Kazakhstan","Kegen, Kazakhstan","Saty, Kazakhstan")},
+  ]},
+ {"seg":"S6","from":"saty","to":"almaty","title":"Saty → Almaty (base)",
+  "note":"Option (b) is a flagged stop, not a separate route: groups with time and energy can add the <b>Charyn “Moon Canyon” viewpoint</b> off the Shelek road — worthwhile if Day 5 rushed Charyn.",
+  "options":[
+   {"id":"S6a","name":"Kolsai Morning & the Run Home","reference":True,"refDays":"Day 15","days":1,"km":300,"est":False,
+    "difficulty":"easy","diffLabel":"easy",
+    "surface":"The Kaindy access track in the morning (rough but short), then tarmac Saty → Shelek → Almaty.",
+    "highlights":["The walk to Kolsai Lake-1","Lake Kaindy if missed on arrival","The celebration dinner in Almaty"],
+    "via":[],
+    "geo":G("Saty, Kazakhstan","Kolsai Lake 1","Saty, Kazakhstan","Kokpek, Kazakhstan","Shelek, Kazakhstan","Almaty, Kazakhstan")},
+  ]},
+]
+
+# ============ SILK ROAD FOOD TRAIL (lunches & dinners are excluded — by design) ============
+# The trip's signature foodie thread from tour/00-overview.md: every meal is a local
+# pick across Kazakh, Kyrgyz, Uyghur and Dungan cooking. Rendered as a themed section
+# on index.html (cards deep-link to day.html?d=N) and as a per-day callout on the
+# matching day pages. Photos reuse the verified destination thumbnails (HTTP 200).
 import urllib.parse as _up
 def _gmaps(q):
     return "https://www.google.com/maps/search/?api=1&query=" + _up.quote(q)
@@ -394,36 +706,46 @@ def _fph(did, i):
     return ph[i % len(ph)]["src"]
 
 FOOD_TRAIL = {
- "title": "The Coast Food Trail",
- "subtitle": "a foodie thread for Galiya",
- "intro": "The Pacific Northwest coast is one long seafood counter, and this ride threads its greatest hits — pulled-that-morning Dungeness crab, creamy clam chowder, beer-battered halibut, and the cheese-and-ice-cream pilgrimage at Tillamook. Four can't-miss stops, one per day down the coast.",
- "note": "<b>Notes:</b> hours stretch and lines grow over the Fourth-of-July weekend — go early, and have a backup pick. All links open Google Maps.",
+ "title": "The Silk Road Food Trail",
+ "subtitle": "lunches & dinners are excluded — by design",
+ "intro": "Lunches and dinners are on the rider, which is a feature: the route doubles as a food tour of Kazakh, Kyrgyz, Uyghur and Dungan cooking. Beshbarmak in Almaty, the benchmark laghman in the Uyghur District, Karakol's cold ashlan-fuu, kumis and boorsok in the Song-Kol yurts, plov in Bishkek, and smoked lake fish on Issyk-Kul's north shore — six can't-miss stops along the loop.",
+ "note": "<b>Notes:</b> roadside staples — manty from the café steamers, samsa from tandyr ovens, and shashlik judged by its smoke — fill the days in between. Carry som/tenge in cash: most trail stops take no cards. Budget ≈ USD 25–35/day (café lunch $3–6, good dinner $8–15).",
  "bookend": "",
  "stops": [
-   {"n":1,"day":1,"slot":"dinner","city":"Westport","pref":"WA Coast","style":"Dungeness crab & fish-and-chips",
-    "styleDesc":"Off-the-boat Dungeness crab, razor clams and beer-battered fish at the working marina where it's landed.",
-    "shop":"Bennett's Fish Shack","shopUrl":_gmaps("Bennett's Fish Shack Westport WA"),"shopNote":"the classic harbour fish-and-chips stop",
-    "alts":[{"l":"Merino's Seafood Market","u":_gmaps("Merino's Seafood Market Westport WA")},{"l":"Half Moon Bay Bar & Grill","u":_gmaps("Half Moon Bay Bar and Grill Westport WA")}],
-    "photo":_fph("westport",2)},
-   {"n":2,"day":2,"slot":"lunch","city":"Astoria","pref":"OR Coast","style":"Beer-battered fish & craft beer",
-    "styleDesc":"A legendary fish-and-chips trailer and the riverfront brewpubs that put Astoria on the beer map.",
-    "shop":"Bowpicker Fish & Chips","shopUrl":_gmaps("Bowpicker Fish and Chips Astoria OR"),"shopNote":"albacore tuna & chips from a boat-turned-food-stand",
-    "alts":[{"l":"Buoy Beer Co.","u":_gmaps("Buoy Beer Company Astoria OR")},{"l":"Fort George Brewery","u":_gmaps("Fort George Brewery Astoria OR")}],
-    "photo":_fph("astoria",5)},
-   {"n":3,"day":3,"slot":"lunch","city":"Tillamook","pref":"OR Coast","style":"Tillamook cheese & ice cream",
-    "styleDesc":"The marquee foodie-and-kid stop: a free cheese-factory viewing gallery, squeaky-fresh curds and the famous ice-cream counter.",
-    "shop":"Tillamook Creamery","shopUrl":_gmaps("Tillamook Creamery Tillamook OR"),"shopNote":"free self-guided tour + ice cream",
-    "alts":[{"l":"Blue Heron French Cheese Co.","u":_gmaps("Blue Heron French Cheese Company Tillamook OR")},{"l":"Pelican Brewing, Pacific City","u":_gmaps("Pelican Brewing Pacific City OR")}],
-    "photo":_fph("tillamook",1)},
-   {"n":4,"day":4,"slot":"dinner","city":"Yachats","pref":"OR Coast","style":"Wild Pacific seafood & chowder",
-    "styleDesc":"Tiny Yachats punches far above its weight — fresh-caught seafood, award-winning chowder and a beloved brewpub, the reward of the two-night base.",
-    "shop":"Luna Sea Fish House","shopUrl":_gmaps("Luna Sea Fish House Yachats OR"),"shopNote":"dock-to-table fish-and-chips & chowder",
-    "alts":[{"l":"Yachats Brewing + Farmstore","u":_gmaps("Yachats Brewing Farmstore Yachats OR")},{"l":"Ona Restaurant","u":_gmaps("Ona Restaurant Yachats OR")}],
-    "photo":_fph("yachats",6)},
+   {"n":1,"day":1,"slot":"dinner","city":"Almaty","pref":"Kazakhstan","style":"Beshbarmak — the welcome dinner",
+    "styleDesc":"The national dish of both countries: boiled meat (often horse in Kazakhstan) over broad hand-cut noodles with onion broth. Order it at a proper Kazakh restaurant tonight — it doesn't travel to guest-house kitchens as grandly as this.",
+    "shop":"A proper Kazakh restaurant, city center","shopUrl":_gmaps("beshbarmak restaurant Almaty"),"shopNote":"the welcome-dinner order",
+    "alts":[{"l":"Green Bazaar horse-meat stalls","u":_gmaps("Green Bazaar Almaty")}],
+    "photo":_fph("almaty",5)},
+   {"n":2,"day":4,"slot":"dinner","city":"Chundzha","pref":"Uyghur District, KZ","style":"Laghman — the real thing",
+    "styleDesc":"Chundzha is in the Uyghur heartland, and hand-pulled laghman here is the benchmark: chewy noodles slapped out to order under a fiery meat, pepper and celery sauce — eaten between rounds in the hot pools.",
+    "shop":"Uyghur café at the resort strip","shopUrl":_gmaps("lagman Chundzha Shonzhy"),"shopNote":"order it where the noodles are pulled to order",
+    "alts":[{"l":"Manty & samsa at the bazaar","u":_gmaps("bazaar Shonzhy Kazakhstan")},{"l":"Shashlik by the pool","u":_gmaps("hot springs resort Chundzha")}],
+    "photo":_fph("chundzha",4)},
+   {"n":3,"day":6,"slot":"lunch","city":"Karakol","pref":"Kyrgyzstan","style":"Ashlan-fuu at the bazaar",
+    "styleDesc":"Karakol's own dish and a point of civic pride: a cold, spicy Dungan bowl of noodles and wobbly starch jelly in vinegar-chili broth, sold for pennies at the cafés around the bazaar — practically an ashlan-fuu alley. Mandatory, ideally with a fried piroshki.",
+    "shop":"Karakol bazaar ashlan-fuu stalls","shopUrl":_gmaps("ashlan-fuu Karakol bazaar"),"shopNote":"pennies a bowl, best in town",
+    "alts":[{"l":"Dungan family dinner (book ahead)","u":"https://destinationkarakol.com/"},{"l":"Boso (fried) lagman","u":_gmaps("lagman Karakol")}],
+    "photo":_fph("karakol",5)},
+   {"n":4,"day":10,"slot":"dinner","city":"Song-Kol","pref":"Kyrgyzstan · 3,016 m","style":"Kumis & boorsok in the yurts",
+    "styleDesc":"Fermented mare's milk and fried dough pillows offered in the herders' yurts, with kaymak cream and apricot jam. Accepting a bowl is the polite (and memorable) thing to do — dinner is whatever the family cooks, and it's exactly right at 3,000 m.",
+    "shop":"The herders' yurt camp","shopUrl":_gmaps("Song-Kul Lake Kyrgyzstan"),"shopNote":"cash only — there is nothing to buy at the lake",
+    "alts":[{"l":"Shorpo & fresh noodles at the camp","u":_gmaps("Song-Kul yurt camp")}],
+    "photo":_fph("song-kol",2)},
+   {"n":5,"day":12,"slot":"dinner","city":"Bishkek","pref":"Kyrgyzstan","style":"Plov & the big-city classics",
+    "styleDesc":"The one mid-tour city night: proper kazan-cooked plov, beshbarmak and samsa at Navat's carved-wood teahouse — with the famous hand-pulled laghman at Cafe Faiza and craft beer at Save the Ales as the supporting cast.",
+    "shop":"Navat","shopUrl":_gmaps("Navat Bishkek"),"shopNote":"the easy, excellent group dinner",
+    "alts":[{"l":"Cafe Faiza (laghman)","u":_gmaps("Cafe Faiza Bishkek")},{"l":"Supara Ethno-Complex","u":_gmaps("Supara Ethno Complex Bishkek")},{"l":"Save the Ales","u":_gmaps("Save the Ales Bishkek")}],
+    "photo":_fph("bishkek",2)},
+   {"n":6,"day":13,"slot":"dinner","city":"Cholpon-Ata","pref":"Issyk-Kul north shore","style":"Smoked lake fish on the promenade",
+    "styleDesc":"The Issyk-Kul classic: whole fried or hot-smoked fish sold along both shores — the north-shore stands around Cholpon-Ata are the definitive stop, with bread, herbs, lemon and shashlik smoke drifting down the beachfront.",
+    "shop":"North-shore fish stands","shopUrl":_gmaps("smoked fish Cholpon-Ata"),"shopNote":"pick the stand with the queue",
+    "alts":[{"l":"Shashlik on the promenade","u":_gmaps("shashlik Cholpon-Ata promenade")}],
+    "photo":_fph("cholpon-ata",2)},
  ],
 }
 
-# Attach a compact foodTrail marquee list to the matching DAYS for the day-page 🦀 flag.
+# Attach a compact foodTrail marquee list to the matching DAYS for the day-page callout.
 FOOD_BY_DAY, TRAIL_CIDS = {}, set()
 for st in FOOD_TRAIL["stops"]:
     FOOD_BY_DAY.setdefault(st["day"], []).append(
@@ -433,12 +755,11 @@ for _d in DAYS:
     if _d["d"] in FOOD_BY_DAY:
         _d["foodTrail"] = FOOD_BY_DAY[_d["d"]]
 
-# ============ DAILY GUIDES (per-day food + activity research) ============
-# The local-guide agent writes one file per day at tour/daily-guides/day-NN.md, each
-# carrying a fenced ```json block: {d, title, overnight, schedule, todo[], meals[]}.
-# We attach the meals as `eats` (grouped by slot, with the kid pick flagged) and the
-# todo as `localTodo` onto the matching window.DAYS entry (match on `d`). Done generically
-# over the files so it re-runs cleanly when guides change; days with no guide get no `eats`.
+# ============ DAILY GUIDES (optional per-day food + activity research) ============
+# The local-guide agent may write tour/daily-guides/day-NN.md files, each carrying a
+# fenced ```json block: {d, title, overnight, schedule, todo[], meals[]}. We attach the
+# meals as `eats` (grouped by slot) and the todo as `localTodo` onto the matching
+# window.DAYS entry (match on `d`). Days with no guide get no `eats`. None written yet.
 GUIDES = os.path.join(os.path.dirname(__file__), "tour", "daily-guides")
 _PICK_KEYS = ["name", "cuisine", "cuisine_note", "rating", "why", "kid", "map", "photo"]
 
@@ -472,7 +793,7 @@ for _dnum, _g in sorted(GUIDE_BY_D.items()):
         _picks = [clean_pick(p) for p in _meal.get("picks", [])]
         if not _picks:
             continue
-        for _p in _picks:   # 🍜 flag picks that are a Ramen Trail marquee/alternative shop
+        for _p in _picks:   # flag picks that are a Food Trail marquee/alternative shop
             _cm = re.search(r"cid=(\d+)", _p.get("map", "") or "")
             if _cm and _cm.group(1) in TRAIL_CIDS:
                 _p["trail"] = True
@@ -486,168 +807,122 @@ for _dnum, _g in sorted(GUIDE_BY_D.items()):
     if _todo:
         _day["localTodo"] = _todo
 
-# ============ GETTING STARTED (no flights — the trip starts in the garage) ============
+# ============ HOW THE TRIP WORKS (guided package; fly ALA in and out) ============
 FLIGHTS = {
- "intro": "There are no flights and no rental counters — this tour starts in your own garage in Woodinville and ends there a week later. The only logistics are a tank of gas, a packed top-box, and the Edmonds–Kingston ferry that opens Day 1. It's a deliberately simple round trip, designed so a brand-new rider can focus on the riding, not the paperwork.",
- "season": "Depart Wednesday 1 July 2026, home Tuesday 7 July — seven days. Early July is prime Pacific Northwest touring weather: long daylight, dry mountain passes (Chinook Pass is open) and the warmest the coast gets. The catch is the Fourth-of-July crowds — the rest day lands on the 4th in Yachats, so book all coast lodging months ahead.",
+ "intro": "This is a guided package: Silk Off Road Tours provides the rental Suzuki DR650SE, the ride leader, the support truck that carries all luggage, every night's lodging, breakfasts, entry fees and both airport transfers. On the rider: a round-trip flight to Almaty (ALA), documents, personal insurance, fuel, and lunches & dinners (that last one is a feature — see the Food Trail). The loop starts and finishes in Almaty — no open-jaw flight logic.",
+ "season": "Planned dates: Sep 5–20, 2026 — confirm dates and the custom-edition price with the operator. September brings stable weather on the steppe and desert legs, but the 3,000–4,000 m passes and yurt nights can sit near or below freezing while Chundzha still tops 30 °C: layering is the whole packing strategy.",
  "legs": [
-   {"dir":"Outbound · down the coast","from":"Home · Woodinville, WA","to":"Yachats, OR (the ★ base)",
-    "sample":"Days 1–3 · Wed 1 – Fri 3 Jul 2026",
-    "type":"Ride + ferry","duration":"≈ 436 mi over 3 gentle days",
-    "note":"A short ride to the Edmonds waterfront, the ferry across Puget Sound, then quiet roads down Hood Canal and the whole length of the Washington and Oregon coast on Highway 101 — Westport and Astoria overnights, Tillamook cheese and the Three Capes en route to the Yachats base. No freeways, breaks every 60–90 minutes."},
-   {"dir":"Return · over the mountains","from":"Yachats, OR","to":"Home · Woodinville, WA",
-    "sample":"Days 5–7 · Sun 5 – Tue 7 Jul 2026",
-    "type":"Ride","duration":"≈ 534 mi over 3 days",
-    "note":"The loop turns inland: across the Coast Range and the Columbia to Mount St. Helens, a short day to Packwood, then the graduation ride home through Mount Rainier National Park over Chinook Pass. The longest single day (~216 mi to St. Helens) is broken with frequent stops."}
+   {"dir":"Getting there · fly to Almaty","from":"Home airport","to":"Almaty (ALA)",
+    "sample":"Arrive by Sat Sep 5 · depart Sun Sep 20, 2026",
+    "type":"Round-trip flight","duration":"via IST · FRA · DXB or Astana",
+    "note":"A simple round-trip ticket to Almaty International Airport (ALA). Arrive by Day 1 — the operator's transfer meets arrivals, and bike handover plus the welcome dinner happen that day, so land in the morning or the day before. Buffer days are cheap insurance against a missed handover. Both airport transfers are included."},
+   {"dir":"The tour · the guided loop","from":"Almaty","to":"Almaty",
+    "sample":"Days 1–16 · Sep 5–20 · a 14-day tour body (1 training + 12 riding + 1 rest day)",
+    "type":"Guided group ride","duration":"≈ 2,800 km · 13 riding days",
+    "note":"A custom extended edition of the operator's 10-day route on a rental Suzuki DR650SE (43 hp, ~160 kg, third-party insurance included; USD 500 refundable damage deposit at handover — photograph the bike). Ride leader sets pace and lines; the support truck carries the duffel, spares and reserve fuel. The two Kegen/Karkara border crossings (Day 5 southbound +1 h, Day 14 northbound −1 h) are handled by the operator — you queue with your passport."}
  ],
- "estimate": "Budget is modest: gas for two bikes over ~970 miles, six nights of lodging (the Yachats oceanfront stay is the splurge; coast motels and Packwood lodges are cheaper), the Edmonds–Kingston ferry (~$9 per motorcycle + rider), and a Mount Rainier National Park entry pass (or the America the Beautiful annual pass). Food is the fun line item — see the Coast Food Trail.",
+ "estimate": "The operator's published 10-day tour is USD 3,000 + a USD 500 refundable deposit; this 16-day loop is a custom extended edition — indicative ≈ USD 4,500, price to confirm. Included: bike, guide, support vehicle, twin-share lodging, breakfasts, water, entry fees, transfers. Excluded: flights, fuel (~USD 95–125 for ~2,800 km of AI-92), lunches & dinners (~USD 400–525 over the trip), visas if any, personal insurance, damage liability.",
  "tips": [
-   "Book all coast lodging months ahead — the Fourth-of-July weekend sells Yachats and the whole coast out early.",
-   "The Kawasaki W230's tank is small (~3.4 gal) — top up at every reasonable chance; fuel is sparse on the coast and around the mountains.",
-   "Pack for everything: cold coastal fog and wind, possible rain, and alpine chill at Chinook Pass — layers and waterproofs for all three.",
-   "Pair the intercoms before Day 1; Galiya rides up front and sets the pace, with Aslan and the GS behind.",
-   "Check WSDOT for Chinook Pass (SR-410) status and the Mount Rainier timed-entry reservation system before Days 6–7."
+   "Both countries are visa-free for US citizens (KZ: 30 days/visit; KG: 30 days per 60-day period since Jan 1, 2026) — re-verify both sets of rules ~1 month before departure, they move.",
+   "Bring your home motorcycle license + an International Driving Permit (AAA, ~USD 20, two passport photos) — an operator requirement, and police document checks on KZ/KG highways are routine.",
+   "Buy travel medical + evacuation insurance that explicitly covers riding a motorcycle over 250 cc and is valid to at least 4,100 m in both countries — it is excluded from the tour price and non-negotiable.",
+   "Cash is the tool: withdraw tenge at ALA and som in Karakol or Bishkek; keep ~USD 100 equivalent in small local notes plus USD ~200 in crisp bills as reserve. Saty and Song-Kol have no ATMs.",
+   "Set your watch at the border: Kazakhstan is UTC+5, Kyrgyzstan UTC+6 — clocks go +1 h on Day 5 and −1 h on Day 14.",
+   "Install a Central Asia eSIM (Airalo/Holafly) before flying, and expect zero coverage at Song-Kol, on the high passes and around Saty — tell family the blackout days in advance."
  ],
  "links": [
-   {"l":"Washington State Ferries — Edmonds/Kingston","u":"https://wsdot.wa.gov/travel/washington-state-ferries/schedules/edmonds-kingston"},
-   {"l":"Mount Rainier National Park (NPS)","u":"https://www.nps.gov/mora/index.htm"},
-   {"l":"Mount St. Helens National Volcanic Monument","u":"https://www.fs.usda.gov/mountsthelens"},
-   {"l":"WSDOT — mountain pass reports (Chinook Pass)","u":"https://wsdot.com/travel/real-time/mountainpasses"},
-   {"l":"Visit the Oregon Coast","u":"https://visittheoregoncoast.com/"},
-   {"l":"Visit Yachats","u":"https://yachats.org/"}
+   {"l":"Silk Off Road Tours — the operator","u":"https://www.silkoffroadtours.com/motorcycle-tours-kazakhstan-kyrgyzstan"},
+   {"l":"U.S. Embassy — visa-free travel to Kazakhstan","u":"https://kz.usembassy.gov/visa-free-travel-to-kazakhstan/"},
+   {"l":"travel.state.gov — Kazakhstan","u":"https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Kazakhstan.html"},
+   {"l":"travel.state.gov — Kyrgyzstan","u":"https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Kyrgyzstan.html"},
+   {"l":"Kyrgyzstan visa-free rules (30/60 days)","u":"https://kyrgyzstan-tourism.com/news/kyrgyzstan-introduces-visa-free-regime-for-up-to-30-days-for-citizens-of-55-countries/"},
+   {"l":"Kazakh Travel — official tourism portal","u":"https://www.kazakh.travel/en"}
  ]
 }
 
-# ============ CHECKLIST ============
+# ============ CHECKLIST (from tour/02-getting-started.md + 00-riders.md) ============
 CHECKLIST = [
- {"sec":"Documents & licences","icon":"📄","items":[
-   "Washington motorcycle endorsement on each rider's licence (Galiya's is brand-new — keep it on you)",
-   "Vehicle registration + proof of insurance for BOTH bikes (W230 and R1300GS)",
-   "Roadside-assistance card (AAA or your insurer's moto plan)",
-   "America the Beautiful annual pass OR cash/card for the Mount Rainier park entry",
-   "Credit card + some backup cash; digital + paper copies of the key documents"
+ {"sec":"Documents & visas","icon":"📄","items":[
+   "Passport valid 6+ months beyond the trip, with 2+ blank pages (ALA stamps in and out PLUS four border stamps mid-tour)",
+   "Kazakhstan: visa-free for US citizens up to 30 days/visit — hotels handle the >5-day registration automatically",
+   "Kyrgyzstan: visa-free, but the rules changed Jan 1, 2026 (30 days within each 60-day period) — don't trust old guidebooks",
+   "Re-verify BOTH countries' entry rules ~1 month before departure",
+   "Home motorcycle license + International Driving Permit (AAA, ~USD 20, two passport photos) — carried every riding day",
+   "Paper photocopies + phone photos of everything; passport stays on you (not in the truck) on both border days"
  ]},
- {"sec":"The bikes — pre-trip prep","icon":"🏍️","items":[
-   "Full service before departure: oil, brakes, and the W230's chain tension & lube",
-   "Tyres checked for tread and set to pressure (both bikes, two-up loads)",
-   "Plan fuel around the W230's small (~3.4 gal) tank — top up at every reasonable stop",
-   "Luggage fitted and packed light — top-box/panniers/dry bags, nothing loose",
-   "Intercoms paired, phone mounts and chargers fitted, a shakedown ride loaded"
+ {"sec":"Flights & arrival","icon":"✈️","items":[
+   "Round-trip ticket to Almaty (ALA) — arrive by Day 1 (Sat Sep 5), depart Day 16 (Sun Sep 20)",
+   "Land in the morning or a day early — bike handover and the welcome dinner are on Day 1",
+   "Send flight details to the operator for the included airport transfers",
+   "Confirm the custom-edition dates and price (indicative ≈ USD 4,500) with Silk Off Road Tours"
  ]},
- {"sec":"Child-pillion setup (Aslan on the GS)","icon":"🧒","items":[
-   "Properly fitting child motorcycle helmet (correct shell size, not an adult hand-me-down)",
-   "Armoured jacket, gloves, pants and boots that fit; ear protection",
-   "Feet reach the passenger pegs (lowered/peg brackets if needed)",
-   "Passenger backrest / top-box backrest so he can't slide rearward",
-   "Grab rail or grab strap at the waist; a child–adult tether is reassuring",
-   "Intercom for Aslan; snacks, water, sun hat and a comfort item",
-   "Plan stops every 60–90 minutes; never ride him overtired or after dark"
+ {"sec":"The rental DR650 & the deposit","icon":"🏍️","items":[
+   "USD 500 refundable damage deposit due at handover — damage liability is on the rider",
+   "Photograph the bike thoroughly at the Day-1 inspection (every panel, both sides)",
+   "Use the Day-2 training day hard: levers, tire pressures, suspension sag, full walk-around",
+   "Soft duffel 15–20 kg for the support truck; ride with only a tank/tail bag and water",
+   "Plan fuel around the ~250 km real-world range: fill at every stop the leader calls, and brim before Altyn-Emel, Barskoon, Song-Kol and the Kegen→Saty leg"
  ]},
- {"sec":"Ferry & passes","icon":"⛴️","items":[
-   "Edmonds–Kingston ferry — no reservation needed for motorcycles; arrive 20–30 min early (bikes load first)",
-   "Confirm Chinook Pass (SR-410) is open (WSDOT) for the Day-7 ride home",
-   "Check the Mount Rainier National Park timed-entry reservation system for summer (Paradise corridor)",
-   "Note that the Spirit Lake Hwy upper road / Johnston Ridge is closed — plan the viewpoint out-and-back"
+ {"sec":"Riding gear — 0 to 35 °C in one trip","icon":"🧥","items":[
+   "Full ADV suit with removable thermal + waterproof liners",
+   "Off-road-capable boots; two glove weights (summer + insulated)",
+   "Merino base layers + a packable down mid-layer + warm hat — Suek Pass and the ~3,000 m nights can freeze even in September",
+   "Balaclava / neck tube; earplugs",
+   "Hydration pack — desert days and altitude both punish dehydration"
  ]},
- {"sec":"Lodging","icon":"🏨","items":[
-   "Book all six nights — Westport, Astoria, Yachats (×2), Castle Rock/Silver Lake, Packwood",
-   "Book the Yachats stay FAR ahead — the coast sells out for the Fourth of July",
-   "Confirm secure motorcycle parking + family/passenger rules at every property before booking",
-   "Family room / beds; ask about laundry mid-trip if wanted"
+ {"sec":"Yurt-night kit (3 nights: D7–8 & D10)","icon":"⛺","items":[
+   "Sleeping-bag liner (blankets are provided, laundering is rustic)",
+   "Headlamp, wet wipes, small quick-dry towel",
+   "Swim kit for the rest day at the lake",
+   "10,000+ mAh power bank — yurt-camp power is limited/solar",
+   "A few small gifts for herder hosts"
  ]},
- {"sec":"Rider gear & packing","icon":"🧥","items":[
-   "Armoured jacket & pants, gloves, riding boots (each rider)",
-   "Rain layers AND warm base layers — coastal fog/wind and alpine chill at Chinook Pass",
-   "Sun protection, earplugs, neck tube",
-   "Pack light — soft luggage / dry bags",
-   "Comfortable off-bike shoes & evening clothes"
+ {"sec":"Health & altitude","icon":"⛰️","items":[
+   "Ibuprofen/acetaminophen for altitude headaches; personal medications for 16 days",
+   "Sunscreen + lip balm (altitude sun), water-purification backup, TP",
+   "Hydrate relentlessly and skip alcohol the night before the big passes",
+   "Respect the plan: Day 7 crests 4,021 m and two nights sleep at ~3,000 m — the Day-8 rest day is part of the acclimatization"
  ]},
- {"sec":"Bike kit (carried by lead rider)","icon":"🔧","items":[
-   "Basic tools + tyre repair/inflator",
-   "First-aid kit",
-   "Spare gloves / layers",
-   "Phone mount + chargers / power bank",
-   "Zip ties, tape, bungees"
+ {"sec":"Money — tenge, som & cash","icon":"💵","items":[
+   "Withdraw tenge (KZT) at ALA; som (KGS) in Karakol or Bishkek",
+   "Carry ~USD 100 equivalent in small local notes at all times + USD ~200 in crisp bills as reserve",
+   "Keep enough tenge from the first KZ leg to cover Days 14–15 — Saty is cash-only with no ATM",
+   "Budget lunches & dinners ~USD 25–35/day (≈ USD 400–525 for the trip) and fuel ~USD 95–125",
+   "Cash only in the border areas and at Song-Kol/Suusamyr/Saty; cards work in Almaty, Karakol, Bishkek, Cholpon-Ata"
  ]},
- {"sec":"Insurance & health","icon":"🛡️","items":[
-   "Motorcycle insurance current on both bikes (passenger cover for Aslan)",
-   "Roadside-assistance / breakdown cover",
-   "Personal medications + small first-aid kit",
-   "Note nearest hospitals on route (Aberdeen, Astoria, Newport, Morton/Packwood, Enumclaw)"
+ {"sec":"Comms & eSIM","icon":"📱","items":[
+   "Regional Central Asia eSIM (Airalo/Holafly) installed before flying — or local SIMs (passport needed to register)",
+   "Expect zero coverage at Song-Kol, in Altyn-Emel's back country and on all high passes; patchy around Saty/Kolsai",
+   "Tell family the blackout days in advance; consider a Garmin inReach",
+   "Remember the time change (KG = KZ +1 h) when scheduling calls home on Days 5–14",
+   "Download offline maps for both countries"
  ]},
- {"sec":"Money & connectivity","icon":"📱","items":[
-   "Cards + some cash — small coast and mountain towns can be cash-friendly",
-   "Download offline Google Maps for the coast and the Cascades (cell is spotty)",
-   "Share the live route/plan with family back home"
+ {"sec":"Insurance — the non-negotiable one","icon":"🛡️","items":[
+   "Travel medical + emergency evacuation cover for all 16 days, in BOTH countries",
+   "Policy must explicitly include riding a motorcycle over 250 cc (the DR650 is 644 cc) and be valid to 4,100 m altitude",
+   "Carry the insurer's 24-h number on paper and give a copy to the ride leader",
+   "Check whether your travel policy covers rental-vehicle excess (the USD 500 deposit exposure)"
  ]},
- {"sec":"Final day before","icon":"✅","items":[
-   "Check the forecast and the Chinook Pass / Mount Rainier status",
-   "Fuel both bikes and do the child-pillion setup test",
-   "Charge intercoms, phones, cameras, power banks",
-   "Final gear + luggage check; confirm the Day-1 ferry timing",
-   "Get a good night's sleep — Day 1 starts with the ferry"
+ {"sec":"Final days before","icon":"✅","items":[
+   "Re-verify KZ & KG entry rules and re-confirm dates with the operator",
+   "Watch the weather window for the Suek glacier road and Song-Kol",
+   "Charge power bank, headlamp, intercom, camera",
+   "Cash sorted (USD reserve + first tenge), documents photographed",
+   "Pack the duffel to 15–20 kg and weigh it — the truck carries it, the mountain rates it"
  ]}
 ]
-
-# ============ GEO (routing points) ============
-GEO = {
- "Woodinville, WA":"47.75530,-122.13389",
- "Edmonds Ferry Terminal, Edmonds, WA":"47.81298,-122.38424",
- "Hama Hama Oyster Saloon, Lilliwaup, WA":"47.54235,-123.04071",
- "Hoodsport, WA":"47.40636,-123.14058",
- "Aberdeen, WA":"46.97537,-123.81572",
- "Westport, WA":"46.89009,-124.10406",
- "Grays Harbor Lighthouse, Westport, WA":"46.88839,-124.11689",
- "Westhaven State Park, Westport, WA":"46.89565,-124.11964",
- "Raymond, WA":"46.68649,-123.73294",
- "South Bend, WA":"46.66315,-123.80461",
- "Long Beach, WA":"46.35232,-124.05432",
- "Cape Disappointment State Park, WA":"46.29955,-124.06538",
- "Astoria-Megler Bridge":"46.21577,-123.86221",
- "Astoria, OR":"46.18788,-123.83125",
- "Astoria Column, Astoria, OR":"46.18132,-123.81751",
- "Columbia River Maritime Museum, Astoria, OR":"46.18988,-123.82360",
- "Cannon Beach, OR":"45.89177,-123.96153",
- "Haystack Rock, Cannon Beach, OR":"45.88412,-123.96848",
- "Ecola State Park, OR":"45.91994,-123.96968",
- "Tillamook Creamery, Tillamook, OR":"45.48398,-123.84425",
- "Tillamook Air Museum, Tillamook, OR":"45.42073,-123.80360",
- "Cape Meares Lighthouse, OR":"45.48645,-123.97832",
- "Pacific City, OR":"45.20233,-123.96289",
- "Cape Kiwanda, Pacific City, OR":"45.21528,-123.96958",
- "Oregon Coast Aquarium, Newport, OR":"44.61765,-124.04725",
- "Newport, OR":"44.63678,-124.05345",
- "Yachats, OR":"44.31123,-124.10484",
- "Cape Perpetua, Yachats, OR":"44.28111,-124.10028",
- "Heceta Head Lighthouse, OR":"44.13738,-124.12812",
- "Sea Lion Caves, OR":"44.12178,-124.12671",
- "804 Trail, Yachats, OR":"44.32335,-124.10541",
- "Alsea, OR":"44.38189,-123.59707",
- "Corvallis, OR":"44.56464,-123.26196",
- "Longview, WA":"46.13817,-122.93817",
- "Castle Rock, WA":"46.27511,-122.90761",
- "Mount St. Helens Visitor Center, Silver Lake, WA":"46.29449,-122.82215",
- "Mount St. Helens":"46.19120,-122.19440",
- "Hoffstadt Bluffs, WA":"46.37370,-122.55860",
- "Coldwater Lake, WA":"46.29565,-122.25224",
- "Mossyrock, WA":"46.52955,-122.48511",
- "Morton, WA":"46.55844,-122.27510",
- "Packwood, WA":"46.60733,-121.67058",
- "Paradise, Mount Rainier National Park, WA":"46.78532,-121.73497",
- "Reflection Lakes, Mount Rainier, WA":"46.76950,-121.73200",
- "Narada Falls, Mount Rainier, WA":"46.77490,-121.74618",
- "Tipsoo Lake, WA":"46.86911,-121.51747",
- "Enumclaw, WA":"47.20427,-121.99150",
-}
 
 # ============ DAYART (region-matched scenic photos, keyed by day.d) ============
 def _art(did, i):
     ph = DESTS[did]["photos"]
     return ph[i % len(ph)]["src"]
 DAYART = {
- "1": _art("home",2),   "2": _art("cannon-beach",0), "3": _art("tillamook",9),
- "4": _art("yachats",0), "5": _art("st-helens",0), "6": _art("st-helens",1),
- "7": _art("rainier",0),
+ "1": _art("almaty",0),   "2": _art("almaty",4),      "3": _art("altyn-emel",5),
+ "4": _art("altyn-emel",0),"5": _art("karakol",0),    "6": _art("karakol",3),
+ "7": _art("issyk-kul",1), "8": _art("issyk-kul",0),  "9": _art("kochkor",0),
+ "10": _art("song-kol",0), "11": _art("suusamyr",1),  "12": _art("bishkek",3),
+ "13": _art("cholpon-ata",2), "14": _art("karakol",2),"15": _art("saty",2),
+ "16": _art("almaty",3),
 }
 
 # ============ EMIT ============
@@ -663,11 +938,14 @@ def js(v, indent=0):
         if not v:
             return "[]"
         items = [js(x, indent+1) for x in v]
-        # inline short lists of scalars/strings
+        # inline short lists of scalars/strings and coordinate pairs
         if all(isinstance(x, (str, int, float, bool)) for x in v):
             joined = ", ".join(items)
             if len(joined) < 100:
                 return "[" + joined + "]"
+        if all(isinstance(x, list) and len(x) == 2 and
+               all(isinstance(y, (int, float)) for y in x) for x in v):
+            return "[" + ", ".join("[%s,%s]" % (y[0], y[1]) for y in v) + "]"
         inner = ",\n".join("  " * (indent+1) + it for it in items)
         return "[\n" + inner + "\n" + pad + "]"
     if isinstance(v, dict):
@@ -682,7 +960,6 @@ def js(v, indent=0):
     raise TypeError(str(type(v)))
 
 def emit_dest(d):
-    keys = ["id","name","jp","region","type","days","legMiles"]
     o = []
     o.append("{")
     o.append('  id: %s,' % json.dumps(d["id"]))
@@ -691,7 +968,7 @@ def emit_dest(d):
     o.append('  region: %s,' % json.dumps(d["region"], ensure_ascii=False))
     o.append('  type: %s,' % json.dumps(d["type"]))
     o.append('  days: %s,' % json.dumps(d["days"], ensure_ascii=False))
-    o.append('  legMiles: %d,' % d["legMiles"])
+    o.append('  legKm: %d,' % d["legKm"])
     o.append('  lat: %s, lng: %s, zoom: %d,' % (d["lat"], d["lng"], d["zoom"]))
     o.append('  tagline: %s,' % json.dumps(d.get("tagline",""), ensure_ascii=False))
     o.append('  intro: ' + js(d["intro"], 1) + ',')
@@ -710,16 +987,24 @@ out.append("window.DESTINATIONS = [")
 out.append(",\n".join(emit_dest(DESTS[i]) for i in ORDER))
 out.append("];\n")
 
-out.append('window.HOME = { city: "Woodinville", state: "WA" };')
+out.append('window.HOME = { city: "Almaty", country: "Kazakhstan" };')
 out.append("window.FLIGHTS = " + js(FLIGHTS, 0) + ";\n")
 
-out.append("/* Day-by-day schedule (Day 1–7). day.html builds a timed routine per day. */")
+out.append("/* Day-by-day schedule (Day 1–16). day.html builds a timed routine per day.")
+out.append("   km are the planned legs (2,809 km total); dmin are honest ride-time estimates")
+out.append("   (~65 km/h asphalt, ~35 km/h gravel) — several legs are off Google's road graph. */")
 out.append("window.DAYS = [")
 out.append(",\n".join(js(d, 1) for d in DAYS))
 out.append("];\n")
 
-out.append("/* Themed 'Coast Food Trail' foodie thread for Galiya;")
-out.append("   rendered as a section on index.html and a 🦀 flag on the matching day pages. */")
+out.append("/* The flexible anchor-point plan: 5 fixed pre-booked anchors (+ the Almaty base)")
+out.append("   and the route options between them (tour/03-anchors-and-options.md).")
+out.append("   Reference options carry reference:true; km flagged est:true are estimates. */")
+out.append("window.ANCHORS = " + js(ANCHORS, 0) + ";\n")
+out.append("window.SEGMENTS = " + js(SEGMENTS, 0) + ";\n")
+
+out.append("/* Themed 'Silk Road Food Trail' foodie thread;")
+out.append("   rendered as a section on index.html and a callout on the matching day pages. */")
 out.append("window.FOOD_TRAIL = " + js(FOOD_TRAIL, 0) + ";\n")
 
 out.append("/* Pre-trip preparation checklist (rendered by checklist.html). */")
@@ -733,10 +1018,12 @@ out.append("window.DAYART = " + js(DAYART, 0) + ";")
 
 open(os.path.join(os.path.dirname(__file__), "data.js"), "w", encoding="utf-8").write("\n".join(out) + "\n")
 print("wrote data.js")
-print("DESTINATIONS:", len(ORDER), "DAYS:", len(DAYS))
+print("DESTINATIONS:", len(ORDER), "DAYS:", len(DAYS),
+      "ANCHORS:", len(ANCHORS), "SEGMENTS:", len(SEGMENTS))
 print("ids:", ", ".join(ORDER))
+kmsum = sum(d["km"] for d in DAYS)
+print("riding km sum:", kmsum, "(expect 2809)")
 # image url inventory
-import collections
 urls = set()
 for i in ORDER:
     for ph in DESTS[i]["photos"]:

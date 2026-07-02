@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Preparation Checklist · PNW Family First Tour</title>
+<title>Preparation Checklist · From Desert Up to Glaciers</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Shippori+Mincho:wght@600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <style>
   :root{--bg:#0e1116;--bg-soft:#161b22;--panel:#1c222b;--panel-2:#232b36;--line:#2c3540;
     --text:#e8edf3;--muted:#9aa7b5;--accent:#e3493b;--accent-2:#f0a830;--teal:#3fb8af;--green:#5fb35f;--radius:14px;--maxw:900px;}
   *{box-sizing:border-box;} body{margin:0;font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;}
-  h1,h2{line-height:1.2;margin:0;} .mincho{font-family:'Shippori Mincho',serif;}
+  h1,h2{line-height:1.2;margin:0;} .mincho{font-family:inherit;}
   a{color:var(--teal);text-decoration:none;} a:hover{text-decoration:underline;}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px;}
   nav.top{position:sticky;top:0;z-index:50;background:rgba(14,17,22,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
@@ -49,14 +49,14 @@
 </head>
 <body>
 <nav class="top"><div class="wrap">
-  <div class="brand mincho">🏍️ <span>·</span> PNW First Tour</div>
+  <div class="brand mincho">🏍️ <span>·</span> Desert → Glaciers</div>
   <a class="back" href="index.html">← Home</a>
 </div></nav>
 
 <header class="h"><div class="wrap">
   <div class="tag">Before You Go</div>
   <h1>Preparation Checklist</h1>
-  <p>Everything to sort before the trip — bikes, lodging, the ferry, licences, insurance, gear and packing. Your ticks are saved in this browser.</p>
+  <p>Everything to sort before the tour — documents and visas, the flight to Almaty, the rental DR650 deposit, gear for 0–35 °C, the yurt-night kit, cash, comms and the non-negotiable evacuation insurance. Your ticks are saved in this browser.</p>
   <div class="progwrap">
     <div class="bar"><i id="barFill"></i></div>
     <span class="progtxt" id="progTxt">0 / 0</span>
@@ -69,11 +69,11 @@
   <button class="printbtn" onclick="window.print()">🖨️ Print / save as PDF</button>
 </div></main>
 
-<footer><div class="wrap">Part of the 7-day PNW Family First Tour (Jul 1–7, 2026) · <a href="index.html">Back to the itinerary →</a> · <a href="tour/00-overview.md">Trip overview</a></div></footer>
+<footer><div class="wrap">Part of the 16-day "From Desert Up to Glaciers" loop (Sep 5–20, 2026) · <a href="index.html">Back to the itinerary →</a> · <a href="tour/00-overview.md">Trip overview</a></div></footer>
 
 <script src="data.js"></script>
 <script>
-  const KEY = 'jtour-checklist-v1';
+  const KEY = 'kaztour-checklist-v1';
   const state = JSON.parse(localStorage.getItem(KEY) || '{}');
   const list = document.getElementById('list');
   let total = 0;

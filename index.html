@@ -3,14 +3,18 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PNW Family First Tour · 7-Day Motorcycle Loop, Woodinville → Oregon Coast → Rainier</title>
-<meta name="description" content="A 7-day family motorcycle 'first tour' for a brand-new rider — Woodinville to the Oregon Coast (Yachats) via the Edmonds ferry and Tillamook, home over Mount St. Helens and Mount Rainier. No freeways." />
+<title>From Desert Up to Glaciers · 16-Day ADV Motorcycle Loop — Kazakhstan &amp; Kyrgyzstan</title>
+<meta name="description" content="A 16-day guided ADV motorcycle loop, Almaty → Almaty across Kazakhstan and Kyrgyzstan (Sep 5–20, 2026): ≈ 2,800 km, singing dunes to 4,021 m glacier passes, three yurt-camp nights — a flexible anchor-point plan with route options between five fixed anchors." />
+<meta property="og:title" content="From Desert Up to Glaciers — the Loop" />
+<meta property="og:description" content="16 days · ≈ 2,800 km · 2 countries · 5 anchors. A guided ADV motorcycle loop from Almaty over the Tian Shan — desert pistes, 4,021 m Suek Pass, Song-Kol yurts, and the roads between the anchors." />
+<meta property="og:image" content="assets/hero.jpg" />
+<meta property="og:type" content="website" />
 <link rel="preconnect" href="https://unpkg.com" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Shippori+Mincho:wght@600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <style>
   :root {
     --bg: #0e1116;
@@ -20,9 +24,9 @@
     --line: #2c3540;
     --text: #e8edf3;
     --muted: #9aa7b5;
-    --accent: #e3493b;      /* torii red */
-    --accent-2: #f0a830;    /* warm amber */
-    --teal: #3fb8af;        /* seto sea */
+    --accent: #e3493b;      /* canyon red */
+    --accent-2: #f0a830;    /* steppe amber */
+    --teal: #3fb8af;        /* alpine lake */
     --green: #5fb35f;
     --radius: 14px;
     --maxw: 1180px;
@@ -38,7 +42,7 @@
     -webkit-font-smoothing: antialiased;
   }
   h1, h2, h3 { line-height: 1.2; margin: 0 0 .4em; }
-  .mincho { font-family: 'Shippori Mincho', serif; }
+  .mincho { font-family: inherit; }
   a { color: var(--teal); text-decoration: none; }
   a:hover { text-decoration: underline; }
   .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 22px; }
@@ -61,10 +65,9 @@
     border: 1px solid var(--line); border-radius: 999px;
     padding: 6px 14px; background: rgba(0,0,0,.2); margin-bottom: 22px;
   }
-  .hero-banner { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); box-shadow: 0 16px 50px rgba(0,0,0,.45); margin-bottom: 28px; }
+  .hero-banner { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); box-shadow: 0 16px 50px rgba(0,0,0,.45); margin: 28px 0 0; }
   .hero h1 { font-size: clamp(34px, 6vw, 60px); font-weight: 800; letter-spacing: -.02em; }
-  .hero h1 .jp { display:block; font-size: .42em; color: var(--muted); letter-spacing:.2em; font-weight:600; margin-top:10px; }
-  .hero p.lead { font-size: clamp(16px, 2.2vw, 20px); color: var(--muted); max-width: 720px; margin: 18px 0 30px; }
+  .hero p.lead { font-size: clamp(16px, 2.2vw, 20px); color: var(--muted); max-width: 780px; margin: 18px 0 30px; }
   .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; }
   .btn {
     display: inline-flex; align-items: center; gap: 8px;
@@ -77,48 +80,96 @@
   .btn.primary:hover { background: #f0594b; }
 
   /* ---------- Stat strip ---------- */
-  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 44px; }
+  .stats { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; margin-top: 32px; }
   .stat {
     background: rgba(255,255,255,.03); border: 1px solid var(--line);
     border-radius: var(--radius); padding: 18px 20px;
   }
-  .stat .n { font-size: 28px; font-weight: 800; color: #fff; }
-  .stat .l { font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .08em; }
+  .stat .n { font-size: 26px; font-weight: 800; color: #fff; white-space: nowrap; }
+  .stat .l { font-size: 12.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .07em; }
 
   /* ---------- Sections ---------- */
   section { padding: 64px 0; border-bottom: 1px solid var(--line); }
   .sec-head { margin-bottom: 30px; }
   .sec-head .tag { color: var(--accent-2); font-weight: 600; font-size: 13px; letter-spacing:.14em; text-transform: uppercase; }
   .sec-head h2 { font-size: clamp(26px, 4vw, 38px); font-weight: 800; letter-spacing: -.01em; margin-top: 8px; }
-  .sec-head p { color: var(--muted); max-width: 760px; }
+  .sec-head p { color: var(--muted); max-width: 800px; }
+
+  /* ---------- Anchors & options spine ---------- */
+  .spine { display: grid; gap: 14px; }
+  .anchor-card {
+    position: relative; display: grid; grid-template-columns: 86px 1fr; gap: 0;
+    background: linear-gradient(160deg, rgba(227,73,59,.14), rgba(227,73,59,.04));
+    border: 1px solid rgba(227,73,59,.5); border-radius: var(--radius); overflow: hidden;
+    color: inherit; transition: transform .12s, border-color .15s;
+  }
+  .anchor-card:hover { transform: translateY(-2px); border-color: var(--accent); text-decoration: none; }
+  .anchor-card .astar {
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background: rgba(227,73,59,.18); border-right: 1px solid rgba(227,73,59,.4); padding: 14px 6px;
+  }
+  .anchor-card .astar .st { font-size: 24px; line-height: 1; }
+  .anchor-card .astar .an { font-size: 15px; font-weight: 800; color: #fff; margin-top: 4px; }
+  .anchor-card.base { background: linear-gradient(160deg, rgba(95,179,95,.13), rgba(95,179,95,.04)); border-color: rgba(95,179,95,.5); }
+  .anchor-card.base .astar { background: rgba(95,179,95,.16); border-right-color: rgba(95,179,95,.4); }
+  .anchor-card .abody { padding: 14px 18px; }
+  .anchor-card .abody h3 { font-size: 18px; font-weight: 800; margin: 0; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .anchor-card .abody .nights { font-size: 11.5px; font-weight: 700; color: var(--accent-2); text-transform: uppercase; letter-spacing: .05em; }
+  .anchor-card .abody .why { font-size: 13.5px; color: #c7d1db; margin-top: 5px; }
+  .anchor-card .restflag { font-size: 11px; font-weight: 800; color: #0e1116; background: var(--green); padding: 2px 9px; border-radius: 999px; }
+  .anchor-card .goto { position: absolute; top: 12px; right: 14px; font-size: 12.5px; font-weight: 700; color: var(--accent-2); }
+  .seg { padding: 2px 0 2px 40px; position: relative; }
+  .seg::before { content: ""; position: absolute; left: 42px; top: -8px; bottom: -8px; width: 2px; background: repeating-linear-gradient(180deg, var(--line) 0 6px, transparent 6px 12px); }
+  .seg-title { font-size: 12px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 8px 0 10px; padding-left: 22px; }
+  .opts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .opt-card {
+    position: relative; background: var(--panel); border: 1px solid var(--line);
+    border-left: 4px solid var(--line); border-radius: 12px; padding: 14px 16px;
+    transition: border-color .15s, transform .12s, box-shadow .15s; cursor: default;
+  }
+  .opt-card.hilite, .opt-card:hover { transform: translateY(-2px); box-shadow: 0 8px 26px rgba(0,0,0,.35); border-color: #46525f; }
+  .opt-card .otop { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; }
+  .opt-card .oid { font-size: 11.5px; font-weight: 800; color: #fff; background: var(--panel-2); border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px; }
+  .opt-card .onm { font-size: 15.5px; font-weight: 800; color: #fff; }
+  .opt-card .oref { font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; color: #f08070; border: 1px solid rgba(227,73,59,.45); background: rgba(227,73,59,.12); border-radius: 999px; padding: 2px 9px; }
+  .opt-card .ometa { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 8px 0 7px; font-size: 13px; color: var(--muted); font-weight: 600; }
+  .opt-card .ometa b { color: #fff; font-weight: 800; }
+  .diff { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; border-radius: 999px; padding: 2px 10px; }
+  .diff.easy { color: #87d287; background: rgba(95,179,95,.13); border: 1px solid rgba(95,179,95,.4); }
+  .diff.moderate { color: #f4c06a; background: rgba(240,168,48,.13); border: 1px solid rgba(240,168,48,.4); }
+  .diff.hard { color: #f08070; background: rgba(227,73,59,.13); border: 1px solid rgba(227,73,59,.45); }
+  .opt-card .osurf { font-size: 13px; color: #c7d1db; line-height: 1.55; }
+  .opt-card .ohl { font-size: 12px; color: var(--muted); margin-top: 8px; }
+  .opt-card .ohl b { color: var(--accent-2); font-weight: 700; }
+  .opt-card .ofree { font-size: 12px; font-weight: 700; color: #87d287; margin-top: 7px; }
+  .seg-note { font-size: 12.5px; color: var(--muted); margin-top: 10px; padding-left: 2px; }
+  .flex-note { margin-top: 22px; font-size: 13.5px; color: #c7d1db; background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--accent-2); border-radius: 10px; padding: 13px 16px; }
+  .flex-note b { color: var(--text); }
+  @media (max-width: 760px) { .opts { grid-template-columns: 1fr; } .seg { padding-left: 12px; } .seg::before { left: 14px; } }
 
   /* ---------- Map ---------- */
   #map {
-    height: 560px; width: 100%;
+    height: 620px; width: 100%;
     border-radius: var(--radius); border: 1px solid var(--line);
     background: var(--bg-soft); z-index: 1;
   }
-  .map-legend { display: flex; flex-wrap: wrap; gap: 18px; margin-top: 16px; color: var(--muted); font-size: 14px; }
+  .map-legend { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 16px; color: var(--muted); font-size: 13.5px; align-items: center; }
   .map-legend span { display: inline-flex; align-items: center; gap: 8px; }
   .dot { width: 13px; height: 13px; border-radius: 50%; display: inline-block; border: 2px solid #fff; }
-  .dot.stay { background: var(--accent); }
-  .dot.stop { background: var(--teal); }
+  .dot.anchor { background: var(--accent); }
+  .dot.stop { background: var(--teal); width: 10px; height: 10px; }
   .dot.start { background: var(--green); }
-  .dot.end { background: var(--accent-2); }
+  .lseg { display: inline-block; width: 26px; height: 0; border-top: 3px solid var(--accent); }
+  .lseg.dash { border-top-style: dashed; }
+  .amark { display: flex; align-items: center; justify-content: center; width: 34px; height: 34px; border-radius: 50%;
+    background: var(--accent); border: 2px solid #fff; color: #fff; font-size: 10.5px; font-weight: 800;
+    box-shadow: 0 3px 10px rgba(0,0,0,.5); }
+  .amark.base { background: var(--green); }
   .leaflet-popup-content-wrapper { background: var(--panel); color: var(--text); border-radius: 10px; }
   .leaflet-popup-tip { background: var(--panel); }
   .leaflet-popup-content { margin: 12px 14px; }
   .leaflet-popup-content b { color: #fff; }
   .leaflet-container a.leaflet-popup-close-button { color: var(--muted); }
-
-  /* ---------- Route ribbon ---------- */
-  .ribbon { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
-  .ribbon .node {
-    background: var(--panel); border: 1px solid var(--line); border-radius: 999px;
-    padding: 7px 14px; font-size: 14px; font-weight: 500; white-space: nowrap;
-  }
-  .ribbon .node.key { border-color: var(--accent); color: #fff; }
-  .ribbon .arrow { color: var(--muted); font-size: 14px; }
 
   /* ---------- Itinerary ---------- */
   .filter-bar { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 26px; }
@@ -140,6 +191,8 @@
     color: inherit; text-decoration: none;
   }
   .day-card:hover { border-color: var(--accent); transform: translateY(-2px); text-decoration: none; }
+  .day-card.rest { border-left: 4px solid var(--green); }
+  .day-card.training { border-left: 4px solid var(--accent-2); }
   .day-card .card-link { position: absolute; inset: 0; z-index: 1; }
   .day-card .body { position: relative; }
   .day-actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 12px; }
@@ -174,9 +227,11 @@
   .badge { font-size: 11.5px; font-weight: 600; padding: 4px 10px; border-radius: 6px; letter-spacing: .02em; }
   .badge.ride { background: rgba(63,184,175,.14); color: #6fd6cd; border: 1px solid rgba(63,184,175,.3); }
   .badge.rest { background: rgba(95,179,95,.14); color: #87d287; border: 1px solid rgba(95,179,95,.3); }
-  .badge.stay2 { background: rgba(227,73,59,.16); color: #f08070; border: 1px solid rgba(227,73,59,.32); }
-  .badge.kid  { background: rgba(240,168,48,.14); color: #f4c06a; border: 1px solid rgba(240,168,48,.3); }
-  .badge.scenic{ background: rgba(160,120,220,.14); color: #c2a4ee; border: 1px solid rgba(160,120,220,.3); }
+  .badge.training { background: rgba(240,168,48,.14); color: #f4c06a; border: 1px solid rgba(240,168,48,.3); }
+  .badge.offroad { background: rgba(227,73,59,.16); color: #f08070; border: 1px solid rgba(227,73,59,.32); }
+  .badge.pass { background: rgba(160,120,220,.14); color: #c2a4ee; border: 1px solid rgba(160,120,220,.3); }
+  .badge.border { background: rgba(111,177,232,.14); color: #8ec4f0; border: 1px solid rgba(111,177,232,.3); }
+  .badge.plain { background: rgba(255,255,255,.05); color: var(--muted); border: 1px solid var(--line); }
   .pill-region { font-size: 11px; font-weight: 700; color: var(--accent-2); text-transform: uppercase; letter-spacing: .08em; }
 
   /* ---------- Info grid ---------- */
@@ -203,7 +258,7 @@
   footer { padding: 40px 0 60px; color: var(--muted); font-size: 14px; }
   footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
 
-  /* ---------- Flights ---------- */
+  /* ---------- How the trip works ---------- */
   .flight-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
   .flight { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px; }
   .flight .dir { font-size: 12px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-2); }
@@ -214,15 +269,7 @@
   .flight .specs { display: flex; gap: 18px; margin: 14px 0; flex-wrap: wrap; }
   .flight .specs .s .v { font-size: 15px; font-weight: 700; color: #fff; }
   .flight .specs .s .k { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
-  .flight .air { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
-  .flight .air span { font-size: 12px; font-weight: 600; padding: 3px 9px; border-radius: 6px; background: rgba(63,184,175,.13); color: #6fd6cd; border: 1px solid rgba(63,184,175,.28); }
   .flight .fnote { font-size: 13.5px; color: #c7d1db; margin: 0 0 14px; }
-  .flight .fare { font-size: 13px; color: var(--muted); }
-  .flight .fare b { color: var(--accent-2); font-size: 17px; }
-  .flight .bk { display: inline-flex; gap: 8px; margin-top: 14px; flex-wrap: wrap; }
-  .flight .bk a { font-size: 13.5px; font-weight: 600; padding: 9px 14px; border-radius: 8px; background: var(--accent); color: #fff; }
-  .flight .bk a.alt { background: var(--panel-2); border: 1px solid var(--line); color: var(--text); }
-  .flight .bk a:hover { text-decoration: none; transform: translateY(-1px); }
   .flight-notes { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
   .flight-notes ul { margin: 10px 0 0; padding-left: 18px; color: #c7d1db; font-size: 14px; }
   .flight-notes ul li { margin-bottom: 7px; }
@@ -250,12 +297,12 @@
   .dest .corner.stop { background: var(--teal); }
   .dest .corner.start { background: var(--green); }
   .dest .corner.end { background: var(--accent-2); }
-  .dest .corner.bookend { background: var(--muted); }
+  .dest .anchor-flag { position: absolute; top: 10px; left: 10px; font-size: 11px; font-weight: 800; color: #fff; background: var(--accent); border-radius: 999px; padding: 3px 9px; box-shadow: 0 2px 8px rgba(0,0,0,.4); }
   @media (max-width: 980px) { .dest-grid { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 680px) { .dest-grid { grid-template-columns: repeat(2, 1fr); } }
 
-  /* ---------- Ramen Trail ---------- */
-  .ramen-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  /* ---------- Food Trail ---------- */
+  .ramen-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
   .rcard { position: relative; display: flex; flex-direction: column; background: var(--panel);
     border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
     transition: border-color .14s, transform .12s; }
@@ -292,16 +339,17 @@
   nav.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; }
   nav.top .brand { font-weight: 800; font-size: 15px; letter-spacing: -.01em; }
   nav.top .brand span { color: var(--accent); }
-  nav.top .links { display: flex; gap: 22px; }
+  nav.top .links { display: flex; gap: 20px; }
   nav.top .links a { color: var(--muted); font-size: 14px; font-weight: 500; }
   nav.top .links a:hover { color: var(--text); text-decoration: none; }
 
+  @media (max-width: 980px) { .stats { grid-template-columns: repeat(3, 1fr); } }
   @media (max-width: 860px) {
-    .stats { grid-template-columns: repeat(2, 1fr); }
     .grid.cols-3, .grid.cols-2 { grid-template-columns: 1fr; }
     nav.top .links { display: none; }
-    #map { height: 420px; }
+    #map { height: 440px; }
   }
+  @media (max-width: 560px) { .stats { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 480px) {
     .day-card { grid-template-columns: 64px 1fr; }
     .day-card .daynum .num { font-size: 22px; }
@@ -312,15 +360,15 @@
 
 <nav class="top">
   <div class="wrap">
-    <div class="brand mincho">🏍️ <span>·</span> PNW First Tour</div>
+    <div class="brand">🏍️ <span>·</span> Desert → Glaciers</div>
     <div class="links">
-      <a href="#getting-there">Getting There</a>
+      <a href="#getting-there">How It Works</a>
+      <a href="#anchors">Anchors</a>
       <a href="#map-sec">Map</a>
       <a href="#destinations">Destinations</a>
-      <a href="#food">Food</a>
+      <a href="#food">Food Trail</a>
       <a href="#itinerary">Itinerary</a>
       <a href="checklist.html">Checklist</a>
-      <a href="#safety">Safety</a>
       <a href="#params">Details</a>
     </div>
   </div>
@@ -328,41 +376,47 @@
 
 <header class="hero">
   <div class="wrap">
-    <img class="hero-banner" src="assets/hero.jpg"
-      alt="Two motorcycles riding a golden-hour Oregon coast highway past a sea stack toward Mount Rainier — a Pacific Northwest family first tour" />
+    <span class="kicker">Kazakhstan · Kyrgyzstan — Sep 5–20, 2026 · Silk Off Road Tours</span>
+    <h1>From Desert Up to Glaciers</h1>
     <p class="lead">
-      A relaxed, safety-first <b>7-day family motorcycle "first tour"</b> — built to grow a brand-new rider's
-      confidence and a 6-year-old passenger's love of the road. A round trip from <b>Woodinville</b>: the Edmonds
-      ferry and quiet Hood Canal to the Pacific, the whole Oregon Coast down to <b>Yachats</b> (Tillamook cheese
-      and the Fourth of July), then home over <b>Mount St. Helens and Mount Rainier</b> — all on backroads, no freeways.
+      A <b>16-day guided ADV motorcycle loop</b>, Almaty → Almaty: <b>≈ 2,800 km</b> across
+      <b>two countries</b>, from the Singing Dune of the Kazakh steppe over a chain of 3,000–4,000 m
+      Tian Shan passes to the glaciers above Issyk-Kul and the nomad yurts of Song-Kol — built as a
+      <b>flexible plan around 5 fixed anchors</b>, with easier/harder route options between them.
+      Rental Suzuki DR650SE, ride leader, support truck, ~60% asphalt / 40% gravel &amp; dirt.
     </p>
     <div class="hero-cta">
-      <a class="btn primary" href="#itinerary">View the Day-by-Day Trip →</a>
+      <a class="btn primary" href="#anchors">★ The Anchors &amp; the Options →</a>
+      <a class="btn" href="#itinerary">Day-by-Day Itinerary</a>
       <a class="btn" href="#map-sec">Open the Map</a>
       <a class="btn" href="checklist.html">📋 Prep Checklist</a>
     </div>
+    <img class="hero-banner" src="assets/hero.jpg"
+      alt="Charyn Canyon, Kazakhstan — red sandstone towers of the Valley of Castles on the Day-5 route" />
 
     <div class="stats">
-      <div class="stat"><div class="n">7</div><div class="l">Days (Jul 1–7, 2026)</div></div>
-      <div class="stat"><div class="n" id="statMiles">—</div><div class="l">Total distance</div></div>
-      <div class="stat"><div class="n" id="statAvg">—</div><div class="l">Avg riding / day</div></div>
-      <div class="stat"><div class="n">1</div><div class="l">Two-night base (Yachats)</div></div>
+      <div class="stat"><div class="n" id="statKm">—</div><div class="l">Total distance</div></div>
+      <div class="stat"><div class="n" id="statRiding">—</div><div class="l">Riding days (of 16)</div></div>
+      <div class="stat"><div class="n">7</div><div class="l">Passes over 3,000 m</div></div>
+      <div class="stat"><div class="n">4,021 m</div><div class="l">Highest point (Suek Pass)</div></div>
+      <div class="stat"><div class="n">2</div><div class="l">Border crossings</div></div>
+      <div class="stat"><div class="n">3</div><div class="l">Yurt-camp nights</div></div>
     </div>
   </div>
 </header>
 
-<!-- ============ GETTING THERE ============ -->
+<!-- ============ HOW THE TRIP WORKS ============ -->
 <section id="getting-there">
   <div class="wrap">
     <div class="sec-head">
-      <span class="tag">From Home · Woodinville</span>
+      <span class="tag">Guided package · fly ALA in &amp; out</span>
       <h2>How the Trip Works</h2>
       <p id="flIntro"></p>
     </div>
     <div class="flight-grid" id="flLegs"></div>
     <div class="flight-notes">
       <div class="card">
-        <h3><span class="ico">💡</span> Booking Tips</h3>
+        <h3><span class="ico">💡</span> Know Before You Go</h3>
         <ul id="flTips"></ul>
       </div>
       <div class="card">
@@ -375,34 +429,46 @@
   </div>
 </section>
 
+<!-- ============ ANCHORS & OPTIONS ============ -->
+<section id="anchors">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">The Flexible Plan</span>
+      <h2>The Anchors &amp; the Roads Between Them</h2>
+      <p>The tour is designed <b style="color:var(--text)">anchor-first</b>: five ★ anchor nights are
+        pre-booked and non-negotiable, and each pair of anchors is connected by two or more
+        <b style="color:var(--text)">route options</b> trading difficulty and pace — glacier passes vs. coast
+        roads, desert pistes vs. a direct canyon day. The 16-day itinerary is the
+        <b style="color:var(--text)">reference line</b> (the tagged options below); the Day-2 training day is
+        the option-selector, and days freed by faster options become extra anchor nights or weather buffer.</p>
+    </div>
+    <div class="spine" id="spine"></div>
+    <p class="flex-note"><b>The flex principle:</b> the 16-day frame and the anchor nights are FIXED — the
+      options only trade difficulty and pace. Song-Kol (A4) and the Suek glacier road (S3a) are the
+      weather-dependent cruxes; a buffer day parked at A2 or A3 is what lets the group wait out a storm
+      instead of forcing a 4,000 m pass in snow. When in doubt, take the easier connection — the anchors
+      are guaranteed either way.</p>
+  </div>
+</section>
+
 <!-- ============ MAP ============ -->
 <section id="map-sec">
   <div class="wrap">
     <div class="sec-head">
       <span class="tag">The Journey</span>
       <h2>Interactive Route Map</h2>
-      <p>A loop down the coast and home over the mountains: the Edmonds ferry and Hood Canal to the Washington coast,
-        the full Oregon Coast through Astoria and Tillamook to the Yachats base, then inland over Mount St. Helens and
-        Mount Rainier's Chinook Pass back to Woodinville. Click any marker for details.</p>
+      <p>The loop with its anchor plan drawn on the ground: ★ anchor markers, smaller waypoint stops,
+        the solid <b style="color:var(--text)">reference route</b>, and the dashed color-coded
+        <b style="color:var(--text)">alternative options</b>. Hover a line to highlight its option card above;
+        click any marker for details.</p>
     </div>
     <div id="map"></div>
-    <div class="map-legend">
-      <span><i class="dot start"></i> Home · start &amp; finish</span>
-      <span><i class="dot stay"></i> 2-night base (Yachats)</span>
-      <span><i class="dot stop"></i> Overnight stop</span>
+    <div class="map-legend" id="mapLegend">
+      <span><i class="dot start"></i> Almaty — base (start &amp; finish)</span>
+      <span><i class="dot anchor"></i> ★ Anchor (pre-booked)</span>
+      <span><i class="dot stop"></i> Waypoint stop</span>
+      <span><i class="lseg"></i> Reference route</span>
     </div>
-  </div>
-</section>
-
-<!-- ============ ROUTE RIBBON ============ -->
-<section id="route">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="tag">Overview</span>
-      <h2>The High-Level Route</h2>
-      <p>Highlighted nodes are the planned two-night stays where the pace slows down for rest, exploration and kid-friendly days.</p>
-    </div>
-    <div class="ribbon" id="ribbon"></div>
   </div>
 </section>
 
@@ -412,19 +478,20 @@
     <div class="sec-head">
       <span class="tag">Explore Each Place</span>
       <h2>Destinations</h2>
-      <p>Tap any place for a full page — photos, a map, things to do, regional food and suggested family-friendly,
-        bike-parking-aware places to stay.</p>
+      <p>All eleven stops of the loop in route order. Tap any place for a full page — photos, a map,
+        things to do, regional food and the night's lodging (operator-booked; independent options listed
+        for reference).</p>
     </div>
     <div class="dest-grid" id="destGrid"></div>
   </div>
 </section>
 
-<!-- ============ COAST FOOD TRAIL ============ -->
+<!-- ============ SILK ROAD FOOD TRAIL ============ -->
 <section id="food">
   <div class="wrap">
     <div class="sec-head">
-      <span class="tag">A Foodie Thread for Galiya</span>
-      <h2>🦀 The Coast Food Trail</h2>
+      <span class="tag">Lunches &amp; dinners are excluded — by design</span>
+      <h2>🍜 The Silk Road Food Trail</h2>
       <p id="ramenIntro"></p>
     </div>
     <div class="ramen-grid" id="ramenGrid"></div>
@@ -437,60 +504,63 @@
   <div class="wrap">
     <div class="sec-head">
       <span class="tag">Day by Day</span>
-      <h2>The Trip, Day by Day (Day 1–7)</h2>
-      <p>A day-by-day breakdown (Wed Jul 1 → Tue Jul 7, 2026). Driving times are
-        <b style="color:var(--text)">real Google-routed figures</b> — riding days average <b style="color:var(--text)" id="itinAvg">~3h40m</b>
-        (longest ~4h10m on Day 5), with breaks every 60–90 minutes for the young passenger.
-        <b style="color:var(--text)">≈ 970 miles total</b> over the 7-day loop, all on backroads — no freeways. Tap any day for its full schedule.</p>
+      <h2>The Trip, Day by Day (Day 1–16)</h2>
+      <p>Sat Sep 5 → Sun Sep 20, 2026. Distances are the planned legs in <b style="color:var(--text)">kilometres</b>
+        (<b style="color:var(--text)" id="itinTotal">≈ 2,809 km</b> total); ride times are honest estimates at
+        ~65 km/h on asphalt and ~35 km/h on gravel — several legs are off Google's road graph. Riding days
+        average <b style="color:var(--text)" id="itinAvg">—</b> in the saddle; the hard block is Days 7–12, split
+        by the Day-8 rest day. Tap any day for its full schedule.</p>
     </div>
     <div class="filter-bar" id="filters">
       <span class="chip active" data-filter="all">All days</span>
-      <span class="chip" data-filter="rest">Rest day</span>
       <span class="chip" data-filter="ride">Riding days</span>
-      <span class="chip" data-filter="kid">Kid highlights</span>
-      <span class="chip" data-filter="scenic">Scenic</span>
+      <span class="chip" data-filter="offroad">Off-road</span>
+      <span class="chip" data-filter="pass">Big passes</span>
+      <span class="chip" data-filter="nomad">Nomad culture</span>
+      <span class="chip" data-filter="rest">Rest day</span>
     </div>
     <div class="timeline" id="timeline"></div>
   </div>
 </section>
 
-<!-- ============ SAFETY ============ -->
+<!-- ============ THE STEP-UP ============ -->
 <section id="safety">
   <div class="wrap">
     <div class="sec-head">
-      <span class="tag">Riding Safely Together</span>
-      <h2>Safety &amp; Comfort First</h2>
-      <p>This is a <b>first tour</b> — every choice is shaped around Galiya's brand-new-rider confidence and Aslan's comfort, not mileage.</p>
+      <span class="tag">Riding the Step-Up Honestly</span>
+      <h2>What This Tour Demands</h2>
+      <p>This is a <b>real ADV step-up</b> — the graduation ride after a guided Morocco training tour:
+        longer off-road days, real altitude, remote nights, and two border crossings by bike.</p>
     </div>
     <div class="grid cols-3">
       <div class="card">
-        <h3><span class="ico">🛣️</span> New Rider (Galiya · W230)</h3>
+        <h3><span class="ico">🏍️</span> The Rider &amp; the Bike</h3>
         <ul>
-          <li>Rides up front so her pace controls the group</li>
-          <li><b>No freeways or Interstates</b> — backroads, US-101 &amp; gentle passes</li>
-          <li>Short, confidence-building days; only one ~4h day</li>
-          <li>The ferry &amp; frequent stops break up Day 1</li>
-          <li>Chinook Pass is the low-speed "graduation" capstone</li>
+          <li>Rental <b>Suzuki DR650SE</b> — 43 hp, ~160 kg: a step down in weight from the GS at home, a step up in terrain</li>
+          <li>Operator bar: international license + IDP, age 21+, 3+ years riding with solid off-road skills</li>
+          <li>~40% of the route is gravel/dirt: washboard, sand near the Singing Dune, rocky descents off Song-Kol</li>
+          <li>Day 2 is a refresher and shakedown, not a beginner school</li>
+          <li>Luggage rides in the support truck — the bike stays light</li>
         </ul>
       </div>
       <div class="card">
-        <h3><span class="ico">🧒</span> Child Passenger (Aslan · GS)</h3>
+        <h3><span class="ico">⛰️</span> Altitude &amp; Weather</h3>
         <ul>
-          <li>Properly fitting helmet, jacket, gloves, pants &amp; boots</li>
-          <li>Top-box backrest, grab strap &amp; intercom</li>
-          <li>Must reach the pegs and sit securely</li>
-          <li>Stop every 60–90 minutes; never overtired</li>
-          <li>Snacks, rain layers &amp; spare gloves carried by Ruslan</li>
+          <li>Three days above 3,000 m; Day 7 crests <b>Suek Pass, 4,021 m</b></li>
+          <li>Two nights sleep at ~3,000 m (Song-Kol is 3,016 m)</li>
+          <li>Desert days can top 30 °C; the passes and yurt nights can freeze — layering is the packing strategy</li>
+          <li>Hydrate, skip alcohol before the big passes; the Day-8 rest day is acclimatization, not luxury</li>
+          <li>No phone coverage at Song-Kol, on the passes, patchy around Saty</li>
         </ul>
       </div>
       <div class="card warn">
-        <h3><span class="ico">⚠️</span> Before You Go</h3>
+        <h3><span class="ico">⚠️</span> Non-Negotiables</h3>
         <ul>
-          <li>Motorcycle endorsement on each licence (Galiya's is new)</li>
-          <li>Current insurance + registration on both bikes</li>
-          <li>Service both bikes; mind the W230's small tank &amp; range</li>
-          <li>Pack for coast fog, rain <em>and</em> alpine chill at Chinook Pass</li>
-          <li>Book Yachats early — it sells out for the Fourth of July</li>
+          <li>Medical + <b>evacuation insurance that explicitly covers motorcycling</b> (644 cc) to 4,100 m — excluded from the tour price</li>
+          <li>USD 500 damage deposit: no heroics on the rocky descents — a dropped DR650 is a deposit conversation, an injury ends the trip</li>
+          <li>Passport on you (not in the truck) on both border days</li>
+          <li>Fill fuel at every stop the leader calls — real-world range ≈ 250 km, exactly the longest gaps</li>
+          <li>Hold the ride leader's structure; the truck is the safety net, not a crutch</li>
         </ul>
       </div>
     </div>
@@ -508,29 +578,30 @@
       <div class="card">
         <h3><span class="ico">📋</span> Parameters</h3>
         <table class="params">
-          <tr><td>Trip length</td><td>7 days (Jul 1–7, 2026); round-trip loop ≈ 970 mi</td></tr>
-          <tr><td>Group</td><td>Galiya, Ruslan &amp; their 6-year-old son Aslan</td></tr>
-          <tr><td>Rider 1 bike</td><td>BMW R1300GS — Ruslan, carrying Aslan</td></tr>
-          <tr><td>Rider 2 bike</td><td>Kawasaki W230 — Galiya (brand-new rider)</td></tr>
-          <tr><td>Riding style</td><td>Scenic touring, all paved, <b>no freeways</b></td></tr>
-          <tr><td>Daily ride time</td><td>~2–4 h (one ~4h transfer day)</td></tr>
-          <tr><td>Best season</td><td>Early July — long days, dry passes</td></tr>
-          <tr><td>Logistics</td><td>Own bikes, round trip from home; Edmonds–Kingston ferry</td></tr>
+          <tr><td>Tour</td><td>"From Desert Up to Glaciers" — custom extended loop edition of Silk Off Road Tours' 10-day route</td></tr>
+          <tr><td>Duration</td><td>16 days (Sep 5–20, 2026): arrival + 14-day tour body (1 training + 12 riding + 1 rest day) + departure</td></tr>
+          <tr><td>Distance</td><td>≈ 2,800 km, Almaty → Almaty (planned legs sum 2,809 km)</td></tr>
+          <tr><td>Terrain</td><td>≈ 60% asphalt / 40% gravel &amp; dirt; highest point 4,021 m</td></tr>
+          <tr><td>Bike</td><td>Rental Suzuki DR650SE, third-party insurance included</td></tr>
+          <tr><td>Group</td><td>Guided: ride leader + support vehicle; size to confirm</td></tr>
+          <tr><td>Price</td><td>Indicative ≈ USD 4,500 (custom edition — confirm; published 10-day tour is USD 3,000 + 500 deposit)</td></tr>
+          <tr><td>Included</td><td>Bike, guide, support truck, twin-share lodging, breakfasts, water, entry fees, airport transfers</td></tr>
+          <tr><td>Excluded</td><td>Flights, fuel, lunches/dinners, visas, personal insurance, damage liability</td></tr>
         </table>
       </div>
       <div class="card">
-        <h3><span class="ico">🏨</span> Where We Stay</h3>
+        <h3><span class="ico">🏨</span> Where We Sleep</h3>
         <ul>
-          <li>Secure or easy motorcycle parking</li>
-          <li>Family-friendly rooms; the Yachats stay is the oceanfront splurge</li>
-          <li>Coast motels &amp; inns, a mountain lodge in Packwood</li>
-          <li>Book the Fourth-of-July coast nights well ahead</li>
-          <li>Always confirm parking + passenger rules before booking</li>
+          <li>Hotels in Almaty (×3), Karakol (×2), Bishkek, Cholpon-Ata</li>
+          <li>Guest houses in Basshi, Kochkor and Saty; a hot-springs resort in Chundzha</li>
+          <li><b>Three yurt-camp nights</b>: Issyk-Kul south shore (×2, the rest-day base) and Song-Kol at 3,016 m</li>
+          <li>A cabin camp in the Suusamyr valley; all twin-share, operator-booked</li>
+          <li>Bikes sleep in guarded lots, walled yards, or on the grass by the yurts</li>
         </ul>
-        <h3 style="margin-top:20px;"><span class="ico">🦀</span> What We Eat</h3>
+        <h3 style="margin-top:20px;"><span class="ico">🍜</span> What We Eat</h3>
         <ul>
-          <li>Off-the-boat Dungeness crab, clam chowder &amp; fish-and-chips</li>
-          <li>Tillamook cheese &amp; ice cream; coast-town breweries</li>
+          <li>Beshbarmak, plov, laghman, manty, shashlik — the Silk Road Food Trail</li>
+          <li>Ashlan-fuu in Karakol, kumis &amp; boorsok at Song-Kol, smoked lake fish at Cholpon-Ata</li>
         </ul>
       </div>
     </div>
@@ -539,8 +610,8 @@
 
 <footer>
   <div class="wrap">
-    <div>A family first tour — built to grow a new rider's confidence and a love of the road, not to chase miles.</div>
-    <div class="mincho">Ride safe — and have a wonderful journey 🏍️</div>
+    <div>An anchor-first adventure — five fixed nights, flexible roads between them, and margin to come home with.</div>
+    <div>Ride safe — from the desert up to the glaciers 🏍️</div>
   </div>
 </footer>
 
@@ -549,29 +620,32 @@
 <script src="data.js"></script>
 <script>
 /* ---------- Route stops sourced from data.js (single source of truth) ----------
-   "home" (type "start") is both the start and the finish of the loop and stays in the
-   map markers, polyline and ribbon. (No bookend cards on this trip.) */
-const STOPS = window.DESTINATIONS.filter(d => d.type !== 'bookend').map(d => ({
+   "almaty" (type "start") is both the start and the finish of the loop. */
+const STOPS = window.DESTINATIONS.map(d => ({
   id: d.id, name: d.name, lat: d.lat, lng: d.lng, type: d.type, note: d.tagline
 }));
 
-const DAYS = window.DAYS;  // defined in data.js
+const DAYS = window.DAYS;          // defined in data.js
+const ANCHORS = window.ANCHORS;    // the 5 fixed anchors
+const SEGMENTS = window.SEGMENTS;  // the roads between them (options)
+const ANCHOR_BY_ID = Object.fromEntries(ANCHORS.map(a => [a.id, a]));
+const countryOf = r => /kyrgyzstan/i.test(r || '') ? 'Kyrgyzstan' : 'Kazakhstan';
 
 /* Live hero/itinerary stats from the real data */
 (function () {
-  const total = DAYS.reduce((a, d) => a + (d.miles || 0), 0);
-  // Average is over the 12 transfer days only; the Day-2 Minoh warm-up (d.warmup) counts
-  // toward total miles but is not a transfer day, so exclude it from the average.
-  const dmins = DAYS.filter(d => d.dmin && !d.warmup).map(d => d.dmin);
+  const total = DAYS.reduce((a, d) => a + (d.km || 0), 0);
+  const riding = DAYS.filter(d => d.km > 0);
+  const dmins = riding.filter(d => d.dmin).map(d => d.dmin);
   const avg = dmins.reduce((a, b) => a + b, 0) / dmins.length;
   const fmt = m => Math.floor(m / 60) + 'h' + String(Math.round(m % 60)).padStart(2, '0') + 'm';
   const set = (id, v) => { const el = document.getElementById(id); if (el) el.textContent = v; };
-  set('statMiles', '≈' + total.toLocaleString() + ' mi');
-  set('statAvg', fmt(avg));
+  set('statKm', '≈' + total.toLocaleString() + ' km');
+  set('statRiding', riding.length);
+  set('itinTotal', '≈ ' + total.toLocaleString() + ' km');
   set('itinAvg', '~' + fmt(avg));
 })();
 
-/* ---------- Build flights ('Getting There') ---------- */
+/* ---------- Build 'How the Trip Works' ---------- */
 const F = window.FLIGHTS;
 document.getElementById('flIntro').textContent = F.intro;
 document.getElementById('flEstimate').textContent = F.estimate;
@@ -586,47 +660,93 @@ document.getElementById('flLegs').innerHTML = F.legs.map(g => `
     <div class="sample">${g.sample}</div>
     <div class="specs">
       <div class="s"><div class="v">${g.type}</div><div class="k">How</div></div>
-      <div class="s"><div class="v">${g.duration}</div><div class="k">Distance</div></div>
+      <div class="s"><div class="v">${g.duration}</div><div class="k">Scope</div></div>
     </div>
     <p class="fnote">${g.note}</p>
   </div>`).join('');
 
-/* ---------- Build route ribbon ---------- */
-const ribbon = document.getElementById('ribbon');
-STOPS.forEach((s) => {
-  const node = document.createElement('span');
-  node.className = 'node' + (s.type === 'stay' || s.type === 'start' ? ' key' : '');
-  node.textContent = s.name;
-  ribbon.appendChild(node);
-  const a = document.createElement('span');
-  a.className = 'arrow'; a.textContent = '→';
-  ribbon.appendChild(a);
-});
-// close the loop back home
-const loopBack = document.createElement('span');
-loopBack.className = 'node key';
-loopBack.textContent = 'Home (finish)';
-ribbon.appendChild(loopBack);
+/* ---------- The anchors & options spine ---------- */
+/* Colors per non-reference option id (map lines + option-card left borders). */
+const OPT_COLORS = { S1b:'#f0a830', S2b:'#3fb8af', S3b:'#5fb35f', S4b:'#c2a4ee', S5b:'#6fb1e8' };
+const REF_COLOR = '#e3493b';
+const optColor = o => o.reference ? REF_COLOR : (OPT_COLORS[o.id] || '#9aa7b5');
 
-/* ---------- Build destination gallery ---------- */
+function anchorCardHtml(a) {
+  const rest = a.rest ? `<span class="restflag">★ REST-DAY ANCHOR</span>` : '';
+  return `<a class="anchor-card" href="place.html?id=${a.id}">
+    <span class="astar"><span class="st">★</span><span class="an">${a.a}</span></span>
+    <span class="abody">
+      <h3>${a.name} ${rest}</h3>
+      <span class="nights">${a.days} · ${a.nights} · pre-booked</span>
+      <div class="why">${a.why}</div>
+    </span>
+    <span class="goto">Destination ↗</span>
+  </a>`;
+}
+function baseCardHtml(label) {
+  return `<a class="anchor-card base" href="place.html?id=almaty">
+    <span class="astar"><span class="st">⌂</span><span class="an">BASE</span></span>
+    <span class="abody">
+      <h3>Almaty — the base</h3>
+      <span class="nights">${label}</span>
+      <div class="why">Day 1 arrival, bike handover &amp; welcome dinner · Day 2 training day (the option-selector) · Day 15 return night &amp; celebration dinner · Day 16 departure.</div>
+    </span>
+    <span class="goto">Destination ↗</span>
+  </a>`;
+}
+function optCardHtml(o) {
+  const km = (o.est ? '~' : '') + o.km.toLocaleString();
+  const ref = o.reference ? `<span class="oref">Reference route${o.refDays ? ' · ' + o.refDays : ''}</span>` : '';
+  const hl = (o.highlights || []).join(' · ');
+  const frees = o.frees ? `<div class="ofree">▲ ${o.frees}</div>` : '';
+  return `<div class="opt-card" data-opt="${o.id}" style="border-left-color:${optColor(o)}">
+    <div class="otop"><span class="oid">${o.id}</span><span class="onm">${o.name}</span>${ref}</div>
+    <div class="ometa">
+      <span><b>${o.days}</b> day${o.days > 1 ? 's' : ''}</span>
+      <span><b>${km}</b> km${o.est ? ' (est.)' : ''}</span>
+      <span class="diff ${o.difficulty}">${o.diffLabel || o.difficulty}</span>
+    </div>
+    <div class="osurf">${o.surface}</div>
+    ${hl ? `<div class="ohl"><b>Highlights:</b> ${hl}</div>` : ''}
+    ${frees}
+  </div>`;
+}
+(function buildSpine() {
+  const spine = document.getElementById('spine');
+  let html = baseCardHtml('Start — Days 1–2');
+  SEGMENTS.forEach((s, i) => {
+    html += `<div class="seg">
+      <div class="seg-title">${s.seg} — ${s.title.replace(/->/g,'→')}</div>
+      <div class="opts">${s.options.map(optCardHtml).join('')}</div>
+      ${s.note ? `<div class="seg-note">${s.note}</div>` : ''}
+    </div>`;
+    if (i < ANCHORS.length) html += anchorCardHtml(ANCHORS[i]);
+  });
+  html += baseCardHtml('Finish — Days 15–16');
+  spine.innerHTML = html;
+})();
+
+/* ---------- Build destination gallery (11 cards, country labels) ---------- */
 const destGrid = document.getElementById('destGrid');
 window.DESTINATIONS.forEach(d => {
   const a = document.createElement('a');
   a.className = 'dest';
   a.href = `place.html?id=${d.id}`;
+  const anc = ANCHOR_BY_ID[d.id];
   a.innerHTML = `
     <img loading="lazy" src="${d.photos[0].src}" alt="${d.name}">
     <span class="grad"></span>
     <span class="corner ${d.type}"></span>
+    ${anc ? `<span class="anchor-flag">★ ${anc.a}</span>` : ''}
     <span class="cap">
-      <span class="reg">${d.region}</span>
+      <span class="reg">${countryOf(d.region)}</span>
       <span class="nm">${d.name}</span>
       <span class="dy">${d.days}</span>
     </span>`;
   destGrid.appendChild(a);
 });
 
-/* ---------- Build the Coast Food Trail (themed foodie thread from data.js) ---------- */
+/* ---------- Build the Silk Road Food Trail (themed foodie thread from data.js) ---------- */
 const RT = window.FOOD_TRAIL;
 if (RT && RT.stops && RT.stops.length) {
   document.getElementById('ramenIntro').innerHTML = RT.intro;
@@ -661,14 +781,23 @@ if (RT && RT.stops && RT.stops.length) {
 
 /* ---------- Build timeline ---------- */
 const BADGE_LABELS = {
-  rest:    ['rest','Rest day'],
-  ride:    ['ride','Riding day'],
-  skill:   ['skill','Skill-building'],
-  kid:     ['kid','Kid highlight'],
-  scenic:  ['scenic','Scenic'],
-  moto:    ['moto','Riding road'],
-  volcano: ['volcano','Volcano'],
-  food:    ['food','Food']
+  rest:      ['rest','Rest day'],
+  ride:      ['ride','Riding day'],
+  training:  ['training','Training day'],
+  offroad:   ['offroad','Off-road'],
+  pass:      ['pass','3,000 m+ pass'],
+  border:    ['border','Border day'],
+  arrival:   ['plain','Arrival'],
+  departure: ['plain','Departure'],
+  desert:    ['plain','Desert'],
+  canyon:    ['plain','Canyon'],
+  hotspring: ['plain','Hot springs'],
+  yurt:      ['plain','Yurt night'],
+  nomad:     ['plain','Nomad culture'],
+  scenic:    ['plain','Scenic'],
+  food:      ['plain','Food'],
+  history:   ['plain','History'],
+  lake:      ['plain','Lake']
 };
 const timeline = document.getElementById('timeline');
 function renderDays(filter) {
@@ -676,28 +805,29 @@ function renderDays(filter) {
   DAYS.forEach(day => {
     if (filter !== 'all' && !day.tags.includes(filter)) return;
     const card = document.createElement('div');
-    card.className = 'day-card';
+    card.className = 'day-card' + (day.rest ? ' rest' : '') + (day.training ? ' training' : '');
     const badges = day.tags
       .filter(t => BADGE_LABELS[t])
       .map(t => `<span class="badge ${BADGE_LABELS[t][0]}">${BADGE_LABELS[t][1]}</span>`)
       .join('');
-    const miles = day.miles > 0
-      ? `<span class="mi"><b>${day.miles}</b> mi</span>`
-      : `<span class="mi rest">no ride</span>`;
+    const km = day.km > 0
+      ? `<span class="mi"><b>${day.km}</b> km</span>`
+      : `<span class="mi rest">${day.rest ? 'rest day' : 'no ride'}</span>`;
     const dt = day.dmin ? `<span class="dt">≈ ${Math.floor(day.dmin/60)}h${String(day.dmin%60).padStart(2,'0')}m</span>` : '';
     const gmaps = window.gmapDirLink(day.gfrom, day.gto, (day.poi || []).map(p => p.q).slice(0, 9));
     const fromShort = day.gfrom.split(',')[0];
     const toShort = day.gto.split(',')[0];
-    const routeAction = day.rail
-      ? `<span class="day-route" style="opacity:.85">🚄✈️ ${fromShort} → ${toShort}</span>`
-      : `<a class="day-route" href="${gmaps}" target="_blank" rel="noopener">🗺️ ${fromShort} → ${toShort}</a>`;
+    const routeAction = day.km > 0
+      ? `<a class="day-route" href="${gmaps}" target="_blank" rel="noopener">🗺️ ${fromShort} → ${toShort}</a>`
+      : '';
     card.innerHTML = `
       <a class="card-link" href="day.html?d=${day.d}" aria-label="Day ${day.d} — ${day.title} schedule"></a>
       <div class="daynum">
         <span class="lbl">Day</span>
         <span class="num">${day.d}</span>
-        ${miles}
+        ${km}
         ${dt}
+        ${day.date ? `<span class="dt">${day.date}</span>` : ''}
       </div>
       <div class="body">
         <div class="pill-region">${day.region}</div>
@@ -724,30 +854,66 @@ document.querySelectorAll('#filters .chip').forEach(chip => {
   });
 });
 
-/* ---------- Leaflet map ---------- */
-const map = L.map('map', { scrollWheelZoom: false }).setView([46.0, -123.0], 7);
+/* ---------- Leaflet map: anchors ★, waypoints, reference + option lines ---------- */
+const map = L.map('map', { scrollWheelZoom: false }).setView([42.9, 77.0], 7);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
   attribution: '&copy; OpenStreetMap &copy; CARTO',
   subdomains: 'abcd', maxZoom: 19
 }).addTo(map);
 
-const COLORS = { start:'#5fb35f', stay:'#e3493b', stop:'#3fb8af', end:'#f0a830' };
 const latlngs = [];
 STOPS.forEach((s, i) => {
   latlngs.push([s.lat, s.lng]);
-  const r = s.type === 'stay' ? 11 : 8;
-  L.circleMarker([s.lat, s.lng], {
-    radius: r, color: '#fff', weight: 2,
-    fillColor: COLORS[s.type], fillOpacity: 1
-  }).addTo(map)
-    .bindPopup(`<b>${i+1}. ${s.name}</b><br>${s.note}<br><a href="place.html?id=${s.id}">View details →</a>`);
+  const anc = ANCHOR_BY_ID[s.id];
+  const popup = `<b>${anc ? '★ ' + anc.a + ' · ' : ''}${s.name}</b><br>${s.note}<br><a href="place.html?id=${s.id}">View details →</a>`;
+  if (anc || s.type === 'start') {
+    // anchors + the base: large starred divIcon markers
+    const label = anc ? anc.a : '⌂';
+    L.marker([s.lat, s.lng], {
+      icon: L.divIcon({ className: '', html: `<div class="amark${anc ? '' : ' base'}">${anc ? '★' + label : label}</div>`,
+                        iconSize: [34, 34], iconAnchor: [17, 17] }),
+      zIndexOffset: 500
+    }).addTo(map).bindPopup(popup);
+  } else {
+    // waypoint stops: smaller teal dots
+    L.circleMarker([s.lat, s.lng], {
+      radius: 7, color: '#fff', weight: 2, fillColor: '#3fb8af', fillOpacity: 1
+    }).addTo(map).bindPopup(popup);
+  }
 });
 
-// close the loop visually back home
-const loopLatLngs = latlngs.concat([latlngs[0]]);
-L.polyline(loopLatLngs, {
-  color: '#e3493b', weight: 3, opacity: .75, dashArray: '6 8'
-}).addTo(map);
+/* Reference route: the (a) options concatenated into one solid line. */
+const refLine = [];
+SEGMENTS.forEach(s => {
+  const ref = s.options.find(o => o.reference);
+  (ref.geo || []).forEach(pt => {
+    const last = refLine[refLine.length - 1];
+    if (!last || last[0] !== pt[0] || last[1] !== pt[1]) refLine.push(pt);
+  });
+});
+L.polyline(refLine, { color: REF_COLOR, weight: 4, opacity: .85 }).addTo(map);
+
+/* Alternative options: dashed, color-coded, hover/click ↔ option card. */
+const legend = document.getElementById('mapLegend');
+SEGMENTS.forEach(s => {
+  s.options.filter(o => !o.reference && o.geo && o.geo.length).forEach(o => {
+    const line = L.polyline(o.geo, {
+      color: optColor(o), weight: 3, opacity: .8, dashArray: '7 9'
+    }).addTo(map).bindPopup(`<b>${o.id} — ${o.name}</b><br>${(o.est ? '~' : '') + o.km} km · ${o.diffLabel || o.difficulty}<br><a href="#anchors">See the anchor plan →</a>`);
+    const card = () => document.querySelector(`.opt-card[data-opt="${o.id}"]`);
+    line.on('mouseover', () => { line.setStyle({ weight: 5, opacity: 1 }); const c = card(); if (c) c.classList.add('hilite'); });
+    line.on('mouseout',  () => { line.setStyle({ weight: 3, opacity: .8 }); const c = card(); if (c) c.classList.remove('hilite'); });
+    line.on('click',     () => { const c = card(); if (c) { c.classList.add('hilite'); setTimeout(() => c.classList.remove('hilite'), 2500); } });
+    const c = card();
+    if (c) {
+      c.addEventListener('mouseenter', () => line.setStyle({ weight: 5, opacity: 1 }));
+      c.addEventListener('mouseleave', () => line.setStyle({ weight: 3, opacity: .8 }));
+    }
+    const span = document.createElement('span');
+    span.innerHTML = `<i class="lseg dash" style="border-top-color:${optColor(o)}"></i> ${o.id} ${o.name}`;
+    legend.appendChild(span);
+  });
+});
 
 map.fitBounds(L.latLngBounds(latlngs).pad(0.12));
 </script>

@@ -1,20 +1,20 @@
-# 🏍️ PNW Family First Tour
+# 🏍️ From Desert Up to Glaciers — Kazakhstan & Kyrgyzstan ADV Loop
 
-A scenic, family-friendly **7-day Pacific-Northwest motorcycle "first tour"**, visualized as a static website and tracked as organized markdown.
+A guided **16-day adventure-motorcycle loop across Kazakhstan and Kyrgyzstan**, visualized as a static website and tracked as organized markdown.
 
-A relaxed, safety-first ride built to grow a **brand-new rider's** confidence and a 6-year-old passenger's love of the road. **Woodinville → the Oregon Coast (Yachats) → home over Mount St. Helens & Mount Rainier**, July 1–7, 2026 — a round trip on backroads, no freeways.
+**Almaty → Altyn-Emel (Singing Dune) → Chundzha hot springs → Charyn Canyon → Karakol → over Suek Pass (4,021 m) to Issyk-Kul → Song-Kol → Suusamyr → Bishkek → Cholpon-Ata → Kolsai Lakes → Almaty**, planned Sep 5–20, 2026 — ~2,800 km, ~60% asphalt / 40% gravel and dirt, on a rental **Suzuki DR650SE** with a ride leader and support vehicle (a custom extended edition of [Silk Off Road Tours](https://www.silkoffroadtours.com/motorcycle-tours-kazakhstan-kyrgyzstan)' 10-day route, presented Morocco-ADV style).
 
-- **Galiya** just earned her endorsement → rides her **Kawasaki W230** (she sets the pace, up front).
-- **Ruslan** rides his **BMW R1300GS**, carrying 6-year-old **Aslan** as pillion.
-- Owned bikes, no rental, no flights — the trip starts in the garage and opens with the **Edmonds–Kingston ferry**.
+- **Flexible anchor-point plan** — participants aren't fixed yet, so **5 must-see anchors** are booked (Altyn-Emel ★ Karakol ★ Issyk-Kul south shore ★ Song-Kol ★ Kolsai/Saty) with **multiple route options between them**, chosen to fit the group.
+- The 14-day tour body opens with an **easy training day** and holds a **mid-trip rest day** at the Issyk-Kul yurt-camp anchor.
+- Two Kegen/Karkara border crossings, three yurt-camp nights, passes to **4,021 m**.
 
 ## Features
 
-- **Interactive route map** (Leaflet) with all 7 stops and the full loop polyline.
-- **7-day itinerary** with real Google-routed per-day mileage (≈ 970 mi total) and a **Google Maps route** for every day.
-- **7 destination pages** — each with verified photos, a map, things to do, regional food, and family-friendly lodging with USD pricing and **motorcycle-parking** info.
-- **Coast Food Trail** — Galiya's foodie thread (Westport crab → Astoria fish & chips → Tillamook cheese & ice cream → Yachats chowder).
-- **The Fourth of July in Yachats** — the rest day lands on July 4 (La De Da Parade + bay fireworks).
+- **Anchors & options view** — the 5 anchors as a spine with color-coded option cards (easy/moderate/hard) between them, and the reference route vs alternates drawn on the map.
+- **Interactive route map** (Leaflet) with all 11 stops and the full loop polyline.
+- **16-day reference itinerary** with per-day km, honest mixed-terrain ride times, and a **Google Maps route** for every day.
+- **11 destination pages** — each with verified photos, a map, things to do, regional food, and lodging with USD pricing.
+- **Silk Road Food Trail** — beshbarmak, plov, laghman, ashlan-fuu in Karakol, kumis & boorsok in the Song-Kol yurts.
 - Tap any day or map marker to jump to its destination; tap a destination's photo for a lightbox.
 
 ## Project layout
@@ -22,17 +22,17 @@ A relaxed, safety-first ride built to grow a **brand-new rider's** confidence an
 ```
 index.html  place.html  day.html  checklist.html  data.js   the static site (served from repo root)
 tour/                              human-readable source of record (markdown)
-  README.md 00-family.md 00-overview.md 01-itinerary.md 02-getting-started.md
+  README.md 00-riders.md 00-overview.md 01-itinerary.md
+  02-getting-started.md 03-anchors-and-options.md
   destinations/NN-id.md            one per stop, in route order
-  daily-guides/day-NN.md           per-day food/activity guides
-gen_data.py                        builds data.js from tour/ markdown + curated coords/days
+gen_data.py                        builds data.js from tour/ markdown + curated coords/days/segments
 docs/GENERATION.md                 how it was built + the agent workflow
 summary.md                         the trip brief
 CLAUDE.md                          guidance for Claude Code
 .claude/agents/                    tour-expert + website-builder agents
 ```
 
-Content flows **`tour/*.md` + `gen_data.py` → `data.js` → HTML**. `data.js` (`window.DESTINATIONS`, `window.DAYS`) is the single source the pages render from.
+Content flows **`tour/*.md` + `gen_data.py` → `data.js` → HTML**. `data.js` (`window.DESTINATIONS`, `window.DAYS`, `window.ANCHORS`, `window.SEGMENTS`) is the single source the pages render from.
 
 ## Run locally
 
@@ -53,11 +53,11 @@ Hosted on **GitHub Pages** from `main` / root (the Google Maps key is injected f
 
 | Agent | Owns | Job |
 |-------|------|-----|
-| **tour-expert** | `tour/*.md` | Curates the trip — destinations, days, hotels, food, the ferry/getting-there, mileage, routes. |
+| **tour-expert** | `tour/*.md` | Curates the trip — anchors, options, destinations, days, lodging, food, borders/logistics, distances, routes. |
 | **website-builder** | `gen_data.py`, `data.js`, the HTML | Renders `tour/` into the site and verifies it (image 200s, JS balance, local serve). |
 
 See [`docs/GENERATION.md`](docs/GENERATION.md) for the full build story.
 
 ## Notes
 
-Itinerary, hotels, and prices are **indicative planning suggestions** — confirm exact rates, secure motorcycle parking, and that passenger / child-passenger riding is allowed before booking. Distances/times are real Google Directions figures. Photos are from Wikimedia Commons.
+Dates, itinerary, hotels, and prices are **indicative planning figures — this is a custom edition; confirm dates, price, and every extension leg with the operator**. Operator-published leg distances are kept verbatim; new-option legs are flagged estimates. Photos are from Wikimedia Commons, each verified.

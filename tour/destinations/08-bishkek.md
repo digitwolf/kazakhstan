@@ -1,0 +1,45 @@
+# Bishkek
+
+> Over the Too-Ashuu pass and through its 4-km summit tunnel, down 2,500 vertical metres to Kyrgyzstan's leafy, Soviet-boned capital — a big-city dinner night and a real bed at the loop's western turn.
+
+- **Region:** Chüy Province, Kyrgyzstan (capital city)
+- **Itinerary:** Day 12 · 1 night (hotel + big-city dinner night; Day 13 rides out east via the Boom gorge)
+- **Stop type:** stop
+- **Ride to here:** 153 km (Suusamyr over Too-Ashuu Pass, 3,200 m, Day 12)
+
+## About
+**Bishkek** is Central Asia's most relaxed capital — a low-rise, gridded, intensely green city of about a million people under the wall of the Kyrgyz Alatau, where Soviet monumental architecture, student cafés, bazaars and craft-beer taprooms coexist within a few leafy blocks. After nearly two weeks of steppe, desert and 4,000-m passes it feels almost decadent: hot water, espresso, and the best restaurant scene between Almaty and Tashkent. This is the loop's westernmost point and its one mid-tour city night — from here the route turns for home.
+
+The ride in is short but memorable. From Suusamyr the road climbs to **Too-Ashuu Pass (3,200 m)** and punches through the mountain in its famous **~4-km summit tunnel** — cold, dark and unforgettable on a motorcycle — then hairpins down nearly two and a half vertical kilometres into the Chüy valley, watching the land change from alpine pasture to poplar-lined farmland in under an hour. The evening is the tour's **big-city dinner night** — the farewell dinner waits in Almaty, but this is the place for plov, craft beer and a proper restaurant table. On **Day 13** the group saddles up again and rides east out of the Chüy valley through the **Boom gorge** toward Issyk-Kul's north shore and Cholpon-Ata. (Bishkek's Manas airport, FRU, sits 25 km north of town, but on this loop nobody flies from here — departure is from Almaty.)
+
+## Things to see & do
+- **Ala-Too Square** — The ceremonial heart of the city: the national flag on its giant mast, the equestrian **Manas** monument, fountains, and the hourly changing of the guard (**come back after dark when the fountains are lit**).
+- **State History Museum** — The monumental white block on Ala-Too Square, renovated and reopened with strong exhibits from Saka gold to the Soviet century — the quickest way to make sense of everything you just rode through.
+- **Osh Bazaar** — Bishkek's big, working central-Asian bazaar: pyramids of spices, dried fruit, kurut, horse-meat sausage and cheap kalpak hats — the best souvenir sweep in town (**watch pockets in the crowds**).
+- **Soviet Bishkek on foot** — Oak Park and the sculpture garden, the White House, the brutalist **Circus** flying-saucer, Victory Square and the mosaic-clad blocks along Chüy Prospekt — an open-air museum of Soviet modernism.
+- **Too-Ashuu Pass & tunnel (en route)** — The last of the big western passes at 3,200 m; the summit tunnel is narrow, dim and fume-y — visor up, lights on, and enjoy the burst of light on the Chüy side (**the descent's hairpins deserve fresh attention, not end-of-block autopilot**).
+
+## What to eat
+- **Plov & the classics at Navat** — The beloved teahouse chain with carved-wood interiors: proper **plov**, **beshbarmak**, samsa and pots of tea — an easy, excellent group dinner.
+- **Laghman at Cafe Faiza** — A Bishkek institution packed with locals, famous for what many call the best hand-pulled **laghman** in Central Asia (and very kind prices).
+- **Supara Ethno-Complex** — The big-city-dinner splurge: a yurt-village restaurant on the city's mountain edge serving refined Kyrgyz cuisine — shashlik, tandyr bread and plov done beautifully.
+- **Craft beer at Save the Ales** — Kyrgyzstan's pioneering craft brewery-taproom, the right place to toast the first 2,000 km of the loop (**check the current address — it has moved locations**).
+
+## Where to stay
+| Property | Type | Parking | Price/night (USD) | — | Notes |
+|---|---|---|---|---|---|
+| Bishkek city hotel (operator's pick) | Hotel | Guarded hotel lot | Included in tour price | — | Operator books — night 12 of the tour package (twin-share), close to the centre; bikes in the guarded lot, ready for the Day-13 ride out through the Boom gorge. |
+| Ramada by Wyndham Bishkek Centre | 4★ hotel | On-site guest parking | $90–$130 | — | Modern, central and reliable, with pool and gym. Operator books — confirm; indicative price. |
+| Hyatt Regency Bishkek | 5★ hotel | Free guarded 24/7 lot | $140–$220 | — | The city's classic top-end address opposite the Opera; complimentary outdoor parking. Operator books — confirm; indicative price. |
+
+## Links
+- [Silk Off Road Tours — From Desert Up to Glaciers](https://www.silkoffroadtours.com/motorcycle-tours-kazakhstan-kyrgyzstan)
+- [Wikipedia: Bishkek](https://en.wikipedia.org/wiki/Bishkek)
+- [Wikivoyage: Bishkek](https://en.wikivoyage.org/wiki/Bishkek)
+- [Wikipedia: Too-Ashuu (pass & tunnel)](https://en.wikipedia.org/wiki/Too_Ashuu)
+
+## Photos
+- ![Ala-Too Square with fountains, the national flag and the State History Museum](https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ala_Too_Square_Bishkek_2021.jpg/960px-Ala_Too_Square_Bishkek_2021.jpg) — Ala-Too Square, the ceremonial heart of Bishkek — flag, fountains and the Manas monument.
+- ![The State History Museum and Manas statue with yurts on the square](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Kyrgyz_State_Historical_Museum%2C_Ala_Too_Square%2C_Bishkek%2C_Kyrgyzstan.jpg/960px-Kyrgyz_State_Historical_Museum%2C_Ala_Too_Square%2C_Bishkek%2C_Kyrgyzstan.jpg) — The State History Museum on Ala-Too Square — Saka gold to the Soviet century in one white monolith.
+- ![Vegetable and herb stalls inside Osh Bazaar](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Osh_Bazaar_in_Bishkek%2C_Kyrgyzstan.jpg/960px-Osh_Bazaar_in_Bishkek%2C_Kyrgyzstan.jpg) — Osh Bazaar, the city's big working market — spices, kurut and the mid-tour souvenir sweep.
+- ![Panorama of the Too-Ashuu pass summit area](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Panorama_of_the_Too_Ashuu_Pass%2C_Kyrgyz_Alatau%2C_Kyrgyzstan_01.jpg/960px-Panorama_of_the_Too_Ashuu_Pass%2C_Kyrgyz_Alatau%2C_Kyrgyzstan_01.jpg) — Too-Ashuu Pass (3,200 m), the Day-12 climb before the 4-km tunnel and the long descent to the Chüy valley.
