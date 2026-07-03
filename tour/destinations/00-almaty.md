@@ -46,8 +46,10 @@ The city bookends the trip. On the evening of **Day 15** the loop closes here �
 - [Kazakh Travel — official tourism portal](https://www.kazakh.travel/en)
 
 ## Photos
-- ![Zenkov (Ascension) Cathedral in Almaty](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Zenkov_Cathedral%2C_Almaty.jpg/960px-Zenkov_Cathedral%2C_Almaty.jpg) — The wooden Ascension (Zenkov) Cathedral, Almaty's most famous building.
-- ![Park of the 28 Panfilov Guardsmen](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Panfilov_park_04.jpg/960px-Panfilov_park_04.jpg) — Panfilov Park, the shady green heart of the old city center.
+- ![Almaty skyline against the snow peaks of the Zailiysky Alatau](https://images.unsplash.com/photo-1655444099262-c56de96c448d?q=80&w=1600&auto=format&fit=crop) — The city under the wall of the Zailiysky Alatau — 4,000-meter peaks hang over the avenues · photo: Michael Starkie / Unsplash
+- ![Almaty towers with the moon over the snow-capped Tian Shan](https://images.unsplash.com/photo-1716835018087-e618d839eb59?q=80&w=1600&auto=format&fit=crop) — Moonrise over the Zailiysky Alatau — the view that follows you around town · photo: Bekarys Khozhanazar / Unsplash
+- ![Zenkov (Ascension) Cathedral in Almaty](https://images.unsplash.com/photo-1752584157803-e8679296e585?q=80&w=1600&auto=format&fit=crop) — The wooden Ascension (Zenkov) Cathedral, Almaty's most famous building · photo: GWANGJIN GO / Unsplash
+- ![Pigeons and evening crowds on the square by Zenkov Cathedral](https://images.unsplash.com/photo-1752584157977-25a7b61fc622?q=80&w=1600&auto=format&fit=crop) — Pigeons, prams and ice cream on the cathedral square — the classic first-evening stroll · photo: GWANGJIN GO / Unsplash
 - ![Green Bazaar in Almaty](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Kok_Bazaar-Green_Bazaar%2C_Almaty_-_panoramio.jpg/960px-Kok_Bazaar-Green_Bazaar%2C_Almaty_-_panoramio.jpg) — The Green Bazaar — dried fruit, spices, and the famous horse-meat hall.
 - ![Sunset over Almaty from Kok-Tobe](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sunset_over_the_Almaty_seen_from_Kok_Tobe_mountain%2C_pic_1.jpg/960px-Sunset_over_the_Almaty_seen_from_Kok_Tobe_mountain%2C_pic_1.jpg) — Sunset over the city from Kok-Tobe hill, reached by cable car.
 - ![Medeu skating rink in the mountains above Almaty](https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Medeu_-_skate_rink_-_2022-06-18.jpg/960px-Medeu_-_skate_rink_-_2022-06-18.jpg) — Medeu, the high-altitude rink in a gorge of the Zailiysky Alatau.

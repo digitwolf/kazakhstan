@@ -212,12 +212,20 @@ window.DESTINATIONS = [
   ],
   photos: [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Zenkov_Cathedral%2C_Almaty.jpg/960px-Zenkov_Cathedral%2C_Almaty.jpg",
-      "cap": "The wooden Ascension (Zenkov) Cathedral, Almaty's most famous building."
+      "src": "https://images.unsplash.com/photo-1655444099262-c56de96c448d?q=80&w=1600&auto=format&fit=crop",
+      "cap": "The city under the wall of the Zailiysky Alatau — 4,000-meter peaks hang over the avenues · photo: Michael Starkie / Unsplash"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Panfilov_park_04.jpg/960px-Panfilov_park_04.jpg",
-      "cap": "Panfilov Park, the shady green heart of the old city center."
+      "src": "https://images.unsplash.com/photo-1716835018087-e618d839eb59?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Moonrise over the Zailiysky Alatau — the view that follows you around town · photo: Bekarys Khozhanazar / Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1752584157803-e8679296e585?q=80&w=1600&auto=format&fit=crop",
+      "cap": "The wooden Ascension (Zenkov) Cathedral, Almaty's most famous building · photo: GWANGJIN GO / Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1752584157977-25a7b61fc622?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Pigeons, prams and ice cream on the cathedral square — the classic first-evening stroll · photo: GWANGJIN GO / Unsplash"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Kok_Bazaar-Green_Bazaar%2C_Almaty_-_panoramio.jpg/960px-Kok_Bazaar-Green_Bazaar%2C_Almaty_-_panoramio.jpg",
@@ -324,12 +332,16 @@ window.DESTINATIONS = [
       "cap": "The knife-edge crest: climb barefoot, slide down, make it sing."
     },
     {
+      "src": "https://images.unsplash.com/photo-1557252989-18c3620493c8?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Aktau in full color — orange, red and ochre bands stacked into a desert butte · photo: Vlad Panov / Unsplash"
+    },
+    {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Chalk_Mountains._Aktau_Mountains._Altyn-Emel_National_Park._Kazakhstan%2C_April_2025_01.jpg/960px-Chalk_Mountains._Aktau_Mountains._Altyn-Emel_National_Park._Kazakhstan%2C_April_2025_01.jpg",
       "cap": "The Aktau chalk mountains — white, red, and orange badlands."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Chalk_Mountains._Aktau_Mountains._Altyn-Emel_National_Park._Kazakhstan%2C_April_2025_07.jpg/960px-Chalk_Mountains._Aktau_Mountains._Altyn-Emel_National_Park._Kazakhstan%2C_April_2025_07.jpg",
-      "cap": "Aktau's folded ridges glow at golden hour."
+      "src": "https://images.unsplash.com/photo-1554367769-44ffb3108022?q=80&w=1600&auto=format&fit=crop",
+      "cap": "The \"white mountains\" — seabed of the ancient Tethys ocean carved into canyon walls · photo: Charlotte Venema / Unsplash"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/%D0%9A%D0%B0%D1%82%D1%83%D1%82%D0%B0%D1%83.jpg/960px-%D0%9A%D0%B0%D1%82%D1%83%D1%82%D0%B0%D1%83.jpg",
@@ -520,8 +532,12 @@ window.DESTINATIONS = [
       "cap": "Charyn Canyon's Valley of Castles — the morning's big en-route sight."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Charyn_Canyon_28.jpg/960px-Charyn_Canyon_28.jpg",
-      "cap": "Twelve-million-year-old sandstone eroded into fortress walls."
+      "src": "https://images.unsplash.com/photo-1702920375620-24aa8b8e42f6?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Twelve-million-year-old sandstone eroded into fortress walls along the valley floor · photo: Lydia S / Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1752583987964-dcb03772a03e?q=80&w=1600&auto=format&fit=crop",
+      "cap": "The track through the Valley of Castles — walked at sunrise, before the day-trip crowds · photo: GWANGJIN GO / Unsplash"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Karkara_River_valley%2C_Khan_Tengri_Nature_Park.jpg/960px-Karkara_River_valley%2C_Khan_Tengri_Nature_Park.jpg",
@@ -532,20 +548,16 @@ window.DESTINATIONS = [
       "cap": "Jeti-Oguz — the \"Seven Bulls\" red sandstone wall, the Day-6 morning ride."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Altyn_Arashan_resort%2C_Kyrgyzstan.jpg/960px-Altyn_Arashan_resort%2C_Kyrgyzstan.jpg",
-      "cap": "Altyn-Arashan at ~2,600 m — hot springs at the top of a properly rough track."
+      "src": "https://images.unsplash.com/photo-1721486671491-46b41fe0a2cc?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Altyn-Arashan at ~2,600 m — the reward at the top of a properly rough 14-km track · photo: Janita Top / Unsplash"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Karakol_Dungan_Mosque.jpg/960px-Karakol_Dungan_Mosque.jpg",
       "cap": "The Dungan Mosque (1904–1910), built in Chinese style without a single nail."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Detail_of_Karakol_Dungan_Mosque.jpg/960px-Detail_of_Karakol_Dungan_Mosque.jpg",
-      "cap": "Carved, painted joinery — the mosque is held together by woodwork alone."
-    },
-    {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Karakol_cathedral.jpg/960px-Karakol_cathedral.jpg",
-      "cap": "The wooden Holy Trinity Russian Orthodox Church, rebuilt in 1895."
+      "src": "https://images.unsplash.com/photo-1718750041559-b7369ba7b55a?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Holy Trinity Orthodox Church — weathered log walls and carved gables, rebuilt in 1895 · photo: Afham Hamsyari / Unsplash"
     }
   ]
 },
@@ -624,6 +636,10 @@ window.DESTINATIONS = [
   ],
   photos: [
     {
+      "src": "https://images.unsplash.com/photo-1673200219579-ca37b2143969?q=80&w=1600&auto=format&fit=crop",
+      "cap": "The south-shore road squeezed between desert hills and the deep blue of Issyk-Kul · photo: Collab Media / Unsplash"
+    },
+    {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Issyk-Kul_South_Shore_Aug_2006.JPG/960px-Issyk-Kul_South_Shore_Aug_2006.JPG",
       "cap": "The quiet pebble beaches of Issyk-Kul's south shore — a warm alpine sea at 1,607 m that never freezes."
     },
@@ -636,8 +652,16 @@ window.DESTINATIONS = [
       "cap": "The Barskoon waterfalls, a short walk from the gorge road — Gagarin's favourite holiday spot."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/%D0%9A%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D0%BA%D0%B0%D1%8F_%D1%8E%D1%80%D1%82%D0%B0%2C_%D0%B4%D0%BE%D0%BC_%D1%81%D1%80%D0%B5%D0%B4%D0%B8_%D0%BD%D0%B5%D0%B1%D0%B5%D1%81%D0%BD%D1%8B%D1%85_%D0%B3%D0%BE%D1%80.jpg/960px-%D0%9A%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D0%BA%D0%B0%D1%8F_%D1%8E%D1%80%D1%82%D0%B0%2C_%D0%B4%D0%BE%D0%BC_%D1%81%D1%80%D0%B5%D0%B4%D0%B8_%D0%BD%D0%B5%D0%B1%D0%B5%D1%81%D0%BD%D1%8B%D1%85_%D0%B3%D0%BE%D1%80.jpg",
-      "cap": "A Kyrgyz yurt at the foot of the mountains — home for the night after the descent from Suek."
+      "src": "https://images.unsplash.com/photo-1694167232441-fd7a2c238d19?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Sunset over a south-shore yurt camp near Kaji-Say — home for the rest-day nights · photo: Rinat T / Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1567433584214-caeb6a0744d4?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Skazka (Fairy Tale) Canyon — the eroded red \"dragon's spine\" just along the shore road · photo: Irene Strong / Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1673597835709-31aff8f718d1?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Last light on the ranges across the water — the nightly show from the camp's beach · photo: Collab Media / Unsplash"
     }
   ]
 },
@@ -728,6 +752,14 @@ window.DESTINATIONS = [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Road_to_Issyk-Kul_%28south_shore%29_%2814939479807%29.jpg/960px-Road_to_Issyk-Kul_%28south_shore%29_%2814939479807%29.jpg",
       "cap": "Day 9 riding: farm roads under the Terskey Alatau on the way from the lake to the Kochkor valley."
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1621425022500-d801b0be1a05?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Herding-family life on the jailoo above Kochkor — laundry, solar panel and all · photo: Joel Heard / Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1618572591885-a05e04ee5bba?q=80&w=1600&auto=format&fit=crop",
+      "cap": "In the saddle before they can walk — the horse culture Kochkor's valley runs on · photo: Joel Heard / Unsplash"
     }
   ]
 },
@@ -804,12 +836,24 @@ window.DESTINATIONS = [
       "cap": "A yurt camp on the shore of Song-Kol — home for night 10, at 3,016 m among the summer pastures."
     },
     {
+      "src": "https://images.pexels.com/photos/38302184/pexels-photo-38302184.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "cap": "Camp yurts against the snow wall across the lake — even in high summer the peaks above 3,016 m stay white · photo: Adit Syahfiar / Pexels"
+    },
+    {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Song-Kul%2C_Kyrgyzstan_%2830709627198%29.jpg/960px-Song-Kul%2C_Kyrgyzstan_%2830709627198%29.jpg",
       "cap": "Golden-hour light on the jailoo — nomad families pitch here from June to September."
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Horse_standing_by_Song_Kul_Lake_-_Kyrgyztan.jpg/960px-Horse_standing_by_Song_Kul_Lake_-_Kyrgyztan.jpg",
       "cap": "Horses to the horizon: Song-Kol in July is one enormous horse pasture."
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1586635449738-36ba1adce069?q=80&w=1600&auto=format&fit=crop",
+      "cap": "On the trail up to Song-Kol — herders still move whole households to the jailoo on horseback · photo: Marek Brzóska / Unsplash"
+    },
+    {
+      "src": "https://images.pexels.com/photos/38302183/pexels-photo-38302183.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "cap": "Between the yurts: a horse, the grass, the lake — the whole of Song-Kol life in one gap · photo: Adit Syahfiar / Pexels"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Song-Kul%2C_Kyrgyzstan_%2843669860135%29.jpg/960px-Song-Kul%2C_Kyrgyzstan_%2843669860135%29.jpg",
@@ -976,16 +1020,28 @@ window.DESTINATIONS = [
   ],
   photos: [
     {
+      "src": "https://images.unsplash.com/photo-1690269788335-81ed655aaef2?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Bishkek under the snow wall of the Kyrgyz Alatau — the mountains stand at the end of half the streets in town · photo: Etienne Dayer / Unsplash"
+    },
+    {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ala_Too_Square_Bishkek_2021.jpg/960px-Ala_Too_Square_Bishkek_2021.jpg",
       "cap": "Ala-Too Square, the ceremonial heart of Bishkek — flag, fountains and the Manas monument."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Kyrgyz_State_Historical_Museum%2C_Ala_Too_Square%2C_Bishkek%2C_Kyrgyzstan.jpg/960px-Kyrgyz_State_Historical_Museum%2C_Ala_Too_Square%2C_Bishkek%2C_Kyrgyzstan.jpg",
-      "cap": "The State History Museum on Ala-Too Square — Saka gold to the Soviet century in one white monolith."
+      "src": "https://images.unsplash.com/photo-1699855429469-0623d5601647?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Manas on horseback before the State History Museum — Saka gold to the Soviet century in one white monolith · photo: Tim Broadbent / Unsplash"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Osh_Bazaar_in_Bishkek%2C_Kyrgyzstan.jpg/960px-Osh_Bazaar_in_Bishkek%2C_Kyrgyzstan.jpg",
       "cap": "Osh Bazaar, the city's big working market — spices, kurut and the mid-tour souvenir sweep."
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1629340038197-191832a53546?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Central Bishkek from above — the gridded, green Soviet plan with the 1954 university building at right · photo: Mike Dudin / Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1629340209850-91da481357bf?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Soviet Bishkek in one detail: the 1954 spire on Frunze-era Chüy Prospekt — the open-air museum the walking loop threads through · photo: Mike Dudin / Unsplash"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Panorama_of_the_Too_Ashuu_Pass%2C_Kyrgyz_Alatau%2C_Kyrgyzstan_01.jpg/960px-Panorama_of_the_Too_Ashuu_Pass%2C_Kyrgyz_Alatau%2C_Kyrgyzstan_01.jpg",
@@ -1065,6 +1121,10 @@ window.DESTINATIONS = [
   ],
   photos: [
     {
+      "src": "https://images.pexels.com/photos/11927132/pexels-photo-11927132.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "cap": "A resort pier reaching into the impossible blue of Issyk-Kul — the world's second-largest alpine lake, warm enough to swim in September · photo: Erlan Shatmanov / Pexels"
+    },
+    {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Petroglyph_Museum_of_Cholpon-Ata_12.jpg/960px-Petroglyph_Museum_of_Cholpon-Ata_12.jpg",
       "cap": "A Saka-era ibex carved on a glacial boulder in the Cholpon-Ata \"stone garden\" — some 5,000 carved stones spread over 42 hectares."
     },
@@ -1077,12 +1137,16 @@ window.DESTINATIONS = [
       "cap": "Cholpon-Ata's pier, looking across Issyk-Kul to the snow wall of the Terskey Alatau — the range the tour crossed at 4,021 m on Day 7."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Rux_Ordo_from_the_SE.jpg/960px-Rux_Ordo_from_the_SE.jpg",
-      "cap": "The sandy north-shore beach, with the white chapels of the Ruh Ordo complex across the bay — the Day-13 evening in one frame."
+      "src": "https://images.unsplash.com/photo-1689788647983-ab2ba23607fc?q=80&w=1600&auto=format&fit=crop",
+      "cap": "The Bosteri fairground wheel just east of Cholpon-Ata, reflected in the lake under the Kungey Alatau — the holiday coast at full tilt · photo: Isakov Eldiiar / Unsplash"
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Lake_Issyk-Kul%2C_Cholpon-Ata%2C_Kyrgyzstan_%286170033784%29.jpg/960px-Lake_Issyk-Kul%2C_Cholpon-Ata%2C_Kyrgyzstan_%286170033784%29.jpg",
-      "cap": "The leafy Cholpon-Ata lakefront — the resort side of Issyk-Kul, green and soft after the high passes."
+      "src": "https://images.pexels.com/photos/38279792/pexels-photo-38279792.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "cap": "Issyk-Kul in summer — clear water, big sky and the Tian Shan floating on the far shore · photo: Leia Yalu Feng / Pexels"
+    },
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Rux_Ordo_from_the_SE.jpg/960px-Rux_Ordo_from_the_SE.jpg",
+      "cap": "The sandy north-shore beach, with the white chapels of the Ruh Ordo complex across the bay — the Day-13 evening in one frame."
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Boom_Gorge%2C_Kyrgyzstan_%281%29.jpg/960px-Boom_Gorge%2C_Kyrgyzstan_%281%29.jpg",
@@ -1170,20 +1234,28 @@ window.DESTINATIONS = [
   ],
   photos: [
     {
+      "src": "https://images.unsplash.com/photo-1752583649050-414b73880afc?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Lake Kaindy's sunken forest — bleached spruce trunks standing dead-straight in turquoise water since the 1911 earthquake · photo: GWANGJIN GO / Unsplash"
+    },
+    {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Kaindy_lake_south-east_Kazakhstan.jpg/960px-Kaindy_lake_south-east_Kazakhstan.jpg",
       "cap": "Lake Kaindy — dead spruce trunks standing in the turquoise water of the 1911 landslide lake."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Lake_Kaindy%2C_Kazakhstan.jpg/960px-Lake_Kaindy%2C_Kazakhstan.jpg",
-      "cap": "The drowned forest from the rim trail — the Day-15 morning reward at the top of a 12-km piste."
+      "src": "https://images.unsplash.com/photo-1752583649014-8082ffd80e1b?q=80&w=1600&auto=format&fit=crop",
+      "cap": "Below the surface the cold water has preserved the drowned forest for over a century — the Day-15 morning reward at the top of the 12-km piste · photo: GWANGJIN GO / Unsplash"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1723020278294-7c3e8e723c0d?q=80&w=1600&auto=format&fit=crop",
+      "cap": "The \"pearls of the Tian Shan\": Kolsai's blue-green water pinned between spruce ridges, fifteen minutes up the valley from Saty · photo: Bagzhan Sadvakassov / Unsplash"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/First_Kolsay_lake_2023.jpg/960px-First_Kolsay_lake_2023.jpg",
       "cap": "Kolsai Lake 1 (~1,800 m) — a kilometer of blue-green water between spruce ridges."
     },
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Lower_Kolsai_Lake_Taken_on_a_Boat_%2842.98563557512841%2C_78.32500110512268%29.jpg/960px-Lower_Kolsai_Lake_Taken_on_a_Boat_%2842.98563557512841%2C_78.32500110512268%29.jpg",
-      "cap": "On the water: rowboats rent by the hour at the first lake."
+      "src": "https://images.unsplash.com/photo-1671894618012-b1f9d305a97f?q=80&w=1600&auto=format&fit=crop",
+      "cap": "On the water: rowboats rent by the hour at the first lake · photo: Evgeny Matveev / Unsplash"
     },
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/210804_Middle_Kolsai.jpg/960px-210804_Middle_Kolsai.jpg",
@@ -1279,7 +1351,7 @@ window.DAYS = [
         "what": "Day 1's real business: fit your DR650SE, walk around it with a camera (the deposit conversation later is easier with photos), sort riding gear and the duffel for the support truck, and ask every question now — the steppe has no service bays.",
         "q": "Almaty, Kazakhstan",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Panfilov_park_04.jpg/960px-Panfilov_park_04.jpg",
+        "img": "https://images.unsplash.com/photo-1716835018087-e618d839eb59?q=80&w=1600&auto=format&fit=crop",
         "wiki": "https://en.wikipedia.org/wiki/Suzuki_DR650",
         "it": ["moto", "desert"]
       },
@@ -1288,7 +1360,7 @@ window.DAYS = [
         "what": "Almaty's icon: the candy-colored Ascension (Zenkov) Cathedral, built in 1907 almost entirely of wood, standing in the shady Park of the 28 Panfilov Guardsmen — the single best short walk in the city.",
         "q": "Panfilov Park, Almaty",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Zenkov_Cathedral%2C_Almaty.jpg/960px-Zenkov_Cathedral%2C_Almaty.jpg",
+        "img": "https://images.unsplash.com/photo-1655444099262-c56de96c448d?q=80&w=1600&auto=format&fit=crop",
         "wiki": "https://en.wikipedia.org/wiki/Ascension_Cathedral,_Almaty",
         "it": ["history"]
       },
@@ -1297,7 +1369,7 @@ window.DAYS = [
         "what": "The classic Central Asian market: pyramids of dried fruit and spices, dairy and horse-meat halls, samsa stands, and vendors who insist you try everything. Perfect first-afternoon immersion.",
         "q": "Green Bazaar, Almaty",
         "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Kok_Bazaar-Green_Bazaar%2C_Almaty_-_panoramio.jpg/960px-Kok_Bazaar-Green_Bazaar%2C_Almaty_-_panoramio.jpg",
+        "img": "https://images.unsplash.com/photo-1752584157803-e8679296e585?q=80&w=1600&auto=format&fit=crop",
         "it": ["food", "history"]
       },
       {
@@ -1305,7 +1377,7 @@ window.DAYS = [
         "what": "Ride the cable car from the center up to the hilltop park under the TV tower for a full panorama of Almaty against the mountains — welcome-dinner-adjacent timing.",
         "q": "Kok-Tobe, Almaty",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sunset_over_the_Almaty_seen_from_Kok_Tobe_mountain%2C_pic_1.jpg/960px-Sunset_over_the_Almaty_seen_from_Kok_Tobe_mountain%2C_pic_1.jpg",
+        "img": "https://images.unsplash.com/photo-1752584157977-25a7b61fc622?q=80&w=1600&auto=format&fit=crop",
         "wiki": "https://en.wikipedia.org/wiki/Kok_Tobe",
         "it": ["scenic"]
       },
@@ -1314,7 +1386,7 @@ window.DAYS = [
         "what": "Kazakhstan's national dish to open the trip: hand-pulled pasta sheets under slow-boiled meat with onion broth, at a proper Kazakh restaurant. The Silk Road Food Trail starts here.",
         "q": "Almaty, Kazakhstan",
         "slot": "dinner",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Beshbarmak1.jpg/960px-Beshbarmak1.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sunset_over_the_Almaty_seen_from_Kok_Tobe_mountain%2C_pic_1.jpg/960px-Sunset_over_the_Almaty_seen_from_Kok_Tobe_mountain%2C_pic_1.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Beshbarmak",
         "it": ["food"]
       }
@@ -1352,7 +1424,7 @@ window.DAYS = [
         "what": "Bike setup first — lever and bar position, tire pressures for mixed surfaces, suspension sag, a full walk-around — then standing position, weighting the pegs, gravel braking front/rear balance, and sand basics: momentum, loose grip, paddling and recovery. Rehearsal for the Singing Dune pistes on Day 4.",
         "q": "Almaty, Kazakhstan",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Medeu_-_skate_rink_-_2022-06-18.jpg/960px-Medeu_-_skate_rink_-_2022-06-18.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Kok_Bazaar-Green_Bazaar%2C_Almaty_-_panoramio.jpg/960px-Kok_Bazaar-Green_Bazaar%2C_Almaty_-_panoramio.jpg",
         "it": ["training", "moto", "offroad"]
       },
       {
@@ -1434,7 +1506,7 @@ window.DAYS = [
         "what": "Arrive at the guest-house village at Altyn-Emel's entrance with time to settle in; kulan (Asiatic wild ass) and goitered gazelle graze the plains beyond the last houses. Light permitting, catch golden hour from the edge of the steppe.",
         "q": "Basshi, Kazakhstan",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Turkmenian_kulan_1.jpg/960px-Turkmenian_kulan_1.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/%D0%9A%D0%B0%D1%82%D1%83%D1%82%D0%B0%D1%83.jpg/960px-%D0%9A%D0%B0%D1%82%D1%83%D1%82%D0%B0%D1%83.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Altyn-Emel_National_Park",
         "it": ["wildlife", "desert", "scenic"]
       }
@@ -1496,7 +1568,7 @@ window.DAYS = [
         "what": "Bands of white, cream, red and orange rock folded into gullies and cathedral shapes — an open-air geology lesson roughly 400 million years in the making, best in low morning light.",
         "q": "Aktau Mountains, Altyn-Emel",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Chalk_Mountains._Aktau_Mountains._Altyn-Emel_National_Park._Kazakhstan%2C_April_2025_01.jpg/960px-Chalk_Mountains._Aktau_Mountains._Altyn-Emel_National_Park._Kazakhstan%2C_April_2025_01.jpg",
+        "img": "https://images.unsplash.com/photo-1557252989-18c3620493c8?q=80&w=1600&auto=format&fit=crop",
         "wiki": "https://en.wikipedia.org/wiki/Aktau_Mountains",
         "it": ["desert", "scenic", "history"]
       },
@@ -1505,7 +1577,7 @@ window.DAYS = [
         "what": "Melted-looking towers and honeycombed outcrops of dark volcanic rock — and the pistes between them are proper DR650 terrain.",
         "q": "Katutau, Altyn-Emel",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/%D0%9A%D0%B0%D1%82%D1%83%D1%82%D0%B0%D1%83.jpg/960px-%D0%9A%D0%B0%D1%82%D1%83%D1%82%D0%B0%D1%83.jpg",
+        "img": "https://images.unsplash.com/photo-1554367769-44ffb3108022?q=80&w=1600&auto=format&fit=crop",
         "wiki": "https://en.wikipedia.org/wiki/Katutau",
         "it": ["desert", "offroad", "food"]
       },
@@ -1593,7 +1665,7 @@ window.DAYS = [
         "what": "Kazakhstan → Kyrgyzstan the scenic way: a small seasonal post in the high Karkara valley, all green pasture and yurts. Passports, bike documents, twenty minutes of stamps — and the tour is in country number two. Set your watch: +1 h.",
         "q": "Karkara border crossing",
         "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Karkara_River_valley%2C_Khan_Tengri_Nature_Park.jpg/960px-Karkara_River_valley%2C_Khan_Tengri_Nature_Park.jpg",
+        "img": "https://images.unsplash.com/photo-1752583987964-dcb03772a03e?q=80&w=1600&auto=format&fit=crop",
         "wiki": "https://en.wikipedia.org/wiki/Kegen",
         "it": ["border", "pass", "yurt"]
       },
@@ -1609,7 +1681,7 @@ window.DAYS = [
         "what": "Karakol's wooden cathedral, rebuilt in 1895 after an earthquake destroyed the original; green domes and golden crosses over log walls, perfect in evening light.",
         "q": "Holy Trinity Cathedral, Karakol",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Karakol_cathedral.jpg/960px-Karakol_cathedral.jpg",
+        "img": "https://images.unsplash.com/photo-1718750041559-b7369ba7b55a?q=80&w=1600&auto=format&fit=crop",
         "wiki": "https://en.wikipedia.org/wiki/Karakol",
         "it": ["history"]
       },
@@ -1618,7 +1690,7 @@ window.DAYS = [
         "what": "Commissioned in 1904 and built over six years in Chinese pagoda style, held together by joinery on 42 wooden pillars — famously built without a single nail. Still an active mosque; visitors welcome outside prayer times.",
         "q": "Dungan Mosque, Karakol",
         "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Karakol_Dungan_Mosque.jpg/960px-Karakol_Dungan_Mosque.jpg",
+        "img": "https://images.unsplash.com/photo-1721486671491-46b41fe0a2cc?q=80&w=1600&auto=format&fit=crop",
         "it": ["history"]
       }
     ],
@@ -1670,7 +1742,7 @@ window.DAYS = [
         "what": "Sheer red sandstone cliffs out of the spruce forest, with the split 'Broken Heart' rock guarding the gorge entrance. Paved to the village, then easy gravel up past the old Soviet spa to the Valley of Flowers meadows — photo stop upon photo stop.",
         "q": "Jeti-Oguz Rocks",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Jeti-%C3%96g%C3%BCz_Rocks_-_Issyk-Kul_Region%2C_Jeti-Oguz_District.jpg/960px-Jeti-%C3%96g%C3%BCz_Rocks_-_Issyk-Kul_Region%2C_Jeti-Oguz_District.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Karkara_River_valley%2C_Khan_Tengri_Nature_Park.jpg/960px-Karkara_River_valley%2C_Khan_Tengri_Nature_Park.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Jeti-Oguz",
         "it": ["scenic", "canyon", "offroad"]
       },
@@ -1679,7 +1751,7 @@ window.DAYS = [
         "what": "The rough stuff: ~14 km of rocks, ruts and stream splashes up the Arashan gorge to hydrogen-sulfide pools at ~41 °C steaming beside the river at ~2,600 m. Soak, tea at the yurt camp, then ride it all back down. Weather-dependent; the support truck waits at the valley mouth.",
         "q": "Altyn-Arashan",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Altyn_Arashan_resort%2C_Kyrgyzstan.jpg/960px-Altyn_Arashan_resort%2C_Kyrgyzstan.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Jeti-%C3%96g%C3%BCz_Rocks_-_Issyk-Kul_Region%2C_Jeti-Oguz_District.jpg/960px-Jeti-%C3%96g%C3%BCz_Rocks_-_Issyk-Kul_Region%2C_Jeti-Oguz_District.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Altyn_Arashan",
         "it": ["offroad", "hotspring", "yurt"]
       },
@@ -1749,7 +1821,7 @@ window.DAYS = [
         "what": "Spruce forest, granite walls and the famous falls a short walk from the gorge road — Yuri Gagarin holidayed here after his flight, and a monument to him stands among the trees.",
         "q": "Barskoon Waterfall",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Barsko%C3%B6n_Waterfall.jpg/960px-Barsko%C3%B6n_Waterfall.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/The_view_on_Barskoon_George.jpg/960px-The_view_on_Barskoon_George.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Barskoon",
         "it": ["scenic", "canyon", "history"]
       },
@@ -1758,7 +1830,7 @@ window.DAYS = [
         "what": "Hard gravel switchbacks built for the Kumtor gold mine: Sarimonok (3,126 m), then Barskoon (3,754 m) — altitude discipline from here up: hydrate, layer, easy throttle.",
         "q": "Barskoon Pass",
         "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/The_view_on_Barskoon_George.jpg/960px-The_view_on_Barskoon_George.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Issyk-Kul_South_Shore_Aug_2006.JPG/960px-Issyk-Kul_South_Shore_Aug_2006.JPG",
         "it": ["pass", "offroad"]
       },
       {
@@ -1773,7 +1845,7 @@ window.DAYS = [
         "what": "The camp is steps from a pebble beach; the mildly salty 'warm lake' — the world's second-largest alpine lake, and it never freezes — is genuinely swimmable. The classic way to wash off a 4,000-metre day (sandals: the pebbles are sharp).",
         "q": "Tosor, Kyrgyzstan",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Issyk-Kul_South_Shore_Aug_2006.JPG/960px-Issyk-Kul_South_Shore_Aug_2006.JPG",
+        "img": "https://images.unsplash.com/photo-1673200219579-ca37b2143969?q=80&w=1600&auto=format&fit=crop",
         "wiki": "https://en.wikipedia.org/wiki/Issyk-Kul",
         "it": ["lake", "scenic"]
       },
@@ -1782,7 +1854,7 @@ window.DAYS = [
         "what": "Sunset over the water with the Kungey Alatau glowing pink across the lake, dinner in the communal yurt, and a sky full of stars once the generator goes off.",
         "q": "Tosor, Kyrgyzstan",
         "slot": "dinner",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/%D0%9A%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D0%BA%D0%B0%D1%8F_%D1%8E%D1%80%D1%82%D0%B0%2C_%D0%B4%D0%BE%D0%BC_%D1%81%D1%80%D0%B5%D0%B4%D0%B8_%D0%BD%D0%B5%D0%B1%D0%B5%D1%81%D0%BD%D1%8B%D1%85_%D0%B3%D0%BE%D1%80.jpg/960px-%D0%9A%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D0%BA%D0%B0%D1%8F_%D1%8E%D1%80%D1%82%D0%B0%2C_%D0%B4%D0%BE%D0%BC_%D1%81%D1%80%D0%B5%D0%B4%D0%B8_%D0%BD%D0%B5%D0%B1%D0%B5%D1%81%D0%BD%D1%8B%D1%85_%D0%B3%D0%BE%D1%80.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Barsko%C3%B6n_Waterfall.jpg/960px-Barsko%C3%B6n_Waterfall.jpg",
         "it": ["yurt", "scenic", "food"]
       }
     ],
@@ -1837,7 +1909,7 @@ window.DAYS = [
         "what": "Zero kilometres. Sleep in, swim off the camp's beach, read on the pebbles, walk the shore — deliberate recovery before the passes to Song-Kol, Suusamyr and Bishkek.",
         "q": "Tosor, Kyrgyzstan",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Issyk-Kul_South_Shore_Aug_2006.JPG/960px-Issyk-Kul_South_Shore_Aug_2006.JPG",
+        "img": "https://images.unsplash.com/photo-1673200219579-ca37b2143969?q=80&w=1600&auto=format&fit=crop",
         "wiki": "https://en.wikipedia.org/wiki/Issyk-Kul",
         "it": ["rest", "lake", "pass"]
       },
@@ -1867,7 +1939,7 @@ window.DAYS = [
         "what": "Camps arrange half-day horse treks up to a nearby summer pasture with a local horseman — a gentle preview of Song-Kol's herding world. Agree the price first (typically $10–15/hour).",
         "q": "Tosor, Kyrgyzstan",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/%D0%9A%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D0%BA%D0%B0%D1%8F_%D1%8E%D1%80%D1%82%D0%B0%2C_%D0%B4%D0%BE%D0%BC_%D1%81%D1%80%D0%B5%D0%B4%D0%B8_%D0%BD%D0%B5%D0%B1%D0%B5%D1%81%D0%BD%D1%8B%D1%85_%D0%B3%D0%BE%D1%80.jpg/960px-%D0%9A%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D0%BA%D0%B0%D1%8F_%D1%8E%D1%80%D1%82%D0%B0%2C_%D0%B4%D0%BE%D0%BC_%D1%81%D1%80%D0%B5%D0%B4%D0%B8_%D0%BD%D0%B5%D0%B1%D0%B5%D1%81%D0%BD%D1%8B%D1%85_%D0%B3%D0%BE%D1%80.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Barsko%C3%B6n_Waterfall.jpg/960px-Barsko%C3%B6n_Waterfall.jpg",
         "it": ["nomad", "yurt", "lake"]
       }
     ],
@@ -1983,7 +2055,7 @@ window.DAYS = [
         "what": "A wall of numbered hairpins climbing out of the Kochkor valley to 3,133 m, gravel in the upper reaches — take it at your own pace behind the leader, and stop at the top for the valley shot.",
         "q": "Kalmak-Ashuu (33 Parrots) Pass",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Song-Kul%2C_Kyrgyzstan_%2843669860135%29.jpg/960px-Song-Kul%2C_Kyrgyzstan_%2843669860135%29.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Horse_standing_by_Song_Kul_Lake_-_Kyrgyztan.jpg/960px-Horse_standing_by_Song_Kul_Lake_-_Kyrgyztan.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Kalmak-Ashuu",
         "it": ["pass", "offroad"]
       },
@@ -2001,7 +2073,7 @@ window.DAYS = [
         "what": "Walk between the yurts: mares milked at dusk, foals tethered in lines, kids herding sheep on horseback. Guests are welcome to help with the animals — just ask your hosts. Most camps will saddle a horse for a shore ride ($10–15/hour, agree first).",
         "q": "Song-Kul Lake, Kyrgyzstan",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Song-Kul%2C_Kyrgyzstan_%2830709627198%29.jpg/960px-Song-Kul%2C_Kyrgyzstan_%2830709627198%29.jpg",
+        "img": "https://images.pexels.com/photos/38302184/pexels-photo-38302184.jpeg?auto=compress&cs=tinysrgb&w=1600",
         "wiki": "https://en.wikipedia.org/wiki/Song-K%C3%B6l",
         "it": ["nomad", "yurt", "lake"]
       },
@@ -2010,7 +2082,7 @@ window.DAYS = [
         "what": "Fermented mare's milk — mildly fizzy, sour, faintly alcoholic — and fried dough pillows with kaymak and jam, offered to every guest. A small bowl is polite; it's the toll for the view.",
         "q": "Song-Kul Lake, Kyrgyzstan",
         "slot": "dinner",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Horse_standing_by_Song_Kul_Lake_-_Kyrgyztan.jpg/960px-Horse_standing_by_Song_Kul_Lake_-_Kyrgyztan.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Song-Kul%2C_Kyrgyzstan_%2830709627198%29.jpg/960px-Song-Kul%2C_Kyrgyzstan_%2830709627198%29.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Kumis",
         "it": ["food", "nomad", "yurt"]
       },
@@ -2174,7 +2246,7 @@ window.DAYS = [
         "what": "The last of the big western passes at 3,200 m; the ~4 km tunnel is narrow, dim and fume-y — visor up, lights on — and the burst of light on the Chüy side opens onto a 2,500 m descent of hairpins that deserves fresh attention, not end-of-block autopilot.",
         "q": "Too-Ashuu Pass",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Panorama_of_the_Too_Ashuu_Pass%2C_Kyrgyz_Alatau%2C_Kyrgyzstan_01.jpg/960px-Panorama_of_the_Too_Ashuu_Pass%2C_Kyrgyz_Alatau%2C_Kyrgyzstan_01.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Osh_Bazaar_in_Bishkek%2C_Kyrgyzstan.jpg/960px-Osh_Bazaar_in_Bishkek%2C_Kyrgyzstan.jpg",
         "wiki": "https://en.wikipedia.org/wiki/T%C3%B6%C3%B6_Ashuu",
         "it": ["pass", "moto"]
       },
@@ -2183,7 +2255,7 @@ window.DAYS = [
         "what": "The ceremonial heart of the capital: the national flag on its giant mast, the equestrian Manas monument, fountains, and the hourly changing of the guard — with the State History Museum's white monolith behind.",
         "q": "Ala-Too Square, Bishkek",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ala_Too_Square_Bishkek_2021.jpg/960px-Ala_Too_Square_Bishkek_2021.jpg",
+        "img": "https://images.unsplash.com/photo-1690269788335-81ed655aaef2?q=80&w=1600&auto=format&fit=crop",
         "wiki": "https://en.wikipedia.org/wiki/Ala-Too_Square",
         "it": ["history"]
       },
@@ -2192,7 +2264,7 @@ window.DAYS = [
         "what": "Bishkek's big working bazaar: pyramids of spices, dried fruit, kurut, horse-meat sausage and cheap kalpak hats — the best souvenir sweep of the tour. Watch pockets in the crowds.",
         "q": "Osh Bazaar, Bishkek",
         "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Osh_Bazaar_in_Bishkek%2C_Kyrgyzstan.jpg/960px-Osh_Bazaar_in_Bishkek%2C_Kyrgyzstan.jpg",
+        "img": "https://images.unsplash.com/photo-1699855429469-0623d5601647?q=80&w=1600&auto=format&fit=crop",
         "wiki": "https://en.wikipedia.org/wiki/Osh_Bazaar",
         "it": ["food", "history"]
       },
@@ -2201,7 +2273,7 @@ window.DAYS = [
         "what": "The one mid-tour city night: proper plov and beshbarmak at Navat's carved-wood teahouse, the legendary hand-pulled laghman at Cafe Faiza, or refined Kyrgyz cooking at the Supara Ethno-Complex — and Kyrgyzstan's pioneering craft brewery, Save the Ales, for the toast.",
         "q": "Bishkek, Kyrgyzstan",
         "slot": "dinner",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Kyrgyz_State_Historical_Museum%2C_Ala_Too_Square%2C_Bishkek%2C_Kyrgyzstan.jpg/960px-Kyrgyz_State_Historical_Museum%2C_Ala_Too_Square%2C_Bishkek%2C_Kyrgyzstan.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Ala_Too_Square_Bishkek_2021.jpg/960px-Ala_Too_Square_Bishkek_2021.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Pilaf",
         "it": ["food"]
       }
@@ -2259,7 +2331,7 @@ window.DAYS = [
         "what": "The Chüy river's red-walled canyon carries the road and railway side by side out of the capital's valley — after days of gravel passes, flowing tarmac feels like a gift.",
         "q": "Boom Gorge",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Boom_Gorge%2C_Kyrgyzstan_%281%29.jpg/960px-Boom_Gorge%2C_Kyrgyzstan_%281%29.jpg",
+        "img": "https://images.pexels.com/photos/38279792/pexels-photo-38279792.jpeg?auto=compress&cs=tinysrgb&w=1600",
         "wiki": "https://en.wikipedia.org/wiki/Boom_Gorge",
         "it": ["canyon", "scenic", "offroad"]
       },
@@ -2268,7 +2340,7 @@ window.DAYS = [
         "what": "Balykchy, then 100 km of shoreline riding with the Kungey Alatau behind and — across the water — the Terskey Alatau the tour crossed at 4,021 m on Day 7.",
         "q": "Balykchy, Kyrgyzstan",
         "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Lake_Issyk-Kul%2C_Cholpon-Ata%2C_Kyrgyzstan_%286170033784%29.jpg/960px-Lake_Issyk-Kul%2C_Cholpon-Ata%2C_Kyrgyzstan_%286170033784%29.jpg",
+        "img": "https://images.unsplash.com/photo-1689788647983-ab2ba23607fc?q=80&w=1600&auto=format&fit=crop",
         "it": ["lake", "scenic", "pass"]
       },
       {
@@ -2276,7 +2348,7 @@ window.DAYS = [
         "what": "Marked paths through 42 hectares of carved boulders with the lake below: ibex, deer, hunting scenes and balbal stone figures, from the end of the Bronze Age (~1500 BC) through the Saka-Usun tribes to the Turkic era. Small cash entry fee.",
         "q": "Cholpon-Ata Petroglyphs",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Petroglyph_Museum_of_Cholpon-Ata_12.jpg/960px-Petroglyph_Museum_of_Cholpon-Ata_12.jpg",
+        "img": "https://images.pexels.com/photos/11927132/pexels-photo-11927132.jpeg?auto=compress&cs=tinysrgb&w=1600",
         "wiki": "https://en.wikipedia.org/wiki/Cholpon-Ata",
         "it": ["history", "lake", "wildlife"]
       },
@@ -2285,7 +2357,7 @@ window.DAYS = [
         "what": "The classic Cholpon-Ata program: a swim off the sandy town beach, the white chapels of Ruh Ordo along the shore, and shashlik smoke drifting down the promenade.",
         "q": "Ruh Ordo, Cholpon-Ata",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Rux_Ordo_from_the_SE.jpg/960px-Rux_Ordo_from_the_SE.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/2015-09-07-082719_-_Cholpon-Ata%2C_Anlegesteg_und_Blick_zum_S%C3%BCdufer_des_Yssykk%C3%B6l.jpg/960px-2015-09-07-082719_-_Cholpon-Ata%2C_Anlegesteg_und_Blick_zum_S%C3%BCdufer_des_Yssykk%C3%B6l.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Issyk-Kul",
         "it": ["lake", "food"]
       },
@@ -2294,7 +2366,7 @@ window.DAYS = [
         "what": "The north-shore staple: whole fried or hot-smoked Issyk-Kul fish with bread, herbs and a squeeze of lemon — the best simple dinner on the lake. Cards work in the bigger places; still carry som.",
         "q": "Cholpon-Ata, Kyrgyzstan",
         "slot": "dinner",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/2015-09-07-082719_-_Cholpon-Ata%2C_Anlegesteg_und_Blick_zum_S%C3%BCdufer_des_Yssykk%C3%B6l.jpg/960px-2015-09-07-082719_-_Cholpon-Ata%2C_Anlegesteg_und_Blick_zum_S%C3%BCdufer_des_Yssykk%C3%B6l.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Petroglyph_Museum_of_Cholpon-Ata_02.jpg/960px-Petroglyph_Museum_of_Cholpon-Ata_02.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Issyk-Kul",
         "it": ["food", "lake"]
       }
@@ -2357,7 +2429,7 @@ window.DAYS = [
         "what": "North-shore tarmac through Tüp and up into the Karkara valley's open pastures — yurts, herds and snow peaks all still exactly where you left them on Day 5.",
         "q": "Tüp, Kyrgyzstan",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/2015-09-07-082719_-_Cholpon-Ata%2C_Anlegesteg_und_Blick_zum_S%C3%BCdufer_des_Yssykk%C3%B6l.jpg/960px-2015-09-07-082719_-_Cholpon-Ata%2C_Anlegesteg_und_Blick_zum_S%C3%BCdufer_des_Yssykk%C3%B6l.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Petroglyph_Museum_of_Cholpon-Ata_02.jpg/960px-Petroglyph_Museum_of_Cholpon-Ata_02.jpg",
         "wiki": "https://en.wikipedia.org/wiki/T%C3%BCp",
         "it": ["lake", "scenic", "yurt"]
       },
@@ -2366,7 +2438,7 @@ window.DAYS = [
         "what": "The same quiet post, run the other way: the operator handles the bikes, you queue with your passport, and Kazakhstan hands back an hour of daylight for the Saty leg. Cash only in the border area.",
         "q": "Karkara border crossing",
         "slot": "stop",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Karkara_River_valley%2C_Khan_Tengri_Nature_Park.jpg/960px-Karkara_River_valley%2C_Khan_Tengri_Nature_Park.jpg",
+        "img": "https://images.unsplash.com/photo-1752583987964-dcb03772a03e?q=80&w=1600&auto=format&fit=crop",
         "it": ["border", "pass"]
       },
       {
@@ -2381,7 +2453,7 @@ window.DAYS = [
         "what": "Cows coming home at dusk, kids on horseback, hay wagons on the one street. Walk it end to end; it takes fifteen minutes and it's the last quiet of the trip.",
         "q": "Saty, Kazakhstan",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Saty_KAZ_01.jpg/960px-Saty_KAZ_01.jpg",
+        "img": "https://images.unsplash.com/photo-1671894618012-b1f9d305a97f?q=80&w=1600&auto=format&fit=crop",
         "it": ["scenic", "nomad"]
       },
       {
@@ -2389,7 +2461,7 @@ window.DAYS = [
         "what": "A ~12 km rough, rocky piste — fords, ruts, proper DR650 terrain — climbs to the lake where bleached spruce trunks stand dead-straight out of turquoise water, preserved since the 1911 earthquake dammed the valley.",
         "q": "Lake Kaindy",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Kaindy_lake_south-east_Kazakhstan.jpg/960px-Kaindy_lake_south-east_Kazakhstan.jpg",
+        "img": "https://images.unsplash.com/photo-1752583649050-414b73880afc?q=80&w=1600&auto=format&fit=crop",
         "wiki": "https://en.wikipedia.org/wiki/Lake_Kaindy",
         "it": ["offroad", "lake", "moto"]
       }
@@ -2442,7 +2514,7 @@ window.DAYS = [
         "what": "The first of the three Kolsai lakes: a kilometre of blue-green water up to ~80 m deep between forested ridges, with boardwalk paths, rowboats for rent and trout in the water. The higher lakes are hiking and horse territory beyond the road.",
         "q": "Kolsai Lake 1",
         "slot": "activity",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/First_Kolsay_lake_2023.jpg/960px-First_Kolsay_lake_2023.jpg",
+        "img": "https://images.unsplash.com/photo-1752583649014-8082ffd80e1b?q=80&w=1600&auto=format&fit=crop",
         "wiki": "https://en.wikipedia.org/wiki/Kolsay_Lakes_National_Park",
         "it": ["lake", "scenic"]
       },
@@ -2451,7 +2523,7 @@ window.DAYS = [
         "what": "If missed on Day 14: dozens of Schrenk's spruce trunks standing dead-straight out of turquoise water at ~2,000 m — a lake created overnight when the 1911 Kebin earthquake dammed the gorge. Walk the rim trail down to the shore, then point the bikes at Almaty.",
         "q": "Lake Kaindy",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Lake_Kaindy%2C_Kazakhstan.jpg/960px-Lake_Kaindy%2C_Kazakhstan.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Kaindy_lake_south-east_Kazakhstan.jpg/960px-Kaindy_lake_south-east_Kazakhstan.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Lake_Kaindy",
         "it": ["lake", "offroad", "canyon"]
       },
@@ -2467,7 +2539,7 @@ window.DAYS = [
         "what": "The loop's last evening: dusty DR650s and deposits handed back at the hotel's guarded lot, then one final long table — beshbarmak, toasts, and 2,800 km worth of stories.",
         "q": "Almaty, Kazakhstan",
         "slot": "dinner",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Beshbarmak1.jpg/960px-Beshbarmak1.jpg",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sunset_over_the_Almaty_seen_from_Kok_Tobe_mountain%2C_pic_1.jpg/960px-Sunset_over_the_Almaty_seen_from_Kok_Tobe_mountain%2C_pic_1.jpg",
         "wiki": "https://en.wikipedia.org/wiki/Beshbarmak",
         "it": ["food", "moto"]
       }
@@ -2526,7 +2598,7 @@ window.DAYS = [
         "what": "If the flight is late, one more espresso in the center or a last ride up Kok-Tobe — the Zailiysky Alatau makes a good final frame.",
         "q": "Kok-Tobe, Almaty",
         "slot": "scenic",
-        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sunset_over_the_Almaty_seen_from_Kok_Tobe_mountain%2C_pic_1.jpg/960px-Sunset_over_the_Almaty_seen_from_Kok_Tobe_mountain%2C_pic_1.jpg",
+        "img": "https://images.unsplash.com/photo-1752584157977-25a7b61fc622?q=80&w=1600&auto=format&fit=crop",
         "it": ["scenic"]
       },
       {
@@ -2924,7 +2996,7 @@ window.FOOD_TRAIL = {
           "u": "https://www.google.com/maps/search/?api=1&query=Green%20Bazaar%20Almaty"
         }
       ],
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Beshbarmak1.jpg/960px-Beshbarmak1.jpg"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sunset_over_the_Almaty_seen_from_Kok_Tobe_mountain%2C_pic_1.jpg/960px-Sunset_over_the_Almaty_seen_from_Kok_Tobe_mountain%2C_pic_1.jpg"
     },
     {
       "n": 2,
@@ -2964,7 +3036,7 @@ window.FOOD_TRAIL = {
         { "l": "Dungan family dinner (book ahead)", "u": "https://destinationkarakol.com/" },
         { "l": "Boso (fried) lagman", "u": "https://www.google.com/maps/search/?api=1&query=lagman%20Karakol" }
       ],
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Karakol_Dungan_Mosque.jpg/960px-Karakol_Dungan_Mosque.jpg"
+      "photo": "https://images.unsplash.com/photo-1721486671491-46b41fe0a2cc?q=80&w=1600&auto=format&fit=crop"
     },
     {
       "n": 4,
@@ -2983,7 +3055,7 @@ window.FOOD_TRAIL = {
           "u": "https://www.google.com/maps/search/?api=1&query=Song-Kul%20yurt%20camp"
         }
       ],
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Horse_standing_by_Song_Kul_Lake_-_Kyrgyztan.jpg/960px-Horse_standing_by_Song_Kul_Lake_-_Kyrgyztan.jpg"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Song-Kul%2C_Kyrgyzstan_%2830709627198%29.jpg/960px-Song-Kul%2C_Kyrgyzstan_%2830709627198%29.jpg"
     },
     {
       "n": 5,
@@ -3004,7 +3076,7 @@ window.FOOD_TRAIL = {
         },
         { "l": "Save the Ales", "u": "https://www.google.com/maps/search/?api=1&query=Save%20the%20Ales%20Bishkek" }
       ],
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Osh_Bazaar_in_Bishkek%2C_Kyrgyzstan.jpg/960px-Osh_Bazaar_in_Bishkek%2C_Kyrgyzstan.jpg"
+      "photo": "https://images.unsplash.com/photo-1699855429469-0623d5601647?q=80&w=1600&auto=format&fit=crop"
     },
     {
       "n": 6,
@@ -3023,7 +3095,7 @@ window.FOOD_TRAIL = {
           "u": "https://www.google.com/maps/search/?api=1&query=shashlik%20Cholpon-Ata%20promenade"
         }
       ],
-      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/2015-09-07-082719_-_Cholpon-Ata%2C_Anlegesteg_und_Blick_zum_S%C3%BCdufer_des_Yssykk%C3%B6l.jpg/960px-2015-09-07-082719_-_Cholpon-Ata%2C_Anlegesteg_und_Blick_zum_S%C3%BCdufer_des_Yssykk%C3%B6l.jpg"
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Petroglyph_Museum_of_Cholpon-Ata_02.jpg/960px-Petroglyph_Museum_of_Cholpon-Ata_02.jpg"
     }
   ]
 };
@@ -3206,20 +3278,20 @@ window.GEO = {
 
 /* Region-matched scenic photos used as each day's hero artwork (verified). */
 window.DAYART = {
-  "1": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Zenkov_Cathedral%2C_Almaty.jpg/960px-Zenkov_Cathedral%2C_Almaty.jpg",
-  "2": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Medeu_-_skate_rink_-_2022-06-18.jpg/960px-Medeu_-_skate_rink_-_2022-06-18.jpg",
-  "3": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Turkmenian_kulan_1.jpg/960px-Turkmenian_kulan_1.jpg",
+  "1": "https://images.unsplash.com/photo-1655444099262-c56de96c448d?q=80&w=1600&auto=format&fit=crop",
+  "2": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Kok_Bazaar-Green_Bazaar%2C_Almaty_-_panoramio.jpg/960px-Kok_Bazaar-Green_Bazaar%2C_Almaty_-_panoramio.jpg",
+  "3": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/%D0%9A%D0%B0%D1%82%D1%83%D1%82%D0%B0%D1%83.jpg/960px-%D0%9A%D0%B0%D1%82%D1%83%D1%82%D0%B0%D1%83.jpg",
   "4": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/210723_Altyn_Emel_Singing_Dune_came_2.jpg/960px-210723_Altyn_Emel_Singing_Dune_came_2.jpg",
   "5": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Charyn_Canyon%2C_Kazakhstan_01.jpg/960px-Charyn_Canyon%2C_Kazakhstan_01.jpg",
-  "6": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Jeti-%C3%96g%C3%BCz_Rocks_-_Issyk-Kul_Region%2C_Jeti-Oguz_District.jpg/960px-Jeti-%C3%96g%C3%BCz_Rocks_-_Issyk-Kul_Region%2C_Jeti-Oguz_District.jpg",
-  "7": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/The_view_on_Barskoon_George.jpg/960px-The_view_on_Barskoon_George.jpg",
-  "8": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Issyk-Kul_South_Shore_Aug_2006.JPG/960px-Issyk-Kul_South_Shore_Aug_2006.JPG",
+  "6": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Karkara_River_valley%2C_Khan_Tengri_Nature_Park.jpg/960px-Karkara_River_valley%2C_Khan_Tengri_Nature_Park.jpg",
+  "7": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Issyk-Kul_South_Shore_Aug_2006.JPG/960px-Issyk-Kul_South_Shore_Aug_2006.JPG",
+  "8": "https://images.unsplash.com/photo-1673200219579-ca37b2143969?q=80&w=1600&auto=format&fit=crop",
   "9": "https://upload.wikimedia.org/wikipedia/commons/9/95/KyrgyzEagleHuntsman.jpg",
   "10": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Song-Kul%2C_Kyrgyzstan_%2830709310728%29.jpg/960px-Song-Kul%2C_Kyrgyzstan_%2830709310728%29.jpg",
   "11": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/%D0%9A%D0%B5%D0%BA%D0%B5%D0%BC%D0%B5%D1%80%D0%B5%D0%BD.jpg/960px-%D0%9A%D0%B5%D0%BA%D0%B5%D0%BC%D0%B5%D1%80%D0%B5%D0%BD.jpg",
-  "12": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Panorama_of_the_Too_Ashuu_Pass%2C_Kyrgyz_Alatau%2C_Kyrgyzstan_01.jpg/960px-Panorama_of_the_Too_Ashuu_Pass%2C_Kyrgyz_Alatau%2C_Kyrgyzstan_01.jpg",
-  "13": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/2015-09-07-082719_-_Cholpon-Ata%2C_Anlegesteg_und_Blick_zum_S%C3%BCdufer_des_Yssykk%C3%B6l.jpg/960px-2015-09-07-082719_-_Cholpon-Ata%2C_Anlegesteg_und_Blick_zum_S%C3%BCdufer_des_Yssykk%C3%B6l.jpg",
-  "14": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Karkara_River_valley%2C_Khan_Tengri_Nature_Park.jpg/960px-Karkara_River_valley%2C_Khan_Tengri_Nature_Park.jpg",
-  "15": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/First_Kolsay_lake_2023.jpg/960px-First_Kolsay_lake_2023.jpg",
-  "16": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sunset_over_the_Almaty_seen_from_Kok_Tobe_mountain%2C_pic_1.jpg/960px-Sunset_over_the_Almaty_seen_from_Kok_Tobe_mountain%2C_pic_1.jpg"
+  "12": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Osh_Bazaar_in_Bishkek%2C_Kyrgyzstan.jpg/960px-Osh_Bazaar_in_Bishkek%2C_Kyrgyzstan.jpg",
+  "13": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Petroglyph_Museum_of_Cholpon-Ata_02.jpg/960px-Petroglyph_Museum_of_Cholpon-Ata_02.jpg",
+  "14": "https://images.unsplash.com/photo-1752583987964-dcb03772a03e?q=80&w=1600&auto=format&fit=crop",
+  "15": "https://images.unsplash.com/photo-1752583649014-8082ffd80e1b?q=80&w=1600&auto=format&fit=crop",
+  "16": "https://images.unsplash.com/photo-1752584157977-25a7b61fc622?q=80&w=1600&auto=format&fit=crop"
 };
