@@ -138,6 +138,16 @@
   .diff.easy { color: #87d287; background: rgba(95,179,95,.13); border: 1px solid rgba(95,179,95,.4); }
   .diff.moderate { color: #f4c06a; background: rgba(240,168,48,.13); border: 1px solid rgba(240,168,48,.4); }
   .diff.hard { color: #f08070; background: rgba(227,73,59,.13); border: 1px solid rgba(227,73,59,.45); }
+  /* Tkacs ADV terrain-class pill on option cards (colors inlined from window.ADVSCALE) */
+  .advpill { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 800;
+    text-transform: uppercase; letter-spacing: .05em; border-radius: 999px; padding: 2px 10px; border: 1px solid; cursor: help; }
+  .advpill.neutral { color: #9aa7b5; border-color: var(--line); background: var(--panel-2); cursor: default; }
+  .advpill .advpeak { font-size: 10px; font-weight: 800; padding: 0 7px; border-radius: 999px; border: 1px solid; }
+  /* compact 5-class legend for the anchors section (links to the Tkacs system) */
+  .adv-legend { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center;
+    margin: -6px 0 24px; font-size: 12.5px; color: var(--muted); }
+  .adv-legend .al { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; cursor: help; }
+  .adv-legend i { width: 10px; height: 10px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
   .opt-card .osurf { font-size: 13px; color: #c7d1db; line-height: 1.55; }
   .opt-card .ohl { font-size: 12px; color: var(--muted); margin-top: 8px; }
   .opt-card .ohl b { color: var(--accent-2); font-weight: 700; }
@@ -241,6 +251,9 @@
   .surfmini .bar i.gravel { background: #f0a830; }
   .surfmini .bar i.rough { background: #e3493b; }
   .surfmini .lbl { font-size: 11.5px; font-weight: 600; color: var(--muted); white-space: nowrap; }
+  /* small Tkacs ADV class chip next to the surface hint (title = the full rating line) */
+  .advchip { font-size: 10.5px; font-weight: 800; padding: 1px 7px; border-radius: 6px;
+    border: 1px solid; white-space: nowrap; cursor: help; }
 
   /* ---------- Info grid ---------- */
   .grid { display: grid; gap: 18px; }
@@ -451,6 +464,7 @@
         <b style="color:var(--text)">reference line</b> (the tagged options below); the Day-2 training day is
         the option-selector, and days freed by faster options become extra anchor nights or weather buffer.</p>
     </div>
+    <div class="adv-legend" id="advLegend"></div>
     <div class="spine" id="spine"></div>
     <p class="flex-note"><b>The flex principle:</b> the 16-day frame and the anchor nights are FIXED — the
       options only trade difficulty and pace. Song-Kol (A4) and the Suek glacier road (S3a) are the
@@ -708,18 +722,36 @@ function optCardHtml(o) {
   const ref = o.reference ? `<span class="oref">Reference route${o.refDays ? ' · ' + o.refDays : ''}</span>` : '';
   const hl = (o.highlights || []).join(' · ');
   const frees = o.frees ? `<div class="ofree">▲ ${o.frees}</div>` : '';
+  /* Primary difficulty pill = the Tkacs ADV class (colored, "ADV Class N · Name" + peak
+     chip; tooltip = the full rating line). The old easy/moderate/hard label stays only
+     when it adds info beyond the bare difficulty word (e.g. "the toughest reference day"). */
+  const advPill = (window.advPillHtml && o.adv) ? window.advPillHtml(o.adv, 'ADV ') : '';
+  const diffExtra = (!advPill || (o.diffLabel && o.diffLabel !== o.difficulty))
+    ? `<span class="diff ${o.difficulty}">${o.diffLabel || o.difficulty}</span>` : '';
   return `<div class="opt-card" data-opt="${o.id}" style="border-left-color:${optColor(o)}">
     <div class="otop"><span class="oid">${o.id}</span><span class="onm">${o.name}</span>${ref}</div>
     <div class="ometa">
       <span><b>${o.days}</b> day${o.days > 1 ? 's' : ''}</span>
       <span><b>${km}</b> km${o.est ? ' (est.)' : ''}</span>
-      <span class="diff ${o.difficulty}">${o.diffLabel || o.difficulty}</span>
+      ${advPill}${diffExtra}
     </div>
     <div class="osurf">${o.surface}</div>
     ${hl ? `<div class="ohl"><b>Highlights:</b> ${hl}</div>` : ''}
     ${frees}
   </div>`;
 }
+/* ---------- Tkacs ADV terrain-class legend (the 5 classes, window.ADVSCALE) ---------- */
+(function buildAdvLegend() {
+  const el = document.getElementById('advLegend');
+  if (!el || !window.ADVSCALE) return;
+  const dots = [1, 2, 3, 4, 5].map(n => {
+    const c = window.ADVSCALE[n];
+    return `<span class="al" title="Class ${n} ${c.name} (${c.flag}): ${c.hint}. Rain or snow bumps a high-pass day a full class.">` +
+      `<i style="background:${c.color}"></i>${n} ${c.name}</span>`;
+  }).join('');
+  el.innerHTML = `<span>Terrain rated on the <a href="https://brettkacs.com/adv-skill-rating-system/" target="_blank" rel="noopener">Bret Tkacs ADV scale</a>:</span>${dots}`;
+})();
+
 (function buildSpine() {
   const spine = document.getElementById('spine');
   let html = baseCardHtml('Start — Days 1–2');
@@ -824,8 +856,10 @@ function surfHintHtml(day) {
   const bar = segs.map(s => `<i class="${s.type}" style="flex:${s.km}"></i>`).join('');
   const dirt = segs.filter(s => s.type !== 'tarmac').reduce((a, s) => a + s.km, 0);
   const lbl = dirt > 0 ? `${dirt} km dirt` : 'all tarmac';
+  /* Tkacs ADV class chip ("C3", colored; tooltip = the full rating line) — rated days only */
+  const adv = (window.advChipHtml && day.road.rating) ? window.advChipHtml(day.road.rating) : '';
   return `<div class="surfmini" title="${day.road.surface.replace(/"/g, '&quot;')}">` +
-    `<span class="bar">${bar}</span><span class="lbl">${lbl}</span></div>`;
+    `<span class="bar">${bar}</span><span class="lbl">${lbl}</span>${adv}</div>`;
 }
 
 const timeline = document.getElementById('timeline');

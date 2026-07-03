@@ -609,12 +609,14 @@ SEGMENTS = [
   "options":[
    {"id":"S1a","name":"Steppe Classic","reference":True,"refDays":"Day 3","days":1,"km":250,"est":False,
     "difficulty":"easy","diffLabel":"easy–moderate",
+    "adv":{"cls":1,"peak":2,"raw":"ADV Class 1 (Novice/Green), Class 2 (Basic/Yellow) only on the last graded gravel into Basshi."},
     "surface":"Tarmac with a mountain pass — a gentle opener the day after training.",
     "highlights":["First taste of open steppe","Mountain-pass warm-up","Retro-museum tea stop"],
     "via":[],
     "geo":G("Almaty, Kazakhstan","Konaev, Kazakhstan","Saryozek, Kazakhstan","Basshi, Kazakhstan")},
    {"id":"S1b","name":"Assy Plateau Traverse","reference":False,"days":1,"km":280,"est":True,
     "difficulty":"hard","diffLabel":"hard, weather-dependent",
+    "adv":{"cls":3,"peak":4,"raw":"ADV Class 3 (Moderate/Orange), peaks Class 4 (Difficult/Red) on the Turgen-side track and anywhere after rain."},
     "surface":"Up the Turgen gorge on a rough, badly degraded track (4WD-grade), across the high gravel plateau at ~2,500–2,750 m past the observatory, then dirt down past Bartogay. Turns greasy and can close in rain — only for a group that sails through the Day-2 session.",
     "highlights":["High summer-pasture plateau","Assy-Turgen observatory at 2,750 m","Bartogay reservoir","Real off-road on day one of the route proper"],
     "via":[],
@@ -624,12 +626,14 @@ SEGMENTS = [
   "options":[
    {"id":"S2a","name":"Hot Springs & the Canyon","reference":True,"refDays":"Days 4–5","days":2,"km":530,"est":False,
     "difficulty":"moderate","diffLabel":"moderate",
+    "adv":{"cls":2,"peak":3,"raw":"ADV Class 2 (Basic/Yellow) peaking Class 3 (Moderate/Orange) in the sand on the park day; Class 1–2 (Novice–Basic) on the border day."},
     "surface":"Desert pistes and sand patches through the park (asphalt alternative inside the park if conditions are bad), then a mostly-tarmac border day.",
     "highlights":["The Singing Dune & Aktau ridden en route","Evening soak at the Chundzha hot springs","Charyn Canyon","The quiet Kegen/Karkara border (+1 h)","Laghman country in the Uyghur District"],
     "via":["chundzha"],
     "geo":G("Basshi, Kazakhstan","Singing Dune, Altyn-Emel","Aktau Mountains, Altyn-Emel","Chundzha, Kazakhstan","Charyn Canyon","Kegen, Kazakhstan","Karkara border crossing","Karakol, Kyrgyzstan")},
    {"id":"S2b","name":"Canyon Direct","reference":False,"days":1,"km":430,"est":True,
     "difficulty":"moderate","diffLabel":"easy–moderate but long","frees":"Frees 1 day → an extra anchor night (A2/A3) or weather buffer",
+    "adv":{"cls":1,"peak":None,"raw":"ADV Class 1 (Novice/Green) — tarmac-forward all day; the challenge is saddle time, not the surface."},
     "surface":"Tarmac-forward all day; the challenge is saddle time and the border queue. Honestly trades the full dune/Aktau piste day and the hot springs for a freed day.",
     "highlights":["Charyn Canyon with more time on-site","A full extra day banked for the anchors"],
     "via":[],
@@ -639,12 +643,14 @@ SEGMENTS = [
   "options":[
    {"id":"S3a","name":"The Glacier Road","reference":True,"refDays":"Day 7","days":1,"km":190,"est":False,
     "difficulty":"hard","diffLabel":"hard — the toughest reference day",
+    "adv":{"cls":2,"peak":3,"raw":"ADV Class 2 (Basic/Yellow) touching Class 3 (Moderate/Orange) on the upper switchbacks: the \"hard\" is altitude and weather, not terrain, and snow bumps it a full class."},
     "surface":"Hard gravel up Barskoon gorge over Sarimonok 3,126 m, Barskoon 3,754 m and Suek 4,021 m, past glaciers, then down to the lake. High-altitude, cold, weather-dependent — the rest day lands immediately after for a reason.",
     "highlights":["The 4,021 m high point of the tour","Glaciers at arm's length","The Barskoon waterfalls"],
     "via":[],
     "geo":G("Karakol, Kyrgyzstan","Barskoon, Kyrgyzstan","Barskoon Waterfall","Sarimonok Pass","Barskoon Pass","Suek Pass","Barskoon Pass","Barskoon Waterfall","Barskoon, Kyrgyzstan","Tamga, Kyrgyzstan","Tosor, Kyrgyzstan")},
    {"id":"S3b","name":"The Coast Road","reference":False,"days":1,"km":130,"est":True,
     "difficulty":"easy","diffLabel":"easy",
+    "adv":{"cls":1,"peak":None,"raw":"Paved / ADV Class 1 (Novice/Green) on the spurs — mostly south-shore tarmac."},
     "surface":"South-shore tarmac along the lake with short, optional dirt spurs. The honest trade: no glaciers, no 4,000 m — the named bail-out if the group or the weather says no to Suek.",
     "highlights":["A second look at Jeti-Oguz from the road","Skazka canyon done en route instead of on the rest day","Lakeside villages"],
     "via":[],
@@ -654,12 +660,14 @@ SEGMENTS = [
   "options":[
    {"id":"S4a","name":"Eagle Hunters & 33 Parrots","reference":True,"refDays":"Days 9–10","days":2,"km":330,"est":False,
     "difficulty":"moderate","diffLabel":"moderate",
+    "adv":{"cls":2,"peak":3,"raw":"ADV Class 2 (Basic/Yellow), peaks Class 3 (Moderate/Orange) on the loose hairpin insides and the meadow two-track to camp."},
     "surface":"Tarmac and good gravel along the Terskey Alatau, then the 33 Parrots (3,133 m) gravel switchbacks up to the lake. Reference = split with a Kochkor overnight; can also run as 1 long day (~270 km, estimate) to free a day.",
     "highlights":["Farmhouse lunch with an eagle-hunting family","Kochkor's felt workshops","The switchback climb","First sight of Song-Kol"],
     "via":["kochkor"],
     "geo":G("Tosor, Kyrgyzstan","Skazka Canyon","Bokonbayevo, Kyrgyzstan","Balykchy, Kyrgyzstan","Kochkor, Kyrgyzstan","Kalmak-Ashuu (33 Parrots) Pass","Song-Kul Lake, Kyrgyzstan")},
    {"id":"S4b","name":"Tosor Pass Direttissima","reference":False,"days":1,"km":110,"est":True,
     "difficulty":"hard","diffLabel":"hard — the hardest riding of the tour",
+    "adv":{"cls":4,"peak":5,"raw":"ADV Class 4 (Difficult/Red), peaks Class 5 (Severe/Black) if the upper fords run high or snow lies near the top: the terrain ceiling of the entire tour."},
     "surface":"Straight up over Tosor Pass (3,893 m) on exceptionally rough high-alpine gravel/single-track: fords, rock steps, mud, possible snow near the top even in September; steep loose descent, then west to the lake. Strong-group, good-weather-window only. Skips the eagle hunters and Kochkor — the trade is culture for terrain.",
     "highlights":["The wildest pass of the trip","Near-zero traffic","The direct herders' line from shore to plateau"],
     "via":[],
@@ -669,12 +677,14 @@ SEGMENTS = [
   "options":[
    {"id":"S5a","name":"Grand Western Loop","reference":True,"refDays":"Days 11–14","days":4,"km":979,"est":False,
     "difficulty":"hard","diffLabel":"one hard off-road day, then moderate-to-easy tarmac",
+    "adv":{"cls":3,"peak":4,"raw":"ADV Class 3 (Moderate/Orange) on the off-road day, peaks Class 4 (Difficult/Red) on the Moldo-Ashuu rocky descent; the two tarmac days are Paved, the Karkara gravel Class 2 (Basic/Yellow)."},
     "surface":"One hard rocky off-road day (the Song-Kol descent, Moldo-Ashuu 3,546 m and Kara-Keche 3,384 m), then Too-Ashuu's tunnel and descent, the Boom gorge, north-shore lake roads and the Karkara valley gravel to the border.",
     "highlights":["Suusamyr's vast pasture","Bishkek's big-city night","The Cholpon-Ata petroglyphs","Smoked lake fish on the north shore","The Karkara valley"],
     "via":["suusamyr","bishkek","cholpon-ata"],
     "geo":G("Song-Kul Lake, Kyrgyzstan","Moldo-Ashuu Pass","Kara-Keche Pass","Chaek, Kyrgyzstan","Kyzyl-Oi, Kyrgyzstan","Suusamyr, Kyrgyzstan","Too-Ashuu Pass","Bishkek, Kyrgyzstan","Boom Gorge","Balykchy, Kyrgyzstan","Cholpon-Ata, Kyrgyzstan","Tüp, Kyrgyzstan","Karkara border crossing","Karkara, Kazakhstan","Kegen, Kazakhstan","Saty, Kazakhstan")},
    {"id":"S5b","name":"North Shore Direct","reference":False,"days":2,"km":575,"est":True,
     "difficulty":"moderate","diffLabel":"moderate then easy","frees":"Frees 2 days → extra anchor nights (A3/A4) and/or the Song-Kol/Suek weather buffer",
+    "adv":{"cls":2,"peak":3,"raw":"ADV Class 2 (Basic/Yellow) on the descent (Class 3 when greasy after rain), then Paved."},
     "surface":"The Kalmak-Ashuu track down (the best-graded of all the Song-Kol accesses — maintained gravel, greasy after rain), then tarmac around the lake's east end and along the north shore; the reference Day-14 leg to Saty. The trade: no Suusamyr, no Too-Ashuu, no Bishkek.",
     "highlights":["Still gets the petroglyphs and the fish stands","Two full days banked for anchors or weather"],
     "via":["cholpon-ata"],
@@ -685,12 +695,28 @@ SEGMENTS = [
   "options":[
    {"id":"S6a","name":"Kolsai Morning & the Run Home","reference":True,"refDays":"Day 15","days":1,"km":300,"est":False,
     "difficulty":"easy","diffLabel":"easy",
+    "adv":{"cls":1,"peak":3,"raw":"ADV Class 1–2 (Novice–Basic); the Kaindy jeep track is the exception at Class 3 (Moderate/Orange)."},
     "surface":"The Kaindy access track in the morning (rough but short), then tarmac Saty → Shelek → Almaty.",
     "highlights":["The walk to Kolsai Lake-1","Lake Kaindy if missed on arrival","The celebration dinner in Almaty"],
     "via":[],
     "geo":G("Saty, Kazakhstan","Kolsai Lake 1","Saty, Kazakhstan","Kokpek, Kazakhstan","Shelek, Kazakhstan","Almaty, Kazakhstan")},
   ]},
 ]
+
+# ============ ADV SCALE (Bret Tkacs ADV Skill Rating System — terrain classes) ============
+# https://brettkacs.com/adv-skill-rating-system/ — the five terrain classes the tour's
+# ratings use (tour/04-roads.md "The rating system"). Baseline is Tkacs' own: a mid-size+
+# near-stock ADV bike with partial luggage — exactly this tour (DR650SE, bags in the
+# truck). Colors follow the system's green/yellow/orange/red/black flags, tuned for the
+# site's dark palette: Class 5 "Black" is rendered as a legible pale slate on dark bg.
+# Standing caveat from the road guide: rain or snow bumps any high-pass day a full class.
+ADVSCALE = {
+ "1": {"name":"Novice",    "flag":"Green",  "color":"#5fb35f", "hint":"graded gravel"},
+ "2": {"name":"Basic",     "flag":"Yellow", "color":"#e8c545", "hint":"packed sand · washboard"},
+ "3": {"name":"Moderate",  "flag":"Orange", "color":"#f0a830", "hint":"ruts, soft gravel, sand patches, switchbacks"},
+ "4": {"name":"Difficult", "flag":"Red",    "color":"#e3493b", "hint":"loose rock, deep gravel, mud, snow"},
+ "5": {"name":"Severe",    "flag":"Black",  "color":"#cfcbe0", "hint":"dirt-bike terrain"},
+}
 
 # ============ SILK ROAD FOOD TRAIL (lunches & dinners are excluded — by design) ============
 # The trip's signature foodie thread from tour/00-overview.md: every meal is a local
@@ -809,11 +835,25 @@ for _dnum, _g in sorted(GUIDE_BY_D.items()):
 
 # ============ THE ROADS (tour/04-roads.md — the per-day riding-quality record) ============
 # The tour-expert's road guide: per riding day a Surface split, a one-line Character,
-# 1–2 prose paragraphs and verified Commons road photos. Folded into window.DAYS[n]
-# as `road`: {surface, character, paras[], photos[{src, alt, cap}]} — absent for days
-# without an entry (Days 1 & 16). day.html renders "The Road" section from it and
-# index.html derives the timeline surface hints. Fails loudly on a day-number mismatch.
+# a Bret Tkacs ADV terrain-class rating, 1–2 prose paragraphs and verified Commons road
+# photos. Folded into window.DAYS[n] as `road`: {surface, character, rating, paras[],
+# photos[{src, alt, cap}]} — absent for days without an entry (Days 1 & 16). day.html
+# renders "The Road" section from it and index.html derives the timeline surface hints.
+# Fails loudly on a day-number mismatch or a missing ADV-rating bullet.
 ROADS_MD = os.path.join(os.path.dirname(__file__), "tour", "04-roads.md")
+
+def adv_rating(raw):
+    """Parse a Tkacs ADV-rating line -> {raw, cls, peak}.
+    cls  = the TYPICAL terrain class named first (0 for 'Paved — no ADV rating'
+           and 'No riding' days); peak = the higher class the text also names
+    (peaks/touching/brief/exception phrasing), or None. Defensive: any 'Class N'
+    mention is captured; a line with no class and no paved/no-riding marker fails."""
+    nums = [int(x) for x in re.findall(r"Class\s+(\d)", raw)]
+    if not nums and not re.search(r"paved|no riding", raw, re.I):
+        raise SystemExit("tour/04-roads.md: unparseable ADV rating line: %r" % raw)
+    cls = nums[0] if nums else 0
+    higher = [x for x in nums[1:] if x > cls]
+    return {"raw": raw, "cls": cls, "peak": max(higher) if higher else None}
 
 def parse_roads(path):
     text = open(path, encoding="utf-8").read()
@@ -826,6 +866,11 @@ def parse_roads(path):
         road["surface"] = plain(m.group(1)) if m else ""
         m = re.search(r"^-\s+\*\*Character:\*\*\s*(.*)$", body, re.M)
         road["character"] = plain(m.group(1)) if m else ""
+        m = re.search(r"^-\s+\*\*ADV rating:\*\*\s*(.*)$", body, re.M)
+        if not m:
+            raise SystemExit("tour/04-roads.md: Day %d entry lacks the "
+                             "'- **ADV rating:**' bullet (Tkacs terrain class)" % n)
+        road["rating"] = adv_rating(plain(m.group(1)))
         prose = body.split("### Photos")[0]
         paras, buf = [], []
         for ln in prose.splitlines():
@@ -979,6 +1024,8 @@ DAYART = {
 # ============ EMIT ============
 def js(v, indent=0):
     pad = "  " * indent
+    if v is None:
+        return "null"
     if isinstance(v, str):
         return json.dumps(v, ensure_ascii=False)
     if isinstance(v, bool):
@@ -1053,6 +1100,11 @@ out.append("   and the route options between them (tour/03-anchors-and-options.m
 out.append("   Reference options carry reference:true; km flagged est:true are estimates. */")
 out.append("window.ANCHORS = " + js(ANCHORS, 0) + ";\n")
 out.append("window.SEGMENTS = " + js(SEGMENTS, 0) + ";\n")
+
+out.append("/* Bret Tkacs ADV Skill Rating System terrain classes (1 Novice … 5 Severe);")
+out.append("   ratings live on DAYS[].road.rating and SEGMENTS[].options[].adv as {cls, peak, raw}.")
+out.append("   Colors follow the system's flag colors, tuned legible for the dark UI. */")
+out.append("window.ADVSCALE = " + js(ADVSCALE, 0) + ";\n")
 
 out.append("/* Themed 'Silk Road Food Trail' foodie thread;")
 out.append("   rendered as a section on index.html and a callout on the matching day pages. */")

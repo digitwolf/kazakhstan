@@ -55,6 +55,45 @@ window.wikiLink = function (name, wiki) {
    passthrough so the templates can call it without a second currency conversion. */
 window.priceUSD = function (p) { return ""; };
 
+/* ---- Bret Tkacs ADV Skill Rating (https://brettkacs.com/adv-skill-rating-system/) ----
+   window.ADVSCALE (appended below) maps terrain class 1–5 → {name, flag, color, hint}.
+   Ratings live on window.DAYS[].road.rating and window.SEGMENTS[].options[].adv as
+   {cls, peak, raw}: cls = the typical class (0 = paved / no riding), peak = the higher
+   class the text names (or null), raw = the full rating sentence (used as the tooltip). */
+window.advTint = function (hex, a) {
+  const n = parseInt((hex || "#9aa7b5").slice(1), 16);
+  return "rgba(" + (n >> 16 & 255) + "," + (n >> 8 & 255) + "," + (n & 255) + "," + a + ")";
+};
+/* Colored class pill (+ "peaks N" mini-chip when the rating names a peak class).
+   Neutral pill for paved days; "" for no-riding days. Styles: .advpill / .advpeak. */
+window.advPillHtml = function (adv, prefix) {
+  if (!adv) return "";
+  const esc = s => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  const raw = esc(adv.raw || "");
+  if (!adv.cls) {
+    return /paved/i.test(adv.raw || "")
+      ? '<span class="advpill neutral" title="' + raw + '">Paved — no ADV rating</span>' : "";
+  }
+  const SC = window.ADVSCALE || {}, T = window.advTint;
+  const sc = SC[adv.cls] || {}, pc = SC[adv.peak] || {};
+  let h = '<span class="advpill" title="' + raw + '" style="color:' + sc.color +
+    ";border-color:" + T(sc.color, .5) + ";background:" + T(sc.color, .12) + '">' +
+    (prefix || "") + "Class " + adv.cls + " · " + (sc.name || "");
+  if (adv.peak) h += ' <b class="advpeak" style="color:' + (pc.color || "#fff") +
+    ";border-color:" + T(pc.color || "#ffffff", .55) +
+    ";background:" + T(pc.color || "#ffffff", .14) + '">peaks ' + adv.peak + "</b>";
+  return h + "</span>";
+};
+/* Compact colored "C3" chip (timeline day cards); "" when unrated (paved / no riding). */
+window.advChipHtml = function (adv) {
+  if (!adv || !adv.cls) return "";
+  const sc = (window.ADVSCALE || {})[adv.cls] || {}, T = window.advTint;
+  const raw = String(adv.raw || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+  return '<span class="advchip" title="' + raw + '" style="color:' + sc.color +
+    ";border-color:" + T(sc.color, .5) + ";background:" + T(sc.color, .12) + '">C' + adv.cls + "</span>";
+};
+
 /* Representative photos by lodging type (verified Wikimedia Commons).
    These illustrate the STYLE of stay, not the exact property. */
 window.HOTEL_IMG = {

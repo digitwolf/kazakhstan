@@ -82,6 +82,13 @@
   /* The Road — the per-day riding-quality record (window.DAYS[].road, tour/04-roads.md) */
   .road-char{font-size:16px;font-weight:600;font-style:italic;color:#e9dfd2;line-height:1.5;
     margin:0 0 16px;padding-left:14px;border-left:3px solid var(--accent-2);}
+  /* Tkacs ADV terrain-class badge next to the Character lead-in (window.ADVSCALE colors) */
+  .advline{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 12px;}
+  .advpill{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;
+    letter-spacing:.03em;padding:4px 12px;border-radius:999px;border:1px solid;cursor:help;}
+  .advpill.neutral{color:#9aa7b5;border-color:var(--line);background:var(--panel-2);cursor:default;}
+  .advpill .advpeak{font-size:10.5px;font-weight:800;padding:1px 8px;border-radius:999px;border:1px solid;}
+  .advfoot{font-size:12px;color:var(--muted);margin:14px 0 0;}
   .surfbar{display:flex;height:16px;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:var(--bg-soft);}
   .surfbar i{display:block;height:100%;}
   .ss-tarmac{background:#3fb8af;} .ss-gravel{background:#f0a830;} .ss-rough{background:#e3493b;}
@@ -229,11 +236,15 @@
     </div>
     <div class="block" id="roadBlock" style="display:none">
       <h2><span>🛣️</span> The Road</h2>
-      <p class="note">The roads are the product — what's under the tires today: the surface split, the day's character, and how it rides.</p>
+      <p class="note">The roads are the product — what's under the tires today: the surface split, the day's character, its ADV terrain class, and how it rides.</p>
+      <div class="advline" id="advLine"></div>
       <p class="road-char" id="roadChar"></p>
       <div id="surf"></div>
       <div id="roadParas"></div>
       <div class="roadshots" id="roadShots"></div>
+      <p class="advfoot" id="advFoot" style="display:none">Rated on the
+        <a href="https://brettkacs.com/adv-skill-rating-system/" target="_blank" rel="noopener">Bret Tkacs ADV Skill Rating System</a>
+        — the scale this tour's Morocco-style format comes from. Rain or snow bumps any high-pass day a full class.</p>
     </div>
     <div class="block" id="hlBlock">
       <h2><span>⭐</span> Day Highlights</h2>
@@ -530,6 +541,11 @@
   if (day.road) {
     const road = day.road;
     document.getElementById('roadBlock').style.display = '';
+    // Tkacs ADV terrain-class badge (colored pill + "peaks N" chip; neutral for paved,
+    // nothing for the no-riding rest day). Tooltip = the full rating sentence.
+    const advHtml = (window.advPillHtml && road.rating) ? window.advPillHtml(road.rating, 'ADV ') : '';
+    document.getElementById('advLine').innerHTML = advHtml;
+    if (advHtml) document.getElementById('advFoot').style.display = '';
     document.getElementById('roadChar').textContent = road.character;
     const segs = surfSegs(road.surface);
     let surfHtml;

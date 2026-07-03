@@ -45,6 +45,8 @@ The operator's published requirements, verbatim in spirit:
 | **3+ years riding, solid off-road skills** | ~40% of the route is gravel/dirt: washboard, sand patches near the Singing Dune, rocky descents off Song-Kol. You must be able to pick your own lines, ride standing, and handle a 160 kg bike in loose surface — the Day-2 session is a refresher and shakedown, not a beginner school; the ride leader guides, he doesn't teach basics. |
 | **Physical endurance** | Thirteen riding days incl. the training day (110–325 km each, much of it off-pavement) over sixteen, with one rest day. Fitness matters more than speed. |
 
+In **Bret Tkacs ADV Skill Rating** terms — the terrain-class scale every riding day now carries in [04-roads.md](04-roads.md) — the operator's "solid off-road skills" bar means comfortably riding **Class 3 (Moderate/Orange)** terrain at Intermediate level. The harder options in [03-anchors-and-options.md](03-anchors-and-options.md) — the Tosor Pass direttissima (Class 4) and the Assy Plateau traverse (Class 3, peaking 4 in rain) — want genuine **Class 4 (Difficult/Red)** capability, which is exactly what the Day-2 training day verifies before those options go on the table.
+
 ## The conditions the requirements are really about
 
 - **Altitude.** Three days go above 3,000 m and Day 7 crests **Suek Pass at 4,021 m**; two nights sleep at ~3,000 m (Song-Kol is at 3,016 m). Expect shortness of breath on foot, weaker engine response, and cold — ride hydrated, skip alcohol the night before the big passes.

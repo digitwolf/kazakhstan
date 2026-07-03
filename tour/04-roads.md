@@ -6,10 +6,13 @@
 
 **Sources** (road conditions researched, not assumed): [Caravanistan — Karkara valley border thread](https://caravanistan.com/forum/viewtopic.php?t=880&start=100) · [Caravanistan — Assy Plateau & Bartogay](https://caravanistan.com/kazakhstan/almaty-region/assy-plateau-bartogay-reservoir/) · [Nomad's Land — Kalmak-Ashuu pass](https://nomadsland.travel/en/before-you-go/kyrgyzstan/passes/kalmak-ashuu-pass) · [OunTravela — Song-Kul road access](https://ountravela.com/en/overlanding-off-road-trip/kyrgyzstan-travel-map/lake-song-kul/) · [Quad Offroad — Barskoon Ashuu / the A364 Kumtor road](https://www.quad-offroad.com/en/barskoon-ashuu-pass-3819-m.html) · [Dangerousroads — Moldo-Ashuu](https://www.dangerousroads.org/asia/kyrgyzstan/6055-moldo-ashuu.html) · [Dangerousroads — Kara-Keche](https://www.dangerousroads.org/asia/kyrgyzstan/6057-kara-keche-ashuu-pass.html) · [Adventures of Lil Nicki — Karkara border crossing](https://adventuresoflilnicki.com/karkara-border-crossing-kazakhstan-kyrgyzstan/) · [Central Asia Guide — Tosor Pass](https://central-asia.guide/kyrgyzstan/destinations-kg/issyk-kul/tosor-pass/) (option S4b). Pass heights follow the operator's route sheet; some published sources differ slightly (e.g. Moldo-Ashuu appears as 3,346 m in road databases).
 
+**The rating system:** every day below carries a terrain rating on **[Bret Tkacs' ADV Skill Rating System](https://brettkacs.com/adv-skill-rating-system/)** — five terrain classes: **Class 1 Novice (Green)** graded gravel · **Class 2 Basic (Yellow)** packed sand/washboard · **Class 3 Moderate (Orange)** ruts, soft gravel, sand patches, switchbacks · **Class 4 Difficult (Red)** loose rock, deep gravel, mud, snow · **Class 5 Severe (Black)** dirt-bike terrain. The baseline assumption is Tkacs' own: a mid-size+ near-stock ADV bike with partial luggage — which is exactly this tour (DR650SE, luggage in the support truck). Tkacs also ran the Morocco tour this trip's format is modeled on, so the scale is continuous with that reference experience. Fully paved days are marked "Paved — no ADV rating". One standing caveat, stated once here: **rain or snow bumps any high-pass day a full class.**
+
 ## Day 2 — Training Day in the Foothills
 
 - **Surface:** 50 km tarmac · 45 km graded gravel · 25 km dirt two-track & sand practice
 - **Character:** low-stakes, high-value — drills first, then a flowing foothill loop to bed in an unfamiliar bike
+- **ADV rating:** Class 2 (Basic/Yellow), peaks Class 3 (Moderate/Orange) on the sand-practice two-track — deliberately, that's what the drills are for
 
 The morning is a car-park-and-gravel-lot session, not riding: levers, pressures, sag, then off-road stance, gravel braking and sand paddling on the DR650 until it stops feeling rented. The afternoon loop climbs out of Almaty's orchard belt into Ile Alatau foothill country — narrow, patched tarmac like the Big Almaty Lake road, then graded gravel and dirt two-track along irrigation lines and up a gorge or two, the Turgen side being classic terrain for it. Nothing is steep, nothing is committing.
 
@@ -23,6 +26,7 @@ What the day is really for: calibration. The DR650 carries its 160 kg low and st
 
 - **Surface:** 230 km tarmac · 20 km gravel (the last stretch into Basshi)
 - **Character:** easy transfer with a pass — long steppe straights, one winding climb, first taste of open-country sightlines
+- **ADV rating:** Class 1 (Novice/Green) — mostly paved; the only dirt is the graded gravel of the last 20 km into Basshi
 
 Out of Almaty the day is honest transit: divided highway across the Ili plain, then two-lane tarmac rolling north-east through Kerbulak district with the Zhetysu steppe widening on both sides. The one riding event is the mountain pass on the Altyn-Emel road — a proper winding climb through rocky scrub, taken at touring pace with the retro-museum tea stop at the top. Traffic thins to almost nothing after Saryozek; the hazards are livestock, heat shimmer and the hypnosis of 20-km straights.
 
@@ -36,6 +40,7 @@ Toward Basshi the tarmac frays and the final kilometres run on graded gravel wit
 
 - **Surface:** 90 km tarmac · 100 km graded park piste · 60 km sandy two-track & washboard
 - **Character:** the desert day — fast washboard, sand pockets, huge flat sightlines; heat is the tax, the dune is the pay-off
+- **ADV rating:** Class 2 (Basic/Yellow) on the graded pistes and washboard, peaks Class 3 (Moderate/Orange) in the sand pockets and the sandy two-track on the dune and Aktau approaches
 
 This is the day the DR650 was rented for. From Basshi the park pistes run dead straight across saxaul desert: hard-packed clay and gravel that lets you carry real speed standing up, interrupted without warning by washboard that blurs the mirrors and sand pockets that grab the front if you're sitting down. The 150-m Singing Dune arrives like a mirage between the Ulken and Kishi Kalkan hills; ride to its foot, then climb it on foot and hear it moan. The onward piste to the Aktau chalk mountains crosses genuinely empty country — white, ochre and red badlands with no shade and no services, which is exactly why the support truck carries the water.
 
@@ -49,6 +54,7 @@ Navigation is trivial (one track, one leader) but the riding rewards discipline:
 
 - **Surface:** 235 km tarmac · 45 km gravel (canyon access, the border approach and the Karkara valley)
 - **Character:** a big-scenery tarmac day with a canyon, a time-zone line and a quiet border in the middle
+- **ADV rating:** Class 2 (Basic/Yellow) on the canyon spur and the Karkara valley gravel, peaks Class 3 (Moderate/Orange) on the optional soft-sand track into the Valley of Castles
 
 South from Chundzha the A352 runs empty and straight through Uyghur farmland, then the day's first event: the gravel spur to Charyn Canyon and, for those who want it, the sandy 4WD track down among the hoodoos of the Valley of Castles — soft, orange, walled in by 100-m towers, and the most photogenic 3 km of dirt in Kazakhstan. Back on the plateau the road climbs steadily to Kegen through open sheep country with the Ketmen range on the left shoulder.
 
@@ -62,6 +68,7 @@ The Kegen/Karkara crossing is the anti-Torugart: a farm-track border with a hand
 
 - **Surface:** 50 km tarmac · 25 km valley gravel · 35 km rough rocky 4WD track
 - **Character:** short, technical and luggage-free — the roughest surface-per-kilometre of the trip, on a day you could bail out of at any point
+- **ADV rating:** Class 3 (Moderate/Orange), peaks Class 4 (Difficult/Red) on the Altyn-Arashan gorge track's rock steps, mud holes and churned ruts
 
 A day loop with the panniers left at the hotel, and the DR650 at its best. Jeti-Oguz first: easy tarmac west, then a red-earth valley road under the Seven Bulls cliffs, dirt and river gravel as far up the Svetlaya Polyana meadows as the group cares to go. Back through Karakol, the Altyn-Arashan track is the real event — a genuine 4WD-grade gorge road, 14-odd km of rock steps, roots, mud holes and churned ruts climbing beside the Arashan river to the hot-springs camp at 2,600 m. Locals do it in ex-military UAZ vans for a reason.
 
@@ -75,6 +82,7 @@ On a light bike with no luggage it's the most fun surface of the tour: pick line
 
 - **Surface:** 80 km tarmac · 110 km high-altitude mine-road gravel (Sarimonok 3,126 m → Barskoon 3,754 m → Suek 4,021 m)
 - **Character:** the crux — a maintained gravel superhighway to 4,000 m; the difficulty is altitude, cold and weather, not the surface
+- **ADV rating:** Class 2 (Basic/Yellow) on the graded mine road, touching Class 3 (Moderate/Orange) on the upper pass switchbacks — the real grade here is altitude and cold, not terrain
 
 The lake road west to Barskoon village is a warm-up; the gorge is the main act. The A364 up Barskoon gorge is the Kumtor gold-mine supply road — wide, graded, all-season gravel built for 100-tonne haul trucks — which means the riding itself is fast and stable: long climbing straights, big sweeping switchbacks past the waterfalls and the Gagarin monument, dust plumes visible a kilometre off when a mine convoy comes down (give them the whole road; they don't slow). The passes stack up — Sarimonok, then Barskoon at 3,754 m, then Suek at 4,021 m — and above 3,500 m the world turns lunar: permafrost tundra, turquoise tarns, glacier tongues hanging off the Ak-Shyirak massif at arm's length.
 
@@ -89,6 +97,7 @@ What actually gets riders here is the air. The DR650 loses a chunk of its 43 hp,
 
 - **Surface:** none — no riding
 - **Character:** recovery by design after the 4,021 m opener
+- **ADV rating:** No riding
 
 No riding today: swim, Skazka canyon walk, banya, laundry, chain-and-spokes check after the gravel — at most an optional low-speed shoreline spin to keep the bike's fluids and your habits warm.
 
@@ -96,6 +105,7 @@ No riding today: swim, Skazka canyon walk, banya, laundry, chain-and-spokes chec
 
 - **Surface:** 165 km tarmac · 35 km gravel spurs & farm backroads
 - **Character:** rolling lakeshore flow with red-badlands scenery and a cultural long lunch — the recovery ride that doesn't feel like one
+- **ADV rating:** Class 1 (Novice/Green) — mostly paved; brief Class 2 (Basic/Yellow) on the gravel spurs and farm backroads to the eagle-hunter farmhouse
 
 The south shore road is the quiet side of Issyk-Kul: smooth-enough tarmac rising and falling between the water and the Terskey Alatau wall, red conglomerate badlands (Skazka country) on the left, snow summits on the right, and almost no traffic besides melon trucks and the occasional donkey cart. Gravel shows up as spurs and farm lanes — down to beaches, up side valleys, and the backroads to the eagle-hunting family's farmhouse near Bokonbaevo, where the day parks for a long Kyrgyz lunch and a golden eagle on a glove.
 
@@ -109,6 +119,7 @@ After Balykchy's western corner the road bends south up the Chu valley to Kochko
 
 - **Surface:** 30 km tarmac · 75 km graded gravel switchbacks · 25 km high-plateau two-track
 - **Character:** the postcard climb — stacked gravel hairpins to 3,133 m, then open grass to the lake; short day, big altitude
+- **ADV rating:** Class 2 (Basic/Yellow) on the graded climb, peaks Class 3 (Moderate/Orange) on the loose-marble insides of the hairpins and the boggy meadow two-track near camp
 
 Tarmac ends past Sary-Bulak and the mountain starts working. The Kalmak-Ashuu corridor — the serpentine the tour literature nicknames "33 Parrots" — is the best-graded of all the Song-Kol accesses: a maintained gravel road, snow-cleared from late May to October, that stacks its hairpins up a grass-and-scree headwall with sightlines all the way down to the valley you just left. The surface is honest gravel — rain turns it greasy and the inside of every hairpin is loose marbles over hardpack — but on a light bike it's pure rhythm: brake, tip in, drive out, repeat for an hour.
 
@@ -123,6 +134,7 @@ Over the crest at ~3,100 m the world flattens into the Song-Kol basin: two-track
 
 - **Surface:** 40 km tarmac · 145 km graded gravel · 55 km rocky descent & pass track (Moldo-Ashuu 3,546 m · Kara-Keche 3,384 m)
 - **Character:** the biggest off-road day — a rocky serpentine descent, a coal-mine pass, and a river-canyon gravel run; long, remote, magnificent
+- **ADV rating:** Class 3 (Moderate/Orange), peaks Class 4 (Difficult/Red) on the Moldo-Ashuu serpentine's loose-rock hairpins — the roughest rated riding on the reference line
 
 The hardest and best 240 km of the tour. Leaving Song-Kol's shore two-track, the route crests Moldo-Ashuu and drops off the plateau's southern rim on the famous serpentine — a narrow shelf road of tight, rocky hairpins cut into the Kurtka canyon wall, loose rubble on polished base, real exposure over the edge and juniper forest far below. It's first-and-second-gear, standing, rear-brake work; the view south over the Naryn valley's layered ranges is the one riders will still be describing years later. Then the corridor swings west and climbs again over Kara-Keche, the coal-mine pass — wide black-dusted gravel shared with Soviet-era coal trucks grinding up from the open-cast pits, weirdly beautiful in its bleakness.
 
@@ -137,6 +149,7 @@ The long run-out follows the Kekemeren river — one of Kyrgyzstan's prettiest r
 
 - **Surface:** 153 km tarmac
 - **Character:** a full-tarmac mountain-highway day — sweepers across the plateau, a dark summit tunnel, then a 2,000 m serpentine descent with trucks
+- **ADV rating:** Paved — no ADV rating
 
 An all-asphalt day, and still not a boring one. The M41 crosses the Suusamyr plateau in huge open sweepers past herder camps and roadside kumis stands, then climbs to Too-Ashuu at ~3,200 m, where the road doesn't crest the ridge — it bores through it. The summit tunnel is the day's event: a couple of kilometres of dim, fume-heavy, dripping two-lane shared with trucks; visor up, lights on, commit, and don't stop.
 
@@ -150,6 +163,7 @@ The northern side is the payoff and the hazard in one: a magnificent serpentine 
 
 - **Surface:** 261 km tarmac
 - **Character:** transit with one great canyon — busy highway riding through Boom gorge, then relaxed lakeshore to the petroglyphs
+- **ADV rating:** Paved — no ADV rating
 
 The day's centerpiece is Boom (Boom/Boam) gorge, where the whole country funnels: the highway, the railway and the Chu river braid through a dry, red-walled canyon for 30-odd kilometres under avalanche galleries and past rockfall fencing. It's the most trafficked riding of the trip — Bishkek–Issyk-Kul traffic, buses, fuel tankers — so the discipline is spacing and patience, not lines. The wind is the sleeper hazard: the gorge accelerates it into hard lateral gusts where the walls narrow, strong enough to move a light bike half a lane.
 
@@ -164,6 +178,7 @@ Out of the canyon at Balykchy the lake reappears and everything relaxes: the nor
 
 - **Surface:** 270 km tarmac · 55 km valley gravel & border track
 - **Character:** the longest day — lakeshore tarmac, then the wide-open Karkara valley gravel to a one-hut border, and mountain tarmac to Saty
+- **ADV rating:** Class 2 (Basic/Yellow) on the Karkara valley washboard and river gravel; peaks Class 3 (Moderate/Orange) only if the evening-bonus Kaindy jeep track is ridden
 
 Longest day of the trip, saved by its variety. The morning is easy: north-shore tarmac east through Tüp, fuel and snacks, then the turn into the Karkara valley — and the trip's last great gravel. The Kyrgyz-side road to the border is old asphalt dissolving into 35–40 km of washboard and river gravel across an enormous green trough between the Kungey and Terskey ranges, herds everywhere, Khan Tengri's white pyramid occasionally showing far to the east. The Karkara post is the same quiet crossing as Day 5 in reverse: papers via the operator, clocks back an hour, rough-but-improving asphalt on the Kazakh side to Kegen.
 
@@ -177,6 +192,7 @@ From Kegen the road swings west through Zhalanash's high pastureland — big-sky
 
 - **Surface:** 270 km tarmac · 30 km gravel incl. the Kaindy jeep track
 - **Character:** an alpine morning and a fast, scenic run home — one last rough track, one last canyon road, then the steppe highway to the finish
+- **ADV rating:** Class 1 (Novice/Green) — mostly paved; the exception is the Kaindy jeep track at Class 3 (Moderate/Orange) (rocks, ruts, a ford or two)
 
 The morning belongs to the lakes: the paved dead-end road up to Kolsai Lake-1 for the walk, and — if it wasn't ridden last night — the Kaindy jeep track, the trip's final off-road: a few kilometres of rocky, rutted climbing with a ford or two, ending at the drowned spruce forest. Then the DR650 points home. The road out of Saty runs down the Chilik valley with the Kungey Alatau filling the mirrors, rejoins the Kegen–Almaty road, and drops through the Kokpek gorge — a tight, winding tarmac canyon that is the last properly fun riding of the tour.
 
