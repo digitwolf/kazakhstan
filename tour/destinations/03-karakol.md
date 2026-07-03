@@ -29,10 +29,14 @@ Karakol is Kyrgyzstan's fourth-largest town and its adventure capital, founded i
 - **Kyrgyz staples** — Manty, samsy from tandyr ovens, honey and apricots from Issyk-Kul orchards, and endless green tea.
 
 ## Where to stay
-| Property | Type | Parking | Price/night (USD) | — | Notes |
+**Group capacity:** the tour needs **≥8 rooms a night** (6–10 riders + crew). Room counts below are from published property data — at the smaller houses an 8-room block is realistic only through the operator's direct booking, well ahead of September.
+
+| Property | Type | Parking | Price/night (USD) | Tier | Notes |
 |---|---|---|---|---|---|
-| Karakol hotel (operator's pick) | Hotel · Days 5–6 (2 nights, same hotel) | Guarded lot/courtyard | included in tour price — operator books | — | Silk Off Road Tours books the group into a Karakol hotel with secure parking for the DR650s for both nights — luggage stays put for the Day-6 loop. Confirm parking + luggage arrangements with the operator. |
-| Green Yard Hotel | Garden hotel | Enclosed courtyard | $50–$80 | — | Long-running favorite with a big garden, hearty breakfasts, and helpful English-speaking staff. Confirm secure motorcycle parking before booking. |
+| Karakol hotel (operator's pick) | Hotel · Days 5–6 (2 nights, same hotel) | Guarded lot/courtyard | included in tour price — operator books | Included | Silk Off Road Tours books the group into a Karakol hotel with secure parking for the DR650s for both nights — luggage stays put for the Day-6 loop. Confirm parking + luggage arrangements with the operator. |
+| Arashan Hotel | Small hotel | Confirm with hotel | $31 | Best Value | 9.0/10 (2 reviews) · [Expedia](https://www.expedia.com/.h123101178.Hotel-Information?chkin=2026-09-09&chkout=2026-09-11&rm1=a2) · Clean, simple and remarkably cheap for a two-night base — hard to beat at this price. Only 12 rooms — 8 rooms is a near-buyout; pre-block months ahead. Sep 2026 Expedia twin rate — confirm. |
+| Green Yard Hotel | Garden hotel | Enclosed courtyard | $50–$80 | Best Overall | Long-running favorite with a big garden, hearty breakfasts, and helpful English-speaking staff — book direct. 26 rooms — right at the line for an 8-room block, and popular with September groups; commit early. Confirm secure motorcycle parking before booking. |
+| Tengri Village Karakol | Premium lodge | Confirm with hotel | $108 | Luxury | New property, unrated · [Expedia](https://www.expedia.com/.h132909873.Hotel-Information?chkin=2026-09-09&chkout=2026-09-11&rm1=a2) · Karakol's newest premium option — no reviews yet, so a calculated bet on fresh rooms rather than a proven track record. Property size unpublished — operator must confirm an 8-room block. Sep 2026 Expedia twin rate — confirm. |
 | Hotel Karagat | Mid-range hotel | On-site lot | $35–$60 | — | Solid central option with restaurant and sauna. Confirm secure motorcycle parking before booking. |
 
 ## Links

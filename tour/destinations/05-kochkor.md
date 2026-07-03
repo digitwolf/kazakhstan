@@ -25,11 +25,13 @@ The ride here is a lakeshore-and-farmland day along the **Terskey Alatau** front
 - **Bazaar snacks** — Kurut (dried yogurt balls, the herders' trail snack), dried apricots and fresh lepyoshka from the tandyr ovens on the main street.
 
 ## Where to stay
-| Property | Type | Parking | Price/night (USD) | — | Notes |
+| Property | Type | Parking | Price/night (USD) | Tier | Notes |
 |---|---|---|---|---|---|
-| Kochkor guest house (operator's pick) | Guest house | Bikes in the yard/courtyard | Included in tour price | — | Operator books — night 9 of the tour package (twin-share), with hot showers and a home-cooked dinner available. |
+| Kochkor guest house (operator's pick) | Guest house | Bikes in the yard/courtyard | Included in tour price | Included | Operator books — night 9 of the tour package (twin-share), with hot showers and a home-cooked dinner available. |
 | Guest House Shyrdak | Guest house | Courtyard parking | $20–$35 | — | Well-reviewed family guest house with garden rooms near the centre. Operator books — confirm; indicative price. |
 | Jarkyn's Guest House (CBT Kochkor) | Guest house (CBT) | Courtyard parking | $15–$30 incl. breakfast | — | CBT host and felt master — shyrdak masterclasses in the backyard yurt. Operator books — confirm; indicative price. |
+
+No online-booking coverage in Kochkor (checked Expedia, Sep 2026) — the operator books; the CBT and family guest houses are book-direct.
 
 ## Links
 - [Silk Off Road Tours — From Desert Up to Glaciers](https://www.silkoffroadtours.com/motorcycle-tours-kazakhstan-kyrgyzstan)

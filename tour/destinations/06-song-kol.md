@@ -25,11 +25,13 @@ The way in is a short day with a big centrepiece: the **"33 Parrots" Pass (3,133
 - **Herders' dinner in the yurt** — Whatever the family cooks: usually **shorpo** mutton soup, fresh noodles or **plov**, bread and tea; hot, simple and exactly right at 3,000 m. Dinners are at your own expense — cash only, there is nothing to buy at the lake, so carry snacks from Kochkor.
 
 ## Where to stay
-| Property | Type | Parking | Price/night (USD) | — | Notes |
+| Property | Type | Parking | Price/night (USD) | Tier | Notes |
 |---|---|---|---|---|---|
-| Nomad family yurt camp, Song-Kol shore | Yurt camp | Bikes on the grass by the yurts | Included in tour price | — | Operator books — night 10 of the tour package (twin-share yurts, thick toshok bedding, outhouse facilities). Cold even in summer: pack a warm sleep layer, hat and headlamp. |
-| Kyzart village eco-hotel (bad-weather fallback) | Eco-hotel / guest house | Yard parking | Included in tour price | — | The operator's fallback if weather closes the pass: a warm bed and shower in Kyzart village below the lake — the ride resumes next morning. |
+| Nomad family yurt camp, Song-Kol shore | Yurt camp | Bikes on the grass by the yurts | Included in tour price | Included | Operator books — night 10 of the tour package (twin-share yurts, thick toshok bedding, outhouse facilities). Cold even in summer: pack a warm sleep layer, hat and headlamp. |
+| Kyzart village eco-hotel (bad-weather fallback) | Eco-hotel / guest house | Yard parking | Included in tour price | — | The operator's fallback if weather closes the pass: a warm bed and shower in Kyzart village below the lake — the ride resumes next morning. Also included in the tour price if it's used. |
 | Son-Kul lake yurt camp (Ak-Sai Travel) / Nomad Lodge Son-Kul | Tourist yurt camps | On-site, open ground | $40–$80 pp incl. meals | — | Larger seasonal camps (roughly mid-June–mid-September) on the north shore, with dining yurts and generator power. Operator books — confirm; indicative prices. |
+
+No online-booking coverage on the jailoo (checked Expedia, Sep 2026) — the operator books the yurt camp (and the Kyzart bad-weather fallback); the seasonal tourist camps are book-direct.
 
 ## Links
 - [Silk Off Road Tours — From Desert Up to Glaciers](https://www.silkoffroadtours.com/motorcycle-tours-kazakhstan-kyrgyzstan)

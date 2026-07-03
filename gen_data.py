@@ -130,37 +130,59 @@ def parse_dest(path):
             food.append({"n": plain(body), "d": ""})
     d["food"] = food
 
-    # Where to stay -> hotels (table: Property | Type | Parking | Price/night (USD) | — | Notes)
-    hotels = []
+    # Where to stay -> hotels (tiered table: Property | Type | Parking | Price/night (USD) | Tier | Notes).
+    # Tier column: "Included" (operator-booked row), "Best Value" / "Best Overall" / "Luxury"
+    # (the three-way comparison), or "—" (untiered alternates -> tier "").
+    # Expedia-sourced Notes open with "N.N/10 (K reviews) · [Expedia](url) · <character>"
+    # (rating/reviews optional — "Unrated"/"New property, unrated" also occur); that prefix is
+    # lifted into rating/reviews/link fields and the remainder keeps markdown (rendered inline).
+    # Prose before the table -> lodgingNote (the ≥8-rooms group-capacity line);
+    # prose after the table -> lodgingFootnote (the no-online-booking sentence).
+    hotels, pre, post = [], [], []
+    seen_table = False
     for ln in secs.get("Where to stay", []):
         if not ln.strip().startswith("|"):
+            s = ln.strip()
+            if s:
+                (post if seen_table else pre).append(s)
             continue
+        seen_table = True
         cells = [c.strip() for c in ln.strip().strip("|").split("|")]
         if len(cells) < 6:
             continue
         prop = cells[0]
         if prop.lower().startswith("property") or set(prop) <= set("-: "):
             continue
-        typ, parking, price, _spare, notes = cells[1], cells[2], cells[3], cells[4], cells[5]
+        typ, parking, price, tier, notes = cells[1], cells[2], cells[3], cells[4], cells[5]
         if prop.startswith("_") or typ == "—":
-            hotels.append({"n": plain(prop), "t": "Note", "d": plain(notes)})
-        else:
-            h = {"n": plain(prop), "t": plain(typ), "d": plain(notes)}
-            if parking and parking != "—":
-                h["park"] = md_inline(parking)
-            if price and price != "—":
-                h["price"] = price
-            hotels.append(h)
+            hotels.append({"n": plain(prop), "t": "Note", "d": md_inline(notes)})
+            continue
+        h = {"n": plain(prop), "t": plain(typ)}
+        m = re.match(r"^(?:(\d+(?:\.\d+)?)/10(?:\s*\(([\d,]+)\s*reviews?\))?"
+                     r"|Unrated|New property, unrated)"
+                     r"\s*·\s*\[Expedia\]\((https?://[^)]+)\)\s*·\s*(.*)$", notes)
+        if m:
+            if m.group(1):
+                h["rating"] = float(m.group(1))
+            if m.group(2):
+                h["reviews"] = int(m.group(2).replace(",", ""))
+            h["link"] = m.group(3)
+            notes = m.group(4)
+        h["d"] = md_inline(notes)
+        if parking and parking != "—":
+            h["park"] = md_inline(parking)
+        if price and price != "—":
+            h["price"] = price
+        h["tier"] = "" if tier in ("", "—") else tier
+        hotels.append(h)
     if not hotels:
-        buf = []
-        for ln in secs.get("Where to stay", []):
-            if ln.strip() == "":
-                if buf:
-                    break
-                continue
-            buf.append(ln.strip())
-        if buf:
-            hotels.append({"n": "No overnight here", "t": "Note", "d": plain(" ".join(buf))})
+        if pre:
+            hotels.append({"n": "No overnight here", "t": "Note", "d": plain(" ".join(pre))})
+    else:
+        if pre:
+            d["lodgingNote"] = md_inline(" ".join(pre))
+        if post:
+            d["lodgingFootnote"] = md_inline(" ".join(post))
     d["hotels"] = hotels
 
     # Links
@@ -1072,6 +1094,10 @@ def emit_dest(d):
     o.append('  intro: ' + js(d["intro"], 1) + ',')
     o.append('  highlights: ' + js(d["highlights"], 1) + ',')
     o.append('  food: ' + js(d["food"], 1) + ',')
+    if d.get("lodgingNote"):
+        o.append('  lodgingNote: %s,' % json.dumps(d["lodgingNote"], ensure_ascii=False))
+    if d.get("lodgingFootnote"):
+        o.append('  lodgingFootnote: %s,' % json.dumps(d["lodgingFootnote"], ensure_ascii=False))
     o.append('  hotels: ' + js(d["hotels"], 1) + ',')
     o.append('  links: ' + js(d["links"], 1) + ',')
     o.append('  photos: ' + js(d["photos"], 1))

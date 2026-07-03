@@ -98,6 +98,40 @@
   .hbook:hover { color:#fff; text-decoration:none; }
   @media (max-width:480px) { .hotel { grid-template-columns:96px 1fr; } }
 
+  /* tiered lodging comparison (hotels[].tier from the tour/ Where-to-stay tables) */
+  .lodge-note { margin:0 0 16px; font-size:13.5px; color:#e5ddcb; background:rgba(240,168,48,.10);
+    border:1px solid rgba(240,168,48,.42); border-left:4px solid var(--accent-2); border-radius:10px; padding:10px 14px; }
+  .lodge-note b { color:#fff; }
+  .hotel.included { border-color:rgba(95,179,95,.55); box-shadow:0 0 0 1px rgba(95,179,95,.25); }
+  .inc-badge { font-size:11px; font-weight:800; color:#0e1116; background:var(--green); border-radius:999px; padding:2px 9px; white-space:nowrap; }
+  .price.inc { color:#87d287; font-size:13.5px; }
+  .tiergrid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin-top:14px; }
+  .tcard { background:var(--panel); border:1px solid var(--line); border-top:3px solid var(--tc,var(--line));
+    border-radius:12px; padding:14px 15px; display:flex; flex-direction:column; }
+  .tcard .tbadge { font-size:11px; font-weight:800; letter-spacing:.07em; text-transform:uppercase; color:var(--tc,var(--muted)); }
+  .tcard .tname { font-weight:700; font-size:15px; color:#fff; margin-top:6px; line-height:1.3; }
+  .tcard .ttype { font-size:12px; color:var(--muted); margin-top:4px; display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+  .tcard .tprice { font-size:20px; font-weight:800; color:var(--accent-2); margin-top:10px; }
+  .tcard .tprice .pu { font-size:11.5px; color:var(--muted); font-weight:600; margin-left:5px; }
+  .tcard .trating { font-size:12.5px; font-weight:700; color:var(--teal); margin-top:3px; }
+  .tcard .tdesc { font-size:12.5px; color:#c7d1db; line-height:1.55; margin:9px 0 12px; flex:1; }
+  .tcard .tbtn { margin-top:auto; display:block; text-align:center; padding:9px 12px; border-radius:8px;
+    background:var(--teal); color:#0e1116; font-weight:800; font-size:13px; }
+  .tcard .tbtn:hover { text-decoration:none; background:#5ed3ca; }
+  .tcard .tbtn.alt { background:var(--panel-2); border:1px solid var(--line); color:var(--text); font-weight:600; }
+  .tcard .tbtn.alt:hover { border-color:#46525f; background:var(--panel-2); }
+  .others-h { font-size:13px; font-weight:800; letter-spacing:.07em; text-transform:uppercase; color:var(--muted); margin:22px 0 10px; }
+  ul.others { list-style:none; margin:0; padding:0; display:grid; gap:10px; }
+  ul.others li { background:var(--bg-soft); border:1px solid var(--line); border-radius:10px; padding:11px 14px; font-size:13.5px; }
+  ul.others li .ohead { display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+  ul.others li .ohead b { color:#fff; font-size:14px; }
+  ul.others li .sub { display:block; color:var(--muted); font-size:12.5px; margin-top:4px; }
+  ul.others li .ometa { margin-top:7px; font-size:12.5px; }
+  ul.others li .oprice { font-weight:800; color:var(--accent-2); margin-right:12px; }
+  .lodge-foot { color:var(--muted); font-size:13px; font-style:italic; margin:14px 0 0;
+    border-left:3px solid var(--line); padding-left:12px; }
+  @media (max-width:820px) { .tiergrid { grid-template-columns:1fr; } }
+
   ul.clean { list-style:none; margin:0; padding:0; }
   ul.clean li { padding:11px 0; border-bottom:1px solid var(--line); color:#cdd6df; font-size:15px; }
   ul.clean li:last-child { border-bottom:none; }
@@ -185,10 +219,14 @@
           <ul class="clean" id="pFood"></ul>
         </div>
 
-        <div class="block">
+        <div class="block" id="lodging">
           <h2><span class="ico">🏨</span> Where to Stay</h2>
+          <div id="pLodgeNote"></div>
           <ul class="hotels" id="pHotels"></ul>
-          <p style="color:var(--muted); font-size:13px; margin-top:12px;">The tour package books the group's lodging — the operator's pick is the plan. Independent options are listed for reference with <b>indicative USD prices per night</b>; photos are <b>representative of the style of stay</b>, not the exact property. Always confirm secure motorcycle parking before booking anything yourself.</p>
+          <div id="pTiers"></div>
+          <div id="pOthers"></div>
+          <div id="pLodgeFoot"></div>
+          <p style="color:var(--muted); font-size:13px; margin-top:12px;">The tour package books the group's lodging — the operator's pick is the plan. Independent options are listed for reference with <b>indicative USD prices per night</b> (tiered rates are Sep 2026 Expedia twin rates); photos are <b>representative of the style of stay</b>, not the exact property. Always confirm secure motorcycle parking before booking anything yourself.</p>
         </div>
 
         <div class="pn" id="pPN"></div>
@@ -269,27 +307,63 @@
   document.getElementById('pFood').innerHTML = d.food.map(f =>
     `<li><b>${f.n}</b><span class="sub">${f.d}</span></li>`).join('');
 
-  // hotels
-  document.getElementById('pHotels').innerHTML = d.hotels.map(h => {
-    if ((h.t || '').toLowerCase().includes('note')) {
-      return `<li class="hotel note"><div class="hbody"><div class="hhead"><b>${h.n}</b><span class="tag-inline">Note</span></div><span class="sub">${h.d}</span></div></li>`;
-    }
-    const img = window.hotelImage(h.t);
-    const link = window.hotelLink(h.n, d.name);
-    const parking = h.park || window.hotelParking(h.t);
-    const pnote = (h.price || '').includes('$') ? '<span class="pnote"> / night approx.</span>' : '';
-    return `<li class="hotel">
-      <div class="hthumb"><img loading="lazy" src="${img}" alt="${h.t} — representative"></div>
+  // ---- lodging: tiered comparison (Included pinned first, then 💰/⭐/👑, then the rest) ----
+  // The ≥8-rooms group-capacity line (lodgingNote) renders above the cards; the
+  // no-online-booking sentence (lodgingFootnote) below. Parking badge on every card.
+  const TIERS = [['Best Value','💰','#5fb35f'], ['Best Overall','⭐','#f0a830'], ['Luxury','👑','#c9a3ff']];
+  const parkOf = h => h.park || window.hotelParking(h.t);
+  const parkBadge = h => `<span class="hpark" title="Confirm a secure spot for the bikes when booking">🏍️ ${parkOf(h)}</span>`;
+  const ratingOf = h => h.rating == null ? '' :
+    `${h.rating % 1 ? h.rating : Math.round(h.rating)}/10` +
+    (h.reviews ? ` · ${h.reviews} review${h.reviews === 1 ? '' : 's'}` : ' on Expedia');
+
+  document.getElementById('pLodgeNote').innerHTML =
+    d.lodgingNote ? `<div class="lodge-note">🛏️ ${d.lodgingNote}</div>` : '';
+
+  // Included card — the operator-booked plan, pinned first and visually distinct
+  const included = d.hotels.filter(h => h.tier === 'Included');
+  document.getElementById('pHotels').innerHTML = included.map(h =>
+    `<li class="hotel included">
+      <div class="hthumb"><img loading="lazy" src="${window.hotelImage(h.t)}" alt="${h.t} — representative"></div>
       <div class="hbody">
-        <div class="hhead"><b>${h.n}</b><span class="tag-inline">${h.t}</span><span class="hpark" title="Confirm a secure spot for the bikes when booking">🏍️ ${parking}</span></div>
+        <div class="hhead"><b>${h.n}</b><span class="inc-badge">✓ Included in tour</span><span class="tag-inline">${h.t}</span>${parkBadge(h)}</div>
         <span class="sub">${h.d}</span>
-        <div class="hmeta">
-          <span class="price">${h.price || '—'}<span class="usd">${window.priceUSD(h.price)}</span>${pnote}</span>
-          <a class="hbook" href="${link}" target="_blank" rel="noopener">Find &amp; book →</a>
-        </div>
+        <div class="hmeta"><span class="price inc">${h.price || 'Included in tour price'}</span></div>
       </div>
-    </li>`;
+    </li>`).join('');
+
+  // Three-way comparison: 💰 Best Value / ⭐ Best Overall / 👑 Luxury
+  const tierCards = TIERS.map(([tier, em, color]) => {
+    const h = d.hotels.find(x => x.tier === tier);
+    if (!h) return '';
+    const btn = h.link
+      ? `<a class="tbtn" href="${h.link}" target="_blank" rel="noopener">View on Expedia ↗</a>`
+      : `<a class="tbtn alt" href="${window.hotelLink(h.n, d.name)}" target="_blank" rel="noopener">Find &amp; book →</a>`;
+    const rating = ratingOf(h);
+    return `<div class="tcard" style="--tc:${color}">
+      <div class="tbadge">${em} ${tier}</div>
+      <div class="tname">${h.n}</div>
+      <div class="ttype">${h.t}${parkBadge(h)}</div>
+      <div class="tprice">${h.price || '—'}<span class="pu">/ night</span></div>
+      ${rating ? `<div class="trating">★ ${rating}</div>` : ''}
+      <div class="tdesc">${h.d}</div>
+      ${btn}
+    </div>`;
   }).join('');
+  document.getElementById('pTiers').innerHTML = tierCards ? `<div class="tiergrid">${tierCards}</div>` : '';
+
+  // Untiered alternates collapse into a compact "other options" list
+  const others = d.hotels.filter(h => !h.tier && !(h.t || '').toLowerCase().includes('note'));
+  document.getElementById('pOthers').innerHTML = others.length
+    ? `<div class="others-h">Other options</div><ul class="others">` + others.map(h =>
+        `<li><div class="ohead"><b>${h.n}</b><span class="tag-inline">${h.t}</span>${parkBadge(h)}</div>
+         <span class="sub">${h.d}</span>
+         <div class="ometa"><span class="oprice">${h.price || '—'}</span><a class="hbook" href="${window.hotelLink(h.n, d.name)}" target="_blank" rel="noopener">Find &amp; book →</a></div></li>`
+      ).join('') + `</ul>`
+    : '';
+
+  document.getElementById('pLodgeFoot').innerHTML =
+    d.lodgingFootnote ? `<p class="lodge-foot">${d.lodgingFootnote}</p>` : '';
 
   // links
   document.getElementById('pLinks').innerHTML = d.links.map(l =>

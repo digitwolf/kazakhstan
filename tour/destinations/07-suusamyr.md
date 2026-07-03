@@ -25,11 +25,13 @@ Getting here is the most demanding riding day of the tour — 240 km, most of it
 - **Kumis from the roadside** — Summer shacks along the valley road sell kumis and **maksym** (a tangy fermented grain drink) to travellers crossing between Bishkek and the south.
 
 ## Where to stay
-| Property | Type | Parking | Price/night (USD) | — | Notes |
+| Property | Type | Parking | Price/night (USD) | Tier | Notes |
 |---|---|---|---|---|---|
-| Suusamyr cabin camp (operator's pick) | Cabin camp | Bikes beside the cabins | Included in tour price | — | Operator books — night 11 of the tour package (twin-share cabins with real beds, surrounded by panoramic mountains). |
+| Suusamyr cabin camp (operator's pick) | Cabin camp | Bikes beside the cabins | Included in tour price | Included | Operator books — night 11 of the tour package (twin-share cabins with real beds, surrounded by panoramic mountains). |
 | Suus Lodge (Suusamyr valley) | Mountain lodge | On-site parking | $40–$70 | — | Comfortable 25-guest lodge used by ski-touring and paragliding groups; summer excursions and kumis on the menu. Operator books — confirm; indicative price. |
 | Village guest houses, Suusamyr village | Guest house | Yard parking | $15–$30 | — | A handful of simple family guest houses (e.g. Guesthouse Altai) in Suusamyr village — basic but warm. Operator books — confirm; indicative price. |
+
+No online-booking coverage in the Suusamyr valley (checked Expedia, Sep 2026) — the operator books; the lodge and guest houses are book-direct.
 
 ## Links
 - [Silk Off Road Tours — From Desert Up to Glaciers](https://www.silkoffroadtours.com/motorcycle-tours-kazakhstan-kyrgyzstan)

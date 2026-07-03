@@ -27,11 +27,13 @@ Chundzha sits on a field of some **140 thermal springs**, with artesian wells pu
 - **Uighur tea and flatbread** — Fresh non (flatbread) from the tandyr with green tea — breakfast before the canyon.
 
 ## Where to stay
-| Property | Type | Parking | Price/night (USD) | — | Notes |
+| Property | Type | Parking | Price/night (USD) | Tier | Notes |
 |---|---|---|---|---|---|
-| Hot-springs resort (operator's pick) | Spa resort · Day 4 night | Guarded on-site lot | included in tour price — operator books | — | Silk Off Road Tours books the group into one of the Chundzha thermal resorts — rooms plus evening access to the hot pools. Confirm secure parking + towel/pool rules with the operator. |
+| Hot-springs resort (operator's pick) | Spa resort · Day 4 night | Guarded on-site lot | included in tour price — operator books | Included | Silk Off Road Tours books the group into one of the Chundzha thermal resorts — rooms plus evening access to the hot pools. Confirm secure parking + towel/pool rules with the operator. |
 | Kara Dala Hot Springs Resort | Spa resort | Guarded on-site lot | $40–$80 | — | One of the best-known complexes, with seven thermal pools fed by its own artesian wells, cottages, and a restaurant. Confirm secure motorcycle parking before booking. |
 | ULAN Hot Spring Resort | Spa resort | On-site lot | $35–$70 | — | Three outdoor thermal pools plus a spa zone; standard en-suite rooms with AC. Confirm secure motorcycle parking before booking. |
+
+No online-booking coverage for the Chundzha thermal resorts (checked Expedia, Sep 2026) — the operator books; the alternate resorts are book-direct.
 
 ## Links
 - [From Desert Up to Glaciers — Silk Off Road Tours (operator)](https://www.silkoffroadtours.com/motorcycle-tours-kazakhstan-kyrgyzstan)

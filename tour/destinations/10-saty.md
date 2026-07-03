@@ -26,11 +26,13 @@ Saty earns its place as the final overnight. Fifteen minutes up the valley lies 
 - **Pack for the piste** — There are no cafés at Kaindy or the lakes; the guest house fills thermoses and wraps bread for the Day-15 morning run.
 
 ## Where to stay
-| Property | Type | Parking | Price/night (USD) | — | Notes |
+| Property | Type | Parking | Price/night (USD) | Tier | Notes |
 |---|---|---|---|---|---|
-| Saty guest house (operator's pick) | Village guest house · Day 14 night | Enclosed yard | included in tour price — operator books | — | Silk Off Road Tours books the group into a Saty family guest house; bikes sleep in the walled yard, dinner and breakfast are home-cooked. Confirm secure parking + luggage rules with the operator. |
+| Saty guest house (operator's pick) | Village guest house · Day 14 night | Enclosed yard | included in tour price — operator books | Included | Silk Off Road Tours books the group into a Saty family guest house; bikes sleep in the walled yard, dinner and breakfast are home-cooked. Confirm secure parking + luggage rules with the operator. |
 | Kolsai Guesthouse (Saty) | Guest house | Courtyard | $30–$60 incl. dinner & breakfast | — | One of the village's established houses, bookable online; simple rooms, big home cooking. Confirm secure motorcycle parking before booking. |
 | Family guest houses, Saty village | Homestay | Courtyard | $25–$50 incl. dinner & breakfast | — | Dozens of families in Saty take guests (several listed on Booking.com); basic shared facilities, generous cooking. Confirm secure motorcycle parking before booking. |
+
+No online-booking coverage in Saty (checked Expedia, Sep 2026) — the operator books the guest house; the village alternates are book-direct.
 
 ## Links
 - [From Desert Up to Glaciers — Silk Off Road Tours (operator)](https://www.silkoffroadtours.com/motorcycle-tours-kazakhstan-kyrgyzstan)

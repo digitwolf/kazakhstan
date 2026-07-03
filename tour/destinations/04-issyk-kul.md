@@ -31,10 +31,14 @@ And then — nothing. **Day 8 is the tour's one full rest day**, spent right her
 - **Honey & apricots** — Tamga and Barskoon are orchard villages; roadside stands sell jars of honey and dried apricots that travel well in a pannier.
 
 ## Where to stay
-| Property | Type | Parking | Price/night (USD) | — | Notes |
+**Group capacity:** the tour needs **≥8 rooms a night** (6–10 riders + crew). Room counts below are from published property data — at the smaller houses an 8-room block is realistic only through the operator's direct booking, well ahead of September.
+
+| Property | Type | Parking | Price/night (USD) | Tier | Notes |
 |---|---|---|---|---|---|
-| South-shore yurt camp (Tosor/Tamga area) | Yurt camp | Bikes parked on-site by the yurts | Included in tour price | — | Operator books — nights 7 & 8 of the tour package (twin-share), the 2-night rest-day base. Shared facilities; bring a warm layer for the evening. |
-| Bel-Tam Yurt Camp (near Bokonbaevo) | Yurt camp (CBT) | On-site, open ground | $35–$60 pp incl. meals | — | The best-known independent camp on the south shore, right on the beach. Operator books — confirm; indicative price. |
+| South-shore yurt camp (Tosor/Tamga area) | Yurt camp | Bikes parked on-site by the yurts | Included in tour price | Included | Operator books — nights 7 & 8 of the tour package (twin-share), the 2-night rest-day base. Shared facilities; bring a warm layer for the evening. |
+| Hotel Natalia Issyk-Kul (Tamga) | Guest hotel | Confirm with hotel | $17 | Best Value | 9.0/10 (2 reviews) · [Expedia](https://www.expedia.com/.h98230365.Hotel-Information?chkin=2026-09-11&chkout=2026-09-13&rm1=a2) · A real bed, hot shower and breakfast in Tamga village for less than lunch money — the budget rest-day base. 24 rooms — tight for an 8-room block; reserve early. Sep 2026 Expedia twin rate — confirm. |
+| Bel-Tam Yurt Camp (near Bokonbaevo) | Yurt camp (CBT) | On-site, open ground | $35–$60 pp incl. meals | Best Overall | The best-known independent camp on the south shore, right on the beach — the authentic lakeside yurt experience. ≤12 yurts, normally shared 2–4 beds — the group ≈ the whole camp; only via the operator. Operator books — confirm; indicative price. |
+| Elestet Issyk-Kul (Tong/Tosor area) | Yurt-style lodge | On-site, included | $98 ($220 both nights) | Luxury | 10/10 · [Expedia](https://www.expedia.com/.h119051530.Hotel-Information?chkin=2026-09-11&chkout=2026-09-13&rm1=a2) · Yurt-style wooden lake-view rooms with skylights, a private beach and a restaurant — ★ the rest-day comfort upgrade — ask the operator to base the group here (~USD 110/rider extra for 2 nights). 15 rooms — 8 rooms is over half the property; pre-block months ahead. Sep 2026 Expedia twin rate — confirm. |
 | Yurt Camp Tosor | Yurt camp | Free private parking | $30–$50 | — | Lakeside camp at Tosor village with parking and barbecue. Operator books — confirm; indicative price. |
 
 ## Links

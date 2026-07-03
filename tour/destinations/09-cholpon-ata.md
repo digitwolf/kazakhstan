@@ -25,10 +25,14 @@ That site is the **Cholpon-Ata petroglyphs** — a "stone garden" of some **5,00
 - **Resort-town classics** — Proper **lagman**, **manty** and plov in the cafés on the main road, plus roadside apricots, cherries and **kurut** from stands on the shore highway — dinners are at your own expense, and unlike the south shore, cards work in the bigger places (still carry som).
 
 ## Where to stay
-| Property | Type | Parking | Price/night (USD) | — | Notes |
+**Group capacity:** the tour needs **≥8 rooms a night** (6–10 riders + crew). Room counts below are from published property data — at the smaller houses an 8-room block is realistic only through the operator's direct booking, well ahead of September.
+
+| Property | Type | Parking | Price/night (USD) | Tier | Notes |
 |---|---|---|---|---|---|
-| Cholpon-Ata hotel (operator's pick) | Hotel | Guarded hotel lot | Included in tour price | — | Operator books — night 13 of the tour package (twin-share), close to the lakefront for the beach evening. |
-| Karven Four Seasons (Chok-Tal, near Cholpon-Ata) | Resort hotel | On-site guarded parking | $120–$180 | — | The north shore's polished lakefront resort — pools, private beach, restaurants. Operator books — confirm; indicative price. |
+| Cholpon-Ata hotel (operator's pick) | Hotel | Guarded hotel lot | Included in tour price | Included | Operator books — night 13 of the tour package (twin-share), close to the lakefront for the beach evening. |
+| Edem Issykkul | Guest hotel | Confirm with hotel | $41 | Best Value | Unrated · [Expedia](https://www.expedia.com/.h128979083.Hotel-Information?chkin=2026-09-17&chkout=2026-09-18&rm1=a2) · No reviews yet, but the cheapest bookable bed in town for the one lakefront night. Size ambiguous across listings (4 vs 14 rooms) — possibly too small for the group; operator to verify. Sep 2026 Expedia twin rate — confirm. |
+| golden street | Central guest hotel | Confirm with hotel | $52 | Best Overall | 9.0/10 (2 reviews) · [Expedia](https://www.expedia.com/.h122562565.Hotel-Information?chkin=2026-09-17&chkout=2026-09-18&rm1=a2) · Central location a short walk from the lakefront and the evening promenade. 13 rooms — a near-buyout for the group; pre-block early. Sep 2026 Expedia twin rate — confirm. |
+| Karven Four Seasons (Chok-Tal, near Cholpon-Ata) | Resort hotel | On-site guarded parking | $120–$180 | Luxury | The north shore's polished lakefront resort — pools, private beach, restaurants. 32 rooms + ~55 cottages — the group fits easily; seasonal, verify mid-September opening. Operator books — confirm; indicative price. |
 | Raduga Resort Center (Sary-Oy) | Resort complex | On-site parking | $60–$150 | — | Big Soviet-turned-modern holiday complex with cottages, beach and pools just west of town. Operator books — confirm; indicative price. |
 
 ## Links

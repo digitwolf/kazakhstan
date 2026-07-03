@@ -32,11 +32,16 @@ The city bookends the trip. On the evening of **Day 15** the loop closes here �
 - **Craft coffee** — Almaty has Central Asia's best café scene; grab a proper flat white in the center — espresso options get thin east of the city.
 
 ## Where to stay
-| Property | Type | Parking | Price/night (USD) | — | Notes |
+**Group capacity:** the tour needs **≥8 rooms a night** (6–10 riders + crew). Room counts below are from published property data — at the smaller houses an 8-room block is realistic only through the operator's direct booking, well ahead of September.
+
+| Property | Type | Parking | Price/night (USD) | Tier | Notes |
 |---|---|---|---|---|---|
-| Tour hotel, city center (operator's pick) | Hotel · Days 1–2 & 15 (3 nights) | Guarded lot arranged by operator | included in tour price — operator books | — | Silk Off Road Tours books the group into a central Almaty hotel for the arrival/training nights and the return night; the bikes and support truck stay in guarded parking. Confirm secure parking + luggage/passenger rules with the operator before arrival. |
+| Tour hotel, city center (operator's pick) | Hotel · Days 1–2 & 15 (3 nights) | Guarded lot arranged by operator | included in tour price — operator books | Included | Silk Off Road Tours books the group into a central Almaty hotel for the arrival/training nights and the return night; the bikes and support truck stay in guarded parking. Confirm secure parking + luggage/passenger rules with the operator before arrival. |
+| Resident Hotel Gogol | 3★ hotel | Confirm with hotel | $77 | Best Value | 9.6/10 (4 reviews) · [Expedia](https://www.expedia.com/.h123447534.Hotel-Information?chkin=2026-09-05&chkout=2026-09-07&rm1=a2) · Small, near-perfect-rated three-star on Gogol Street, an easy walk to Panfilov Park and the Green Bazaar. ~27 rooms — an 8-room group block is a third of the house; commit early. Sep 2026 Expedia twin rate — confirm. |
+| Park Hotel Almaty | 4★ hotel | Confirm with hotel | $119 | Best Overall | 9.2/10 (202 reviews) · [Expedia](https://www.expedia.com/.h4115549.Hotel-Information?chkin=2026-09-05&chkout=2026-09-07&rm1=a2) · The most-reviewed high scorer in town — polished four-star comfort for the arrival/training nights; 60 rooms, an 8-room group block fits. For the return night (Sep 19), [Uyut Hotel](https://www.expedia.com/.h8452719.Hotel-Information?chkin=2026-09-19&chkout=2026-09-20&rm1=a2) ($101/n · 8.8/10, 181 reviews; ~100 rooms) is the most-reviewed pick. Sep 2026 Expedia twin rate — confirm. |
+| InterContinental Almaty by IHG | 5★ hotel | Confirm with hotel | $320 | Luxury | 8.8/10 (102 reviews) · [Expedia](https://www.expedia.com/.h533761.Hotel-Information?chkin=2026-09-05&chkout=2026-09-07&rm1=a2) · The city's classic international five-star under the mountains — pool, spa and full-service comfort to bookend the trip; ~277 rooms, a group block is trivial. Sep 2026 Expedia twin rate — confirm. |
 | Kazakhstan Hotel | Landmark high-rise hotel | On-site guarded lot | $60–$110 | — | The crown-topped Soviet-era tower on Dostyk Ave — mountain views, walkable to Kok-Tobe cable car. A good pre-/post-tour extra night. Confirm secure motorcycle parking before booking. |
-| Renion Park Hotel | Mid-range hotel | Courtyard parking | $50–$90 | — | Quiet, central, near Panfilov Park and the Green Bazaar. Confirm secure motorcycle parking before booking. |
+| Renion Park Hotel | Mid-range hotel | Courtyard parking | $50–$90 | — | Quiet, central, near Panfilov Park and the Green Bazaar — stays a solid alternate ($121/n · 9.2/10 on Expedia; 112 rooms — group fits). Confirm secure motorcycle parking before booking. |
 
 ## Links
 - [From Desert Up to Glaciers — Silk Off Road Tours (operator)](https://www.silkoffroadtours.com/motorcycle-tours-kazakhstan-kyrgyzstan)

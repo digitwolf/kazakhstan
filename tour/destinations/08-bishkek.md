@@ -26,11 +26,15 @@ The ride in is short but memorable. From Suusamyr the road climbs to **Too-Ashuu
 - **Craft beer at Save the Ales** — Kyrgyzstan's pioneering craft brewery-taproom, the right place to toast the first 2,000 km of the loop (**check the current address — it has moved locations**).
 
 ## Where to stay
-| Property | Type | Parking | Price/night (USD) | — | Notes |
+**Group capacity:** the tour needs **≥8 rooms a night** (6–10 riders + crew). Room counts below are from published property data — at the smaller houses an 8-room block is realistic only through the operator's direct booking, well ahead of September.
+
+| Property | Type | Parking | Price/night (USD) | Tier | Notes |
 |---|---|---|---|---|---|
-| Bishkek city hotel (operator's pick) | Hotel | Guarded hotel lot | Included in tour price | — | Operator books — night 12 of the tour package (twin-share), close to the centre; bikes in the guarded lot, ready for the Day-13 ride out through the Boom gorge. |
+| Bishkek city hotel (operator's pick) | Hotel | Guarded hotel lot | Included in tour price | Included | Operator books — night 12 of the tour package (twin-share), close to the centre; bikes in the guarded lot, ready for the Day-13 ride out through the Boom gorge. |
+| Hotel Orto Asia | Boutique hotel | Confirm with hotel | $64 | Best Value | 9.6/10 (13 reviews) · [Expedia](https://www.expedia.com/.h126583199.Hotel-Information?chkin=2026-09-16&chkout=2026-09-17&rm1=a2) · Top-rated small hotel at a mid-range price — the smart-money pick for the one city night. Only 13 rooms — the group would effectively buy out the hotel; operator-block or split. Sep 2026 Expedia twin rate — confirm. |
+| Art Hotel Bishkek | Boutique 4★ hotel | Confirm with hotel | $92 | Best Overall | 9.4/10 (40 reviews) · [Expedia](https://www.expedia.com/.h22418045.Hotel-Information?chkin=2026-09-16&chkout=2026-09-17&rm1=a2) · Stylish, central and consistently loved; 46 rooms — an 8-room group block fits. Runner-up: Bishkek Centrum ($82/n · 9.2/10, 70 reviews; 17–18 rooms — tight). Sep 2026 Expedia twin rate — confirm. |
+| Hyatt Regency Bishkek | 5★ hotel | Free guarded 24/7 lot | $195 | Luxury | 8.2/10 (68 reviews) · [Expedia](https://www.expedia.com/.h571194.Hotel-Information?chkin=2026-09-16&chkout=2026-09-17&rm1=a2) · The city's classic top-end address opposite the Opera; complimentary guarded outdoor parking. ~150 rooms — a group block is trivial. Sep 2026 Expedia twin rate — confirm. |
 | Ramada by Wyndham Bishkek Centre | 4★ hotel | On-site guest parking | $90–$130 | — | Modern, central and reliable, with pool and gym. Operator books — confirm; indicative price. |
-| Hyatt Regency Bishkek | 5★ hotel | Free guarded 24/7 lot | $140–$220 | — | The city's classic top-end address opposite the Opera; complimentary outdoor parking. Operator books — confirm; indicative price. |
 
 ## Links
 - [Silk Off Road Tours — From Desert Up to Glaciers](https://www.silkoffroadtours.com/motorcycle-tours-kazakhstan-kyrgyzstan)

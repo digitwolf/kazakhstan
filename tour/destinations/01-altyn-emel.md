@@ -28,11 +28,13 @@ Altyn-Emel is the "desert" in "From Desert Up to Glaciers," and the loop rides s
 - **Breakfast before the dust** — Eggs, kasha, bread and jam at the guest house; fuel and water top-up in the village before the Day-4 pistes through the park and the long run to Chundzha.
 
 ## Where to stay
-| Property | Type | Parking | Price/night (USD) | — | Notes |
+| Property | Type | Parking | Price/night (USD) | Tier | Notes |
 |---|---|---|---|---|---|
-| Basshi guest house (operator's pick) | Village guest house · Day 3 (1 night) | Enclosed yard | included in tour price — operator books | — | Silk Off Road Tours books the group into a Basshi guest house at the park gate; bikes sleep in the walled yard and dinner/breakfast are home-cooked before the Day-4 ride out through the park. Confirm secure parking + luggage rules with the operator. |
+| Basshi guest house (operator's pick) | Village guest house · Day 3 (1 night) | Enclosed yard | included in tour price — operator books | Included | Silk Off Road Tours books the group into a Basshi guest house at the park gate; bikes sleep in the walled yard and dinner/breakfast are home-cooked before the Day-4 ride out through the park. Confirm secure parking + luggage rules with the operator. |
 | Hotel Altyn Emel (Basshi) | Small hotel / tourist base | Fenced lot | $30–$60 | — | The village's main tourist base near the park office; simple en-suite rooms and meals on request. Confirm secure motorcycle parking before booking. |
 | Family guest houses, Basshi village | Homestay | Courtyard | $20–$40 incl. dinner & breakfast | — | Several families in Basshi take guests; basic shared facilities, generous cooking. Confirm secure motorcycle parking before booking. |
+
+No online-booking coverage in Basshi (checked Expedia, Sep 2026) — the operator books the night at the park gate; the alternates are book-direct.
 
 ## Links
 - [From Desert Up to Glaciers — Silk Off Road Tours (operator)](https://www.silkoffroadtours.com/motorcycle-tours-kazakhstan-kyrgyzstan)

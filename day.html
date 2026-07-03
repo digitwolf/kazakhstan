@@ -192,6 +192,18 @@
   .btn-route:hover{text-decoration:none;background:#f0594b;}
   .btn-dest{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:9px;padding:10px 14px;border-radius:9px;background:var(--panel-2);border:1px solid var(--line);color:var(--text);font-weight:600;font-size:14px;}
   .btn-dest:hover{text-decoration:none;border-color:#46525f;}
+  /* Tonight's bed — that night's lodging strip (dest.hotels tiers; place.html?id=…#lodging) */
+  .bed-dest{font-weight:700;font-size:14.5px;color:#fff;}
+  .bed-inc{font-size:13px;color:#c7d1db;margin-top:7px;line-height:1.5;}
+  .bed-inc b{color:#fff;}
+  .bed-inc .inc-tag{font-size:10px;font-weight:800;color:#0e1116;background:var(--green);border-radius:999px;padding:1px 7px;margin-right:3px;white-space:nowrap;}
+  .bed-chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+  .bed-chip{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;padding:4px 10px;
+    border-radius:999px;background:var(--panel-2);border:1px solid var(--line);color:#dbe3ea;}
+  .bed-chip b{color:var(--accent-2);}
+  .bed-chip:hover{text-decoration:none;border-color:#46525f;color:#fff;}
+  .bed-more{font-size:12.5px;font-weight:600;margin-top:9px;}
+  .bed-noalt{font-size:12px;color:var(--muted);margin-top:9px;font-style:italic;}
   .miniribbon{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12.5px;}
   .miniribbon .n{background:var(--bg-soft);border:1px solid var(--line);border-radius:999px;padding:4px 10px;}
   .miniribbon .n.key{border-color:var(--accent);color:#fff;}
@@ -281,6 +293,10 @@
       <a class="btn-route" id="routeBtn" target="_blank" rel="noopener">🗺️ Open day route in Google Maps</a>
       <a class="btn-dest" id="destBtn">⛰️ Destination guide ↗</a>
       <a class="btn-dest" id="destWiki" target="_blank" rel="noopener">📖 Wikipedia ↗</a>
+    </div>
+    <div class="card" id="bedCard" style="display:none">
+      <h3>Tonight's bed</h3>
+      <div id="bed"></div>
     </div>
     <div class="card">
       <h3>Where it sits</h3>
@@ -630,6 +646,29 @@
                       || window.wikiLink(dest.name);
   const dw = document.getElementById('destWiki');
   dw.href = destWikiUrl; dw.textContent = `📖 Wikipedia: ${dest.name} ↗`;
+
+  // ---- Tonight's bed — that night's lodging at day.id (skipped on the departure day) ----
+  // Included one-liner + mini-chips for the 💰/⭐/👑 tiers when the stop has OTA coverage;
+  // no-OTA stops show the Included line + "operator books" note instead.
+  (function () {
+    if (idx === DAYS.length - 1) return;   // final day: departure, no night on tour
+    const TIER_EM = { 'Best Value':'💰', 'Best Overall':'⭐', 'Luxury':'👑' };
+    const inc = dest.hotels.find(h => h.tier === 'Included');
+    const tiers = dest.hotels.filter(h => TIER_EM[h.tier]);
+    const priceShort = pr => { const m = (pr || '').match(/\$[\d,]+(?:–\$?[\d,]+)?/); return m ? m[0] : ''; };
+    const chips = tiers.map(h => {
+      const pr = priceShort(h.price);
+      return `<a class="bed-chip" href="place.html?id=${dest.id}#lodging" title="${esc(h.tier)}: ${esc(h.n)}">` +
+        `${TIER_EM[h.tier]} ${esc(h.n)}${pr ? ` · <b>${pr}</b>` : ''}</a>`;
+    }).join('');
+    document.getElementById('bedCard').style.display = '';
+    document.getElementById('bed').innerHTML =
+      `<div class="bed-dest">🛏️ ${esc(dest.name)}</div>` +
+      (inc ? `<div class="bed-inc"><span class="inc-tag">✓ Included</span> <b>${esc(inc.n)}</b> — ${esc(firstSentence(stripTags(inc.d)))}</div>` : '') +
+      (chips
+        ? `<div class="bed-chips">${chips}</div><div class="bed-more"><a href="place.html?id=${dest.id}#lodging">Compare all lodging options →</a></div>`
+        : `<div class="bed-noalt">Operator books — no online alternatives at this stop.</div>`);
+  })();
 
   // ---- mini ribbon ----
   document.getElementById('ribbon').innerHTML =

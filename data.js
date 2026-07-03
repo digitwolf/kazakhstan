@@ -174,27 +174,64 @@ window.DESTINATIONS = [
       "d": "Almaty has Central Asia's best café scene; grab a proper flat white in the center — espresso options get thin east of the city."
     }
   ],
+  lodgingNote: "<b>Group capacity:</b> the tour needs <b>≥8 rooms a night</b> (6–10 riders + crew). Room counts below are from published property data — at the smaller houses an 8-room block is realistic only through the operator's direct booking, well ahead of September.",
   hotels: [
     {
       "n": "Tour hotel, city center (operator's pick)",
       "t": "Hotel · Days 1–2 & 15 (3 nights)",
       "d": "Silk Off Road Tours books the group into a central Almaty hotel for the arrival/training nights and the return night; the bikes and support truck stay in guarded parking. Confirm secure parking + luggage/passenger rules with the operator before arrival.",
       "park": "Guarded lot arranged by operator",
-      "price": "included in tour price — operator books"
+      "price": "included in tour price — operator books",
+      "tier": "Included"
+    },
+    {
+      "n": "Resident Hotel Gogol",
+      "t": "3★ hotel",
+      "rating": 9.6,
+      "reviews": 4,
+      "link": "https://www.expedia.com/.h123447534.Hotel-Information?chkin=2026-09-05&chkout=2026-09-07&rm1=a2",
+      "d": "Small, near-perfect-rated three-star on Gogol Street, an easy walk to Panfilov Park and the Green Bazaar. ~27 rooms — an 8-room group block is a third of the house; commit early. Sep 2026 Expedia twin rate — confirm.",
+      "park": "Confirm with hotel",
+      "price": "$77",
+      "tier": "Best Value"
+    },
+    {
+      "n": "Park Hotel Almaty",
+      "t": "4★ hotel",
+      "rating": 9.2,
+      "reviews": 202,
+      "link": "https://www.expedia.com/.h4115549.Hotel-Information?chkin=2026-09-05&chkout=2026-09-07&rm1=a2",
+      "d": "The most-reviewed high scorer in town — polished four-star comfort for the arrival/training nights; 60 rooms, an 8-room group block fits. For the return night (Sep 19), <a href=\"https://www.expedia.com/.h8452719.Hotel-Information?chkin=2026-09-19&chkout=2026-09-20&rm1=a2\" target=\"_blank\" rel=\"noopener\">Uyut Hotel</a> ($101/n · 8.8/10, 181 reviews; ~100 rooms) is the most-reviewed pick. Sep 2026 Expedia twin rate — confirm.",
+      "park": "Confirm with hotel",
+      "price": "$119",
+      "tier": "Best Overall"
+    },
+    {
+      "n": "InterContinental Almaty by IHG",
+      "t": "5★ hotel",
+      "rating": 8.8,
+      "reviews": 102,
+      "link": "https://www.expedia.com/.h533761.Hotel-Information?chkin=2026-09-05&chkout=2026-09-07&rm1=a2",
+      "d": "The city's classic international five-star under the mountains — pool, spa and full-service comfort to bookend the trip; ~277 rooms, a group block is trivial. Sep 2026 Expedia twin rate — confirm.",
+      "park": "Confirm with hotel",
+      "price": "$320",
+      "tier": "Luxury"
     },
     {
       "n": "Kazakhstan Hotel",
       "t": "Landmark high-rise hotel",
       "d": "The crown-topped Soviet-era tower on Dostyk Ave — mountain views, walkable to Kok-Tobe cable car. A good pre-/post-tour extra night. Confirm secure motorcycle parking before booking.",
       "park": "On-site guarded lot",
-      "price": "$60–$110"
+      "price": "$60–$110",
+      "tier": ""
     },
     {
       "n": "Renion Park Hotel",
       "t": "Mid-range hotel",
-      "d": "Quiet, central, near Panfilov Park and the Green Bazaar. Confirm secure motorcycle parking before booking.",
+      "d": "Quiet, central, near Panfilov Park and the Green Bazaar — stays a solid alternate ($121/n · 9.2/10 on Expedia; 112 rooms — group fits). Confirm secure motorcycle parking before booking.",
       "park": "Courtyard parking",
-      "price": "$50–$90"
+      "price": "$50–$90",
+      "tier": ""
     }
   ],
   links: [
@@ -286,27 +323,31 @@ window.DESTINATIONS = [
       "d": "Eggs, kasha, bread and jam at the guest house; fuel and water top-up in the village before the Day-4 pistes through the park and the long run to Chundzha."
     }
   ],
+  lodgingFootnote: "No online-booking coverage in Basshi (checked Expedia, Sep 2026) — the operator books the night at the park gate; the alternates are book-direct.",
   hotels: [
     {
       "n": "Basshi guest house (operator's pick)",
       "t": "Village guest house · Day 3 (1 night)",
       "d": "Silk Off Road Tours books the group into a Basshi guest house at the park gate; bikes sleep in the walled yard and dinner/breakfast are home-cooked before the Day-4 ride out through the park. Confirm secure parking + luggage rules with the operator.",
       "park": "Enclosed yard",
-      "price": "included in tour price — operator books"
+      "price": "included in tour price — operator books",
+      "tier": "Included"
     },
     {
       "n": "Hotel Altyn Emel (Basshi)",
       "t": "Small hotel / tourist base",
       "d": "The village's main tourist base near the park office; simple en-suite rooms and meals on request. Confirm secure motorcycle parking before booking.",
       "park": "Fenced lot",
-      "price": "$30–$60"
+      "price": "$30–$60",
+      "tier": ""
     },
     {
       "n": "Family guest houses, Basshi village",
       "t": "Homestay",
       "d": "Several families in Basshi take guests; basic shared facilities, generous cooking. Confirm secure motorcycle parking before booking.",
       "park": "Courtyard",
-      "price": "$20–$40 incl. dinner & breakfast"
+      "price": "$20–$40 incl. dinner & breakfast",
+      "tier": ""
     }
   ],
   links: [
@@ -390,27 +431,31 @@ window.DESTINATIONS = [
       "d": "Fresh non (flatbread) from the tandyr with green tea — breakfast before the canyon."
     }
   ],
+  lodgingFootnote: "No online-booking coverage for the Chundzha thermal resorts (checked Expedia, Sep 2026) — the operator books; the alternate resorts are book-direct.",
   hotels: [
     {
       "n": "Hot-springs resort (operator's pick)",
       "t": "Spa resort · Day 4 night",
       "d": "Silk Off Road Tours books the group into one of the Chundzha thermal resorts — rooms plus evening access to the hot pools. Confirm secure parking + towel/pool rules with the operator.",
       "park": "Guarded on-site lot",
-      "price": "included in tour price — operator books"
+      "price": "included in tour price — operator books",
+      "tier": "Included"
     },
     {
       "n": "Kara Dala Hot Springs Resort",
       "t": "Spa resort",
       "d": "One of the best-known complexes, with seven thermal pools fed by its own artesian wells, cottages, and a restaurant. Confirm secure motorcycle parking before booking.",
       "park": "Guarded on-site lot",
-      "price": "$40–$80"
+      "price": "$40–$80",
+      "tier": ""
     },
     {
       "n": "ULAN Hot Spring Resort",
       "t": "Spa resort",
       "d": "Three outdoor thermal pools plus a spa zone; standard en-suite rooms with AC. Confirm secure motorcycle parking before booking.",
       "park": "On-site lot",
-      "price": "$35–$70"
+      "price": "$35–$70",
+      "tier": ""
     }
   ],
   links: [
@@ -491,27 +536,51 @@ window.DESTINATIONS = [
       "d": "Manty, samsy from tandyr ovens, honey and apricots from Issyk-Kul orchards, and endless green tea."
     }
   ],
+  lodgingNote: "<b>Group capacity:</b> the tour needs <b>≥8 rooms a night</b> (6–10 riders + crew). Room counts below are from published property data — at the smaller houses an 8-room block is realistic only through the operator's direct booking, well ahead of September.",
   hotels: [
     {
       "n": "Karakol hotel (operator's pick)",
       "t": "Hotel · Days 5–6 (2 nights, same hotel)",
       "d": "Silk Off Road Tours books the group into a Karakol hotel with secure parking for the DR650s for both nights — luggage stays put for the Day-6 loop. Confirm parking + luggage arrangements with the operator.",
       "park": "Guarded lot/courtyard",
-      "price": "included in tour price — operator books"
+      "price": "included in tour price — operator books",
+      "tier": "Included"
+    },
+    {
+      "n": "Arashan Hotel",
+      "t": "Small hotel",
+      "rating": 9.0,
+      "reviews": 2,
+      "link": "https://www.expedia.com/.h123101178.Hotel-Information?chkin=2026-09-09&chkout=2026-09-11&rm1=a2",
+      "d": "Clean, simple and remarkably cheap for a two-night base — hard to beat at this price. Only 12 rooms — 8 rooms is a near-buyout; pre-block months ahead. Sep 2026 Expedia twin rate — confirm.",
+      "park": "Confirm with hotel",
+      "price": "$31",
+      "tier": "Best Value"
     },
     {
       "n": "Green Yard Hotel",
       "t": "Garden hotel",
-      "d": "Long-running favorite with a big garden, hearty breakfasts, and helpful English-speaking staff. Confirm secure motorcycle parking before booking.",
+      "d": "Long-running favorite with a big garden, hearty breakfasts, and helpful English-speaking staff — book direct. 26 rooms — right at the line for an 8-room block, and popular with September groups; commit early. Confirm secure motorcycle parking before booking.",
       "park": "Enclosed courtyard",
-      "price": "$50–$80"
+      "price": "$50–$80",
+      "tier": "Best Overall"
+    },
+    {
+      "n": "Tengri Village Karakol",
+      "t": "Premium lodge",
+      "link": "https://www.expedia.com/.h132909873.Hotel-Information?chkin=2026-09-09&chkout=2026-09-11&rm1=a2",
+      "d": "Karakol's newest premium option — no reviews yet, so a calculated bet on fresh rooms rather than a proven track record. Property size unpublished — operator must confirm an 8-room block. Sep 2026 Expedia twin rate — confirm.",
+      "park": "Confirm with hotel",
+      "price": "$108",
+      "tier": "Luxury"
     },
     {
       "n": "Hotel Karagat",
       "t": "Mid-range hotel",
       "d": "Solid central option with restaurant and sauna. Confirm secure motorcycle parking before booking.",
       "park": "On-site lot",
-      "price": "$35–$60"
+      "price": "$35–$60",
+      "tier": ""
     }
   ],
   links: [
@@ -601,27 +670,52 @@ window.DESTINATIONS = [
       "d": "Tamga and Barskoon are orchard villages; roadside stands sell jars of honey and dried apricots that travel well in a pannier."
     }
   ],
+  lodgingNote: "<b>Group capacity:</b> the tour needs <b>≥8 rooms a night</b> (6–10 riders + crew). Room counts below are from published property data — at the smaller houses an 8-room block is realistic only through the operator's direct booking, well ahead of September.",
   hotels: [
     {
       "n": "South-shore yurt camp (Tosor/Tamga area)",
       "t": "Yurt camp",
       "d": "Operator books — nights 7 & 8 of the tour package (twin-share), the 2-night rest-day base. Shared facilities; bring a warm layer for the evening.",
       "park": "Bikes parked on-site by the yurts",
-      "price": "Included in tour price"
+      "price": "Included in tour price",
+      "tier": "Included"
+    },
+    {
+      "n": "Hotel Natalia Issyk-Kul (Tamga)",
+      "t": "Guest hotel",
+      "rating": 9.0,
+      "reviews": 2,
+      "link": "https://www.expedia.com/.h98230365.Hotel-Information?chkin=2026-09-11&chkout=2026-09-13&rm1=a2",
+      "d": "A real bed, hot shower and breakfast in Tamga village for less than lunch money — the budget rest-day base. 24 rooms — tight for an 8-room block; reserve early. Sep 2026 Expedia twin rate — confirm.",
+      "park": "Confirm with hotel",
+      "price": "$17",
+      "tier": "Best Value"
     },
     {
       "n": "Bel-Tam Yurt Camp (near Bokonbaevo)",
       "t": "Yurt camp (CBT)",
-      "d": "The best-known independent camp on the south shore, right on the beach. Operator books — confirm; indicative price.",
+      "d": "The best-known independent camp on the south shore, right on the beach — the authentic lakeside yurt experience. ≤12 yurts, normally shared 2–4 beds — the group ≈ the whole camp; only via the operator. Operator books — confirm; indicative price.",
       "park": "On-site, open ground",
-      "price": "$35–$60 pp incl. meals"
+      "price": "$35–$60 pp incl. meals",
+      "tier": "Best Overall"
+    },
+    {
+      "n": "Elestet Issyk-Kul (Tong/Tosor area)",
+      "t": "Yurt-style lodge",
+      "rating": 10.0,
+      "link": "https://www.expedia.com/.h119051530.Hotel-Information?chkin=2026-09-11&chkout=2026-09-13&rm1=a2",
+      "d": "Yurt-style wooden lake-view rooms with skylights, a private beach and a restaurant — ★ the rest-day comfort upgrade — ask the operator to base the group here (~USD 110/rider extra for 2 nights). 15 rooms — 8 rooms is over half the property; pre-block months ahead. Sep 2026 Expedia twin rate — confirm.",
+      "park": "On-site, included",
+      "price": "$98 ($220 both nights)",
+      "tier": "Luxury"
     },
     {
       "n": "Yurt Camp Tosor",
       "t": "Yurt camp",
       "d": "Lakeside camp at Tosor village with parking and barbecue. Operator books — confirm; indicative price.",
       "park": "Free private parking",
-      "price": "$30–$50"
+      "price": "$30–$50",
+      "tier": ""
     }
   ],
   links: [
@@ -700,27 +794,31 @@ window.DESTINATIONS = [
       "d": "Kurut (dried yogurt balls, the herders' trail snack), dried apricots and fresh lepyoshka from the tandyr ovens on the main street."
     }
   ],
+  lodgingFootnote: "No online-booking coverage in Kochkor (checked Expedia, Sep 2026) — the operator books; the CBT and family guest houses are book-direct.",
   hotels: [
     {
       "n": "Kochkor guest house (operator's pick)",
       "t": "Guest house",
       "d": "Operator books — night 9 of the tour package (twin-share), with hot showers and a home-cooked dinner available.",
       "park": "Bikes in the yard/courtyard",
-      "price": "Included in tour price"
+      "price": "Included in tour price",
+      "tier": "Included"
     },
     {
       "n": "Guest House Shyrdak",
       "t": "Guest house",
       "d": "Well-reviewed family guest house with garden rooms near the centre. Operator books — confirm; indicative price.",
       "park": "Courtyard parking",
-      "price": "$20–$35"
+      "price": "$20–$35",
+      "tier": ""
     },
     {
       "n": "Jarkyn's Guest House (CBT Kochkor)",
       "t": "Guest house (CBT)",
       "d": "CBT host and felt master — shyrdak masterclasses in the backyard yurt. Operator books — confirm; indicative price.",
       "park": "Courtyard parking",
-      "price": "$15–$30 incl. breakfast"
+      "price": "$15–$30 incl. breakfast",
+      "tier": ""
     }
   ],
   links: [
@@ -798,27 +896,31 @@ window.DESTINATIONS = [
       "d": "Whatever the family cooks: usually shorpo mutton soup, fresh noodles or plov, bread and tea; hot, simple and exactly right at 3,000 m. Dinners are at your own expense — cash only, there is nothing to buy at the lake, so carry snacks from Kochkor."
     }
   ],
+  lodgingFootnote: "No online-booking coverage on the jailoo (checked Expedia, Sep 2026) — the operator books the yurt camp (and the Kyzart bad-weather fallback); the seasonal tourist camps are book-direct.",
   hotels: [
     {
       "n": "Nomad family yurt camp, Song-Kol shore",
       "t": "Yurt camp",
       "d": "Operator books — night 10 of the tour package (twin-share yurts, thick toshok bedding, outhouse facilities). Cold even in summer: pack a warm sleep layer, hat and headlamp.",
       "park": "Bikes on the grass by the yurts",
-      "price": "Included in tour price"
+      "price": "Included in tour price",
+      "tier": "Included"
     },
     {
       "n": "Kyzart village eco-hotel (bad-weather fallback)",
       "t": "Eco-hotel / guest house",
-      "d": "The operator's fallback if weather closes the pass: a warm bed and shower in Kyzart village below the lake — the ride resumes next morning.",
+      "d": "The operator's fallback if weather closes the pass: a warm bed and shower in Kyzart village below the lake — the ride resumes next morning. Also included in the tour price if it's used.",
       "park": "Yard parking",
-      "price": "Included in tour price"
+      "price": "Included in tour price",
+      "tier": ""
     },
     {
       "n": "Son-Kul lake yurt camp (Ak-Sai Travel) / Nomad Lodge Son-Kul",
       "t": "Tourist yurt camps",
       "d": "Larger seasonal camps (roughly mid-June–mid-September) on the north shore, with dining yurts and generator power. Operator books — confirm; indicative prices.",
       "park": "On-site, open ground",
-      "price": "$40–$80 pp incl. meals"
+      "price": "$40–$80 pp incl. meals",
+      "tier": ""
     }
   ],
   links: [
@@ -896,27 +998,31 @@ window.DESTINATIONS = [
       "d": "Summer shacks along the valley road sell kumis and maksym (a tangy fermented grain drink) to travellers crossing between Bishkek and the south."
     }
   ],
+  lodgingFootnote: "No online-booking coverage in the Suusamyr valley (checked Expedia, Sep 2026) — the operator books; the lodge and guest houses are book-direct.",
   hotels: [
     {
       "n": "Suusamyr cabin camp (operator's pick)",
       "t": "Cabin camp",
       "d": "Operator books — night 11 of the tour package (twin-share cabins with real beds, surrounded by panoramic mountains).",
       "park": "Bikes beside the cabins",
-      "price": "Included in tour price"
+      "price": "Included in tour price",
+      "tier": "Included"
     },
     {
       "n": "Suus Lodge (Suusamyr valley)",
       "t": "Mountain lodge",
       "d": "Comfortable 25-guest lodge used by ski-touring and paragliding groups; summer excursions and kumis on the menu. Operator books — confirm; indicative price.",
       "park": "On-site parking",
-      "price": "$40–$70"
+      "price": "$40–$70",
+      "tier": ""
     },
     {
       "n": "Village guest houses, Suusamyr village",
       "t": "Guest house",
       "d": "A handful of simple family guest houses (e.g. Guesthouse Altai) in Suusamyr village — basic but warm. Operator books — confirm; indicative price.",
       "park": "Yard parking",
-      "price": "$15–$30"
+      "price": "$15–$30",
+      "tier": ""
     }
   ],
   links: [
@@ -986,27 +1092,56 @@ window.DESTINATIONS = [
       "d": "Kyrgyzstan's pioneering craft brewery-taproom, the right place to toast the first 2,000 km of the loop (check the current address — it has moved locations)."
     }
   ],
+  lodgingNote: "<b>Group capacity:</b> the tour needs <b>≥8 rooms a night</b> (6–10 riders + crew). Room counts below are from published property data — at the smaller houses an 8-room block is realistic only through the operator's direct booking, well ahead of September.",
   hotels: [
     {
       "n": "Bishkek city hotel (operator's pick)",
       "t": "Hotel",
       "d": "Operator books — night 12 of the tour package (twin-share), close to the centre; bikes in the guarded lot, ready for the Day-13 ride out through the Boom gorge.",
       "park": "Guarded hotel lot",
-      "price": "Included in tour price"
+      "price": "Included in tour price",
+      "tier": "Included"
+    },
+    {
+      "n": "Hotel Orto Asia",
+      "t": "Boutique hotel",
+      "rating": 9.6,
+      "reviews": 13,
+      "link": "https://www.expedia.com/.h126583199.Hotel-Information?chkin=2026-09-16&chkout=2026-09-17&rm1=a2",
+      "d": "Top-rated small hotel at a mid-range price — the smart-money pick for the one city night. Only 13 rooms — the group would effectively buy out the hotel; operator-block or split. Sep 2026 Expedia twin rate — confirm.",
+      "park": "Confirm with hotel",
+      "price": "$64",
+      "tier": "Best Value"
+    },
+    {
+      "n": "Art Hotel Bishkek",
+      "t": "Boutique 4★ hotel",
+      "rating": 9.4,
+      "reviews": 40,
+      "link": "https://www.expedia.com/.h22418045.Hotel-Information?chkin=2026-09-16&chkout=2026-09-17&rm1=a2",
+      "d": "Stylish, central and consistently loved; 46 rooms — an 8-room group block fits. Runner-up: Bishkek Centrum ($82/n · 9.2/10, 70 reviews; 17–18 rooms — tight). Sep 2026 Expedia twin rate — confirm.",
+      "park": "Confirm with hotel",
+      "price": "$92",
+      "tier": "Best Overall"
+    },
+    {
+      "n": "Hyatt Regency Bishkek",
+      "t": "5★ hotel",
+      "rating": 8.2,
+      "reviews": 68,
+      "link": "https://www.expedia.com/.h571194.Hotel-Information?chkin=2026-09-16&chkout=2026-09-17&rm1=a2",
+      "d": "The city's classic top-end address opposite the Opera; complimentary guarded outdoor parking. ~150 rooms — a group block is trivial. Sep 2026 Expedia twin rate — confirm.",
+      "park": "Free guarded 24/7 lot",
+      "price": "$195",
+      "tier": "Luxury"
     },
     {
       "n": "Ramada by Wyndham Bishkek Centre",
       "t": "4★ hotel",
       "d": "Modern, central and reliable, with pool and gym. Operator books — confirm; indicative price.",
       "park": "On-site guest parking",
-      "price": "$90–$130"
-    },
-    {
-      "n": "Hyatt Regency Bishkek",
-      "t": "5★ hotel",
-      "d": "The city's classic top-end address opposite the Opera; complimentary outdoor parking. Operator books — confirm; indicative price.",
-      "park": "Free guarded 24/7 lot",
-      "price": "$140–$220"
+      "price": "$90–$130",
+      "tier": ""
     }
   ],
   links: [
@@ -1084,27 +1219,51 @@ window.DESTINATIONS = [
       "d": "Proper lagman, manty and plov in the cafés on the main road, plus roadside apricots, cherries and kurut from stands on the shore highway — dinners are at your own expense, and unlike the south shore, cards work in the bigger places (still carry som)."
     }
   ],
+  lodgingNote: "<b>Group capacity:</b> the tour needs <b>≥8 rooms a night</b> (6–10 riders + crew). Room counts below are from published property data — at the smaller houses an 8-room block is realistic only through the operator's direct booking, well ahead of September.",
   hotels: [
     {
       "n": "Cholpon-Ata hotel (operator's pick)",
       "t": "Hotel",
       "d": "Operator books — night 13 of the tour package (twin-share), close to the lakefront for the beach evening.",
       "park": "Guarded hotel lot",
-      "price": "Included in tour price"
+      "price": "Included in tour price",
+      "tier": "Included"
+    },
+    {
+      "n": "Edem Issykkul",
+      "t": "Guest hotel",
+      "link": "https://www.expedia.com/.h128979083.Hotel-Information?chkin=2026-09-17&chkout=2026-09-18&rm1=a2",
+      "d": "No reviews yet, but the cheapest bookable bed in town for the one lakefront night. Size ambiguous across listings (4 vs 14 rooms) — possibly too small for the group; operator to verify. Sep 2026 Expedia twin rate — confirm.",
+      "park": "Confirm with hotel",
+      "price": "$41",
+      "tier": "Best Value"
+    },
+    {
+      "n": "golden street",
+      "t": "Central guest hotel",
+      "rating": 9.0,
+      "reviews": 2,
+      "link": "https://www.expedia.com/.h122562565.Hotel-Information?chkin=2026-09-17&chkout=2026-09-18&rm1=a2",
+      "d": "Central location a short walk from the lakefront and the evening promenade. 13 rooms — a near-buyout for the group; pre-block early. Sep 2026 Expedia twin rate — confirm.",
+      "park": "Confirm with hotel",
+      "price": "$52",
+      "tier": "Best Overall"
     },
     {
       "n": "Karven Four Seasons (Chok-Tal, near Cholpon-Ata)",
       "t": "Resort hotel",
-      "d": "The north shore's polished lakefront resort — pools, private beach, restaurants. Operator books — confirm; indicative price.",
+      "d": "The north shore's polished lakefront resort — pools, private beach, restaurants. 32 rooms + ~55 cottages — the group fits easily; seasonal, verify mid-September opening. Operator books — confirm; indicative price.",
       "park": "On-site guarded parking",
-      "price": "$120–$180"
+      "price": "$120–$180",
+      "tier": "Luxury"
     },
     {
       "n": "Raduga Resort Center (Sary-Oy)",
       "t": "Resort complex",
       "d": "Big Soviet-turned-modern holiday complex with cottages, beach and pools just west of town. Operator books — confirm; indicative price.",
       "park": "On-site parking",
-      "price": "$60–$150"
+      "price": "$60–$150",
+      "tier": ""
     }
   ],
   links: [
@@ -1193,27 +1352,31 @@ window.DESTINATIONS = [
       "d": "There are no cafés at Kaindy or the lakes; the guest house fills thermoses and wraps bread for the Day-15 morning run."
     }
   ],
+  lodgingFootnote: "No online-booking coverage in Saty (checked Expedia, Sep 2026) — the operator books the guest house; the village alternates are book-direct.",
   hotels: [
     {
       "n": "Saty guest house (operator's pick)",
       "t": "Village guest house · Day 14 night",
       "d": "Silk Off Road Tours books the group into a Saty family guest house; bikes sleep in the walled yard, dinner and breakfast are home-cooked. Confirm secure parking + luggage rules with the operator.",
       "park": "Enclosed yard",
-      "price": "included in tour price — operator books"
+      "price": "included in tour price — operator books",
+      "tier": "Included"
     },
     {
       "n": "Kolsai Guesthouse (Saty)",
       "t": "Guest house",
       "d": "One of the village's established houses, bookable online; simple rooms, big home cooking. Confirm secure motorcycle parking before booking.",
       "park": "Courtyard",
-      "price": "$30–$60 incl. dinner & breakfast"
+      "price": "$30–$60 incl. dinner & breakfast",
+      "tier": ""
     },
     {
       "n": "Family guest houses, Saty village",
       "t": "Homestay",
       "d": "Dozens of families in Saty take guests (several listed on Booking.com); basic shared facilities, generous cooking. Confirm secure motorcycle parking before booking.",
       "park": "Courtyard",
-      "price": "$25–$50 incl. dinner & breakfast"
+      "price": "$25–$50 incl. dinner & breakfast",
+      "tier": ""
     }
   ],
   links: [
